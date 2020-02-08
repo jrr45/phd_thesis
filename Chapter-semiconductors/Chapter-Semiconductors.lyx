@@ -246,7 +246,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Figures/Schottky_barrier_no-contact2.svg
+	filename Figures/Schottky_barrier_no-contact3.svg
 	groupId metal-sc band
 
 \end_inset
@@ -287,7 +287,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Figures/Schottky_barrier_zero_bias2.svg
+	filename Figures/Schottky_barrier_zero_bias3.svg
 	groupId metal-sc band
 
 \end_inset
@@ -329,7 +329,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Figures/Schottky_barrier_forward_bias2.svg
+	filename Figures/Schottky_barrier_forward_bias3.svg
 	groupId metal-sc band
 
 \end_inset
@@ -367,7 +367,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Figures/Schottky_barrier_reverse_bias2.svg
+	filename Figures/Schottky_barrier_reverse_bias3.svg
 	groupId metal-sc band
 
 \end_inset
@@ -1085,7 +1085,7 @@ The typical structure of a FET is two ohmic contacts on either side of a
  semiconductor with a metal gate positioned on the semiconductor in between
  the two contacts.
  Between the two contacts a conduction channel is established that majority
- and minority charge carries, electrons or holes, can pass through.
+ charge carries, electrons or holes, can pass through.
  The natural conductivity of this channel can be altered by doping the semicondu
 ctor material to change the carrier concentration in the semiconducting
  material.
@@ -1120,7 +1120,8 @@ noprefix "false"
  across the depletion region and halting most current thus giving an off
  state to the JFET.
  Because of this configuration, all JFET must be doped to conduct naturally
- and operate in depletion mode, as the reverse would not provide a on state.
+ and operate in depletion mode, as the reverse would generate current though
+ the gate instead.
 \end_layout
 
 \begin_layout Standard
@@ -1157,22 +1158,14 @@ noprefix "false"
  In enhancement mode the channel region does not have enough carriers to
  conduct naturally but by applying a gate voltage carriers are added to
  the region and current flows.
- Conversely, in depletion mode the channel will conduct without any bias
- but an external voltage can be used to remove carriers and produce the
- off state.
+ Conversely, in depletion mode the channel will conduct without any bias,
+ often though a doped layer, but an external voltage can be used to remove
+ carriers and produce the off state.
  The bias between the source and drain leads also changes the electric field,
  and thus carrier density, within the conduction channel.
  Too large of a voltage causes the channel to start to pinch off, similar
  to a JFET, and setting a limit on the current that can be sourced between
  the contacts.
-\begin_inset CommandInset citation
-LatexCommand cite
-key "horowitz2015theart"
-literal "true"
-
-\end_inset
-
- 
 \end_layout
 
 \begin_layout Standard
@@ -1319,7 +1312,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-IV Behavior
+Current-voltage relationship
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:FET-IV-Behavior"
@@ -1361,7 +1354,7 @@ name "fig:FET"
 \end_inset
 
 The interplay of drain-source and gate bias on channel behavior in FET lead
- to a non-linear relationship between channel current and voltage.
+ to a non-trivial relationship between channel current and voltage.
  Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1374,16 +1367,70 @@ noprefix "false"
 
  shows the typical interplay between drain-source voltage and current at
  different gate voltage intervals.
-\end_layout
+ In the cutoff region the channel conduction is exponentially low for almost
+ any current to flow, and is an arbitrary threshold for the off state for
+ a FET.
+ As the channel carrier concentration is raised by the gate voltage the
+ semiconductor has enough free charges for current flow through the channel.
+ For low voltages, 
+\begin_inset Formula $V_{DS}\leq V_{G}-V_{th}$
+\end_inset
 
-\begin_layout Itemize
-behavior, IV, 
+, the current looks linear and the FET acts like an ohmic resistor.
+ The actual increase more closely follows
+\begin_inset Formula 
+\begin{equation}
+I_{D}=2\kappa\left(\left(V_{GS}-V_{th}\right)V_{DS}-\frac{V_{DS}^{2}}{2}\right)
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\kappa$
+\end_inset
+
+ is a scaling factor that depends on multiple factors like temperature,
+ device geometry, and gate capacitance.
+ 
+\begin_inset Formula $V_{th}$
+\end_inset
+
+ is the threshold voltage at which the gate voltage begins to pinch off
+ the conduction channel, and is also dependent on temperature.
+ Above this limit the current is roughly constant
+\begin_inset Formula 
+\begin{equation}
+I_{D}=\kappa\left(V_{GS}-V_{th}\right)^{2}
+\end{equation}
+
+\end_inset
+
+and is called the saturation region.
+ The saturation region is what is typically thought of as the on state for
+ a FET, providing an easy binary contrast with the cutoff region.
+ Finally, once 
+\begin_inset Formula $V_{DS}$
+\end_inset
+
+ is large enough, the there is a rapid increase in current known as breakdown,
+ due to the avalanche effect.
+ This typically occurs only in JFET while MOSFET are limited instead by
+ their power dissipation, however MOSFET can suffer an irreversible breakdown
+ in the gate dialectic instead.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "horowitz2015theart"
+literal "false"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 As FET gate and channel contacts are within close proximity of each other,
  the electric fields produced by the gate will influence the channel contact
- behaviors.
+ junction behaviors.
  The electric field will cause the bands to bend at the junction between
  materials, potentially changing the barrier height, band bending rate,
  ideality factor, or other properties.
@@ -1393,14 +1440,6 @@ As FET gate and channel contacts are within close proximity of each other,
  to the bulk of the semiconductor alone, but instead recognize it is often
  a mix of bulk and contact characteristics.
  
-\end_layout
-
-\begin_layout Section
-2D materials
-\end_layout
-
-\begin_layout Standard
-probably makes more sense under In-Se
 \end_layout
 
 \begin_layout Section
