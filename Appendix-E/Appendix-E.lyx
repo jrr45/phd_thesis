@@ -1,0 +1,627 @@
+#LyX file created by tex2lyx 2.3
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin C:/Users/jrr330_admin/Nextcloud/Work/JR Thesis/Appendix-E/
+\textclass psuthesis
+\options bs,schreyer
+\use_default_options false
+\begin_includeonly
+Chapter-1/Chapter-1.lyx
+Chapter-2/Chapter-2.lyx
+Chapter-3/Chapter-3.lyx
+Chapter-4/Chapter-4.lyx
+Chapter-5/Chapter-5.lyx
+Appendix-A/Appendix-A.lyx
+Appendix-B/Appendix-B.lyx
+Appendix-C/Appendix-C.lyx
+Appendix-D/Appendix-D.lyx
+Appendix-E/Appendix-E.lyx
+\end_includeonly
+\maintain_unincluded_children false
+\language english
+\language_package none
+\inputencoding auto
+\fontencoding T1
+\font_roman "lmodern" "default"
+\font_sans "default" "default"
+\font_typewriter "lmodern" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype true
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing other 1.24
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% !TEX root = ../YourName-Dissertation.tex
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+Appendix
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+Title of the Fifth Appendix
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+When in the Course of human events, it becomes necessary for one people to dissolve the political bands which have connected them with another, and to assume among the powers of the earth, the separate and equal station to which the Laws of Nature and of Nature's God entitle them, a decent respect to the opinions of mankind requires that they should declare the causes which impel them to the separation.
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+Some text. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+lstset
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+language=Fortran
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\size footnotesize
+
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+program chaos
+\end_layout
+
+\begin_layout Plain Layout
+c When a LS Fortran program has been compiled and linked into Mac
+\end_layout
+
+\begin_layout Plain Layout
+c application, all information written to the screen WRITE(6,...) or
+\end_layout
+
+\begin_layout Plain Layout
+c WRITE(*,...) appears in a standard Mac window, complete with basic
+\end_layout
+
+\begin_layout Plain Layout
+c menus.
+\end_layout
+
+\begin_layout Plain Layout
+      external fex, jac
+\end_layout
+
+\begin_layout Plain Layout
+      double precision atol, rtol, rwork, t, tout, h
+\end_layout
+
+\begin_layout Plain Layout
+      double precision ttotal, dtout
+\end_layout
+
+\begin_layout Plain Layout
+      dimension h(3), atol(3), rwork(70), iwork(23)
+\end_layout
+
+\begin_layout Plain Layout
+	  character*8 tstart, tend
+\end_layout
+
+\begin_layout Plain Layout
+      neq = 3
+\end_layout
+
+\begin_layout Plain Layout
+	  
+\end_layout
+
+\begin_layout Plain Layout
+	  call time(tstart)
+\end_layout
+
+\begin_layout Plain Layout
+	  write(6,*) "begin integration at  ", tstart
+\end_layout
+
+\begin_layout Plain Layout
+      write(6,*)
+\end_layout
+
+\begin_layout Plain Layout
+	  
+\end_layout
+
+\begin_layout Plain Layout
+c --- Read in the total initial angular momentum.  The total angular
+\end_layout
+
+\begin_layout Plain Layout
+c     momentum H is always unity due to normalization.
+\end_layout
+
+\begin_layout Plain Layout
+	  open(unit = 2, file = 'chaos.data', status = 'unknown')
+\end_layout
+
+\begin_layout Plain Layout
+      read(2,*) h(1), h(2), h(3)
+\end_layout
+
+\begin_layout Plain Layout
+	  
+\end_layout
+
+\begin_layout Plain Layout
+c --- The integration begins at t = 0 and the values are printed at
+\end_layout
+
+\begin_layout Plain Layout
+c     every tout.  tout is incremented below.  ttotal is the length
+\end_layout
+
+\begin_layout Plain Layout
+c     of the entire integration.  The number of recorded values of
+\end_layout
+
+\begin_layout Plain Layout
+c     the integration is given by npoints.
+\end_layout
+
+\begin_layout Plain Layout
+      t = 0.0d0
+\end_layout
+
+\begin_layout Plain Layout
+      tout = 0.0d0
+\end_layout
+
+\begin_layout Plain Layout
+      write(6,*) 'Duration of integration interval, i.e., tfinal?'
+\end_layout
+
+\begin_layout Plain Layout
+      read(6,*) ttotal
+\end_layout
+
+\begin_layout Plain Layout
+      write(6,*)
+\end_layout
+
+\begin_layout Plain Layout
+      write(6,*) 'Number of points for trajectory plot?'
+\end_layout
+
+\begin_layout Plain Layout
+      read(6,*) npoints
+\end_layout
+
+\begin_layout Plain Layout
+      write(6,*)
+\end_layout
+
+\begin_layout Plain Layout
+      dtout = ttotal/dfloat(npoints)
+\end_layout
+
+\begin_layout Plain Layout
+      tout = tout + dtout
+\end_layout
+
+\begin_layout Plain Layout
+	  
+\end_layout
+
+\begin_layout Plain Layout
+c --- Tolerance parameters used by lsoda.
+\end_layout
+
+\begin_layout Plain Layout
+      itol = 2
+\end_layout
+
+\begin_layout Plain Layout
+      rtol = 1.0d-9
+\end_layout
+
+\begin_layout Plain Layout
+      atol(1) = 1.0d-9
+\end_layout
+
+\begin_layout Plain Layout
+      atol(2) = 1.0d-9
+\end_layout
+
+\begin_layout Plain Layout
+      atol(3) = 1.0d-9
+\end_layout
+
+\begin_layout Plain Layout
+	  
+\end_layout
+
+\begin_layout Plain Layout
+c --- Other parameters used by lsoda.  See below.
+\end_layout
+
+\begin_layout Plain Layout
+      itask = 1
+\end_layout
+
+\begin_layout Plain Layout
+      istate = 1
+\end_layout
+
+\begin_layout Plain Layout
+      iopt = 1
+\end_layout
+
+\begin_layout Plain Layout
+      lrw = 70
+\end_layout
+
+\begin_layout Plain Layout
+      liw = 23
+\end_layout
+
+\begin_layout Plain Layout
+      jt = 1
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+      do 11 kount = 5,10
+\end_layout
+
+\begin_layout Plain Layout
+         rwork(kount) = 0.0d0
+\end_layout
+
+\begin_layout Plain Layout
+         iwork(kount) = 0
+\end_layout
+
+\begin_layout Plain Layout
+  11  continue
+\end_layout
+
+\begin_layout Plain Layout
+      iwork(6) = 100000
+\end_layout
+
+\begin_layout Plain Layout
+	  
+\end_layout
+
+\begin_layout Plain Layout
+	  open(unit = 3, file = 'traj.dat', disp = 'keep',
+\end_layout
+
+\begin_layout Plain Layout
+     &     status = 'unknown')
+\end_layout
+
+\begin_layout Plain Layout
+	 
+\end_layout
+
+\begin_layout Plain Layout
+c --- The actual integration begins here.  Loop on the value of iout.
+\end_layout
+
+\begin_layout Plain Layout
+      do 40 iout = 1, npoints
+\end_layout
+
+\begin_layout Plain Layout
+	  
+\end_layout
+
+\begin_layout Plain Layout
+         call lsoda(fex,neq,h,t,tout,itol,rtol,atol,itask,istate,
+\end_layout
+
+\begin_layout Plain Layout
+     &              iopt,rwork,lrw,iwork,liw,jdum,jt)
+\end_layout
+
+\begin_layout Plain Layout
+	  
+\end_layout
+
+\begin_layout Plain Layout
+c ------ Write the output to the file traj.dat.
+\end_layout
+
+\begin_layout Plain Layout
+         write(3,20) t, h(1), h(2), h(3)
+\end_layout
+
+\begin_layout Plain Layout
+  20     format(f9.1, 3e15.6)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+         if (mod(tout,5000.0d0) .eq. 0.0d0) then
+\end_layout
+
+\begin_layout Plain Layout
+            write(6,*) tout
+\end_layout
+
+\begin_layout Plain Layout
+         end if
+\end_layout
+
+\begin_layout Plain Layout
+  
+\end_layout
+
+\begin_layout Plain Layout
+c ------ Check to see that things are going OK.
+\end_layout
+
+\begin_layout Plain Layout
+         if (istate .lt. 0) go to 80
+\end_layout
+
+\begin_layout Plain Layout
+		 
+\end_layout
+
+\begin_layout Plain Layout
+c ------ Set the time at which the integration is next recorded and
+\end_layout
+
+\begin_layout Plain Layout
+c        continue the do-loop.
+\end_layout
+
+\begin_layout Plain Layout
+  40     tout = tout + dtout
+\end_layout
+
+\begin_layout Plain Layout
+  
+\end_layout
+
+\begin_layout Plain Layout
+      write(6,*) 'number of steps taken: ', iwork(11)
+\end_layout
+
+\begin_layout Plain Layout
+      write(6,*) 'number of f evaluations: ', iwork(12)
+\end_layout
+
+\begin_layout Plain Layout
+      write(6,*) 'number of Jacobian evaluations: ', iwork(13)
+\end_layout
+
+\begin_layout Plain Layout
+      write(6,*) 'method order last used: ', iwork(14)
+\end_layout
+
+\begin_layout Plain Layout
+      write(6,*) 'method last used (2 = stiff): ', iwork(19)
+\end_layout
+
+\begin_layout Plain Layout
+      write(6,*) 'value of t at last method switch: ', rwork(15)
+\end_layout
+
+\begin_layout Plain Layout
+      write(6,*)
+\end_layout
+
+\begin_layout Plain Layout
+	 
+\end_layout
+
+\begin_layout Plain Layout
+	  call time(tend)
+\end_layout
+
+\begin_layout Plain Layout
+	  write(6,*) "end integration at  ", tend
+\end_layout
+
+\begin_layout Plain Layout
+      stop
+\end_layout
+
+\begin_layout Plain Layout
+	  
+\end_layout
+
+\begin_layout Plain Layout
+c --- If there is an error, given by istate < 0, write the following.
+\end_layout
+
+\begin_layout Plain Layout
+  80  write(6,90) istate
+\end_layout
+
+\begin_layout Plain Layout
+  90  format(///22h error halt.. istate =,i3)
+\end_layout
+
+\begin_layout Plain Layout
+  
+\end_layout
+
+\begin_layout Plain Layout
+      stop
+\end_layout
+
+\begin_layout Plain Layout
+      end
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Flex Script
+status collapsed
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

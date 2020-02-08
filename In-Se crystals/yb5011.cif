@@ -1,0 +1,1695 @@
+##############################################################################
+#                                                                            #
+# This CIF contains the data in a paper accepted for publication in          #
+# Acta Crystallographica Section B. It conforms to the requirements of       #
+# Notes for Authors for Acta Crystallographica Section B, and has been       #
+# peer reviewed under the auspices of the IUCr Commission on Journals.       #
+#                                                                            #
+# Full details of the Crystallographic Information File format               #
+# are given in the paper "The Crystallographic Information File (CIF):       #
+# a New Standard Archive File for Crystallography" by S. R. Hall, F. H.      #
+# Allen and I. D. Brown [Acta Cryst. (1991), A47, 655-685].                  #
+#                                                                            #
+# The current version of the core CIF dictionary is obtainable from          #
+# ftp://ftp.iucr.org/pub/cif_core.dic.                                       #
+#                                                                            #
+# Software is freely available for graphical display of the structure(s)     #
+# in this CIF. For information consult the CIF software page                 #
+# http://www.iucr.org/resources/cif/software.                                #
+#                                                                            #
+# This file may be used for bona fide research purposes within the           #
+# scientific community so long as proper attribution is given to the journal # 
+# article from which it was obtained.                                        #
+#                                                                            #
+##############################################################################
+##############################################################################
+###      FullProf-generated CIF output file  (version: May 2011)           ###
+###      Template of CIF submission form for structure report              ###
+##############################################################################
+ 
+# This file has been generated using FullProf.2k taking one example of 
+# structure report provided by Acta Cryst. It is given as a 'template' with 
+# filled structural items. Many other items are left unfilled and it is the  
+# responsibility of the user to properly fill or suppress them. In principle 
+# all question marks '?' should be replaced by the appropriate text or 
+# numerical value depending on the kind of CIF item. 
+# See the document: cif_core.dic (URL: http://www.iucr.org) for details. 
+ 
+# Please notify any error or suggestion to: 
+#           Juan Rodriguez-Carvajal (jrc@ill.eu)
+# Improvements will be progressively added as needed.
+ 
+#=============================================================================
+data_global
+
+
+_publ_section_keywords
+;
+In2S3, tetragonal, cubic, trigonal, powder diffraction, XRD, indium sulphide,
+;
+#Added by publCIF
+
+#=============================================================================
+ 
+# PROCESSING SUMMARY (IUCr Office Use Only)
+ 
+_journal_data_validation_number      ?
+ 
+_journal_date_recd_electronic     2016-01-27
+_journal_date_to_coeditor            ?
+_journal_date_from_coeditor       2016-04-26
+_journal_date_accepted            2016-04-26
+_journal_date_printers_first      2016-04-27
+_journal_date_printers_final         ?
+_journal_date_proofs_out          2016-05-06
+_journal_date_proofs_in           2016-05-13
+_journal_coeditor_name               ?
+_journal_coeditor_code            YB5011
+_journal_paper_doi    10.1107/S2052520616007058
+_journal_coeditor_notes
+?
+_journal_techeditor_code          B160705
+_journal_techeditor_notes
+?
+_journal_coden_ASTM               ASBSDK
+_journal_name_full                'Acta Crystallographica, Section B'
+_journal_year                     2016
+_journal_volume                   72
+_journal_issue                    03
+_journal_page_first               410
+_journal_page_last                415
+_journal_paper_category          FA
+_journal_suppl_publ_number           ?
+_journal_suppl_publ_pages            ?
+ 
+#=============================================================================
+ 
+# 1. SUBMISSION DETAILS
+ 
+_publ_contact_author_name           "Paul Pistor"
+_publ_contact_author_address        IREC   
+_publ_contact_author_email          ppistor@irec.cat
+_publ_contact_author_fax             ?
+_publ_contact_author_phone           ?
+ 
+_publ_contact_letter	?
+ 
+_publ_requested_journal              "Acta Crystallographica"
+_publ_requested_coeditor_name        ?
+_publ_requested_category             ?   # Acta C: one of CI/CM/CO/FI/FM/FO
+ 
+ 
+# Definition of non standard CIF items (Reliability indices used in FULLPROF) 
+ 
+loop_ 
+_publ_manuscript_incl_extra_item
+_publ_manuscript_incl_extra_info
+_publ_manuscript_incl_extra_defn
+#      Name                               Explanation                 Standard?
+#     ------                              -----------                 ---------
+ '_pd_proc_ls_prof_cR_factor'    'Prof. R-factor CORRECTED for background'   no
+ '_pd_proc_ls_prof_cwR_factor'   'wProf.R-factor CORRECTED for background'   no
+ '_pd_proc_ls_prof_cwR_expected' 'wProf.Expected CORRECTED for background'   no
+ '_pd_proc_ls_prof_chi2'         'Chi-square for all considered points'      no
+ '_pd_proc_ls_prof_echi2'        'Chi-2 for points with Bragg contribution'  no
+#=============================================================================
+ 
+# 3. TITLE AND AUTHOR LIST
+ 
+_publ_section_title
+;
+"Crystal structure reinvestigation of alpha-, beta- and gamma-In2S3"
+;
+_publ_section_title_footnote
+.
+ 
+# The loop structure below should contain the names and addresses of all 
+# authors, in the required order of publication. Repeat as necessary.
+ 
+loop_
+_publ_author_name
+_publ_author_address
+_publ_author_footnote
+_publ_author_email
+'Pistor, Paul'
+;
+Helmholtz-Zentrum Berlin,
+Germany
+;
+;
+currently working at IREC, Catalonia Institute for Energy Research, Barcelona,
+Spain
+;
+;
+ppistor@irec.cat
+;
+'Lehmann, Sebastian'
+;
+Solid State Physics, Lund University,
+Sweden
+;
+.
+.
+'Merino \'Alvarez, Jose M.'
+;
+Universidad Autonoma de Madrid, Madrid,
+Spain
+;
+.
+.
+'Le\'on, M\'aximo'
+;
+Universidad Autonoma de Madrid, Madrid,
+Spain
+;
+.
+.
+'Michiel, Marco di'
+;
+ESRF - The European Synchrotron, Grenoble,
+France
+;
+.
+.
+'Schorr, Susan'
+;
+Helmholtz-Zentrum Berlin,
+Germany
+;
+.
+.
+'Klenk, Reiner'
+;
+Helmholtz-Zentrum Berlin,
+Germany
+;
+.
+.
+
+
+
+
+
+ 
+#=============================================================================
+ 
+# 4. TEXT
+ 
+_publ_section_synopsis
+;
+We report on high resolution structure analysis of In2S3 powder with
+monochromatic synchrotron light in the temperature range between 300K and
+1300K. Three modifications could be identified with the two phase transitions
+taken place at 717 K and above 1049 K. Crystal structure parameters and their
+temperature dependence for all three phases are extracted from the diffraction
+data by Rietveld refinement.
+;
+
+_publ_section_abstract
+;
+Semiconducting indium sulfide (In2S3) has recently attracted considerable
+attention as buffer material in the field of thin film photovoltaics. Compared
+to this growing interest, however, detailed characterisations of the crystal
+structure of this material are rather scarce and controversial. In order
+to close this gap, we have carried out an reinvestigation of the crystal
+structure of this material with an in-situ X-ray diffraction study as a
+function of temperature using monochromatic synchrotron radiation. For the
+purpose of this study, high quality polycrystalline In2S3 material with
+nominally stoichiometric composition was synthesized at high temperatures.
+We found three modifications of In2S3 in the temperature range between
+300 K and 1300 K, with structural phase transitions at temperatures of
+717 K and above 1049 K. 
+By Rietveld refinement we extracted the crystal structure data and the
+temperature coefficients of the lattice constants for all three phases,
+including a high temperature trigonal gamma
+-In2S3 modification.
+;
+          
+_publ_section_exptl_prep      # Details of the preparation of the sample(s)
+                              # should be given here. 
+;
+Indium sulphide was synthesized by heating weighted stoichiometric amounts of
+sulphur and indium in evacuated quartz ampoules. Source materials were indium
+granulate (>99.999% purity) and sulphur flakes (>99.999\\ purity). An excess
+of 4 atomic percent of S was provided for two reasons: a) To account for
+sulphur losses during the preparation. b) The excess sulphur is not
+incorporated into the crystal structure according to the phase diagram [1].
+The weighted source materials were placed in a graphite boat and placed in a
+quartz glass ampoule, evacuated (<10\^(-3) mbar) and sealed. The ampoule was
+placed in a two-zone oven and heated above 1373 K for 24 h to enable the
+complete sulfurisation of the indium and to melt the built indium sulphide. To
+assure that the complete phase transitions could take place, the ampoule was
+then kept at 1073 K for 2 days, at 873 K for 2 days and at 673 K for 4 days.
+The synthesized indium sulphide was manually ground in a mortar before XRD
+measurements and had a brick red appearance.
+;
+
+_publ_section_exptl_refinement
+;
+For the diffraction measurement, ground indium sulphide powder was sealed in an
+quartz ampoule. The XRD measurements were performed at the ESRF, the European
+Synchrotron, Grenoble, France at the beamline ID15B using monochromatic high
+energy synchrotron light with a wavelength of 0.14276 Angstrom .
+Refinement was done with the Fulprof Programm.
+;
+
+_publ_section_references
+;
+Goedecke, T. & Schubert, K. (1985). "On the phase diagram InS(m)", Zeitschrift
+<i>FUER</i> Metallkunde, vol. 76, p. 358.
+;
+
+_publ_section_figure_captions
+;
+
+;
+
+_publ_section_acknowledgements
+;
+Partial financial support for this work by the European Commission under
+contract number FP-6-019757 (LARCIS) and grant agreement number GA 625840
+(JumpKEST) as well as by the DAAD within the PPP-program Acciones Integradas
+Hispano-Alemanas under the Contract No. 314-Al-e-dr (HA2006-0025 spanish
+reference) is gratefully acknowledged. The authors are also grateful to ESRF -
+The European Synchrotron, Grenoble, France for the provision of beamtime.
+;
+
+ 
+#=============================================================================
+ 
+#=============================================================================
+# If more than one structure is reported, the remaining sections should be 
+# completed per structure. For each data set, replace the '?' in the
+# data_? line below by a unique identifier.
+ 
+data_TetragonalIn2S3           
+_database_code_depnum_ccdc_archive 'CCDC 1476600'
+_publcif_datablock.id '{c018d35f-e0f8-4348-973c-0263efb0949c}'
+ 
+#=============================================================================
+ 
+# 5. CHEMICAL DATA
+ 
+_chemical_name_systematic
+?
+_chemical_name_common             'Indium Sulphide'
+_chemical_formula_moiety          ?
+_chemical_formula_structural      ?
+_chemical_formula_analytical      ?
+_chemical_formula_iupac           'In2 S3'
+_chemical_formula_sum             'In31.14 S48'
+_chemical_formula_weight          5115.31
+_chemical_melting_point           1323
+_chemical_compound_source         ?       # for minerals and 
+                                          # natural products
+ 
+loop_
+    _atom_type_symbol               
+    _atom_type_scat_Cromer_Mann_a1 
+    _atom_type_scat_Cromer_Mann_b1 
+    _atom_type_scat_Cromer_Mann_a2 
+    _atom_type_scat_Cromer_Mann_b2 
+    _atom_type_scat_Cromer_Mann_a3 
+    _atom_type_scat_Cromer_Mann_b3 
+    _atom_type_scat_Cromer_Mann_a4 
+    _atom_type_scat_Cromer_Mann_b4 
+    _atom_type_scat_Cromer_Mann_c 
+    _atom_type_scat_dispersion_real 
+    _atom_type_scat_dispersion_imag 
+    _atom_type_scat_source          
+in+3  19.10450   0.55152  18.11080   6.32470   3.78897  17.35950
+       0.00000   0.00000   4.99635  -0.19031   0.49307
+International_Tables_for_Crystallography_Vol.C(1991)_Tables_6.1.1.4_and_6.1.1.5
+s      6.90530   1.46790   5.20340  22.21510   1.43790   0.25360
+       1.58630  56.17200   0.86690  -0.02409   0.00416
+International_Tables_for_Crystallography_Vol.C(1991)_Tables_6.1.1.4_and_6.1.1.5
+ 
+#=============================================================================
+ 
+# 6. CRYSTAL DATA
+ 
+_symmetry_cell_setting               'tetragonal'
+_symmetry_space_group_name_H-M       'I 41/a m d'
+_symmetry_space_group_name_Hall      '-I 4bd 2'
+ 
+loop_
+    _symmetry_equiv_pos_as_xyz   #<--must include 'x,y,z'
+'x,y,z'
+'-y+1/4,x+3/4,z+1/4'
+'-x+1/2,-y,z+1/2'
+'y+1/4,-x+1/4,z+3/4'
+'-x,y,z'
+'y+3/4,x+3/4,z+1/4'
+'x+1/2,-y,z+1/2'
+'-y+3/4,-x+1/4,z+3/4'
+'-x,-y,-z'
+'y+3/4,-x+1/4,-z+3/4'
+'x+1/2,y,-z+1/2'
+'-y+3/4,x+3/4,-z+1/4'
+'x,-y,-z'
+'-y+1/4,-x+1/4,-z+3/4'
+'-x+1/2,y,-z+1/2'
+'y+1/4,x+3/4,-z+1/4'
+'x+1/2,y+1/2,z+1/2'
+'-y+3/4,x+1/4,z+3/4'
+'-x,-y+1/2,z'
+'y+3/4,-x+3/4,z+1/4'
+'-x+1/2,y+1/2,z+1/2'
+'y+1/4,x+1/4,z+3/4'
+'x,-y+1/2,z'
+'-y+1/4,-x+3/4,z+1/4'
+'-x+1/2,-y+1/2,-z+1/2'
+'y+1/4,-x+3/4,-z+1/4'
+'x,y+1/2,-z'
+'-y+1/4,x+1/4,-z+3/4'
+'x+1/2,-y+1/2,-z+1/2'
+'-y+3/4,-x+3/4,-z+1/4'
+'-x,y+1/2,-z'
+'y+3/4,x+1/4,-z+3/4'
+ 
+_cell_length_a                       7.6231(4)
+_cell_length_b                       7.6231(4)
+_cell_length_c                       32.358(3)
+_cell_angle_alpha                    90.00000
+_cell_angle_beta                     90.00000
+_cell_angle_gamma                    90.00000
+_cell_volume                         1880.4(2)
+_cell_formula_units_Z                1
+_cell_measurement_theta_min 	     0.05950
+_cell_measurement_theta_max 	     13.59810
+_cell_measurement_reflns_used	     231
+_cell_measurement_temperature        309
+_cell_special_details
+?
+# The next three fields give the specimen dimensions in mm.  The equatorial
+# plane contains the incident and diffracted beam.
+ 
+_pd_spec_size_axial               ?       # perpendicular to 
+                                          # equatorial plane
+_pd_spec_size_equat               ?       # parallel to 
+                                          # scattering vector
+                                          # in transmission
+_pd_spec_size_thick               ?       # parallel to 
+                                          # scattering vector
+                                          # in reflection
+ 
+# The next five fields are character fields that describe the specimen.
+ 
+_pd_spec_mounting                         # This field should be
+                                          # used to give details of the 
+                                          # container.
+?
+_pd_spec_mount_mode               ?       # options are 'reflection'
+                                          # or 'transmission'
+_pd_spec_shape                    cylinder       # options are 'cylinder' 
+                                          # 'flat_sheet' or 'irregular'
+_pd_char_particle_morphology      ?
+_pd_char_colour                   ?       # use ICDD colour descriptions
+ 
+# The following three fields describe the preparation of the specimen.
+# The cooling rate is in K/min.  The pressure at which the sample was 
+# prepared is in kPa.  The temperature of preparation is in K.        
+ 
+_pd_prep_cool_rate                ?
+_pd_prep_pressure                 ?
+_pd_prep_temperature              1373
+ 
+# The next four fields are normally only needed for transmission experiments.
+ 
+_exptl_absorpt_coefficient_mu        ?
+_exptl_absorpt_correction_type       ?
+_exptl_absorpt_process_details       ?
+_exptl_absorpt_correction_T_min      ?
+_exptl_absorpt_correction_T_max      ?
+ 
+#=============================================================================
+ 
+# 7. EXPERIMENTAL DATA
+ 
+_exptl_special_details ?
+_exptl_crystal_colour colourless
+ 
+# The following item is used to identify the equipment used to record 
+# the powder pattern when the diffractogram was measured at a laboratory 
+# other than the authors' home institution, e.g. when neutron or synchrotron
+# radiation is used.
+ 
+_pd_instr_location
+'ESRF, Grenoble, France'
+_pd_calibration_special_details           # description of the method used
+                                          # to calibrate the instrument
+?
+ 
+_diffrn_ambient_temperature          309
+_diffrn_source              'synchrotron radiation' 
+_diffrn_radiation_type      synchrotron
+_diffrn_source_target       ? # Put here the chemical symbol of the anode
+_diffrn_radiation_wavelength       0.14276
+_diffrn_radiation_monochromator      ?
+_diffrn_measurement_device_type      'Beamline ID 15B at ESRF'
+_diffrn_measurement_method           ?
+_diffrn_detector_area_resol_mean     ? # Not in version 2.0.1
+_diffrn_detector                     Pixium4700
+_diffrn_detector_type                ? # make or model of detector
+_pd_meas_scan_method      ?   # options are 'step', 'cont',
+                              # 'tof', 'fixed' or
+                              # 'disp' (= dispersive)
+_pd_meas_special_details
+?
+ 
+#  The following four items give details of the measured (not processed)
+#  powder pattern.  Angles are in degrees.
+ 
+_pd_meas_number_of_points         1624
+_pd_meas_2theta_range_min         0.05950
+_pd_meas_2theta_range_max         13.59810
+_pd_meas_2theta_range_inc         0.008347
+ 
+#=============================================================================
+ 
+# 8. REFINEMENT DATA
+
+# The following R-factors are expressed in absolute values, not in percentage.
+# (The standard Fullprof output values have been divided by 100.) 
+ 
+_refine_special_details
+?
+ 
+# Use the next field to give any special details about the fitting of the
+# powder pattern.
+ 
+_pd_proc_ls_special_details
+?
+ 
+# The next three items are given as text.
+ 
+_pd_proc_ls_profile_function      ?
+_pd_proc_ls_background_function   ?
+_pd_proc_ls_pref_orient_corr
+?
+ 
+#  The following profile R-factors are NOT CORRECTED for background
+#  The sum is extended to all non-excluded points.
+#  These are the current CIF standard
+ 
+_pd_proc_ls_prof_R_factor                0.021638
+_pd_proc_ls_prof_wR_factor               0.031313
+_pd_proc_ls_prof_wR_expected             0.009688
+ 
+#  The following profile R-factors are CORRECTED for background
+#  The sum is extended to all non-excluded points.
+#  These items are not in the current CIF standard, but are defined above
+ 
+_pd_proc_ls_prof_cR_factor                0.040989
+_pd_proc_ls_prof_cwR_factor               0.049352
+_pd_proc_ls_prof_cwR_expected             0.015269
+ 
+#  The following items are not in the CIF standard, but are defined above
+ 
+_pd_proc_ls_prof_chi2                10.4474
+_pd_proc_ls_prof_echi2               10.4474
+ 
+#  Items related to LS refinement
+ 
+_refine_ls_R_I_factor                 0.013751
+_refine_ls_number_reflns                  1352
+_refine_ls_number_parameters                50
+_refine_ls_number_restraints                 1
+_refine_ls_goodness_of_fit_all 		3.2326
+_refine_ls_shift/su_max 		0.002
+ 
+# The following four items apply to angular dispersive measurements.
+# 2theta minimum, maximum and increment (in degrees) are for the 
+# intensities used in the refinement.
+ 
+_pd_proc_2theta_range_min                0.0595
+_pd_proc_2theta_range_max               13.5981
+_pd_proc_2theta_range_inc              0.008347
+_pd_proc_wavelength                    0.142760
+ 
+_pd_block_diffractogram_id         ppins_113_10002_counts  
+                                     # The id used for the block containing
+                                     # the powder pattern profile (section 11)
+ 
+# Give appropriate details in the next two text fields.
+ 
+_pd_proc_info_excluded_regions    2
+_pd_proc_info_data_reduction      ?
+ 
+# The following items are used to identify the programs used.
+ 
+_computing_data_collection           ?
+_computing_structure_solution        ?
+_computing_structure_refinement      FULLPROF
+_computing_molecular_graphics        ?
+_computing_publication_material      ?
+ 
+#=============================================================================
+ 
+# 9. ATOMIC COORDINATES AND DISPLACEMENT PARAMETERS
+ 
+loop_
+    _atom_site_label
+    _atom_site_fract_x
+    _atom_site_fract_y
+    _atom_site_fract_z
+    _atom_site_U_iso_or_equiv
+    _atom_site_occupancy
+    _atom_site_type_symbol
+ S1  0.00000 -0.005(2)  0.2513(7)  0.013(4)  1.00000  s   
+ S2  0.00000  0.008(2)  0.0777(7)  0.016(4)  1.00000  s   
+ S3  0.00000  0.020(2)  0.4133(7)  0.015(3)  1.00000  s   
+ In1  0.00000  0.25000  0.20459(11)  0.0097(8)  0.973(6)  in
+ In2  0.00000  0.00000  0.00000  0.0143(15)  0.972(7)  in
+ In3  0.00000 -0.0196(3)  0.33273(12)  0.0111(10)  0.974(6)  in
+    
+ 
+# Note: if the displacement parameters were refined anisotropically
+# the U matrices should be given as for single-crystal studies.
+ 
+#=============================================================================
+ 
+# 10. DISTANCES AND ANGLES / MOLECULAR GEOMETRY 
+ 
+_geom_special_details                ?
+ 
+loop_
+   _geom_bond_atom_site_label_1
+   _geom_bond_atom_site_label_2
+   _geom_bond_distance
+   _geom_bond_site_symmetry_2
+   _geom_bond_publ_flag
+S1    In1   2.462(19)     1_555 ?
+S1    In2   2.669(11)     2_545 ?
+S1    In2   2.669(11)     6_445 ?
+S1    In3   2.64(2)       1_555 ?
+S2    In2   2.51(2)       1_555 ?
+S2    In3   2.552(11)     4_554 ?
+S2    In3   2.552(11)     8_454 ?
+S3    In1   2.454(18)     2_545 ?
+S3    In3   2.62(2)       1_555 ?
+S3    In3   2.705(10)    10_455 ?
+S3    In3   2.705(10)    14_555 ?
+In1   S1    2.462(19)     1_555 ?
+In1   S1    2.462(19)    19_555 ?
+In1   S3    2.454(12)     4_554 ?
+In1   S3    2.454(12)     8_454 ?
+In2   S1    2.669(11)     4_554 ?
+In2   S1    2.669(11)     8_454 ?
+In2   S1    2.669(11)    12_445 ?
+In2   S1    2.669(11)    16_545 ?
+In2   S2    2.51(2)       1_555 ?
+In2   S2    2.51(2)       9_555 ?
+In3   S1    2.64(2)       1_555 ?
+In3   S2    2.552(11)     2_545 ?
+In3   S2    2.552(11)     6_445 ?
+In3   S3    2.62(2)       1_555 ?
+In3   S3    2.705(12)    10_455 ?
+In3   S3    2.705(12)    14_555 ?
+
+loop_
+   _geom_angle_atom_site_label_1
+   _geom_angle_atom_site_label_2
+   _geom_angle_atom_site_label_3
+   _geom_angle
+   _geom_angle_site_symmetry_1
+   _geom_angle_site_symmetry_3
+   _geom_angle_publ_flag
+ In1  S1   In2   122.9(5)       1_555    2_545 ?
+ In1  S1   In2   122.9(5)       1_555    6_445 ?
+ In1  S1   In3   130.3(7)       1_555    1_555 ?
+ In2  S1   In2   91.1(3)        2_545    6_445 ?
+ In2  S1   In3   89.2(6)        2_545    1_555 ?
+ In2  S1   In3   89.2(6)        6_445    1_555 ?
+ In2  S2   In3   94.7(6)        1_555    4_554 ?
+ In2  S2   In3   94.7(6)        1_555    8_454 ?
+ In3  S2   In3   87.0(4)        4_554    8_454 ?
+ In1  S3   In3   116.4(7)       2_545    1_555 ?
+ In1  S3   In3   121.2(5)       2_545   10_455 ?
+ In1  S3   In3   121.2(5)       2_545   14_555 ?
+ In3  S3   In3   97.0(6)        1_555   10_455 ?
+ In3  S3   In3   97.0(6)        1_555   14_555 ?
+ In3  S3   In3   98.9(3)       10_455   14_555 ?
+ S1   In1  S1    104.3(10)      1_555   19_555 ?
+ S1   In1  S3    109.5(11)      1_555    4_554 ?
+ S1   In1  S3    109.5(11)      1_555    8_454 ?
+ S1   In1  S3    109.5(11)     19_555    4_554 ?
+ S1   In1  S3    109.5(11)     19_555    8_454 ?
+ S3   In1  S3    114.0(4)       4_554    8_454 ?
+ S1   In2  S1    88.8(3)        4_554    8_454 ?
+ S1   In2  S1    180.0(7)       4_554   12_445 ?
+ S1   In2  S1    91.2(7)        4_554   16_545 ?
+ S1   In2  S2    88.1(9)        4_554    1_555 ?
+ S1   In2  S2    91.9(10)       4_554    9_555 ?
+ S1   In2  S1    91.2(7)        8_454   12_445 ?
+ S1   In2  S1    180.0(7)       8_454   16_545 ?
+ S1   In2  S2    88.1(9)        8_454    1_555 ?
+ S1   In2  S2    91.9(10)       8_454    9_555 ?
+ S1   In2  S1    88.8(3)       12_445   16_545 ?
+ S1   In2  S2    91.9(10)      12_445    1_555 ?
+ S1   In2  S2    88.1(9)       12_445    9_555 ?
+ S1   In2  S2    91.9(10)      16_545    1_555 ?
+ S1   In2  S2    88.1(9)       16_545    9_555 ?
+ S2   In2  S2    180.0(16)      1_555    9_555 ?
+ S1   In3  S2    88.0(9)        1_555    2_545 ?
+ S1   In3  S2    88.0(9)        1_555    6_445 ?
+ S1   In3  S3    171.0(16)      1_555    1_555 ?
+ S1   In3  S3    90.9(10)       1_555   10_455 ?
+ S1   In3  S3    90.9(10)       1_555   14_555 ?
+ S2   In3  S2    92.6(3)        2_545    6_445 ?
+ S2   In3  S3    98.2(10)       2_545    1_555 ?
+ S2   In3  S3    174.0(8)       2_545   10_455 ?
+ S2   In3  S3    93.3(8)        2_545   14_555 ?
+ S2   In3  S3    98.2(10)       6_445    1_555 ?
+ S2   In3  S3    93.3(8)        6_445   10_455 ?
+ S2   In3  S3    174.0(8)       6_445   14_555 ?
+ S3   In3  S3    82.3(9)        1_555   10_455 ?
+ S3   In3  S3    82.3(9)        1_555   14_555 ?
+ S3   In3  S3    80.8(4)       10_455   14_555 ?
+ 
+loop_
+_geom_torsion_atom_site_label_1 
+_geom_torsion_atom_site_label_2 
+_geom_torsion_atom_site_label_3 
+_geom_torsion_atom_site_label_4 
+_geom_torsion_site_symmetry_1   
+_geom_torsion_site_symmetry_2   
+_geom_torsion_site_symmetry_3   
+_geom_torsion_site_symmetry_4   
+_geom_torsion                   
+_geom_torsion_publ_flag         
+?   ?   ?   ?   ?   ?   ?   ?   ?   ?
+ 
+loop_
+_geom_hbond_atom_site_label_D 
+_geom_hbond_atom_site_label_H 
+_geom_hbond_atom_site_label_A 
+_geom_hbond_site_symmetry_D   
+_geom_hbond_site_symmetry_H   
+_geom_hbond_site_symmetry_A   
+_geom_hbond_distance_DH       
+_geom_hbond_distance_HA       
+_geom_hbond_distance_DA       
+_geom_hbond_angle_DHA         
+_geom_hbond_publ_flag         
+?   ?   ?   ?   ?   ?   ?   ?   ?   ?   ?
+ 
+#=============================================================================
+
+# start Validation Reply Form
+_vrf_PLAT113_TetragonalIn2S3
+;
+PROBLEM: ADDSYM Suggests Possible Pseudo/New  Space Group     P4/mmm Check 
+RESPONSE: We believe this is an artefact in the CheckCIF procedure, as for
+marginal changes in the occupancy of the In1 atom this error is not displayed
+anymore.
+;
+# end Validation Reply Form
+
+
+#=============================================================================
+# Additional structures (last six sections and associated data_? identifiers) 
+# may be added at this point.                                                 
+#=============================================================================
+ 
+#=============================================================================
+# If more than one structure is reported, the remaining sections should be 
+# completed per structure. For each data set, replace the '?' in the
+# data_? line below by a unique identifier.
+ 
+data_CubicIn2S3                   
+_database_code_depnum_ccdc_archive 'CCDC 1481751'
+_publcif_datablock.id '{b60f3aad-3610-430a-9c7a-0cc365762f9d}'
+ 
+#=============================================================================
+ 
+# 5. CHEMICAL DATA
+ 
+_chemical_name_systematic
+?
+_chemical_name_common             'Indium Sulphide'
+_chemical_formula_moiety          ?
+_chemical_formula_structural      ?
+_chemical_formula_analytical      ?
+_chemical_formula_iupac           'In2 S3'
+_chemical_formula_sum             'In20.77 S32'
+_chemical_formula_weight          3408.76
+_chemical_melting_point           1323
+_chemical_compound_source         ?       # for minerals and 
+                                          # natural products
+ 
+loop_
+    _atom_type_symbol               
+    _atom_type_scat_Cromer_Mann_a1 
+    _atom_type_scat_Cromer_Mann_b1 
+    _atom_type_scat_Cromer_Mann_a2 
+    _atom_type_scat_Cromer_Mann_b2 
+    _atom_type_scat_Cromer_Mann_a3 
+    _atom_type_scat_Cromer_Mann_b3 
+    _atom_type_scat_Cromer_Mann_a4 
+    _atom_type_scat_Cromer_Mann_b4 
+    _atom_type_scat_Cromer_Mann_c 
+    _atom_type_scat_dispersion_real 
+    _atom_type_scat_dispersion_imag 
+    _atom_type_scat_source          
+in+3  19.10450   0.55152  18.11080   6.32470   3.78897  17.35950
+       0.00000   0.00000   4.99635  -0.19031   0.49307
+International_Tables_for_Crystallography_Vol.C(1991)_Tables_6.1.1.4_and_6.1.1.5
+s      6.90530   1.46790   5.20340  22.21510   1.43790   0.25360
+       1.58630  56.17200   0.86690  -0.02409   0.00416
+International_Tables_for_Crystallography_Vol.C(1991)_Tables_6.1.1.4_and_6.1.1.5
+ 
+#=============================================================================
+ 
+# 6. CRYSTAL DATA
+ 
+_symmetry_cell_setting               'cubic'
+_symmetry_space_group_name_H-M       'F d -3 m'
+_symmetry_space_group_name_Hall      '-F 4vw 2vw 3'
+ 
+loop_
+    _symmetry_equiv_pos_as_xyz   #<--must include 'x,y,z'
+'x,y,z'
+'x,-y+1/4,-z+1/4'
+'-x+1/4,y,-z+1/4'
+'-x+1/4,-y+1/4,z'
+'y,z,x'
+'-y+1/4,-z+1/4,x'
+'y,-z+1/4,-x+1/4'
+'-y+1/4,z,-x+1/4'
+'z,x,y'
+'-z+1/4,x,-y+1/4'
+'-z+1/4,-x+1/4,y'
+'z,-x+1/4,-y+1/4'
+'y,x,z'
+'-y+1/4,x,-z+1/4'
+'y,-x+1/4,-z+1/4'
+'-y+1/4,-x+1/4,z'
+'z,y,x'
+'-z+1/4,-y+1/4,x'
+'-z+1/4,y,-x+1/4'
+'z,-y+1/4,-x+1/4'
+'x,z,y'
+'x,-z+1/4,-y+1/4'
+'-x+1/4,-z+1/4,y'
+'-x+1/4,z,-y+1/4'
+'-x,-y,-z'
+'-x,y+3/4,z+3/4'
+'x+3/4,-y,z+3/4'
+'x+3/4,y+3/4,-z'
+'-y,-z,-x'
+'y+3/4,z+3/4,-x'
+'-y,z+3/4,x+3/4'
+'y+3/4,-z,x+3/4'
+'-z,-x,-y'
+'z+3/4,-x,y+3/4'
+'z+3/4,x+3/4,-y'
+'-z,x+3/4,y+3/4'
+'-y,-x,-z'
+'y+3/4,-x,z+3/4'
+'-y,x+3/4,z+3/4'
+'y+3/4,x+3/4,-z'
+'-z,-y,-x'
+'z+3/4,y+3/4,-x'
+'z+3/4,-y,x+3/4'
+'-z,y+3/4,x+3/4'
+'-x,-z,-y'
+'-x,z+3/4,y+3/4'
+'x+3/4,z+3/4,-y'
+'x+3/4,-z,y+3/4'
+'x+1/2,y+1/2,z'
+'x+1/2,-y+3/4,-z+1/4'
+'-x+3/4,y+1/2,-z+1/4'
+'-x+3/4,-y+3/4,z'
+'y+1/2,z+1/2,x'
+'-y+3/4,-z+3/4,x'
+'y+1/2,-z+3/4,-x+1/4'
+'-y+3/4,z+1/2,-x+1/4'
+'z+1/2,x+1/2,y'
+'-z+3/4,x+1/2,-y+1/4'
+'-z+3/4,-x+3/4,y'
+'z+1/2,-x+3/4,-y+1/4'
+'y+1/2,x+1/2,z'
+'-y+3/4,x+1/2,-z+1/4'
+'y+1/2,-x+3/4,-z+1/4'
+'-y+3/4,-x+3/4,z'
+'z+1/2,y+1/2,x'
+'-z+3/4,-y+3/4,x'
+'-z+3/4,y+1/2,-x+1/4'
+'z+1/2,-y+3/4,-x+1/4'
+'x+1/2,z+1/2,y'
+'x+1/2,-z+3/4,-y+1/4'
+'-x+3/4,-z+3/4,y'
+'-x+3/4,z+1/2,-y+1/4'
+'-x+1/2,-y+1/2,-z'
+'-x+1/2,y+1/4,z+3/4'
+'x+1/4,-y+1/2,z+3/4'
+'x+1/4,y+1/4,-z'
+'-y+1/2,-z+1/2,-x'
+'y+1/4,z+1/4,-x'
+'-y+1/2,z+1/4,x+3/4'
+'y+1/4,-z+1/2,x+3/4'
+'-z+1/2,-x+1/2,-y'
+'z+1/4,-x+1/2,y+3/4'
+'z+1/4,x+1/4,-y'
+'-z+1/2,x+1/4,y+3/4'
+'-y+1/2,-x+1/2,-z'
+'y+1/4,-x+1/2,z+3/4'
+'-y+1/2,x+1/4,z+3/4'
+'y+1/4,x+1/4,-z'
+'-z+1/2,-y+1/2,-x'
+'z+1/4,y+1/4,-x'
+'z+1/4,-y+1/2,x+3/4'
+'-z+1/2,y+1/4,x+3/4'
+'-x+1/2,-z+1/2,-y'
+'-x+1/2,z+1/4,y+3/4'
+'x+1/4,z+1/4,-y'
+'x+1/4,-z+1/2,y+3/4'
+'x+1/2,y,z+1/2'
+'x+1/2,-y+1/4,-z+3/4'
+'-x+3/4,y,-z+3/4'
+'-x+3/4,-y+1/4,z+1/2'
+'y+1/2,z,x+1/2'
+'-y+3/4,-z+1/4,x+1/2'
+'y+1/2,-z+1/4,-x+3/4'
+'-y+3/4,z,-x+3/4'
+'z+1/2,x,y+1/2'
+'-z+3/4,x,-y+3/4'
+'-z+3/4,-x+1/4,y+1/2'
+'z+1/2,-x+1/4,-y+3/4'
+'y+1/2,x,z+1/2'
+'-y+3/4,x,-z+3/4'
+'y+1/2,-x+1/4,-z+3/4'
+'-y+3/4,-x+1/4,z+1/2'
+'z+1/2,y,x+1/2'
+'-z+3/4,-y+1/4,x+1/2'
+'-z+3/4,y,-x+3/4'
+'z+1/2,-y+1/4,-x+3/4'
+'x+1/2,z,y+1/2'
+'x+1/2,-z+1/4,-y+3/4'
+'-x+3/4,-z+1/4,y+1/2'
+'-x+3/4,z,-y+3/4'
+'-x+1/2,-y,-z+1/2'
+'-x+1/2,y+3/4,z+1/4'
+'x+1/4,-y,z+1/4'
+'x+1/4,y+3/4,-z+1/2'
+'-y+1/2,-z,-x+1/2'
+'y+1/4,z+3/4,-x+1/2'
+'-y+1/2,z+3/4,x+1/4'
+'y+1/4,-z,x+1/4'
+'-z+1/2,-x,-y+1/2'
+'z+1/4,-x,y+1/4'
+'z+1/4,x+3/4,-y+1/2'
+'-z+1/2,x+3/4,y+1/4'
+'-y+1/2,-x,-z+1/2'
+'y+1/4,-x,z+1/4'
+'-y+1/2,x+3/4,z+1/4'
+'y+1/4,x+3/4,-z+1/2'
+'-z+1/2,-y,-x+1/2'
+'z+1/4,y+3/4,-x+1/2'
+'z+1/4,-y,x+1/4'
+'-z+1/2,y+3/4,x+1/4'
+'-x+1/2,-z,-y+1/2'
+'-x+1/2,z+3/4,y+1/4'
+'x+1/4,z+3/4,-y+1/2'
+'x+1/4,-z,y+1/4'
+'x,y+1/2,z+1/2'
+'x,-y+3/4,-z+3/4'
+'-x+1/4,y+1/2,-z+3/4'
+'-x+1/4,-y+3/4,z+1/2'
+'y,z+1/2,x+1/2'
+'-y+1/4,-z+3/4,x+1/2'
+'y,-z+3/4,-x+3/4'
+'-y+1/4,z+1/2,-x+3/4'
+'z,x+1/2,y+1/2'
+'-z+1/4,x+1/2,-y+3/4'
+'-z+1/4,-x+3/4,y+1/2'
+'z,-x+3/4,-y+3/4'
+'y,x+1/2,z+1/2'
+'-y+1/4,x+1/2,-z+3/4'
+'y,-x+3/4,-z+3/4'
+'-y+1/4,-x+3/4,z+1/2'
+'z,y+1/2,x+1/2'
+'-z+1/4,-y+3/4,x+1/2'
+'-z+1/4,y+1/2,-x+3/4'
+'z,-y+3/4,-x+3/4'
+'x,z+1/2,y+1/2'
+'x,-z+3/4,-y+3/4'
+'-x+1/4,-z+3/4,y+1/2'
+'-x+1/4,z+1/2,-y+3/4'
+'-x,-y+1/2,-z+1/2'
+'-x,y+1/4,z+1/4'
+'x+3/4,-y+1/2,z+1/4'
+'x+3/4,y+1/4,-z+1/2'
+'-y,-z+1/2,-x+1/2'
+'y+3/4,z+1/4,-x+1/2'
+'-y,z+1/4,x+1/4'
+'y+3/4,-z+1/2,x+1/4'
+'-z,-x+1/2,-y+1/2'
+'z+3/4,-x+1/2,y+1/4'
+'z+3/4,x+1/4,-y+1/2'
+'-z,x+1/4,y+1/4'
+'-y,-x+1/2,-z+1/2'
+'y+3/4,-x+1/2,z+1/4'
+'-y,x+1/4,z+1/4'
+'y+3/4,x+1/4,-z+1/2'
+'-z,-y+1/2,-x+1/2'
+'z+3/4,y+1/4,-x+1/2'
+'z+3/4,-y+1/2,x+1/4'
+'-z,y+1/4,x+1/4'
+'-x,-z+1/2,-y+1/2'
+'-x,z+1/4,y+1/4'
+'x+3/4,z+1/4,-y+1/2'
+'x+3/4,-z+1/2,y+1/4'
+ 
+_cell_length_a                       10.8315(2)
+_cell_length_b                       10.8315(2)
+_cell_length_c                       10.8315(2)
+_cell_angle_alpha                    90.00000
+_cell_angle_beta                     90.00000
+_cell_angle_gamma                    90.00000
+_cell_volume                         1270.76(4)
+_cell_formula_units_Z                1
+_cell_measurement_theta_min 	     0.05950
+_cell_measurement_theta_max 	     13.60620
+_cell_measurement_reflns_used	     61
+_cell_measurement_temperature        749
+_cell_special_details
+?
+# The next three fields give the specimen dimensions in mm.  The equatorial
+# plane contains the incident and diffracted beam.
+ 
+_pd_spec_size_axial               ?       # perpendicular to 
+                                          # equatorial plane
+_pd_spec_size_equat               ?       # parallel to 
+                                          # scattering vector
+                                          # in transmission
+_pd_spec_size_thick               ?       # parallel to 
+                                          # scattering vector
+                                          # in reflection
+ 
+# The next five fields are character fields that describe the specimen.
+ 
+_pd_spec_mounting                         # This field should be
+                                          # used to give details of the 
+                                          # container.
+?
+_pd_spec_mount_mode               ?       # options are 'reflection'
+                                          # or 'transmission'
+_pd_spec_shape                    cylinder       # options are 'cylinder' 
+                                          # 'flat_sheet' or 'irregular'
+_pd_char_particle_morphology      ?
+_pd_char_colour                   ?       # use ICDD colour descriptions
+ 
+# The following three fields describe the preparation of the specimen.
+# The cooling rate is in K/min.  The pressure at which the sample was 
+# prepared is in kPa.  The temperature of preparation is in K.        
+ 
+_pd_prep_cool_rate                ?
+_pd_prep_pressure                 ?
+_pd_prep_temperature              ?
+ 
+# The next four fields are normally only needed for transmission experiments.
+ 
+_exptl_absorpt_coefficient_mu        ?
+_exptl_absorpt_correction_type       ?
+_exptl_absorpt_process_details       ?
+_exptl_absorpt_correction_T_min      ?
+_exptl_absorpt_correction_T_max      ?
+ 
+#=============================================================================
+ 
+# 7. EXPERIMENTAL DATA
+ 
+_exptl_special_details ?
+_exptl_crystal_colour colourless
+ 
+# The following item is used to identify the equipment used to record 
+# the powder pattern when the diffractogram was measured at a laboratory 
+# other than the authors' home institution, e.g. when neutron or synchrotron
+# radiation is used.
+ 
+_pd_instr_location
+'ESRF, Grenoble, France'
+_pd_calibration_special_details           # description of the method used
+                                          # to calibrate the instrument
+?
+ 
+_diffrn_ambient_temperature          749
+_diffrn_source              'synchrotron radiation' 
+_diffrn_radiation_type     synchrotron 
+_diffrn_source_target       ? # Put here the chemical symbol of the anode
+_diffrn_radiation_wavelength       0.14276 
+_diffrn_radiation_monochromator      ?
+_diffrn_measurement_device_type      'Beamline ID 15B at ESRF'
+_diffrn_measurement_method           ?
+_diffrn_detector_area_resol_mean     ? # Not in version 2.0.1
+_diffrn_detector                     Pixium4700
+_diffrn_detector_type                ? # make or model of detector
+_pd_meas_scan_method      ?   # options are 'step', 'cont',
+                              # 'tof', 'fixed' or
+                              # 'disp' (= dispersive)
+_pd_meas_special_details
+?
+ 
+#  The following four items give details of the measured (not processed)
+#  powder pattern.  Angles are in degrees.
+ 
+_pd_meas_number_of_points         1625
+_pd_meas_2theta_range_min         0.05950
+_pd_meas_2theta_range_max         13.60620
+_pd_meas_2theta_range_inc         0.008347
+ 
+#=============================================================================
+ 
+# 8. REFINEMENT DATA
+
+# The following R-factors are expressed in absolute values, not in percentage.
+# (The standard Fullprof output values have been divided by 100.) 
+ 
+_refine_special_details
+?
+ 
+# Use the next field to give any special details about the fitting of the
+# powder pattern.
+ 
+_pd_proc_ls_special_details
+?
+ 
+# The next three items are given as text.
+ 
+_pd_proc_ls_profile_function      ?
+_pd_proc_ls_background_function   ?
+_pd_proc_ls_pref_orient_corr
+?
+ 
+#  The following profile R-factors are NOT CORRECTED for background
+#  The sum is extended to all non-excluded points.
+#  These are the current CIF standard
+ 
+_pd_proc_ls_prof_R_factor                0.018502
+_pd_proc_ls_prof_wR_factor               0.027706
+_pd_proc_ls_prof_wR_expected             0.010209
+ 
+#  The following profile R-factors are CORRECTED for background
+#  The sum is extended to all non-excluded points.
+#  These items are not in the current CIF standard, but are defined above
+ 
+_pd_proc_ls_prof_cR_factor                0.055351
+_pd_proc_ls_prof_cwR_factor               0.055342
+_pd_proc_ls_prof_cwR_expected             0.020391
+ 
+#  The following items are not in the CIF standard, but are defined above
+ 
+_pd_proc_ls_prof_chi2                 7.3656
+_pd_proc_ls_prof_echi2                7.8604
+ 
+#  Items related to LS refinement
+ 
+_refine_ls_R_I_factor                 0.016898
+_refine_ls_number_reflns                   186
+_refine_ls_number_parameters                68
+_refine_ls_number_restraints                 0
+_refine_ls_goodness_of_fit_all 		2.8036
+_refine_ls_shift/su_max 		0.002
+ 
+# The following four items apply to angular dispersive measurements.
+# 2theta minimum, maximum and increment (in degrees) are for the 
+# intensities used in the refinement.
+ 
+_pd_proc_2theta_range_min                0.0595
+_pd_proc_2theta_range_max               13.6062
+_pd_proc_2theta_range_inc              0.008347
+_pd_proc_wavelength                    0.142760
+ 
+_pd_block_diffractogram_id        ppins_113_10090_counts
+                                     # The id used for the block containing
+                                     # the powder pattern profile (section 11)
+ 
+# Give appropriate details in the next two text fields.
+ 
+_pd_proc_info_excluded_regions    2
+_pd_proc_info_data_reduction      ?
+ 
+# The following items are used to identify the programs used.
+ 
+_computing_data_collection           ?
+_computing_structure_solution        ?
+_computing_structure_refinement      FULLPROF
+_computing_molecular_graphics        ?
+_computing_publication_material      ?
+ 
+#=============================================================================
+ 
+# 9. ATOMIC COORDINATES AND DISPLACEMENT PARAMETERS
+ 
+loop_
+    _atom_site_label
+    _atom_site_fract_x
+    _atom_site_fract_y
+    _atom_site_fract_z
+    _atom_site_U_iso_or_equiv
+    _atom_site_occupancy             
+    _atom_site_type_symbol
+ s1  0.25638(14)  0.25638(14)  0.25638(14)  0.0347(12)  1.00000  s   
+ in1  0.12500  0.12500  0.12500  0.0306(9)  0.640(4)  in
+ in2  0.50000  0.50000  0.50000  0.0444(6)  0.978(6)  in 
+ 
+# Note: if the displacement parameters were refined anisotropically
+# the U matrices should be given as for single-crystal studies.
+ 
+#=============================================================================
+ 
+# 10. DISTANCES AND ANGLES / MOLECULAR GEOMETRY 
+ 
+_geom_special_details                ?
+ 
+loop_
+   _geom_bond_atom_site_label_1
+   _geom_bond_atom_site_label_2
+   _geom_bond_distance
+   _geom_bond_site_symmetry_2
+   _geom_bond_publ_flag
+s1    in1   2.4648(15)    1_555 ?
+s1    in2   2.6406(15)   26_644 ?
+s1    in2   2.6406(15)   27_464 ?
+s1    in2   2.6406(15)   28_446 ?
+in1   s1    2.4648(15)    1_555 ?
+in1   s1    2.4648(15)    2_555 ?
+in1   s1    2.4648(15)    3_555 ?
+in1   s1    2.4648(15)    4_555 ?
+in2   s1    2.6406(15)   52_555 ?
+in2   s1    2.6406(15)   76_556 ?
+in2   s1    2.6406(15)   99_555 ?
+in2   s1    2.6406(15)  123_565 ?
+in2   s1    2.6406(15)  146_555 ?
+in2   s1    2.6406(15)  170_655 ?
+
+loop_
+   _geom_angle_atom_site_label_1
+   _geom_angle_atom_site_label_2
+   _geom_angle_atom_site_label_3
+   _geom_angle
+   _geom_angle_site_symmetry_1
+   _geom_angle_site_symmetry_3
+   _geom_angle_publ_flag
+ in1  s1   in2   123.14(5)      1_555   26_644 ?
+ in1  s1   in2   123.14(5)      1_555   27_464 ?
+ in1  s1   in2   123.14(5)      1_555   28_446 ?
+ in2  s1   in2   92.96(5)      26_644   27_464 ?
+ in2  s1   in2   92.96(5)      26_644   28_446 ?
+ in2  s1   in2   92.96(5)      27_464   28_446 ?
+ s1   in1  s1    109.47(10)     1_555    2_555 ?
+ s1   in1  s1    109.47(10)     1_555    3_555 ?
+ s1   in1  s1    109.47(10)     1_555    4_555 ?
+ s1   in1  s1    109.47(10)     2_555    3_555 ?
+ s1   in1  s1    109.47(10)     2_555    4_555 ?
+ s1   in1  s1    109.47(10)     3_555    4_555 ?
+ s1   in2  s1    180.00(10)    52_555   76_556 ?
+ s1   in2  s1    86.96(8)      52_555   99_555 ?
+ s1   in2  s1    93.04(8)      52_555  123_565 ?
+ s1   in2  s1    86.96(8)      52_555  146_555 ?
+ s1   in2  s1    93.04(8)      52_555  170_655 ?
+ s1   in2  s1    93.04(8)      76_556   99_555 ?
+ s1   in2  s1    86.96(8)      76_556  123_565 ?
+ s1   in2  s1    93.04(8)      76_556  146_555 ?
+ s1   in2  s1    86.96(8)      76_556  170_655 ?
+ s1   in2  s1    180.00(10)    99_555  123_565 ?
+ s1   in2  s1    86.96(8)      99_555  146_555 ?
+ s1   in2  s1    93.04(8)      99_555  170_655 ?
+ s1   in2  s1    93.04(8)     123_565  146_555 ?
+ s1   in2  s1    86.96(8)     123_565  170_655 ?
+ s1   in2  s1    180.00(10)   146_555  170_655 ?
+ 
+loop_
+_geom_torsion_atom_site_label_1 
+_geom_torsion_atom_site_label_2 
+_geom_torsion_atom_site_label_3 
+_geom_torsion_atom_site_label_4 
+_geom_torsion_site_symmetry_1   
+_geom_torsion_site_symmetry_2   
+_geom_torsion_site_symmetry_3   
+_geom_torsion_site_symmetry_4   
+_geom_torsion                   
+_geom_torsion_publ_flag         
+?   ?   ?   ?   ?   ?   ?   ?   ?   ?
+ 
+loop_
+_geom_hbond_atom_site_label_D 
+_geom_hbond_atom_site_label_H 
+_geom_hbond_atom_site_label_A 
+_geom_hbond_site_symmetry_D   
+_geom_hbond_site_symmetry_H   
+_geom_hbond_site_symmetry_A   
+_geom_hbond_distance_DH       
+_geom_hbond_distance_HA       
+_geom_hbond_distance_DA       
+_geom_hbond_angle_DHA         
+_geom_hbond_publ_flag         
+?   ?   ?   ?   ?   ?   ?   ?   ?   ?   ?
+ 
+#=============================================================================
+ 
+# start Validation Reply Form
+_vrf_PLAT077_CubicIn2S3
+;
+PROBLEM: Unitcell contains non-integer number of atoms ..     Please Check
+RESPONSE: This is caused by the large amount of natural vacancies in this 
+type of structure. 
+;
+# end Validation Reply Form
+
+#=============================================================================
+# Additional structures (last six sections and associated data_? identifiers) 
+# may be added at this point.                                                 
+#=============================================================================
+ 
+#=============================================================================
+# If more than one structure is reported, the remaining sections should be 
+# completed per structure. For each data set, replace the '?' in the
+# data_? line below by a unique identifier.
+ 
+data_TrigonalIn2S3                
+_database_code_depnum_ccdc_archive 'CCDC 1481752'
+_publcif_datablock.id '{807d0a0b-5d7c-4d00-8a12-d775cfa4925d}'
+ 
+#=============================================================================
+ 
+# 5. CHEMICAL DATA
+ 
+_chemical_name_systematic
+?
+_chemical_name_common             'Indium Sulphide'
+_chemical_formula_moiety          ?
+_chemical_formula_structural      ?
+_chemical_formula_analytical      ?
+_chemical_formula_iupac           'In2 S3'
+_chemical_formula_sum             'In1.95 S3'
+_chemical_formula_weight          319.85
+_chemical_melting_point           1323
+_chemical_compound_source         ?       # for minerals and 
+                                          # natural products
+ 
+loop_
+    _atom_type_symbol               
+    _atom_type_scat_Cromer_Mann_a1 
+    _atom_type_scat_Cromer_Mann_b1 
+    _atom_type_scat_Cromer_Mann_a2 
+    _atom_type_scat_Cromer_Mann_b2 
+    _atom_type_scat_Cromer_Mann_a3 
+    _atom_type_scat_Cromer_Mann_b3 
+    _atom_type_scat_Cromer_Mann_a4 
+    _atom_type_scat_Cromer_Mann_b4 
+    _atom_type_scat_Cromer_Mann_c 
+    _atom_type_scat_dispersion_real 
+    _atom_type_scat_dispersion_imag 
+    _atom_type_scat_source          
+in+3  19.10450   0.55152  18.11080   6.32470   3.78897  17.35950
+       0.00000   0.00000   4.99635  -0.19031   0.49307
+International_Tables_for_Crystallography_Vol.C(1991)_Tables_6.1.1.4_and_6.1.1.5
+s      6.90530   1.46790   5.20340  22.21510   1.43790   0.25360
+       1.58630  56.17200   0.86690  -0.02409   0.00416
+International_Tables_for_Crystallography_Vol.C(1991)_Tables_6.1.1.4_and_6.1.1.5
+ 
+#=============================================================================
+ 
+# 6. POWDER SPECIMEN AND CRYSTAL DATA
+ 
+_symmetry_cell_setting                Trigonal
+_symmetry_space_group_name_H-M       'P -3 m 1'
+_symmetry_space_group_name_Hall      '-P 3 2"'
+ 
+loop_
+    _symmetry_equiv_pos_as_xyz   #<--must include 'x,y,z'
+'x,y,z'
+'-y,x-y,z'
+'-x+y,-x,z'
+'-y,-x,z'
+'-x+y,y,z'
+'x,x-y,z'
+'-x,-y,-z'
+'y,-x+y,-z'
+'x-y,x,-z'
+'y,x,-z'
+'x-y,-y,-z'
+'-x,-x+y,-z'
+ 
+_cell_length_a                       3.86564(14)
+_cell_length_b                       3.86564(14)
+_cell_length_c                       9.1569(5)
+_cell_angle_alpha                    90.00000
+_cell_angle_beta                     90.00000
+_cell_angle_gamma                    120.00000
+_cell_volume                         118.501(9)
+_cell_formula_units_Z                1
+_cell_measurement_theta_min 	     0.05840
+_cell_measurement_theta_max 	     13.59750
+_cell_measurement_reflns_used	     55
+_cell_measurement_temperature        1099
+_cell_special_details
+?
+# The next three fields give the specimen dimensions in mm.  The equatorial
+# plane contains the incident and diffracted beam.
+ 
+_pd_spec_size_axial               ?       # perpendicular to 
+                                          # equatorial plane
+_pd_spec_size_equat               ?       # parallel to 
+                                          # scattering vector
+                                          # in transmission
+_pd_spec_size_thick               ?       # parallel to 
+                                          # scattering vector
+                                          # in reflection
+ 
+# The next five fields are character fields that describe the specimen.
+ 
+_pd_spec_mounting                         # This field should be
+                                          # used to give details of the 
+                                          # container.
+?
+_pd_spec_mount_mode               ?       # options are 'reflection'
+                                          # or 'transmission'
+_pd_spec_shape                    cylinder       # options are 'cylinder' 
+                                          # 'flat_sheet' or 'irregular'
+_pd_char_particle_morphology      ?
+_pd_char_colour                   ?       # use ICDD colour descriptions
+ 
+# The following three fields describe the preparation of the specimen.
+# The cooling rate is in K/min.  The pressure at which the sample was 
+# prepared is in kPa.  The temperature of preparation is in K.        
+ 
+_pd_prep_cool_rate                ?
+_pd_prep_pressure                 ?
+_pd_prep_temperature              ?
+ 
+# The next four fields are normally only needed for transmission experiments.
+ 
+_exptl_absorpt_coefficient_mu        ?
+_exptl_absorpt_correction_type       ?
+_exptl_absorpt_process_details       ?
+_exptl_absorpt_correction_T_min      ?
+_exptl_absorpt_correction_T_max      ?
+ 
+#=============================================================================
+ 
+# 7. EXPERIMENTAL DATA
+ 
+_exptl_special_details ?
+_exptl_crystal_colour colourless
+ 
+# The following item is used to identify the equipment used to record 
+# the powder pattern when the diffractogram was measured at a laboratory 
+# other than the authors' home institution, e.g. when neutron or synchrotron
+# radiation is used.
+ 
+_pd_instr_location
+'ESRF, Grenoble, France'
+_pd_calibration_special_details           # description of the method used
+                                          # to calibrate the instrument
+?
+ 
+_diffrn_ambient_temperature          1099
+_diffrn_source              'synchrotron radiation'  
+_diffrn_radiation_type      synchrotron
+_diffrn_source_target       ? # Put here the chemical symbol of the anode
+_diffrn_radiation_wavelength       0.14276 
+_diffrn_radiation_monochromator      ?
+_diffrn_measurement_device_type      'Beamline ID 15B at ESRF'
+_diffrn_measurement_method           ?
+_diffrn_detector_area_resol_mean     ? # Not in version 2.0.1
+_diffrn_detector                     Pixium4700
+_diffrn_detector_type                ? # make or model of detector
+_pd_meas_scan_method      ?   # options are 'step', 'cont',
+                              # 'tof', 'fixed' or
+                              # 'disp' (= dispersive)
+_pd_meas_special_details
+?
+ 
+#  The following four items give details of the measured (not processed)
+#  powder pattern.  Angles are in degrees.
+ 
+_pd_meas_number_of_points         1624
+_pd_meas_2theta_range_min         0.05840
+_pd_meas_2theta_range_max         13.59750
+_pd_meas_2theta_range_inc         0.008347
+ 
+#=============================================================================
+ 
+# 8. REFINEMENT DATA
+
+# The following R-factors are expressed in absolute values, not in percentage.
+# (The standard Fullprof output values have been divided by 100.) 
+ 
+_refine_special_details
+?
+ 
+# Use the next field to give any special details about the fitting of the
+# powder pattern.
+ 
+_pd_proc_ls_special_details
+?
+ 
+# The next three items are given as text.
+ 
+_pd_proc_ls_profile_function      ?
+_pd_proc_ls_background_function   ?
+_pd_proc_ls_pref_orient_corr
+?
+ 
+#  The following profile R-factors are NOT CORRECTED for background
+#  The sum is extended to all non-excluded points.
+#  These are the current CIF standard
+ 
+_pd_proc_ls_prof_R_factor                0.019462
+_pd_proc_ls_prof_wR_factor               0.030027
+_pd_proc_ls_prof_wR_expected             0.010013
+ 
+#  The following profile R-factors are CORRECTED for background
+#  The sum is extended to all non-excluded points.
+#  These items are not in the current CIF standard, but are defined above
+ 
+_pd_proc_ls_prof_cR_factor                0.075519
+_pd_proc_ls_prof_cwR_factor               0.071656
+_pd_proc_ls_prof_cwR_expected             0.023894
+ 
+#  The following items are not in the CIF standard, but are defined above
+ 
+_pd_proc_ls_prof_chi2                 8.9932
+_pd_proc_ls_prof_echi2               10.8652
+ 
+#  Items related to LS refinement
+ 
+_refine_ls_R_I_factor                 0.027529
+_refine_ls_number_reflns                   274
+_refine_ls_number_parameters                60
+_refine_ls_number_restraints                 0
+_refine_ls_goodness_of_fit_all 		3.302
+_refine_ls_shift/su_max 		0.002
+ 
+# The following four items apply to angular dispersive measurements.
+# 2theta minimum, maximum and increment (in degrees) are for the 
+# intensities used in the refinement.
+ 
+_pd_proc_2theta_range_min                0.0584
+_pd_proc_2theta_range_max               13.5975
+_pd_proc_2theta_range_inc              0.008347
+_pd_proc_wavelength                    0.142760
+ 
+_pd_block_diffractogram_id        ppins_113_10160_counts  
+                                     # The id used for the block containing
+                                     # the powder pattern profile (section 11)
+ 
+# Give appropriate details in the next two text fields.
+ 
+_pd_proc_info_excluded_regions    2
+_pd_proc_info_data_reduction      ?
+ 
+# The following items are used to identify the programs used.
+ 
+_computing_data_collection           ?
+_computing_structure_solution        ?
+_computing_structure_refinement      FULLPROF
+_computing_molecular_graphics        ?
+_computing_publication_material      ?
+ 
+#=============================================================================
+ 
+# 9. ATOMIC COORDINATES AND DISPLACEMENT PARAMETERS
+ 
+loop_
+    _atom_site_label
+    _atom_site_fract_x
+    _atom_site_fract_y
+    _atom_site_fract_z
+    _atom_site_U_iso_or_equiv
+    _atom_site_occupancy
+    _atom_site_type_symbol
+ S1  0.33333  0.66666  0.3359(7)  0.054(3)  1.00000   s   
+ S2  0.00000  0.00000  0.00000  0.091(5)  1.00000   s   
+ In1  0.33333  0.66666  0.8085(3)  0.0510(9)  0.829(10)   in
+ In2  0.33333  0.66666  0.6485(12)  0.064(6)  0.144(3)   in
+ 
+# Note: if the displacement parameters were refined anisotropically
+# the U matrices should be given as for single-crystal studies.
+ 
+#=============================================================================
+ 
+# 10. DISTANCES AND ANGLES / MOLECULAR GEOMETRY 
+ 
+_geom_special_details                ?
+ 
+loop_
+   _geom_bond_atom_site_label_1
+   _geom_bond_atom_site_label_2
+   _geom_bond_distance
+   _geom_bond_site_symmetry_2
+   _geom_bond_publ_flag
+S1    In1   2.594(4)      7_566 ?
+S1    In1   2.594(4)      7_666 ?
+S1    In1   2.594(4)      7_676 ?
+S1    In2   2.862(13)     1_555 ?
+S1    In2   2.2364(8)     7_566 ?
+S1    In2   2.2364(8)     7_666 ?
+S1    In2   2.2364(8)     7_676 ?
+S2    In1   2.8383(17)    1_444 ?
+S2    In1   2.8383(17)    1_544 ?
+S2    In1   2.8383(17)    1_554 ?
+S2    In1   2.8383(17)    7_556 ?
+S2    In1   2.8383(17)    7_566 ?
+S2    In1   2.8383(17)    7_666 ?
+In1   S1    2.594(4)      7_566 ?
+In1   S1    2.594(4)      7_666 ?
+In1   S1    2.594(4)      7_676 ?
+In1   S2    2.8383(17)    1_556 ?
+In1   S2    2.8383(17)    1_566 ?
+In1   S2    2.8383(17)    1_666 ?
+In1   In2   1.465(11)     1_555 ?
+In2   S1    2.862(13)     1_555 ?
+In2   S1    2.2364(8)     7_566 ?
+In2   S1    2.2364(8)     7_666 ?
+In2   S1    2.2364(8)     7_676 ?
+In2   In1   1.465(11)     1_555 ?
+
+loop_
+   _geom_angle_atom_site_label_1
+   _geom_angle_atom_site_label_2
+   _geom_angle_atom_site_label_3
+   _geom_angle
+   _geom_angle_site_symmetry_1
+   _geom_angle_site_symmetry_3
+   _geom_angle_publ_flag
+ In1  S1   In1   96.33(11)      7_566    7_666 ?
+ In1  S1   In1   96.33(11)      7_566    7_676 ?
+ In1  S1   In2   120.6(5)       7_566    1_555 ?
+ In1  S1   In2   117.51(18)     7_566    7_666 ?
+ In1  S1   In2   117.51(18)     7_566    7_676 ?
+ In1  S1   In1   96.33(11)      7_666    7_676 ?
+ In1  S1   In2   120.6(5)       7_666    1_555 ?
+ In1  S1   In2   117.51(18)     7_666    7_566 ?
+ In1  S1   In2   117.51(18)     7_666    7_676 ?
+ In1  S1   In2   120.6(5)       7_676    1_555 ?
+ In1  S1   In2   117.51(18)     7_676    7_566 ?
+ In1  S1   In2   117.51(18)     7_676    7_666 ?
+ In2  S1   In2   86.3(5)        1_555    7_566 ?
+ In2  S1   In2   86.3(5)        1_555    7_666 ?
+ In2  S1   In2   86.3(5)        1_555    7_676 ?
+ In2  S1   In2   119.60(3)      7_566    7_666 ?
+ In2  S1   In2   119.59(3)      7_566    7_676 ?
+ In2  S1   In2   119.59(3)      7_666    7_676 ?
+ In1  S2   In1   85.84(5)       1_444    1_544 ?
+ In1  S2   In1   85.84(5)       1_444    1_554 ?
+ In1  S2   In1   94.16(11)      1_444    7_556 ?
+ In1  S2   In1   94.16(11)      1_444    7_566 ?
+ In1  S2   In1   179.97(11)     1_444    7_666 ?
+ In1  S2   In1   85.84(5)       1_544    1_554 ?
+ In1  S2   In1   94.16(11)      1_544    7_556 ?
+ In1  S2   In1   179.97(11)     1_544    7_566 ?
+ In1  S2   In1   94.16(11)      1_544    7_666 ?
+ In1  S2   In1   179.97(11)     1_554    7_556 ?
+ In1  S2   In1   94.16(11)      1_554    7_566 ?
+ In1  S2   In1   94.16(11)      1_554    7_666 ?
+ In1  S2   In1   85.84(5)       7_556    7_566 ?
+ In1  S2   In1   85.84(5)       7_556    7_666 ?
+ In1  S2   In1   85.84(5)       7_566    7_666 ?
+ S1   In1  S1    96.33(11)      7_566    7_666 ?
+ S1   In1  S1    96.33(11)      7_566    7_676 ?
+ S1   In1  S2    88.66(18)      7_566    1_556 ?
+ S1   In1  S2    88.66(18)      7_566    1_566 ?
+ S1   In1  S2    172.49(18)     7_566    1_666 ?
+ S1   In1  In2   59.4(5)        7_566    1_555 ?
+ S1   In1  S1    96.33(11)      7_666    7_676 ?
+ S1   In1  S2    88.66(18)      7_666    1_556 ?
+ S1   In1  S2    172.49(18)     7_666    1_566 ?
+ S1   In1  S2    88.66(18)      7_666    1_666 ?
+ S1   In1  In2   59.4(5)        7_666    1_555 ?
+ S1   In1  S2    172.49(18)     7_676    1_556 ?
+ S1   In1  S2    88.66(18)      7_676    1_566 ?
+ S1   In1  S2    88.66(18)      7_676    1_666 ?
+ S1   In1  In2   59.4(5)        7_676    1_555 ?
+ S2   In1  S2    85.84(5)       1_556    1_566 ?
+ S2   In1  S2    85.84(5)       1_556    1_666 ?
+ S2   In1  In2   128.2(7)       1_556    1_555 ?
+ S2   In1  S2    85.84(5)       1_566    1_666 ?
+ S2   In1  In2   128.2(7)       1_566    1_555 ?
+ S2   In1  In2   128.2(7)       1_666    1_555 ?
+ S1   In2  S1    93.7(4)        1_555    7_566 ?
+ S1   In2  S1    93.7(4)        1_555    7_666 ?
+ S1   In2  S1    93.7(4)        1_555    7_676 ?
+ S1   In2  In1   180.0(7)       1_555    1_555 ?
+ S1   In2  S1    119.60(3)      7_566    7_666 ?
+ S1   In2  S1    119.59(3)      7_566    7_676 ?
+ S1   In2  In1   86.3(5)        7_566    1_555 ?
+ S1   In2  S1    119.59(3)      7_666    7_676 ?
+ S1   In2  In1   86.3(5)        7_666    1_555 ?
+ S1   In2  In1   86.3(5)        7_676    1_555 ?
+ 
+loop_
+_geom_torsion_atom_site_label_1 
+_geom_torsion_atom_site_label_2 
+_geom_torsion_atom_site_label_3 
+_geom_torsion_atom_site_label_4 
+_geom_torsion_site_symmetry_1   
+_geom_torsion_site_symmetry_2   
+_geom_torsion_site_symmetry_3   
+_geom_torsion_site_symmetry_4   
+_geom_torsion                   
+_geom_torsion_publ_flag         
+?   ?   ?   ?   ?   ?   ?   ?   ?   ?
+ 
+loop_
+_geom_hbond_atom_site_label_D 
+_geom_hbond_atom_site_label_H 
+_geom_hbond_atom_site_label_A 
+_geom_hbond_site_symmetry_D   
+_geom_hbond_site_symmetry_H   
+_geom_hbond_site_symmetry_A   
+_geom_hbond_distance_DH       
+_geom_hbond_distance_HA       
+_geom_hbond_distance_DA       
+_geom_hbond_angle_DHA         
+_geom_hbond_publ_flag         
+?   ?   ?   ?   ?   ?   ?   ?   ?   ?   ?
+ 
+#=============================================================================
+ 
+# start Validation Reply Form
+
+_vrf_PLAT077_trigonalIn2S3
+;
+PROBLEM: Unitcell contains non-integer number of atoms ..     Please Check
+RESPONSE: This is caused by the large amount of natural vacancies in this type
+ of structure. 
+;
+# end Validation Reply Form
+
+#=============================================================================
+# Additional structures (last six sections and associated data_? identifiers) 
+# may be added at this point.                                                 
+#=============================================================================
+ 
+# The following lines are used to test the character set of files sent by     
+# network email or other means. They are not part of the CIF data set.        
+# abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789              
+# !@#$%^&*()_+{}:"~<>?|\-=[];'`,./ 
+
+
+
