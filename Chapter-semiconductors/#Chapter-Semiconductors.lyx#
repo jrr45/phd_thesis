@@ -1428,6 +1428,18 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
+Avalanche breakdown starts when a strong enough electric field causes an
+ electron or hole to be propelled into an atom ionizing it.
+ The charges can be further propelled though the material ionizing more
+ and more atoms along the way.
+ This creates a runaway effect as the ions produce a channel for more current
+ and more free carriers.
+ Avalanche breakdown can occur in both semiconductors and insulators and
+ is usually irreversible as it forms a permiment conduction channel even
+ if the field is removed.
+\end_layout
+
+\begin_layout Standard
 As FET gate and channel contacts are within close proximity of each other,
  the electric fields produced by the gate will influence the channel contact
  junction behaviors.
@@ -1451,7 +1463,7 @@ something
 \end_layout
 
 \begin_layout Section
-temperature
+Temperature dependance
 \end_layout
 
 \begin_layout Standard

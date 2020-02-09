@@ -246,7 +246,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Figures/Schottky_barrier_no-contact2.svg
+	filename Figures/Schottky_barrier_no-contact3.svg
 	groupId metal-sc band
 
 \end_inset
@@ -287,7 +287,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Figures/Schottky_barrier_zero_bias2.svg
+	filename Figures/Schottky_barrier_zero_bias3.svg
 	groupId metal-sc band
 
 \end_inset
@@ -329,7 +329,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Figures/Schottky_barrier_forward_bias2.svg
+	filename Figures/Schottky_barrier_forward_bias3.svg
 	groupId metal-sc band
 
 \end_inset
@@ -367,7 +367,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Figures/Schottky_barrier_reverse_bias2.svg
+	filename Figures/Schottky_barrier_reverse_bias3.svg
 	groupId metal-sc band
 
 \end_inset
@@ -1428,6 +1428,21 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
+Avalanche breakdown starts when a strong enough electric field causes an
+ electron or hole to be propelled into an atom ionizing it and creating
+ a second free charge.
+ The charges can be further driven though the material ionizing more and
+ more atoms along the way.
+ This creates a runaway effect as the ions produce a conduction channel
+ for more current and more free carriers.
+ Avalanche breakdown can occur in both semiconductors and insulators and
+ is usually irreversible as it forms a permanent conduction medium even
+ after the field is removed.
+ The breakdown oftentimes damages the material as rapid heating arises with
+ the current.
+\end_layout
+
+\begin_layout Standard
 As FET gate and channel contacts are within close proximity of each other,
  the electric fields produced by the gate will influence the channel contact
  junction behaviors.
@@ -1451,7 +1466,7 @@ something
 \end_layout
 
 \begin_layout Section
-temperature
+Temperature dependance
 \end_layout
 
 \begin_layout Standard
