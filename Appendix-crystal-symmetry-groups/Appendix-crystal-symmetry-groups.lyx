@@ -5,7 +5,7 @@
 \save_transient_properties true
 \origin unavailable
 \textclass psuthesis
-\options phd
+\options bs,schreyer
 \use_default_options false
 \maintain_unincluded_children false
 \language english
@@ -84,28 +84,148 @@ status open
 
 \begin_layout Plain Layout
 
-% !TEX root = ../YourName-Dissertation.tex
+% !TEX root = ../JustinRodriguez-Dissertation.tex
 \end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Appendix
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+3D crystal symmetry groups
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "3D-crystal-symmetry"
 
 \end_inset
 
 
 \end_layout
 
-\begin_layout Chapter
-Ferroelectricity
-\end_layout
-
-\begin_layout Section
-This is a Section
-\end_layout
-
 \begin_layout Standard
-dd
+There are a total of 32 possible 3D crystal point groups.
+ The following table lists the groups and are colored according to related
+ phenomena:
 \end_layout
 
-\begin_layout Subsection
-A Table
+\begin_layout Itemize
+Pyroelectrics, possible ferroelectrics: 
+\color red
+1, 2, m, mm2, 3, 3m, 4, 4mm, 6, 6mm
+\end_layout
+
+\begin_layout Itemize
+Piezoelectrics only: 
+\color blue
+222, 
+\begin_inset Formula $\bar{4}$
+\end_inset
+
+, 422, 
+\begin_inset Formula $\bar{4}2\mathrm{m}$
+\end_inset
+
+, 32, 
+\begin_inset Formula $\bar{6}$
+\end_inset
+
+, 622, 
+\begin_inset Formula $\bar{6}\mathrm{m}2$
+\end_inset
+
+, 23, 
+\begin_inset Formula $\bar{4}3\mathrm{m}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Non-centrosymmetric and non-piezoelectric: 
+\color purple
+O
+\end_layout
+
+\begin_layout Itemize
+Centrosymmetric: 
+\begin_inset Formula $\bar{1}$
+\end_inset
+
+, 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+2/m
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+, mmm, 4/m, 4/mmm, 
+\begin_inset Formula $\bar{3}$
+\end_inset
+
+, 
+\begin_inset Formula $\bar{3}\mathrm{m}$
+\end_inset
+
+, 6/m, 6/mmm, m3, 
+\begin_inset Formula $\mathrm{m}\bar{3}\mathrm{m}$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -113,16 +233,16 @@ A Table
 
 \size footnotesize
 \begin_inset Tabular
-<lyxtabular version="3" rows="73" columns="6">
+<lyxtabular version="3" rows="74" columns="6">
 <features booktabs="true" islongtable="true" longtabularalignment="center">
-<column alignment="none" valignment="top" special="@{}l">
+<column alignment="left" valignment="top" width="0pt" special="@{}l">
 <column alignment="none" valignment="top" special="@{}l">
 <column alignment="left" valignment="top">
 <column alignment="left" valignment="top">
 <column alignment="none" valignment="top" special="l@{}">
 <column alignment="none" valignment="top" special="l@{}">
-<row endhead="true">
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -189,7 +309,7 @@ Space groups
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -251,7 +371,7 @@ Order
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -311,7 +431,7 @@ flies
 </cell>
 </row>
 <row>
-<cell multirow="3" alignment="none" valignment="middle" topline="true" leftline="true" usebox="none">
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -390,7 +510,7 @@ Triclinic
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" leftline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -465,7 +585,7 @@ Triclinic
 </cell>
 </row>
 <row>
-<cell multirow="3" alignment="none" valignment="middle" topline="true" leftline="true" usebox="none">
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -548,7 +668,7 @@ Monoclinic
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -610,7 +730,7 @@ Monoclinic
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" leftline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -691,7 +811,7 @@ m
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -757,7 +877,7 @@ m
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" leftline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -833,7 +953,7 @@ m
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -902,7 +1022,7 @@ m
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -963,7 +1083,7 @@ m
 </cell>
 </row>
 <row>
-<cell multirow="3" alignment="none" valignment="middle" topline="true" leftline="true" usebox="none">
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1054,7 +1174,7 @@ Orthorhombic
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1128,7 +1248,7 @@ Orthorhombic
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" leftline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1228,7 +1348,7 @@ Orthorhombic
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1302,7 +1422,7 @@ Orthorhombic
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1380,7 +1500,7 @@ Orthorhombic
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1446,7 +1566,7 @@ Orthorhombic
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1512,7 +1632,7 @@ Orthorhombic
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1582,7 +1702,7 @@ Orthorhombic
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" leftline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1674,7 +1794,7 @@ mmm
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1755,7 +1875,7 @@ mmm
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1828,7 +1948,7 @@ mmm
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1909,7 +2029,7 @@ mmm
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1974,7 +2094,7 @@ mmm
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2047,7 +2167,7 @@ mmm
 </cell>
 </row>
 <row>
-<cell multirow="3" alignment="none" valignment="middle" topline="true" leftline="true" usebox="none">
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2146,7 +2266,7 @@ Tetragonal
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" leftline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2230,7 +2350,7 @@ Tetragonal
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" leftline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2314,7 +2434,7 @@ Tetragonal
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2379,7 +2499,7 @@ Tetragonal
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" leftline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2472,7 +2592,7 @@ Tetragonal
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2542,7 +2662,7 @@ Tetragonal
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2608,7 +2728,7 @@ Tetragonal
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" leftline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2705,7 +2825,7 @@ Tetragonal
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2771,7 +2891,7 @@ Tetragonal
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2845,7 +2965,7 @@ Tetragonal
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" leftline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2945,7 +3065,7 @@ Tetragonal
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3011,7 +3131,7 @@ Tetragonal
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3085,7 +3205,7 @@ Tetragonal
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" leftline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3169,7 +3289,7 @@ Tetragonal
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3242,7 +3362,7 @@ Tetragonal
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3315,7 +3435,7 @@ Tetragonal
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3388,7 +3508,7 @@ Tetragonal
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3461,7 +3581,7 @@ Tetragonal
 </cell>
 </row>
 <row>
-<cell multirow="3" alignment="none" valignment="middle" topline="true" leftline="true" usebox="none">
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3548,7 +3668,7 @@ Trigonal
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3610,7 +3730,7 @@ Trigonal
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3689,7 +3809,7 @@ Trigonal
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3786,7 +3906,7 @@ Trigonal
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3848,7 +3968,7 @@ Trigonal
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3937,7 +4057,7 @@ Trigonal
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4003,7 +4123,7 @@ Trigonal
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4090,7 +4210,7 @@ m
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4155,7 +4275,7 @@ m
 </cell>
 </row>
 <row>
-<cell multirow="3" alignment="none" valignment="middle" topline="true" leftline="true" usebox="none">
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4254,7 +4374,7 @@ Hexagonal
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4334,7 +4454,7 @@ Hexagonal
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4410,7 +4530,7 @@ Hexagonal
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4503,7 +4623,7 @@ Hexagonal
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4565,7 +4685,7 @@ Hexagonal
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4654,7 +4774,7 @@ Hexagonal
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4746,7 +4866,7 @@ Hexagonal
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4830,7 +4950,7 @@ Hexagonal
 </cell>
 </row>
 <row>
-<cell multirow="3" alignment="none" valignment="middle" topline="true" leftline="true" usebox="none">
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4917,7 +5037,7 @@ Cubic
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4983,7 +5103,7 @@ Cubic
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5082,7 +5202,7 @@ Cubic
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5163,7 +5283,7 @@ Cubic
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5229,7 +5349,7 @@ Cubic
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5291,7 +5411,7 @@ Cubic
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5361,7 +5481,7 @@ Cubic
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5449,7 +5569,7 @@ Cubic
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5519,7 +5639,7 @@ Cubic
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5606,7 +5726,7 @@ Cubic
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5679,7 +5799,7 @@ Cubic
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5743,25 +5863,15 @@ Cubic
 \end_inset
 </cell>
 </row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float table
-placement H
-wide false
-sideways false
-status open
+<row endfirsthead="true" caption="true">
+<cell multicolumn="1" alignment="left" valignment="top" usebox="none">
+\begin_inset Text
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Crystal classes
+3D crystal classes
 \begin_inset CommandInset citation
 LatexCommand cite
 key "shi2016symmetry"
@@ -5777,89 +5887,55 @@ literal "true"
 
 \end_layout
 
-\begin_layout Itemize
-Pyroelectrics, possible ferroelectrics: 
-\color red
-1, 2, m, mm2, 3, 3m, 4, 4mm, 6, 6mm
-\end_layout
-
-\begin_layout Itemize
-Piezoelectrics only: 
-\color blue
-222, 
-\begin_inset Formula $\bar{4}$
 \end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
 
-, 422, 
-\begin_inset Formula $\bar{4}2\mathrm{m}$
-\end_inset
-
-, 32, 
-\begin_inset Formula $\bar{6}$
-\end_inset
-
-, 622, 
-\begin_inset Formula $\bar{6}\mathrm{m}2$
-\end_inset
-
-, 23, 
-\begin_inset Formula $\bar{4}3\mathrm{m}$
-\end_inset
-
+\begin_layout Plain Layout
 
 \end_layout
 
-\begin_layout Itemize
-Non-centrosymmetric and non-piezoelectric: 
-\color purple
-O
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
 \end_layout
 
-\begin_layout Itemize
-Centrosymmetric: 
-\begin_inset Formula $\bar{1}$
 \end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
 
-, 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
-2/m
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\xout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-, mmm, 4/m, 4/mmm, 
-\begin_inset Formula $\bar{3}$
-\end_inset
-
-, 
-\begin_inset Formula $\bar{3}\mathrm{m}$
-\end_inset
-
-, 6/m, 6/mmm, m3, 
-\begin_inset Formula $\mathrm{m}\bar{3}\mathrm{m}$
-\end_inset
-
+\begin_layout Plain Layout
 
 \end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
 
 \end_inset
 

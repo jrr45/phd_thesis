@@ -84,7 +84,7 @@ status open
 
 \begin_layout Plain Layout
 
-% !TEX root = ../YourName-Dissertation.tex
+% !TEX root = ../../JustinRodriguez-Dissertation.tex
 \end_layout
 
 \end_inset
@@ -92,20 +92,53 @@ status open
 
 \end_layout
 
-\begin_layout Chapter
+\begin_layout Section
 Ferroelectricity
 \end_layout
 
-\begin_layout Section
-This is a Section
-\end_layout
-
 \begin_layout Standard
-dd
+introduction blather on here
 \end_layout
 
 \begin_layout Subsection
-A Table
+Piezoelectricity and pyroelectricity
+\end_layout
+
+\begin_layout Standard
+Piezoelectricity and pyroelectricity arise from non-linear behaviors in
+ crystal structures.
+ 
+\end_layout
+
+\begin_layout Standard
+In pyroelectricity crystal polarization is conjoined with changes in temperature.
+ If we heat or cool a pyroelectric crystal, the crystal structure is altered
+ slightly allowing it to spontaneously polarize, or if already polarized,
+ change to a new polarization fitting the new atom placement.
+ This polarization produces a voltage across the bulk of the crystal, providing
+ a method to measure this change and thus the changing temperature that
+ drove the re-polarization.
+ After the temperature is fixed the voltage will generally dissipate though
+ leakage currents.
+ This makes pyroelectrics suitable for changing measurements like thermal
+ imaging cameras and energy generation, but poor for managing persistent
+ states in modern digital electronics.
+\end_layout
+
+\begin_layout Itemize
+Crystal structure
+\end_layout
+
+\begin_layout Itemize
+strain
+\end_layout
+
+\begin_layout Itemize
+heat
+\end_layout
+
+\begin_layout Subsection
+3D crystal symmetry groups
 \end_layout
 
 \begin_layout Standard

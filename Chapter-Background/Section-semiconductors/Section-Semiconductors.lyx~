@@ -84,7 +84,7 @@ status open
 
 \begin_layout Plain Layout
 
-% !TEX root = ../YourName-Dissertation.tex
+% !TEX root = ../../JustinRodriguez-Dissertation.tex
 \end_layout
 
 \end_inset
@@ -92,12 +92,8 @@ status open
 
 \end_layout
 
-\begin_layout Chapter
-Semiconductors
-\end_layout
-
 \begin_layout Section
-Introduction
+Semiconductors
 \end_layout
 
 \begin_layout Standard
@@ -119,8 +115,15 @@ Semiconductors, as their name implies, are characterized by their decreased
 ns in just about every area of modern electronics.
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Metal-Semiconductor-Metal conduction
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Metal-Semiconductor-Metal-conduc"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -246,7 +249,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Figures/Schottky_barrier_no-contact3.svg
+	filename Semiconductor-Figures/Schottky_barrier_no-contact3.svg
 	groupId metal-sc band
 
 \end_inset
@@ -287,7 +290,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Figures/Schottky_barrier_zero_bias3.svg
+	filename Semiconductor-Figures/Schottky_barrier_zero_bias3.svg
 	groupId metal-sc band
 
 \end_inset
@@ -329,7 +332,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Figures/Schottky_barrier_forward_bias3.svg
+	filename Semiconductor-Figures/Schottky_barrier_forward_bias3.svg
 	groupId metal-sc band
 
 \end_inset
@@ -367,7 +370,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Figures/Schottky_barrier_reverse_bias3.svg
+	filename Semiconductor-Figures/Schottky_barrier_reverse_bias3.svg
 	groupId metal-sc band
 
 \end_inset
@@ -748,7 +751,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Figures/Ohmic.svg
+	filename Semiconductor-Figures/Ohmic.svg
 	width 4cm
 	groupId IV curves
 
@@ -790,7 +793,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Figures/SchottkyDiode_linear.svg
+	filename Semiconductor-Figures/SchottkyDiode_linear.svg
 	width 4cm
 	groupId IV curves
 
@@ -832,7 +835,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Figures/SchottkyDiode_log.svg
+	filename Semiconductor-Figures/SchottkyDiode_log.svg
 	width 4cm
 	groupId IV curves
 
@@ -874,7 +877,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Figures/MScM_diagram.svg
+	filename Semiconductor-Figures/MScM_diagram.svg
 	width 4cm
 	groupId IV curves
 
@@ -909,7 +912,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Figures/MetalSCMetal_linear.svg
+	filename Semiconductor-Figures/MetalSCMetal_linear.svg
 	width 4cm
 	groupId IV curves
 
@@ -951,7 +954,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Figures/MetalSCMetal_log.svg
+	filename Semiconductor-Figures/MetalSCMetal_log.svg
 	width 4cm
 	groupId IV curves
 
@@ -1048,8 +1051,15 @@ This non-linear behavior must be taken into account for any electronic transport
  
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Field effect transistors
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Field-effect-transistors"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1182,7 +1192,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Figures/JFET v2.svg
+	filename Semiconductor-Figures/JFET v2.svg
 	width 2.8in
 	groupId FET
 
@@ -1220,7 +1230,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Figures/MOSFET v2.svg
+	filename Semiconductor-Figures/MOSFET v2.svg
 	width 2.8in
 	groupId FET
 
@@ -1261,7 +1271,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Figures/FET types.svg
+	filename Semiconductor-Figures/FET types.svg
 	width 2.8in
 	groupId FET
 
@@ -1299,7 +1309,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Figures/FET behavior.svg
+	filename Semiconductor-Figures/FET behavior.svg
 	width 2.8in
 	groupId FET
 
@@ -1429,14 +1439,17 @@ literal "false"
 
 \begin_layout Standard
 Avalanche breakdown starts when a strong enough electric field causes an
- electron or hole to be propelled into an atom ionizing it.
- The charges can be further propelled though the material ionizing more
- and more atoms along the way.
- This creates a runaway effect as the ions produce a channel for more current
- and more free carriers.
+ electron or hole to be propelled into an atom ionizing it and creating
+ a second free charge.
+ The charges can be further driven though the material ionizing more and
+ more atoms along the way.
+ This creates a runaway effect as the ions produce a conduction channel
+ for more current and more free carriers.
  Avalanche breakdown can occur in both semiconductors and insulators and
- is usually irreversible as it forms a permiment conduction channel even
- if the field is removed.
+ is usually irreversible as it forms a permanent conduction medium even
+ after the field is removed.
+ The breakdown oftentimes damages the material as rapid heating arises with
+ the current.
 \end_layout
 
 \begin_layout Standard
@@ -1454,16 +1467,8 @@ As FET gate and channel contacts are within close proximity of each other,
  
 \end_layout
 
-\begin_layout Section
-Dialectic breakdown
-\end_layout
-
-\begin_layout Standard
-something
-\end_layout
-
-\begin_layout Section
-Temperature dependance
+\begin_layout Subsection
+Temperature dependence
 \end_layout
 
 \begin_layout Standard

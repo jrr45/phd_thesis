@@ -9,23 +9,23 @@
 % !TEX TS-program = pdflatex
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-%     filename  = "YourName-Dissertation.tex",
-%     version   = "1.6.5",
-%     date      = "2019/07/10",
-%     authors   = "Gary L. Gray,
-%     copyright = "Gary L. Gray",
-%     address   = "Engineering Science and Mechanics,
-%                  212 Earth & Engineering Sciences Bldg.,
+%     filename  = "JustinRodriguez-Dissertation.tex",
+%     version   = "1.0.0",
+%     date      = "",
+%     authors   = "Justin R. Rodriguez,
+%     copyright = "Justin R. Rodriguez",
+%     address   = "Physics,
+%                  104 Davey Lab,
 %                  Penn State University,
 %                  University Park, PA 16802,
 %                  USA",
-%     telephone = "814-863-1778",
-%     email     = "gray@psu.edu",
+%     telephone = "3153788064",
+%     email     = "jrr330@psu.edu",
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Change History:
 % The change history can be found in the accompanying document
-% entitled "YourName-Dissertation Template Change History.md".
+% entitled "JustinRodriguez-Dissertation Template Change History.md".
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 % This is a template file to help get you started using the
@@ -951,42 +951,7 @@ fancyhead{}
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
-filename "Chapter-1/Chapter-1.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand include
-filename "Chapter-semiconductors/Chapter-Semiconductors.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-chapter 1 FE? 2D somewhere? (probably semiconductors) roll FE and semiconductors
- into one chapter?
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand include
-filename "Chapter-ferroelectrics/Chapter-ferroelectrics.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand include
-filename "Chapter-In-Se/Chapter-In-Se.lyx"
+filename "Chapter-Background/Chapter-Background.lyx"
 
 \end_inset
 
@@ -1041,39 +1006,11 @@ raisebox{3pt}{|}}}{0pt}{}{}
 \family sans
 \begin_inset CommandInset include
 LatexCommand include
-filename "Appendix-A/Appendix-A.lyx"
+filename "Appendix-crystal-symmetry-groups/Appendix-crystal-symmetry-groups.lyx"
 
 \end_inset
 
  
-\begin_inset CommandInset include
-LatexCommand include
-filename "Appendix-B/Appendix-B.lyx"
-
-\end_inset
-
- 
-\begin_inset CommandInset include
-LatexCommand include
-filename "Appendix-C/Appendix-C.lyx"
-
-\end_inset
-
- 
-\begin_inset CommandInset include
-LatexCommand include
-filename "Appendix-D/Appendix-D.lyx"
-
-\end_inset
-
- 
-\begin_inset CommandInset include
-LatexCommand include
-filename "Appendix-E/Appendix-E.lyx"
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard

@@ -84,7 +84,7 @@ status open
 
 \begin_layout Plain Layout
 
-% !TEX root = ../YourName-Dissertation.tex
+% !TEX root = ../JustinRodriguez-Dissertation.tex
 \end_layout
 
 \end_inset
@@ -93,90 +93,47 @@ status open
 \end_layout
 
 \begin_layout Chapter
-Ferroelectricity
-\end_layout
-
-\begin_layout Standard
+Background
 \begin_inset CommandInset label
 LatexCommand label
-name "chapter1:introduction"
+name "chapter1:Background"
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Section
-This is a Section
-\end_layout
-
-\begin_layout Subsection
-A Table
-\end_layout
-
-\begin_layout Subsection
-This is a Subsection
-\end_layout
-
-\begin_layout Subsection
-Some Equations
-\end_layout
-
-\begin_layout Section
-More Declaration
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float table
-wide true
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Float table
-wide true
-sideways false
-status open
-
-\begin_layout Plain Layout
-ss
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-df
-\end_layout
+\begin_inset CommandInset include
+LatexCommand include
+filename "Section-semiconductors/Section-Semiconductors.lyx"
 
 \end_inset
 
 
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-dd
-\end_layout
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "Section-ferroelectrics/Section-ferroelectrics.lyx"
 
 \end_inset
 
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "Section-In-Se/Section-In-Se.lyx"
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Standard
 
 \end_layout
 
