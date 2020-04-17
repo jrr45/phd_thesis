@@ -105,7 +105,7 @@
 \usepackage{eqlist}% Makes for a nice list of symbols.
 \usepackage[nosepfour,warning,np,debug,autolanguage]{numprint}
 \usepackage{acro}
-\usepackage[dvipsnames]{color}
+%\usepackage[dvipsnames]{color} - reenable if you need more colors
 \DeclareGraphicsExtensions{.pdf, .jpg}
 
 \usepackage{url}

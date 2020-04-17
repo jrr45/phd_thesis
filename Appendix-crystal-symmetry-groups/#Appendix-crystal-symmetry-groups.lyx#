@@ -4954,24 +4954,36 @@ Hexagonal
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\size footnotesize
-Cubic
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
 
 \backslash
-linebreak
-\backslash
-linebreak
+hspace{0pt}
 \end_layout
 
 \end_inset
 
 
+\size footnotesize
+Cubic 
+\size default
+multiple
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+linebreak 
+\end_layout
+
+\end_inset
+
+ lines
 \end_layout
 
 \end_inset

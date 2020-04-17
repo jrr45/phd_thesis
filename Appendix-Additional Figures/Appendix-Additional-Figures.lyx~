@@ -5,8 +5,20 @@
 \save_transient_properties true
 \origin unavailable
 \textclass psuthesis
-\options phd
+\options bs,schreyer
 \use_default_options false
+\begin_includeonly
+Chapter-1/Chapter-1.lyx
+Chapter-2/Chapter-2.lyx
+Chapter-3/Chapter-3.lyx
+Chapter-4/Chapter-4.lyx
+Chapter-5/Chapter-5.lyx
+Appendix-A/Appendix-A.lyx
+Appendix-B/Appendix-B.lyx
+Appendix-C/Appendix-C.lyx
+Appendix-D/Appendix-D.lyx
+Appendix-E/Appendix-E.lyx
+\end_includeonly
 \maintain_unincluded_children false
 \language english
 \language_package none
@@ -80,11 +92,50 @@
 
 \begin_layout Standard
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
-% !TEX root = ../JustinRodriguez-Dissertation.tex
+% !TEX root = ../YourName-Dissertation.tex
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+Appendix
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+Additional Figures
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
 \end_layout
 
 \end_inset
@@ -92,48 +143,62 @@ status open
 
 \end_layout
 
-\begin_layout Chapter
-Background
+\begin_layout Section
+FeFET
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../Chapter-Background/Section-ferroelectrics/Ferroelectrics-Figures/FeFET Band diagram 3D.svg
+	width 6in
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+3D band diagram of a FeFET
 \begin_inset CommandInset label
 LatexCommand label
-name "chapter1:Background"
+name "fig:3D-band-diagram"
 
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand include
-filename "Section-semiconductors/Section-Semiconductors.lyx"
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+3D energy band diagram of the gate-ferroelectric-channel, with the source
+ and drain included, extension of figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:3D-band-diagram"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand include
-filename "Section-ferroelectrics/Section-ferroelectrics.lyx"
-
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand include
-filename "Section-In-Se/Section-In-Se.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 
 \end_layout
 
