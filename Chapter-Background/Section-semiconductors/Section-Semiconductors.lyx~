@@ -494,8 +494,9 @@ noprefix "false"
 \end_layout
 
 \begin_layout Plain Layout
-FIXME: change font in figure.
- Add in boundry
+TODO FIXME: change font in figure.
+ Add in boundary layer.
+ Match with FTJ and FeFET
 \end_layout
 
 \end_inset
@@ -1497,16 +1498,28 @@ As FET gate and channel contacts are within close proximity of each other,
  a mix of bulk and contact characteristics.
 \end_layout
 
+\begin_layout Subsubsection
+Band Bending
+\end_layout
+
 \begin_layout Standard
 TODO: MOSFET band bending?
 \end_layout
 
-\begin_layout Subsection
-Charge trapping
+\begin_layout Subsubsection
+Hysteresis in 2D FETs
 \end_layout
 
 \begin_layout Standard
-something
+TODO
+\end_layout
+
+\begin_layout Subsection
+weak localization
+\end_layout
+
+\begin_layout Standard
+TODO
 \end_layout
 
 \end_body

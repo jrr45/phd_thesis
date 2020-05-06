@@ -107,9 +107,9 @@ Ferroelectric crystals will spontaneously polarize when below a critical
 \begin_inset Formula $T_{C}$
 \end_inset
 
- atom locations will create naturally occurring dipoles as they shift to
- find the lowest overall energy state, sacrificing local electrostatic homogenei
-ty to do so.
+ atoms will create naturally occurring dipoles as they shift to find the
+ lowest overall energy state, sacrificing local electrostatic homogeneity
+ to do so.
  At higher temperatures the atoms have more energy and space and generally
  prefer neutrality, forming a paraelectric material instead.
  When a ferroelectric is exposed to an electric field the dipoles shift
@@ -117,9 +117,9 @@ ty to do so.
  is removed.
  Paraelectric materials may form similar dipoles under the electric field
  but will return to their unpolarized state when the field is removed.
- Ferroelectrics have many applications, as the polarization can be used
- to enhance capacitors, hold a persistent electronic configuration, or modify
- other device properties.
+ Ferroelectrics have many practical applications, as the polarization can
+ be used to enhance capacitors as a dielectric, hold a persistent electronic
+ state, or modify other device properties.
 \end_layout
 
 \begin_layout Subsection
@@ -128,7 +128,7 @@ Piezoelectricity and pyroelectricity
 
 \begin_layout Standard
 Piezoelectricity and pyroelectricity arise from non-linear behaviors in
- crystal structures.
+ crystal structures
 \begin_inset CommandInset citation
 LatexCommand cite
 key "bain2017ferroelectrics"
@@ -136,6 +136,7 @@ literal "true"
 
 \end_inset
 
+.
  There are 32 crystal classes that make up 3D crystals.
  Of those 21 are non-centrosymmetric, and 20 of the non-centrosymmetric
  groups form piezoelectric materials.
@@ -170,7 +171,7 @@ In piezoelectric crystals, mechanical motion and polarization are bound
  materials to displace, and provided they are aligned, alter the the crystal
  size and shape.
  This has wide applications, giving rise to rapid, precise electric motors
- and sensors used throughout modern society.
+ and sensors used throughout modern society
 \begin_inset CommandInset citation
 LatexCommand cite
 key "bain2017ferroelectrics"
@@ -178,11 +179,12 @@ literal "true"
 
 \end_inset
 
+.
  
 \end_layout
 
 \begin_layout Standard
-In pyroelectricity crystal polarization is conjoined with changes in temperature.
+In pyroelectricity crystal polarization is conjoined with changes in temperature
 \begin_inset CommandInset citation
 LatexCommand cite
 key "liu2018mechanisms,bain2017ferroelectrics"
@@ -190,6 +192,7 @@ literal "true"
 
 \end_inset
 
+.
  If we heat or cool a pyroelectric crystal, the crystal structure is altered
  slightly allowing it to spontaneous polarize, or if already polarized,
  change to a new polarization fitting the new atom placement.
@@ -200,7 +203,7 @@ literal "true"
  leakage currents.
  This makes pyroelectrics suitable for changing measurements like thermal
  imaging cameras and energy generation, but poor for managing persistent
- states in modern digital electronics.
+ states in modern digital electronics
 \begin_inset CommandInset citation
 LatexCommand cite
 key "bain2017ferroelectrics"
@@ -208,27 +211,385 @@ literal "true"
 
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Subsection
 Domains and polarization
 \end_layout
 
-\begin_layout Itemize
-P-E diagram
+\begin_layout Standard
+A ferroelectric provides a stable arrangement of dipoles that can be measured
+ to provide an overall polarization of the material.
+ Polarization 
+\begin_inset Formula $\vec{P}$
+\end_inset
+
+ is the dipole moment per unit volume, in SI-units as Coulombs per square-meter
+ (
+\begin_inset Formula $C/m^{2}$
+\end_inset
+
+).
+ The majority of known ferroelectrics are insulating, limiting the movement
+ of charge within the materials.
+ Dipoles in a ferroelectric can have several different origins that depend
+ on the elements and chemical bonds that make up the material.
+ Electronic polarization comes from the electron cloud shifting around an
+ atom so that local charge density forms a positive region around the nucleus
+ and negative with the electron cloud.
+ As electrons are very light this response is quite fast 
+\begin_inset Formula $\sim10^{15}\,Hz$
+\end_inset
+
+.
+ Ionic polarization occurs when cations and anions displace slightly within
+ the crystal to form dipoles.
+ As the nucleus of the atom is much heavier this response is slower, on
+ the order of 
+\begin_inset Formula $\sim10^{13}\,Hz$
+\end_inset
+
+.
+ Polarized molecules may also rotate within a material to align with the
+ field, known as orientation polarization.
+ This is much slower, 
+\begin_inset Formula $\sim10^{7}-10^{9}\,Hz$
+\end_inset
+
+, as the larger molecule is again heavier and the competing forces within
+ the material may limit the motion of the dipole.
+ Lastly, space charge polarization takes place when ions move though multiple
+ crystal layers to create positive and negative crystal regions, 
+\begin_inset Formula $\sim10^{4}\,Hz$
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "bain2017ferroelectrics"
+literal "true"
+
+\end_inset
+
+.
+ The rate of the dipole movement can be used to characterize the type of
+ dipole in a material and may limit a materials use in high speed electronics.
 \end_layout
 
-\begin_layout Itemize
-figures here, paraelectric, dielectric, resistor? Domains?
+\begin_layout Standard
+As an external electric field is increased the dipoles will move to align
+ with the electric field to minimize the energy of the system.
+ The minimum may include different regions of the materials with different
+ dipole alignments, known as domains.
+ These domains often are formed at the defects in crystals such as a lattice
+ mismatch or missing atom, and the dipole walls are typically atomically
+ sharp as there are limited possible dipole configurations.
+ For a crystal with all dipoles aligned in a single direction, an increasing
+ opposing electric field will eventually make a dipole switch.
+ From there the domain will begin to nucleate around the original dipole
+ as the electric field continues to increase.
+ This can persist until all the dipoles are aligned in a single direction,
+ forming the maximum polarization of the material.
+ This is the spontaneous polarization 
+\begin_inset Formula $P_{s}$
+\end_inset
+
+, and occurs at 
+\begin_inset Formula $E_{s}$
+\end_inset
+
+.
+ A polarized material has excess surface charge on the opposing sides of
+ the material.
+ These charges serve to lessen the field within the material as they produce
+ an electric field within the opposite direction, known as the depolarization
+ field.
+ The depolarization field will cause the dipoles to reorient as thermal
+ fluctuations let the dipoles to find new local energy minimums.
+ As the electric field is reduced to 0 from 
+\begin_inset Formula $\pm\vec{E}_{s}$
+\end_inset
+
+ the depolarization field will force some domains to flip directions, but
+ a finite amount will still remain polarized in the original direction as
+ the remnant polarization 
+\begin_inset Formula $\vec{P}_{r}$
+\end_inset
+
+.
+ It is this polarization that gives ferroelectric many uses in low power
+ electronics.
 \end_layout
 
-\begin_layout Itemize
-Depolarization field, Fatigue
+\begin_layout Standard
+One important characteristic in determining whether a crystal is ferroelectric
+ is the transition to paraelectric above the Curie temperature.
+ Above 
+\begin_inset Formula $T_{C}$
+\end_inset
+
+ the temperature fluctuations are enough to destroy any preference the electric
+ charges to remain in a non-neutral configuration.
+ An external electric field may still polarize charges but they will return
+ to electrically neutral when the field is removed.
+ From an energy perspective, two or more local minimums appear for the dipole
+ charges that are offset from each other as seen in figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Polarization-Energy-vs-Electric"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Switching the polarization direction requires the electric field must be
+ large enough to overcome this energy barrier, known as the coercive field
+ strength 
+\begin_inset Formula $\vec{E}_{c}$
+\end_inset
+
+.
+ Figures 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Polarization-Paraelectric-electric field-vs"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Polarization-Ferroelectric-electric-field-vs"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ show the respective polarization vs electric field behavior for a paraelectric
+ and ferroelectric dielectric.
+ 
+\end_layout
+
+\begin_layout Standard
+TODO: Landau free energy instead
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Ferroelectrics-Figures/Polarization Energy vs Electric Potential.svg
+	groupId polarization
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Energy vs Electric field
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Polarization-Energy-vs-Electric"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Ferroelectrics-Figures/Polarization Paraelectric rotated.svg
+	groupId polarization
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Paraelectric polarization vs electric field
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Polarization-Paraelectric-electric field-vs"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Ferroelectrics-Figures/Polarization Ferroelectric rotated.svg
+	groupId polarization
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Ferroelectric polarization vs electric field
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Polarization-Ferroelectric-electric-field-vs"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Polarization
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+(a) Energy vs electric field of a paraelectric and ferroelectric dielectric.
+ Polarization vs electric field for a (b) paraelectric and (c) ferroelectric.
+ 
+\begin_inset Formula $\vec{E}_{c}$
+\end_inset
+
+, 
+\begin_inset Formula $\vec{E}_{s}$
+\end_inset
+
+, 
+\begin_inset Formula $\vec{P}_{s}$
+\end_inset
+
+, and 
+\begin_inset Formula $\vec{P}_{r}$
+\end_inset
+
+ are the coercive electric field, spontaneous electric field, spontaneous
+ polarization, and remnant polarization.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+One of the largest hindrances to ferroelectrics in many applications is
+ the susceptibility of ferroelectric films to aging and fatigue.
+ Aging is the slow changing of a material's characteristics over time, while
+ fatigue takes place under high electric field.
+ Both take multiple forms and can have similar effects, though the mechanisms
+ are still areas of active research
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ievlev2019nonconventional"
+literal "true"
+
+\end_inset
+
+.
+ Crystals may switch to another phase so that the overall stoichiometry
+ does not differ but the elements shift to form a new space group that has
+ a different remnant and spontaneous polarizations.
+ Ionic dipoles can form within a crystal that provide a counter electric
+ field within the material or rotate slowly to depolarize.
+ Charged ions, vacancies, or electrons may diffuse though the crystal and
+ later become pinned at domain walls, grain boundaries, or interfaces between
+ materials
+\begin_inset CommandInset citation
+LatexCommand cite
+key "genenko2015mechanisms"
+literal "true"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsection
-Ferroelectric field-effect transistor (FeFET)
+Ferroelectric field-effect transistors (FeFETs)
 \end_layout
 
 \begin_layout Standard
@@ -272,7 +633,7 @@ off.
  power devices, reducing active energy consumption or possibly allowing
  electronics to turn on without a lengthy start.
  FeFETs also offer the possibility of faster switching than traditional
- capacitor-based RAM.
+ capacitor-based RAM
 \begin_inset CommandInset citation
 LatexCommand cite
 key "park2020ferroelectricgate"
@@ -280,7 +641,7 @@ literal "true"
 
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Standard
@@ -392,7 +753,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Ferroelectrics-Figures/FeFET Band diagram accumulation.svg
+	filename Ferroelectrics-Figures/FeFET Band diagram Hold ON.svg
 
 \end_inset
 
@@ -407,14 +768,14 @@ Channel accumulation
 \begin_inset Quotes eld
 \end_inset
 
-ON
+Hold ON
 \begin_inset Quotes erd
 \end_inset
 
 
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:FeFET-channel-accumulation"
+name "fig:FeFET-Hold-ON"
 
 \end_inset
 
@@ -444,7 +805,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Ferroelectrics-Figures/FeFET Band diagram depletion.svg
+	filename Ferroelectrics-Figures/FeFET Band diagram Write ON.svg
 
 \end_inset
 
@@ -459,14 +820,14 @@ Channel depletion
 \begin_inset Quotes eld
 \end_inset
 
-OFF
+Write ON
 \begin_inset Quotes erd
 \end_inset
 
 
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:FeFET-channel-depletion"
+name "fig:FeFET-Write-ON"
 
 \end_inset
 
@@ -481,10 +842,114 @@ name "fig:FeFET-channel-depletion"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Ferroelectrics-Figures/FeFET Band diagram Write OFF.svg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-FeFET
+Channel accumulation 
+\begin_inset Quotes eld
+\end_inset
+
+Write OFF
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:FeFET-channel-Write-OFF"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Ferroelectrics-Figures/FeFET Band diagram Hold OFF.svg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Channel depletion 
+\begin_inset Quotes eld
+\end_inset
+
+Hold OFF
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:FeFET-channel-Hold-OFF"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Ferroelectric field effect transistors
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:FeFET"
@@ -506,7 +971,39 @@ name "fig:FeFET"
  from negative to positive and back, a typical FET dielectric response without
  the ferroelectric deviation is shown in the center.
  Simplified energy band diagram of the gate-ferroelectric-channel matching
- the cross section in (a) for channel accumulation (c) and depletion (d).
+ the cross section in (a) for 
+\begin_inset Quotes eld
+\end_inset
+
+hold ON
+\begin_inset Quotes erd
+\end_inset
+
+ (c), 
+\begin_inset Quotes eld
+\end_inset
+
+write ON
+\begin_inset Quotes erd
+\end_inset
+
+ (d), 
+\begin_inset Quotes eld
+\end_inset
+
+write OFF
+\begin_inset Quotes erd
+\end_inset
+
+ (e), and 
+\begin_inset Quotes eld
+\end_inset
+
+hold OFF
+\begin_inset Quotes erd
+\end_inset
+
+ (f) stages of the FeFET show in (b).
  
 \begin_inset Formula $E_{F}$
 \end_inset
@@ -555,7 +1052,7 @@ on
 
  state of the creates an electric field across the ferroelectric.
  The electric field increases the carrier concentration within the semiconductin
-g layer, forming a channel between the source and drain contacts.
+g layer, forming a channel between the source and drain contacts
 \begin_inset CommandInset citation
 LatexCommand cite
 key "georgiou2018ferroelectricity"
@@ -563,12 +1060,13 @@ literal "true"
 
 \end_inset
 
+.
  Once the coercive electric field is reached, the dipoles begin to align,
  creating a larger voltage drop across the ferroelectric dielectric, figure
  
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:FeFET-channel-accumulation"
+reference "fig:FeFET-Write-ON"
 plural "false"
 caps "false"
 noprefix "false"
@@ -586,7 +1084,17 @@ on
 \begin_inset Quotes erd
 \end_inset
 
- state.
+ state, figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:FeFET-Hold-ON"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
  Further decreasing the gate voltage to the 
 \begin_inset Quotes eld
 \end_inset
@@ -599,7 +1107,7 @@ off
  figure 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:FeFET-channel-depletion"
+reference "fig:FeFET-channel-Write-OFF"
 plural "false"
 caps "false"
 noprefix "false"
@@ -618,7 +1126,17 @@ on
 \begin_inset Quotes erd
 \end_inset
 
- again.
+ again, figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:FeFET-channel-Hold-OFF"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
 \begin_inset CommandInset citation
 LatexCommand cite
 key "georgiou2018ferroelectricity2,park2020ferroelectricgate"
@@ -626,6 +1144,7 @@ literal "true"
 
 \end_inset
 
+.
  For both the 
 \begin_inset Quotes eld
 \end_inset
@@ -653,7 +1172,7 @@ One of the piratical challenges of FeFETs is increasing the longevity of
  Often thermal energy may cause the polarization to relax over time as the
  dipoles reorient so materials must be chosen to minimize this effect.
  Likely the largest cause of long term polarization degradation is leakage
- current through the gate.
+ current through the gate
 \begin_inset CommandInset citation
 LatexCommand cite
 key "park2020ferroelectricgate"
@@ -661,6 +1180,7 @@ literal "true"
 
 \end_inset
 
+.
  A common modification of FeFETs is to include a dielectric layer between
  the ferroelectric and semiconductor to improve the interface between the
  two (MFIS-FET) and reduce leak currents higher energy electrons from damaging
@@ -671,8 +1191,7 @@ ectric and channel (MFMIS-FET) to redistribute the electric field evenly
 tric.
  Improving film quality to reduce trapped charges, increasing the metal-ferroele
 ctric Schottky barrier, and using a high-k dielectric can be used to further
- reduce leak currents in a FeFET.
- 
+ reduce leak currents in a FeFET 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "park2020ferroelectricgate"
@@ -680,14 +1199,14 @@ literal "true"
 
 \end_inset
 
+.
  Another common challenge with producing a commercial FeFET RAM is fatigue
  in the ferroelectric layer as conventional RAM is expected to be able to
  switch 
-\begin_inset Formula $10^{12}$
+\begin_inset Formula $\sim10^{12}$
 \end_inset
 
- in its lifetime.
- 
+ in its lifetime
 \begin_inset CommandInset citation
 LatexCommand cite
 key "park2020ferroelectricgate"
@@ -695,16 +1214,16 @@ literal "true"
 
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Subsection
-Ferroelectric tunnel junction (FTJ)
+Ferroelectric tunnel junctions (FTJs)
 \end_layout
 
 \begin_layout Standard
 Ferroelectric tunnel junctions (FTJs) are an alternative to FeFETs being
- explored for data storage.
+ explored for data storage
 \begin_inset CommandInset citation
 LatexCommand cite
 key "bain2017ferroelectrics"
@@ -712,6 +1231,7 @@ literal "false"
 
 \end_inset
 
+.
  They consist of a thin ferroelectric in between two metal electrodes, where
  the ferroelectric polarization is along the axis of the metal-ferroelectric-met
 al structure, figure 
@@ -724,14 +1244,15 @@ noprefix "false"
 
 \end_inset
 
-.
+
 \begin_inset CommandInset citation
 LatexCommand cite
-key "kohlstedt2005theoretical"
+key "kohlstedt2005theoretical,shen2019twodimensional"
 literal "false"
 
 \end_inset
 
+.
  The polarization direction will produce a net positive and negative charge
  distribution in the ferroelectric along the respective electrode junction,
  figure 
@@ -779,9 +1300,8 @@ noprefix "false"
 
 \end_inset
 
- show two possible restive switching behaviors, the first with symmetric
+ show two possible resistive switching behaviors, the first with symmetric
  electrode-ferroelectric interfaces, the second with asymmetric interfaces.
- 
 \end_layout
 
 \begin_layout Standard
@@ -1180,7 +1700,7 @@ name "fig:FTJ-Current-vs-voltage-asym"
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-FTJ
+Ferroelectric tunnel junctions
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:FTJ"
@@ -1231,6 +1751,238 @@ n.
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection
+Polar metals
+\end_layout
+
+\begin_layout Standard
+Polar metals, metals that contain dipoles, were first proposed in 1965
+\begin_inset CommandInset citation
+LatexCommand cite
+key "anderson1965symmetry"
+literal "true"
+
+\end_inset
+
+ to explain the structural transition in 
+\begin_inset Formula $V_{3}Si$
+\end_inset
+
+ but only recently seen experimental verification in 
+\begin_inset Formula $LiOsO_{3}$
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "shi2013aferroelectriclike"
+literal "true"
+
+\end_inset
+
+.
+ Polar metals must show a continuous phase transition from non-polar to
+ polar at their Curie temperature
+\begin_inset CommandInset citation
+LatexCommand cite
+key "benedek2016textquoteleftferroelectrictextquoteright"
+literal "false"
+
+\end_inset
+
+ breaking inversion symmetry.
+ As metals have an abundance of free charge carriers, the electric fields
+ within the material are screened, suggesting that metallicity is the antithesis
+ to both prerequisites in the traditional definition of ferroelectricity.
+ The carrier screening suppresses long-range coulomb interactions necessary
+ for dipole formation and the fields to orient the dipoles.
+ 
+\begin_inset Formula $LiOsO_{3}$
+\end_inset
+
+was shown to shift from 
+\begin_inset Formula $R\bar{3}c$
+\end_inset
+
+ to 
+\begin_inset Formula $R3c$
+\end_inset
+
+ at 
+\begin_inset Formula $T=140\,K$
+\end_inset
+
+ by the shifting of the Li ion
+\begin_inset CommandInset citation
+LatexCommand cite
+key "shi2013aferroelectriclike"
+literal "false"
+
+\end_inset
+
+, forming a similar structure to several insulating ferroelectrics, and
+ accompanied by several changes in the optical and electronic properties
+ attributed to the dipole formation
+\begin_inset CommandInset citation
+LatexCommand cite
+key "padmanabhan2018linearand,shi2013aferroelectriclike,jin2019ramaninterrogation,laurita2019evidence"
+literal "false"
+
+\end_inset
+
+.
+ Similar dipole formation has been seen in 
+\begin_inset Formula $Ca_{3}Ru_{2}O_{7}$
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "lei2018observation"
+literal "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $BaTiO_{3}$
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "takahashi2017polarmetal"
+literal "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $LaAuGe$
+\end_inset
+
+, 
+\begin_inset Formula $LaPtSb$
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "du2019highelectrical"
+literal "false"
+
+\end_inset
+
+ and other materials.
+ Ferroelectricity was reported in 2-3 layer 
+\begin_inset Formula $WTe_{2}$
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "fei2018ferroelectric"
+literal "false"
+
+\end_inset
+
+, a 2D Van der Waals chalcogenide metal.
+ The 2D material was stacked between two insulating layers of hexagonal
+ Boron Nitrite (
+\begin_inset Formula $hBN$
+\end_inset
+
+) in a double-gated FeFET.
+ The gating response showed a clear transition behavior in 
+\begin_inset Formula $WTe_{2}$
+\end_inset
+
+ conductivity while the thin graphene layers used to gate the material showed
+ a hysteresis in their conductivity, both are attributed to the polarized
+ electric field from the 
+\begin_inset Formula $WTe_{2}$
+\end_inset
+
+.
+ Later measurements demonstrated the existence of ferroelectric domains
+ with bulk crystals and thin films
+\begin_inset CommandInset citation
+LatexCommand cite
+key "sharma2019aroomtemperature"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The free carriers in a polar metal may move to the edges of the material,
+ to the excess electrical charge normally found on the surface of insulating
+ ferroelectrics, instead producing a neutral charge distribution.
+ This freedom can remove the depolarization field found in a typical ferroelectr
+ic
+\begin_inset CommandInset citation
+LatexCommand cite
+key "lei2018observation"
+literal "false"
+
+\end_inset
+
+ possibly extending the polarized state of the crystal.
+ The charge screening also lowers the system energy from domain walls of
+ different dipole orientations in close proximity, allowing for opposing
+ polarization domains to form 
+\begin_inset Formula $1nm$
+\end_inset
+
+ apart with only 10s of 
+\begin_inset Formula $meV$
+\end_inset
+
+ potential difference
+\begin_inset CommandInset citation
+LatexCommand cite
+key "stone2019atomicand"
+literal "false"
+
+\end_inset
+
+.
+ Potential polar metal applications include reducing the size of ferroelectric
+ capacitors
+\begin_inset CommandInset citation
+LatexCommand cite
+key "puggioni2018polarmetals"
+literal "false"
+
+\end_inset
+
+, FeFETs
+\begin_inset CommandInset citation
+LatexCommand cite
+key "fei2018ferroelectric"
+literal "false"
+
+\end_inset
+
+, tunnel barriers
+\begin_inset CommandInset citation
+LatexCommand cite
+key "fang2020designof"
+literal "false"
+
+\end_inset
+
+, and nonreciprocal charge transport
+\begin_inset CommandInset citation
+LatexCommand cite
+key "tokura2018nonreciprocal"
+literal "false"
+
+\end_inset
+
+.
 \end_layout
 
 \end_body

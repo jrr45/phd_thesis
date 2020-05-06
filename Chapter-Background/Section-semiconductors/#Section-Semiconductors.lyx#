@@ -101,8 +101,7 @@ Semiconductors
 
 \begin_layout Standard
 Semiconductors, as their name implies, are characterized by their decreased
- conduction compared to a metal while still conducting more than an insulating
- material.
+ conduction compared to a metal, while still more than an insulating material.
  They possess a band gap of a few electron volts (eV), driving this conductivity.
  Semiconductors come in two flavors, n-type and p-type, that conduct using
  either electrons or holes respectively.
@@ -492,6 +491,12 @@ noprefix "false"
 
  reverse voltage bias applied from right to left.
  Arrow indicated the direction of current flow.
+\end_layout
+
+\begin_layout Plain Layout
+TODO FIXME: change font in figure.
+ Add in boundary layer.
+ Match with FTJ and FeFET
 \end_layout
 
 \end_inset
@@ -1383,7 +1388,9 @@ Typical (a) JFET and (b) MOSFET devices in n- or p-type configurations.
  Different curves show the deviation for increasing gate voltage increments.
  The transition between ohmic (triode) and saturation occurs near the dotted
  line.
- The breakdown behavior is a charistic  
+ The breakdown behavior is a characteristic of a MOSFET rather than most
+ JFET.
+ 
 \end_layout
 
 \end_inset
@@ -1489,15 +1496,34 @@ As FET gate and channel contacts are within close proximity of each other,
  We must also be wary of assuming all FET device gating response is due
  to the bulk of the semiconductor alone, but instead recognize it is often
  a mix of bulk and contact characteristics.
- 
 \end_layout
 
-\begin_layout Subsection
-Charge trapping
+\begin_layout Subsubsection
+Band Bending
 \end_layout
 
 \begin_layout Standard
-something
+TODO: MOSFET band bending?
+\end_layout
+
+\begin_layout Subsubsection
+Hysteresis in 2D FETs
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+TODO
+\end_layout
+
+\begin_layout Subsection
+weak localization
+\end_layout
+
+\begin_layout Standard
+TODO
 \end_layout
 
 \end_body

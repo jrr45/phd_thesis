@@ -97,18 +97,77 @@ status open
 \end_layout
 
 \begin_layout Standard
-probably makes more sense under In-Se
+Started by the discovery of graphene, 2D materials have become a large area
+ of research due to their unique qualities and ability to integrate with
+ conventional electronics.
+ Typically defined by layered nature, many can be mechanically exfoliated
+ to small crystals or grown as thin films.
+ The sharp reduction in one dimension often provides additional fundamental
+ electronic properties from the bulk that can be exploited.
+ Chalcogenides, typically sulfides, selenides, tellurides; often form 2D
+ materials with Van der Waals inter-layer bonding with a semiconductor bandgap.
+ Some of the most studied of these compounds are the transition metal dichalcoge
+nides with the stoichiometry 
+\begin_inset Formula $MX_{2}$
+\end_inset
+
+, where 
+\begin_inset Formula $M$
+\end_inset
+
+ is a transition metal such as 
+\begin_inset Formula $Mo$
+\end_inset
+
+ or 
+\begin_inset Formula $W$
+\end_inset
+
+ and 
+\begin_inset Formula $X$
+\end_inset
+
+ a chalcogen 
+\begin_inset Formula $S$
+\end_inset
+
+, 
+\begin_inset Formula $Se$
+\end_inset
+
+, or 
+\begin_inset Formula $Te$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsection
-In-Se phases
+Hysteresis in 2D FETs
+\end_layout
+
+\begin_layout Standard
+2D FETs have a high in-plane to out-of-plane ratio, as devices can be made
+ on several nanometer thick films or flakes, forcing surface properties
+ to play a large role in the behavior of a device.
+ This often manifests in a hysteresis of the source drain current to changes
+ in FET gate voltage, the origin of which is still an area of active research.
+ 
+\end_layout
+
+\begin_layout Standard
+TODO
+\end_layout
+
+\begin_layout Subsection
+In-Se compounds
 \end_layout
 
 \begin_layout Standard
 Indium-Selenium together can form a variety of binary compounds ranging
  with completely disparate properties.
  Depending on the temperature and prevalence of each element it is possible
- to get different phases of In-Se alloy growth and structure.
+ to get different In-Se alloy growth and structure.
  Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -168,7 +227,7 @@ tal and calculated data.
  Compiled by J.-B.
  Li, M.-C.
  Record, and and J.-C.
- Tedenac.
+ Tedenac
 \begin_inset CommandInset citation
 LatexCommand cite
 key "li2003athermodynamic"
@@ -176,7 +235,7 @@ literal "true"
 
 \end_inset
 
-
+.
 \end_layout
 
 \end_inset
@@ -184,11 +243,11 @@ literal "true"
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 \begin_inset Formula $\mathrm{In_{2}Se_{3}}$
 \end_inset
 
- in literature
+ phases in literature
 \end_layout
 
 \begin_layout Standard
@@ -232,7 +291,7 @@ literal "true"
 \begin_inset Formula $\gamma^{\prime}$
 \end_inset
 
- metastable phases.
+ metastable phases
 \begin_inset CommandInset citation
 LatexCommand cite
 key "han2014indiumselenides"
@@ -240,10 +299,376 @@ literal "false"
 
 \end_inset
 
+.
+ Ref 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "liu2019atomically"
+literal "true"
+
+\end_inset
+
+ is likely the most comprehensive single study of the 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, 
+\begin_inset Formula $\beta$
+\end_inset
+
+, 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ phase structures currently reported.
  
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Phase
 \end_layout
 
-\begin_layout Subsection
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Structure
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Point group
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\alpha$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+rhombohedral
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $R3m$
+\end_inset
+
+ (or 
+\begin_inset Formula $R\bar{3}m$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+hexagonal
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $P63mc$
+\end_inset
+
+ (or 
+\begin_inset Formula $P63/mmc$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\beta$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+trigonal
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $P\bar{3}ml$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+hexagonal
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $P63mc$
+\end_inset
+
+ (or 
+\begin_inset Formula $P63/mmc$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+rhombohedral
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $R\bar{3}m$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\gamma$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+hexagonal
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $P61$
+\end_inset
+
+ (or 
+\begin_inset Formula $P65$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\delta$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\kappa$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $In_{2}Se_{3}$
+\end_inset
+
+ phases
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
 \begin_inset Formula $\alpha$
 \end_inset
 

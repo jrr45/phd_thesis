@@ -4,7 +4,7 @@
 %%
 %% The original source files were:
 %%
-%% merlin.mbs  (with options: `seq-no,nm-rev1,jnrlst,nmdash,nmd-3,nmft,nmft-sc,nmand-rm,dt-beg,yr-par,xmth,yrp-x,tit-qq,atit-u,trtit-b,trnum-it,vol-bf,volp-com,jwdpg,pp-last,num-xser,pre-edn,edpar,edby-par,edbyy,blk-com,pp,ed,abr,ednx,xedn,eprint,url,url-nl,nfss,')
+%% merlin.mbs  (with options: `seq-no,nm-rev1,jnrlst,nmdash,nmd-3,nmft,nmft-sc,nmand-rm,dt-beg,yr-par,xmth,yrp-x,tit-qq,atit-u,trtit-b,trnum-it,vol-bf,volp-com,jwdpg,pp-last,num-xser,pre-edn,edpar,edby-par,edbyy,blk-com,pp,ed,abr,ednx,xedn,eprint,url,url-nl,nfss,doi,')
 %% ----------------------------------------
 %% 
 %% Copyright 1994-2004 Patrick W Daly
@@ -60,6 +60,7 @@ ENTRY
     title
     type
     url
+	doi
     volume
     year
   }
@@ -393,10 +394,11 @@ FUNCTION {format.eprint}
     }
   if$
 }
-FUNCTION {write.url}
-{ url empty$
+FUNCTION {write.doi}
+{ doi empty$
     { skip$ }
-    { "\newline\urlprefix\url{" url * "}" * write$ newline$ }
+	%{ "\href{http://dx.doi.org/" doi * "}{" * swap$ * "}" * }
+    { "\newline\urlprefix\url{https://www.doi.org/" doi * "}" * write$ newline$ }
   if$
 }
 
@@ -1000,7 +1002,7 @@ FUNCTION {article}
   format.note output
   format.eprint output
   fin.entry
-  write.url
+  write.doi
 }
 FUNCTION {book}
 { output.bibitem
@@ -1032,7 +1034,7 @@ FUNCTION {book}
   format.note output
   format.eprint output
   fin.entry
-  write.url
+  write.doi
 }
 FUNCTION {booklet}
 { output.bibitem
@@ -1047,7 +1049,7 @@ FUNCTION {booklet}
   format.note output
   format.eprint output
   fin.entry
-  write.url
+  write.doi
 }
 
 FUNCTION {inbook}
@@ -1084,7 +1086,7 @@ FUNCTION {inbook}
   format.note output
   format.eprint output
   fin.entry
-  write.url
+  write.doi
 }
 
 FUNCTION {incollection}
@@ -1111,7 +1113,7 @@ FUNCTION {incollection}
   format.note output
   format.eprint output
   fin.entry
-  write.url
+  write.doi
 }
 FUNCTION {inproceedings}
 { output.bibitem
@@ -1139,7 +1141,7 @@ FUNCTION {inproceedings}
   format.note output
   format.eprint output
   fin.entry
-  write.url
+  write.doi
 }
 FUNCTION {conference} { inproceedings }
 FUNCTION {manual}
@@ -1175,7 +1177,7 @@ FUNCTION {manual}
   format.note output
   format.eprint output
   fin.entry
-  write.url
+  write.doi
 }
 
 FUNCTION {mastersthesis}
@@ -1192,7 +1194,7 @@ FUNCTION {mastersthesis}
   format.note output
   format.eprint output
   fin.entry
-  write.url
+  write.doi
 }
 
 FUNCTION {misc}
@@ -1206,7 +1208,7 @@ FUNCTION {misc}
   format.note output
   format.eprint output
   fin.entry
-  write.url
+  write.doi
   empty.misc.check
 }
 FUNCTION {phdthesis}
@@ -1223,7 +1225,7 @@ FUNCTION {phdthesis}
   format.note output
   format.eprint output
   fin.entry
-  write.url
+  write.doi
 }
 
 FUNCTION {proceedings}
@@ -1260,7 +1262,7 @@ FUNCTION {proceedings}
   format.note output
   format.eprint output
   fin.entry
-  write.url
+  write.doi
 }
 
 FUNCTION {techreport}
@@ -1277,7 +1279,7 @@ FUNCTION {techreport}
   format.note output
   format.eprint output
   fin.entry
-  write.url
+  write.doi
 }
 
 FUNCTION {unpublished}
@@ -1291,7 +1293,7 @@ FUNCTION {unpublished}
   format.note "note" output.check
   format.eprint output
   fin.entry
-  write.url
+  write.doi
 }
 
 FUNCTION {default.type} { misc }
