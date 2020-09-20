@@ -147,30 +147,90 @@ There are a total of 32 possible 3D crystal point groups.
 \begin_layout Itemize
 Pyroelectrics, possible ferroelectrics: 
 \color red
-1, 2, m, mm2, 3, 3m, 4, 4mm, 6, 6mm
+
+\begin_inset Formula $1$
+\end_inset
+
+, 
+\begin_inset Formula $2$
+\end_inset
+
+, 
+\begin_inset Formula $m$
+\end_inset
+
+, 
+\begin_inset Formula $mm2$
+\end_inset
+
+, 
+\begin_inset Formula $3$
+\end_inset
+
+, 
+\begin_inset Formula $3m$
+\end_inset
+
+, 
+\begin_inset Formula $4$
+\end_inset
+
+, 
+\begin_inset Formula $4mm$
+\end_inset
+
+, 
+\begin_inset Formula $6$
+\end_inset
+
+, 
+\begin_inset Formula $6mm$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
 Piezoelectrics only: 
 \color blue
-222, 
+
+\begin_inset Formula $222$
+\end_inset
+
+, 
 \begin_inset Formula $\bar{4}$
 \end_inset
 
-, 422, 
-\begin_inset Formula $\bar{4}2\mathrm{m}$
+, 
+\begin_inset Formula $422$
 \end_inset
 
-, 32, 
+, 
+\begin_inset Formula $\bar{4}2m$
+\end_inset
+
+, 
+\begin_inset Formula $32$
+\end_inset
+
+, 
 \begin_inset Formula $\bar{6}$
 \end_inset
 
-, 622, 
-\begin_inset Formula $\bar{6}\mathrm{m}2$
+, 
+\begin_inset Formula $622$
 \end_inset
 
-, 23, 
-\begin_inset Formula $\bar{4}3\mathrm{m}$
+, 
+\begin_inset Formula $\bar{6}m2$
+\end_inset
+
+, 
+\begin_inset Formula $23$
+\end_inset
+
+, 
+\begin_inset Formula $\bar{4}3m$
 \end_inset
 
 
@@ -179,7 +239,11 @@ Piezoelectrics only:
 \begin_layout Itemize
 Non-centrosymmetric and non-piezoelectric: 
 \color purple
-O
+
+\begin_inset Formula $O$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -200,7 +264,11 @@ Centrosymmetric:
 \uwave off
 \noun off
 \color none
-2/m
+
+\begin_inset Formula $2/m$
+\end_inset
+
+
 \family default
 \series default
 \shape default
@@ -213,16 +281,40 @@ Centrosymmetric:
 \uwave default
 \noun default
 \color inherit
-, mmm, 4/m, 4/mmm, 
+, 
+\begin_inset Formula $mmm$
+\end_inset
+
+, 
+\begin_inset Formula $4/m$
+\end_inset
+
+, 
+\begin_inset Formula $4/mmm$
+\end_inset
+
+, 
 \begin_inset Formula $\bar{3}$
 \end_inset
 
 , 
-\begin_inset Formula $\bar{3}\mathrm{m}$
+\begin_inset Formula $\bar{3}m$
 \end_inset
 
-, 6/m, 6/mmm, m3, 
-\begin_inset Formula $\mathrm{m}\bar{3}\mathrm{m}$
+, 
+\begin_inset Formula $6/m$
+\end_inset
+
+, 
+\begin_inset Formula $6/mmm$
+\end_inset
+
+, 
+\begin_inset Formula $m3$
+\end_inset
+
+, 
+\begin_inset Formula $m\bar{3}m$
 \end_inset
 
 
@@ -461,7 +553,10 @@ Triclinic
 
 \size footnotesize
 \color red
-1
+\begin_inset Formula $1$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -758,7 +853,10 @@ Monoclinic
 
 \size footnotesize
 \color red
-m
+\begin_inset Formula $m$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -903,7 +1001,10 @@ m
 \begin_layout Plain Layout
 
 \size footnotesize
-2/m
+\begin_inset Formula $2/m$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1113,7 +1214,10 @@ Orthorhombic
 
 \size footnotesize
 \color blue
-222
+\begin_inset Formula $222$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1728,7 +1832,10 @@ Orthorhombic
 \begin_layout Plain Layout
 
 \size footnotesize
-mmm
+\begin_inset Formula $mmm$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2197,7 +2304,10 @@ Tetragonal
 
 \size footnotesize
 \color red
-4
+\begin_inset Formula $4$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2376,7 +2486,10 @@ Tetragonal
 \begin_layout Plain Layout
 
 \size footnotesize
-4/m
+\begin_inset Formula $4/m$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2527,7 +2640,10 @@ Tetragonal
 
 \size footnotesize
 \color blue
-422
+\begin_inset Formula $422$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2756,7 +2872,10 @@ Tetragonal
 
 \size footnotesize
 \color red
-4mm
+\begin_inset Formula $4mm$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2993,7 +3112,7 @@ Tetragonal
 
 \size footnotesize
 \color blue
-\begin_inset Formula $\bar{4}2\mathrm{m}$
+\begin_inset Formula $\bar{4}2m$
 \end_inset
 
 
@@ -3231,7 +3350,10 @@ Tetragonal
 \begin_layout Plain Layout
 
 \size footnotesize
-4/mmm
+\begin_inset Formula $4/mmm$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -3611,7 +3733,10 @@ Trigonal
 
 \size footnotesize
 \color red
-3
+\begin_inset Formula $3$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -3837,7 +3962,10 @@ Trigonal
 
 \size footnotesize
 \color blue
-32
+\begin_inset Formula $32$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -3996,7 +4124,10 @@ Trigonal
 
 \size footnotesize
 \color red
-3m
+\begin_inset Formula $3m$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -4149,10 +4280,10 @@ Trigonal
 \begin_layout Plain Layout
 
 \size footnotesize
-\begin_inset Formula $\bar{3}$
+\begin_inset Formula $\bar{3}m$
 \end_inset
 
-m
+
 \end_layout
 
 \end_inset
@@ -4305,7 +4436,10 @@ Hexagonal
 
 \size footnotesize
 \color red
-6
+\begin_inset Formula $6$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -4480,7 +4614,10 @@ Hexagonal
 \begin_layout Plain Layout
 
 \size footnotesize
-6/m
+\begin_inset Formula $6/m$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -4558,7 +4695,10 @@ Hexagonal
 
 \size footnotesize
 \color blue
-622
+\begin_inset Formula $622$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -4713,7 +4853,10 @@ Hexagonal
 
 \size footnotesize
 \color red
-6mm
+\begin_inset Formula $6mm$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -4802,7 +4945,7 @@ Hexagonal
 
 \size footnotesize
 \color blue
-\begin_inset Formula $\bar{6}\mathrm{m2}$
+\begin_inset Formula $\bar{6}m2$
 \end_inset
 
 
@@ -4892,7 +5035,10 @@ Hexagonal
 \begin_layout Plain Layout
 
 \size footnotesize
-6/mmm
+\begin_inset Formula $6/mmm$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -4980,7 +5126,10 @@ Cubic
 
 \size footnotesize
 \color blue
-23
+\begin_inset Formula $23$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -5129,7 +5278,7 @@ Cubic
 \begin_layout Plain Layout
 
 \size footnotesize
-\begin_inset Formula $\mathrm{m}\bar{3}$
+\begin_inset Formula $m\bar{3}$
 \end_inset
 
 
@@ -5230,7 +5379,10 @@ Cubic
 
 \size footnotesize
 \color purple
-432
+\begin_inset Formula $432$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -5509,10 +5661,10 @@ Cubic
 
 \size footnotesize
 \color blue
-\begin_inset Formula $\bar{4}$
+\begin_inset Formula $\bar{4}3m$
 \end_inset
 
-3m
+
 \end_layout
 
 \end_inset
@@ -5665,7 +5817,7 @@ Cubic
 \begin_layout Plain Layout
 
 \size footnotesize
-\begin_inset Formula $\mathrm{m}\bar{3}\mathrm{m}$
+\begin_inset Formula $m\bar{3}m$
 \end_inset
 
 

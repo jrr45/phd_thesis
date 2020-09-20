@@ -219,9 +219,10 @@ Domains and polarization
 \end_layout
 
 \begin_layout Standard
-A ferroelectric provides a stable arrangement of dipoles that can be measured
- to provide an overall polarization of the material.
- Polarization 
+A ferroelectric material is differentated from a pyroelectric by the ability
+ to switch dipole orentation under an electric field, making ferroelectrics
+ a subset of pyroelectrics.
+ 
 \begin_inset Formula $\vec{P}$
 \end_inset
 
@@ -281,7 +282,17 @@ literal "true"
 As an external electric field is increased the dipoles will move to align
  with the electric field to minimize the energy of the system.
  The minimum may include different regions of the materials with different
- dipole alignments, known as domains.
+ dipole alignments, known as domains, shown in figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Ferroelectric domains"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
  These domains often are formed at the defects in crystals such as a lattice
  mismatch or missing atom, and the dipole walls are typically atomically
  sharp as there are limited possible dipole configurations.
@@ -334,17 +345,7 @@ One important characteristic in determining whether a crystal is ferroelectric
  An external electric field may still polarize charges but they will return
  to electrically neutral when the field is removed.
  From an energy perspective, two or more local minimums appear for the dipole
- charges that are offset from each other as seen in figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Polarization-Energy-vs-Electric"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
+ charges that are offset from each other.
  Switching the polarization direction requires the electric field must be
  large enough to overcome this energy barrier, known as the coercive field
  strength 
@@ -378,10 +379,6 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
-TODO: Landau free energy instead
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -395,7 +392,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Ferroelectrics-Figures/Polarization Energy vs Electric Potential.svg
+	filename Ferroelectrics-Figures/Ferroelectric Domains.svg
 	groupId polarization
 
 \end_inset
@@ -407,10 +404,10 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Energy vs Electric field
+Ferroelectric domains in a crystal
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:Polarization-Energy-vs-Electric"
+name "fig:Ferroelectric domains"
 
 \end_inset
 
@@ -528,7 +525,7 @@ Polarization
 \end_layout
 
 \begin_layout Plain Layout
-(a) Energy vs electric field of a paraelectric and ferroelectric dielectric.
+(a) Ferroelectric domains and dipole orentation within a crystal.
  Polarization vs electric field for a (b) paraelectric and (c) ferroelectric.
  
 \begin_inset Formula $\vec{E}_{c}$
@@ -572,7 +569,7 @@ literal "true"
 .
  Crystals may switch to another phase so that the overall stoichiometry
  does not differ but the elements shift to form a new space group that has
- a different remnant and spontaneous polarizations.
+ a different remnant and spontaneous polarization.
  Ionic dipoles can form within a crystal that provide a counter electric
  field within the material or rotate slowly to depolarize.
  Charged ions, vacancies, or electrons may diffuse though the crystal and
@@ -586,6 +583,89 @@ literal "true"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Subsection
+Phase transitions
+\end_layout
+
+\begin_layout Standard
+TODO: Landau free energy 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Ferroelectrics-Figures/Polarization Energy vs Electric Potential.svg
+	groupId polarization
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Energy vs Electric field
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Polarization-Energy-vs-Electric"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Landau?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -1983,6 +2063,10 @@ literal "false"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Subsection
+FeFETs with ferroelectric channels
 \end_layout
 
 \end_body

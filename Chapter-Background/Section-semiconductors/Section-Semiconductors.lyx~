@@ -103,8 +103,8 @@ Semiconductors
 Semiconductors, as their name implies, are characterized by their decreased
  conduction compared to a metal, while still more than an insulating material.
  They possess a band gap of a few electron volts (eV), driving this conductivity.
- Semiconductors come in two flavors, n-type and p-type, that conduct using
- either electrons or holes respectively.
+ Semiconductors come in two flavors, n-type and p-type, that conduct predominate
+ly using either electrons or holes respectively.
  Carriers reside below the Fermi energy in the fully occupied valance band
  but can be exited to move to an unoccupied higher energy band, the conduction
  band and thus move thus conduct.
@@ -115,6 +115,10 @@ Semiconductors, as their name implies, are characterized by their decreased
  Furthermore, semiconductor behavior can be altered by introducing other
  elements or electric fields giving rise to a wide range of potential applicatio
 ns in just about every area of modern electronics.
+\end_layout
+
+\begin_layout Standard
+TODO Add band diagram showing metal, sc, insulator
 \end_layout
 
 \begin_layout Subsection
@@ -494,8 +498,7 @@ noprefix "false"
 \end_layout
 
 \begin_layout Plain Layout
-TODO FIXME: change font in figure.
- Add in boundary layer.
+TODO FIXME: Add in boundary layer.
  Match with FTJ and FeFET
 \end_layout
 
@@ -1499,27 +1502,15 @@ As FET gate and channel contacts are within close proximity of each other,
 \end_layout
 
 \begin_layout Subsubsection
-Band Bending
+Band Bending? (TODO)
 \end_layout
 
 \begin_layout Standard
 TODO: MOSFET band bending?
 \end_layout
 
-\begin_layout Subsubsection
-Hysteresis in 2D FETs
-\end_layout
-
-\begin_layout Standard
-TODO
-\end_layout
-
 \begin_layout Subsection
-weak localization
-\end_layout
-
-\begin_layout Standard
-TODO
+weak localization (TODO)
 \end_layout
 
 \end_body

@@ -93,7 +93,7 @@ status open
 \end_layout
 
 \begin_layout Chapter
-Sample Fabrication
+Sample fabrication and methods
 \end_layout
 
 \begin_layout Section
@@ -101,8 +101,58 @@ Introduction
 \end_layout
 
 \begin_layout Standard
-TODO: Explain about the 2D fad.
- Overall device construction.
+The introduction of exfoliation of crystals using adhesive tape has spearheaded
+ a boom in 2D material research and driven the development of new techniques
+ to explore these materials.
+ 2D crystals are typically manufactured in one of two methods: films grown
+ on premanufactured substrates or exfoliated flakes from van der Waals crystals.
+ Films are sought for commercialization of materials as they can be incorporated
+ into large-scale manufacturing processes while insuring a level of uniformity
+ and reproducibility.
+ Exfoliated crystals are typically seen in more in initial material development
+ and characterization as they are often easier to produce and faster to
+ work with on small scale device manufacturing.
+ By growing the crystal in isolation, the parameters of the substrate lattice
+ are removed from the development process of the crystal, reducing many
+ complications seen in film growth.
+ Due their self-contained nature, flakes are easier to manipulate when developin
+g a new process.
+ Flakes may additionally be stacked in layered hetrostructures to create
+ devises with more unique properties, including interface effects.
+ Advances in flake devices often drive development of film manufacturing
+ to incorporate the 2D crystal properties into commercial devices.
+ 
+\end_layout
+
+\begin_layout Standard
+Both flake and film manufactured devices follow similar processes.
+ Films grown on a substrate are covered with a protective resist polymer.
+ The polymer is patterned using lithography to leave only the desired material
+ covered.
+ The remaining resist is etched away using a plasma etch then the polymer
+ is removed.
+ The film and substrate is again covered with a protective polymer and patterned
+ with future metal contact areas now exposed.
+ Metal is evaporated onto the surface to adhere to the film and substrate
+ wherever resist was removed.
+ The polymer is dissolved taking excess metal with it leaving only desired
+ metal leads.
+ Flakes are exfoliated using tape and placed onto a substrate.
+ The flake is covered with a protective resist and patterned for contacts.
+ In the same manner as the film, the metal is then deposited and unwanted
+ metal then removed.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:device-process"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ shows a overview of the two different processes while the details of each
+ are given below.
 \end_layout
 
 \begin_layout Standard
@@ -112,16 +162,199 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/Substrate film.svg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-TODO: Device manufacture.
+Film on substrate
 \end_layout
 
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/Substrate film-etched.svg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Film etched
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/Substrate film-metal.svg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Film with leads
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/Crystal.svg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Crystal and flake
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/Substrate flake.svg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Flake on substrate
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/Substrate flake-metal.svg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Flake with leads
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Device manufacture.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:device-process"
@@ -136,12 +369,27 @@ name "fig:device-process"
 
 \end_layout
 
+\begin_layout Plain Layout
+(a-c) Film manufacture of devices.
+ Film is etched with a protective layer of resist to leave material for
+ device.
+ Metal leads are added for material measurements.
+ (d-f) Flake manufacture of devices.
+ Flakes are exfoliated from a crystal then placed on a substrate.
+ Metal leads are then added to the flake for device measurements.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Flake generation
 \end_layout
 
 \begin_layout Subsection
-Alignment marker wafer
+Alignment marker wafer chips
 \end_layout
 
 \begin_layout Standard
@@ -163,13 +411,8 @@ Before fabricating any devices to test materials we needed a platform to
 \begin_inset Formula $SiO_{2}$
 \end_inset
 
- was chosen as a substrate (purchased from Si-Tech, <100> face, 
-\begin_inset Formula $ρ\lesssim5m\omega\cdot cm$
-\end_inset
-
-).
- The high conductivity and thermal oxide allowed us to construct a backgated
- field effect transistor (see: FIXME).
+ was chosen as a substrate (purchased from Si-Tech, <100> thermal oxide
+ allowed us to construct a backgated field effect transistor (see: FIXME).
  The substrate was polished for better adhesion of deposited flakes.
  Using standard photolithography (see 
 \begin_inset CommandInset ref
@@ -217,17 +460,25 @@ noprefix "false"
 
 \begin_layout Subsection
 Mechanical flake exfoliation
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Mechanical-flake-exfoliation"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-Flakes were exfoliated using Scotch 3M Transparent Tape.
- The tape was pressed into a crystal of the desired material then peeled
- off, resulting in a few smaller chunks of crystals adhered to the tape.
- The tape was then folded over itself so the crystals were pressed into
- two different areas of tape.
- The tape was then peeled apart so that the crystals would be pulled apart
- into multiple chunks.
- This process was repeated several times to provide a region roughly 
+Flakes of van der Waals materials can be mechanically exfoliated using Scotch
+ 3M Transparent Tape to break the weaker bonds.
+ A piece of tape is pressed into a larger crystal of the material then peeled
+ off, resulting in a few smaller crystals adhered to the tape.
+ The tape is then folded over itself so the crystals are pressed into different
+ areas of tape, ideally without coming into contact with each other.
+ The tape is then peeled apart, breaking the weaker van der Waals bond,
+ so that the crystals are pulled apart into smaller crystal layers.
+ This process is repeated several times to provide a region roughly 
 \begin_inset Formula $8$
 \end_inset
 
@@ -235,19 +486,21 @@ Flakes were exfoliated using Scotch 3M Transparent Tape.
 \begin_inset Formula $10mm$
 \end_inset
 
- in diameter with crystal coverage.
- This region was then pressed into a fresh region of tape so the exposed
- surface of crystals was free of tape residue.
- The tape and crystals was then placed on a cleaned aliment marker chip
- to maximize the amount of crystals within the center of the chip.
- The tape was lightly pressed into the chip so that the crystals would be
+ in diameter of crystal coverage.
+ This region is then pressed into a fresh region of tape, providing a new
+ exposed surface of crystals with less tape residue.
+ This can be repeated to thin the layers of crystal repeatedly until the
+ desired thickness is reached.
+ The tape and crystals are then placed on a cleaned aliment marker chip,
+ ideally maximizing the amount of crystals within the center of the chip.
+ The tape is lightly pressed into the chip so that the crystals would be
  in contact with the surface of the chip.
- To promote adhesion to the surface, the chip was then heated for 2 minutes
- at 
+ To promote adhesion to the surface, the chip can then be heated for 1-2
+ minutes at 
 \begin_inset Formula $100C$
 \end_inset
 
-.
+ to improve van der Walls adhesion to the substrate.
 \begin_inset CommandInset citation
 LatexCommand cite
 key "huang2015reliable"
@@ -255,7 +508,8 @@ literal "true"
 
 \end_inset
 
- The chips were then allowed to cool and the tape peeled off.
+ The chips are then allowed to cool and the tape peeled off, leaving a freshly
+ cleaved surface on both the substrate and top of the flakes.
 \end_layout
 
 \begin_layout Standard
@@ -289,7 +543,69 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-TODO: tape figure, alingment mask?
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+TODO: tape figure, alignment mask? AFM heights
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/Exfolation.jpg
+	lyxscale 10
+	width 3in
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tape exfoliation
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Flake manufacture
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+(a) Starting crystal, tape with thin flakes of crystal, and final substrate
+ with flakes.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -339,7 +655,7 @@ noprefix "false"
 \end_layout
 
 \begin_layout Subsection
-LOR+SPR stack
+LOR/SPR stack
 \begin_inset CommandInset label
 LatexCommand label
 name "subsec:LOR+SPR"
@@ -350,7 +666,7 @@ name "subsec:LOR+SPR"
 \end_layout
 
 \begin_layout Standard
-The LOR+SPR negative resist stack is easy to use and allows for high resolution
+The LOR/SPR negative resist stack is easy to use and allows for high resolution
  patterns down to 
 \begin_inset Formula $2\mu m$
 \end_inset
@@ -436,10 +752,6 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-TODO resist stack
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float table
 placement ht
 wide false
@@ -456,7 +768,7 @@ name "tab:Lithography-resists"
 
 \end_inset
 
-TODO: Lithography resists
+Lithography resists
 \end_layout
 
 \end_inset
@@ -493,9 +805,8 @@ status open
 
  
 \begin_inset Tabular
-<lyxtabular version="3" rows="5" columns="4">
+<lyxtabular version="3" rows="5" columns="3">
 <features booktabs="true" tabularvalignment="middle">
-<column alignment="left" valignment="top">
 <column alignment="left" valignment="top">
 <column alignment="left" valignment="top">
 <column alignment="left" valignment="top">
@@ -507,15 +818,6 @@ status open
 
 \series bold
 Resist
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="none" valignment="top" topline="true" bottomline="true" usebox="none" special="c">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Solvent
 \end_layout
 
 \end_inset
@@ -553,15 +855,6 @@ LOR-2A
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
 CD-26
 \end_layout
 
@@ -583,15 +876,6 @@ Remover-PG
 
 \begin_layout Plain Layout
 SPR-3012
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
 \end_layout
 
 \end_inset
@@ -629,15 +913,6 @@ PMMA
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
 MIBK
 \end_layout
 
@@ -659,15 +934,6 @@ Acetone/Remover-PG
 
 \begin_layout Plain Layout
 SF6-slow
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
 \end_layout
 
 \end_inset
@@ -703,13 +969,17 @@ Remover-PG
 
 \end_layout
 
+\begin_layout Plain Layout
+Resists, developers, and liftoff solvents used in various lithography processes.
+\end_layout
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Subsection
-PMMA+PMGI+SPR stack
+PMMA/PMGI/SPR stack for alkali-sensitive materials
 \begin_inset CommandInset label
 LatexCommand label
 name "subsec:PMMA+PMGI+SPR"
@@ -720,7 +990,7 @@ name "subsec:PMMA+PMGI+SPR"
 \end_layout
 
 \begin_layout Standard
-We found some chalcogenides reacted to alkali developers such as CD-26
+Some chalcogenides react with alkali developers such as CD-26
 \begin_inset CommandInset citation
 LatexCommand cite
 key "choi2008plasmaetching"
@@ -729,8 +999,8 @@ literal "false"
 \end_inset
 
  so we developed an alternate photolithography resist stack with a solvent
- used to develop the material layer.
- First a layer of Polymethyl methacrylate (PMMA) (-2A Microchem) is statically
+ used to develop the layer closest to the material.
+ First a layer of Polymethyl methacrylate (PMMA-2A) (Microchem) is statically
  deposited, spun at 
 \begin_inset Formula $2500RPM$
 \end_inset
@@ -834,7 +1104,7 @@ noprefix "false"
 \begin_inset Formula $270nm$
 \end_inset
 
-, OAI Deep UV Flood Exposure) at 5.3mW (~9.5J).
+, OAI Deep UV Flood Exposure) at 5.3mW (~9.5 J).
  The SF6 is developed in 101A developer (Microchem) for 
 \begin_inset Formula $90s$
 \end_inset
@@ -843,10 +1113,24 @@ noprefix "false"
  Finally the PMMA is developed for 10 minutes in methyl isobutyl ketone
  (MIBK) and a trace amount of water.
  The substrate is moved though the water for 
-\begin_inset Formula $30-60s$
+\begin_inset Formula $5-10s$
 \end_inset
 
- to remove a thin film that forms, causing the film to pull off.
+ then to the MIBK, where a thin bubble of water continues to adhere to the
+ resist near the exposed region.
+ After allowing the water to sit on the sample for another 
+\begin_inset Formula $10-30s$
+\end_inset
+
+, the substrate is gently shaken back and forth with tweeters to dislodge
+ the SPR layer from the top of the sample.
+ This prevents the SPR from later partially peeling up then adhering to
+ the substrate, ruining the lithography pattern.
+ The sample is left in the MIBK for another 
+\begin_inset Formula $5-10m$
+\end_inset
+
+ to develop the PMMA down to the substrate.
  The MIBK is then removed with 2-proponal.
 \end_layout
 
@@ -856,7 +1140,7 @@ An alternate version of this process used a thicker PMMA (6A) with SPR-3012
  Because the SPR uses a PMMA-compatible solvent (Cyclopentanone) the two
  layers would intermix and form a layer that was unable to be dissolved
  in either developer.
- This was removed by ashing the layer for 8:35 minutes in the M4L with 250
+ This was removed by ashing the layer for 515 seconds in the M4L with 250
  sccm oxygen, 50 sccm helium, 500mTorr pressure, 450W power.
  This process varied greatly depending on polymer uniformity and location
  of device on the substrate so later devices included the PMGI SF6 layer
@@ -864,7 +1148,132 @@ An alternate version of this process used a thicker PMMA (6A) with SPR-3012
 \end_layout
 
 \begin_layout Standard
-TODO: figure resist stack
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/PMMA+SPR.svg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+LOR/SPR
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/PMMA+PMGI+SPR.svg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+PMMA/PMGI/SPR
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/PMMA+SPR.svg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+PMMA/SPR
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Resist stacks
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Three of the resist stacks used in device manufacture.
+ (a) LOR/SPR used in most of our devices, (b) PMMA/PMGI/SPR used in devices
+ with alkali-sensitive materials, (c) PMMA/SPR alternative stack used initially
+ in some of our alkali-sensitive materials before the previous stack was
+ developed.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -948,7 +1357,32 @@ wet
 \end_layout
 
 \begin_layout Standard
-TODO: figure filiment device, undercut with indium
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+TODO
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Filament device
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+(a) Filament evaporation process.
+ (b) Flake filament device made to test dry contact process.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -1057,7 +1491,7 @@ noprefix "false"
 \end_layout
 
 \begin_layout Section
-Wiring
+Sample wiring
 \end_layout
 
 \begin_layout Standard
@@ -1114,11 +1548,34 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Wiring
+\end_layout
+
+\end_inset
+
 TODO: figure, wiring
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
-Layer Transfer?
+Layer Transfer? (TODO after I figure it out)
+\end_layout
+
+\begin_layout Section
+PFM? (TODO, I don't do it but it might be useful)
 \end_layout
 
 \end_body

@@ -107,7 +107,6 @@
 \usepackage{acro}
 %\usepackage[dvipsnames]{color} - reenable if you need more colors
 \DeclareGraphicsExtensions{.pdf, .jpg}
-
 \usepackage{url}
 
 
@@ -126,10 +125,10 @@
 % who want to use it.
 %
 % To the hyperref package, uncomment the following line:
-%\usepackage{hyperref}
+\usepackage{hyperref}
 %
 % Note that you should also uncomment the following line:
-%\renewcommand{\theHchapter}{\thepart.\thechapter}
+\renewcommand{\theHchapter}{\thepart.\thechapter}
 %
 % to work around some a problem hyperref has with the fact
 % the psuthesis class has unnumbered pages after which page
@@ -951,6 +950,13 @@ fancyhead{}
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
+filename "Chapter-Introduction/Chapter-Introduction.lyx"
+
+\end_inset
+
+
+\begin_inset CommandInset include
+LatexCommand include
 filename "Chapter-Background/Chapter-Background.lyx"
 
 \end_inset
@@ -962,6 +968,16 @@ filename "Chapter-Background/Chapter-Background.lyx"
 \begin_inset CommandInset include
 LatexCommand include
 filename "Chapter-fabrication/Chapter-fabrication.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "Chapter-In2Se3-FeSm-FET/Chapter-In2Se3-FeSm-FET.lyx"
 
 \end_inset
 
@@ -1010,7 +1026,19 @@ filename "Appendix-crystal-symmetry-groups/Appendix-crystal-symmetry-groups.lyx"
 
 \end_inset
 
- 
+
+\end_layout
+
+\begin_layout Standard
+
+\family sans
+\begin_inset CommandInset include
+LatexCommand include
+filename "Chapter-In2Se3-FeSm-FET/Appendix-Additional In2Se3 Figures.lyx"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
