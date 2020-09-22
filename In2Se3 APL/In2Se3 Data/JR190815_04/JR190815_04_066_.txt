@@ -1,0 +1,42 @@
+[Main]
+Experiment = ""
+Header length = 41    
+Date = "20191025 09:46:24"
+Comments = ""
+
+[System]
+System = "PPMS"
+Magnet stability range (G) = 5.000000E+1
+Magnet check interval (s) = 1.000000E+0
+Magnet approach mode = "Linear Approach"
+Magnet mode = "Persistent"
+Temperature stability time (s) = 1.000000E+0
+Temperature approach mode = "Fast Settle"
+
+[Static Gate Voltage]
+Set initial gate voltage = TRUE
+Initial gate voltage (V) = -7.500000E+1
+Initial gate volt. ramp step (V) = 1.000000E-1
+Initial voltage ramp delay (s) = 1.000000E-1
+Delay after inital voltage set = 1.000000
+Leak current threshold for initial set = 1.000000
+Set final gate voltage = FALSE
+Gate voltage source type = "Keithley 2400"
+GPIB = "GPIB0::16::INSTR"
+Gate leak limit (A) = 5.000000E-6
+Auto-range = TRUE
+Manual range (V) = 5.000000
+Check Compliance = TRUE
+Measuement speed = 1.000000
+Number of measurements = 0
+
+[Static Temperature]
+Set initial temperature = TRUE
+Initial temperature (K) = 3.000000E+2
+Delay after setting initial temperature (s) = 1.000000E+1
+Initial temperature stabilization (K) = 2.000000E-1
+Initial temperature ramp rate (K/min) = 1.000000E+1
+Wait for initial temperature to stabilize = TRUE
+Set final temperature = FALSE
+Time (s)	Gate Voltage (V)	Gate Leak Current (A)	Temperature (K)
+0.000000000E+0	-75.000000000E+0	-206.046812251E-12	300.101600000E+0

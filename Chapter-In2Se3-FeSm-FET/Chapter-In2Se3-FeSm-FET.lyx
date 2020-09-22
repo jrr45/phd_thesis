@@ -1,0 +1,2076 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass psuthesis
+\options phd
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package none
+\inputencoding auto
+\fontencoding T1
+\font_roman "lmodern" "default"
+\font_sans "default" "default"
+\font_typewriter "lmodern" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype true
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing other 1.24
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+% !TEX root = ../JustinRodriguez-Dissertation.tex
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Electric field induced metallic behavior in thin crystals of ferroelectric
+ 
+\begin_inset Formula $\ensuremath{\alpha}\textrm{-In}_{2}\textrm{Se}_{3}$
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "chapter:FeSm-FET"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Introduction and background
+\end_layout
+
+\begin_layout Section
+Device manufacture
+\end_layout
+
+\begin_layout Standard
+Thin crystals of 
+\begin_inset Formula $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$
+\end_inset
+
+ were grown by a modified Bridgman method.
+ Transport measurements were carried out on both bulk and thin mechanically
+ exfoliated crystals.
+ For bulk resistivity measurements, silver paint was used to form conductive
+ terminals.
+ In-plane resistivity measurements were carried out using a hall bar pattern
+ along the longest axis of the bulk crystal.
+ For out-of-plane measurements, to ensure a fresh surface, the previous
+ leads were removed with a razor before new leads were added on.
+ A modified four-point pattern was used to accommodate the thin c-axis of
+ the crystal: a current lead was placed in the center of the crystal on
+ the opposing sides of the c-axis with a voltage lead encircling each current
+ lead.
+\end_layout
+
+\begin_layout Standard
+Flakes of thin crystals of 
+\begin_inset Formula $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$
+\end_inset
+
+ on 
+\begin_inset Formula $\textrm{Si:P/Si}\textrm{O}_{2}$
+\end_inset
+
+ were manufactured using mechanical exfoliation as described in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Mechanical-flake-exfoliation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Flakes were identified under an optical microscope and atomic force microscopy
+ was used to establish a rough color code to judge the thickness of the
+ flakes.
+ Below 20nm, flakes were observed with the same shade of blue but appeared
+ increasingly transparent for as thickness decreased.
+ To promote better van der Walls adhesion of the flake to the substrate,
+ the latter was first cleaned in Nanostrip, Acetone, 2-Proponal, and DI-water,
+ before flake exfoliation, and the substrate was heated to 100C while in
+ contact with the tape prior to the final removal.
+ After optical identification, flake-substrates were kept in a drybox, or
+ later in vacuum, to avoid water contamination and oxidation.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../../../Desktop/In2Se3-FeSm-FET-Figures/Hall bar.svg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Hall bar schematic
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../../../Desktop/In2Se3-FeSm-FET-Figures/JR200115_11.svg
+	width 1.35in
+	groupId sample-pic
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sample A
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../../../Desktop/In2Se3-FeSm-FET-Figures/JR200115_17.svg
+	width 1.35in
+	groupId sample-pic
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sample B
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../../../Desktop/In2Se3-FeSm-FET-Figures/JR190919_03.svg
+	width 1.35in
+	groupId sample-pic
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sample C
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../../../Desktop/In2Se3-FeSm-FET-Figures/JR190815_04.svg
+	width 1.35in
+	groupId sample-pic
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sample D
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Device images
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:In2Se3-Device-images"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+(a) Schematic of the Hall bar device with used in flake measurements.
+ (b-e) Optical images of sample devices following this design with 10 
+\begin_inset Formula $\mu m$
+\end_inset
+
+ scale bars.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="6">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sample
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $t\,(nm)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $L_{volt}\,\left(\mu m\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $L_{current}\,\left(\mu m\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $w\,\left(\mu m\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Device pattern
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+four-point probe
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+B
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+13
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+16
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+30
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+four-point probe
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+C
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+110
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+15
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Hall bar
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+D
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+110
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Hall bar
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Device parameters
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:In2Se3-Device-parameters"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Physical dimensions of the 
+\begin_inset Formula $\ensuremath{\alpha}\textrm{-In}_{2}\textrm{Se}_{3}$
+\end_inset
+
+ crystals used in the sample devices and the lead configuration.
+ 
+\begin_inset Formula $L_{volt}$
+\end_inset
+
+ and 
+\begin_inset Formula $L_{current}$
+\end_inset
+
+ are the shortest distances between the voltage and current leads, 
+\begin_inset Formula $w$
+\end_inset
+
+ the channel width of the crystal, and 
+\begin_inset Formula $t$
+\end_inset
+
+ the thickness of the crystal.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Flakes of crystal were made into four-point probe and Hall bar FET devices
+ using photolithography and e-beam metal deposition.
+ Similar to many other van der Waals chalcogenide materials, 
+\begin_inset Formula $\textrm{In}_{2}\textrm{Se}_{3}$
+\end_inset
+
+ is sensitive to the alkali (base) developers used in many photodevelopment
+ processes.<REFS> Initial Hall bar devices with thinner crystal flakes were
+ completely inoperative after manufacture, while thicker devices showed
+ substantial Schottky barriers on various contacts.
+ Milling away crystal material between the lithography and metal evaporation
+ produced better contacts but was inconstant and only worked with thicker
+ devices.
+ To circumvent this effect, we modified our lithography step to only allow
+ solvent developers in contact with the flake material, with the procedure
+ described in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:PMMA+PMGI+SPR"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ 5 nm of titanium and 45 nm of gold was evaporated using either a Lab-18
+ Thin Film Deposition System (Kurt J.
+ Lesker Co.) or a Temescale <FIXME: add info>.
+ The excess material was removed using the solvent Remover-PG (Microchem).
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:In2Se3-Device-images"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ shows the layout and optical images of the devices measured in this chapter,
+ table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:In2Se3-Device-parameters"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ the corresponding parameters of those devices.
+\end_layout
+
+\begin_layout Section
+Optical crystal measurements
+\end_layout
+
+\begin_layout Standard
+Indium and selenium can form a variety of compounds, and the growth process
+ is complicated and may result in materials of mixed structures, see section
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:In-Se-compounds"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "liu2019atomically"
+literal "true"
+
+\end_inset
+
+ Because of this is important to establish the stoichiometry and lattice
+ stacking of the crystals used in our devices.
+ X-Ray diffraction displayed peaks corresponding to the 
+\begin_inset Formula $R3m$
+\end_inset
+
+ or 
+\begin_inset Formula $R\bar{3}m$
+\end_inset
+
+ space groups.
+ Raman showed peaks near 104, 179, and 193 
+\begin_inset Formula $cm^{-1}$
+\end_inset
+
+corresponding to the 
+\begin_inset Formula $A_{1}^{\,1}$
+\end_inset
+
+, 
+\begin_inset Formula $E^{3}$
+\end_inset
+
+, and 
+\begin_inset Formula $A_{1}^{\,4}$
+\end_inset
+
+ peaks of 
+\begin_inset Formula $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$
+\end_inset
+
+.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "liu2019atomically,balakrishnan2018epitaxial"
+literal "true"
+
+\end_inset
+
+ Photoluminescence (PL) showed an energy gap of 1.4 
+\begin_inset Formula $eV$
+\end_inset
+
+, consistent with previous optical measurements.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "balakrishnan2018epitaxial"
+literal "true"
+
+\end_inset
+
+ Finally, angle-resolved second harmonic generation (SHG) showed a six-fold
+ symmetry establishing the material as stacking in a 
+\begin_inset Formula $R3m$
+\end_inset
+
+ (166) space group lattice.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "hou2019resistive,dai2020intrinsic,xiao2018intrinsic"
+literal "true"
+
+\end_inset
+
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:In2Se3-Optical-measurements"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ shows the Raman, PL , and SHG measurements performed on exfoliated flakes
+ of crystal on 
+\begin_inset Formula $\textrm{Si:P/Si}\textrm{O}_{2}$
+\end_inset
+
+ wafer chips.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../../../Desktop/In2Se3-FeSm-FET-Figures/In2Se3_Raman.svg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Raman
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../../../Desktop/In2Se3-FeSm-FET-Figures/In2Se3_PL.svg
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Photoluminescence
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../../../Desktop/In2Se3-FeSm-FET-Figures/In2Se3_angled-SHG.svg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Second Harmonic Generation
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Optical measurements of 
+\begin_inset Formula $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$
+\end_inset
+
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:In2Se3-Optical-measurements"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Raman (a), photoluminescence (b), and angle-resolved SHG (c) of exfoliated
+ 
+\begin_inset Formula $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$
+\end_inset
+
+ flakes.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+FET measurements
+\end_layout
+
+\begin_layout Standard
+Flakes of thin crystal were manufactured into Hall bar and four-point probe
+ FET devices for electronic characterization, both on conductive substrates
+ of doped silicon with an insulating layer of 300nm thermally grown 
+\begin_inset Formula $\textrm{Si:P/Si}\textrm{O}_{2}$
+\end_inset
+
+.
+ Source-drain current 
+\begin_inset Formula $I_{D}$
+\end_inset
+
+ was measured against voltage bias 
+\begin_inset Formula $V_{DS}$
+\end_inset
+
+ from 0 to 5 V, and separately for 0 to -5 V, for fixed back gate voltages.
+ Gate voltages were fixed in 25 V intervals from -75 V to 75 V for each
+ sequence.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:In2Se3-SampleA-I_DSvV_DS"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ shows the data for sample A.
+ The rapid change in 
+\begin_inset Formula $I_{D}$
+\end_inset
+
+ around 0 V is indicative of two back-to-back Schottky diodes, see section
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Metal-Semiconductor-Metal-conduc"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Samples B and C showed a similar measurement with both the increasing and
+ decreasing 
+\begin_inset Formula $V_{DS}$
+\end_inset
+
+ bias for fixed gate voltages, figures 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Sample-B-IDvsVDS"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Sample-C-IDvsVDS"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ None of the samples measured were seen to saturate within 
+\begin_inset Formula $\pm10$
+\end_inset
+
+ V for any gate bias.
+ The lower 
+\begin_inset Formula $I_{D}$
+\end_inset
+
+ for negative 
+\begin_inset Formula $V_{DS}$
+\end_inset
+
+ bias than positive is typical of n-type semiconductors, which is seen in
+ most reports of 
+\begin_inset Formula $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "island2015gatecontrolled,1986electrical"
+literal "true"
+
+\end_inset
+
+.
+ Sample A 
+\begin_inset Formula $V_{DS}$
+\end_inset
+
+ bias was cycled from 0 V, 10 V, -10V, to 0 V, forming asymmetric hysteresis
+ in the current.
+ The switching behavior is similar to previous reports of 
+\begin_inset Formula $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$
+\end_inset
+
+ transistors, where the ferroelectric polarization field is thought to modify
+ the Schottky barrier between the material and the metal leads.<FIXME Refs>
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../../../Desktop/In2Se3-FeSm-FET-Figures/JR200115_11/JR200115_11_300Kpositive_increasing_log.svg
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $V_{DS}$
+\end_inset
+
+ inc.,
+\begin_inset Formula $V_{G}$
+\end_inset
+
+ inc.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../../../Desktop/In2Se3-FeSm-FET-Figures/JR200115_11/JR200115_11_300Knegative_increasing_log.svg
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $V_{DS}$
+\end_inset
+
+ dec., 
+\begin_inset Formula $V_{G}$
+\end_inset
+
+ inc.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../../../Desktop/In2Se3-FeSm-FET-Figures/JR200115_11/JR200115_11_VDS_loop_inc_log.svg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $V_{DS}$
+\end_inset
+
+ loop, 
+\begin_inset Formula $V_{G}$
+\end_inset
+
+ inc.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../../../Desktop/In2Se3-FeSm-FET-Figures/JR200115_11/JR200115_11_300Kpositive_decreasing_log.svg
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $V_{DS}$
+\end_inset
+
+ inc., 
+\begin_inset Formula $V_{G}$
+\end_inset
+
+ dec.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../../../Desktop/In2Se3-FeSm-FET-Figures/JR200115_11/JR200115_11_300Knegative_decreasing_log.svg
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $V_{DS}$
+\end_inset
+
+ dec., 
+\begin_inset Formula $V_{G}$
+\end_inset
+
+ dec.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../../../Desktop/In2Se3-FeSm-FET-Figures/JR200115_11/JR200115_11_VDS_loop_dec_log.svg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $V_{DS}$
+\end_inset
+
+ loop, 
+\begin_inset Formula $V_{G}$
+\end_inset
+
+ dec.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sample A: 
+\begin_inset Formula $I_{D}$
+\end_inset
+
+ vs 
+\begin_inset Formula $V_{DS}$
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:In2Se3-SampleA-I_DSvV_DS"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $I_{D}$
+\end_inset
+
+ versus 
+\begin_inset Formula $V_{DS}$
+\end_inset
+
+ of Sample A with increasing (a & d) and decreasing (b & e) 
+\begin_inset Formula $V_{DS}$
+\end_inset
+
+.
+ (c & f) hysteresis in the current as 
+\begin_inset Formula $V_{DS}$
+\end_inset
+
+ is cycled from 0 V, 10 V, -10 V, to 0 V.
+ (a - c) are taken while 
+\begin_inset Formula $V_{G}$
+\end_inset
+
+ is taken in increasing fixed 25 V intervals and (d - f) decreasing.
+ All measurements were done at 300 K.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+FET transistor transfer curves 
+\begin_inset Formula $I_{D}$
+\end_inset
+
+ measured against back-gate bias 
+\begin_inset Formula $V_{G}$
+\end_inset
+
+ was also measured.
+ Each measurement was performed with a fixed 
+\begin_inset Formula $V_{DS}=.1V$
+\end_inset
+
+, with the 
+\begin_inset Formula $V_{G}$
+\end_inset
+
+ cycled from 0 V, to -75 V, 75 V, -75 V, to 0 V, shown in figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:In2Se3-Sample-A-loops"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ For clarity, only the data between -75 V, 75 V, to -75 V is shown, as that
+ behavior is persistent across multiple loops.
+ The measurement was repeated at various, fixed temperatures from 300 K
+ to 2-4 K, the lowest temperature being sample dependent due to blockages
+ in the PPMS.
+ For each sweep of 
+\begin_inset Formula $V_{G}$
+\end_inset
+
+ the 
+\begin_inset Formula $I_{D}$
+\end_inset
+
+ formed a clockwise hysteresis loop.
+ In all samples the width of the loop decreased with decreasing temperature,
+ though each sample still exhibited a finite hysteresis at the lowest temperatur
+e.
+ Samples B and C showed similar clockwise hysteresis behavior, shown in
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Sample-B-loops"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Sample-C-loops"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../../../Desktop/In2Se3-FeSm-FET-Figures/JR200115_11/JR200115_11_IDvsVg_300.0K_IDvsVG_log.svg
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+300 K
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../../../Desktop/In2Se3-FeSm-FET-Figures/JR200115_11/JR200115_11_IDvsVg_200.0K_IDvsVG_log.svg
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+200 K
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../../../Desktop/In2Se3-FeSm-FET-Figures/JR200115_11/JR200115_11_IDvsVg_149.9K_IDvsVG_log.svg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+150 K
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../../../Desktop/In2Se3-FeSm-FET-Figures/JR200115_11/JR200115_11_IDvsVg_100.1K_IDvsVG_log.svg
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+100 K
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../../../Desktop/In2Se3-FeSm-FET-Figures/JR200115_11/JR200115_11_IDvsVg_050.0K_IDvsVG_log.svg
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+50 K
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../../../Desktop/In2Se3-FeSm-FET-Figures/JR200115_11/JR200115_11_IDvsVg_002.1K_IDvsVG_log.svg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+2 K
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sample A: transfer characteristics
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:In2Se3-Sample-A-loops"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+(a-f)
+\begin_inset Formula $I_{D}$
+\end_inset
+
+ versus 
+\begin_inset Formula $V_{G}$
+\end_inset
+
+ of Sample A at fixed temperatures as indicated.
+ Each was measured with 
+\begin_inset Formula $V_{DS}=.1V$
+\end_inset
+
+ as 
+\begin_inset Formula $V_{G}$
+\end_inset
+
+ was cycled, a clockwise hysteresis loop was seen at all temperatures.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Discussion
+\end_layout
+
+\begin_layout Standard
+When cooled from 300 to 2 K, the bulk crystal showed an increase in resistivity
+ emblematic of most semiconductors, with variable range hopping (VRH) conduction
+ appearing below approximately 40 K.
+ When heating 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../../../Desktop/In2Se3-FeSm-FET-Figures/In2Se3_Bulk_RT_ln_14.svg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Bulk: 
+\begin_inset Formula $\rho$
+\end_inset
+
+ versus 
+\begin_inset Formula $T$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../../../Desktop/In2Se3-FeSm-FET-Figures/JR200115_11/JR200115_11_loop_R-cross_linear.svg
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sample A: 
+\begin_inset Formula $R_{DS}\left(T\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../../../Desktop/In2Se3-FeSm-FET-Figures/JR200115_17/JR200115_17_RDS_loop_R-cross_log.svg
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sample B: 
+\begin_inset Formula $R_{DS}\left(T\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../../../../Desktop/In2Se3-FeSm-FET-Figures/JR190919_03/JR190919_03_RDS_loop_R-cross_log.svg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sample C: 
+\begin_inset Formula $R_{DS}\left(T\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../../../Desktop/In2Se3-FeSm-FET-Figures/JR200115_11/JR200115_11_MR_sweep_1.8.svg
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sample A: Magnetoconductance
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../../../Desktop/In2Se3-FeSm-FET-Figures/JR190815_04/JR190815_04_Hall_n2D.svg
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sample D: Carrier density
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Temp dependence
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Bulk
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

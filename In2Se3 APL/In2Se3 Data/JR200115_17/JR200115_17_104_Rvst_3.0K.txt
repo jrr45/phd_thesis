@@ -1,0 +1,46 @@
+[Main]
+Experiment = "Rvst_3.0K"
+Header length = 45    
+Date = "20200211 15:55:41"
+Comments = ""
+
+[System]
+System = "PPMS"
+Magnet stability range (G) = 5.000000E+1
+Magnet check interval (s) = 1.000000E+0
+Magnet approach mode = "Linear Approach"
+Magnet mode = "Persistent"
+Temperature stability time (s) = 1.000000E+0
+Temperature approach mode = "Fast Settle"
+
+[Static Temperature]
+Set initial temperature = TRUE
+Initial temperature (K) = 3.000000E+0
+Delay after setting initial temperature (s) = 0.000000E+0
+Initial temperature stabilization (K) = 1.000000E+0
+Initial temperature ramp rate (K/min) = 5.000000E+0
+Wait for initial temperature to stabilize = TRUE
+Set final temperature = FALSE
+
+[Time Sweep ]
+Interval = 5.000000E+0
+Duration = 3.600000E+3
+
+[Dynamic Voltage]
+Voltage source = "Keithley 6430"
+GPIB = "GPIB0::9::INSTR"
+Initial Voltage (V) = 100.000000E-3
+Final Voltage (V) = 100.000000E-3
+Voltage step (V) = 1.000000E-12
+Number of measurement sequences = 1.000000E+0
+Samples/sequence = 30.000000E+0
+Pre-measuement delay (s) = 1.000000E+0
+Current limit (A) = 1.000000E-3
+Auto-range = 0
+Manual range (V) = 10.000000E+0
+Measurement Type = "Subtract bias"
+Pattern = "Linear"
+Check compliance = 0
+Measurement Speed = 1.000000
+Time (s)	Voltage 1 (V)	Current (A)	STD_Current (A)	Resistance 1 (Ohms)	STD_Resistance 1 (Ohms)	Temperature (K)
+994.205474854E-6	100.000001490E-3	984.741996667E-15	253.109387042E-15	101.549443233E+9	26.101372155E+9	3.983900000E+0
