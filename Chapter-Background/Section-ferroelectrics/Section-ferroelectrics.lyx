@@ -525,7 +525,7 @@ Polarization
 \end_layout
 
 \begin_layout Plain Layout
-(a) Ferroelectric domains and dipole orentation within a crystal.
+(a) Ferroelectric domains and dipole orientation within a crystal.
  Polarization vs electric field for a (b) paraelectric and (c) ferroelectric.
  
 \begin_inset Formula $\vec{E}_{c}$
@@ -590,7 +590,185 @@ Phase transitions
 \end_layout
 
 \begin_layout Standard
+In the Landau phenomenological approach, or Landau–Devonshire theory, we
+ can write the free energy 
+\begin_inset Formula $F$
+\end_inset
+
+ of a ferroelectric in the mean-field approach as
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+F=F_{0}+\frac{\alpha}{2}P+\frac{\beta}{4}P^{2}+\frac{\gamma}{6}P^{6}\cdots-EP\label{eq:Landau-Free-Energy}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, 
+\begin_inset Formula $\beta$
+\end_inset
+
+, 
+\begin_inset Formula $\gamma$
+\end_inset
+
+, etc are the Landau parameters, 
+\begin_inset Formula $F_{0}$
+\end_inset
+
+is the free energy density of the disordered (high temperature) phase near
+ the transition, and 
+\begin_inset Formula $E$
+\end_inset
+
+ the external field.
+ In the paraelectric phase the Hamiltonian must be invariant under a transformat
+ion from 
+\begin_inset Formula $P$
+\end_inset
+
+ to 
+\begin_inset Formula $-P$
+\end_inset
+
+, forcing equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Landau-Free-Energy"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ to only contain even powers of 
+\begin_inset Formula $P$
+\end_inset
+
+.
+ The Landau parameters are pressure and temperature dependent, though usually
+ only the temperature dependence in 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ is considered.
+ The first parameter, 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ is generally taken as linear in 
+\begin_inset Formula $T$
+\end_inset
+
+ near the transition temperature, taking on the form 
+\begin_inset Formula $\alpha=\alpha_{0}\left(T-T_{0}\right)$
+\end_inset
+
+, where 
+\begin_inset Formula $T_{0}$
+\end_inset
+
+ is the Curie–Weiss transition temperature (
+\begin_inset Formula $T_{0}\leq T_{C}$
+\end_inset
+
+).
+ Equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Landau-Free-Energy"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ can be modified to fit thin film ferroelectrics by including the boundary
+ conditions
+\begin_inset CommandInset citation
+LatexCommand cite
+key "wong2007asimplified"
+literal "true"
+
+\end_inset
+
+, but we will keep to the simpler, bulk description.
+ Minimizing the free energy 
+\begin_inset Formula 
+\begin{equation}
+\frac{\partial F}{\partial P}=\alpha P+\beta P^{3}+\gamma P^{5}-E=0
+\end{equation}
+
+\end_inset
+
+Then setting 
+\begin_inset Formula $E=0$
+\end_inset
+
+ we find 
+\begin_inset Formula 
+\begin{equation}
+P^{2}=\begin{cases}
+0 & Paraelectric\\
+\frac{-\beta\pm\sqrt{\beta^{2}-4\alpha\gamma}}{2\gamma} & Ferroelectric
+\end{cases}
+\end{equation}
+
+\end_inset
+
+ We can then look at three separate cases for equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Landau-Free-Energy"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Second-order, 
+\begin_inset Formula $\beta>0$
+\end_inset
+
+ and 
+\begin_inset Formula $\gamma=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 TODO: Landau free energy 
+\end_layout
+
+\begin_layout Subsubsection
+First-order, 
+\begin_inset Formula $\beta<0$
+\end_inset
+
+ and 
+\begin_inset Formula $\gamma>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Tricritical point, 
+\begin_inset Formula $\beta=0$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
