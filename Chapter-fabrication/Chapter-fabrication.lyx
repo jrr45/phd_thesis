@@ -93,7 +93,7 @@ status open
 \end_layout
 
 \begin_layout Chapter
-Sample fabrication and methods
+Sample fabrication and measurement methods
 \end_layout
 
 \begin_layout Section
@@ -412,7 +412,7 @@ Before fabricating any devices to test materials we needed a platform to
 \end_inset
 
  was chosen as a substrate (purchased from Si-Tech, <100> thermal oxide
- allowed us to construct a backgated field effect transistor (see: FIXME).
+ allowed us to construct a backgated field effect transistor (see: TODO).
  The substrate was polished for better adhesion of deposited flakes.
  Using standard photolithography (see 
 \begin_inset CommandInset ref
@@ -1508,7 +1508,7 @@ Lithography wiring patterns were designed with
 , Alfa Aesar).
  To avoid any currents damaging the sample, we first adhered the wire to
  the wiring structure with lead-free solder.
- Next we placed an indium dot (FIXME source) on each of the sample wiring
+ Next we placed an indium dot (TODO source) on each of the sample wiring
  pads using a modified tweezer.
  The tweezer was cut so that only one prong remained, then the tip cut flat
  and further sanded smooth with the side of a razor blade.
@@ -1576,6 +1576,15 @@ Layer Transfer? (TODO after I figure it out)
 
 \begin_layout Section
 PFM? (TODO, I don't do it but it might be useful)
+\end_layout
+
+\begin_layout Section
+Hall probe (TODO)
+\end_layout
+
+\begin_layout Standard
+The hall effect uses the Lorentz Force to measure the properties of carriers
+ in a matieral.
 \end_layout
 
 \end_body

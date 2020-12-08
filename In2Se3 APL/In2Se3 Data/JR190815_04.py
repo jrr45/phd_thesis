@@ -7,9 +7,8 @@ Created on Fri Oct 25 09:07:20 2019
 
 import os
 import sys
-sys.path.append(os.path.dirname(os.path.abspath(__file__)))
-import Jpython_plotter as jpp
-import In2Se3_plotter as inse
+sys.path.append(os.path.join('..','..', 'Code'))
+import material_plotter as mp
 
 import matplotlib.pyplot as plt
 import numpy as np
@@ -79,9 +78,9 @@ Hall_filenames = [
     ]
       
 def plot_R2pt_R4pt_DSvsVg():
-    files = [jpp.process_file(os.path.join(fileroot, x)) for x in RTloop_2_4pt_filenames]
-    inse.plot_RDSvsVg_generic(fileroot, files, "_R2IDSvsVg(T)", R_ind=2)
-    inse.plot_RDSvsVg_generic(fileroot, files, "_R4IDSvsVg(T)", R_ind=3)
+    files = [mp.process_file(os.path.join(fileroot, x)) for x in RTloop_2_4pt_filenames]
+    mp.plot_RDSvsVg_generic(fileroot, files, "_R2IDSvsVg(T)", R_ind=2)
+    mp.plot_RDSvsVg_generic(fileroot, files, "_R4IDSvsVg(T)", R_ind=3)
     
     
 def delta_R(file):
@@ -105,7 +104,7 @@ def plot_deltaR():
     colors = ['#0000FF', '#FF0000', '#000000']
               
     filenames = ['JR190815_04_052_RvsVg_270_V.txt']
-    files = [jpp.process_file(os.path.join(fileroot, x)) for x in filenames]
+    files = [mp.process_file(os.path.join(fileroot, x)) for x in filenames]
     
     fig = plt.figure(figsize=(3, 3*.90), dpi=300)
     ax = fig.add_subplot(111)
@@ -140,7 +139,7 @@ def plot_deltaR():
     #ax2.set_aspect('equal', 'box')
     plt.tight_layout()
     #plt.axis('square')
-    jpp.save_generic_png(fig, fileroot, "_plot_deltaR_test")
+    mp.save_generic_png(fig, fileroot, "_plot_deltaR_test")
     
 def conducting_range(file):
     return [(gv, i) for (gv, i) in zip(file['Gate_Voltage_V'], file['Current_A']) if i > 10**-10]
@@ -149,7 +148,7 @@ def plot_onsetI():
     colors = ['#0000FF', '#FF0000', '#000000']
               
     filenames = rescan_RTloop_filenames
-    files = [jpp.process_file(os.path.join(fileroot, x)) for x in filenames]
+    files = [mp.process_file(os.path.join(fileroot, x)) for x in filenames]
     
     fig = plt.figure(figsize=(3, 3*.90), dpi=300)
     ax = fig.add_subplot(111)
@@ -186,7 +185,7 @@ def plot_onsetI():
     #ax2.set_aspect('equal', 'box')
     plt.tight_layout()
     #plt.axis('square')
-    jpp.save_generic_png(fig, fileroot, "_plot_onset_I")
+    mp.save_generic_png(fig, fileroot, "_plot_onset_I")
     
 def max_Vg(file):
     x = conducting_range(file)
@@ -253,7 +252,7 @@ def plot_delta_Vgmax():
     colors = ['#0000FF', '#FF0000', '#000000']
               
     filenames = rescan_RTloop_filenames
-    files = [jpp.process_file(os.path.join(fileroot, x)) for x in filenames]
+    files = [mp.process_file(os.path.join(fileroot, x)) for x in filenames]
     
     fig = plt.figure(figsize=(3, 3*.90), dpi=300)
     ax = fig.add_subplot(111)
@@ -297,19 +296,19 @@ def plot_delta_Vgmax():
     #ax2.set_aspect('equal', 'box')
     plt.tight_layout()
     #plt.axis('square')
-    jpp.save_generic_png(fig, fileroot, "_Vg_max")
+    mp.save_generic_png(fig, fileroot, "_Vg_max")
 
 def plot_contact_generic(filename, colors, savename):
     fig = plt.figure(figsize=(2, 2), dpi=300)
     
-    files = [jpp.process_file(os.path.join(fileroot, filename))]
+    files = [mp.process_file(os.path.join(fileroot, filename))]
     
-    occ0 = jpp.first_occurance_1D(files[0]['Gate_Voltage_V'], 0, tol=0.2, starting_index=0)
-    occ1 = jpp.first_occurance_1D(files[0]['Gate_Voltage_V'], 75.0, tol=0.2, starting_index=occ0+1)
+    occ0 = mp.first_occurance_1D(files[0]['Gate_Voltage_V'], 0, tol=0.2, starting_index=0)
+    occ1 = mp.first_occurance_1D(files[0]['Gate_Voltage_V'], 75.0, tol=0.2, starting_index=occ0+1)
     file = files[0][occ0:occ0+occ1+2]
     files = [file]
     
-    ax = jpp.pretty_plot_single(fig, labels=['$\it{V_{G}}$ (V)', '$\it{R}$ (Ω)'],
+    ax = mp.pretty_plot_single(fig, labels=['$\it{V_{G}}$ (V)', '$\it{R}$ (Ω)'],
                              yscale='log')
     
     for file in files:
@@ -319,7 +318,7 @@ def plot_contact_generic(filename, colors, savename):
     ax.xaxis.set_major_locator(MultipleLocator(20))
     ax.set_xlim((-3,83))
     
-    jpp.save_generic_svg(fig, fileroot, savename)
+    mp.save_generic_svg(fig, fileroot, savename)
     
 def plot_contact():
     filenames = [#'JR190815_04_136_RvsVg_300.0K_contact.txt',#0.0, V1+ to V1-; S to V1+ ; c0, c1
@@ -337,7 +336,7 @@ def plot_contact():
                  #'JR190815_04_156_RvsVg_300.0K_contact3.txt',#12.2, V2+ to V2-; V2- to D 
                  #'JR190815_04_157_RvsVg_300.0K_contact4.txt'#13.3, S to V2+; V2+ to V2- ; c4, c3
                 ]
-    colors = jpp.colors_set1
+    colors = mp.colors_set1
     colors = [[colors[0], colors[1]],#0
               [colors[0], colors[1]],#1
               [colors[0], colors[1]],#2
@@ -360,15 +359,15 @@ def plot_contact():
 
 
 def plot_hall_V_generic(H_data, V_data, savename, polyfit=None):
-    (vscale, vlabel) = jpp.m_order(V_data)
+    (vscale, vlabel) = mp.m_order(V_data)
     fig = plt.figure(figsize=(2, 2), dpi=300)
     
-    (ax, ax2, ax3) = jpp.pretty_plot(fig, labels=['$\it{H}$ (T)', '$\it{V_{H}}$ (%sV)' % vlabel],
+    (ax, ax2, ax3) = mp.pretty_plot(fig, labels=['$\it{H}$ (T)', '$\it{V_{H}}$ (%sV)' % vlabel],
                              yscale=['linear','linear'])
-    ax.plot(H_data, V_data*vscale, '.-', ms=3, linewidth=1.5, color=jpp.colors_set1[0])
+    ax.plot(H_data, V_data*vscale, '.-', ms=3, linewidth=1.5, color=mp.colors_set1[0])
     
     if polyfit is not None:
-        ax.plot(H_data, polyfit(H_data)*vscale, '-', ms=3, linewidth=1.5, color=jpp.colors_set1[1])
+        ax.plot(H_data, polyfit(H_data)*vscale, '-', ms=3, linewidth=1.5, color=mp.colors_set1[1])
     
     ax.set_xlim((-11, 11))
     ax.xaxis.set_major_locator(MultipleLocator(5))
@@ -377,21 +376,21 @@ def plot_hall_V_generic(H_data, V_data, savename, polyfit=None):
     ax.minorticks_on()
     ax2.minorticks_on()
     
-    jpp.save_generic_svg(fig, fileroot, savename)
+    mp.save_generic_svg(fig, fileroot, savename)
     
 
 def process_hall_data():
     Temperatures = []
     offset = [0, 0, 1, 0]
-    files = [jpp.process_file(os.path.join(fileroot, x)) for x in Hall_filenames]
+    files = [mp.process_file(os.path.join(fileroot, x)) for x in Hall_filenames]
     
     #RTloop_2_4pt_filenames
     #rescan_RTloop_filenames
     #RTloop_filenames
     (cs_Currents_left, cs_Voltages_left, _, cs_Temperatures) = \
-        inse.get_cross_section(fileroot, RTloop_2_4pt_filenames, [75.], 1)
+        mp.get_cross_section(fileroot, RTloop_2_4pt_filenames, [75.], 1)
     (cs_Currents_right, cs_Voltages_right, _, cs_Temperatures) = \
-        inse.get_cross_section(fileroot, RTloop_2_4pt_filenames, [75.], 2)
+        mp.get_cross_section(fileroot, RTloop_2_4pt_filenames, [75.], 2)
     
     n2Ds = [] # 2D hall density
     r_squared = [] # error
@@ -429,16 +428,16 @@ def process_hall_data():
         #RH2D = ((V_hall_T-V_hall0T)/current)/B_point
         
         # n2D = B/(Rxy*e) = 1/RH2D*e 
-        n2D = -B_point*current/((V_hall_T-V_hall0T)*abs(inse.fundamental_charge_e))
+        n2D = -B_point*current/((V_hall_T-V_hall0T)*abs(mp.fundamental_charge_e))
         n2Ds.append(n2D)
         
         # R from 2pt resistance in actual measurement
-        ind = jpp.first_occurance_1D(B_data, 0, tol=0.01, starting_index=0)
+        ind = mp.first_occurance_1D(B_data, 0, tol=0.01, starting_index=0)
         R_2pt = VDS_data[ind]/current ##
         σs = JR190815_04_length / (R_2pt * JR190815_04_width)
         
         # pull R from seperate 4pt data instead
-        occ0 = jpp.first_occurance_1D(cs_Temperatures, T, tol=.2, starting_index=0)
+        occ0 = mp.first_occurance_1D(cs_Temperatures, T, tol=.2, starting_index=0)
         R_left = cs_Voltages_left[0][occ0]/cs_Currents_left[0][occ0]
         R_right = cs_Voltages_right[0][occ0]/cs_Currents_right[0][occ0]
         #print("R_left: %s Ω and R_right %s Ω" % (round(R_left), round(R_right)))
@@ -450,7 +449,7 @@ def process_hall_data():
         #print("R_DS: %s Ω and R_loop: %s Ω" % (round(R_2pt), round(Rxx_4pt)))
         
         # μ = σs/(e*n2D)
-        μ = σs/(abs(inse.fundamental_charge_e)*n2D)
+        μ = σs/(abs(mp.fundamental_charge_e)*n2D)
         μH.append(μ)
         
         #plot_hall_V_generic(xdata, ydata, '_RvsH_' + str(temp) + 'K_R2_' + str(r_squared), polyfit=pfit)
@@ -467,7 +466,7 @@ def plot_n_hall_3D():
     
     fig = plt.figure(figsize=(1.5, 1.5), dpi=300)
     
-    ax = jpp.pretty_plot_single(fig, labels=['$\it{T}$ (K)', '$\it{n}$ ($m^{-3}$)'],
+    ax = mp.pretty_plot_single(fig, labels=['$\it{T}$ (K)', '$\it{n}$ ($m^{-3}$)'],
                              yscale='log', fontsize=10)
     
     ax.plot(Temperatures, n3D, '.-', ms=3, linewidth=1.5)
@@ -475,7 +474,7 @@ def plot_n_hall_3D():
     ax.set_xlim((None, 215))
     ax.xaxis.set_major_locator(MultipleLocator(100))
 
-    jpp.save_generic_svg(fig, fileroot, "_Hall_n3D")
+    mp.save_generic_svg(fig, fileroot, "_Hall_n3D")
     
 def plot_n_hall_2D(fontsize=10, labelsize=10):
     (Temperatures, n2D, fits, r_squared, μH) = process_hall_data()
@@ -489,9 +488,9 @@ def plot_n_hall_2D(fontsize=10, labelsize=10):
     
     if not log:
         ymax = [np.nanmax(n2D)*m2_to_cm2]
-        (y_pow, y_label) = jpp.m_order(ymax)
+        (y_pow, y_label) = mp.m_order(ymax)
     
-    ax = jpp.pretty_plot_single(fig, labels=['$\it{T}$ (K)', '$\it{n}$ ($%s cm^{-2}$)' % (y_label)],
+    ax = mp.pretty_plot_single(fig, labels=['$\it{T}$ (K)', '$\it{n}$ ($%s cm^{-2}$)' % (y_label)],
                              yscale=('log' if log else 'linear'), fontsize=fontsize, labelsize=labelsize)
     
     
@@ -502,24 +501,24 @@ def plot_n_hall_2D(fontsize=10, labelsize=10):
     ax.set_ylim( (1*10.0**12,1.5*10.0**13.0) )
     ax.xaxis.set_major_locator(MultipleLocator(100))
 
-    jpp.save_generic_both(fig, fileroot, "_Hall_n2D")
+    mp.save_generic_both(fig, fileroot, "_Hall_n2D")
     plt.show()
     plt.clf()
        
 
 def plot_hall_inset(log = False, fontsize=10, labelsize=10):
     offset = [0, 0, 1, 0]
-    files = [jpp.process_file(os.path.join(fileroot, x)) for x in Hall_filenames]
+    files = [mp.process_file(os.path.join(fileroot, x)) for x in Hall_filenames]
     
-    colors=jpp.colors_set1[[1, 3, 2, 0]]
+    colors=mp.colors_set1[[1, 3, 2, 0]]
     
     # scale
     
     ymax = [10.] if log else [np.nanmax(file['Resistance_1_Ohms']) for file in files]
-    (scale_pow, scale_label) = jpp.m_order(ymax)
+    (scale_pow, scale_label) = mp.m_order(ymax)
     
     fig = plt.figure(figsize=(1., 1.), dpi=300)
-    ax = jpp.pretty_plot_single(fig, labels=['$\it{B}$ (T)', '$\it{R_{xy}}$ (%sΩ)' % scale_label],
+    ax = mp.pretty_plot_single(fig, labels=['$\it{B}$ (T)', '$\it{R_{xy}}$ (%sΩ)' % scale_label],
                              yscale=('log' if log else 'linear'), fontsize=fontsize, labelsize=labelsize)
     
     for i, (file, off) in enumerate(zip(files, offset)):
@@ -537,7 +536,7 @@ def plot_hall_inset(log = False, fontsize=10, labelsize=10):
         
         #RH = thickness*((pfit(B_point)-pfit(-B_point))/2)/B_point
         
-        start = jpp.first_occurance_1D(xdata, 0, tol=0.01)
+        start = mp.first_occurance_1D(xdata, 0, tol=0.01)
         
         ax.plot(xdata[start:], -(pfit(xdata[start:])-pfit(0))*scale_pow, '-', ms=3, linewidth=1, color=colors[i])
         ax.plot(xdata[start:], -(ydata[start:]-pfit(0))*scale_pow, '.', ms=3, linewidth=1.5, color=colors[i])
@@ -547,13 +546,13 @@ def plot_hall_inset(log = False, fontsize=10, labelsize=10):
     
     ax.minorticks_on()
     
-    jpp.save_generic_svg(fig, fileroot, "_Hall_stacked")
+    mp.save_generic_svg(fig, fileroot, "_Hall_stacked")
 
 def plot_IV_generic(files, savename, colors, log=False, invertaxes=False):    
     fig = plt.figure(figsize=(2, 2), dpi=300)
     pre = '-' if invertaxes else ''
 
-    ax= jpp.pretty_plot_single(fig, labels=["$\it{%sV_{DS}}$ (V)" % pre, '$\it{%sI_{D}}$ (μA)' % pre],#μ
+    ax= mp.pretty_plot_single(fig, labels=["$\it{%sV_{DS}}$ (V)" % pre, '$\it{%sI_{D}}$ (μA)' % pre],#μ
                              yscale=('log' if log else 'linear'), fontsize=10, labelsize=8, labelpad=[0,0])
     
     
@@ -572,11 +571,10 @@ def plot_IV_generic(files, savename, colors, log=False, invertaxes=False):
         ax.set_xlim(xlim[0], xlim[1]+.5)
         ax.set_ylim(ylim[0], ylim[1]*1.1)
 
-    jpp.save_generic_svg(fig, fileroot, savename)
+    mp.save_generic_svg(fig, fileroot, savename)
 
 def plot_300K_IDvsVDS(figsize=1.5, log=False):
-    colors = jpp.colors_mathem
-    colors = jpp.colors_set1
+    colors = mp.colors_set1
     colors = [colors[0], colors[4], colors[3], colors[6], colors[2], colors[8], colors[1]]
     
     start = 10
@@ -584,35 +582,35 @@ def plot_300K_IDvsVDS(figsize=1.5, log=False):
     
     xadj = 1
     filenames = [('JR190815_04_' + str(i).zfill(3) + '_IvsV_increase.txt') for i in range(start, start+7)]
-    files = [jpp.process_file(os.path.join(fileroot, x)) for x in filenames]
-    inse.plot_IDvsVDS_generic(fileroot, files, savename + 'positive_increasing', colors,\
-                              figsize=figsize, xadj=xadj, log=log)
+    files = [mp.process_file(os.path.join(fileroot, x)) for x in filenames]
+    mp.plot_IDvsVDS_generic(fileroot, files, savename + 'positive_increasing', colors,\
+                              size=figsize, xadj=xadj, log=log)
     
     filenames = [('JR190815_04_' + str(i).zfill(3) + '_IvsV_increase.txt') for i in range(start+7, start+14)]
-    files = [jpp.process_file(os.path.join(fileroot, x)) for x in filenames]
-    inse.plot_IDvsVDS_generic(fileroot, files, savename + 'positive_decreasing', colors[::-1],\
-                              figsize=figsize, xadj=xadj, log=log)
+    files = [mp.process_file(os.path.join(fileroot, x)) for x in filenames]
+    mp.plot_IDvsVDS_generic(fileroot, files, savename + 'positive_decreasing', colors[::-1],\
+                              size=figsize, xadj=xadj, log=log)
     
     filenames = [('JR190815_04_' + str(i).zfill(3) + '_IvsV_decrease.txt') for i in range(start+14, start+21)]
-    files = [jpp.process_file(os.path.join(fileroot, x)) for x in filenames]
-    inse.plot_IDvsVDS_generic(fileroot, files, savename + 'negative_increasing', colors,\
-                              figsize=figsize, invertaxes=True, xadj=xadj, log=log)
+    files = [mp.process_file(os.path.join(fileroot, x)) for x in filenames]
+    mp.plot_IDvsVDS_generic(fileroot, files, savename + 'negative_increasing', colors,\
+                              size=figsize, invertaxes=True, xadj=xadj, log=log)
     
     filenames = [('JR190815_04_' + str(i).zfill(3) + '_IvsV_decrease.txt') for i in range(start+21, start+28)]
-    files = [jpp.process_file(os.path.join(fileroot, x)) for x in filenames]
-    inse.plot_IDvsVDS_generic(fileroot, files, savename + 'negative_decreasing', colors[::-1],\
-                              figsize=figsize, invertaxes=True, xadj=xadj, log=log)
+    files = [mp.process_file(os.path.join(fileroot, x)) for x in filenames]
+    mp.plot_IDvsVDS_generic(fileroot, files, savename + 'negative_decreasing', colors[::-1],\
+                              size=figsize, invertaxes=True, xadj=xadj, log=log)
     
 def main(): #sample D
-    show_all = False
+    show_all = True
     # Plot ID vs VG loops
     if False or show_all:
-        inse.plot_IDvsVg_each(fileroot, RTloop_filenames, '_JR190815_04', log=True, size=2, majorx=40,
+        mp.plot_IDvsVg_each(fileroot, RTloop_filenames, '_JR190815_04', log=True, size=2, majorx=40,
                           ylim=(None,None), fontsize=10, labelsize=10)
     
     # -- Cross section of loop data --
     if False or show_all:
-        inse.plot_loopR_cross_section(fileroot, RTloop_filenames, "_JR190815_04_RDS", increments=[0,25,50,75],\
+        mp.plot_loopR_cross_section(fileroot, RTloop_filenames, "_JR190815_04_RDS", increments=[0,25,50,75],\
                                       figsize=2, log=True, ylim=(None, None))
     
     # -- 300K ID vs VDS curves
@@ -639,11 +637,11 @@ def main(): #sample D
     
     # -- carrier mobility μ
     if False or show_all:
-        inse.plot_mobility_μ_cross_section(fileroot, RTloop_filenames, "_JR190815_04", JR190815_04_length, JR190815_04_width, figsize=1.5, ylim=(None, None),\
+        mp.plot_mobility_μ_cross_section(fileroot, RTloop_filenames, "_JR190815_04", JR190815_04_length, JR190815_04_width, figsize=1.5, ylim=(None, None),\
                                            log=False, increments=[25, 50, 75], colororder=[3,2,1])
         
-    files = [jpp.process_file(os.path.join(fileroot, x)) for x in ['JR190815_04_125_RvsVg_300.0K.txt']]
-    print(inse.width_Vg(files[0],10**-8))
+    files = [mp.process_file(os.path.join(fileroot, x)) for x in ['JR190815_04_125_RvsVg_300.0K.txt']]
+    print(mp.width_Vg(files[0],10**-8))
     
 if __name__== "__main__":
   main()

@@ -7,8 +7,8 @@ Created on Wed Nov 20 14:21:28 2019
 
 import sys
 import os
-sys.path.append(os.path.dirname(os.path.abspath(__file__)))
-import Jpython_plotter as jpp
+sys.path.append(os.path.join('..', '..', 'Code'))
+import material_plotter as mp
 import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib.ticker import (MultipleLocator, FormatStrFormatter,
@@ -57,10 +57,10 @@ def plot_angled_SHG_general(filename, savename):
     
     data = r_pl_file(os.path.join(working_dir, filename))
     
-    ax.plot(data['Angle_Rad'], data['avgIntensityPowerCorrectedNorm'], '.-', ms=3, linewidth=1, color=jpp.colors_set1[1])
+    ax.plot(data['Angle_Rad'], data['avgIntensityPowerCorrectedNorm'], '.-', ms=3, linewidth=1, color=mp.colors_set1[1])
     
     
-    jpp.save_generic_svg(fig, working_dir, savename)
+    mp.save_generic_svg(fig, working_dir, savename)
     plt.show()
     plt.clf()
 

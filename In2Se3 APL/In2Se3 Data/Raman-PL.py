@@ -7,8 +7,8 @@ Created on Mon Nov 11 19:31:37 2019
 
 import sys
 import os
-sys.path.append(os.path.dirname(os.path.abspath(__file__)))
-import Jpython_plotter as jpp
+sys.path.append(os.path.join('..', '..', 'Code'))
+import material_plotter as mp
 import matplotlib.pyplot as plt
 import numpy as np
 from mpl_toolkits.mplot3d import Axes3D
@@ -48,11 +48,11 @@ def r_pl_file(file):
 def plot_raman_general(filename):
     file = r_pl_file(os.path.join(inse_dir, filename))
     fig = plt.figure(figsize=(1.9, 1.9), dpi=300)
-    ax = jpp.pretty_plot_single(fig, labels=["Raman Shift ($cm^{-1}$)", 'Intensity (Arb. Unit) '],
+    ax = mp.pretty_plot_single(fig, labels=["Raman Shift ($cm^{-1}$)", 'Intensity (Arb. Unit) '],
                              yscale='linear', fontsize=10, labelsize=10, labelpad=[0,3]) #fontsize=10, labelsize=10
     ax.tick_params(axis='both', which='major', pad=1)
     
-    ax.plot(file['Energy'], file['Intensity'], '.-', ms=3, linewidth=1.5, color=jpp.colors_set1[1])
+    ax.plot(file['Energy'], file['Intensity'], '.-', ms=3, linewidth=1.5, color=mp.colors_set1[1])
     ax.set_yticklabels(['']*4)
     
     inc = max(file['Intensity'])/4
@@ -62,23 +62,23 @@ def plot_raman_general(filename):
     
     ax.set_xlim((90, 320))
     
-    jpp.save_generic_svg(fig, inse_dir, filename.replace('.txt', ''))
+    mp.save_generic_svg(fig, inse_dir, filename.replace('.txt', ''))
     plt.show()
     plt.clf()
 
 def plot_pl_general(filename):
     file = r_pl_file(os.path.join(inse_dir, filename))
     fig = plt.figure(figsize=(1.9, 1.9), dpi=300)
-    ax = jpp.pretty_plot_single(fig, labels=["Energy (eV)", 'Intensity (Arb. Unit) '],
+    ax = mp.pretty_plot_single(fig, labels=["Energy (eV)", 'Intensity (Arb. Unit) '],
                              yscale='linear', fontsize=10, labelsize=10, labelpad=[0,3]) #fontsize=10, labelsize=10
     inc = 10
-    ax.plot(file['Energy'][0::inc], file['Intensity'][0::inc], '.-', ms=3, linewidth=1.5, color=jpp.colors_set1[1])
+    ax.plot(file['Energy'][0::inc], file['Intensity'][0::inc], '.-', ms=3, linewidth=1.5, color=mp.colors_set1[1])
     ax.set_yticklabels(['']*4)
     
     inc = max(file['Intensity'])/4
     ax.yaxis.set_major_locator(MultipleLocator(inc))
     
-    jpp.save_generic_svg(fig, inse_dir, filename.replace('.txt', ''))
+    mp.save_generic_svg(fig, inse_dir, filename.replace('.txt', ''))
     plt.show()
     plt.clf()
 

@@ -186,7 +186,7 @@ status collapsed
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../../../../Desktop/In2Se3-FeSm-FET-Figures/Hall bar.svg
+	filename Figures/Hall_bar.svg
 
 \end_inset
 
@@ -219,7 +219,7 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../../../../Desktop/In2Se3-FeSm-FET-Figures/JR200115_11.svg
+	filename Figures/JR200115_11.svg
 	width 1.35in
 	groupId sample-pic
 
@@ -262,7 +262,7 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../../../../Desktop/In2Se3-FeSm-FET-Figures/JR200115_17.svg
+	filename Figures/JR200115_17.svg
 	width 1.35in
 	groupId sample-pic
 
@@ -302,7 +302,7 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../../../../Desktop/In2Se3-FeSm-FET-Figures/JR190919_03.svg
+	filename Figures/JR190919_03.svg
 	width 1.35in
 	groupId sample-pic
 
@@ -342,7 +342,7 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../../../../Desktop/In2Se3-FeSm-FET-Figures/JR190815_04.svg
+	filename Figures/JR190815_04.svg
 	width 1.35in
 	groupId sample-pic
 
@@ -935,6 +935,7 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
+\noindent
 \begin_inset Float figure
 wide false
 sideways false
@@ -949,7 +950,9 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../../../../Desktop/In2Se3-FeSm-FET-Figures/In2Se3_Raman.svg
+	filename Figures/In2Se3_Raman.svg
+	rotateOrigin leftTop
+	groupId Optical Measurements
 
 \end_inset
 
@@ -982,11 +985,13 @@ Raman
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../../../../Desktop/In2Se3-FeSm-FET-Figures/In2Se3_PL.svg
+	filename Figures/In2Se3_Photoluminescence.svg
+	rotateOrigin leftTop
+	groupId Optical Measurements
 
 \end_inset
 
@@ -1016,11 +1021,13 @@ Photoluminescence
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../../../../Desktop/In2Se3-FeSm-FET-Figures/In2Se3_angled-SHG.svg
+	filename Figures/In2Se3_angled_SHG.svg
+	rotateOrigin leftTop
+	groupId Optical Measurements
 
 \end_inset
 
@@ -1036,10 +1043,6 @@ Second Harmonic Generation
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -1196,7 +1199,7 @@ literal "true"
 \end_inset
 
  transistors, where the ferroelectric polarization field is thought to modify
- the Schottky barrier between the material and the metal leads.<FIXME Refs>
+ the Schottky barrier between the material and the metal leads.<TODO Refs>
 \end_layout
 
 \begin_layout Standard
@@ -1210,7 +1213,7 @@ status open
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -1251,7 +1254,7 @@ status collapsed
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -1615,7 +1618,7 @@ status open
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -1645,7 +1648,7 @@ status collapsed
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -1678,7 +1681,7 @@ status collapsed
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -1708,7 +1711,7 @@ status collapsed
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -1738,7 +1741,7 @@ status collapsed
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -1827,7 +1830,7 @@ When cooled from 300 to 2 K, the bulk crystal showed an increase in resistivity
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -2000,7 +2003,7 @@ Sample C:
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -2034,7 +2037,7 @@ Sample A: Magnetoconductance
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics

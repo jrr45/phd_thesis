@@ -393,12 +393,14 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
+\noindent
 \begin_inset Float figure
 wide false
 sideways false
 status open
 
 \begin_layout Plain Layout
+\noindent
 \begin_inset Float figure
 wide false
 sideways false
@@ -418,7 +420,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Ferroelectric domains in a crystal
+Ferroelectric crystal domains
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Ferroelectric domains"
@@ -460,7 +462,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Paraelectric polarization vs electric field
+Paraelectric polarization
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Polarization-Paraelectric-electric field-vs"
@@ -505,7 +507,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Ferroelectric polarization vs electric field
+Ferroelectric polarization
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Polarization-Ferroelectric-electric-field-vs"
@@ -517,10 +519,6 @@ name "fig:Polarization-Ferroelectric-electric-field-vs"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -905,7 +903,7 @@ literal "true"
  Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Landau-First-FvE"
+reference "fig:Landau-First-FvP"
 plural "false"
 caps "false"
 noprefix "false"
@@ -949,9 +947,6 @@ noprefix "false"
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float figure
 placement h
 wide false
@@ -959,20 +954,27 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Float figure
 wide false
 sideways false
 status open
 
 \begin_layout Plain Layout
-TODO
+\begin_inset Graphics
+	filename Ferroelectrics-Figures/Landau 1st Energy vs Polarization.svg
+	groupId polarization
+
+\end_inset
+
+
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Energy as a function of electric field
+Free energy
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:Landau-First-FvE"
+name "fig:Landau-First-FvP"
 
 \end_inset
 
@@ -995,20 +997,59 @@ name "fig:Landau-First-FvE"
 \end_inset
 
 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset Float figure
 wide false
 sideways false
 status open
 
 \begin_layout Plain Layout
-TODO
+\begin_inset Graphics
+	filename Ferroelectrics-Figures/Landau 1st Ps vs Temperature.svg
+	groupId polarization
+
+\end_inset
+
+
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+Order parameter 
 \begin_inset Formula $P_{S}$
 \end_inset
 
- as a function of temperature
+
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Landau-First-PvT"
@@ -1032,7 +1073,7 @@ name "fig:Landau-First-PvT"
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Landau second order transition
+Landau first order transition
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Landau-first-order"
@@ -1045,6 +1086,27 @@ name "fig:Landau-first-order"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
+(a) The free energy as a function of polarization at constant temperature
+ and zero electric field for a first order transition.
+ As 
+\begin_inset Formula $T$
+\end_inset
+
+ increases the minimums at finite polarization increase and disappears above
+ 
+\begin_inset Formula $T_{1}$
+\end_inset
+
+.
+ (b) The value of the parameter 
+\begin_inset Formula $P_{s}$
+\end_inset
+
+ as a function of increasing temperature and constant electric fields.
+ 
 \end_layout
 
 \end_inset
@@ -1172,10 +1234,16 @@ noprefix "false"
 \end_inset
 
  with increasing temperature.
+ Above the critical field 
+\begin_inset Formula $E_{c}$
+\end_inset
+
+ the minimum polarization transitions from discontinuous to continuous.
  
 \end_layout
 
 \begin_layout Standard
+\noindent
 \begin_inset Float figure
 placement h
 wide false
@@ -1183,6 +1251,7 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Float figure
 wide false
 sideways false
@@ -1190,7 +1259,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Ferroelectrics-Figures/Polarization Energy vs Electric Potential.svg
+	filename Ferroelectrics-Figures/Landau 2nd Energy vs Polarization.svg
 	groupId polarization
 
 \end_inset
@@ -1202,10 +1271,10 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Energy as a function of electric field
+Free energy
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:Landau-Second-FvE"
+name "fig:Landau-Second-FvP"
 
 \end_inset
 
@@ -1228,20 +1297,59 @@ name "fig:Landau-Second-FvE"
 \end_inset
 
 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset Float figure
 wide false
 sideways false
 status open
 
 \begin_layout Plain Layout
-TODO
+\begin_inset Graphics
+	filename Ferroelectrics-Figures/Landau 2nd Ps vs Temperature.svg
+	groupId polarization
+
+\end_inset
+
+
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+Order parameter 
 \begin_inset Formula $P_{S}$
 \end_inset
 
- as a function of temperature
+
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Landau-Second-PvT"
@@ -1278,6 +1386,18 @@ name "fig:Landau-second-order"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
+(a) The free energy as a function of polarization at constant temperature
+ for a second order transition.
+ All electric fields are zero except for the line indicated.
+ (b) 
+\begin_inset Formula $P_{s}$
+\end_inset
+
+ as a function of increasing temperature and constant electric fields.
+ 
 \end_layout
 
 \end_inset
@@ -2684,6 +2804,10 @@ literal "false"
 
 \begin_layout Subsection
 FeFETs with ferroelectric channels
+\end_layout
+
+\begin_layout Standard
+TODO
 \end_layout
 
 \end_body

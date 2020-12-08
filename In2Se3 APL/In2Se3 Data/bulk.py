@@ -7,8 +7,8 @@ Created on Thu Nov 14 19:23:07 2019
 
 import sys
 import os
-sys.path.append(os.path.dirname(os.path.abspath(__file__)))
-import Jpython_plotter as jpp
+sys.path.append(os.path.join('..', '..', 'Code'))
+import material_plotter as mp
 import matplotlib.pyplot as plt
 import numpy as np
 from mpl_toolkits.mplot3d import Axes3D
@@ -19,14 +19,14 @@ from matplotlib.ticker import (MultipleLocator, FormatStrFormatter,
 fileroot = r'Bulk'
 
 def plot_rho(figsize=(2, 2)):
-    colors = jpp.colors_set1
+    colors = mp.colors_set1
     filenames = ['Bulk_rect_010_RvsT_hall.txt',
                  'Bulk_rect_002_RvsT_c-plane.txt']
-    files = [jpp.process_file(os.path.join(fileroot, x)) for x in filenames]
+    files = [mp.process_file(os.path.join(fileroot, x)) for x in filenames]
     
     fig = plt.figure(figsize=figsize, dpi=300)
-    ax = jpp.pretty_plot_single(fig, labels=["$\it{T}$ (K)", '$\\rho}$ (kΩ$\cdot$cm)'],
-                             yscale='linear', size=1.9)
+    ax = mp.pretty_plot_single(fig, labels=["$\it{T}$ (K)", '$\\rho}$ (kΩ$\cdot$cm)'],
+                             yscale='linear')
 
     temperaturesab = files[0]['Temperature_K']
     Rxxab = files[0]['Resistance_1_Ohms']
@@ -40,17 +40,17 @@ def plot_rho(figsize=(2, 2)):
     ax.minorticks_on()
     ax.xaxis.set_major_locator(MultipleLocator(100))
     
-    jpp.save_generic_svg(fig, fileroot, "_Bulk_RT")
+    mp.save_generic_svg(fig, fileroot, "_Bulk_RT")
 
 def plot_rho_ln(figsize=(2, 2)):
-    colors = jpp.colors_set1
+    colors = mp.colors_set1
     filenames = ['Bulk_rect_010_RvsT_hall.txt',
                  'Bulk_rect_002_RvsT_c-plane.txt']
-    files = [jpp.process_file(os.path.join(fileroot, x)) for x in filenames]
+    files = [mp.process_file(os.path.join(fileroot, x)) for x in filenames]
     
     fig = plt.figure(figsize=figsize, dpi=300)
-    ax = jpp.pretty_plot_single(fig, labels=["$\it{T^{-1/4}}$ ($K^{-1/4}$)", '$\it{\\rho}$ ($Ω\cdot$cm)'],
-                             yscale='log', size=1.9, fontsize=10, labelsize=10)
+    ax = mp.pretty_plot_single(fig, labels=["$\it{T^{-1/4}}$ ($K^{-1/4}$)", '$\it{\\rho}$ ($Ω\cdot$cm)'],
+                             yscale='log', fontsize=10, labelsize=10)
 
     temperaturesab = files[0]['Temperature_K']**(-1.0/4.0)
     Rxxab = files[0]['Resistance_1_Ohms']
@@ -65,7 +65,7 @@ def plot_rho_ln(figsize=(2, 2)):
     #ax2.xaxis.set_major_locator(MultipleLocator(.25))
     ax.set_ylim((10**-2,None))
     
-    jpp.save_generic_svg(fig, fileroot, "_Bulk_RT_ln_14")
+    mp.save_generic_svg(fig, fileroot, "_Bulk_RT_ln_14")
 
 def main():
     plot_rho(figsize=(2, 2))

@@ -1,9 +1,8 @@
 #generic imports
 import os
 import sys
-sys.path.append(os.path.dirname(os.path.abspath(__file__)))
-import Jpython_plotter as jpp
-import In2Se3_plotter as inse
+sys.path.append(os.path.join('..','..', 'Code'))
+import material_plotter as mp
 
 import matplotlib.pyplot as plt
 import numpy as np
@@ -168,23 +167,23 @@ IDvsVDS_5x_loop_filenames_VG_pos_inc = [
     ]
 
 def plot_IDSvsVg_300K_rate(log=True, size=2):
-    colors = jpp.colors_set1
-    files = [jpp.process_file(os.path.join(fileroot, x)) for x in rate_300K_filenames]
-    files = inse.slice_data_each(files, 'Gate_Voltage_V', -75., -75., .1, starting_index=0)
+    colors = mp.colors_set1
+    files = [mp.process_file(os.path.join(fileroot, x)) for x in rate_300K_filenames]
+    files = mp.slice_data_each(files, 'Gate_Voltage_V', -75., -75., .1, starting_index=0)
         
-    inse.plot_IDvsVg_generic(fileroot, files, "_JR200115_11_300K_rate", colors, log=log, size=size)
+    mp.plot_IDvsVg_generic(fileroot, files, "_JR200115_11_300K_rate", colors, log=log, size=size)
     
 
 
 def plot_IDSvsB_custom(filenames, savename, color_order=[0,1,2,3,4,5], log=False, symm=False, size=3):    
     fig = plt.figure(figsize=(size, size), dpi=300)
-    colors = jpp.colors_set1
+    colors = mp.colors_set1
     colors = colors[color_order]
     
-    files = [jpp.process_file(os.path.join(fileroot, x)) for x in filenames]
+    files = [mp.process_file(os.path.join(fileroot, x)) for x in filenames]
         
     
-    ax = jpp.pretty_plot_single(fig, labels=["$\it{B}$ (T)", '$\it{ΔR_{DS}/R_{DS}(0)}$ (%)'],
+    ax = mp.pretty_plot_single(fig, labels=["$\it{B}$ (T)", '$\it{ΔR_{DS}/R_{DS}(0)}$ (%)'],
                              yscale=('log' if log else 'linear'))
     
     for (file, color) in zip(files, colors):
@@ -192,9 +191,9 @@ def plot_IDSvsB_custom(filenames, savename, color_order=[0,1,2,3,4,5], log=False
         yval = file['Resistance_1_Ohms']
         
         tolerance = .001
-        #yval2 = yval[jpp.first_occurance_1D(xval, 9, tol=tolerance, starting_index=0):]
-        yval = yval[:jpp.first_occurance_1D(xval, 9, tol=tolerance, starting_index=0)]
-        xval = xval[:jpp.first_occurance_1D(xval, 9, tol=tolerance, starting_index=0)]
+        #yval2 = yval[mp.first_occurance_1D(xval, 9, tol=tolerance, starting_index=0):]
+        yval = yval[:mp.first_occurance_1D(xval, 9, tol=tolerance, starting_index=0)]
+        xval = xval[:mp.first_occurance_1D(xval, 9, tol=tolerance, starting_index=0)]
         
         print(np.size(yval))
         bin_size = 3
@@ -236,7 +235,7 @@ def plot_IDSvsB_custom(filenames, savename, color_order=[0,1,2,3,4,5], log=False
     ax.set_ylim((-1.2, .5))
     ax.xaxis.set_major_locator(MultipleLocator(4))
     
-    jpp.save_generic_svg(fig, fileroot, savename)
+    mp.save_generic_svg(fig, fileroot, savename)
 
 
 def F(Bx, B):
@@ -247,13 +246,13 @@ def F3(Bx, B):
     return np.log(Bx/B) + special.digamma(.5 + 1./(Bx/B))
 def WL_wiki2(B, Bx):
     (Bϕ, BSO, Be) = (Bx[0], Bx[1], B[2])
-    e22π2ħ = (inse.fundamental_charge_e**2)/(2*np.pi**2 * inse.ħ) 
+    e22π2ħ = (mp.fundamental_charge_e**2)/(2*np.pi**2 * mp.ħ) 
     return e22π2ħ * (.5*F(Bϕ, B) + F(BSO+Be, B) - 3*.5*F(3*.5*BSO + Bϕ, B))  #WIKI
 def WL_wiki(B, Bϕ, BSO, Be):
-    e22π2ħ = (inse.fundamental_charge_e**2)/(2*np.pi**2 * inse.ħ) 
+    e22π2ħ = (mp.fundamental_charge_e**2)/(2*np.pi**2 * mp.ħ) 
     return e22π2ħ * (.5*F(Bϕ, B) + F(BSO+Be, B) - 3*.5*F(3*.5*BSO + Bϕ, B))  #WIKI
 def WL(B, Bϕ, BSO, Be, α):
-    e22π2ħ = (inse.fundamental_charge_e**2)/(2*np.pi**2 * inse.ħ) 
+    e22π2ħ = (mp.fundamental_charge_e**2)/(2*np.pi**2 * mp.ħ) 
     return e22π2ħ * (.5*F(Bϕ, B) + F(BSO+Be, B) - 3*.5*F(3*.5*BSO + Bϕ, B))  #WIKI
     ##return -e22π2ħ * (F2(BSO + Bϕ, B) - .5*(F2(Bϕ, B) - F2(2*BSO + Bϕ, B))) + α*B**2 # TaSe
     ##return -e22π2ħ * (.5*F(Bϕ, B) - F(Bϕ+BSO, B) - .5*F(2*BSO + Bϕ, B)) #VSe2
@@ -264,12 +263,12 @@ def plot_σvsB_custom(filenames, savename, color_order=[0,1,2,3,4,5], log=False,
                      fit_lim=np.inf, size=2, fontsize=10, labelsize=10, xmult=4):    
     #from curve_fit import annealing
     fig = plt.figure(figsize=(size, size), dpi=300)
-    colors = jpp.colors_set1
+    colors = mp.colors_set1
     colors = colors[color_order]
     
-    files = [jpp.process_file(os.path.join(fileroot, x)) for x in filenames]
+    files = [mp.process_file(os.path.join(fileroot, x)) for x in filenames]
         
-    ax = jpp.pretty_plot_single(fig, labels=["$\\it{B}$ (T)", '$\it{Δσ}\,  (nS)}$'],
+    ax = mp.pretty_plot_single(fig, labels=["$\\it{B}$ (T)", '$\it{Δσ}\,  (nS)}$'],
                              yscale=('log' if log else 'linear'), fontsize=fontsize, labelsize=labelsize)
     
     for (file, color) in zip(files, colors):
@@ -278,9 +277,9 @@ def plot_σvsB_custom(filenames, savename, color_order=[0,1,2,3,4,5], log=False,
         Temperature_K = file['Temperature_K'][0]
         
         tolerance = .001
-        #yval2 = yval[jpp.first_occurance_1D(xval, 9, tol=tolerance, starting_index=0):]
-        yval = yval[:jpp.first_occurance_1D(xval, 9, tol=tolerance, starting_index=0)]
-        xval = xval[:jpp.first_occurance_1D(xval, 9, tol=tolerance, starting_index=0)]
+        #yval2 = yval[mp.first_occurance_1D(xval, 9, tol=tolerance, starting_index=0):]
+        yval = yval[:mp.first_occurance_1D(xval, 9, tol=tolerance, starting_index=0)]
+        xval = xval[:mp.first_occurance_1D(xval, 9, tol=tolerance, starting_index=0)]
         
         # average over a given bin size
         bin_size = 3
@@ -294,7 +293,7 @@ def plot_σvsB_custom(filenames, savename, color_order=[0,1,2,3,4,5], log=False,
         #symmetrize it
         R = (R+R[::-1])/2
         
-        Rsq = inse.sheet_resistance(R, JR200115_11_length, JR200115_11_width)
+        Rsq = mp.sheet_resistance(R, JR200115_11_length, JR200115_11_width)
         
         #print(H)
         Rsq_0 = Rsq[np.argmin(np.abs(H))] 
@@ -303,7 +302,7 @@ def plot_σvsB_custom(filenames, savename, color_order=[0,1,2,3,4,5], log=False,
         Δσ = -(Rsq-Rsq_0)/(Rsq_0**2)
         #Δσ2 = (1./Rsq-1./Rsq_0)
         
-        e2π2ħ = (inse.fundamental_charge_e**2)/(np.pi**2 * inse.ħ) 
+        e2π2ħ = (mp.fundamental_charge_e**2)/(np.pi**2 * mp.ħ) 
         
         #Remove holes
         ind = np.where(np.isfinite(Δσ))
@@ -368,9 +367,9 @@ def plot_σvsB_custom(filenames, savename, color_order=[0,1,2,3,4,5], log=False,
         #const = popt[3]
         
         # Bi = ħ/4e(li)^2   ->   li = sqrt(ħ/(4*e*Bi))
-        Lϕ = np.sqrt(inse.ħ/(4*abs(inse.fundamental_charge_e*Bϕ)))
-        LSO = np.sqrt(inse.ħ/(4*abs(inse.fundamental_charge_e*BSO)))
-        Le = np.sqrt(inse.ħ/(4*abs(inse.fundamental_charge_e*Be)))
+        Lϕ = np.sqrt(mp.ħ/(4*abs(mp.fundamental_charge_e*Bϕ)))
+        LSO = np.sqrt(mp.ħ/(4*abs(mp.fundamental_charge_e*BSO)))
+        Le = np.sqrt(mp.ħ/(4*abs(mp.fundamental_charge_e*Be)))
         print('Temperature %s K' % Temperature_K)
         print('Bϕ: %s T, Lϕ: %s m' % (Bϕ, Lϕ))
         print('BSO: %s T, LSO: %s m' % (BSO, LSO))
@@ -383,31 +382,31 @@ def plot_σvsB_custom(filenames, savename, color_order=[0,1,2,3,4,5], log=False,
     ax.xaxis.set_major_locator(MultipleLocator(xmult))
     ax.set_ylim((-5,105))
 
-    jpp.save_generic_svg(fig, fileroot, savename)
+    mp.save_generic_svg(fig, fileroot, savename)
     plt.show()
     plt.clf()
     
 def plot_IDvsVDS_loops(figsize=1.5, fontsize=10, labelsize=8, log=True):
-    colors = jpp.colors_set1[[0,4,3,6,2,8,1]]
+    colors = mp.colors_set1[[0,4,3,6,2,8,1]]
     if not log:
         ylim = None
     else:
         ylim = (10**-12, 2.1*10**-7)
     
-    files = [jpp.process_file(os.path.join(fileroot, x)) for x in IDvsVDS_loop_filenames_VG_inc]
-    files = inse.slice_data_each(files, 'Voltage_1_V', 0, 0, .01, nth_start=2, nth_finish=2)
-    inse.plot_IDvsVDS_generic(fileroot, files, 'VDS_loop_inc', colors, log=log, \
-                              figsize=figsize, xadj=0, x_mult=5, fontsize=fontsize, labelsize=labelsize,
+    files = [mp.process_file(os.path.join(fileroot, x)) for x in IDvsVDS_loop_filenames_VG_inc]
+    files = mp.slice_data_each(files, 'Voltage_1_V', 0, 0, .01, nth_start=2, nth_finish=2)
+    mp.plot_IDvsVDS_generic(fileroot, files, 'VDS_loop_inc', colors, log=log, \
+                              size=figsize, xadj=0, x_mult=5, fontsize=fontsize, labelsize=labelsize,
                               ylim=ylim)
         
-    files = [jpp.process_file(os.path.join(fileroot, x)) for x in IDvsVDS_loop_filenames_VG_dec]
-    files = inse.slice_data_each(files, 'Voltage_1_V', 0, 0, .01, nth_start=2, nth_finish=2)
-    inse.plot_IDvsVDS_generic(fileroot, files, 'VDS_loop_dec', colors, log=log, \
-                              figsize=figsize, xadj=0, x_mult=5, fontsize=fontsize, labelsize=labelsize,
+    files = [mp.process_file(os.path.join(fileroot, x)) for x in IDvsVDS_loop_filenames_VG_dec]
+    files = mp.slice_data_each(files, 'Voltage_1_V', 0, 0, .01, nth_start=2, nth_finish=2)
+    mp.plot_IDvsVDS_generic(fileroot, files, 'VDS_loop_dec', colors, log=log, \
+                              size=figsize, xadj=0, x_mult=5, fontsize=fontsize, labelsize=labelsize,
                               ylim=ylim)
 
 def plot_IDvsVDS_loops2(figsize=1.5, fontsize=10, labelsize=8, log=True):
-    colors = jpp.colors_set1[[0,4,3,6,2,8,1]]
+    colors = mp.colors_set1[[0,4,3,6,2,8,1]]
     if not log:
         ylim = None
     else:
@@ -418,93 +417,93 @@ def plot_IDvsVDS_loops2(figsize=1.5, fontsize=10, labelsize=8, log=True):
     IDvsVDS_one_loop_filenames_VG_inc_posss = [IDvsVDS_one_loop_filenames_VG_inc_pos[i] for i in subset]
     IDvsVDS_one_loop_filenames_VG_inc_negss = [IDvsVDS_one_loop_filenames_VG_inc_neg[i] for i in subset]
     
-    files = [jpp.process_file(os.path.join(fileroot, x)) for x in IDvsVDS_one_loop_filenames_VG_inc_posss]
-    files = inse.slice_data_each(files, 'Voltage_1_V', 0, 0, .01, nth_start=1, nth_finish=2)
-    inse.plot_IDvsVDS_generic(fileroot, files, 'VDS_one_loop_inc_pos', colors, log=log, \
+    files = [mp.process_file(os.path.join(fileroot, x)) for x in IDvsVDS_one_loop_filenames_VG_inc_posss]
+    files = mp.slice_data_each(files, 'Voltage_1_V', 0, 0, .01, nth_start=1, nth_finish=2)
+    mp.plot_IDvsVDS_generic(fileroot, files, 'VDS_one_loop_inc_pos', colors, log=log, \
                               figsize=figsize, xadj=0, x_mult=5, fontsize=fontsize, labelsize=labelsize,
                               ylim=ylim)
     
-    files = [jpp.process_file(os.path.join(fileroot, x)) for x in IDvsVDS_one_loop_filenames_VG_inc_negss]
+    files = [mp.process_file(os.path.join(fileroot, x)) for x in IDvsVDS_one_loop_filenames_VG_inc_negss]
     #print(files[0]['Gate_Voltage_V'])
-    files = inse.slice_data_each(files, 'Voltage_1_V', 0, 0, .01, nth_start=1, nth_finish=2)
-    inse.plot_IDvsVDS_generic(fileroot, files, 'VDS_one_loop_inc_neg', colors, log=log, \
+    files = mp.slice_data_each(files, 'Voltage_1_V', 0, 0, .01, nth_start=1, nth_finish=2)
+    mp.plot_IDvsVDS_generic(fileroot, files, 'VDS_one_loop_inc_neg', colors, log=log, \
                               figsize=figsize, xadj=0, x_mult=5, fontsize=fontsize, labelsize=labelsize,
                               ylim=ylim)
     
 
 def plot_IDvsVDS_5x_loops(figsize=1.5, fontsize=10, labelsize=8, log=True):
-    colors = jpp.colors_set1[[1]]
+    colors = mp.colors_set1[[1]]
     if not log:
         ylim = None
     else:
         ylim = (10**-12, 2.1*10**-7)
     
-    files = [jpp.process_file(os.path.join(fileroot, x)) for x in ['JR200115_11_177_IvsV__300K_one_side.txt']]
-    files = inse.slice_data_each(files, 'Voltage_1_V', 0, 10., .01, nth_start=1, nth_finish=4)
+    files = [mp.process_file(os.path.join(fileroot, x)) for x in ['JR200115_11_177_IvsV__300K_one_side.txt']]
+    files = mp.slice_data_each(files, 'Voltage_1_V', 0, 10., .01, nth_start=1, nth_finish=4)
     for file in files:
         add_name = str(round(file['Gate_Voltage_V'][0],1)).zfill(3) + 'V'
         
-        inse.plot_IDvsVDS_generic(fileroot, [file], 'VDS_5x_loop_neg_one' + add_name, colors, log=log, \
+        mp.plot_IDvsVDS_generic(fileroot, [file], 'VDS_5x_loop_neg_one' + add_name, colors, log=log, \
                                   figsize=figsize, xadj=0, x_mult=5, fontsize=fontsize, labelsize=labelsize,
                                   ylim=ylim)
     
-    files = [jpp.process_file(os.path.join(fileroot, x)) for x in ['JR200115_11_178_IvsV__300K_one_side.txt']]
-    files = inse.slice_data_each(files, 'Voltage_1_V', 0, -10, .01, nth_start=1, nth_finish=4)
+    files = [mp.process_file(os.path.join(fileroot, x)) for x in ['JR200115_11_178_IvsV__300K_one_side.txt']]
+    files = mp.slice_data_each(files, 'Voltage_1_V', 0, -10, .01, nth_start=1, nth_finish=4)
     for file in files:
         add_name =  str(round(file['Gate_Voltage_V'][0],1)).zfill(3) + 'V'
         
-        inse.plot_IDvsVDS_generic(fileroot, [file], 'VDS_5x_loop_pos_one' + add_name, colors, log=log, \
+        mp.plot_IDvsVDS_generic(fileroot, [file], 'VDS_5x_loop_pos_one' + add_name, colors, log=log, \
                                   figsize=figsize, xadj=0, x_mult=5, fontsize=fontsize, labelsize=labelsize,
                                   ylim=ylim)
     
 
 def plot_IDvsVDS_5x_loops2(figsize=1.5, fontsize=10, labelsize=8, log=True):
-    colors = jpp.colors_set1[[1]]
+    colors = mp.colors_set1[[1]]
     if not log:
         ylim = None
     else:
         ylim = (10**-12, 2.1*10**-7)
     
-    files = [jpp.process_file(os.path.join(fileroot, x)) for x in IDvsVDS_5x_loop_filenames_VG_neg_inc]
-    files = inse.slice_data_each(files, 'Voltage_1_V', 0, 0., .01, nth_start=1, nth_finish=5)
+    files = [mp.process_file(os.path.join(fileroot, x)) for x in IDvsVDS_5x_loop_filenames_VG_neg_inc]
+    files = mp.slice_data_each(files, 'Voltage_1_V', 0, 0., .01, nth_start=1, nth_finish=5)
     for file in files:
         add_name = str(round(file['Gate_Voltage_V'][0],1)).zfill(3) + 'V'
         
-        inse.plot_IDvsVDS_generic(fileroot, [file], 'VDS_5x_loop_neg_' + add_name, colors, log=log, \
+        mp.plot_IDvsVDS_generic(fileroot, [file], 'VDS_5x_loop_neg_' + add_name, colors, log=log, \
                                   figsize=figsize, xadj=0, x_mult=5, fontsize=fontsize, labelsize=labelsize,
                                   ylim=ylim)
     return
-    files = [jpp.process_file(os.path.join(fileroot, x)) for x in IDvsVDS_5x_loop_filenames_VG_pos_inc]
-    #files = inse.slice_data_each(files, 'Voltage_1_V', 0, 0, .01, nth_start=2, nth_finish=2)
+    files = [mp.process_file(os.path.join(fileroot, x)) for x in IDvsVDS_5x_loop_filenames_VG_pos_inc]
+    #files = mp.slice_data_each(files, 'Voltage_1_V', 0, 0, .01, nth_start=2, nth_finish=2)
     for file in files:
         add_name =  str(round(file['Gate_Voltage_V'][0],1)).zfill(3) + 'V'
         
-        inse.plot_IDvsVDS_generic(fileroot, [file], 'VDS_5x_loop_pos_' + add_name, colors, log=log, \
+        mp.plot_IDvsVDS_generic(fileroot, [file], 'VDS_5x_loop_pos_' + add_name, colors, log=log, \
                                   figsize=figsize, xadj=0, x_mult=5, fontsize=fontsize, labelsize=labelsize,
                                   ylim=ylim)
     
 def main(): #sample A
-    show_all = False
+    show_all = True
     # -- Plot ID vs VG loops
     if False or show_all:
-        inse.plot_IDvsVg_each(fileroot, RTloop_filenames, '_JR200115_11', log=True, size=2, majorx=40,
+        mp.plot_IDvsVg_each(fileroot, RTloop_filenames, '_JR200115_11', log=True, size=2, majorx=40,
                           ylim=(None,None), fontsize=10, labelsize=10)
     
     # -- Cross section of loop data
     if False or show_all:
-        inse.plot_loopR_cross_section(fileroot, RTloop_filenames, "_JR200115_11", figsize=1.5, ylim=(0, 1.5), log=False)
-        inse.plot_loopR_cross_section(fileroot, RTloop_filenames, "_JR200115_11_inset", figsize=.7, \
+        mp.plot_loopR_cross_section(fileroot, RTloop_filenames, "_JR200115_11", figsize=1.5, ylim=(0, 1.5), log=False)
+        mp.plot_loopR_cross_section(fileroot, RTloop_filenames, "_JR200115_11_inset", figsize=.7, \
                                       log=False, increments=[75], fontsize=10, labelsize=10, colororder=[1])
-        inse.plot_loopR_cross_section(fileroot, RTloop_filenames, "_JR200115_11", figsize=2,\
+        mp.plot_loopR_cross_section(fileroot, RTloop_filenames, "_JR200115_11", figsize=2,\
                                       xlim=(None, None), ylim=(None, None), log=False, increments=[25, 50, 75], colororder=[3,2,1])
-        #inse.plot_loopR_cross_section(fileroot, RTloop_filenames, "_JR200115_11", figsize=2, ylim=(None, None),\
+        #mp.plot_loopR_cross_section(fileroot, RTloop_filenames, "_JR200115_11", figsize=2, ylim=(None, None),\
         #                              log=True, increments=[0, 25, 50, 75], colororder=[0,3,2,1])
     
     # -- 300K ID vs VDS curves
     if False or show_all:
-        inse.plot_IDvVDS_gating_generic(fileroot, 'JR200115_11_', '_IvsV_300.0K.txt', 64, 7, "_300K", \
+        mp.plot_IDvVDS_gating_generic(fileroot, 'JR200115_11_', '_IvsV_300.0K.txt', 64, 7, "_300K", \
                                         figsize=2, xadj=0, log=False)
-        inse.plot_IDvVDS_gating_generic(fileroot, 'JR200115_11_', '_IvsV_300.0K.txt', 64, 7, "_300K", \
+        mp.plot_IDvVDS_gating_generic(fileroot, 'JR200115_11_', '_IvsV_300.0K.txt', 64, 7, "_300K", \
                                         figsize=2, xadj=0, log=True)
     
     # -- 300K rate
@@ -514,12 +513,12 @@ def main(): #sample A
         
     # -- size of loop
     if False:
-        inse.plot_ΔVGvT(fileroot, RTloop_filenames, 10**-8, size=2)
+        mp.plot_ΔVGvT(fileroot, RTloop_filenames, 10**-8, size=2)
     
     
     if False:
-        files = [jpp.process_file(os.path.join(fileroot, x)) for x in Rvst_filenames]    
-        inse.plot_IDSvsTime_generic(fileroot, files, '_RvsTime', log=False, size=2, majorx=1800, ylim=(None,None))
+        files = [mp.process_file(os.path.join(fileroot, x)) for x in Rvst_filenames]    
+        mp.plot_IDSvsTime_generic(fileroot, files, '_RvsTime', log=False, size=2, majorx=1800, ylim=(None,None))
     
         
     # still working on    
@@ -533,7 +532,7 @@ def main(): #sample A
             
     # -- carrier mobility μ
     if False or show_all:
-        inse.plot_mobility_μ_cross_section(fileroot, RTloop_filenames, "_JR200115_11", JR200115_11_length, JR200115_11_width, figsize=1.5, ylim=(None, None),\
+        mp.plot_mobility_μ_cross_section(fileroot, RTloop_filenames, "_JR200115_11", JR200115_11_length, JR200115_11_width, figsize=1.5, ylim=(None, None),\
                                            log=False, increments=[25, 50, 75], colororder=[3,2,1])
     
     # loops if ID vs VDS showing hysteresis
