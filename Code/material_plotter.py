@@ -1,5 +1,6 @@
 import os
 import matplotlib.pyplot as plt
+import matplotlib.colors as mplcolors
 import numpy as np
 from matplotlib.ticker import (MultipleLocator, AutoMinorLocator, LogLocator)
 from numpy.lib.recfunctions import append_fields
@@ -23,7 +24,7 @@ cmap = plt.cm.get_cmap('Set1')
 colors_set1 = cmap(np.linspace(0,1,9))
 
 def first_occurance_1D(array, val, tol=0.2, starting_index=0):
-    itemindex = np.where(abs(array[starting_index:] - val) < tol)
+    itemindex = np.where(abs(array[starting_index:] - val) < abs(tol))
     return itemindex[0][0]
 
 def nth_occurance_1D(array, val, n, tol=0.2, starting_index=0):
@@ -71,6 +72,8 @@ def save_generic_png(fig, root, filename):
     fig.savefig(os.path.join(root, filename +'.png'), format='png', transparent=True, bbox_inches='tight',pad_inches=.1)
     
 def save_generic_svg(fig, root, filename):
+    plt.rcParams["svg.fonttype"] = "none"
+    plt.rcParams["text.usetex"] = False
     fig.savefig(os.path.join(root, filename +'.svg'), format='svg', transparent=True, bbox_inches='tight',pad_inches=0)
 
 def pretty_plot_single(fig, labels=['',''], color='#000000', yscale='linear', fontsize=10, labelsize=8, labelpad=[0,0]):
@@ -106,7 +109,7 @@ def pretty_plot_single(fig, labels=['',''], color='#000000', yscale='linear', fo
 def plot_YvsX_generic(Xaxis, Xlabel, Yaxis, Ylabel, XvsYname, \
                       fileroot, files, savename, colors, log=False, size=def_size, majorx=None, \
                       xlim=(None,None), ylim=(None,None), markers=[], \
-                      fontsize=def_fontsize, labelsize=def_labelsize):    
+                      fontsize=def_fontsize, labelsize=def_labelsize, invertaxes=False):    
     for file in files:
         if type(file) is not np.ndarray:
             raise TypeError("Only Numpy arrays allowed. Found: " + str(type(file))) 
@@ -119,15 +122,17 @@ def plot_YvsX_generic(Xaxis, Xlabel, Yaxis, Ylabel, XvsYname, \
         if isinstance(Yaxis, list):
             Ymax = []
             for yaxis_i in Yaxis:
-                Ymax.append([np.nanmax(file[yaxis_i]) for file in files])
+                Ymax.append([np.nanmax(np.abs(file[yaxis_i])) for file in files])
             Ymax = np.nanmax(Ymax)
         else:
-            Ymax = [np.nanmax(file[Yaxis]) for file in files]
+            Ymax = [np.nanmax(np.abs(file[Yaxis])) for file in files]
         (scale_pow, scale_label) = m_order(Ymax)
     try:
         Ylabel = Ylabel % (scale_label) 
     except:
         print('failed to scale y label')
+        
+    print(scale_label)
     
     ax = pretty_plot_single(fig, labels=[Xlabel, Ylabel],
                              yscale=('log' if log else 'linear'), fontsize=fontsize, labelsize=labelsize)
@@ -148,12 +153,22 @@ def plot_YvsX_generic(Xaxis, Xlabel, Yaxis, Ylabel, XvsYname, \
     
     if majorx is not None:
         ax.xaxis.set_major_locator(MultipleLocator(majorx))
+        
     ax.set_xlim(xlim)
     ax.set_ylim(ylim)
     
+    if invertaxes:
+        xlim = ax.get_xlim()
+        ylim = ax.get_ylim()
+        ax.set_xlim(xlim[1], xlim[0])
+        if not log:
+            ax.set_ylim(ylim[1], ylim[0])
+    
     scalename = "_log" if log else "_linear"
-    print(savename+XvsYname+scalename)
-    save_generic_both(fig, fileroot, savename+XvsYname+scalename)
+    
+    if savename is not None:
+        print(savename+XvsYname+scalename)
+        save_generic_svg(fig, fileroot, savename+XvsYname+scalename)
     plt.show()
     plt.clf()
 
@@ -243,13 +258,16 @@ def m_order(data):
         label = 'm'
     elif maxV > 10**-6:
         scale = 10**6
-        label = 'μ'
+        label = '$\mu$'
     elif maxV > 10**-9:
         scale = 10**9
         label = 'n'
-    else:
+    elif maxV > 10**-12:
         scale = 10**12
         label = 'p'
+    else:
+        scale = 0
+        label = 'SCALE ISSUE'
     return (scale, label)
 
 # cross sections of gating loops
@@ -464,7 +482,7 @@ def plot_RDSvsVg_generic(fileroot, files, savename, colors=colors_set1, R_ind=1,
     
 # 300K IV plots
 def plot_IDvVDS_gating_generic(fileroot, sample, end_name, startindex, incindex, savename, \
-                               figsize=def_size, xadj=1, log=False):
+                               figsize=def_size, xadj=1, log=False, majorx=None, ylim=None):
     colors = colors_set1[[0,4,3,6,2,8,1]]
     
     start = startindex 
@@ -472,22 +490,22 @@ def plot_IDvVDS_gating_generic(fileroot, sample, end_name, startindex, incindex,
     filenames = [(sample + str(i).zfill(3) + end_name) for i in range(start, start+1*inc)]
     files = [process_file(os.path.join(fileroot, x)) for x in filenames]
     plot_IDvsVDS_generic(fileroot, files, savename + 'positive_increasing', colors,\
-                         size=figsize, xadj=xadj, log=log)
+                         size=figsize, xadj=xadj, ylim=ylim, log=log, majorx=majorx)
     
     filenames = [(sample + str(i).zfill(3) + end_name) for i in range(start+1*inc, start+2*inc)]
     files = [process_file(os.path.join(fileroot, x)) for x in filenames]
     plot_IDvsVDS_generic(fileroot, files, savename + 'positive_decreasing', colors[::-1],\
-                         size=figsize, xadj=xadj, log=log)
+                         size=figsize, xadj=xadj, ylim=ylim, log=log, majorx=majorx)
     
     filenames = [(sample + str(i).zfill(3) + end_name) for i in range(start+2*inc, start+3*inc)]
     files = [process_file(os.path.join(fileroot, x)) for x in filenames]
     plot_IDvsVDS_generic(fileroot, files, savename + 'negative_increasing', colors,\
-                         size=figsize, invertaxes=True, xadj=xadj, log=log)
+                         size=figsize, invertaxes=True, xadj=xadj, ylim=ylim, log=log, majorx=majorx)
     
     filenames = [(sample + str(i).zfill(3) + end_name) for i in range(start+3*inc, start+4*inc)]
     files = [process_file(os.path.join(fileroot, x)) for x in filenames]
     plot_IDvsVDS_generic(fileroot, files, savename + 'negative_decreasing', colors[::-1],\
-                         size=figsize, invertaxes=True, xadj=xadj, log=log)
+                         size=figsize, invertaxes=True, xadj=xadj, ylim=ylim, log=log, majorx=majorx)
     
 def width_Vg(file, current):
     #relevant ranges
@@ -562,7 +580,7 @@ def plot_IDvsVDS_generic(fileroot, files, savename, colors, log=False, invertaxe
                          xadj=0, x_mult=5, fontsize=def_fontsize, labelsize=def_labelsize, xlim=None, ylim=None):    
     plot_YvsX_generic('Voltage_1_V', '$\it{%sV_{DS}}$ (V)', 'Current_A', '$\it{I_{D}}$ (%sA)', '_IDvsVDS',
                       fileroot=fileroot, files=files, savename=savename, colors=colors, log=log, size=size, majorx=majorx,
-                      xlim=xlim, ylim=ylim, fontsize=fontsize, labelsize=labelsize)
+                      xlim=xlim, ylim=ylim, fontsize=fontsize, labelsize=labelsize, invertaxes=invertaxes)
     
 def plot_IDvsB_generic(fileroot, files, savename, colors, log=False, symm=False, size=def_size, \
                        xlim=None, ylim=None, majorx=None, fontsize=def_fontsize, labelsize=def_labelsize):
@@ -690,11 +708,12 @@ def process_R_4pt(RTloop_2_4pt_filenames):
     #print("R_left: %s Ω and R_right %s Ω" % (round(R_left), round(R_right)))
     Rxx_4pt = (R_left+R_right)/2
 
-def process_hall_data(Hall_file, device_width, device_length, device_volt_spacing, T_Rxx_4pt=None,
-                      hall_fields=['Voltage_1_V', 'Voltage_2_V'], symmeterize=True, Blimits=(-10,10)):
+def process_hall_data(Hall_file, device_width, device_length, device_volt_spacing, device_thickness,
+                      T_Rxx_4pt=None,
+                      hall_fields=['Voltage_1_V', 'Voltage_2_V'], symmeterize=True, Bfitlimits=(-10,10)):
     
     n2Ds = [] # 2D hall density
-    r_squared = [] # error
+    r_squareds = [] # error
     fits = [] 
     μH = [] # mobility
    
@@ -702,8 +721,8 @@ def process_hall_data(Hall_file, device_width, device_length, device_volt_spacin
     T = Hall_file['Temperature_K'][0]
     
     B_data = Hall_file['Magnetic_Field_T']
-    occ0 = first_occurance_1D(B_data, Blimits[0], tol=.05, starting_index=0)
-    occ1 = first_occurance_1D(B_data, Blimits[1], tol=.05, starting_index=0)
+    occ0 = first_occurance_1D(B_data, Bfitlimits[0], tol=.05, starting_index=0)
+    occ1 = first_occurance_1D(B_data, Bfitlimits[1], tol=.05, starting_index=0)
 
     # pull R from seperate 4pt data 
     if T_Rxx_4pt is not None:
@@ -745,19 +764,21 @@ def process_hall_data(Hall_file, device_width, device_length, device_volt_spacin
         residuals = V_Hdata - pfit(B_data)
         ss_res = np.sum(residuals**2)
         ss_tot = np.sum((V_Hdata-np.mean(V_Hdata))**2)
-        r_squared.append(1 - (ss_res / ss_tot))
+        r_squared = 1 - (ss_res / ss_tot)
+        r_squareds.append(r_squared)
     
         # pick a point on the line
         B_point = 1.0 # Tesla
-        V_hall0T = pfit(0)
-        V_hall_T = pfit(B_point)
-    
-        # Hall resistance V(B)/(B*I), remove 0T offset
-        #RH2D = ((V_hall_T-V_hall0T)/current)/B_point
+        V_hall0T = pfit.c[1]
+        V_hall_T = V_hall0T + B_point*pfit.c[0]
         
         # n2D = B/(Rxy*e) = 1/RH2D*e 
-        n2D = -B_point*current/((V_hall_T-V_hall0T)*abs(fundamental_charge_e))
-        print("%s K: n2D: %s cm^-2" % (round(T,1), np.format_float_scientific(n2D*10000, unique=False, precision=5)))
+        n2D = B_point*current/((V_hall_T-V_hall0T)*abs(fundamental_charge_e))
+        n3D = n2D/device_thickness
+        print("%s K: n2D: %s cm^-2, n3D: %s cm^-3" % (round(T,1),
+                    np.format_float_scientific(n2D/(100*100), unique=False, precision=5),
+                    np.format_float_scientific(n3D/(100*100*100), unique=False, precision=5))
+              )
         n2Ds.append(n2D)
         
         # μ = σs/(e*n2D)
@@ -776,7 +797,135 @@ def process_hall_data(Hall_file, device_width, device_length, device_volt_spacin
         n2Ds.insert(0, (n2Ds[0] + n2Ds[1])/2)
     
     B_data = Hall_file['Magnetic_Field_T']
-    return (B_data, VH_datas, np.array(n2Ds), fits, fitdata, r_squared, np.array(μH))
+    return (B_data, VH_datas, np.array(n2Ds), fits, fitdata, r_squareds, np.array(μH))
+
+def process_MR_data(fileroot, data_file, volt_fields, Bfitlimits=(None,None), plot_data=True, fit_data=True):
+    Bfield_data = data_file['Magnetic_Field_T']
+    r_squareds = []
+    Resistances = []
+    ivfitdata = []
+    occ0 = 0
+    occ1 = np.size(Bfield_data)
+    
+    if Bfitlimits[0] is not None:
+        occ0 = first_occurance_1D(Bfield_data, Bfitlimits[0], tol=Bfitlimits[0]/25, starting_index=0)
+    if Bfitlimits[1] is not None:
+        occ1 = first_occurance_1D(Bfield_data, Bfitlimits[1], tol=Bfitlimits[1]/25, starting_index=0)
+    Bfield_data = Bfield_data[occ0:occ1]
+    
+    if fit_data:
+        for field in volt_fields:
+            V_data = data_file[field]
+            V_data = V_data[occ0:occ1]
+            # fit V_Hall to a line
+            (pcoefs, residuals, rank, singular_values, rcond) = \
+                np.polyfit(Bfield_data, V_data, 1, full = True)
+        
+            ivfit = np.poly1d(pcoefs)
+            #fits.append(pfit)
+            print(ivfit)
+            
+            V_offset = ivfit.c[1]
+            Resistance = ivfit.c[0]
+            ivfit = np.poly1d(pcoefs)
+            Resistances.append(Resistance)
+            
+            ivfitvals = np.empty(np.size(data_file['Magnetic_Field_T']))
+            ivfitvals[:] = np.nan
+            ivfitvals[occ0:occ1] = V_offset + Resistance*Bfield_data
+            ivfitdata.append(ivfitvals)
+            
+        
+            # error in fit
+            residuals = V_data - (V_offset + Resistance*Bfield_data)
+            ss_res = np.sum(residuals**2)
+            ss_tot = np.sum((V_data-np.mean(V_data))**2)
+            r_squared = 1 - (ss_res / ss_tot)
+            r_squareds.append(r_squared)
+        
+            print("R: %s Ohms" % (np.format_float_scientific(Resistance, unique=False, precision=5)))
+            print("Fit R^2: %s" % r_squared)
+            
+        Ravg = np.average(np.array(Resistance))
+
+    if plot_data:
+        numfields = len(volt_fields)
+        plot_colors = colors[0:numfields,:]
+        markers = ['.-']*numfields + ['-']*numfields
+        
+        for i, fit in enumerate(ivfitdata): 
+            if fit_data:
+                data_file = append_fields(data_file, 'MRfit_' + str(i), fit, np.float64, usemask=False)
+                plot_colors = np.append(plot_colors, [[0,0,0,1]], axis=0)
+                volt_fields.append('MRfit_' + str(i))
+            
+        plot_YvsX_generic('Magnetic_Field_T', '$\it{B}$ (T)',
+                          volt_fields, '$\it{V}$ (%sV)', '_IvsV-fit_', markers=markers,
+                          fileroot=fileroot, files=[data_file], savename="MR", colors=plot_colors, log=False)
+
+def process_IV_data(fileroot, data_file, volt_fields, Ilimits=(None,None), plot_data=True):
+    current_data = data_file['Current_A']
+    r_squareds = []
+    Resistances = []
+    ivfitdata = []
+    occ0 = 0
+    occ1 = np.size(current_data)
+    
+    if Ilimits[0] is not None:
+        occ0 = first_occurance_1D(current_data, Ilimits[0], tol=max(Ilimits[0]/25, 1e-10), starting_index=0)
+    if Ilimits[1] is not None:
+        occ1 = first_occurance_1D(current_data, Ilimits[1], tol=max(Ilimits[1]/25, 1e-10), starting_index=0)
+    current_data = current_data[occ0:occ1]
+    
+    for field in volt_fields:
+        V_data = data_file[field]
+        V_data = V_data[occ0:occ1]
+        # fit V_Hall to a line
+        (pcoefs, residuals, rank, singular_values, rcond) = \
+            np.polyfit(current_data, V_data, 1, full = True)
+    
+        ivfit = np.poly1d(pcoefs)
+        #fits.append(pfit)
+        print(ivfit)
+        
+        V_offset = ivfit.c[1]
+        Resistance = ivfit.c[0]
+        ivfit = np.poly1d(pcoefs)
+        Resistances.append(Resistance)
+        
+        ivfitvals = np.empty(np.size(data_file['Current_A']))
+        ivfitvals[:] = np.nan
+        ivfitvals[occ0:occ1] = V_offset + Resistance*current_data
+        ivfitdata.append(ivfitvals)
+        
+    
+        # error in fit
+        residuals = V_data - (V_offset + Resistance*current_data)
+        ss_res = np.sum(residuals**2)
+        ss_tot = np.sum((V_data-np.mean(V_data))**2)
+        r_squared = 1 - (ss_res / ss_tot)
+        r_squareds.append(r_squared)
+    
+        print("R: %s Ohms" % (np.format_float_scientific(Resistance, unique=False, precision=5)))
+        print("Fit R^2: %s" % r_squared)
+        
+    Ravg = np.average(np.array(Resistance))
+
+    if plot_data:
+        numfields = len(volt_fields)
+        plot_colors = colors[0:numfields,:]
+        markers = ['.-']*numfields + ['-']*numfields
+        
+        for i, fit in enumerate(ivfitdata): 
+            data_file = append_fields(data_file, 'IVfit_' + str(i), fit, np.float64, usemask=False)
+            plot_colors = np.append(plot_colors, [[0,0,0,1]], axis=0)
+            volt_fields.append('IVfit_' + str(i))
+            
+        plot_YvsX_generic('Current_A', '$\it{I}$ (A)',
+                          volt_fields, '$\it{V}$ (%sV)', '_IvsV-fit_', markers=markers,
+                          fileroot=fileroot, files=[data_file], savename=None, colors=plot_colors, log=False)
+    
+    return (Ravg, Resistances, r_squareds)
 
 def plot_VH_vs_H_generic(fileroot, files, savename, colors, power, power_label, \
                         size=def_size, majorx=None, xlim=(None,None), ylim=(None,None), \
