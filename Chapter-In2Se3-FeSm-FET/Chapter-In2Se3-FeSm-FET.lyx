@@ -181,7 +181,7 @@ status open
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -385,7 +385,9 @@ name "fig:In2Se3-Device-images"
 \end_layout
 
 \begin_layout Plain Layout
-(a) Schematic of the Hall bar device with used in flake measurements.
+(a) Schematic of the Hall bar device with used in flake measurements, samples
+ A and B had connected voltage leads for four-point measurements while C
+ and D had separated leads.
  (b-e) Optical images of sample devices following this design with 10 
 \begin_inset Formula $\mu m$
 \end_inset
@@ -747,7 +749,8 @@ Physical dimensions of the
 \begin_inset Formula $L_{current}$
 \end_inset
 
- are the shortest distances between the voltage and current leads, 
+ are the shortest distances between the respective voltage and current leads,
+ 
 \begin_inset Formula $w$
 \end_inset
 
@@ -1038,7 +1041,7 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Second Harmonic Generation
+Angle-resolved SHG
 \end_layout
 
 \end_inset
@@ -1077,7 +1080,11 @@ Raman (a), photoluminescence (b), and angle-resolved SHG (c) of exfoliated
 \begin_inset Formula $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$
 \end_inset
 
- flakes.
+ flakes on Si-
+\begin_inset Formula $\mathrm{SiO_{2}}$
+\end_inset
+
+substrate.
 \end_layout
 
 \end_inset
@@ -1218,6 +1225,8 @@ status collapsed
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Figures/JR200115_11/JR200115_11_300K_IDvVDS-positive_VG-increasing_log_txt.svg
+	scale 99
+	groupId Sample A: ID(VDS)
 
 \end_inset
 
@@ -1255,6 +1264,8 @@ status collapsed
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Figures/JR200115_11/JR200115_11_300K_IDvVDS-negative_VG-increasing_log_txt.svg
+	scale 99
+	groupId Sample A: ID(VDS)
 
 \end_inset
 
@@ -1292,6 +1303,8 @@ status collapsed
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Figures/JR200115_11/JR200115_11_300K_IDvVDS-loop_VG-increasing_log_txt.svg
+	scale 99
+	groupId Sample A: ID(VDS)
 
 \end_inset
 
@@ -1328,6 +1341,8 @@ status collapsed
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Figures/JR200115_11/JR200115_11_300K_IDvVDS-positive_VG-decreasing_log_txt.svg
+	scale 99
+	groupId Sample A: ID(VDS)
 
 \end_inset
 
@@ -1365,6 +1380,8 @@ status collapsed
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Figures/JR200115_11/JR200115_11_300K_IDvVDS-negative_VG-decreasing_log_txt.svg
+	scale 99
+	groupId Sample A: ID(VDS)
 
 \end_inset
 
@@ -1402,6 +1419,8 @@ status collapsed
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Figures/JR200115_11/JR200115_11_300K_IDvVDS-loop_VG-decreasing_log_txt.svg
+	scale 99
+	groupId Sample A: ID(VDS)
 
 \end_inset
 
@@ -1452,21 +1471,31 @@ name "fig:In2Se3-SampleA-I_DSvV_DS"
 \begin_inset Formula $I_{D}\left(V_{DS}\right)$
 \end_inset
 
- of Sample A with increasing (a & d) and decreasing (b & e) 
+ of sample A with positive-increasing (a & d) and negative-decreasing (b
+ & e) 
 \begin_inset Formula $V_{DS}$
 \end_inset
 
 .
- (c & f) hysteresis in the current as 
+ (c & f) hysteresis in 
+\begin_inset Formula $I_{D}$
+\end_inset
+
+ as 
 \begin_inset Formula $V_{DS}$
 \end_inset
 
  is cycled from 0 V, 10 V, -10 V, to 0 V.
- (a - c) are taken while 
+ Measurements (a - c) are taken while 
 \begin_inset Formula $V_{G}$
 \end_inset
 
- is taken in increasing fixed 25 V intervals and (d - f) decreasing.
+ is held at 25 V intervals that increase sequentially for each curve, and
+ (d - f) decreasing for 
+\begin_inset Formula $V_{G}$
+\end_inset
+
+ intervals.
  All measurements were done at 300 K.
 \end_layout
 
@@ -1561,6 +1590,8 @@ status collapsed
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Figures/JR200115_11/JR200115_11_IDvVG_300K_log_txt.svg
+	scale 98
+	groupId Sample A: ID(VG)
 
 \end_inset
 
@@ -1591,6 +1622,8 @@ status collapsed
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Figures/JR200115_11/JR200115_11_IDvVG_200K_log_txt.svg
+	scale 98
+	groupId Sample A: ID(VG)
 
 \end_inset
 
@@ -1621,6 +1654,8 @@ status collapsed
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Figures/JR200115_11/JR200115_11_IDvVG_150K_log_txt.svg
+	scale 98
+	groupId Sample A: ID(VG)
 
 \end_inset
 
@@ -1654,6 +1689,8 @@ status collapsed
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Figures/JR200115_11/JR200115_11_IDvVG_100K_log_txt.svg
+	scale 98
+	groupId Sample A: ID(VG)
 
 \end_inset
 
@@ -1684,6 +1721,8 @@ status collapsed
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Figures/JR200115_11/JR200115_11_IDvVG_050K_log_txt.svg
+	scale 98
+	groupId Sample A: ID(VG)
 
 \end_inset
 
@@ -1709,11 +1748,13 @@ status collapsed
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Figures/JR200115_11/JR200115_11_IDvVG_002K_log_txt.svg
+	scale 98
+	groupId Sample A: ID(VG)
 
 \end_inset
 
@@ -1766,7 +1807,7 @@ name "fig:In2Se3-Sample-A-loops"
 \begin_inset Formula $I_{D}\left(V_{G}\right)$
 \end_inset
 
- of Sample A at fixed temperatures as indicated.
+ of sample A at the indicated fixed temperatures.
  Each was measured with 
 \begin_inset Formula $V_{DS}=0.1\,V$
 \end_inset
@@ -1967,7 +2008,7 @@ Sample C:
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -1979,7 +2020,15 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Sample A: magnetoconductance
+Sample A:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+magnetoconductance
 \end_layout
 
 \end_inset
@@ -2001,7 +2050,7 @@ Sample A: magnetoconductance
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -2013,7 +2062,15 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Sample D: Carrier density 
+Sample D:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+Carrier density 
 \begin_inset Formula $n_{2D}\left(T\right)$
 \end_inset
 
@@ -2034,7 +2091,7 @@ Sample D: Carrier density
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Temp dependence
+Temperature dependence and magnetic field measurements
 \end_layout
 
 \end_inset
@@ -2043,7 +2100,57 @@ Temp dependence
 \end_layout
 
 \begin_layout Plain Layout
-Bulk
+(a) Bulk crystal resistivity along the c-axis and in-plane.
+ (b-d) Temperature cross-section of the 
+\begin_inset Formula $I_{D}\left(V_{G}\right)$
+\end_inset
+
+ transfer characteristics for samples A, B, and C for the curves shown in
+ figures 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:In2Se3-Sample-A-loops"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "BROKEN: Ref: fig:Sample-B-loops"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "BROKEN: Ref: fig:Sample-C-loops"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ respectively.
+ Each data-point is taken from the increasing 
+\begin_inset Formula $V_{G}$
+\end_inset
+
+ (top) portion of the respective 
+\begin_inset Formula $I_{D}\left(V_{G}\right)$
+\end_inset
+
+ curves for 0, 25, 50, and 75 V.
+ (e) The magnetoconductance of sample A taken at 1.8 K.
+ The data was symmetrized to remove odd-term magnetic field dependence,
+ and normalized to the difference from the measured value at zero-field.
+ (f) Sample D carrier density at various temperatures, the inset shows the
+ hall data used the the carrier density calculations.
 \end_layout
 
 \end_inset

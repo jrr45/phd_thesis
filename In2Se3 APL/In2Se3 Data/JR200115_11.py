@@ -524,7 +524,7 @@ def main(): #sample A
     
         
     # still working on    
-    if True or show_all:
+    if False or show_all:
         plot_σvsB_custom(MR_sweep_files2[1:], '_JR200115_11_MR_sweep_1.8', color_order=[1,0],\
                          fit_lim=10, size=2)
         plot_σvsB_custom(MR_sweep_files2, '_JR200115_11_MR_sweep_both', color_order=[0,1],\
@@ -538,9 +538,9 @@ def main(): #sample A
                                            log=False, increments=[25, 50, 75], colororder=[3,2,1])
     
     # loops if ID vs VDS showing hysteresis
-    if False  or show_all:
+    if True  or show_all:
         plot_IDvsVDS_loops(log=True,figsize=2, fontsize=10, labelsize=10)
-        #plot_IDvsVDS_loops(log=False,figsize=2)
+        plot_IDvsVDS_loops(log=False,figsize=2, fontsize=10, labelsize=10)
         #plot_IDvsVDS_loops2(log=False,figsize=2)
         #plot_IDvsVDS_5x_loops(figsize=2, fontsize=10, labelsize=8, log=False)
     
