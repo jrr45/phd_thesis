@@ -483,17 +483,19 @@ def plot_IDvsVDS_5x_loops2(figsize=1.5, fontsize=10, labelsize=8, log=True):
                                   ylim=ylim)
     
 def main(): #sample A
-    show_all = True
+    show_all = False
     # -- Plot ID vs VG loops
     if False or show_all:
         mp.plot_IDvsVg_each(fileroot, RTloop_filenames, '_JR200115_11', log=True, size=2, majorx=40,
-                          ylim=(None,None), fontsize=10, labelsize=10)
+                          ylim=(10**-10,None), fontsize=10, labelsize=10)
     
     # -- Cross section of loop data
     if False or show_all:
         mp.plot_loopR_cross_section(fileroot, RTloop_filenames, "_JR200115_11", figsize=1.5, ylim=(0, 1.5), log=False)
         mp.plot_loopR_cross_section(fileroot, RTloop_filenames, "_JR200115_11_inset", figsize=.7, \
                                       log=False, increments=[75], fontsize=10, labelsize=10, colororder=[1])
+        mp.plot_loopR_cross_section(fileroot, RTloop_filenames, "_JR200115_11", figsize=2,\
+                                      xlim=(None, None), ylim=(None, None), log=True, increments=[0, 25, 50, 75], colororder=[0, 3,2,1])
         mp.plot_loopR_cross_section(fileroot, RTloop_filenames, "_JR200115_11", figsize=2,\
                                       xlim=(None, None), ylim=(None, None), log=False, increments=[25, 50, 75], colororder=[3,2,1])
         #mp.plot_loopR_cross_section(fileroot, RTloop_filenames, "_JR200115_11", figsize=2, ylim=(None, None),\
@@ -502,9 +504,9 @@ def main(): #sample A
     # -- 300K ID vs VDS curves
     if False or show_all:
         mp.plot_IDvVDS_gating_generic(fileroot, 'JR200115_11_', '_IvsV_300.0K.txt', 64, 7, "_300K", \
-                                        figsize=2, xadj=0, log=False)
+                                        figsize=2, xadj=0, log=False, majorx=1)
         mp.plot_IDvVDS_gating_generic(fileroot, 'JR200115_11_', '_IvsV_300.0K.txt', 64, 7, "_300K", \
-                                        figsize=2, xadj=0, log=True)
+                                        figsize=2, xadj=0, log=True, majorx=1)
     
     # -- 300K rate
     if False:
@@ -522,13 +524,13 @@ def main(): #sample A
     
         
     # still working on    
-    if False or show_all:
+    if True or show_all:
         plot_σvsB_custom(MR_sweep_files2[1:], '_JR200115_11_MR_sweep_1.8', color_order=[1,0],\
-                         fit_lim=10, size=1.9)
+                         fit_lim=10, size=2)
         plot_σvsB_custom(MR_sweep_files2, '_JR200115_11_MR_sweep_both', color_order=[0,1],\
-                         fit_lim=60, size=1.9)
+                         fit_lim=60, size=2)
         plot_σvsB_custom(MR_sweep_files2, '_JR200115_11_MR_sweep', color_order=[0,1],\
-                         fit_lim=0, size=1.9)
+                         fit_lim=0, size=2)
             
     # -- carrier mobility μ
     if False or show_all:
@@ -536,7 +538,7 @@ def main(): #sample A
                                            log=False, increments=[25, 50, 75], colororder=[3,2,1])
     
     # loops if ID vs VDS showing hysteresis
-    if False or show_all:
+    if False  or show_all:
         plot_IDvsVDS_loops(log=True,figsize=2, fontsize=10, labelsize=10)
         #plot_IDvsVDS_loops(log=False,figsize=2)
         #plot_IDvsVDS_loops2(log=False,figsize=2)

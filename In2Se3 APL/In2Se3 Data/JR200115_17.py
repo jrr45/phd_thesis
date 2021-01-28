@@ -113,7 +113,7 @@ def plot_300K_IDvsVDS(figsize=2, log=False):
     mp.plot_IDvsVDS_generic(fileroot, files, savename + '_negative_decreasing', colors[::-1],\
                               invertaxes=True, size=figsize, xadj=0, log=log)
     
-def plot_IDvsVg_300K_rate(log, size=2, majorx=40):
+def plot_IDvsVg_300K_rate(log, figsize=2, majorx=40):
     colors = mp.colors_set1
     rate_300K_filenames = [
         'JR200115_17_018_RvsVg_300.0K.txt', # .2/.1s = 2 V/s
@@ -125,9 +125,9 @@ def plot_IDvsVg_300K_rate(log, size=2, majorx=40):
     files = [mp.process_file(os.path.join(fileroot, x)) for x in rate_300K_filenames]
     files = mp.slice_data_each(files, 'Gate_Voltage_V', -75., -75., .1, starting_index=0)
         
-    mp.plot_IDvsVg_generic(fileroot, files, "_JR200115_17_300K_rate", colors, log=log, size=size, majorx=40)
+    mp.plot_IDvsVg_generic(fileroot, files, "_JR200115_17_300K_rate", colors, log=log, size=figsize, majorx=40)
 
-def plot_IDvsVg_3K_rate(log=True, size=2):
+def plot_IDvsVg_3K_rate(log=True, figsize=2):
     colors = mp.colors_set1
     
     filenames = ['JR200115_17_010_RvsVg_3.0K.txt', # .2/.1s = 2 V/s
@@ -139,7 +139,7 @@ def plot_IDvsVg_3K_rate(log=True, size=2):
     files = mp.slice_data_each(files, 'Gate_Voltage_V', -75., -75., .1, starting_index=0)
         
 
-    mp.plot_IDvsVg_generic(fileroot, files, "_JR200115_17_3K_rate", colors, log=True,  size=size)
+    mp.plot_IDvsVg_generic(fileroot, files, "_JR200115_17_3K_rate", colors, log=True,  size=figsize, majorx=40)
 
     
 def plot_IDvsVg_300K_redo_rate(log=True, size=2, majorx=40):
@@ -234,13 +234,13 @@ def plot_IDSvsVg_effect_heating():
                              majorx=40, ylim=(None,None), fontsize=10, labelsize=10)
     
 def main(): # sample B
-    show_all = True
+    show_all = False
 
     #  -- Plot ID vs VG loops --
     figsize = 2
     if False or show_all:
-        mp.plot_IDvsVg_each(fileroot, RTloop_filenames, '_JR200115_17', log=True, size=figsize, majorx=40,
-                              ylim=(None,None), fontsize=10, labelsize=10)
+        #mp.plot_IDvsVg_each(fileroot, RTloop_filenames, '_JR200115_17', log=True, size=figsize, majorx=40,
+        #                      ylim=(None,None), fontsize=10, labelsize=10)
         mp.plot_IDvsVg_each(fileroot, RTloop_filenames, '_JR200115_17', log=False, size=figsize, majorx=40,
                               ylim=(None,None), fontsize=10, labelsize=10)
     
@@ -255,7 +255,7 @@ def main(): # sample B
     # -- Cross section of loop data --
     if False or show_all:
         mp.plot_loopR_cross_section(fileroot, RTloop_filenames, "_JR200115_17_RDS", increments=[0,25,50,75],\
-                                      figsize=figsize, log=True, ylim=(None, 4*10**7))
+                                      figsize=figsize, log=True, xlim=(None, None), ylim=(None, None))
         mp.plot_loopR_cross_section(fileroot, RTloop_filenames[:5], "loop_RDS", increments=[75], figsize=.7,\
                                       log=False, ylim=(None, None), fontsize=8, labelsize=8, xlim=(None, 220), colororder=[1])
         mp.plot_loopR_cross_section(fileroot, RTloop_heated_filenames, "_JR200115_17_RDS_heated", increments=[0,25,50,75],\
@@ -276,14 +276,14 @@ def main(): # sample B
         plot_300K_IDvsVDS(figsize=figsize, log=True)
         
         # -- Effect off heating sample on ID
-    if False or show_all:
+    if True or show_all:
         plot_IDSvsVg_effect_heating()
 
     # -- effect of ramping rate
     if False or show_all:
-        plot_IDvsVg_300K_rate(log=True)
+        plot_IDvsVg_300K_rate(log=True, figsize=figsize)
         #plot_IDvsVg_300K_redo_rate(log=True)
-        plot_IDvsVg_3K_rate(log=True)
+        plot_IDvsVg_3K_rate(log=True, figsize=figsize)
     
     # -- MR, not much data
     if False:

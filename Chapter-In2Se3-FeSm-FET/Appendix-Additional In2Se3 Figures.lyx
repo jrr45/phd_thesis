@@ -188,14 +188,10 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-\begin_inset Formula $V_{DS}$
+\begin_inset Formula $I_{D}\left(V_{DS,\uparrow},\,V_{G,\uparrow}\right)$
 \end_inset
 
- increasing, 
-\begin_inset Formula $V_{G}$
-\end_inset
 
- increasing
 \begin_inset space \hfill{}
 \end_inset
 
@@ -259,14 +255,10 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-\begin_inset Formula $V_{DS}$
+\begin_inset Formula $I_{D}\left(V_{DS,\downarrow},\,V_{G,\uparrow}\right)$
 \end_inset
 
- decreasing, 
-\begin_inset Formula $V_{G}$
-\end_inset
 
- increasing
 \begin_inset space \hfill{}
 \end_inset
 
@@ -330,14 +322,10 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-\begin_inset Formula $V_{DS}$
+\begin_inset Formula $I_{D}\left(V_{DS,\uparrow},\,V_{G,\downarrow}\right)$
 \end_inset
 
- increasing 
-\begin_inset Formula $V_{G}$
-\end_inset
 
- decreasing
 \end_layout
 
 \end_inset
@@ -397,14 +385,10 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-\begin_inset Formula $V_{DS}$
+\begin_inset Formula $I_{D}\left(V_{DS,\downarrow},\,V_{G,\downarrow}\right)$
 \end_inset
 
- decreasing, 
-\begin_inset Formula $V_{G}$
-\end_inset
 
- decreasing
 \end_layout
 
 \end_inset
@@ -423,11 +407,7 @@ status open
 
 \begin_layout Plain Layout
 Sample A: 
-\begin_inset Formula $I_{D}$
-\end_inset
-
- versus 
-\begin_inset Formula $V_{DS}$
+\begin_inset Formula $I_{D}\left(V_{DS},\,V_{G}\right)$
 \end_inset
 
 
@@ -503,14 +483,10 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-\begin_inset Formula $V_{DS}$
+\begin_inset Formula $I_{D}\left(V_{DS,\uparrow},\,V_{G,\uparrow}\right)$
 \end_inset
 
- increasing, 
-\begin_inset Formula $V_{G}$
-\end_inset
 
- increasing
 \begin_inset space \hfill{}
 \end_inset
 
@@ -574,14 +550,10 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-\begin_inset Formula $V_{DS}$
+\begin_inset Formula $I_{D}\left(V_{DS,\downarrow},\,V_{G,\uparrow}\right)$
 \end_inset
 
- decreasing, 
-\begin_inset Formula $V_{G}$
-\end_inset
 
- increasing
 \begin_inset space \hfill{}
 \end_inset
 
@@ -645,14 +617,10 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-\begin_inset Formula $V_{DS}$
+\begin_inset Formula $I_{D}\left(V_{DS,\uparrow},\,V_{G,\downarrow}\right)$
 \end_inset
 
- increasing 
-\begin_inset Formula $V_{G}$
-\end_inset
 
- decreasing
 \end_layout
 
 \end_inset
@@ -712,14 +680,10 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-\begin_inset Formula $V_{DS}$
+\begin_inset Formula $I_{D}\left(V_{DS,\downarrow},\,V_{G,\downarrow}\right)$
 \end_inset
 
- decreasing, 
-\begin_inset Formula $V_{G}$
-\end_inset
 
- decreasing
 \end_layout
 
 \end_inset
@@ -779,14 +743,10 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-\begin_inset Formula $V_{DS}$
+\begin_inset Formula $I_{D}\left(V_{DS,\uparrow},\,V_{G,\uparrow}\right)$
 \end_inset
 
- increasing, 
-\begin_inset Formula $V_{G}$
-\end_inset
 
- increasing
 \begin_inset space \hfill{}
 \end_inset
 
@@ -850,14 +810,10 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-\begin_inset Formula $V_{DS}$
+\begin_inset Formula $I_{D}\left(V_{DS,\downarrow},\,V_{G,\uparrow}\right)$
 \end_inset
 
- decreasing, 
-\begin_inset Formula $V_{G}$
-\end_inset
 
- increasing
 \begin_inset space \hfill{}
 \end_inset
 
@@ -921,14 +877,10 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-\begin_inset Formula $V_{DS}$
+\begin_inset Formula $I_{D}\left(V_{DS,\uparrow},\,V_{G,\downarrow}\right)$
 \end_inset
 
- increasing, 
-\begin_inset Formula $V_{G}$
-\end_inset
 
- decreasing
 \begin_inset space \hfill{}
 \end_inset
 
@@ -992,14 +944,10 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-\begin_inset Formula $V_{DS}$
+\begin_inset Formula $I_{D}\left(V_{DS,\downarrow},\,V_{G,\downarrow}\right)$
 \end_inset
 
- decreasing, 
-\begin_inset Formula $V_{G}$
-\end_inset
 
- decreasing
 \begin_inset space \hfill{}
 \end_inset
 
@@ -1022,11 +970,7 @@ status open
 
 \begin_layout Plain Layout
 Sample B: 
-\begin_inset Formula $I_{D}$
-\end_inset
-
- versus 
-\begin_inset Formula $V_{DS}$
+\begin_inset Formula $I_{D}\left(D_{DS},\,V_{G}\right)$
 \end_inset
 
 
@@ -1102,14 +1046,10 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-\begin_inset Formula $V_{DS}$
+\begin_inset Formula $I_{D}\left(V_{DS,\uparrow},\,V_{G,\uparrow}\right)$
 \end_inset
 
- increasing, 
-\begin_inset Formula $V_{G}$
-\end_inset
 
- increasing
 \end_layout
 
 \end_inset
@@ -1169,14 +1109,10 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-\begin_inset Formula $V_{DS}$
+\begin_inset Formula $I_{D}\left(V_{DS,\downarrow},\,V_{G,\uparrow}\right)$
 \end_inset
 
- decreasing, 
-\begin_inset Formula $V_{G}$
-\end_inset
 
- increasing
 \begin_inset space \hfill{}
 \end_inset
 
@@ -1240,14 +1176,10 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-\begin_inset Formula $V_{DS}$
+\begin_inset Formula $I_{D}\left(V_{DS,\uparrow},\,V_{G,\downarrow}\right)$
 \end_inset
 
- increasing, 
-\begin_inset Formula $V_{G}$
-\end_inset
 
- decreasing
 \end_layout
 
 \end_inset
@@ -1307,14 +1239,10 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-\begin_inset Formula $V_{DS}$
+\begin_inset Formula $I_{D}\left(V_{DS,\downarrow},\,V_{G,\downarrow}\right)$
 \end_inset
 
- decreasing, 
-\begin_inset Formula $V_{G}$
-\end_inset
 
- decreasing
 \end_layout
 
 \end_inset
@@ -1374,14 +1302,10 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-\begin_inset Formula $V_{DS}$
+\begin_inset Formula $I_{D}\left(V_{DS,\uparrow},\,V_{G,\uparrow}\right)$
 \end_inset
 
- increasing, 
-\begin_inset Formula $V_{G}$
-\end_inset
 
- increasing
 \begin_inset space \hfill{}
 \end_inset
 
@@ -1445,14 +1369,10 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-\begin_inset Formula $V_{DS}$
+\begin_inset Formula $I_{D}\left(V_{DS,\downarrow},\,V_{G,\uparrow}\right)$
 \end_inset
 
- decreasing, 
-\begin_inset Formula $V_{G}$
-\end_inset
 
- increasing
 \begin_inset space \hfill{}
 \end_inset
 
@@ -1516,14 +1436,10 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-\begin_inset Formula $V_{DS}$
+\begin_inset Formula $I_{D}\left(V_{DS,\uparrow},\,V_{G,\downarrow}\right)$
 \end_inset
 
- increasing, 
-\begin_inset Formula $V_{G}$
-\end_inset
 
- decreasing
 \begin_inset space \hfill{}
 \end_inset
 
@@ -1587,14 +1503,10 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-\begin_inset Formula $V_{DS}$
+\begin_inset Formula $I_{D}\left(V_{DS,\downarrow},\,V_{G,\downarrow}\right)$
 \end_inset
 
- decreasing, 
-\begin_inset Formula $V_{G}$
-\end_inset
 
- decreasing
 \begin_inset space \hfill{}
 \end_inset
 
@@ -1617,11 +1529,7 @@ status open
 
 \begin_layout Plain Layout
 Sample C: 
-\begin_inset Formula $I_{D}$
-\end_inset
-
- versus 
-\begin_inset Formula $V_{DS}$
+\begin_inset Formula $I_{D}\left(V_{DS},\,V_{G}\right)$
 \end_inset
 
 
@@ -1910,7 +1818,11 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Sample B: transfer characteristics
+Sample B: 
+\begin_inset Formula $I_{D}\left(V_{G}\right)$
+\end_inset
+
+ transfer characteristics
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Sample-B-loops"
@@ -2148,7 +2060,7 @@ status collapsed
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset space ~
@@ -2243,7 +2155,11 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Sample C: transfer characteristics
+Sample C: 
+\begin_inset Formula $I_{D}\left(V_{G}\right)$
+\end_inset
+
+ transfer characteristics
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Sample-C-loops"
@@ -2339,7 +2255,15 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Sample B: rate dependence
+Sample B: 
+\begin_inset Formula $I_{D}\left(V_{G}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $V_{G}$
+\end_inset
+
+ rate dependence
 \end_layout
 
 \end_inset
@@ -2378,12 +2302,8 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Sample B: 
-\begin_inset Formula $I_{D}$
-\end_inset
-
- versus 
-\begin_inset Formula $V_{G}$
+Sample B 
+\begin_inset Formula $I_{D}\left(V_{G}\right)$
 \end_inset
 
 
@@ -2419,12 +2339,8 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Sample C: 
-\begin_inset Formula $I_{D}$
-\end_inset
-
- versus 
-\begin_inset Formula $V_{DS}$
+Sample C 
+\begin_inset Formula $I_{D}\left(V_{DS}\right)$
 \end_inset
 
 
@@ -2460,12 +2376,8 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Sample C: 
-\begin_inset Formula $I_{D}$
-\end_inset
-
- versus 
-\begin_inset Formula $V_{G}$
+Sample C 
+\begin_inset Formula $I_{D}\left(V_{G}\right)$
 \end_inset
 
 
@@ -2507,75 +2419,12 @@ Samples were annealed in vacuum at 400 K for 1 hour intervals.
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
 \begin_inset Graphics
-	filename In2Se3-FeSm-FET-Figures/JR190815_04/JR190815_04_136_RvsVg_300.0K_contact.svg
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Contact Resistance
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Contact Resistance
-\end_layout
-
-\end_inset
-
-
-\end_layout
+	filename Figures/JR190815_04/JR190815_04_RvVG_300K_contact-and-sample.svg
 
 \end_inset
 
@@ -2618,7 +2467,7 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename In2Se3-FeSm-FET-Figures/JR190919_03/JR190919_03_R_DSvT_4p_coolwarm.svg
+	filename Figures/JR190919_03/JR190919_03_RDSvT_warming-after-VG-cooled.svg
 
 \end_inset
 
@@ -2645,10 +2494,6 @@ two-point
 \end_inset
 
 
-\begin_inset space ~
-\end_inset
-
-
 \begin_inset Float figure
 wide false
 sideways false
@@ -2656,7 +2501,7 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename In2Se3-FeSm-FET-Figures/JR190919_03/JR190919_03_R4pt(T)_coolwarm.svg
+	filename Figures/JR190919_03/JR190919_03_R4PTvT_warming-after-VG-cooled.svg
 
 \end_inset
 
@@ -2679,17 +2524,47 @@ four-point
 \end_inset
 
 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR190919_03/JR190919_03_IDvT_cooling-vs-warming-at-VG-75V.svg
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Cooling vs warming
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Sample C: 
-\begin_inset Formula $R_{warm}\left(T\right)$
-\end_inset
-
- after cooling
+Sample C: effects of warming and cooling while gated
 \end_layout
 
 \end_inset

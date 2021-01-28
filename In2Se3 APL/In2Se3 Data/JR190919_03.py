@@ -72,25 +72,25 @@ def plot_delta_Vgmax():
     
     mp.save_generic_svg(fig, fileroot, "_Vg_max")
     
-def plot_IDSvsVg_effect_heating():
-    colors = mp.colors_set1
+def plot_IDSvsVg_effect_heating(figsize=2, log=False):
+    colors = [mp.colors_set1[1], mp.colors_set1[0]]
     filenames = ['JR190919_03_002_RvsVg_300.0K_initial.txt',
                  'JR190919_03_005_RvsVg_300.0K_loops.txt']
     
     files = [mp.process_file(os.path.join(fileroot, x)) for x in filenames]
     files = mp.slice_data_each(files, 'Gate_Voltage_V', -75., -75., .1, starting_index=0)
     
-    mp.plot_IDvsVg_generic(fileroot, files, '_JR190919_03_effect_heating', colors, log=True, size=2, \
-                             majorx=40, ylim=(None,None), fontsize=10, labelsize=10)
+    mp.plot_IDvsVg_generic(fileroot, files, '_JR190919_03_effect_heating', colors, log=log, size=figsize, \
+                             majorx=40, ylim=(None,None))
     
 def plot_IDSvsVDS_effect_heating(figsize=2):
-    colors = mp.colors_set1
+    colors = [mp.colors_set1[1], mp.colors_set1[0]]
     filenames = ['JR190919_03_001_IvsV_initial.txt',
                  'JR190919_03_004_IvsV_300.0K_after_heat.txt']
     files = [mp.process_file(os.path.join(fileroot, x)) for x in filenames]
     
     mp.plot_IDvsVDS_generic(fileroot, files, '_JR190919_03_effect_heating', colors,  \
-                              log=False, invertaxes=False, figsize=2, xadj=0, x_mult=.1)
+                              log=False, invertaxes=False, size=figsize, xadj=0, x_mult=.1)
 
     
 def remove_leak_by_fit(file, start=-75., end=-75., mid=75., flat1=-40., flat2=40.):
@@ -236,10 +236,10 @@ def plot_270K_IDvsVDS(figsize=2, log=False):
     mp.plot_IDvsVDS_generic(fileroot, files, savename + '_negative_decreasing', colors[::-1],\
                               invertaxes=True, figsize=figsize, log=log, xadj=1)
 
-def plot_IDSvsT_cooling_vs_warming():
+def plot_IDSvsT_cooling_vs_warming(size=2):
     colors = mp.colors_set1
     
-    fig = plt.figure(figsize=(1.5, 1.5), dpi=300)
+    fig = plt.figure(figsize=(size, size), dpi=300)
     ax = mp.pretty_plot_single(fig, labels=["$\it{T}$ (K)", '$\it{I_{D}}$ (A)'],
                              yscale='log', fontsize=10)
     
@@ -250,7 +250,7 @@ def plot_IDSvsT_cooling_vs_warming():
                  ]
     files = [mp.process_file(os.path.join(fileroot, x)) for x in filenames]
     for file, i in zip(files, range(len(colors))):
-        wheres = [np.where( file['Current_A'] > 5.0*10**-11 )]  
+        wheres = np.where(file['Current_A'] > 5.0*10**-11 )
         temps = file['Temperature_K'][wheres]
         Is = file['Current_A'][wheres]
         ax.plot(temps, Is, '.-', ms=3, linewidth=1.5, color=colors[i])
@@ -322,10 +322,18 @@ def calc_field_effect_mobility(fileroot, filenames, volt_range=(0,10)):
     
 
 def main(): #Sample C
-    show_all = True
+    show_all = False
     figsize = 2
+    
+    # -- 300K ID vs VDS curves
+    if False or show_all:
+        plot_300K_IDvsVDS(figsize=figsize, log=False)
+        plot_300K_IDvsVDS(figsize=figsize, log=True)
+    
     # Plot ID vs VG loops
     if False or show_all:
+        mp.plot_IDvsVg_each(fileroot, RTloop_filenames, '_JR190919_03', log=False, size=figsize, majorx=40,
+                          ylim=(None,None), fontsize=10, labelsize=10)
         mp.plot_IDvsVg_each(fileroot, RTloop_filenames, '_JR190919_03', log=True, size=figsize, majorx=40,
                           ylim=(None,None), fontsize=10, labelsize=10)
         mp.plot_IDvsVg_each(fileroot, [RTloop_filenames[3]], '_JR190919_03', log=True, size=figsize, majorx=40,
@@ -337,11 +345,6 @@ def main(): #Sample C
                                       figsize=figsize, log=True, ylim=(None, None))
         mp.plot_loopR_cross_section(fileroot, RTloop_filenames, "_JR190919_03_RDSv2", increments=[50,75],\
                                       figsize=figsize, log=True, ylim=(None, None), colororder=[2,1])
-    
-    # -- 300K ID vs VDS curves
-    if False or show_all:
-        plot_300K_IDvsVDS(figsize=figsize, log=False)
-        plot_300K_IDvsVDS(figsize=figsize, log=True)
         
     # -- 270K ID vs VDS curves
     if False:
@@ -354,13 +357,13 @@ def main(): #Sample C
         plot_IDSvsVDS_effect_heating()
         
     # -- 2 and 4pt resistance, constant gating changing T
-    if True:
+    if False:
         plot_RT4p(size=figsize)
         plot_R_DSvT_4p(size=figsize)
     
     # -- cooling vs warming difference
-    if False:
-        plot_IDSvsT_cooling_vs_warming()
+    if True:
+        plot_IDSvsT_cooling_vs_warming(size=figsize)
     
     # unused but saving
     if False:    

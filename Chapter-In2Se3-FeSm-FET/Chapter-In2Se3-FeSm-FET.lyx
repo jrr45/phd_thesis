@@ -1225,14 +1225,10 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-\begin_inset Formula $V_{DS}$
+\begin_inset Formula $I_{D}\left(V_{DS,\uparrow},\,V_{G,\uparrow}\right)$
 \end_inset
 
- inc.,
-\begin_inset Formula $V_{G}$
-\end_inset
 
- inc.
 \end_layout
 
 \end_inset
@@ -1266,14 +1262,10 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-\begin_inset Formula $V_{DS}$
+\begin_inset Formula $I_{D}\left(V_{DS,\downarrow},\,V_{G,\uparrow}\right)$
 \end_inset
 
- dec., 
-\begin_inset Formula $V_{G}$
-\end_inset
 
- inc.
 \end_layout
 
 \end_inset
@@ -1310,14 +1302,10 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-\begin_inset Formula $V_{DS}$
+\begin_inset Formula $I_{D}\left(V_{DS,\updownarrow},\,V_{G,\uparrow}\right)$
 \end_inset
 
- loop, 
-\begin_inset Formula $V_{G}$
-\end_inset
 
- inc.
 \end_layout
 
 \end_inset
@@ -1347,14 +1335,10 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-\begin_inset Formula $V_{DS}$
+\begin_inset Formula $I_{DS}\left(V_{DS,\uparrow},\,V_{G\downarrow}\right)$
 \end_inset
 
- inc., 
-\begin_inset Formula $V_{G}$
-\end_inset
 
- dec.
 \end_layout
 
 \end_inset
@@ -1388,14 +1372,10 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-\begin_inset Formula $V_{DS}$
+\begin_inset Formula $I_{D}\left(V_{DS,\downarrow},\,V_{G,\downarrow}\right)$
 \end_inset
 
- dec., 
-\begin_inset Formula $V_{G}$
-\end_inset
 
- dec.
 \end_layout
 
 \end_inset
@@ -1432,14 +1412,10 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-\begin_inset Formula $V_{DS}$
+\begin_inset Formula $I_{D}\left(V_{DS,\updownarrow},\,V_{G,\downarrow}\right)$
 \end_inset
 
- loop, 
-\begin_inset Formula $V_{G}$
-\end_inset
 
- dec.
 \end_layout
 
 \end_inset
@@ -1454,11 +1430,7 @@ status collapsed
 
 \begin_layout Plain Layout
 Sample A: 
-\begin_inset Formula $I_{D}$
-\end_inset
-
- vs 
-\begin_inset Formula $V_{DS}$
+\begin_inset Formula $I_{D}\left(V_{DS}\right)$
 \end_inset
 
 
@@ -1477,11 +1449,7 @@ name "fig:In2Se3-SampleA-I_DSvV_DS"
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Formula $I_{D}$
-\end_inset
-
- versus 
-\begin_inset Formula $V_{DS}$
+\begin_inset Formula $I_{D}\left(V_{DS}\right)$
 \end_inset
 
  of Sample A with increasing (a & d) and decreasing (b & e) 
@@ -1774,7 +1742,11 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Sample A: transfer characteristics
+Sample A: 
+\begin_inset Formula $I_{D}\left(V_{G}\right)$
+\end_inset
+
+ transfer characteristics
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:In2Se3-Sample-A-loops"
@@ -1791,11 +1763,7 @@ name "fig:In2Se3-Sample-A-loops"
 
 \begin_layout Plain Layout
 (a-f)
-\begin_inset Formula $I_{D}$
-\end_inset
-
- versus 
-\begin_inset Formula $V_{G}$
+\begin_inset Formula $I_{D}\left(V_{G}\right)$
 \end_inset
 
  of Sample A at fixed temperatures as indicated.
@@ -1853,11 +1821,7 @@ status collapsed
 
 \begin_layout Plain Layout
 Bulk: 
-\begin_inset Formula $\rho$
-\end_inset
-
- versus 
-\begin_inset Formula $T$
+\begin_inset Formula $\rho\left(T\right)$
 \end_inset
 
 
@@ -1954,7 +1918,7 @@ Sample B:
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset space ~
@@ -2015,7 +1979,7 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Sample A: Magnetoconductance
+Sample A: magnetoconductance
 \end_layout
 
 \end_inset
@@ -2049,7 +2013,11 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Sample D: Carrier density
+Sample D: Carrier density 
+\begin_inset Formula $n_{2D}\left(T\right)$
+\end_inset
+
+
 \end_layout
 
 \end_inset

@@ -312,7 +312,7 @@ def plot_contact_generic(filename, colors, savename):
                              yscale='log')
     
     for file in files:
-        #ax.plot(file['Gate_Voltage_V'], np.abs(file['Resistance_2_Ohms']), '.-', ms=2, linewidth=1, color=colors[0])
+        ax.plot(file['Gate_Voltage_V'], np.abs(file['Resistance_1_Ohms']), '.-', ms=2, linewidth=1, color=colors[0])
         ax.plot(file['Gate_Voltage_V'], np.abs(file['Resistance_3_Ohms']), '.-', ms=2, linewidth=1, color=colors[1])
    
     ax.xaxis.set_major_locator(MultipleLocator(20))
@@ -321,7 +321,7 @@ def plot_contact_generic(filename, colors, savename):
     mp.save_generic_svg(fig, fileroot, savename)
     
 def plot_contact():
-    filenames = [#'JR190815_04_136_RvsVg_300.0K_contact.txt',#0.0, V1+ to V1-; S to V1+ ; c0, c1
+    filenames = ['JR190815_04_136_RvsVg_300.0K_contact.txt',#0.0, V1+ to V1-; S to V1+ ; c0, c1
                  #'JR190815_04_137_RvsVg_100.0K_contact.txt',#1.0, V1+ to V1-; S to V1+
                  #'JR190815_04_135_RvsVg_270.0K_contact.txt',#2.0, V1+ to V1-; S to V1+
                  #'JR190815_04_134_RvsVg_270.0K_contact.txt',#3.0, S to V1+; V1+ to V1- ; c1, c0
@@ -353,7 +353,7 @@ def plot_contact():
               [colors[4], colors[3]],
             ]
     savename = [x.replace('.txt','') for x in filenames]
-    
+    print(filenames)
     for (i, j, k) in zip(filenames, colors, savename):
         plot_contact_generic(i, j, k)
 
@@ -510,7 +510,7 @@ def plot_hall_inset(log = False, fontsize=10, labelsize=10):
     offset = [0, 0, 1, 0]
     files = [mp.process_file(os.path.join(fileroot, x)) for x in Hall_filenames]
     
-    colors=mp.colors_set1[[1, 3, 2, 0]]
+    colors=mp.colors_set1[[4, 3, 2, 0]]
     
     # scale
     
@@ -602,7 +602,7 @@ def plot_300K_IDvsVDS(figsize=1.5, log=False):
                               size=figsize, invertaxes=True, xadj=xadj, log=log)
     
 def main(): #sample D
-    show_all = True
+    show_all = False
     # Plot ID vs VG loops
     if False or show_all:
         mp.plot_IDvsVg_each(fileroot, RTloop_filenames, '_JR190815_04', log=True, size=2, majorx=40,
@@ -640,8 +640,8 @@ def main(): #sample D
         mp.plot_mobility_μ_cross_section(fileroot, RTloop_filenames, "_JR190815_04", JR190815_04_length, JR190815_04_width, figsize=1.5, ylim=(None, None),\
                                            log=False, increments=[25, 50, 75], colororder=[3,2,1])
         
-    files = [mp.process_file(os.path.join(fileroot, x)) for x in ['JR190815_04_125_RvsVg_300.0K.txt']]
-    print(mp.width_Vg(files[0],10**-8))
+    #files = [mp.process_file(os.path.join(fileroot, x)) for x in ['JR190815_04_125_RvsVg_300.0K.txt']]
+    #print(mp.width_Vg(files[0],10**-8))
     
 if __name__== "__main__":
   main()
