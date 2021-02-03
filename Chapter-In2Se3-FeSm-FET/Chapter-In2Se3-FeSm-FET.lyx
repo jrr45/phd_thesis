@@ -109,7 +109,277 @@ name "chapter:FeSm-FET"
 \end_layout
 
 \begin_layout Section
-Introduction and background
+Introduction
+\end_layout
+
+\begin_layout Standard
+Ferroelectric field effect transistors (FeFETs, see 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:FeFETs"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) are a natural evolution to field effect transistors (FET), providing a
+ means of maintaining the transistor state without the need for a constant
+ gate voltage.
+ Typically this is achieved as a standard FET with a ferroelectric replacing
+ gate dielectric.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "dunkel2017afefet,si2018ferroelectric"
+literal "true"
+
+\end_inset
+
+ Further engineering for use in devices like ferroelectric random access
+ memory add a metal layer in between the ferroelectric and channel to enhance
+ the field, and adapt the FinFET design to utilize this design.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "khan2020thefuture"
+literal "true"
+
+\end_inset
+
+ FeFET commercialization, in FRAM and beyond, still faces many engineering
+ challenges including retention duration, finding an optimal coercive field
+ and polarization strength, leakage current through the ferroelectric dielectric
+, material interface mismatches, limits to minimization of the ferroelectric.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "khan2020thefuture,ma2002whyis"
+literal "true"
+
+\end_inset
+
+ With the discovery of conductive ferroelectric compounds, see 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Polar-metals"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, we can construct a new variation of the FeFET, where the ferroelectric
+ acts the role of the semiconductor device channel.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "si2019aferroelectric"
+literal "true"
+
+\end_inset
+
+ Ferroelectric semiconductor field effect transistors (FeSmFETs) opens up
+ many new possibilities for future devices and may one day answer the aforementi
+oned obstacles.
+\end_layout
+
+\begin_layout Standard
+In 2017 
+\begin_inset Formula $\textrm{\ensuremath{\alpha}(3R)-}$
+\end_inset
+
+ and 
+\begin_inset Formula $\textrm{\ensuremath{\beta}-In}_{2}\textrm{Se}_{3}$
+\end_inset
+
+ were first predicted to be ferroelectric down to one unit cell.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ding2017prediction"
+literal "true"
+
+\end_inset
+
+ The 
+\begin_inset Formula $\textrm{\ensuremath{\alpha}-}$
+\end_inset
+
+phase prediction indicated a combined binary in-plane (IP) and out-of-plane
+ (OOP) polarization as the selenium atom shifted in the lattice, while the
+ 
+\begin_inset Formula $\textrm{\ensuremath{\beta}-}$
+\end_inset
+
+phase showed only binary IP polarization.
+ Due to the conductive nature of polar metals it is difficult to preform
+ traditional capacitance-polarization methods on a crystal as much of the
+ capacitance voltage simply leaks though the material.
+ In lieu of those measurements many distinct experiments form a pool of
+ evidence for the existence of ferroelectricity in 
+\begin_inset Formula $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$
+\end_inset
+
+.
+ Second harmonic generation (SHG) shows a breaking of inversion symmetry
+\begin_inset CommandInset citation
+LatexCommand cite
+key "dai2020intrinsic,xiao2018intrinsic,zhou2017outofplane"
+literal "true"
+
+\end_inset
+
+, a necessary requirement for ferroelectricity.
+ Piezoelectric force microscopy (PFM) has also shown evidence supporting
+ ferroelectricity
+\begin_inset CommandInset citation
+LatexCommand cite
+key "cui2018intercorrelated,wan2018roomtemperature,hou2019alphaintextrm2setextrm3,hou2019resistive,dai2020intrinsic"
+literal "true"
+
+\end_inset
+
+, though PFM can often give false positives as similar responses arise from
+ other phenomena.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "vasudevan2017ferroelectric"
+literal "false"
+
+\end_inset
+
+ To counter this some authors have looked at both IP and OOP PFM response
+ correlation
+\begin_inset CommandInset citation
+LatexCommand cite
+key "hou2019alphaintextrm2setextrm3,dai2020intrinsic,hou2019resistive,xiao2018intrinsic,cui2018intercorrelated,liu2019atomically"
+literal "false"
+
+\end_inset
+
+, as well as observing the effect IP electric fields to alter the OOP polarizati
+on measured by PFM
+\begin_inset CommandInset citation
+LatexCommand cite
+key "hou2019alphaintextrm2setextrm3"
+literal "false"
+
+\end_inset
+
+, narrowing the possibilities of what may be producing false positives.
+\end_layout
+
+\begin_layout Standard
+The largest experimental verification of ferroelectricity in 
+\begin_inset Formula $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$
+\end_inset
+
+ comes from several disparate devices designs that show signs of polarization.
+ The most explicit example was from an 
+\begin_inset Formula $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$
+\end_inset
+
+/graphene heterostructure FET.
+ The graphene channel fermi-level shifts from the electric field produced
+ by the FET gate and the 
+\begin_inset Formula $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$
+\end_inset
+
+ polarization, forming two peaks in the channel resistance as gate voltage
+ is swept and the fermi-level passes though the charge neutral point.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "wan2019nonvolatile"
+literal "false"
+
+\end_inset
+
+ The authors use this to estimate a polarization value of 0.92 
+\begin_inset Formula $\mathrm{\mu C/cm^{2}}$
+\end_inset
+
+, similar to the original theoretical prediction of 0.6 
+\begin_inset Formula $\mathrm{\mu C/cm^{2}}$
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ding2017prediction"
+literal "false"
+
+\end_inset
+
+.
+ Extensive work has been carried out by multiple group using 
+\begin_inset Formula $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$
+\end_inset
+
+ to create IP
+\begin_inset CommandInset citation
+LatexCommand cite
+key "dai2020intrinsic,cui2018intercorrelated,hou2019resistive"
+literal "false"
+
+\end_inset
+
+ and OOP
+\begin_inset CommandInset citation
+LatexCommand cite
+key "wan2018roomtemperature,yang2019nonvolatile"
+literal "false"
+
+\end_inset
+
+ rectifying devices.
+ For 
+\begin_inset Formula $V_{DS}$
+\end_inset
+
+ sweeps below the coercive field threshold, the devices act as a typical
+ semiconductor channel.
+ Above the threshold voltage the device current shows a significant change
+ in slope, and a large hysteresis between increasing and decreasing voltage
+ sweeps, see figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:FeFET-Current-vs-Gate"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+c and f.
+ Finally, the recent pioneering of the first FeSmFET using thin crystals
+ of
+\begin_inset Formula $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$
+\end_inset
+
+ with gate dielectric of 90-nm-thick 
+\begin_inset Formula $\mathrm{SiO_{2}}$
+\end_inset
+
+ or 15-nm-thick 
+\begin_inset Formula $\mathrm{HfO_{2}}$
+\end_inset
+
+.
+ When gated, the channel current showed a large hysteresis, forming clockwise
+ and counterclockwise loops with the respective gate dielectric, and persisting
+ down to liquid helium temperatures.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "si2019aferroelectric"
+literal "false"
+
+\end_inset
+
+ Below we discuss the manufacture and measurement of similar 
+\begin_inset Formula $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$
+\end_inset
+
+ FeSmFET devices that show a metallic transition when gated though a 
+\begin_inset Formula $\mathrm{SiO_{2}}$
+\end_inset
+
+ dialectic.
 \end_layout
 
 \begin_layout Section
@@ -122,8 +392,8 @@ Thin crystals of
 \end_inset
 
  were grown by a modified Bridgman method.
- Transport measurements were carried out on both bulk and thin mechanically
- exfoliated crystals.
+ Transport measurements were carried out on both bulk and thin mechanically-exfo
+liated crystals.
  For bulk resistivity measurements, silver paint was used to form conductive
  terminals.
  In-plane resistivity measurements were carried out using a hall bar pattern
@@ -134,6 +404,7 @@ Thin crystals of
  the crystal: a current lead was placed in the center of the crystal on
  the opposing sides of the c-axis with a voltage lead encircling each current
  lead.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -156,11 +427,11 @@ noprefix "false"
 \end_inset
 
 .
- Flakes were identified under an optical microscope and atomic force microscopy
- was used to establish a rough color code to judge the thickness of the
- flakes.
- Below 20nm, flakes were observed with the same shade of blue but appeared
- increasingly transparent for as thickness decreased.
+ Flakes were identified using an optical microscope and atomic force microscopy
+ was used to establish a rough microscope color code to judge the thickness
+ of the flakes.
+ Below 20nm, flakes hue was unchanged but appeared increasingly transparent
+ as thickness decreased.
  To promote better van der Walls adhesion of the flake to the substrate,
  the latter was first cleaned in Nanostrip, Acetone, 2-Proponal, and DI-water,
  before flake exfoliation, and the substrate was heated to 100C while in
@@ -387,7 +658,7 @@ name "fig:In2Se3-Device-images"
 \begin_layout Plain Layout
 (a) Schematic of the Hall bar device with used in flake measurements, samples
  A and B had connected voltage leads for four-point measurements while C
- and D had separated leads.
+ and D had separated leads for hall measurements.
  (b-e) Optical images of sample devices following this design with 10 
 \begin_inset Formula $\mu m$
 \end_inset
@@ -749,8 +1020,7 @@ Physical dimensions of the
 \begin_inset Formula $L_{current}$
 \end_inset
 
- are the shortest distances between the respective voltage and current leads,
- 
+ are the distance between the respective voltage and current leads, 
 \begin_inset Formula $w$
 \end_inset
 
@@ -787,7 +1057,7 @@ literal "true"
 e after manufacture, while thicker devices showed substantial Schottky barriers
  on various contacts.
  Milling away crystal material between the lithography and metal evaporation
- produced better contacts but was inconstant and only worked with thicker
+ produced better contacts, but inconstantly, and only worked with thicker
  devices.
  To circumvent this effect, we modified our lithography step to only allow
  solvent developers in contact with the flake material, with the procedure
@@ -828,6 +1098,12 @@ noprefix "false"
 \end_inset
 
  the corresponding parameters of those devices.
+ All measurements were carried out in low vacuum, less than 1 mTorr, in
+ a Model 6000 Physical Properties Measurement System (PPMS, Quantum Design).
+ A Keithley 6340 was used as the current and voltage bias source as well
+ as the corresponding two-point voltage and current measurements, two Keithley
+ 2182A were used for four-point and hall measurements across the voltage
+ leads, and a Keithley 2400 was used to provide the gate voltage bias.
 \end_layout
 
 \begin_layout Section
@@ -836,7 +1112,7 @@ Optical crystal measurements
 
 \begin_layout Standard
 Indium and selenium can form a variety of compounds, and the growth process
- is complicated and may result in materials of mixed structures, see section
+ is complicated and may result in crystals with mixed polymorphs, see section
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -855,9 +1131,9 @@ literal "true"
 
 \end_inset
 
- Because of this is important to establish the stoichiometry and lattice
- stacking of the crystals used in our devices.
- X-Ray diffraction displayed peaks corresponding to the 
+ Because of this, several optical measurements were used to confirm the
+ stoichiometry and lattice stacking of the material used in our devices.
+ X-Ray diffraction measurements displayed peaks corresponding to the 
 \begin_inset Formula $R3m$
 \end_inset
 
@@ -865,7 +1141,15 @@ literal "true"
 \begin_inset Formula $R\bar{3}m$
 \end_inset
 
- space groups.
+ space groups, indicating 
+\begin_inset Formula $\alpha$
+\end_inset
+
+- or 
+\begin_inset Formula $\beta$
+\end_inset
+
+-phase.
  Raman showed peaks near 104, 179, and 193 
 \begin_inset Formula $cm^{-1}$
 \end_inset
@@ -894,11 +1178,15 @@ literal "true"
 
 \end_inset
 
- Photoluminescence (PL) showed an energy gap of 1.4 
+ Photoluminescence showed an energy gap of 1.4 
 \begin_inset Formula $eV$
 \end_inset
 
-, consistent with previous optical measurements.
+, consistent with previous 
+\begin_inset Formula $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$
+\end_inset
+
+ optical measurements.
 \begin_inset CommandInset citation
 LatexCommand cite
 key "balakrishnan2018epitaxial"
@@ -906,8 +1194,8 @@ literal "true"
 
 \end_inset
 
- Finally, angle-resolved second harmonic generation (SHG) showed a six-fold
- symmetry establishing the material as stacking in a 
+ Finally, angle-resolved SHG showed a six-fold symmetry establishing the
+ material as stacking in a 
 \begin_inset Formula $R3m$
 \end_inset
 
@@ -929,8 +1217,8 @@ noprefix "false"
 
 \end_inset
 
- shows the Raman, PL , and SHG measurements performed on exfoliated flakes
- of crystal on 
+ shows the Raman, photoluminescence, and SHG measurements performed on exfoliate
+d flakes of crystal on 
 \begin_inset Formula $\textrm{Si:P/Si}\textrm{O}_{2}$
 \end_inset
 
@@ -1097,24 +1385,17 @@ FET measurements
 \end_layout
 
 \begin_layout Standard
-Flakes of thin crystal were manufactured into Hall bar and four-point probe
- FET devices for electronic characterization, both on conductive substrates
- of doped silicon with an insulating layer of 300nm thermally grown 
+Thin crystals of 
+\begin_inset Formula $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$
+\end_inset
+
+ were manufactured into Hall bar and four-point probe FETs.
+ Devices were made on conductive substrates of doped silicon with an insulating
+ layer of 300nm thermally grown 
 \begin_inset Formula $\textrm{Si:P/Si}\textrm{O}_{2}$
 \end_inset
 
-.
- Source-drain current 
-\begin_inset Formula $I_{D}$
-\end_inset
-
- was measured against voltage bias 
-\begin_inset Formula $V_{DS}$
-\end_inset
-
- from 0 to 5 V, and separately for 0 to -5 V, for fixed back gate voltages.
- Gate voltages were fixed in 25 V intervals from -75 V to 75 V for each
- sequence.
+, allowing us to use the substrate as the gate in the FETs.
  Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1125,13 +1406,23 @@ noprefix "false"
 
 \end_inset
 
- shows the data for sample A.
- The rapid change in 
+ shows sample A source-drain current 
 \begin_inset Formula $I_{D}$
 \end_inset
 
- around 0 V is indicative of two back-to-back Schottky diodes, see section
- 
+ measured against voltage bias 
+\begin_inset Formula $V_{DS}$
+\end_inset
+
+ from 0 to 5 V, and separately for 0 to -5 V, for fixed back gate voltages.
+ Gate voltages were fixed in 25 V intervals from -75 V to 75 V for each
+ sequence.
+ The rapid increase in 
+\begin_inset Formula $I_{D}$
+\end_inset
+
+ at low voltages is indicative of two back-to-back Schottky diodes, see
+ section 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Metal-Semiconductor-Metal-conduc"
@@ -1199,14 +1490,22 @@ literal "true"
 \begin_inset Formula $V_{DS}$
 \end_inset
 
- bias was cycled from 0 V, 10 V, -10V, to 0 V, forming asymmetric hysteresis
+ was cycled from 0 V, 10 V, -10V, to 0 V, forming asymmetric hysteresis
  in the current.
  The switching behavior is similar to previous reports of 
 \begin_inset Formula $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$
 \end_inset
 
- transistors, where the ferroelectric polarization field is thought to modify
- the Schottky barrier between the material and the metal leads.<TODO Refs>
+ rectifying devices, where the ferroelectric polarization field is thought
+ to modify the Schottky barrier between the material and the metal leads.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "yang2019nonvolatile,wan2018roomtemperature,cui2018intercorrelated,dai2020intrinsic"
+literal "false"
+
+\end_inset
+
+ FIXME: n-type by asymmetry
 \end_layout
 
 \begin_layout Standard
@@ -1505,16 +1804,12 @@ name "fig:In2Se3-SampleA-I_DSvV_DS"
 \end_layout
 
 \begin_layout Standard
-FET transistor transfer curves 
-\begin_inset Formula $I_{D}$
-\end_inset
-
- measured against back-gate bias 
+FET transistor transfer curves, current as a function of gate voltage 
 \begin_inset Formula $V_{G}$
 \end_inset
 
- was also measured.
- Each measurement was performed with a fixed 
+, were measured for each device.
+ All measurements shown were performed with a fixed 
 \begin_inset Formula $V_{DS}=.1V$
 \end_inset
 
@@ -1536,17 +1831,10 @@ noprefix "false"
  For clarity, only the data between -75 V, 75 V, to -75 V is shown, as that
  behavior is persistent across multiple loops.
  The measurement was repeated at various, fixed temperatures from 300 K
- to 2-4 K, the lowest temperature being sample dependent due to blockages
- in the PPMS.
- For each sweep of 
-\begin_inset Formula $V_{G}$
-\end_inset
-
- the 
-\begin_inset Formula $I_{D}$
-\end_inset
-
- formed a clockwise hysteresis loop.
+ to 2-4 K, the lowest temperature reached is sample dependent due to ice
+ blockages in the PPMS cooling.
+ For each gate voltage sweep sweep the current formed a clockwise hysteresis
+ loop.
  In all samples the width of the loop decreased with decreasing temperature,
  though each sample still exhibited a finite hysteresis at the lowest temperatur
 e.
@@ -1572,6 +1860,27 @@ noprefix "false"
 \end_inset
 
 .
+ This behavior is consistent with previous work with 
+\begin_inset Formula $n$
+\end_inset
+
+-type
+\begin_inset Formula $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$
+\end_inset
+
+ on 
+\begin_inset Formula $\textrm{Si}\textrm{O}_{2}$
+\end_inset
+
+ FeSmFETs.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "si2019aferroelectric"
+literal "true"
+
+\end_inset
+
+ 
 \end_layout
 
 \begin_layout Standard
@@ -1748,7 +2057,7 @@ status collapsed
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -1803,7 +2112,6 @@ name "fig:In2Se3-Sample-A-loops"
 \end_layout
 
 \begin_layout Plain Layout
-(a-f)
 \begin_inset Formula $I_{D}\left(V_{G}\right)$
 \end_inset
 
@@ -1816,7 +2124,7 @@ name "fig:In2Se3-Sample-A-loops"
 \begin_inset Formula $V_{G}$
 \end_inset
 
- was cycled, a clockwise hysteresis loop was seen at all temperatures.
+ was cycled, a clockwise hysteresis current loop was seen at all temperatures.
 \end_layout
 
 \end_inset
@@ -1829,10 +2137,183 @@ Discussion
 \end_layout
 
 \begin_layout Standard
-When cooled from 300 to 2 K, the bulk crystal showed an increase in resistivity
- emblematic of most semiconductors, with variable range hopping (VRH) conduction
- appearing below approximately 40 K.
- When heating 
+When cooled from 300 to 2 K, the 
+\begin_inset Formula $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$
+\end_inset
+
+ bulk crystal showed an increase in resistivity emblematic of most semiconductor
+s, seen in figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Temperature-dependence-and-field"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+a, with variable range hopping conduction appearing below approximately
+ 40 K.
+ In contrast thin gated crystals of 
+\begin_inset Formula $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$
+\end_inset
+
+showed a more positive 
+\begin_inset Formula $dR/dT$
+\end_inset
+
+ slope for increasing positive gate voltages.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Temperature-dependence-and-field"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+b-d show a cross section of the 
+\begin_inset Formula $I_{D}\left(V_{G}\right)$
+\end_inset
+
+ transport measurements taken at different temperatures of samples A, B,
+ and C, shown in figures 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:In2Se3-Sample-A-loops"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "BROKEN: Ref: fig:Sample-B-loops"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "BROKEN: Ref: fig:Sample-C-loops"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ 
+\begin_inset Formula $V_{G}=0$
+\end_inset
+
+ shows a similar behavior to the bulk crystal, while 50 V and 75 V have
+ a 
+\begin_inset Formula $dR/dT$
+\end_inset
+
+ slope indicative of a metallic state.
+ Sample C shows a small negative uptick in resistance near liquid helium
+ temperatures, this is likely a result of disorder in the sample C crystal.
+ The cross section of 
+\begin_inset Formula $I_{D}\left(V_{G}\right)$
+\end_inset
+
+ is used to examine the metallic transition of the devices as the increased
+ conductivity state was quickly destroyed with changing temperatures, and
+ was sensitive to the previous state of the system, see figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Sample-C-effects-of-warming-cooling"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ In all samples the onset of the uptick in conductivity occurs at higher
+ voltages as temperatures decrease, leading to a shrinking but finite hysteresis
+ loop.
+ These behaviors seem to be independent of ramping rate of 
+\begin_inset Formula $V_{G}$
+\end_inset
+
+ (
+\begin_inset Formula $\ref{fig:Sample-B-rate-dependance}$
+\end_inset
+
+) and contact resistance does not appear to play a significant role in sample
+ resistance (figures 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Sample-C-effects-of-warming-cooling"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Sample-D-contact-resistance"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ The magnetoconductance of sample A displayed weak localization even while
+ gated to the metallic state at 1.8 K (figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Temperature-dependence-and-field"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+d), as well as 10 and 50 K (figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Sample-A:-magnetoconductance-All-K"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ The MC data was quantitatively fit to the Maekawa-Fukuyama theory of 2D
+ weak localization.<FIXME reference> 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+FIXME: hysteresis shrink, polarization exists at 2K (envoke 6?), 2pt R decrease
+ suggesting metallic state, S 4pt constsistant with 2pt, S contact resistance,
+ uptick in C (sample disorder) from weak localization, 2d conductivity,
+ magnitoconductance,
+\end_layout
+
+\begin_layout Standard
+FIXME: discuss how polarizaiton may change metalic transition
 \end_layout
 
 \begin_layout Standard
@@ -2050,7 +2531,7 @@ magnetoconductance
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -2092,6 +2573,13 @@ Carrier density
 
 \begin_layout Plain Layout
 Temperature dependence and magnetic field measurements
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Temperature-dependence-and-field"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset

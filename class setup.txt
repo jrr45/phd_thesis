@@ -1,0 +1,4 @@
+copy psuthesis.layout to C:\Program Files\LyX <version>\Resources\layouts
+copy psuthesis.cls to <text-install-drectory>\texmf-dist\tex\latex\psuthesis
+in terminal run texhash
+in LyX reconfigure (tools-reconfigure)

@@ -985,6 +985,16 @@ filename "Chapter-fabrication/Chapter-fabrication.lyx"
 \end_layout
 
 \begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "Chapter-In2Se3-FeSm-FET/Chapter-In2Se3-FeSm-FET.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \start_of_appendix
 \begin_inset ERT
 status open
@@ -1023,6 +1033,18 @@ raisebox{3pt}{|}}}{0pt}{}{}
 \begin_inset CommandInset include
 LatexCommand include
 filename "Appendix-crystal-symmetry-groups/Appendix-crystal-symmetry-groups.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family sans
+\begin_inset CommandInset include
+LatexCommand include
+filename "Chapter-In2Se3-FeSm-FET/Appendix-Additional In2Se3 Figures.lyx"
 
 \end_inset
 

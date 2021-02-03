@@ -68,7 +68,7 @@ MR_sweep_files = [
 
 MR_sweep_files2 = [
         'JR200115_11_115_RvsB_75.00Vg_50.0K_cleaned.txt',
-        #'JR200115_11_117_RvsB_75.00Vg_10.0K.txt',
+        'JR200115_11_117_RvsB_75.00Vg_10.0K.txt',
         'JR200115_11_113_RvsB_75.00Vg_1.8K.txt',
         ]
 
@@ -538,15 +538,20 @@ def main(): #sample A
                                            log=False, increments=[25, 50, 75], colororder=[3,2,1])
     
     # loops if ID vs VDS showing hysteresis
-    if True  or show_all:
+    if False  or show_all:
         plot_IDvsVDS_loops(log=True,figsize=2, fontsize=10, labelsize=10)
         plot_IDvsVDS_loops(log=False,figsize=2, fontsize=10, labelsize=10)
         #plot_IDvsVDS_loops2(log=False,figsize=2)
         #plot_IDvsVDS_5x_loops(figsize=2, fontsize=10, labelsize=8, log=False)
     
-    if False or show_all:
-        plot_σvsB_custom(MR_sweep_files2[1:], '_JR200115_11_MR_sweep_1.8', color_order=[1,0],\
+    if True or show_all:
+        plot_σvsB_custom(MR_sweep_files2[2:], '_JR200115_11_MR_sweep_1.8', color_order=[1,0],\
                             fit_lim=10, size=2,fontsize=10, labelsize=10, xmult=4)
+        
+        plot_σvsB_custom(MR_sweep_files2, '_JR200115_11_MR_sweep_fit', color_order=[0,2,1],\
+                            fit_lim=100, size=2,fontsize=10, labelsize=10, xmult=4)
+        plot_σvsB_custom(MR_sweep_files2, '_JR200115_11_MR_sweep', color_order=[0,2,1],\
+                            fit_lim=1, size=2,fontsize=10, labelsize=10, xmult=4)
     
 if __name__== "__main__":
   main()

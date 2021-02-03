@@ -35,8 +35,8 @@ RTloop_filenames = [
     'JR190815_04_108_RvsVg_150.txt',
     'JR190815_04_122_RvsVg_200.0K.txt',
     'JR190815_04_123_RvsVg_250.0K.txt',
-    'JR190815_04_124_RvsVg_270.0K.txt',
-    'JR190815_04_125_RvsVg_300.0K.txt',
+    #'JR190815_04_124_RvsVg_270.0K.txt',
+    #'JR190815_04_125_RvsVg_300.0K.txt',
     ]
 
 rescan_RTloop_filenames = [
@@ -604,14 +604,14 @@ def plot_300K_IDvsVDS(figsize=1.5, log=False):
 def main(): #sample D
     show_all = False
     # Plot ID vs VG loops
-    if False or show_all:
+    if True or show_all:
         mp.plot_IDvsVg_each(fileroot, RTloop_filenames, '_JR190815_04', log=True, size=2, majorx=40,
                           ylim=(None,None), fontsize=10, labelsize=10)
     
     # -- Cross section of loop data --
-    if False or show_all:
+    if True or show_all:
         mp.plot_loopR_cross_section(fileroot, RTloop_filenames, "_JR190815_04_RDS", increments=[0,25,50,75],\
-                                      figsize=2, log=True, ylim=(None, None))
+                                      figsize=2, log=True, xlim=(None, None),ylim=(None, None))
     
     # -- 300K ID vs VDS curves
     if False or show_all:
@@ -624,7 +624,7 @@ def main(): #sample D
         plot_hall_inset()
     
     # contact resistance
-    if True or show_all:
+    if False or show_all:
         plot_contact()
     
     # unused but saving
