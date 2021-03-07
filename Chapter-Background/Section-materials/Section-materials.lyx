@@ -466,13 +466,12 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-\align center
 \begin_inset Tabular
-<lyxtabular version="3" rows="13" columns="3">
+<lyxtabular version="3" rows="12" columns="3">
 <features tabularvalignment="middle">
 <column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -483,7 +482,7 @@ Polymorph
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -492,11 +491,11 @@ Structure
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Point group
+Space group {number}
 \end_layout
 
 \end_inset
@@ -515,7 +514,7 @@ Point group
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -524,11 +523,11 @@ Rhombohedral [3R]
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $R3m$
+\begin_inset Formula $R3m\left\{ 160\right\} $
 \end_inset
 
 
@@ -540,7 +539,7 @@ literal "true"
 \end_inset
 
  (or 
-\begin_inset Formula $R\bar{3}m$
+\begin_inset Formula $R\bar{3}m\left\{ 166\right\} $
 \end_inset
 
 
@@ -567,7 +566,7 @@ literal "true"
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -576,11 +575,11 @@ Hexagonal [2H]
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $P6_{3}mc$
+\begin_inset Formula $P6_{3}mc\left\{ 186\right\} $
 \end_inset
 
 
@@ -592,7 +591,7 @@ literal "true"
 \end_inset
 
  (or 
-\begin_inset Formula $P6_{3}/mmc$
+\begin_inset Formula $P6_{3}/mmc\left\{ 194\right\} $
 \end_inset
 
 
@@ -630,7 +629,7 @@ literal "false"
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -639,11 +638,11 @@ Trigonal [1T]
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $P\bar{3}m1$
+\begin_inset Formula $P\bar{3}m1\left\{ 162\right\} $
 \end_inset
 
 
@@ -670,7 +669,7 @@ literal "true"
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -679,11 +678,11 @@ Hexagonal [2H]
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $P6_{3}mc$
+\begin_inset Formula $P6_{3}mc\left\{ 186\right\} $
 \end_inset
 
 
@@ -695,7 +694,7 @@ literal "true"
 \end_inset
 
  (or 
-\begin_inset Formula $P6_{3}/mmc$
+\begin_inset Formula $P6_{3}/mmc\left\{ 194\right\} $
 \end_inset
 
 
@@ -722,7 +721,7 @@ literal "false"
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -731,11 +730,11 @@ Rhombohedral [3R]
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $R\bar{3}m$
+\begin_inset Formula $R\bar{3}m\left\{ 166\right\} $
 \end_inset
 
 
@@ -765,7 +764,7 @@ literal "true"
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -774,11 +773,11 @@ Hexagonal
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $P6_{1}$
+\begin_inset Formula $P6_{1}\left\{ 169\right\} $
 \end_inset
 
 
@@ -790,7 +789,7 @@ literal "true"
 \end_inset
 
  (or 
-\begin_inset Formula $P6_{5}$
+\begin_inset Formula $P6_{5}\left\{ 170\right\} $
 \end_inset
 
 
@@ -828,7 +827,7 @@ literal "false"
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -837,11 +836,11 @@ Trigonal
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $P3m1$
+\begin_inset Formula $P3m1\left\{ 156\right\} $
 \end_inset
 
 
@@ -853,7 +852,7 @@ literal "false"
 \end_inset
 
  or 
-\begin_inset Formula $P\bar{3}m1$
+\begin_inset Formula $P\bar{3}m1\left\{ 164\right\} $
 \end_inset
 
 
@@ -883,7 +882,7 @@ literal "false"
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -892,7 +891,7 @@ Hexagonal
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -922,7 +921,7 @@ literal "false"
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -931,11 +930,11 @@ Rhombohedral
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $R3m$
+\begin_inset Formula $R3m\left\{ 160\right\} $
 \end_inset
 
 
@@ -953,7 +952,7 @@ literal "false"
 </cell>
 </row>
 <row>
-<cell multirow="3" alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
+<cell multirow="3" alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -965,7 +964,7 @@ literal "false"
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -974,11 +973,11 @@ Monoclinic
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $C2/m$
+\begin_inset Formula $C2/m\left\{ 12\right\} $
 \end_inset
 
 
@@ -1005,7 +1004,7 @@ literal "false"
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1014,7 +1013,7 @@ Rectangular
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1025,38 +1024,6 @@ literal "false"
 
 \end_inset
 
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $\gamma^{\prime}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -1094,16 +1061,220 @@ name "tab:In2Se3-polymorphs"
 
 \end_layout
 
-\begin_layout Subsubsection
-Ferroelectricity in 
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/a(2H) In2Se3 combined.png
+	lyxscale 10
+	width 4cm
+	groupId In2Se3-crystals
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\alpha\mathrm{\left(2H\right)}$
+\end_inset
+
+ hexagonal
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/a(3R) In2Se3 combined.png
+	lyxscale 10
+	width 4cm
+	groupId In2Se3-crystals
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\alpha\mathrm{\left(3R\right)}$
+\end_inset
+
+ rhombohedral
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/b(3R) In2Se3 combined.png
+	lyxscale 10
+	width 4cm
+	groupId In2Se3-crystals
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\beta\mathrm{\left(3R\right)}$
+\end_inset
+
+ rhombohedral
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/g In2Se3 combined.png
+	lyxscale 10
+	width 4cm
+	groupId In2Se3-crystals
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\gamma$
+\end_inset
+
+ Hexagonal
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{In_{2}Se_{3}}$
+\end_inset
+
+ crystal structure
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $\alpha\left(\mathrm{2H-}P6_{3}mc\right)$
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kupers2018controlled"
+literal "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\alpha\left(\mathrm{3R-}R3m\right)$
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kupers2018controlled"
+literal "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\beta\left(\mathrm{3R-}R\bar{3}m\right)$
+\end_inset
+
+, and 
+\begin_inset Formula $\gamma\left(P6_{1}\right)$
+\end_inset
+
+ crystal stuctures.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+TODO: Ferroelectricity in 
 \begin_inset Formula $\mathrm{In_{2}Se_{3}}$
 \end_inset
 
 ? (TODO, maybe leave for later chapter)
-\end_layout
-
-\begin_layout Standard
-TODO
 \end_layout
 
 \begin_layout Standard
@@ -1147,7 +1318,7 @@ Structure
 \begin_inset Text
 
 \begin_layout Plain Layout
-Point group
+Spac group
 \end_layout
 
 \end_inset

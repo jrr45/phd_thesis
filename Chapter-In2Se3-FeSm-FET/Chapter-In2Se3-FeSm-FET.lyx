@@ -339,7 +339,7 @@ literal "false"
  sweeps, see figure 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:FeFET-Current-vs-Gate"
+reference "fig:In2Se3-SampleA-I_DSvV_DS"
 plural "false"
 caps "false"
 noprefix "false"
@@ -1505,7 +1505,32 @@ literal "false"
 
 \end_inset
 
- FIXME: n-type by asymmetry
+ The increasing drain current with positive gate voltages is indiciative
+ of a 
+\begin_inset Formula $n$
+\end_inset
+
+-type semiconductor
+\begin_inset CommandInset citation
+LatexCommand cite
+key "horowitz2015theart"
+literal "true"
+
+\end_inset
+
+, consistant with previous measurements on 
+\begin_inset Formula $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "julien1986electrical,island2015gatecontrolled"
+literal "true"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -1864,7 +1889,7 @@ noprefix "false"
 \begin_inset Formula $n$
 \end_inset
 
--type
+-type 
 \begin_inset Formula $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$
 \end_inset
 
@@ -2137,6 +2162,251 @@ Discussion
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset space \hspace*{\fill}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/In2Se3_Bulk_RT_ln.svg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Bulk: 
+\begin_inset Formula $\rho\left(T\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hspace*{\fill}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR200115_11/JR200115_11_RDSvVG-cross-section_linear.svg
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sample A: 
+\begin_inset Formula $R_{DS}\left(T\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hspace*{\fill}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset space \hspace*{\fill}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR200115_17/JR200115_17_RDSvVG-cross-section_log.svg
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sample B: 
+\begin_inset Formula $R_{DS}\left(T\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hspace*{\fill}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Graphics
+	filename Figures/JR190919_03/JR190919_03_RDSvVG-cross-section_log.svg
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sample C: 
+\begin_inset Formula $R_{DS}\left(T\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hspace*{\fill}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Temperature dependence
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Temperature-dependence"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+(a) Bulk crystal resistivity along the c-axis and in-plane.
+ (b-d) Temperature cross-section of the 
+\begin_inset Formula $I_{D}\left(V_{G}\right)$
+\end_inset
+
+ transfer characteristics for samples A, B, and C for the curves shown in
+ figures 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:In2Se3-Sample-A-loops"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Sample-B-loops"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Sample-C-loops"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ respectively.
+ Each data-point is taken from the increasing 
+\begin_inset Formula $V_{G}$
+\end_inset
+
+ (top) portion of the respective 
+\begin_inset Formula $I_{D}\left(V_{G}\right)$
+\end_inset
+
+ curves for 0, 25, 50, and 75 V.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 When cooled from 300 to 2 K, the 
 \begin_inset Formula $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$
 \end_inset
@@ -2145,7 +2415,7 @@ When cooled from 300 to 2 K, the
 s, seen in figure 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Temperature-dependence-and-field"
+reference "fig:Temperature-dependence"
 plural "false"
 caps "false"
 noprefix "false"
@@ -2166,7 +2436,7 @@ showed a more positive
  Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Temperature-dependence-and-field"
+reference "fig:Temperature-dependence"
 plural "false"
 caps "false"
 noprefix "false"
@@ -2191,7 +2461,7 @@ noprefix "false"
 , 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "BROKEN: Ref: fig:Sample-B-loops"
+reference "fig:Sample-B-loops"
 plural "false"
 caps "false"
 noprefix "false"
@@ -2201,7 +2471,7 @@ noprefix "false"
 , and 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "BROKEN: Ref: fig:Sample-C-loops"
+reference "fig:Sample-C-loops"
 plural "false"
 caps "false"
 noprefix "false"
@@ -2219,8 +2489,6 @@ noprefix "false"
 \end_inset
 
  slope indicative of a metallic state.
- Sample C shows a small negative uptick in resistance near liquid helium
- temperatures, this is likely a result of disorder in the sample C crystal.
  The cross section of 
 \begin_inset Formula $I_{D}\left(V_{G}\right)$
 \end_inset
@@ -2271,11 +2539,14 @@ noprefix "false"
 \end_inset
 
 ).
- The magnetoconductance of sample A displayed weak localization even while
- gated to the metallic state at 1.8 K (figure 
+\end_layout
+
+\begin_layout Standard
+The magnetoconductance (MC) of sample A displayed weak localization even
+ while gated to the metallic state at 1.8 K (figure 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Temperature-dependence-and-field"
+reference "fig:Magnetic-field-measurment"
 plural "false"
 caps "false"
 noprefix "false"
@@ -2293,27 +2564,84 @@ noprefix "false"
 \end_inset
 
 ).
- The MC data was quantitatively fit to the Maekawa-Fukuyama theory of 2D
- weak localization.<FIXME reference> 
-\begin_inset Newline newline
+ The MC data was quantitatively fit to the Hikami-Larkin-Nagaoka theory
+ of 2D weak localization with spin-orbital coupling
+\begin_inset CommandInset citation
+LatexCommand cite
+key "hikami1980spinorbit"
+literal "true"
+
 \end_inset
 
+ 
+\end_layout
 
-\begin_inset Newline newline
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\Delta\sigma\left(B\right)=\alpha\frac{e^{2}}{2\pi^{2}\hbar}\left[\ln\left(\frac{B_{\phi}}{B}\right)-\psi\left(\frac{1}{2}+\frac{B_{\phi}}{B}\right)\right]
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\psi$
+\end_inset
+
+ is the digamma function, 
+\begin_inset Formula $B_{\phi}$
+\end_inset
+
+ is the dephasing magnetic field, 
+\begin_inset Formula $\alpha=1/2$
+\end_inset
+
+ for weak anti-localization and 
+\begin_inset Formula $1$
+\end_inset
+
+ for weak localization.
+ Sample C shows a small uptick in cross-section resistance near liquid helium
+ temperatures, this is likely a result of disorder in the sample C crystal.
+ Weak localization in a 2D system can manifest a non-metallic, negative
+ 
+\begin_inset Formula $dR/dT$
+\end_inset
+
+ at low temperatures.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "lee1985disordered"
+literal "false"
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-FIXME: hysteresis shrink, polarization exists at 2K (envoke 6?), 2pt R decrease
- suggesting metallic state, S 4pt constsistant with 2pt, S contact resistance,
- uptick in C (sample disorder) from weak localization, 2d conductivity,
- magnitoconductance,
+FIXME: smooth discussion transition
 \end_layout
 
 \begin_layout Standard
-FIXME: discuss how polarizaiton may change metalic transition
+FIXME: Max 2D electric conductivity? No idea where the 80
+\begin_inset Formula $\sigma_{0}$
+\end_inset
+
+ (quantum conductance) calculation comes from.
+ 
+\end_layout
+
+\begin_layout Standard
+FIXME: hysteresis shrink, polarization exists at 2K (invoke 6?)
+\end_layout
+
+\begin_layout Standard
+FIXME: discuss how polarization may change metallic transition
+\end_layout
+
+\begin_layout Standard
+FIXME: Polarization failure in beginning?
 \end_layout
 
 \begin_layout Standard
@@ -2324,44 +2652,7 @@ status open
 
 \begin_layout Plain Layout
 \align center
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename Figures/In2Se3_Bulk_RT_ln.svg
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Bulk: 
-\begin_inset Formula $\rho\left(T\right)$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
+\begin_inset space \hspace*{\fill}
 \end_inset
 
 
@@ -2369,127 +2660,6 @@ Bulk:
 wide false
 sideways false
 status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename Figures/JR200115_11/JR200115_11_RDSvVG-cross-section_linear.svg
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Sample A: 
-\begin_inset Formula $R_{DS}\left(T\right)$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename Figures/JR200115_17/JR200115_17_RDSvVG-cross-section_log.svg
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Sample B: 
-\begin_inset Formula $R_{DS}\left(T\right)$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset Graphics
-	filename Figures/JR190919_03/JR190919_03_RDSvVG-cross-section_log.svg
-
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Sample C: 
-\begin_inset Formula $R_{DS}\left(T\right)$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -2520,11 +2690,7 @@ magnetoconductance
 \end_inset
 
 
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
+\begin_inset space \hspace*{\fill}
 \end_inset
 
 
@@ -2566,16 +2732,20 @@ Carrier density
 \end_inset
 
 
+\begin_inset space \hspace*{\fill}
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Temperature dependence and magnetic field measurements
+Magnetic field measurements
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:Temperature-dependence-and-field"
+name "fig:Magnetic-field-measurment"
 
 \end_inset
 
@@ -2588,56 +2758,10 @@ name "fig:Temperature-dependence-and-field"
 \end_layout
 
 \begin_layout Plain Layout
-(a) Bulk crystal resistivity along the c-axis and in-plane.
- (b-d) Temperature cross-section of the 
-\begin_inset Formula $I_{D}\left(V_{G}\right)$
-\end_inset
-
- transfer characteristics for samples A, B, and C for the curves shown in
- figures 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:In2Se3-Sample-A-loops"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-, 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "BROKEN: Ref: fig:Sample-B-loops"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-, and 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "BROKEN: Ref: fig:Sample-C-loops"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- respectively.
- Each data-point is taken from the increasing 
-\begin_inset Formula $V_{G}$
-\end_inset
-
- (top) portion of the respective 
-\begin_inset Formula $I_{D}\left(V_{G}\right)$
-\end_inset
-
- curves for 0, 25, 50, and 75 V.
- (e) The magnetoconductance of sample A taken at 1.8 K.
+(a) The magnetoconductance of sample A taken at 1.8 K.
  The data was symmetrized to remove odd-term magnetic field dependence,
  and normalized to the difference from the measured value at zero-field.
- (f) Sample D carrier density at various temperatures, the inset shows the
+ (b) Sample D carrier density at various temperatures, the inset shows the
  hall data used the the carrier density calculations.
 \end_layout
 

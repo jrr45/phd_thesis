@@ -9,9 +9,9 @@ from scipy.stats import linregress
 from scipy.optimize import curve_fit
 import configparser
 
-cmap = plt.cm.get_cmap('Set1')
-colors_set1 = cmap(np.linspace(0,1,9))
-colors = colors_set1[[0,3,2,1,4,5]]
+#cmap = plt.cm.get_cmap('Set1')
+#colors_set1 = cmap(np.linspace(0,1,9))
+#colors = colors_set1[[0,3,2,1,4,5]]
 
 fundamental_charge_e = -1.602176634 * (10**-19) # SI: C
 ħ = 1.0545718 * 10**-34 #SI m^2 kg / s

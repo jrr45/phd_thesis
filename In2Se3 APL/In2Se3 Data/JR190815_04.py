@@ -462,18 +462,21 @@ def process_hall_data():
  
 def plot_n_hall_3D():
     (Temperatures, n2D, fits, r_squared, μH) = process_hall_data()
-    n3D = np.divide(n2D,JR190815_04_thickness)
+    n3D = np.divide(n2D,JR190815_04_thickness)/(100.0**3.0)
+        
+    fig = plt.figure(figsize=(2, 2), dpi=300)
     
-    fig = plt.figure(figsize=(1.5, 1.5), dpi=300)
-    
-    ax = mp.pretty_plot_single(fig, labels=['$\it{T}$ (K)', '$\it{n}$ ($m^{-3}$)'],
+    ax = mp.pretty_plot_single(fig, labels=['$\it{T}$ (K)', '$\it{n}$ ($cm^{-3}$)'],
                              yscale='log', fontsize=10)
     
     ax.plot(Temperatures, n3D, '.-', ms=3, linewidth=1.5)
-    
+   
+        
     ax.set_xlim((None, 215))
+    ax.set_ylim( (.9*10.0**17.0,1.3*10.0**18.0) )
     ax.xaxis.set_major_locator(MultipleLocator(100))
 
+    
     mp.save_generic_svg(fig, fileroot, "_Hall_n3D")
     
 def plot_n_hall_2D(fontsize=10, labelsize=10):
@@ -604,7 +607,7 @@ def plot_300K_IDvsVDS(figsize=1.5, log=False):
 def main(): #sample D
     show_all = False
     # Plot ID vs VG loops
-    if True or show_all:
+    if False or show_all:
         mp.plot_IDvsVg_each(fileroot, RTloop_filenames, '_JR190815_04', log=True, size=2, majorx=40,
                           ylim=(None,None), fontsize=10, labelsize=10)
     
@@ -619,9 +622,10 @@ def main(): #sample D
         plot_300K_IDvsVDS(figsize=2, log=True)
 
     # hall carrier density
-    if False or show_all:
+    if True or show_all:
         plot_n_hall_2D()
         plot_hall_inset()
+        plot_n_hall_3D()
     
     # contact resistance
     if False or show_all:

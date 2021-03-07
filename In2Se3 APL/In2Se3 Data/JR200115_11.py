@@ -522,15 +522,6 @@ def main(): #sample A
         files = [mp.process_file(os.path.join(fileroot, x)) for x in Rvst_filenames]    
         mp.plot_IDSvsTime_generic(fileroot, files, '_RvsTime', log=False, size=2, majorx=1800, ylim=(None,None))
     
-        
-    # still working on    
-    if False or show_all:
-        plot_σvsB_custom(MR_sweep_files2[1:], '_JR200115_11_MR_sweep_1.8', color_order=[1,0],\
-                         fit_lim=10, size=2)
-        plot_σvsB_custom(MR_sweep_files2, '_JR200115_11_MR_sweep_both', color_order=[0,1],\
-                         fit_lim=60, size=2)
-        plot_σvsB_custom(MR_sweep_files2, '_JR200115_11_MR_sweep', color_order=[0,1],\
-                         fit_lim=0, size=2)
             
     # -- carrier mobility μ
     if False or show_all:
@@ -544,7 +535,7 @@ def main(): #sample A
         #plot_IDvsVDS_loops2(log=False,figsize=2)
         #plot_IDvsVDS_5x_loops(figsize=2, fontsize=10, labelsize=8, log=False)
     
-    if True or show_all:
+    if False or show_all:
         plot_σvsB_custom(MR_sweep_files2[2:], '_JR200115_11_MR_sweep_1.8', color_order=[1,0],\
                             fit_lim=10, size=2,fontsize=10, labelsize=10, xmult=4)
         
@@ -552,6 +543,9 @@ def main(): #sample A
                             fit_lim=100, size=2,fontsize=10, labelsize=10, xmult=4)
         plot_σvsB_custom(MR_sweep_files2, '_JR200115_11_MR_sweep', color_order=[0,2,1],\
                             fit_lim=1, size=2,fontsize=10, labelsize=10, xmult=4)
+
+            
+    
     
 if __name__== "__main__":
   main()

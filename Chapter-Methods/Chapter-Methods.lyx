@@ -1,0 +1,2434 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass psuthesis
+\options phd
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package none
+\inputencoding auto
+\fontencoding default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 0
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+% !TEX root = ../YourName-Dissertation.tex
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Sample fabrication and measurement methods
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+The relatively simple innovation of using adhesive tape to exfoliate van
+ der Waals crystal spearheaded a boom in 2D material research and driven
+ the development of new techniques to explore these materials.
+ 2D crystals are typically manufactured in one of two methods: films grown
+ on premanufactured substrates or exfoliated flakes from van der Waals crystals.
+ Films are sought for material commercialization as they can be incorporated
+ into large-scale manufacturing processes.
+ Industrial scale process require a lot of time to development to insure
+ the film can be grown uniformity, using a reliable process that scales
+ and is cost effective.
+ Exfoliated crystals are typically used in initial material development
+ and characterization as they are often easier to produce and faster to
+ work with on small scale initial devices.
+ By growing a bulk crystal, the parameters of the substrate lattice are
+ removed from the crystal growth, reducing many complications seen in film
+ development.
+ Due their self-contained nature, flakes can be easier to physically manipulate
+ when developing a new process as they are not bonded to a substrate.
+ Flakes may additionally be stacked in layered hetrostructures to create
+ devises with more unique properties, and can display new phenomina such
+ as interface effects between the layers.
+ Advances in flake devices often drive development of film manufacturing
+ to incorporate the 2D crystal properties into commercial devices.
+ 
+\end_layout
+
+\begin_layout Standard
+Both flake and film device manufacture follow similar processes to add wires
+ or pattern the crystal by etching.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:device-process"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ shows an example of the two different processes while the details of each
+ are given in the respective sections below.
+ For most films and some flakes any unwanted material must first be removed
+ to reduce the crystal down to the desired size and shape.
+ The substrate is first covered with a protective polymer resist that forms
+ a uniform coating over the entire surface.
+ The polymer is patterned using photo or electron-beam lithography process
+ to leave only the desired material covered.
+ The excess crystal is then removed using an etching process, this can be
+ using something like a gas-plasma or a wet process with a chemical that
+ reacts with the crystal, such as a strong acid.
+ The chemical etch can often destroy the protective layer or begin to eat
+ through the exposed sides, so the duration and method of the etch must
+ be considered.
+ The polymer is then removed with solvents so only the patterned crystal
+ remains on the substrate.
+ For adding wires to the the crystal, substrate is (again) covered with
+ a protective polymer and patterned, exposing the surfaces to be covered
+ by metal contacts.
+ Typically the wires will cover a portion of the crystal top and a small
+ sidewall, then extend into other parts of the substrate to connect to other
+ crystals or expose the wires.
+ Metal is evaporated, sputtered, or otherwise deposited onto the surface
+ to adhere to the exposed surfaces of the crystal and substrate.
+ The polymer is dissolved, taking with it the excess metal deposited on
+ the polymer, and leaving only desired metal leads.
+ This process can be repeated after additional crystals are added, allowing
+ us to create complex devices with layered crystals, each with their own
+ contacts.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/Substrate film.svg
+	width 5.1cm
+	groupId device-intro
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Film on substrate
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/Substrate film-etched.svg
+	width 5.1cm
+	groupId device-intro
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Film etched
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/Substrate film-metal.svg
+	width 5.1cm
+	groupId device-intro
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Film with leads
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/Crystal.svg
+	width 5.1cm
+	groupId device-intro
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Crystal and flake
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/Substrate flake.svg
+	width 5.1cm
+	groupId device-intro
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Flake on substrate
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/Substrate flake-metal.svg
+	width 5.1cm
+	groupId device-intro
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Flake with leads
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Device manufacture.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:device-process"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+(a-c) Film manufacture of devices.
+ Film is etched with a protective layer of resist to leave material for
+ device.
+ Metal leads are added for material measurements.
+ (d-f) Flake manufacture of devices.
+ Flakes are exfoliated from a crystal then placed on a substrate.
+ Metal leads are then added to the flake for device measurements.
+ TODO fix to match text and make prettier
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Flake generation
+\end_layout
+
+\begin_layout Subsection
+Alignment marker wafer chips
+\end_layout
+
+\begin_layout Standard
+For fabricating flake devices we chose a wafer platform to work that gave
+ us a near-optimal optical contrast 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "jessen2018quantitative"
+literal "false"
+
+\end_inset
+
+ and then added markers for reference locations and align lithography patterns
+ to.
+ We started with 4 inch wafers of 
+\begin_inset Formula $500\mu m$
+\end_inset
+
+ phosphorus doped silicon with 
+\series bold
+
+\begin_inset Formula $300nm$
+\end_inset
+
+
+\series default
+ of thermally oxidized 
+\begin_inset Formula $\mathrm{SiO_{2}}$
+\end_inset
+
+ as a substrate (<100> thermal oxide, purchased from Si-Tech) with a mechanicall
+y polished surface.
+ The doped silicon allows us to use the bulk of the silicon as a conductive
+ gate, and the 
+\begin_inset Formula $300nm$
+\end_inset
+
+ oxide would give a high contrast for most 2D materials under white light.
+ The substrate was cleaned for better adhesion of photoresist polymer.
+ To remove the protective resist added before shipping the wafer is sonicated
+ in acetone for 5 minutes, followed by 5 minutes in 2-isopropanol remove
+ acetone residue, and finally dried using compressed nitrogen gas.
+ Using standard photolithography (see 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:LOR+SPR"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) we patterned the surface with a 
+\begin_inset Formula $\sim5nm$
+\end_inset
+
+ thin layer of titanium for adhesion, then 
+\begin_inset Formula $\sim35nm$
+\end_inset
+
+ of gold.
+ The metals were laid out with a repeating pattern of numbers and lines,
+ allowing us to record substrate location and easily find a flake on the
+ substrate when moving between tools, figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Mechanical-exfoliation-of-flakes"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+a.
+ We spun a protective layer of PMMA resist over the substrate then diced
+ the wafer into 
+\begin_inset Formula $8mm$
+\end_inset
+
+ square chips with a ADT 7100 ProVectus Dicing Saw.
+ This allowed us to make many devices per wafer in one quick process, each
+ chip could then be arranged in a custom orientation and pattern for each
+ flake-device.
+ The resist was then removed from the chips using acetone, 2-isoproponal,
+ and deionized (DI) water then dried with compressed nitrogen.
+ To remove any residue organics we soaked the chips in Nano-Strip (a sulfuric
+ acid and hydrogen peroxide compound, VWR) for 10 minutes, rinsed in DI-water,
+ then repeated the initial solvent clean.
+ After several devices experienced dialectic breakdown across the 
+\begin_inset Formula $\mathrm{SiO_{2}}$
+\end_inset
+
+ we switched the residue clean to an oxygen surface treatment for some devices.
+ This was done in a M4L Plasma Processing System with 300 sccm oxygen, 100
+ sccm helium, at 500mTorr of pressure, and 100W power for 1 minute.
+\end_layout
+
+\begin_layout Subsection
+Mechanical exfoliation from bulk crystals to thin flakes
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Mechanical-flake-exfoliation"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Flakes of van der Waals materials were mechanically exfoliated using Scotch
+ 3M Transparent Tape to break the weaker bond between layers.
+ A piece of tape was pressed into a larger bulk crystal of the material
+ then peeled off, resulting in a few smaller, dispersed crystals.
+ To further cut down on crystal size and increase the surface density the
+ tape is then folded over itself so the crystals are pressed into different
+ areas of tape, ideally without coming into contact with each other and
+ increasing the flake density.
+ The tape was then peeled apart so that the crystals break additional van
+ der Waals bonds and form thinner layered crystals.
+ This process was repeated several times to provide a region of crystal
+ coverage roughly 
+\begin_inset Formula $8$
+\end_inset
+
+ to 
+\begin_inset Formula $10mm$
+\end_inset
+
+ in diameter, to match the size of the alignment mark substrate.
+ This region of tape is then pressed into a fresh region of tape, providing
+ a new exposed surface of crystals with less tape residue and further decreasing
+ the flake thickness.
+ This can be repeated to thin the layers of crystal but must be balanced
+ against decreasing tape coverage.
+ The thickness of some materials, such as graphene, can be estimated by
+ their reflectivity on the tape, giving a rough guess of how many times
+ the folding process should be repeated.
+ The tape and crystals are then placed on a cleaned aliment marker chip,
+ ideally maximizing the amount of crystals within the center of the chip,
+ as flakes near the edges can be hard to work with during the lithography
+ and wiring steps.
+ The tape is lightly pressed into the chip with a soft tool so that as much
+ of the crystals as possible are in contact with the surface of the chip.
+ This can cause the flakes to crack so a balance in tool pressure and pattern
+ must be used, and this must be calibrated to the crystal hardness and ease
+ of layer separation.
+ To promote adhesion to the surface, the chip can then be heated for 1-2
+ minutes at 
+\begin_inset Formula $100C$
+\end_inset
+
+ to improve adhesion to the substrate.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "huang2015reliable"
+literal "true"
+
+\end_inset
+
+ The chips are then allowed to cool and the tape peeled off, leaving a freshly
+ cleaved surface on both the substrate and top of the flakes.
+ The angle and speed of the tape removal may influence the number and quality
+ of flakes on the substrate, but there is very little control of either
+ when done by hand.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Mechanical-exfoliation-of-flakes"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+b shows a starting bulk crystal, adhesive tape with exfoliated crystals
+ using the described process, and the final alignment marker chip with flakes.
+\end_layout
+
+\begin_layout Standard
+After exfoliation we scanned each chip for flakes using a Nikon Eclipse
+ LV150 microscope with 10x, 50x and 100x objectives.
+ We chose 
+\series bold
+
+\begin_inset Formula $300nm$
+\end_inset
+
+
+\series default
+ of thermally oxidized 
+\begin_inset Formula $\mathrm{SiO_{2}}$
+\end_inset
+
+ to increase visibility of 2D materials under white light, a green filter
+ can be used for a monochrome search have a high optical contrast with some
+ 2D materials when only a few layers thick
+\begin_inset CommandInset citation
+LatexCommand cite
+key "jessen2018quantitative"
+literal "false"
+
+\end_inset
+
+.
+ Flakes are chosen for uniformity (lacking in visible cracks or damage that
+ would impact electronic measurements), thinness, and lateral sizes large
+ enough for photolithography processing.
+ Flake thickness is very hard to judge using an optical measurement and
+ depends on the material used, the lighting, and substrate chosen.
+ To create a rough estimation of thickness we fabricate a color code for
+ new materials while fixing as many microscope parameters as possible.
+ A Bruker Icon Atomic Force Microscope (AFM) is used to measure flake height
+ and later compared against the optical pictures.
+ Below 30nm most of the flakes of various materials became translucent rather
+ than changing color, increasing the difficulty of finding flakes and using
+ optical measurements to estimate flake thickness.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Mechanical-exfoliation-of-flakes"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+c-e shows the AFM measurement of a flake of 
+\begin_inset Formula $\alpha\mathrm{-In_{2}Se_{3}}$
+\end_inset
+
+, the microscope picture with labeled thicknesses, and final color code
+ created using the maps from several flakes.
+ 
+\end_layout
+
+\begin_layout Standard
+For many of the measurements we sought flakes under 
+\begin_inset Formula $10nm$
+\end_inset
+
+ down to a single layer as they may display properties not shown in bulk
+ crystals.
+ Care must be taken to distinguish flakes from tape residue which will often
+ appear very similar to thin flakes in color.
+ Flakes may often be distinguished by sharp edges as many 2D materials tend
+ to tear along straight lines, though tape residue can mimic this by adhering
+ to flakes on the tape, then sticking to substrate while the flake remains
+ on the tape.
+ After identification of useful flakes, images were taken using a Nikon
+ Ds-Fi1 camera with increased exposure times using the 100x objective and
+ 10x to record the flake conditions before fabrication and its location
+ relative to markers.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/alignment marker square.svg
+	width 5cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Alignment marker pattern
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/Exfolation.jpg
+	lyxscale 10
+	width 7cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tape exfoliation
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/In2Se3 fake heights AFM.svg
+	width 4.3cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{In_{2}Se_{3}}$
+\end_inset
+
+ flake AFM
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/In2Se3 fake heights color code.svg
+	width 5cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Optical 
+\begin_inset Formula $\mathrm{In_{2}Se_{3}}$
+\end_inset
+
+ flake with thickness
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/In2Se3 color code.svg
+	width 3.7cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{In_{2}Se_{3}}$
+\end_inset
+
+ color code
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Mechanical exfoliation of thin flakes of bulk crystal
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Mechanical-exfoliation-of-flakes"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+(a) Photograph, from left-to-right: the starting bulk crystal, transparent
+ tape with exfoliated thin flakes of crystal, and 
+\begin_inset Formula $\mathrm{Si/SiO_{2}}$
+\end_inset
+
+alignment marker substrate with flakes.
+ (b) One square of alignment marks used to pattern the substrate.
+ The marks formed a repeating pattern of six numbers in both directions;
+ with the overall pattern repeated four times on a chip.
+ (c) An atomic force microscope height measurement of a flake of 
+\begin_inset Formula $\alpha\mathrm{-In_{2}Se_{3}}$
+\end_inset
+
+, the map was used to mark an optical image of the flake (d) with the correspond
+ing thicknesses, and then create a partial color code (e) for 
+\begin_inset Formula $\alpha\mathrm{-In_{2}Se_{3}}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Scanning probe microscopy
+\end_layout
+
+\begin_layout Standard
+Scanning probe microscopy (SPM) is a series of techniques to produce detailed
+ images over a 3D surface.
+ A sharp tip is moved across the surface and the scan of surface-tip interaction
+s form a map of those interactions.
+ Piezoelectric crystals let the tip move in all directions over short distances
+ with fine precision.
+ Additional motors, such as a stepper motor, can move the entire piezoelectric
+ crystal and tip structure over larger distances but sacrifice precision.
+ With an isolated environment, engineered to shield the tip from external
+ noise, and a sharp tip, the SPM map can provide details down to the atomic
+ level.
+ There are many different types of SPM that measure quantities like magnetic
+ field, density of states, and spin; far too many to discuss here, so only
+ a brief overview of the most relevant are below.
+\end_layout
+
+\begin_layout Subsection
+Atomic force microscopy (TODO) 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+TODO, topography image?
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Atomic force microscope
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+An atomic force microscope tip on a cantilever extends over a 3D surface
+ with varied topography.
+ The relative deflection of the tip is measured by a laser reflected off
+ the back of the cantilever to a photodector capable of measuring the shifts
+ in two directions as the cantilever bends and twists.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Atomic force microscopy (AFM) is a SPM tool to see detailed topographical
+ information from 3D surfaces with small variations in height.
+ The tip is fixed to a small, flexible cantilever and the cantilever is
+ extended horizontal over the surface so that the tip points down towards
+ the surface.
+ To measure the the movement of the cantilever and tip a laser aligned to
+ reflect of the top of the cantilever.
+ The top of the cantilever, polished for this purpose, then reflects the
+ laser to a photodector.
+ As the cantilever flexes and tilts in reaction to the surface the reflected
+ laser moves across the photodetector, optically measuring the tip deflection
+ with great precision.
+ The AFM computer can use the tip deflection measurement as it moves the
+ tip across the surface, providing feedback to increase measurement precision.
+ Because the tip deflection is dependent on the materials involved and other
+ interaction conditions, an AFM scan is not a true topography map of the
+ surface, but for most purposes they are often near-indistinguishable and
+ it is typically treated as a topography measurement for most purposes.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "celano2019theatomic"
+literal "true"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+There are different methodologies of AFM measurement, though all measure
+ some form of force interactions between the tip and the surface.
+ As the tip is brought close to the surface it is initially repelled by
+ the van der Walls forces, but as the distance continues to decrease the
+ force becomes attractive, pulling the tip towards the surface.
+ The original, and simplest, contact AFM measurements keeps the tip in the
+ attractive region of the force interactions as it moved across the material
+ surface.
+ The cantilever force is kept constant by moving the cantilever holder up
+ and down to maintain the deflection, making the holder z-position a measurement
+ of the surface topography.
+ Keeping the tip in contact during lateral movements can damage soft materials
+ and the tip thus distorting the image, but allows for faster measurements
+ and high resolution
+\begin_inset CommandInset citation
+LatexCommand cite
+key "celano2019theatomic"
+literal "true"
+
+\end_inset
+
+.
+ To avoid the surface and tip damage, tapping mode AFM was devised, which
+ keeps the tip at longer distances from the surface during lateral moves.
+ In tapping mode the cantilever is driven to oscillate at or slightly below
+ its resonant frequency and lightly taps the surface to measure height.
+ Tapping mode monitors the amplitude of the cantilever as it oscillates,
+ keeping it constant as the tip is scanned, providing the height measurement
+\begin_inset CommandInset citation
+LatexCommand cite
+key "celano2019theatomic"
+literal "true"
+
+\end_inset
+
+.
+ Non-contact AFM moves the tip farther from the surface than tapping mode,
+ so the tip is operating in the repulsive force range.
+ The repulsive forces in this range are weaker, so to increase measurement
+ precision the frequency is used in place of the amplitude to monitor tip
+ forces.
+ In this mode the cantilever is driven at or slightly above its resonate
+ frequency.
+ As the tip approaches the surface the forces cause cantilever to shift
+ in oscillation frequency.
+ By adjusting cantilever height to keep the frequency constant during a
+ scan we again have a measurement of surface topography.
+ This has the lowest resolution of the three modes and is the slowest, but
+ it does not interact at all with the surface keeping tip and sample damage
+ to a minimum
+\begin_inset CommandInset citation
+LatexCommand cite
+key "celano2019theatomic"
+literal "true"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+TODO
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+AFM interaction modes
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+TODO
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The newest tapping mode we will discuss, peak force tapping, measures the
+ force-tip-distance curve as the cantilever is brought close to the surface
+ and then pulled away.
+ The cantilever is driven well below its resonant frequency, avoiding the
+ need to tune the cantilever as in the previous modes and reducing complexity
+ in the measurement.
+ As the tip taps the surface the van der Waals force switches between repulsive,
+ attractive, and then back to repulsive.
+ This force-tip-distance curve forms a hysteresis loop.
+ The continuous monitoring of the force curve allows the AFM to keep the
+ force below a set threshold thus minimizing the damage to sample and tip.
+ The difference between the maximum (peak) force on tip as it is contact
+ with the surface and the tip fully withdrawn is kept kept constant as the
+ AFM scans the surface, providing the topography map of the surface
+\begin_inset CommandInset citation
+LatexCommand cite
+key "xu2018recentdevelopment"
+literal "true"
+
+\end_inset
+
+.
+ All AFM measurements discussed in this text were done using peak force
+ tapping on a Bruker Dimension Icon AFM with ScanAsyst tips <TODO, model>.
+ All images generated and height analysis was done in the software Bruker
+ NanoScope Analysis (v2.0).
+\end_layout
+
+\begin_layout Subsection
+Piezoresponse force microscopy (TODO)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+Todo
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Ferroelectric PFM measurements
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+(a) rough schematic (b) phase and amplitude measurements of .
+ (c) remnant polarization 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Piezoresponse force microscopy (PFM) is one of the extensions of AFM that
+ looks at at the electronic properties of a surface in addition to topography.
+ While none of the experimental work in this text contain any PFM data,
+ it is an important tool in identifying ferroelectricity in thin films and
+ 2D flakes, so we discuss it in that context.
+ PFM uses a conductive tip and cantilever, often through and added metallic
+ surface coating or itself metallic, electrically connected to an external
+ voltage source,.
+ Samples are connected to the same circuit, typically by including a conductive
+ substrate or material layer underneath, and the tip is placed in contact
+ with the material to complete the circuit loop.
+ As the name suggests, PFM measures the peizo-deformation response of the
+ sample as a voltage is applied between the sample and tip.
+ This includes movement in the z-direction through vertical tip deflections,
+ along with in plane shearing though the twisting of the cantilever as the
+ sample moves.
+ Combined, this is used to form a vector map of the responses for materials
+ with complex responses, such as ferroelectrics with multiple polarization
+ axes.
+ Similar to mechanical oscillation of the AFM cantilever, an alternating
+ voltage bias is used to drive the response.
+ As both the tip and voltage are oscilating PFM measures the phase difference
+ of the oscillations, giving additional response information on top of the
+ amplitude vector.
+ The driving frequency used by the PFM can play an important role in the
+ the sample response and the signal to noise ratio.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "martin2019characterizing"
+literal "true"
+
+\end_inset
+
+ One common method, band excitation, is to use a multiple frequency wave
+ pack around the resonant frequency are used and combined with a simple
+ harmonic oscillator model for a single measurement.
+ Alternatively, dual AC resonance tracking, uses the difference in amplitude
+ responses above and below the resonant frequency to measure the sample.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "martin2019characterizing"
+literal "true"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+There are two common PFM techniques commonly used to identify ferroelectricity,
+ namely through the observation electromechanical hysteresis loops and remnant
+ states
+\begin_inset CommandInset citation
+LatexCommand cite
+key "martin2019characterizing"
+literal "true"
+
+\end_inset
+
+.
+ For the first, at a single point on the surface, the voltage is ramped
+ in a loop.
+ Past the positive and negative coercive fields, a domain will nucleate
+ and spread out with time and increasing voltage.
+ This shows a hysteresis in phase and amplitude in ferroelectric materials.
+ The second method uses manipulation and observation of ferroelectric domains.
+ Manipulation of the domain is done by scanning regions of a ferroelectric
+ with a voltage bias, causing the polarization to reorient, forming a pattern
+ of different domains.
+ The surface is then scanned again with zero bias, showing the visible ferroelec
+tric domains.
+ This is often known as domain writing/reading or observation of remnant
+ states.
+ The square pattern typically chosen is a series of rectangles encompassing
+ one anther, but domain manipulation can be used to write complex shapes
+ if the sample dimensions support it.
+ <TODO I think that joke will be missed by everyone, keep it?> Both techniques
+ can be used to obverse the crossover from ferroelectric to peraelectric
+ as temperature crosses 
+\begin_inset Formula $T_{c}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+PFM responses similar to ferroelectricity
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Caution must be used when using PFM to identify ferroelectric behaviors,
+ as multiple phenomena cause similar responses.
+ A short list of the most common follows, and they are discussed in depth
+ elsewhere 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "balke2015differentiating,vasudevan2017ferroelectric"
+literal "true"
+
+\end_inset
+
+.
+ The voltage bias from the tip can inject charged particles into the surface
+ of the material, and though they typically dissipate after several hours
+ in an insulator, they will appear very similar to writing remnant states
+ and hysteresis loops in a ferroelectric.
+ Large currents from the tip to the surface can also cause joule heating,
+ distorting the lattice.
+ Strain gradients from the tip pressure on thin crystals can cause polarization
+ reversals, the flexoelectric effect.
+ The voltage bias from a PFM tip can move ions in a crystal within a unit
+ cell or between cells, the former a characteristic of ferroelectric dipoles
+ while the latter is ionic conduction.
+ Both cause distortion of the crystal structure and are virtually indistinguisha
+ble by PFM.
+ At high enough electric fields, amplified by the sharp point of the PFM
+ tip, the surface chemistry can be altered through electrochemical reactions,
+ especially with oxides.
+ These changes can be either reversible or irreversible, even within the
+ same material.
+ There are other less common pit-falls not listed here, and ways to mitigate
+ some of the problems described, but both are beyond the scope of what should
+ be discussed here.
+ PFM should almost never be taken as complete proof that a material is ferroelec
+tric, but still can be an excellent tool to used to study properties of
+ ferroelectric materials such as domain propagation.
+\end_layout
+
+\begin_layout Standard
+TODO: Figures
+\end_layout
+
+\begin_layout Section
+Photolithography 
+\end_layout
+
+\begin_layout Standard
+Photolithography is a common technique used by industry and academia alike,
+ used to pattern electronics at sizes far below what can be easily done
+ with mechanical manipulations.
+ In most variants of photolithography, a series of photosensitive polymers,
+ or resists, are spread over a surface then exposing the polymer to light
+ to change the chemical makeup of the polymer.
+ This can be done by spinning a solution of the desired polymer, dissolved
+ within a compatible solvent, at high speeds over a substrate.
+ The solution is dripped on the substrate either statically or dynamically,
+ under a slower rotation.
+ The substrate is then rotated at high speeds until the desired thickness
+ of polymer is left on the surface, the excess being flung off the substrate
+ edges.
+ The solvent can then be removed by baking the substrate and polymer for
+ a short time until a desired durability is achieved.
+ After exposure the resist is then removed by soaking the substrate in a
+ chemical developer.
+ Developer selection must take into account any chemistry between the developer
+ and flake material as some developers can react with the exposed material.
+ For negative resists, light exposed regions of polymer are removed when
+ developed, positive resists will only have non-exposed regions removed.
+ For devices that change based on the flake, the resist pattern is generated
+ on a computer and then written by a moving laser to fit the device dimensions.
+ In commonly used patterns, a mask of chrome on quartz is prefabricated.
+ The mask is moved over the flake then the entire surface is flooded with
+ light at once, exposing the regions with the desired resist pattern.
+ We typically choose a multiple layer resist stack as allowing the bottom
+ layer dissolve long enough to undercut the top allows for easier liftoff
+ when removing evaporated metals (See 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Metal-evaporation-liftoff"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ Resist can also be used to protect part of a sample when etching allowing
+ a patterned etch of the substrate or testing device.
+\end_layout
+
+\begin_layout Subsection
+LOR/SPR stack
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:LOR+SPR"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The LOR/SPR negative resist stack is easy to use and allows for high resolution
+ patterns down to 
+\begin_inset Formula $2\mu m$
+\end_inset
+
+.
+ Before any resist is added the substrate is given a dehydration bake of
+ 
+\begin_inset Formula $115C$
+\end_inset
+
+ for 
+\begin_inset Formula $60s$
+\end_inset
+
+ to remove any water.
+ A layer of LOR-2A is statically deposited as the first layer of the stack.
+ The substrate is then spun at 
+\begin_inset Formula $4000RPM$
+\end_inset
+
+ for 
+\begin_inset Formula $45s$
+\end_inset
+
+ reducing the LOR-2A to a 
+\begin_inset Formula $\sim200nm$
+\end_inset
+
+ thick coating.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "lorand"
+literal "false"
+
+\end_inset
+
+ Finally we bake it at 
+\begin_inset Formula $180C$
+\end_inset
+
+ for 
+\begin_inset Formula $60s$
+\end_inset
+
+ on a hot plate to remove some solvent.
+ Next a layer of SPR-3012 is dynamically dispensed at 900RPM.
+ The substrate is then sped up and spun again at 
+\begin_inset Formula $4000RPM$
+\end_inset
+
+ for 
+\begin_inset Formula $45s$
+\end_inset
+
+ flattening the SPR-3012 to 
+\begin_inset Formula $\sim1.3\mu m$
+\end_inset
+
+ thick.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "megaposit"
+literal "false"
+
+\end_inset
+
+ This is then baked for 
+\begin_inset Formula $95C$
+\end_inset
+
+ for 
+\begin_inset Formula $60s$
+\end_inset
+
+ on a hot plate.
+ The resist stack and flake is then exposed using a MA/BA Gen4 or Gen2 Contact
+ Aligner (SUSS MicroTec) with 54mW of light.
+ The patterned resist is then developed for 
+\begin_inset Formula $60s$
+\end_inset
+
+ in Microposit CD-26 (Tetramethylammonium hydroxide 1-5% and water, Shipley).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement ht
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Lithography-resists"
+
+\end_inset
+
+Lithography resists
+\end_layout
+
+\end_inset
+
+
+\begin_inset Box Frameless
+position "c"
+hor_pos "l"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "100text%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset FormulaMacro
+\newcommand{\footnoterule}{\vspace{-7pt}\rule{0pt}{0pt}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\arraystretch}{1.2}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="4">
+<features booktabs="true" tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Resist
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Soft bake
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Developer
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Liftoff
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multicolumn="1" alignment="none" valignment="top" usebox="none" special="l">
+\begin_inset Text
+
+\begin_layout Plain Layout
+LOR-2A
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+180C for 60s
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+CD-26
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Remover-PG
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SPR-3012
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+95C for 60s
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+CD-26
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Remover-PG
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PMMA
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+180C for 180s
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+MIBK
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Acetone/Remover-PG
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SF6-slow
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+200C for 60s
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+101A
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Remover-PG
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+The resist polymer, chemical developers, and liftoff solvents used in the
+ photo and e-beam lithography processes.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+PMMA/PMGI/SPR stack for alkali-sensitive materials
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:PMMA+PMGI+SPR"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Some chalcogenides react with alkali developers such as CD-26
+\begin_inset CommandInset citation
+LatexCommand cite
+key "choi2008plasmaetching"
+literal "false"
+
+\end_inset
+
+ so we developed an alternate photolithography resist stack with a solvent
+ used to develop the layer closest to the material.
+ First a layer of Polymethyl methacrylate (PMMA-2A) (Microchem) is statically
+ deposited, spun at 
+\begin_inset Formula $2500RPM$
+\end_inset
+
+ for 
+\begin_inset Formula $45s$
+\end_inset
+
+ to give a 
+\begin_inset Formula $\sim600nm$
+\end_inset
+
+ layer, then baked at 
+\begin_inset Formula $180C$
+\end_inset
+
+ for 
+\begin_inset Formula $180s$
+\end_inset
+
+.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "pmmaresist"
+literal "false"
+
+\end_inset
+
+ Next a layer of PMGI SF6-slow is dynamically spun at 
+\begin_inset Formula $900RPM$
+\end_inset
+
+, then 
+\begin_inset Formula $4000RPM$
+\end_inset
+
+ for 
+\begin_inset Formula $45s$
+\end_inset
+
+ to reduce the thickness to 
+\begin_inset Formula $\sim300nm$
+\end_inset
+
+, and baked at 
+\begin_inset Formula $180C$
+\end_inset
+
+ for 
+\begin_inset Formula $60s$
+\end_inset
+
+.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "nanopmgi"
+literal "false"
+
+\end_inset
+
+ Finally, a top-coat of SPR-3012 is dynamically dispensed at 900RPM.
+ This is then spun at 
+\begin_inset Formula $4000RPM$
+\end_inset
+
+ for 
+\begin_inset Formula $45s$
+\end_inset
+
+ for a thickness 
+\begin_inset Formula $\sim1.3\mu m$
+\end_inset
+
+ and baked for 
+\begin_inset Formula $95C$
+\end_inset
+
+ for 60s.
+ The SPR-3012 is then exposed using a MA/BA Contact aligner with 54mW of
+ light (peak 
+\begin_inset Formula $365nm$
+\end_inset
+
+), developed for 
+\begin_inset Formula $60s$
+\end_inset
+
+ in in Microposit CD-26 from Shipley (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:LOR+SPR"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+), then rinsed in water.
+ The PMMA and SF6 under-layers are exposed for 30 minutes in a Deep UV (peak
+ 
+\begin_inset Formula $270nm$
+\end_inset
+
+, OAI Deep UV Flood Exposure) at 5.3mW (~9.5 J).
+ The SF6 is developed in 101A developer (Microchem) for 
+\begin_inset Formula $90s$
+\end_inset
+
+ then rinsed in water.
+ Finally the PMMA is developed for 10 minutes in methyl isobutyl ketone
+ (MIBK) and a trace amount of water.
+ The substrate is moved though the water for 
+\begin_inset Formula $5-10s$
+\end_inset
+
+ then to the MIBK, where a thin bubble of water continues to adhere to the
+ resist near the exposed region.
+ After allowing the water to sit on the sample for another 
+\begin_inset Formula $10-30s$
+\end_inset
+
+, the substrate is gently shaken back and forth with tweeters to dislodge
+ the SPR layer from the top of the sample.
+ This prevents the SPR from later partially peeling up then adhering to
+ the substrate, ruining the lithography pattern.
+ The sample is left in the MIBK for another 
+\begin_inset Formula $5-10m$
+\end_inset
+
+ to develop the PMMA down to the substrate.
+ The MIBK is then removed with 2-proponal.
+\end_layout
+
+\begin_layout Standard
+An alternate version of this process used a thicker PMMA (6A) with SPR-3012
+ on top.
+ Because the SPR uses a PMMA-compatible solvent (Cyclopentanone) the two
+ layers would intermix and form a layer that was unable to be dissolved
+ in either developer.
+ This was removed by ashing the layer for 515 seconds in the M4L with 250
+ sccm oxygen, 50 sccm helium, 500mTorr pressure, 450W power.
+ This process varied greatly depending on polymer uniformity and location
+ of device on the substrate so later devices included the PMGI SF6 layer
+ to eliminate the inconsistency.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/LOR+SPR.svg
+	width 5.1cm
+	groupId Resist-stacks
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+LOR/SPR
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/PMMA+PMGI+SPR.svg
+	width 5.1cm
+	groupId Resist-stacks
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+PMMA/PMGI/SPR
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/PMMA+SPR.svg
+	width 5.1cm
+	groupId Resist-stacks
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+PMMA/SPR
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Photoresist stacks
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Three of the resist stacks used in device manufacture.
+ (a) LOR/SPR used in most of our devices, (b) PMMA/PMGI/SPR used in devices
+ with alkali-sensitive materials, (c) PMMA/SPR alternative stack used initially
+ in some of our alkali-sensitive materials before the (b) stack was developed.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Thin filament shadow mask
+\end_layout
+
+\begin_layout Standard
+As an alternative to lithography, we used an all-dry quartz filament shadow
+ mask for metal evaporation (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Metal-evaporation-liftoff"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ This allowed us to test contact resistance of an underlying material without
+ introducing the polymers, chemicals, and processing to the material that
+ may damage the surface or leave a residue between the material and metal
+ contacts.
+ We heated two quartz rod ends with an acetylene torch until semi-molten.
+ We then lightly touched the two ends together and quickly pulled the ends
+ apart within the flame.
+ If done correctly, this produced several 
+\begin_inset Formula $2-10cm$
+\end_inset
+
+ long strands of quartz that were 
+\begin_inset Formula $<2\mu m$
+\end_inset
+
+ in diameter.
+ These were identified under a florescent light by their thread-like behavior,
+ losing most stiffness and free to float in the air when 
+\begin_inset Formula $\lesssim2\mu m$
+\end_inset
+
+ in diameter.
+ These filaments were then caught on glass forks by dragging the filament
+ across the opening and snapping the end attached to the quartz rod.
+ The forks were cut to fit over the sides of our sample chip substrates
+ and reinforced with metal for durability.
+ The sample chip was attached to a glass slide with double-sided tape.
+ These filaments were then draped over the sample material with the glass
+ fork.
+ The ends of the filament were then cut with a tungsten needle and the glass
+ fork removed.
+ The filament could be adjusted by pulling it gently with a thin copper
+ wire until it was in place and laying flat against the surface.
+ This often caused the quartz to snap so the range of movement was limited
+ to within a few 10s of microns from where it started.
+ Once the filament was maneuvered it was fixed in place by wrapping the
+ ends in Teflon tape that wrapped around the glass slide.
+ Teflon tape was chosen as it is unlikely to scratch the material and has
+ no adhesive that would cause the filament to move when securing it.
+ The tape was also used to reduce the exposed area so only a small region
+ around the material was included and reduce the risk of a short between
+ the two sides.
+ We found a filament less than 
+\begin_inset Formula $.5\mu$
+\end_inset
+
+ tended to cause a short between the two sides while greater than 
+\begin_inset Formula $3\mu m$
+\end_inset
+
+ would not sit flush against the surface.
+ Metal choice is similarly important as certain metals like indium tended
+ to 
+\begin_inset Quotes eld
+\end_inset
+
+wet
+\begin_inset Quotes erd
+\end_inset
+
+ across the surface and short at any diameter.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/Filament mask.svg
+	width 8cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Filament on crystal
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR160917_1_1_100_nofilament.svg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Optical image of device
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Filament device
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+(a) Filament shadow mask and (b) flake filament device made to test dry
+ contact process.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Metal evaporation and liftoff
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Metal-evaporation-liftoff"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Metal deposition was done using the Lab-18 Thin Film Deposition System (Kurt
+ J.
+ Lesker Co.).
+ This was used to add contacts to a lithography-patterned flake by covering
+ a substrate with layers of metal.
+ We used electron beam evaporated titanium and gold for the uniform deposition
+ and high conductivity.
+ First 
+\begin_inset Formula $\sim5nm$
+\end_inset
+
+ of titanium was deposited at 
+\begin_inset Formula $\sim1\mathring{A}/s$
+\end_inset
+
+ as titanium adheres well to 
+\begin_inset Formula $SiO_{2}$
+\end_inset
+
+.
+ Next a layer of 
+\begin_inset Formula $35-50nm$
+\end_inset
+
+ of gold was evaporated at 
+\begin_inset Formula $\sim1\mathring{A}/s$
+\end_inset
+
+ on top of the titanium.
+ The gold provided a highly conductive protective layer that was inert in
+ atmosphere and safe to use when wiring samples.
+\end_layout
+
+\begin_layout Standard
+The Lab-18 Thin Film Deposition System also had an in situ ion source that
+ could be used to clean and roughen the surface of a material before deposition
+ occurred.
+ A typical process used 
+\begin_inset Formula $10sccm$
+\end_inset
+
+ of argon gas flowed over a metal coil with 
+\begin_inset Formula $2.5A$
+\end_inset
+
+ of emission current and 
+\begin_inset Formula $150V$
+\end_inset
+
+ between the coil and the substrate.
+ The ion source is undirected which caused trace amounts of iron from the
+ chamber itself to be knocked loose and deposited on the surface of the
+ sample.
+\end_layout
+
+\begin_layout Standard
+To remove excess metals from the substrate the lithography resist was then
+ removed though a 'liftoff' process.
+ The resist stacks were designed to have a small undercut between the top
+ and bottom layer to allow solvents to dissolve the resists from the edges
+ even if metal had deposited on the sides of the upper layers.
+ For LOR-based (see 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:LOR+SPR"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) stacks the substrate was soaked in heated Remover-PG (Microchem) for 10
+ minutes at 
+\begin_inset Formula $60C$
+\end_inset
+
+.
+ The Remover-PG was then gently blown with a pipette over the surface of
+ the substrate to push away any metals that were no longer adhered to resist.
+ This process was repeated until all of the resist and metal adhered to
+ it were removed.
+ As smaller features had less surface area of resist for the solvent to
+ resolve, more forceful streams were sometimes needed.
+ If this was not enough to peel off the resist, sonication in a water bath
+ was sometimes used.
+ This often pulled off the metals deposited on the substrate, flake, or
+ even the flake itself, so was used only when necessary.
+ The Remover-PG was then removed by soaking the material in 2-proponal for
+ 5 minutes and blow-dried with a nitrogen gun.
+ For PMMA based stacked unheated acetone was used in the place of Remover-PG
+ while the rest of the process was the same.
+\end_layout
+
+\begin_layout Section
+Sample wiring
+\end_layout
+
+\begin_layout Standard
+Lithography wiring patterns were designed with 
+\begin_inset Formula $.5-1mm$
+\end_inset
+
+ square pads that connected to metal leads on the sample material.
+ To connect this to a preexisting wiring system we used a series of indium
+ dots and thin gold wires (99.95% Au, 
+\begin_inset Formula $25\mu m$
+\end_inset
+
+, Alfa Aesar).
+ To avoid any currents damaging the sample, we first adhered the wire to
+ the wiring structure with lead-free solder.
+ Next we placed an indium dot (TODO source) on each of the sample wiring
+ pads using a modified tweezer.
+ The tweezer was cut so that only one prong remained, then the tip cut flat
+ and further sanded smooth with the side of a razor blade.
+ This allowed the indium dot to adhere to the tip easily and for the modified
+ tweezer to be held similar to a pen for increased dexterity and use with
+ samples in recessed mounts.
+ The gold wire was then bent down and pushed into the indium dot and a second
+ indium dot was pressed into the first, forming a sandwich-like structure,
+ that held the gold wire in place.
+ The gold wire was then bent from the sample to prevent it from coming into
+ contact with any part of the sample or other wires.
+ This process was repeated for each of the wiring pads on the device.
+\end_layout
+
+\begin_layout Standard
+To prevent static discharge from damaging the flake several measures were
+ taken.
+ A ionizing fan (Chapman VSE3000 static eliminator) was constantly blown
+ across the sample and wiring station at all times.
+ The person wiring was grounded with a static wrist strap to the building
+ ground at all times when touching the device.
+ The modified tweezer was held without gloves to connect it to the building
+ ground though the body.
+ The wiring station used a rubber floor mat with metal stool to isolate
+ the person from the floor and prevent any charge buildup from the ground.
+ Finally, clothing was chosen to reduce the buildup of static, especially
+ in winter as the dryer air made hazardous amounts of static buildup fairly
+ frequent.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "horowitz2015theart"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Wiring
+\end_layout
+
+\end_inset
+
+TODO: figure, wiring
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Layer Transfer? (TODO after I figure it out)
+\end_layout
+
+\begin_layout Section
+Electronics, Hall probe (TODO)
+\end_layout
+
+\begin_layout Section
+Raman (TODO)
+\end_layout
+
+\begin_layout Section
+Polarization (TODO)
+\end_layout
+
+\end_body
+\end_document

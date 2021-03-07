@@ -93,7 +93,7 @@ status open
 \end_layout
 
 \begin_layout Chapter
-Introduction (TODO)
+Introduction
 \begin_inset CommandInset label
 LatexCommand label
 name "chapter:Introduction"
@@ -104,7 +104,130 @@ name "chapter:Introduction"
 \end_layout
 
 \begin_layout Standard
-<Historical background>
+Ferroelectricity was first experimentally observed just over 100 years ago
+ in 1920 by a PhD student at the University of Minnesota, Joseph Valasek
+\begin_inset CommandInset citation
+LatexCommand cite
+key "2020acentury"
+literal "false"
+
+\end_inset
+
+.
+ Valasek was originally working with piezoelectric crystals to develop a
+ seismograph when he observed that placing one such material, Rochelle salt,
+ in an electric field showed S-like curve with hysteresis
+\begin_inset CommandInset citation
+LatexCommand cite
+key "valasek1921piezoelectric"
+literal "false"
+
+\end_inset
+
+.
+ Ferromagnetism was already known at the time of the discovery so Valasek
+ made the analogous connection showing the relationship between magnetic
+ and electric fields.
+ This gave rise to the term 
+\begin_inset Quotes eld
+\end_inset
+
+ferroelectricity
+\begin_inset Quotes erd
+\end_inset
+
+ even though such materials rarely contain iron like their ferromagnetic
+ precursors.
+ Ferroelectricity was largely ignored until the discovery of barium titanate
+ (
+\begin_inset Formula $\mathrm{BaTiO_{3}}$
+\end_inset
+
+) during the second world war, where Valasek was seeking to use ferroelectrics
+ to make transducers for submarine detection.
+ Barium titanate had many physical advantages compared to Rochelle salt,
+ it was chemically stable at room temperature, insoluble in water, a high
+ dielectric constant, and more robust ferroelectricity.
+ It's simple structure helped researchers investigate ferroelectricity,
+ eventually resulting in the Landau-Ginzberg-Devonshire phenomenological
+ model of ferroelectricity in 1951
+\begin_inset CommandInset citation
+LatexCommand cite
+key "devonshire1949xcvitheory"
+literal "false"
+
+\end_inset
+
+.
+ Barium titanate is still used today in 
+\begin_inset Quotes eld
+\end_inset
+
+condensers
+\begin_inset Quotes erd
+\end_inset
+
+ and capacitors as its relative permittivity is much greater than most non-ferro
+electric dielectrics.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "scott2007applications"
+literal "true"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathrm{BaTiO_{3}}$
+\end_inset
+
+showed that oxide crystals could be ferroelectric and in the decades following
+ the Second World War hundreds new ferroelectric compounds were discovered.
+ Ceramics are the most common ferroelectrics in use, due to the ease of
+ manufacture and the ability to build complex configurations in while still
+ behaving like a single ferroelectric crystal.
+ In 1952 lead zirconate-titanate (PZT) was discovered and has become one
+ of the most widely used piezoelectric ceramics, though recent efforts have
+ sought to find lead-free alternatives that are more environmentally friends.
+ All ferroelectric materials are also piezoelectric and pyroelectric, though
+ the reverse is not true, and many have found applications in ultrasound,
+ capacitors, transducers, micropositioners, energy harvesters, night vision,
+ sensors, and many other devices.
+\end_layout
+
+\begin_layout Standard
+The applications of ferroelectrics to modern electronics are numerous and
+ diverse, but perhaps the most sought after utilization is enhancing random
+ access memory (RAM) with a ferroelectric dielectric.
+ While the original idea for ferroelectric RAM (FeRAM) was first proposed
+ by Dudley Allen Buck’s in his 1952 master’s thesis, limitations of the
+ known ferroelectric materials have prevented commercialization.
+ To integrate with silicon transistors, ferroelectrics must be scaled down
+ to a few nanometers in thickness, have a scalable growth processes that
+ is compatible with the temperature limitations of the other materials and
+ lithography processes, all while maintaining their electronic properties.
+ The development of thin ferroelectric films into standard silicon circuits
+ in 1984 was one of the first major milestones approaching practical FeRAM
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "scott1989ferroelectric"
+literal "true"
+
+\end_inset
+
+ and since then researchers and engineers have continued to push towards
+ this goal.
+ The recent explosive growth in 2D material research, and the subsequent
+ discovery of ferroelectricity down to a few layers of material has opened
+ the possibility of integrating ferroelectric memory with the logic circuits
+ of modern processors.
+\end_layout
+
+\begin_layout Standard
+TODO: discuss what contents of later chapters are.
 \end_layout
 
 \end_body
