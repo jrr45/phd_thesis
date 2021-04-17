@@ -13,8 +13,8 @@
    viewBox="0 0 149.208523 128.010625"
    width="149.208523pt"
    id="svg2629"
-   sodipodi:docname="_JR200115_17_300K_negative_increasing_IDvsVDS_log.svg"
-   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)">
+   sodipodi:docname="JR200115_17_300K_IDvVDS-negative_VG-increasing_log_txt.svg"
+   inkscape:version="1.0.2 (e86c870879, 2021-01-15, custom)">
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -24,17 +24,18 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="718"
-     inkscape:window-height="480"
+     inkscape:window-width="1838"
+     inkscape:window-height="1051"
      id="namedview2631"
      showgrid="false"
-     inkscape:zoom="1.8396911"
-     inkscape:cx="72.692898"
-     inkscape:cy="55.392537"
-     inkscape:window-x="60"
-     inkscape:window-y="0"
-     inkscape:window-maximized="0"
-     inkscape:current-layer="svg2629" />
+     inkscape:zoom="2.6017161"
+     inkscape:cx="75.953257"
+     inkscape:cy="62.243867"
+     inkscape:window-x="73"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2629"
+     inkscape:document-rotation="0" />
   <metadata
      id="metadata2">
     <rdf:RDF>
@@ -449,18 +450,7 @@
           <!-- $\it{%sV_{DS}}$ (V) -->
           <g
              transform="translate(81.05 126.023125)"
-             id="g162">
-            <text
-               id="text160"><tspan
-                 style="font-family:DejaVu Sans;font-size:10px;font-style:book;font-weight:book;"
-                 x="0 3.178711 13.920898"
-                 y="-0.40625"
-                 id="tspan156"> ()</tspan><tspan
-                 style="font-family:DejaVu Sans;font-size:10px;font-style:oblique;font-weight:oblique;"
-                 x="7.080078"
-                 y="-0.40625"
-                 id="tspan158">V</tspan></text>
-          </g>
+             id="g162" />
         </g>
       </g>
       <g
@@ -2793,22 +2783,7 @@
           <!-- $\it{I_{D}}$ (A) -->
           <g
              transform="translate(7.3 66.76)rotate(-90)"
-             id="g1136">
-            <text
-               id="text1134"><tspan
-                 style="font-family:DejaVu Sans;font-size:10px;font-style:oblique;font-weight:oblique;"
-                 x="0"
-                 y="-0.703125"
-                 id="tspan1128">I</tspan><tspan
-                 style="font-family:DejaVu Sans;font-size:7px;font-style:oblique;font-weight:oblique;"
-                 x="2.949219"
-                 y="0.9375"
-                 id="tspan1130">D</tspan><tspan
-                 style="font-family:Arial;font-size:10px;font-style:regular;font-weight:regular;"
-                 x="8.612793 11.391113 14.721191 21.391113"
-                 y="-0.703125"
-                 id="tspan1132"> (A)</tspan></text>
-          </g>
+             id="g1136" />
         </g>
       </g>
       <g
@@ -7292,4 +7267,40 @@
      d="M 138.50291,83.762159 V 63.484346"
      id="path5792"
      inkscape:connector-curvature="0" />
+  <text
+     id="text160-1"
+     x="59.735718"
+     style="stroke-linecap:butt;stroke-linejoin:round"
+     y="125.90613"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;font-family:Arial;-inkscape-font-specification:Arial"
+       x="73.656616"
+       id="tspan156-9"><tspan
+   style="font-style:italic"
+   id="tspan1907">V<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan1909">DS</tspan></tspan> (V)</tspan></text>
+  <text
+     id="text463"
+     x="-94.699989"
+     y="-28.263914"
+     style="stroke-linecap:butt;stroke-linejoin:round"
+     transform="rotate(-90)"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;font-family:Arial;-inkscape-font-specification:'Arial Italic'"
+       id="tspan461" /></text>
+  <text
+     xml:space="preserve"
+     style="font-size:9.99997px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;stroke-width:0.75"
+     x="-66.255348"
+     y="7.280252"
+     id="text2357"
+     transform="rotate(-90)"><tspan
+       sodipodi:role="line"
+       id="tspan2355"
+       x="-66.255348"
+       y="7.280252"
+       style="stroke-width:0.75"><tspan
+   style="font-style:italic"
+   id="tspan2359">I<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan2361">D</tspan></tspan> (A)</tspan></text>
 </svg>

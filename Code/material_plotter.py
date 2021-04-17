@@ -80,11 +80,14 @@ def pretty_plot_single(fig, labels=['',''], color='#000000', yscale='linear', fo
     ax = fig.add_subplot(111)
     
     plt.rcParams["font.family"] = "Arial"
+    plt.rcParams['mathtext.fontset'] = 'custom'
+    plt.rcParams['mathtext.it'] = 'Arial:italic'
+    plt.rcParams['mathtext.rm'] = 'Arial'
+    plt.rcParams["mathtext.default"] = "regular"
     
     ax.set_xlabel(labels[0], fontname="Arial", fontsize=fontsize, labelpad=labelpad[0])
     ax.set_ylabel(labels[1], fontname="Arial", fontsize=fontsize, color=color, labelpad=labelpad[1])
    
-    
     ax.set_yscale(yscale)
     ax.tick_params(bottom=True, top=True, left=True, right=True,
                    which='both', direction='in', labelsize=labelsize, pad=1)
@@ -171,70 +174,6 @@ def plot_YvsX_generic(Xaxis, Xlabel, Yaxis, Ylabel, XvsYname, \
         save_generic_svg(fig, fileroot, savename+XvsYname+scalename)
     plt.show()
     plt.clf()
-
-
-def conducting_range(file):
-    return [(gv, i) for (gv, i) in zip(file['Gate_Voltage_V'], file['Current_A']) if i > 10**-10]
-
-def max_Vg(file):
-    x = conducting_range(file)
-    Vgs = [i[0] for i in x]
-    Is = [i[1] for i in x]
-    
-    if len(Vgs) == 0:
-        return (np.nan, np.nan, np.nan)
-    
-    maxVgs_index = np.argmax(Vgs)
-    
-    pre_Vgs = Vgs[:maxVgs_index+1]
-    post_Vgs = np.flip(Vgs[maxVgs_index:])
-    pre_Is = Is[:maxVgs_index+1]
-    post_Is = np.flip(Is[maxVgs_index:])
-    
-    maxVg = (0, 0, 0) 
-    
-    i = j = 0
-    if pre_Is[0] < post_Is[0]:
-        i+=1
-    else:
-        j+=1
-    while(i+1 < len(pre_Vgs) and j+1 < len(post_Vgs)):
-        # four points, two on left, two on right
-        y0 = pre_Is[i]; x0 = pre_Vgs[i]
-        y1 = pre_Is[i+1]; x1 = pre_Vgs[i+1]
-        y2 = post_Is[j]; x2 = post_Vgs[j]
-        y3 = post_Is[j+1]; x3 = post_Vgs[j+1]
-        
-        if (y2 < y0 and y0 < y3):
-            m = (y3 -y2)/(x3-x2)
-            b = y2 - m*x2
-            x = (y0 - b)/m
-            dVg = x - x0
-            Vg0 = x0
-            Is0 = y0
-            i+=1
-        elif (y0 < y2 and y2 < y1):
-            m = (y1 - y0)/(x1 - x0)
-            b = y0 - m*x0
-            x = (y2 - b)/m
-            dVg = x2 - x
-            Vg0 = x
-            Is0 = y2
-            j+=1
-        elif (y2 > y1):
-            i+=1
-            continue
-        elif (y0 > y3):
-            j+=1
-            continue
-        else:
-            print("bahhhhhhhhhhhhhhhhhhhhhhhhh")
-            continue
-        
-        if (maxVg[0] < dVg):
-            maxVg = (dVg, Vg0, Is0)
-            
-    return maxVg
 
 def m_order(data):
     maxV = np.nanmax(np.abs(data))
@@ -506,79 +445,11 @@ def plot_IDvVDS_gating_generic(fileroot, sample, end_name, startindex, incindex,
     files = [process_file(os.path.join(fileroot, x)) for x in filenames]
     plot_IDvsVDS_generic(fileroot, files, savename + 'negative_decreasing', colors[::-1],\
                          size=figsize, invertaxes=True, xadj=xadj, ylim=ylim, log=log, majorx=majorx)
-    
-def width_Vg(file, current):
-    #relevant ranges
-    (file1, start_ind, end_ind) = slice_data(file, 'Gate_Voltage_V', -75., 75., .01, starting_index=0)
-    (file2, start_ind, end_ind) = slice_data(file, 'Gate_Voltage_V', 75., -75., .01, starting_index=end_ind)
-    
-    Vgs1 = file1['Gate_Voltage_V']
-    Is1 = file1['Current_A']
-    Vgs2 = file2['Gate_Voltage_V']
-    Is2 = file2['Current_A']
-    
-    if len(Vgs1) == 0 or len(Vgs2) == 0:
-        return np.nan
-    
-    # find the points just above and below the given current
-    Vgs1_index1 = np.argmin(np.abs(Is1 - current))
-    if (Is1[Vgs1_index1] - current < 0 and Is1[Vgs1_index1+1] - current > 0) or \
-        (Is1[Vgs1_index1] - current > 0 and Is1[Vgs1_index1+1] - current < 0):
-        Vgs1_index2 = Vgs1_index1+1
-    else:
-        Vgs1_index2 = Vgs1_index1-1
-    
-    Vgs2_index1 = np.argmin(np.abs(Is2 - current))
-    if (Is2[Vgs2_index1] - current < 0 and Is2[Vgs2_index1+1] - current > 0) or \
-        (Is2[Vgs2_index1] - current > 0 and Is2[Vgs2_index1+1] - current < 0):
-        Vgs2_index2 = Vgs2_index1+1
-    else:
-        Vgs2_index2 = Vgs2_index1-1
 
-    # fit the line formula, y = mx + b 
-    m1 = (Is1[Vgs1_index2] - Is1[Vgs1_index1]) / (Vgs1[Vgs1_index2] - Vgs1[Vgs1_index1])
-    b1 = Is1[Vgs1_index1] - m1*Vgs1[Vgs1_index1]
-    
-    m2 = (Is2[Vgs2_index2] - Is2[Vgs2_index1]) / (Vgs2[Vgs2_index2] - Vgs2[Vgs2_index1])
-    b2 = Is2[Vgs2_index1] - m2*Vgs2[Vgs2_index1]
-    
-    # calc VG at current value
-    VG1 = (current - b1)/m1
-    VG2 = (current - b2)/m2
-    
-    return np.abs(VG2 - VG1)
-
-def plot_ΔVGvT(fileroot, filenames, current, size=def_size, log=False):
-    savename = '_DVGvT'
-    size = 2
-    colors = colors_set1
-
-    files = [process_file(fileroot + x) for x in filenames]
-    
-    fig = plt.figure(figsize=(size, size), dpi=300)
-    ax = pretty_plot_single(fig, labels=["$\it{T}$ (K)", '$\it{ΔV_{G}}$ (V)'],
-                             yscale=('log' if log else 'linear'))
-    
-    DVG = []
-    T = []
-    for file in files:
-        T.append(file['Temperature_K'][0])
-        dVg = width_Vg(file, current)
-        DVG.append(dVg)
-        
-    ax.plot(T, DVG, '.-', ms=3, linewidth=1.5, color=colors[0])
-    
-    ax.xaxis.set_major_locator(MultipleLocator(100))
-    
-    scalename = "_log" if log else "_linear"
-    print(savename+scalename)
-    save_generic_svg(fig, fileroot, savename+scalename)
-    plt.show()
-    plt.clf()
     
 def plot_IDvsVDS_generic(fileroot, files, savename, colors, log=False, invertaxes=False, size=def_size, majorx=None, \
                          xadj=0, x_mult=5, fontsize=def_fontsize, labelsize=def_labelsize, xlim=None, ylim=None):    
-    plot_YvsX_generic('Voltage_1_V', '$\it{%sV_{DS}}$ (V)', 'Current_A', '$\it{I_{D}}$ (%sA)', '_IDvsVDS',
+    plot_YvsX_generic('Voltage_1_V', '$\it{V_{DS}}$ (V)', 'Current_A', '$\it{I_{D}}$ (%sA)', '_IDvsVDS',
                       fileroot=fileroot, files=files, savename=savename, colors=colors, log=log, size=size, majorx=majorx,
                       xlim=xlim, ylim=ylim, fontsize=fontsize, labelsize=labelsize, invertaxes=invertaxes)
     
@@ -695,18 +566,6 @@ def compute_r2_weighted(y_true, y_pred, weight=None):
     r2_score = 1 - (sse / tse)
     return r2_score, sse, tse
 
-def process_R_4pt(RTloop_2_4pt_filenames):
-    #seperate files for R_4pt
-    (cs_Currents_left, cs_Voltages_left, _, cs_Temperatures) = \
-        get_cross_section(fileroot, RTloop_2_4pt_filenames, [75.], 1)
-    (cs_Currents_right, cs_Voltages_right, _, cs_Temperatures) = \
-        get_cross_section(fileroot, RTloop_2_4pt_filenames, [75.], 2)
-        
-    occ0 = first_occurance_1D(cs_Temperatures, T, tol=.2, starting_index=0)
-    R_left = cs_Voltages_left[0][occ0]/cs_Currents_left[0][occ0]
-    R_right = cs_Voltages_right[0][occ0]/cs_Currents_right[0][occ0]
-    #print("R_left: %s Ω and R_right %s Ω" % (round(R_left), round(R_right)))
-    Rxx_4pt = (R_left+R_right)/2
 
 def process_hall_data(Hall_file, device_width, device_length, device_volt_spacing, device_thickness,
                       T_Rxx_4pt=None,
@@ -791,7 +650,7 @@ def process_hall_data(Hall_file, device_width, device_length, device_volt_spacin
         print("Fit R^2: %s" % r_squared)
         
     if len(hall_fields) == 2:
-        print("Precent diff: %s%%" % (np.abs((μH[0] - μH[1])/μH[0])*100))
+        print("Percent diff: %s%%" % (np.abs((μH[0] - μH[1])/μH[0])*100))
         
         μH.insert(0, (μH[0] + μH[1])/2)
         n2Ds.insert(0, (n2Ds[0] + n2Ds[1])/2)
@@ -850,7 +709,7 @@ def process_MR_data(fileroot, data_file, volt_fields, Bfitlimits=(None,None), pl
 
     if plot_data:
         numfields = len(volt_fields)
-        plot_colors = colors[0:numfields,:]
+        plot_colors = colors_set1[0:numfields,:]
         markers = ['.-']*numfields + ['-']*numfields
         
         for i, fit in enumerate(ivfitdata): 
@@ -862,6 +721,93 @@ def process_MR_data(fileroot, data_file, volt_fields, Bfitlimits=(None,None), pl
         plot_YvsX_generic('Magnetic_Field_T', '$\it{B}$ (T)',
                           volt_fields, '$\it{V}$ (%sV)', '_IvsV-fit_', markers=markers,
                           fileroot=fileroot, files=[data_file], savename="MR", colors=plot_colors, log=False)
+
+
+
+##### UNUSED
+
+def width_Vg(file, current):
+    #relevant ranges
+    (file1, start_ind, end_ind) = slice_data(file, 'Gate_Voltage_V', -75., 75., .01, starting_index=0)
+    (file2, start_ind, end_ind) = slice_data(file, 'Gate_Voltage_V', 75., -75., .01, starting_index=end_ind)
+    
+    Vgs1 = file1['Gate_Voltage_V']
+    Is1 = file1['Current_A']
+    Vgs2 = file2['Gate_Voltage_V']
+    Is2 = file2['Current_A']
+    
+    if len(Vgs1) == 0 or len(Vgs2) == 0:
+        return np.nan
+    
+    # find the points just above and below the given current
+    Vgs1_index1 = np.argmin(np.abs(Is1 - current))
+    if (Is1[Vgs1_index1] - current < 0 and Is1[Vgs1_index1+1] - current > 0) or \
+        (Is1[Vgs1_index1] - current > 0 and Is1[Vgs1_index1+1] - current < 0):
+        Vgs1_index2 = Vgs1_index1+1
+    else:
+        Vgs1_index2 = Vgs1_index1-1
+    
+    Vgs2_index1 = np.argmin(np.abs(Is2 - current))
+    if (Is2[Vgs2_index1] - current < 0 and Is2[Vgs2_index1+1] - current > 0) or \
+        (Is2[Vgs2_index1] - current > 0 and Is2[Vgs2_index1+1] - current < 0):
+        Vgs2_index2 = Vgs2_index1+1
+    else:
+        Vgs2_index2 = Vgs2_index1-1
+
+    # fit the line formula, y = mx + b 
+    m1 = (Is1[Vgs1_index2] - Is1[Vgs1_index1]) / (Vgs1[Vgs1_index2] - Vgs1[Vgs1_index1])
+    b1 = Is1[Vgs1_index1] - m1*Vgs1[Vgs1_index1]
+    
+    m2 = (Is2[Vgs2_index2] - Is2[Vgs2_index1]) / (Vgs2[Vgs2_index2] - Vgs2[Vgs2_index1])
+    b2 = Is2[Vgs2_index1] - m2*Vgs2[Vgs2_index1]
+    
+    # calc VG at current value
+    VG1 = (current - b1)/m1
+    VG2 = (current - b2)/m2
+    
+    return np.abs(VG2 - VG1)
+
+def plot_ΔVGvT(fileroot, filenames, current, size=def_size, log=False):
+    savename = '_DVGvT'
+    size = 2
+    colors = colors_set1
+
+    files = [process_file(fileroot + x) for x in filenames]
+    
+    fig = plt.figure(figsize=(size, size), dpi=300)
+    ax = pretty_plot_single(fig, labels=["$\it{T}$ (K)", '$\it{ΔV_{G}}$ (V)'],
+                             yscale=('log' if log else 'linear'))
+    
+    DVG = []
+    T = []
+    for file in files:
+        T.append(file['Temperature_K'][0])
+        dVg = width_Vg(file, current)
+        DVG.append(dVg)
+        
+    ax.plot(T, DVG, '.-', ms=3, linewidth=1.5, color=colors[0])
+    
+    ax.xaxis.set_major_locator(MultipleLocator(100))
+    
+    scalename = "_log" if log else "_linear"
+    print(savename+scalename)
+    save_generic_svg(fig, fileroot, savename+scalename)
+    plt.show()
+    plt.clf()
+
+def process_R_4pt(RTloop_2_4pt_filenames):
+    #seperate files for R_4pt
+    (cs_Currents_left, cs_Voltages_left, _, cs_Temperatures) = \
+        get_cross_section(fileroot, RTloop_2_4pt_filenames, [75.], 1)
+    (cs_Currents_right, cs_Voltages_right, _, cs_Temperatures) = \
+        get_cross_section(fileroot, RTloop_2_4pt_filenames, [75.], 2)
+        
+    occ0 = first_occurance_1D(cs_Temperatures, T, tol=.2, starting_index=0)
+    R_left = cs_Voltages_left[0][occ0]/cs_Currents_left[0][occ0]
+    R_right = cs_Voltages_right[0][occ0]/cs_Currents_right[0][occ0]
+    #print("R_left: %s Ω and R_right %s Ω" % (round(R_left), round(R_right)))
+    Rxx_4pt = (R_left+R_right)/2
+
 
 def process_IV_data(fileroot, data_file, volt_fields, Ilimits=(None,None), plot_data=True):
     current_data = data_file['Current_A']
@@ -913,7 +859,7 @@ def process_IV_data(fileroot, data_file, volt_fields, Ilimits=(None,None), plot_
 
     if plot_data:
         numfields = len(volt_fields)
-        plot_colors = colors[0:numfields,:]
+        plot_colors = colors_set1[0:numfields,:]
         markers = ['.-']*numfields + ['-']*numfields
         
         for i, fit in enumerate(ivfitdata): 
@@ -927,7 +873,66 @@ def process_IV_data(fileroot, data_file, volt_fields, Ilimits=(None,None), plot_
     
     return (Ravg, Resistances, r_squareds)
 
-def plot_VH_vs_H_generic(fileroot, files, savename, colors, power, power_label, \
-                        size=def_size, majorx=None, xlim=(None,None), ylim=(None,None), \
-                        fontsize=def_fontsize, labelsize=def_labelsize):
-    pass
+
+def conducting_range(file):
+    return [(gv, i) for (gv, i) in zip(file['Gate_Voltage_V'], file['Current_A']) if i > 10**-10]
+
+def max_Vg(file):
+    x = conducting_range(file)
+    Vgs = [i[0] for i in x]
+    Is = [i[1] for i in x]
+    
+    if len(Vgs) == 0:
+        return (np.nan, np.nan, np.nan)
+    
+    maxVgs_index = np.argmax(Vgs)
+    
+    pre_Vgs = Vgs[:maxVgs_index+1]
+    post_Vgs = np.flip(Vgs[maxVgs_index:])
+    pre_Is = Is[:maxVgs_index+1]
+    post_Is = np.flip(Is[maxVgs_index:])
+    
+    maxVg = (0, 0, 0) 
+    
+    i = j = 0
+    if pre_Is[0] < post_Is[0]:
+        i+=1
+    else:
+        j+=1
+    while(i+1 < len(pre_Vgs) and j+1 < len(post_Vgs)):
+        # four points, two on left, two on right
+        y0 = pre_Is[i]; x0 = pre_Vgs[i]
+        y1 = pre_Is[i+1]; x1 = pre_Vgs[i+1]
+        y2 = post_Is[j]; x2 = post_Vgs[j]
+        y3 = post_Is[j+1]; x3 = post_Vgs[j+1]
+        
+        if (y2 < y0 and y0 < y3):
+            m = (y3 -y2)/(x3-x2)
+            b = y2 - m*x2
+            x = (y0 - b)/m
+            dVg = x - x0
+            Vg0 = x0
+            Is0 = y0
+            i+=1
+        elif (y0 < y2 and y2 < y1):
+            m = (y1 - y0)/(x1 - x0)
+            b = y0 - m*x0
+            x = (y2 - b)/m
+            dVg = x2 - x
+            Vg0 = x
+            Is0 = y2
+            j+=1
+        elif (y2 > y1):
+            i+=1
+            continue
+        elif (y0 > y3):
+            j+=1
+            continue
+        else:
+            print("bahhhhhhhhhhhhhhhhhhhhhhhhh")
+            continue
+        
+        if (maxVg[0] < dVg):
+            maxVg = (dVg, Vg0, Is0)
+            
+    return maxVg

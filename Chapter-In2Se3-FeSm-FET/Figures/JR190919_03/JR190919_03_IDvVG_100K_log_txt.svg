@@ -8,13 +8,13 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   height="128.365312pt"
+   height="130.4053pt"
    version="1.1"
-   viewBox="0 0 149.670028 128.365312"
-   width="149.670028pt"
+   viewBox="0 0 149.67003 130.40531"
+   width="149.67003pt"
    id="svg5361"
-   sodipodi:docname="_JR190919_03_IDvsVg_100.0K_IDvsVG_log.svg"
-   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)">
+   sodipodi:docname="JR190919_03_IDvVG_100K_log_txt.svg"
+   inkscape:version="1.0.2 (e86c870879, 2021-01-15, custom)">
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -24,17 +24,22 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1860"
+     inkscape:window-width="1838"
      inkscape:window-height="1051"
      id="namedview5363"
      showgrid="false"
-     inkscape:zoom="3.6692156"
-     inkscape:cx="163.38873"
-     inkscape:cy="69.802281"
-     inkscape:window-x="60"
-     inkscape:window-y="0"
+     inkscape:zoom="2.5945272"
+     inkscape:cx="104.35883"
+     inkscape:cy="91.580752"
+     inkscape:window-x="73"
+     inkscape:window-y="-9"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g11456" />
+     inkscape:current-layer="svg5361"
+     inkscape:document-rotation="0"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
   <metadata
      id="metadata4299">
     <rdf:RDF>
@@ -48,6 +53,7 @@
             <dc:title>Matplotlib v3.3.0, https://matplotlib.org/</dc:title>
           </cc:Agent>
         </dc:creator>
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -88,12 +94,13 @@
     </marker>
   </defs>
   <g
-     id="figure_1">
+     id="figure_1"
+     transform="translate(0,2.0399861)">
     <g
        id="patch_1">
       <path
-         d="M 0 128.365312  L 149.670028 128.365312  L 149.670028 0  L 0 0  z "
-         style="fill:none;"
+         d="M 0,128.36531 H 149.67003 V 0 H 0 Z"
+         style="fill:none"
          id="path4305" />
     </g>
     <g
@@ -101,8 +108,8 @@
       <g
          id="patch_2">
         <path
-           d="M 34.2 108.72  L 145.8 108.72  L 145.8 0  L 34.2 0  z "
-           style="fill:none;"
+           d="M 34.2,108.72 H 145.8 V 0 H 34.2 Z"
+           style="fill:none"
            id="path4308" />
       </g>
       <g
@@ -114,18 +121,20 @@
             <defs
                id="defs4312">
               <path
-                 d="M 0 0  L 0 -3.5  "
+                 d="M 0,0 V -3.5"
                  id="m47f2689f73"
-                 style="stroke:#000000;stroke-width:0.5;" />
+                 style="stroke:#000000;stroke-width:0.5" />
             </defs>
             <g
                id="g4316">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="35.890909"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="35.890907"
                  xlink:href="#m47f2689f73"
                  y="108.72"
-                 id="use4314" />
+                 id="use4314"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
@@ -133,27 +142,28 @@
             <defs
                id="defs4320">
               <path
-                 d="M 0 0  L 0 3.5  "
+                 d="M 0,0 V 3.5"
                  id="m9ac846eb05"
-                 style="stroke:#000000;stroke-width:0.5;" />
+                 style="stroke:#000000;stroke-width:0.5" />
             </defs>
             <g
                id="g4324">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="35.890909"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="35.890907"
                  xlink:href="#m9ac846eb05"
                  y="0"
-                 id="use4322" />
+                 id="use4322"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
              id="text_1">
             <text
-               style="font-family:Arial;font-size:10px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:middle;"
-               transform="rotate(-0, 35.890909, 116.877812)"
-               x="35.890909"
-               y="116.877812"
+               style="font-style:normal;font-weight:normal;font-stretch:normal;font-size:10px;font-family:Arial;text-anchor:middle"
+               x="35.890907"
+               y="116.87782"
                id="text4327">−80</text>
           </g>
         </g>
@@ -164,11 +174,13 @@
             <g
                id="g4333">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="62.945455"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="62.945454"
                  xlink:href="#m47f2689f73"
                  y="108.72"
-                 id="use4331" />
+                 id="use4331"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
@@ -176,20 +188,21 @@
             <g
                id="g4338">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="62.945455"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="62.945454"
                  xlink:href="#m9ac846eb05"
                  y="0"
-                 id="use4336" />
+                 id="use4336"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
              id="text_2">
             <text
-               style="font-family:Arial;font-size:10px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:middle;"
-               transform="rotate(-0, 62.945455, 116.877812)"
-               x="62.945455"
-               y="116.877812"
+               style="font-style:normal;font-weight:normal;font-stretch:normal;font-size:10px;font-family:Arial;text-anchor:middle"
+               x="62.945454"
+               y="116.87782"
                id="text4341">−40</text>
           </g>
         </g>
@@ -200,11 +213,13 @@
             <g
                id="g4347">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
+                 style="stroke:#000000;stroke-width:0.5"
                  x="90"
                  xlink:href="#m47f2689f73"
                  y="108.72"
-                 id="use4345" />
+                 id="use4345"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
@@ -212,20 +227,21 @@
             <g
                id="g4352">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
+                 style="stroke:#000000;stroke-width:0.5"
                  x="90"
                  xlink:href="#m9ac846eb05"
                  y="0"
-                 id="use4350" />
+                 id="use4350"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
              id="text_3">
             <text
-               style="font-family:Arial;font-size:10px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:middle;"
-               transform="rotate(-0, 90, 116.877812)"
+               style="font-style:normal;font-weight:normal;font-stretch:normal;font-size:10px;font-family:Arial;text-anchor:middle"
                x="90"
-               y="116.877812"
+               y="116.87782"
                id="text4355">0</text>
           </g>
         </g>
@@ -236,11 +252,13 @@
             <g
                id="g4361">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="117.054545"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="117.05454"
                  xlink:href="#m47f2689f73"
                  y="108.72"
-                 id="use4359" />
+                 id="use4359"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
@@ -248,20 +266,21 @@
             <g
                id="g4366">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="117.054545"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="117.05454"
                  xlink:href="#m9ac846eb05"
                  y="0"
-                 id="use4364" />
+                 id="use4364"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
              id="text_4">
             <text
-               style="font-family:Arial;font-size:10px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:middle;"
-               transform="rotate(-0, 117.054545, 116.877812)"
-               x="117.054545"
-               y="116.877812"
+               style="font-style:normal;font-weight:normal;font-stretch:normal;font-size:10px;font-family:Arial;text-anchor:middle"
+               x="117.05454"
+               y="116.87782"
                id="text4369">40</text>
           </g>
         </g>
@@ -272,11 +291,13 @@
             <g
                id="g4375">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="144.109091"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="144.10909"
                  xlink:href="#m47f2689f73"
                  y="108.72"
-                 id="use4373" />
+                 id="use4373"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
@@ -284,20 +305,21 @@
             <g
                id="g4380">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="144.109091"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="144.10909"
                  xlink:href="#m9ac846eb05"
                  y="0"
-                 id="use4378" />
+                 id="use4378"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
              id="text_5">
             <text
-               style="font-family:Arial;font-size:10px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:middle;"
-               transform="rotate(-0, 144.109091, 116.877812)"
-               x="144.109091"
-               y="116.877812"
+               style="font-style:normal;font-weight:normal;font-stretch:normal;font-size:10px;font-family:Arial;text-anchor:middle"
+               x="144.10909"
+               y="116.87782"
                id="text4383">80</text>
           </g>
         </g>
@@ -308,18 +330,20 @@
             <defs
                id="defs4388">
               <path
-                 d="M 0 0  L 0 -2  "
+                 d="M 0,0 V -2"
                  id="m731224eccc"
-                 style="stroke:#000000;stroke-width:0.5;" />
+                 style="stroke:#000000;stroke-width:0.5" />
             </defs>
             <g
                id="g4392">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
+                 style="stroke:#000000;stroke-width:0.5"
                  x="42.654545"
                  xlink:href="#m731224eccc"
                  y="108.72"
-                 id="use4390" />
+                 id="use4390"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
@@ -327,18 +351,20 @@
             <defs
                id="defs4396">
               <path
-                 d="M 0 0  L 0 2  "
+                 d="M 0,0 V 2"
                  id="mbfd0ba54b3"
-                 style="stroke:#000000;stroke-width:0.5;" />
+                 style="stroke:#000000;stroke-width:0.5" />
             </defs>
             <g
                id="g4400">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
+                 style="stroke:#000000;stroke-width:0.5"
                  x="42.654545"
                  xlink:href="#mbfd0ba54b3"
                  y="0"
-                 id="use4398" />
+                 id="use4398"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
         </g>
@@ -349,11 +375,13 @@
             <g
                id="g4406">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
+                 style="stroke:#000000;stroke-width:0.5"
                  x="49.418182"
                  xlink:href="#m731224eccc"
                  y="108.72"
-                 id="use4404" />
+                 id="use4404"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
@@ -361,11 +389,13 @@
             <g
                id="g4411">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
+                 style="stroke:#000000;stroke-width:0.5"
                  x="49.418182"
                  xlink:href="#mbfd0ba54b3"
                  y="0"
-                 id="use4409" />
+                 id="use4409"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
         </g>
@@ -376,11 +406,13 @@
             <g
                id="g4417">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="56.181818"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="56.181816"
                  xlink:href="#m731224eccc"
                  y="108.72"
-                 id="use4415" />
+                 id="use4415"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
@@ -388,11 +420,13 @@
             <g
                id="g4422">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="56.181818"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="56.181816"
                  xlink:href="#mbfd0ba54b3"
                  y="0"
-                 id="use4420" />
+                 id="use4420"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
         </g>
@@ -403,11 +437,13 @@
             <g
                id="g4428">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
+                 style="stroke:#000000;stroke-width:0.5"
                  x="69.709091"
                  xlink:href="#m731224eccc"
                  y="108.72"
-                 id="use4426" />
+                 id="use4426"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
@@ -415,11 +451,13 @@
             <g
                id="g4433">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
+                 style="stroke:#000000;stroke-width:0.5"
                  x="69.709091"
                  xlink:href="#mbfd0ba54b3"
                  y="0"
-                 id="use4431" />
+                 id="use4431"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
         </g>
@@ -430,11 +468,13 @@
             <g
                id="g4439">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="76.472727"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="76.472725"
                  xlink:href="#m731224eccc"
                  y="108.72"
-                 id="use4437" />
+                 id="use4437"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
@@ -442,11 +482,13 @@
             <g
                id="g4444">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="76.472727"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="76.472725"
                  xlink:href="#mbfd0ba54b3"
                  y="0"
-                 id="use4442" />
+                 id="use4442"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
         </g>
@@ -457,11 +499,13 @@
             <g
                id="g4450">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="83.236364"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="83.236366"
                  xlink:href="#m731224eccc"
                  y="108.72"
-                 id="use4448" />
+                 id="use4448"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
@@ -469,11 +513,13 @@
             <g
                id="g4455">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="83.236364"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="83.236366"
                  xlink:href="#mbfd0ba54b3"
                  y="0"
-                 id="use4453" />
+                 id="use4453"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
         </g>
@@ -484,11 +530,13 @@
             <g
                id="g4461">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="96.763636"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="96.763634"
                  xlink:href="#m731224eccc"
                  y="108.72"
-                 id="use4459" />
+                 id="use4459"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
@@ -496,11 +544,13 @@
             <g
                id="g4466">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="96.763636"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="96.763634"
                  xlink:href="#mbfd0ba54b3"
                  y="0"
-                 id="use4464" />
+                 id="use4464"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
         </g>
@@ -511,11 +561,13 @@
             <g
                id="g4472">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="103.527273"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="103.52728"
                  xlink:href="#m731224eccc"
                  y="108.72"
-                 id="use4470" />
+                 id="use4470"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
@@ -523,11 +575,13 @@
             <g
                id="g4477">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="103.527273"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="103.52728"
                  xlink:href="#mbfd0ba54b3"
                  y="0"
-                 id="use4475" />
+                 id="use4475"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
         </g>
@@ -538,11 +592,13 @@
             <g
                id="g4483">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="110.290909"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="110.29091"
                  xlink:href="#m731224eccc"
                  y="108.72"
-                 id="use4481" />
+                 id="use4481"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
@@ -550,11 +606,13 @@
             <g
                id="g4488">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="110.290909"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="110.29091"
                  xlink:href="#mbfd0ba54b3"
                  y="0"
-                 id="use4486" />
+                 id="use4486"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
         </g>
@@ -565,11 +623,13 @@
             <g
                id="g4494">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="123.818182"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="123.81818"
                  xlink:href="#m731224eccc"
                  y="108.72"
-                 id="use4492" />
+                 id="use4492"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
@@ -577,11 +637,13 @@
             <g
                id="g4499">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="123.818182"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="123.81818"
                  xlink:href="#mbfd0ba54b3"
                  y="0"
-                 id="use4497" />
+                 id="use4497"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
         </g>
@@ -592,11 +654,13 @@
             <g
                id="g4505">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="130.581818"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="130.58182"
                  xlink:href="#m731224eccc"
                  y="108.72"
-                 id="use4503" />
+                 id="use4503"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
@@ -604,11 +668,13 @@
             <g
                id="g4510">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="130.581818"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="130.58182"
                  xlink:href="#mbfd0ba54b3"
                  y="0"
-                 id="use4508" />
+                 id="use4508"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
         </g>
@@ -619,11 +685,13 @@
             <g
                id="g4516">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="137.345455"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="137.34546"
                  xlink:href="#m731224eccc"
                  y="108.72"
-                 id="use4514" />
+                 id="use4514"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
@@ -631,11 +699,13 @@
             <g
                id="g4521">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="137.345455"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="137.34546"
                  xlink:href="#mbfd0ba54b3"
                  y="0"
-                 id="use4519" />
+                 id="use4519"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
         </g>
@@ -643,23 +713,8 @@
            id="text_6">
           <!-- $\it{V_{G}}$ (V) -->
           <g
-             transform="translate(75.65 126.165312)"
-             id="g4533">
-            <text
-               id="text4531"><tspan
-                 style="font-family:DejaVu Sans;font-size:10px;font-style:oblique;font-weight:oblique;"
-                 x="0"
-                 y="-0.703125"
-                 id="tspan4525">V</tspan><tspan
-                 style="font-family:DejaVu Sans;font-size:7px;font-style:oblique;font-weight:oblique;"
-                 x="6.84082"
-                 y="0.9375"
-                 id="tspan4527">G</tspan><tspan
-                 style="font-family:Arial;font-size:10px;font-style:regular;font-weight:regular;"
-                 x="12.538574 15.316895 18.646973 25.316895"
-                 y="-0.703125"
-                 id="tspan4529"> (V)</tspan></text>
-          </g>
+             transform="translate(75.65,126.16531)"
+             id="g4533" />
         </g>
       </g>
       <g
@@ -671,18 +726,20 @@
             <defs
                id="defs4538">
               <path
-                 d="M 0 0  L 3.5 0  "
+                 d="M 0,0 H 3.5"
                  id="meb3d42a178"
-                 style="stroke:#000000;stroke-width:0.5;" />
+                 style="stroke:#000000;stroke-width:0.5" />
             </defs>
             <g
                id="g4542">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="34.2"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="34.200001"
                  xlink:href="#meb3d42a178"
-                 y="92.725423"
-                 id="use4540" />
+                 y="92.725426"
+                 id="use4540"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
@@ -690,35 +747,37 @@
             <defs
                id="defs4546">
               <path
-                 d="M 0 0  L -3.5 0  "
+                 d="M 0,0 H -3.5"
                  id="m09aee37b4a"
-                 style="stroke:#000000;stroke-width:0.5;" />
+                 style="stroke:#000000;stroke-width:0.5" />
             </defs>
             <g
                id="g4550">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
+                 style="stroke:#000000;stroke-width:0.5"
                  x="145.8"
                  xlink:href="#m09aee37b4a"
-                 y="92.725423"
-                 id="use4548" />
+                 y="92.725426"
+                 id="use4548"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
              id="text_7">
             <!-- $\mathdefault{10^{-11}}$ -->
             <g
-               transform="translate(9.5 97.881673)"
+               transform="translate(9.5,97.881673)"
                id="g4559">
               <text
                  id="text4557"><tspan
-                   style="font-family:Arial;font-size:10px;font-style:regular;font-weight:regular;"
+                   style="font-size:10px;font-family:Arial"
                    x="0 5.561523"
-                   y="-0.9993750000000006"
+                   y="-0.99937499"
                    id="tspan4553">10</tspan><tspan
-                   style="font-family:Arial;font-size:7px;font-style:regular;font-weight:regular;"
+                   style="font-size:7px;font-family:Arial"
                    x="11.297281 15.385172 19.278238"
-                   y="-7.968749999999999"
+                   y="-7.96875"
                    id="tspan4555">−11</tspan></text>
             </g>
           </g>
@@ -730,11 +789,13 @@
             <g
                id="g4565">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="34.2"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="34.200001"
                  xlink:href="#meb3d42a178"
-                 y="75.341091"
-                 id="use4563" />
+                 y="75.341087"
+                 id="use4563"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
@@ -742,28 +803,30 @@
             <g
                id="g4570">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
+                 style="stroke:#000000;stroke-width:0.5"
                  x="145.8"
                  xlink:href="#m09aee37b4a"
-                 y="75.341091"
-                 id="use4568" />
+                 y="75.341087"
+                 id="use4568"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
              id="text_8">
             <!-- $\mathdefault{10^{-10}}$ -->
             <g
-               transform="translate(9.5 80.497341)"
+               transform="translate(9.5,80.497341)"
                id="g4579">
               <text
                  id="text4577"><tspan
-                   style="font-family:Arial;font-size:10px;font-style:regular;font-weight:regular;"
+                   style="font-size:10px;font-family:Arial"
                    x="0 5.561523"
-                   y="-0.9993750000000006"
+                   y="-0.99937499"
                    id="tspan4573">10</tspan><tspan
-                   style="font-family:Arial;font-size:7px;font-style:regular;font-weight:regular;"
+                   style="font-size:7px;font-family:Arial"
                    x="11.297281 15.385172 19.278238"
-                   y="-7.968749999999999"
+                   y="-7.96875"
                    id="tspan4575">−10</tspan></text>
             </g>
           </g>
@@ -775,11 +838,13 @@
             <g
                id="g4585">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="34.2"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="34.200001"
                  xlink:href="#meb3d42a178"
                  y="57.95676"
-                 id="use4583" />
+                 id="use4583"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
@@ -787,28 +852,30 @@
             <g
                id="g4590">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
+                 style="stroke:#000000;stroke-width:0.5"
                  x="145.8"
                  xlink:href="#m09aee37b4a"
                  y="57.95676"
-                 id="use4588" />
+                 id="use4588"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
              id="text_9">
             <!-- $\mathdefault{10^{-9}}$ -->
             <g
-               transform="translate(13.4 63.11301)"
+               transform="translate(13.4,63.11301)"
                id="g4599">
               <text
                  id="text4597"><tspan
-                   style="font-family:Arial;font-size:10px;font-style:regular;font-weight:regular;"
+                   style="font-size:10px;font-family:Arial"
                    x="0 5.561523"
-                   y="-0.9993750000000006"
+                   y="-0.99937499"
                    id="tspan4593">10</tspan><tspan
-                   style="font-family:Arial;font-size:7px;font-style:regular;font-weight:regular;"
+                   style="font-size:7px;font-family:Arial"
                    x="11.297281 15.385172"
-                   y="-7.968749999999999"
+                   y="-7.96875"
                    id="tspan4595">−9</tspan></text>
             </g>
           </g>
@@ -820,11 +887,13 @@
             <g
                id="g4605">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="34.2"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="34.200001"
                  xlink:href="#meb3d42a178"
-                 y="40.572428"
-                 id="use4603" />
+                 y="40.57243"
+                 id="use4603"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
@@ -832,28 +901,30 @@
             <g
                id="g4610">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
+                 style="stroke:#000000;stroke-width:0.5"
                  x="145.8"
                  xlink:href="#m09aee37b4a"
-                 y="40.572428"
-                 id="use4608" />
+                 y="40.57243"
+                 id="use4608"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
              id="text_10">
             <!-- $\mathdefault{10^{-8}}$ -->
             <g
-               transform="translate(13.4 45.728678)"
+               transform="translate(13.4,45.728678)"
                id="g4619">
               <text
                  id="text4617"><tspan
-                   style="font-family:Arial;font-size:10px;font-style:regular;font-weight:regular;"
+                   style="font-size:10px;font-family:Arial"
                    x="0 5.561523"
-                   y="-0.9993750000000006"
+                   y="-0.99937499"
                    id="tspan4613">10</tspan><tspan
-                   style="font-family:Arial;font-size:7px;font-style:regular;font-weight:regular;"
+                   style="font-size:7px;font-family:Arial"
                    x="11.297281 15.385172"
-                   y="-7.968749999999999"
+                   y="-7.96875"
                    id="tspan4615">−8</tspan></text>
             </g>
           </g>
@@ -865,11 +936,13 @@
             <g
                id="g4625">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="34.2"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="34.200001"
                  xlink:href="#meb3d42a178"
-                 y="23.188096"
-                 id="use4623" />
+                 y="23.188095"
+                 id="use4623"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
@@ -877,28 +950,30 @@
             <g
                id="g4630">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
+                 style="stroke:#000000;stroke-width:0.5"
                  x="145.8"
                  xlink:href="#m09aee37b4a"
-                 y="23.188096"
-                 id="use4628" />
+                 y="23.188095"
+                 id="use4628"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
              id="text_11">
             <!-- $\mathdefault{10^{-7}}$ -->
             <g
-               transform="translate(13.4 28.294346)"
+               transform="translate(13.4,28.294346)"
                id="g4639">
               <text
                  id="text4637"><tspan
-                   style="font-family:Arial;font-size:10px;font-style:regular;font-weight:regular;"
+                   style="font-size:10px;font-family:Arial"
                    x="0 5.561523"
-                   y="-0.0868750000000027"
+                   y="-0.086874999"
                    id="tspan4633">10</tspan><tspan
-                   style="font-family:Arial;font-size:7px;font-style:regular;font-weight:regular;"
+                   style="font-size:7px;font-family:Arial"
                    x="11.297281 15.385172"
-                   y="-7.056250000000001"
+                   y="-7.0562501"
                    id="tspan4635">−7</tspan></text>
             </g>
           </g>
@@ -910,11 +985,13 @@
             <g
                id="g4645">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="34.2"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="34.200001"
                  xlink:href="#meb3d42a178"
-                 y="5.803764"
-                 id="use4643" />
+                 y="5.8037639"
+                 id="use4643"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
@@ -922,28 +999,30 @@
             <g
                id="g4650">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
+                 style="stroke:#000000;stroke-width:0.5"
                  x="145.8"
                  xlink:href="#m09aee37b4a"
-                 y="5.803764"
-                 id="use4648" />
+                 y="5.8037639"
+                 id="use4648"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
              id="text_12">
             <!-- $\mathdefault{10^{-6}}$ -->
             <g
-               transform="translate(13.4 10.960014)"
+               transform="translate(13.4,10.960014)"
                id="g4659">
               <text
                  id="text4657"><tspan
-                   style="font-family:Arial;font-size:10px;font-style:regular;font-weight:regular;"
+                   style="font-size:10px;font-family:Arial"
                    x="0 5.561523"
-                   y="-0.9993750000000006"
+                   y="-0.99937499"
                    id="tspan4653">10</tspan><tspan
-                   style="font-family:Arial;font-size:7px;font-style:regular;font-weight:regular;"
+                   style="font-size:7px;font-family:Arial"
                    x="11.297281 15.385172"
-                   y="-7.968749999999999"
+                   y="-7.96875"
                    id="tspan4655">−6</tspan></text>
             </g>
           </g>
@@ -955,18 +1034,20 @@
             <defs
                id="defs4664">
               <path
-                 d="M 0 0  L 2 0  "
+                 d="M 0,0 H 2"
                  id="m4dbe0e418b"
-                 style="stroke:#000000;stroke-width:0.5;" />
+                 style="stroke:#000000;stroke-width:0.5" />
             </defs>
             <g
                id="g4668">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="34.2"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="34.200001"
                  xlink:href="#m4dbe0e418b"
-                 y="104.876549"
-                 id="use4666" />
+                 y="104.87655"
+                 id="use4666"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
@@ -974,18 +1055,20 @@
             <defs
                id="defs4672">
               <path
-                 d="M 0 0  L -2 0  "
+                 d="M 0,0 H -2"
                  id="m261422411e"
-                 style="stroke:#000000;stroke-width:0.5;" />
+                 style="stroke:#000000;stroke-width:0.5" />
             </defs>
             <g
                id="g4676">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
+                 style="stroke:#000000;stroke-width:0.5"
                  x="145.8"
                  xlink:href="#m261422411e"
-                 y="104.876549"
-                 id="use4674" />
+                 y="104.87655"
+                 id="use4674"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
         </g>
@@ -996,11 +1079,13 @@
             <g
                id="g4682">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="34.2"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="34.200001"
                  xlink:href="#m4dbe0e418b"
                  y="101.81532"
-                 id="use4680" />
+                 id="use4680"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
@@ -1008,11 +1093,13 @@
             <g
                id="g4687">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
+                 style="stroke:#000000;stroke-width:0.5"
                  x="145.8"
                  xlink:href="#m261422411e"
                  y="101.81532"
-                 id="use4685" />
+                 id="use4685"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
         </g>
@@ -1023,11 +1110,13 @@
             <g
                id="g4693">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="34.2"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="34.200001"
                  xlink:href="#m4dbe0e418b"
-                 y="99.643344"
-                 id="use4691" />
+                 y="99.643341"
+                 id="use4691"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
@@ -1035,11 +1124,13 @@
             <g
                id="g4698">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
+                 style="stroke:#000000;stroke-width:0.5"
                  x="145.8"
                  xlink:href="#m261422411e"
-                 y="99.643344"
-                 id="use4696" />
+                 y="99.643341"
+                 id="use4696"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
         </g>
@@ -1050,11 +1141,13 @@
             <g
                id="g4704">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="34.2"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="34.200001"
                  xlink:href="#m4dbe0e418b"
-                 y="97.958628"
-                 id="use4702" />
+                 y="97.958626"
+                 id="use4702"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
@@ -1062,11 +1155,13 @@
             <g
                id="g4709">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
+                 style="stroke:#000000;stroke-width:0.5"
                  x="145.8"
                  xlink:href="#m261422411e"
-                 y="97.958628"
-                 id="use4707" />
+                 y="97.958626"
+                 id="use4707"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
         </g>
@@ -1077,11 +1172,13 @@
             <g
                id="g4715">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="34.2"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="34.200001"
                  xlink:href="#m4dbe0e418b"
                  y="96.582115"
-                 id="use4713" />
+                 id="use4713"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
@@ -1089,11 +1186,13 @@
             <g
                id="g4720">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
+                 style="stroke:#000000;stroke-width:0.5"
                  x="145.8"
                  xlink:href="#m261422411e"
                  y="96.582115"
-                 id="use4718" />
+                 id="use4718"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
         </g>
@@ -1104,11 +1203,13 @@
             <g
                id="g4726">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="34.2"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="34.200001"
                  xlink:href="#m4dbe0e418b"
-                 y="95.41829"
-                 id="use4724" />
+                 y="95.418289"
+                 id="use4724"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
@@ -1116,11 +1217,13 @@
             <g
                id="g4731">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
+                 style="stroke:#000000;stroke-width:0.5"
                  x="145.8"
                  xlink:href="#m261422411e"
-                 y="95.41829"
-                 id="use4729" />
+                 y="95.418289"
+                 id="use4729"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
         </g>
@@ -1131,11 +1234,13 @@
             <g
                id="g4737">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="34.2"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="34.200001"
                  xlink:href="#m4dbe0e418b"
-                 y="94.410139"
-                 id="use4735" />
+                 y="94.410141"
+                 id="use4735"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
@@ -1143,11 +1248,13 @@
             <g
                id="g4742">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
+                 style="stroke:#000000;stroke-width:0.5"
                  x="145.8"
                  xlink:href="#m261422411e"
-                 y="94.410139"
-                 id="use4740" />
+                 y="94.410141"
+                 id="use4740"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
         </g>
@@ -1158,11 +1265,13 @@
             <g
                id="g4748">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="34.2"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="34.200001"
                  xlink:href="#m4dbe0e418b"
-                 y="93.520886"
-                 id="use4746" />
+                 y="93.520889"
+                 id="use4746"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
@@ -1170,11 +1279,13 @@
             <g
                id="g4753">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
+                 style="stroke:#000000;stroke-width:0.5"
                  x="145.8"
                  xlink:href="#m261422411e"
-                 y="93.520886"
-                 id="use4751" />
+                 y="93.520889"
+                 id="use4751"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
         </g>
@@ -1185,11 +1296,13 @@
             <g
                id="g4759">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="34.2"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="34.200001"
                  xlink:href="#m4dbe0e418b"
                  y="87.492218"
-                 id="use4757" />
+                 id="use4757"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
@@ -1197,11 +1310,13 @@
             <g
                id="g4764">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
+                 style="stroke:#000000;stroke-width:0.5"
                  x="145.8"
                  xlink:href="#m261422411e"
                  y="87.492218"
-                 id="use4762" />
+                 id="use4762"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
         </g>
@@ -1212,11 +1327,13 @@
             <g
                id="g4770">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="34.2"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="34.200001"
                  xlink:href="#m4dbe0e418b"
-                 y="84.430989"
-                 id="use4768" />
+                 y="84.430992"
+                 id="use4768"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
@@ -1224,11 +1341,13 @@
             <g
                id="g4775">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
+                 style="stroke:#000000;stroke-width:0.5"
                  x="145.8"
                  xlink:href="#m261422411e"
-                 y="84.430989"
-                 id="use4773" />
+                 y="84.430992"
+                 id="use4773"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
         </g>
@@ -1239,11 +1358,13 @@
             <g
                id="g4781">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="34.2"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="34.200001"
                  xlink:href="#m4dbe0e418b"
-                 y="82.259012"
-                 id="use4779" />
+                 y="82.25901"
+                 id="use4779"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
@@ -1251,11 +1372,13 @@
             <g
                id="g4786">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
+                 style="stroke:#000000;stroke-width:0.5"
                  x="145.8"
                  xlink:href="#m261422411e"
-                 y="82.259012"
-                 id="use4784" />
+                 y="82.25901"
+                 id="use4784"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
         </g>
@@ -1266,11 +1389,13 @@
             <g
                id="g4792">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="34.2"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="34.200001"
                  xlink:href="#m4dbe0e418b"
-                 y="80.574297"
-                 id="use4790" />
+                 y="80.574295"
+                 id="use4790"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
@@ -1278,11 +1403,13 @@
             <g
                id="g4797">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
+                 style="stroke:#000000;stroke-width:0.5"
                  x="145.8"
                  xlink:href="#m261422411e"
-                 y="80.574297"
-                 id="use4795" />
+                 y="80.574295"
+                 id="use4795"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
         </g>
@@ -1293,11 +1420,13 @@
             <g
                id="g4803">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="34.2"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="34.200001"
                  xlink:href="#m4dbe0e418b"
-                 y="79.197783"
-                 id="use4801" />
+                 y="79.197784"
+                 id="use4801"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
@@ -1305,11 +1434,13 @@
             <g
                id="g4808">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
+                 style="stroke:#000000;stroke-width:0.5"
                  x="145.8"
                  xlink:href="#m261422411e"
-                 y="79.197783"
-                 id="use4806" />
+                 y="79.197784"
+                 id="use4806"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
         </g>
@@ -1320,11 +1451,13 @@
             <g
                id="g4814">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="34.2"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="34.200001"
                  xlink:href="#m4dbe0e418b"
                  y="78.033958"
-                 id="use4812" />
+                 id="use4812"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
@@ -1332,11 +1465,13 @@
             <g
                id="g4819">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
+                 style="stroke:#000000;stroke-width:0.5"
                  x="145.8"
                  xlink:href="#m261422411e"
                  y="78.033958"
-                 id="use4817" />
+                 id="use4817"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
         </g>
@@ -1347,11 +1482,13 @@
             <g
                id="g4825">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="34.2"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="34.200001"
                  xlink:href="#m4dbe0e418b"
-                 y="77.025807"
-                 id="use4823" />
+                 y="77.02581"
+                 id="use4823"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
@@ -1359,11 +1496,13 @@
             <g
                id="g4830">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
+                 style="stroke:#000000;stroke-width:0.5"
                  x="145.8"
                  xlink:href="#m261422411e"
-                 y="77.025807"
-                 id="use4828" />
+                 y="77.02581"
+                 id="use4828"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
         </g>
@@ -1374,11 +1513,13 @@
             <g
                id="g4836">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="34.2"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="34.200001"
                  xlink:href="#m4dbe0e418b"
-                 y="76.136555"
-                 id="use4834" />
+                 y="76.136559"
+                 id="use4834"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
@@ -1386,11 +1527,13 @@
             <g
                id="g4841">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
+                 style="stroke:#000000;stroke-width:0.5"
                  x="145.8"
                  xlink:href="#m261422411e"
-                 y="76.136555"
-                 id="use4839" />
+                 y="76.136559"
+                 id="use4839"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
         </g>
@@ -1401,11 +1544,13 @@
             <g
                id="g4847">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="34.2"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="34.200001"
                  xlink:href="#m4dbe0e418b"
-                 y="70.107886"
-                 id="use4845" />
+                 y="70.107887"
+                 id="use4845"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
@@ -1413,11 +1558,13 @@
             <g
                id="g4852">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
+                 style="stroke:#000000;stroke-width:0.5"
                  x="145.8"
                  xlink:href="#m261422411e"
-                 y="70.107886"
-                 id="use4850" />
+                 y="70.107887"
+                 id="use4850"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
         </g>
@@ -1428,11 +1575,13 @@
             <g
                id="g4858">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="34.2"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="34.200001"
                  xlink:href="#m4dbe0e418b"
-                 y="67.046657"
-                 id="use4856" />
+                 y="67.046654"
+                 id="use4856"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
@@ -1440,11 +1589,13 @@
             <g
                id="g4863">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
+                 style="stroke:#000000;stroke-width:0.5"
                  x="145.8"
                  xlink:href="#m261422411e"
-                 y="67.046657"
-                 id="use4861" />
+                 y="67.046654"
+                 id="use4861"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
         </g>
@@ -1455,11 +1606,13 @@
             <g
                id="g4869">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="34.2"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="34.200001"
                  xlink:href="#m4dbe0e418b"
-                 y="64.874681"
-                 id="use4867" />
+                 y="64.87468"
+                 id="use4867"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
@@ -1467,11 +1620,13 @@
             <g
                id="g4874">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
+                 style="stroke:#000000;stroke-width:0.5"
                  x="145.8"
                  xlink:href="#m261422411e"
-                 y="64.874681"
-                 id="use4872" />
+                 y="64.87468"
+                 id="use4872"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
         </g>
@@ -1482,11 +1637,13 @@
             <g
                id="g4880">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="34.2"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="34.200001"
                  xlink:href="#m4dbe0e418b"
-                 y="63.189965"
-                 id="use4878" />
+                 y="63.189964"
+                 id="use4878"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
@@ -1494,11 +1651,13 @@
             <g
                id="g4885">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
+                 style="stroke:#000000;stroke-width:0.5"
                  x="145.8"
                  xlink:href="#m261422411e"
-                 y="63.189965"
-                 id="use4883" />
+                 y="63.189964"
+                 id="use4883"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
         </g>
@@ -1509,11 +1668,13 @@
             <g
                id="g4891">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="34.2"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="34.200001"
                  xlink:href="#m4dbe0e418b"
-                 y="61.813452"
-                 id="use4889" />
+                 y="61.813454"
+                 id="use4889"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
@@ -1521,11 +1682,13 @@
             <g
                id="g4896">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
+                 style="stroke:#000000;stroke-width:0.5"
                  x="145.8"
                  xlink:href="#m261422411e"
-                 y="61.813452"
-                 id="use4894" />
+                 y="61.813454"
+                 id="use4894"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
         </g>
@@ -1536,11 +1699,13 @@
             <g
                id="g4902">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="34.2"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="34.200001"
                  xlink:href="#m4dbe0e418b"
-                 y="60.649627"
-                 id="use4900" />
+                 y="60.649628"
+                 id="use4900"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
@@ -1548,11 +1713,13 @@
             <g
                id="g4907">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
+                 style="stroke:#000000;stroke-width:0.5"
                  x="145.8"
                  xlink:href="#m261422411e"
-                 y="60.649627"
-                 id="use4905" />
+                 y="60.649628"
+                 id="use4905"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
         </g>
@@ -1563,11 +1730,13 @@
             <g
                id="g4913">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="34.2"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="34.200001"
                  xlink:href="#m4dbe0e418b"
-                 y="59.641475"
-                 id="use4911" />
+                 y="59.641476"
+                 id="use4911"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
@@ -1575,11 +1744,13 @@
             <g
                id="g4918">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
+                 style="stroke:#000000;stroke-width:0.5"
                  x="145.8"
                  xlink:href="#m261422411e"
-                 y="59.641475"
-                 id="use4916" />
+                 y="59.641476"
+                 id="use4916"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
         </g>
@@ -1590,11 +1761,13 @@
             <g
                id="g4924">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="34.2"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="34.200001"
                  xlink:href="#m4dbe0e418b"
-                 y="58.752223"
-                 id="use4922" />
+                 y="58.752224"
+                 id="use4922"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
@@ -1602,11 +1775,13 @@
             <g
                id="g4929">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
+                 style="stroke:#000000;stroke-width:0.5"
                  x="145.8"
                  xlink:href="#m261422411e"
-                 y="58.752223"
-                 id="use4927" />
+                 y="58.752224"
+                 id="use4927"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
         </g>
@@ -1617,11 +1792,13 @@
             <g
                id="g4935">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="34.2"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="34.200001"
                  xlink:href="#m4dbe0e418b"
-                 y="52.723554"
-                 id="use4933" />
+                 y="52.723553"
+                 id="use4933"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
@@ -1629,11 +1806,13 @@
             <g
                id="g4940">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
+                 style="stroke:#000000;stroke-width:0.5"
                  x="145.8"
                  xlink:href="#m261422411e"
-                 y="52.723554"
-                 id="use4938" />
+                 y="52.723553"
+                 id="use4938"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
         </g>
@@ -1644,11 +1823,13 @@
             <g
                id="g4946">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="34.2"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="34.200001"
                  xlink:href="#m4dbe0e418b"
-                 y="49.662325"
-                 id="use4944" />
+                 y="49.662327"
+                 id="use4944"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
@@ -1656,11 +1837,13 @@
             <g
                id="g4951">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
+                 style="stroke:#000000;stroke-width:0.5"
                  x="145.8"
                  xlink:href="#m261422411e"
-                 y="49.662325"
-                 id="use4949" />
+                 y="49.662327"
+                 id="use4949"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
         </g>
@@ -1671,11 +1854,13 @@
             <g
                id="g4957">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="34.2"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="34.200001"
                  xlink:href="#m4dbe0e418b"
                  y="47.490349"
-                 id="use4955" />
+                 id="use4955"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
@@ -1683,11 +1868,13 @@
             <g
                id="g4962">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
+                 style="stroke:#000000;stroke-width:0.5"
                  x="145.8"
                  xlink:href="#m261422411e"
                  y="47.490349"
-                 id="use4960" />
+                 id="use4960"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
         </g>
@@ -1698,11 +1885,13 @@
             <g
                id="g4968">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="34.2"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="34.200001"
                  xlink:href="#m4dbe0e418b"
-                 y="45.805633"
-                 id="use4966" />
+                 y="45.805634"
+                 id="use4966"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
@@ -1710,11 +1899,13 @@
             <g
                id="g4973">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
+                 style="stroke:#000000;stroke-width:0.5"
                  x="145.8"
                  xlink:href="#m261422411e"
-                 y="45.805633"
-                 id="use4971" />
+                 y="45.805634"
+                 id="use4971"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
         </g>
@@ -1725,11 +1916,13 @@
             <g
                id="g4979">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="34.2"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="34.200001"
                  xlink:href="#m4dbe0e418b"
-                 y="44.42912"
-                 id="use4977" />
+                 y="44.429119"
+                 id="use4977"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
@@ -1737,11 +1930,13 @@
             <g
                id="g4984">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
+                 style="stroke:#000000;stroke-width:0.5"
                  x="145.8"
                  xlink:href="#m261422411e"
-                 y="44.42912"
-                 id="use4982" />
+                 y="44.429119"
+                 id="use4982"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
         </g>
@@ -1752,11 +1947,13 @@
             <g
                id="g4990">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="34.2"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="34.200001"
                  xlink:href="#m4dbe0e418b"
-                 y="43.265295"
-                 id="use4988" />
+                 y="43.265293"
+                 id="use4988"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
@@ -1764,11 +1961,13 @@
             <g
                id="g4995">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
+                 style="stroke:#000000;stroke-width:0.5"
                  x="145.8"
                  xlink:href="#m261422411e"
-                 y="43.265295"
-                 id="use4993" />
+                 y="43.265293"
+                 id="use4993"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
         </g>
@@ -1779,11 +1978,13 @@
             <g
                id="g5001">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="34.2"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="34.200001"
                  xlink:href="#m4dbe0e418b"
-                 y="42.257144"
-                 id="use4999" />
+                 y="42.257145"
+                 id="use4999"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
@@ -1791,11 +1992,13 @@
             <g
                id="g5006">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
+                 style="stroke:#000000;stroke-width:0.5"
                  x="145.8"
                  xlink:href="#m261422411e"
-                 y="42.257144"
-                 id="use5004" />
+                 y="42.257145"
+                 id="use5004"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
         </g>
@@ -1806,11 +2009,13 @@
             <g
                id="g5012">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="34.2"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="34.200001"
                  xlink:href="#m4dbe0e418b"
-                 y="41.367891"
-                 id="use5010" />
+                 y="41.367889"
+                 id="use5010"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
@@ -1818,11 +2023,13 @@
             <g
                id="g5017">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
+                 style="stroke:#000000;stroke-width:0.5"
                  x="145.8"
                  xlink:href="#m261422411e"
-                 y="41.367891"
-                 id="use5015" />
+                 y="41.367889"
+                 id="use5015"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
         </g>
@@ -1833,11 +2040,13 @@
             <g
                id="g5023">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="34.2"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="34.200001"
                  xlink:href="#m4dbe0e418b"
                  y="35.339222"
-                 id="use5021" />
+                 id="use5021"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
@@ -1845,11 +2054,13 @@
             <g
                id="g5028">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
+                 style="stroke:#000000;stroke-width:0.5"
                  x="145.8"
                  xlink:href="#m261422411e"
                  y="35.339222"
-                 id="use5026" />
+                 id="use5026"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
         </g>
@@ -1860,11 +2071,13 @@
             <g
                id="g5034">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="34.2"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="34.200001"
                  xlink:href="#m4dbe0e418b"
-                 y="32.277994"
-                 id="use5032" />
+                 y="32.277992"
+                 id="use5032"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
@@ -1872,11 +2085,13 @@
             <g
                id="g5039">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
+                 style="stroke:#000000;stroke-width:0.5"
                  x="145.8"
                  xlink:href="#m261422411e"
-                 y="32.277994"
-                 id="use5037" />
+                 y="32.277992"
+                 id="use5037"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
         </g>
@@ -1887,11 +2102,13 @@
             <g
                id="g5045">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="34.2"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="34.200001"
                  xlink:href="#m4dbe0e418b"
-                 y="30.106017"
-                 id="use5043" />
+                 y="30.106016"
+                 id="use5043"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
@@ -1899,11 +2116,13 @@
             <g
                id="g5050">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
+                 style="stroke:#000000;stroke-width:0.5"
                  x="145.8"
                  xlink:href="#m261422411e"
-                 y="30.106017"
-                 id="use5048" />
+                 y="30.106016"
+                 id="use5048"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
         </g>
@@ -1914,11 +2133,13 @@
             <g
                id="g5056">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="34.2"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="34.200001"
                  xlink:href="#m4dbe0e418b"
                  y="28.421301"
-                 id="use5054" />
+                 id="use5054"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
@@ -1926,11 +2147,13 @@
             <g
                id="g5061">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
+                 style="stroke:#000000;stroke-width:0.5"
                  x="145.8"
                  xlink:href="#m261422411e"
                  y="28.421301"
-                 id="use5059" />
+                 id="use5059"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
         </g>
@@ -1941,11 +2164,13 @@
             <g
                id="g5067">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="34.2"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="34.200001"
                  xlink:href="#m4dbe0e418b"
                  y="27.044788"
-                 id="use5065" />
+                 id="use5065"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
@@ -1953,11 +2178,13 @@
             <g
                id="g5072">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
+                 style="stroke:#000000;stroke-width:0.5"
                  x="145.8"
                  xlink:href="#m261422411e"
                  y="27.044788"
-                 id="use5070" />
+                 id="use5070"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
         </g>
@@ -1968,11 +2195,13 @@
             <g
                id="g5078">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="34.2"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="34.200001"
                  xlink:href="#m4dbe0e418b"
-                 y="25.880963"
-                 id="use5076" />
+                 y="25.880962"
+                 id="use5076"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
@@ -1980,11 +2209,13 @@
             <g
                id="g5083">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
+                 style="stroke:#000000;stroke-width:0.5"
                  x="145.8"
                  xlink:href="#m261422411e"
-                 y="25.880963"
-                 id="use5081" />
+                 y="25.880962"
+                 id="use5081"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
         </g>
@@ -1995,11 +2226,13 @@
             <g
                id="g5089">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="34.2"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="34.200001"
                  xlink:href="#m4dbe0e418b"
                  y="24.872812"
-                 id="use5087" />
+                 id="use5087"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
@@ -2007,11 +2240,13 @@
             <g
                id="g5094">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
+                 style="stroke:#000000;stroke-width:0.5"
                  x="145.8"
                  xlink:href="#m261422411e"
                  y="24.872812"
-                 id="use5092" />
+                 id="use5092"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
         </g>
@@ -2022,11 +2257,13 @@
             <g
                id="g5100">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="34.2"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="34.200001"
                  xlink:href="#m4dbe0e418b"
                  y="23.983559"
-                 id="use5098" />
+                 id="use5098"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
@@ -2034,11 +2271,13 @@
             <g
                id="g5105">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
+                 style="stroke:#000000;stroke-width:0.5"
                  x="145.8"
                  xlink:href="#m261422411e"
                  y="23.983559"
-                 id="use5103" />
+                 id="use5103"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
         </g>
@@ -2049,11 +2288,13 @@
             <g
                id="g5111">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="34.2"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="34.200001"
                  xlink:href="#m4dbe0e418b"
                  y="17.954891"
-                 id="use5109" />
+                 id="use5109"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
@@ -2061,11 +2302,13 @@
             <g
                id="g5116">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
+                 style="stroke:#000000;stroke-width:0.5"
                  x="145.8"
                  xlink:href="#m261422411e"
                  y="17.954891"
-                 id="use5114" />
+                 id="use5114"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
         </g>
@@ -2076,11 +2319,13 @@
             <g
                id="g5122">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="34.2"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="34.200001"
                  xlink:href="#m4dbe0e418b"
                  y="14.893662"
-                 id="use5120" />
+                 id="use5120"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
@@ -2088,11 +2333,13 @@
             <g
                id="g5127">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
+                 style="stroke:#000000;stroke-width:0.5"
                  x="145.8"
                  xlink:href="#m261422411e"
                  y="14.893662"
-                 id="use5125" />
+                 id="use5125"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
         </g>
@@ -2103,11 +2350,13 @@
             <g
                id="g5133">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="34.2"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="34.200001"
                  xlink:href="#m4dbe0e418b"
                  y="12.721685"
-                 id="use5131" />
+                 id="use5131"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
@@ -2115,11 +2364,13 @@
             <g
                id="g5138">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
+                 style="stroke:#000000;stroke-width:0.5"
                  x="145.8"
                  xlink:href="#m261422411e"
                  y="12.721685"
-                 id="use5136" />
+                 id="use5136"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
         </g>
@@ -2130,11 +2381,13 @@
             <g
                id="g5144">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="34.2"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="34.200001"
                  xlink:href="#m4dbe0e418b"
                  y="11.03697"
-                 id="use5142" />
+                 id="use5142"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
@@ -2142,11 +2395,13 @@
             <g
                id="g5149">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
+                 style="stroke:#000000;stroke-width:0.5"
                  x="145.8"
                  xlink:href="#m261422411e"
                  y="11.03697"
-                 id="use5147" />
+                 id="use5147"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
         </g>
@@ -2157,11 +2412,13 @@
             <g
                id="g5155">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="34.2"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="34.200001"
                  xlink:href="#m4dbe0e418b"
-                 y="9.660457"
-                 id="use5153" />
+                 y="9.6604567"
+                 id="use5153"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
@@ -2169,11 +2426,13 @@
             <g
                id="g5160">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
+                 style="stroke:#000000;stroke-width:0.5"
                  x="145.8"
                  xlink:href="#m261422411e"
-                 y="9.660457"
-                 id="use5158" />
+                 y="9.6604567"
+                 id="use5158"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
         </g>
@@ -2184,11 +2443,13 @@
             <g
                id="g5166">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="34.2"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="34.200001"
                  xlink:href="#m4dbe0e418b"
-                 y="8.496631"
-                 id="use5164" />
+                 y="8.4966307"
+                 id="use5164"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
@@ -2196,11 +2457,13 @@
             <g
                id="g5171">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
+                 style="stroke:#000000;stroke-width:0.5"
                  x="145.8"
                  xlink:href="#m261422411e"
-                 y="8.496631"
-                 id="use5169" />
+                 y="8.4966307"
+                 id="use5169"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
         </g>
@@ -2211,11 +2474,13 @@
             <g
                id="g5177">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="34.2"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="34.200001"
                  xlink:href="#m4dbe0e418b"
-                 y="7.48848"
-                 id="use5175" />
+                 y="7.4884801"
+                 id="use5175"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
@@ -2223,11 +2488,13 @@
             <g
                id="g5182">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
+                 style="stroke:#000000;stroke-width:0.5"
                  x="145.8"
                  xlink:href="#m261422411e"
-                 y="7.48848"
-                 id="use5180" />
+                 y="7.4884801"
+                 id="use5180"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
         </g>
@@ -2238,11 +2505,13 @@
             <g
                id="g5188">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="34.2"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="34.200001"
                  xlink:href="#m4dbe0e418b"
-                 y="6.599228"
-                 id="use5186" />
+                 y="6.5992279"
+                 id="use5186"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
@@ -2250,11 +2519,13 @@
             <g
                id="g5193">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
+                 style="stroke:#000000;stroke-width:0.5"
                  x="145.8"
                  xlink:href="#m261422411e"
-                 y="6.599228"
-                 id="use5191" />
+                 y="6.5992279"
+                 id="use5191"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
         </g>
@@ -2265,11 +2536,13 @@
             <g
                id="g5199">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
-                 x="34.2"
+                 style="stroke:#000000;stroke-width:0.5"
+                 x="34.200001"
                  xlink:href="#m4dbe0e418b"
-                 y="0.570559"
-                 id="use5197" />
+                 y="0.57055902"
+                 id="use5197"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
           <g
@@ -2277,11 +2550,13 @@
             <g
                id="g5204">
               <use
-                 style="stroke:#000000;stroke-width:0.5;"
+                 style="stroke:#000000;stroke-width:0.5"
                  x="145.8"
                  xlink:href="#m261422411e"
-                 y="0.570559"
-                 id="use5202" />
+                 y="0.57055902"
+                 id="use5202"
+                 width="100%"
+                 height="100%" />
             </g>
           </g>
         </g>
@@ -2289,412 +2564,511 @@
            id="text_13">
           <!-- $\it{I_{D}}$ (A) -->
           <g
-             transform="translate(7.3 66.76)rotate(-90)"
-             id="g5216">
-            <text
-               id="text5214"><tspan
-                 style="font-family:DejaVu Sans;font-size:10px;font-style:oblique;font-weight:oblique;"
-                 x="0"
-                 y="-0.703125"
-                 id="tspan5208">I</tspan><tspan
-                 style="font-family:DejaVu Sans;font-size:7px;font-style:oblique;font-weight:oblique;"
-                 x="2.949219"
-                 y="0.9375"
-                 id="tspan5210">D</tspan><tspan
-                 style="font-family:Arial;font-size:10px;font-style:regular;font-weight:regular;"
-                 x="8.612793 11.391113 14.721191 21.391113"
-                 y="-0.703125"
-                 id="tspan5212"> (A)</tspan></text>
-          </g>
+             transform="rotate(-90,37.03,29.73)"
+             id="g5216" />
         </g>
       </g>
       <g
          id="line2d_145">
         <path
            clip-path="url(#p6f054de2e7)"
-           d="M 42.654545 93.172835  L 46.036364 81.182944  L 56.181818 69.805035  L 59.563636 54.578748  L 62.945455 41.30454  L 66.327273 33.746946  L 69.709091 31.38397  L 73.090909 30.31868  L 76.472727 29.547038  L 79.854545 28.758435  L 83.236364 27.901982  L 86.618182 27.116837  L 90 26.29807  L 93.381818 25.44354  L 96.763636 24.569692  L 100.145455 23.788536  L 103.527273 22.488428  L 106.909091 21.24354  L 110.290909 19.710835  L 113.672727 17.944513  L 117.054545 16.053386  L 120.436364 14.092163  L 123.818182 12.254621  L 127.2 10.453781  L 130.581818 8.878998  L 133.963636 7.375968  L 137.345455 6.105964  L 140.727273 4.941818  L 140.727273 6.808237  L 137.345455 13.859355  L 133.963636 21.892684  L 130.581818 38.308559  L 127.2 65.411833  L 123.818182 99.136373  L 117.054545 103.778182  L 113.672727 98.794283  L 106.909091 99.24859  L 103.527273 97.84703  L 100.145455 98.161347  L 96.763636 98.848775  L 93.381818 98.980703  L 90 99.238212  L 86.618182 99.154844  L 83.236364 99.186912  L 79.854545 99.207708  L 76.472727 99.13788  L 73.090909 99.332956  L 69.709091 99.345778  L 66.327273 99.032259  L 62.945455 99.049085  L 59.563636 100.102386  L 56.181818 98.193793  L 52.8 100.434741  L 49.418182 99.587916  L 46.036364 99.634701  L 42.654545 99.66173  L 39.272727 99.867844  "
-           style="fill:none;stroke:#377eb8;stroke-linecap:square;stroke-width:1.5;"
+           d="m 42.654545,93.172835 3.381819,-11.989891 10.145454,-11.377909 3.381818,-15.226287 3.381819,-13.274208 3.381818,-7.557594 3.381818,-2.362976 3.381818,-1.06529 3.381818,-0.771642 3.381818,-0.788603 3.381819,-0.856453 3.381818,-0.785145 L 90,26.29807 l 3.381818,-0.85453 3.381818,-0.873848 3.381814,-0.781156 3.38182,-1.300108 3.38182,-1.244888 3.38182,-1.532705 3.38182,-1.766322 3.38182,-1.891127 3.38181,-1.961223 3.38182,-1.837542 3.38182,-1.80084 3.38182,-1.574783 3.38182,-1.50303 3.38181,-1.270004 3.38182,-1.164146 v 1.866419 l -3.38182,7.051118 -3.38181,8.033329 -3.38182,16.415875 -3.38182,27.103274 -3.38182,33.72454 -6.76363,4.641807 -3.38182,-4.983897 -6.76364,0.454307 -3.38182,-1.40156 -3.38182,0.314317 -3.381814,0.687428 -3.381818,0.131928 L 90,99.238212 l -3.381818,-0.08337 -3.381818,0.03207 -3.381819,0.0208 -3.381818,-0.06983 -3.381818,0.195076 -3.381818,0.01282 -3.381818,-0.313519 -3.381818,0.01683 -3.381819,1.053301 -3.381818,-1.908593 -3.381818,2.240943 -3.381818,-0.84682 -3.381818,0.04678 -3.381819,0.02703 -3.381818,0.206114"
+           style="fill:none;stroke:#377eb8;stroke-width:1.5;stroke-linecap:square"
            id="path5220" />
         <defs
            id="defs5223">
           <path
-             d="M 0 0.75  C 0.198902 0.75 0.389685 0.670975 0.53033 0.53033  C 0.670975 0.389685 0.75 0.198902 0.75 0  C 0.75 -0.198902 0.670975 -0.389685 0.53033 -0.53033  C 0.389685 -0.670975 0.198902 -0.75 0 -0.75  C -0.198902 -0.75 -0.389685 -0.670975 -0.53033 -0.53033  C -0.670975 -0.389685 -0.75 -0.198902 -0.75 0  C -0.75 0.198902 -0.670975 0.389685 -0.53033 0.53033  C -0.389685 0.670975 -0.198902 0.75 0 0.75  z "
+             d="M 0,0.75 C 0.198902,0.75 0.389685,0.670975 0.53033,0.53033 0.670975,0.389685 0.75,0.198902 0.75,0 0.75,-0.198902 0.670975,-0.389685 0.53033,-0.53033 0.389685,-0.670975 0.198902,-0.75 0,-0.75 c -0.198902,0 -0.389685,0.079025 -0.53033,0.21967 C -0.670975,-0.389685 -0.75,-0.198902 -0.75,0 c 0,0.198902 0.079025,0.389685 0.21967,0.53033 C -0.389685,0.670975 -0.198902,0.75 0,0.75 Z"
              id="mbc048895ac"
-             style="stroke:#377eb8;" />
+             style="stroke:#377eb8" />
         </defs>
         <g
            clip-path="url(#p6f054de2e7)"
            id="g5339">
           <use
-             style="fill:#377eb8;stroke:#377eb8;"
+             style="fill:#377eb8;stroke:#377eb8"
              x="42.654545"
              xlink:href="#mbc048895ac"
-             y="93.172835"
-             id="use5225" />
+             y="93.172836"
+             id="use5225"
+             width="100%"
+             height="100%" />
           <use
-             style="fill:#377eb8;stroke:#377eb8;"
-             x="46.036364"
+             style="fill:#377eb8;stroke:#377eb8"
+             x="46.036366"
              xlink:href="#mbc048895ac"
-             y="81.182944"
-             id="use5227" />
+             y="81.182945"
+             id="use5227"
+             width="100%"
+             height="100%" />
           <use
-             style="fill:#377eb8;stroke:#377eb8;"
-             x="56.181818"
+             style="fill:#377eb8;stroke:#377eb8"
+             x="56.181816"
              xlink:href="#mbc048895ac"
-             y="69.805035"
-             id="use5229" />
+             y="69.805038"
+             id="use5229"
+             width="100%"
+             height="100%" />
           <use
-             style="fill:#377eb8;stroke:#377eb8;"
-             x="59.563636"
+             style="fill:#377eb8;stroke:#377eb8"
+             x="59.563637"
              xlink:href="#mbc048895ac"
-             y="54.578748"
-             id="use5231" />
+             y="54.578747"
+             id="use5231"
+             width="100%"
+             height="100%" />
           <use
-             style="fill:#377eb8;stroke:#377eb8;"
-             x="62.945455"
+             style="fill:#377eb8;stroke:#377eb8"
+             x="62.945454"
              xlink:href="#mbc048895ac"
-             y="41.30454"
-             id="use5233" />
+             y="41.304539"
+             id="use5233"
+             width="100%"
+             height="100%" />
           <use
-             style="fill:#377eb8;stroke:#377eb8;"
-             x="66.327273"
+             style="fill:#377eb8;stroke:#377eb8"
+             x="66.327271"
              xlink:href="#mbc048895ac"
-             y="33.746946"
-             id="use5235" />
+             y="33.746944"
+             id="use5235"
+             width="100%"
+             height="100%" />
           <use
-             style="fill:#377eb8;stroke:#377eb8;"
+             style="fill:#377eb8;stroke:#377eb8"
              x="69.709091"
              xlink:href="#mbc048895ac"
              y="31.38397"
-             id="use5237" />
+             id="use5237"
+             width="100%"
+             height="100%" />
           <use
-             style="fill:#377eb8;stroke:#377eb8;"
-             x="73.090909"
+             style="fill:#377eb8;stroke:#377eb8"
+             x="73.090912"
              xlink:href="#mbc048895ac"
              y="30.31868"
-             id="use5239" />
+             id="use5239"
+             width="100%"
+             height="100%" />
           <use
-             style="fill:#377eb8;stroke:#377eb8;"
-             x="76.472727"
+             style="fill:#377eb8;stroke:#377eb8"
+             x="76.472725"
              xlink:href="#mbc048895ac"
-             y="29.547038"
-             id="use5241" />
+             y="29.547037"
+             id="use5241"
+             width="100%"
+             height="100%" />
           <use
-             style="fill:#377eb8;stroke:#377eb8;"
-             x="79.854545"
+             style="fill:#377eb8;stroke:#377eb8"
+             x="79.854546"
              xlink:href="#mbc048895ac"
-             y="28.758435"
-             id="use5243" />
+             y="28.758434"
+             id="use5243"
+             width="100%"
+             height="100%" />
           <use
-             style="fill:#377eb8;stroke:#377eb8;"
-             x="83.236364"
+             style="fill:#377eb8;stroke:#377eb8"
+             x="83.236366"
              xlink:href="#mbc048895ac"
-             y="27.901982"
-             id="use5245" />
+             y="27.901981"
+             id="use5245"
+             width="100%"
+             height="100%" />
           <use
-             style="fill:#377eb8;stroke:#377eb8;"
-             x="86.618182"
+             style="fill:#377eb8;stroke:#377eb8"
+             x="86.618179"
              xlink:href="#mbc048895ac"
              y="27.116837"
-             id="use5247" />
+             id="use5247"
+             width="100%"
+             height="100%" />
           <use
-             style="fill:#377eb8;stroke:#377eb8;"
+             style="fill:#377eb8;stroke:#377eb8"
              x="90"
              xlink:href="#mbc048895ac"
-             y="26.29807"
-             id="use5249" />
+             y="26.298071"
+             id="use5249"
+             width="100%"
+             height="100%" />
           <use
-             style="fill:#377eb8;stroke:#377eb8;"
-             x="93.381818"
+             style="fill:#377eb8;stroke:#377eb8"
+             x="93.381821"
              xlink:href="#mbc048895ac"
-             y="25.44354"
-             id="use5251" />
+             y="25.443541"
+             id="use5251"
+             width="100%"
+             height="100%" />
           <use
-             style="fill:#377eb8;stroke:#377eb8;"
-             x="96.763636"
+             style="fill:#377eb8;stroke:#377eb8"
+             x="96.763634"
              xlink:href="#mbc048895ac"
-             y="24.569692"
-             id="use5253" />
+             y="24.569693"
+             id="use5253"
+             width="100%"
+             height="100%" />
           <use
-             style="fill:#377eb8;stroke:#377eb8;"
-             x="100.145455"
+             style="fill:#377eb8;stroke:#377eb8"
+             x="100.14545"
              xlink:href="#mbc048895ac"
              y="23.788536"
-             id="use5255" />
+             id="use5255"
+             width="100%"
+             height="100%" />
           <use
-             style="fill:#377eb8;stroke:#377eb8;"
-             x="103.527273"
+             style="fill:#377eb8;stroke:#377eb8"
+             x="103.52728"
              xlink:href="#mbc048895ac"
              y="22.488428"
-             id="use5257" />
+             id="use5257"
+             width="100%"
+             height="100%" />
           <use
-             style="fill:#377eb8;stroke:#377eb8;"
-             x="106.909091"
+             style="fill:#377eb8;stroke:#377eb8"
+             x="106.90909"
              xlink:href="#mbc048895ac"
              y="21.24354"
-             id="use5259" />
+             id="use5259"
+             width="100%"
+             height="100%" />
           <use
-             style="fill:#377eb8;stroke:#377eb8;"
-             x="110.290909"
+             style="fill:#377eb8;stroke:#377eb8"
+             x="110.29091"
              xlink:href="#mbc048895ac"
              y="19.710835"
-             id="use5261" />
+             id="use5261"
+             width="100%"
+             height="100%" />
           <use
-             style="fill:#377eb8;stroke:#377eb8;"
-             x="113.672727"
+             style="fill:#377eb8;stroke:#377eb8"
+             x="113.67273"
              xlink:href="#mbc048895ac"
              y="17.944513"
-             id="use5263" />
+             id="use5263"
+             width="100%"
+             height="100%" />
           <use
-             style="fill:#377eb8;stroke:#377eb8;"
-             x="117.054545"
+             style="fill:#377eb8;stroke:#377eb8"
+             x="117.05454"
              xlink:href="#mbc048895ac"
-             y="16.053386"
-             id="use5265" />
+             y="16.053387"
+             id="use5265"
+             width="100%"
+             height="100%" />
           <use
-             style="fill:#377eb8;stroke:#377eb8;"
-             x="120.436364"
+             style="fill:#377eb8;stroke:#377eb8"
+             x="120.43636"
              xlink:href="#mbc048895ac"
              y="14.092163"
-             id="use5267" />
+             id="use5267"
+             width="100%"
+             height="100%" />
           <use
-             style="fill:#377eb8;stroke:#377eb8;"
-             x="123.818182"
+             style="fill:#377eb8;stroke:#377eb8"
+             x="123.81818"
              xlink:href="#mbc048895ac"
              y="12.254621"
-             id="use5269" />
+             id="use5269"
+             width="100%"
+             height="100%" />
           <use
-             style="fill:#377eb8;stroke:#377eb8;"
+             style="fill:#377eb8;stroke:#377eb8"
              x="127.2"
              xlink:href="#mbc048895ac"
              y="10.453781"
-             id="use5271" />
+             id="use5271"
+             width="100%"
+             height="100%" />
           <use
-             style="fill:#377eb8;stroke:#377eb8;"
-             x="130.581818"
+             style="fill:#377eb8;stroke:#377eb8"
+             x="130.58182"
              xlink:href="#mbc048895ac"
-             y="8.878998"
-             id="use5273" />
+             y="8.8789978"
+             id="use5273"
+             width="100%"
+             height="100%" />
           <use
-             style="fill:#377eb8;stroke:#377eb8;"
-             x="133.963636"
+             style="fill:#377eb8;stroke:#377eb8"
+             x="133.96364"
              xlink:href="#mbc048895ac"
              y="7.375968"
-             id="use5275" />
+             id="use5275"
+             width="100%"
+             height="100%" />
           <use
-             style="fill:#377eb8;stroke:#377eb8;"
-             x="137.345455"
+             style="fill:#377eb8;stroke:#377eb8"
+             x="137.34546"
              xlink:href="#mbc048895ac"
-             y="6.105964"
-             id="use5277" />
+             y="6.1059642"
+             id="use5277"
+             width="100%"
+             height="100%" />
           <use
-             style="fill:#377eb8;stroke:#377eb8;"
-             x="140.727273"
+             style="fill:#377eb8;stroke:#377eb8"
+             x="140.72728"
              xlink:href="#mbc048895ac"
-             y="4.941818"
-             id="use5279" />
+             y="4.9418182"
+             id="use5279"
+             width="100%"
+             height="100%" />
           <use
-             style="fill:#377eb8;stroke:#377eb8;"
-             x="140.727273"
+             style="fill:#377eb8;stroke:#377eb8"
+             x="140.72728"
              xlink:href="#mbc048895ac"
-             y="6.808237"
-             id="use5281" />
+             y="6.8082371"
+             id="use5281"
+             width="100%"
+             height="100%" />
           <use
-             style="fill:#377eb8;stroke:#377eb8;"
-             x="137.345455"
+             style="fill:#377eb8;stroke:#377eb8"
+             x="137.34546"
              xlink:href="#mbc048895ac"
              y="13.859355"
-             id="use5283" />
+             id="use5283"
+             width="100%"
+             height="100%" />
           <use
-             style="fill:#377eb8;stroke:#377eb8;"
-             x="133.963636"
+             style="fill:#377eb8;stroke:#377eb8"
+             x="133.96364"
              xlink:href="#mbc048895ac"
-             y="21.892684"
-             id="use5285" />
+             y="21.892685"
+             id="use5285"
+             width="100%"
+             height="100%" />
           <use
-             style="fill:#377eb8;stroke:#377eb8;"
-             x="130.581818"
+             style="fill:#377eb8;stroke:#377eb8"
+             x="130.58182"
              xlink:href="#mbc048895ac"
              y="38.308559"
-             id="use5287" />
+             id="use5287"
+             width="100%"
+             height="100%" />
           <use
-             style="fill:#377eb8;stroke:#377eb8;"
+             style="fill:#377eb8;stroke:#377eb8"
              x="127.2"
              xlink:href="#mbc048895ac"
-             y="65.411833"
-             id="use5289" />
+             y="65.411835"
+             id="use5289"
+             width="100%"
+             height="100%" />
           <use
-             style="fill:#377eb8;stroke:#377eb8;"
-             x="123.818182"
+             style="fill:#377eb8;stroke:#377eb8"
+             x="123.81818"
              xlink:href="#mbc048895ac"
-             y="99.136373"
-             id="use5291" />
+             y="99.136375"
+             id="use5291"
+             width="100%"
+             height="100%" />
           <use
-             style="fill:#377eb8;stroke:#377eb8;"
-             x="117.054545"
+             style="fill:#377eb8;stroke:#377eb8"
+             x="117.05454"
              xlink:href="#mbc048895ac"
-             y="103.778182"
-             id="use5293" />
+             y="103.77818"
+             id="use5293"
+             width="100%"
+             height="100%" />
           <use
-             style="fill:#377eb8;stroke:#377eb8;"
-             x="113.672727"
+             style="fill:#377eb8;stroke:#377eb8"
+             x="113.67273"
              xlink:href="#mbc048895ac"
-             y="98.794283"
-             id="use5295" />
+             y="98.794281"
+             id="use5295"
+             width="100%"
+             height="100%" />
           <use
-             style="fill:#377eb8;stroke:#377eb8;"
-             x="106.909091"
+             style="fill:#377eb8;stroke:#377eb8"
+             x="106.90909"
              xlink:href="#mbc048895ac"
-             y="99.24859"
-             id="use5297" />
+             y="99.248589"
+             id="use5297"
+             width="100%"
+             height="100%" />
           <use
-             style="fill:#377eb8;stroke:#377eb8;"
-             x="103.527273"
+             style="fill:#377eb8;stroke:#377eb8"
+             x="103.52728"
              xlink:href="#mbc048895ac"
-             y="97.84703"
-             id="use5299" />
+             y="97.847031"
+             id="use5299"
+             width="100%"
+             height="100%" />
           <use
-             style="fill:#377eb8;stroke:#377eb8;"
-             x="100.145455"
+             style="fill:#377eb8;stroke:#377eb8"
+             x="100.14545"
              xlink:href="#mbc048895ac"
-             y="98.161347"
-             id="use5301" />
+             y="98.161346"
+             id="use5301"
+             width="100%"
+             height="100%" />
           <use
-             style="fill:#377eb8;stroke:#377eb8;"
-             x="96.763636"
+             style="fill:#377eb8;stroke:#377eb8"
+             x="96.763634"
              xlink:href="#mbc048895ac"
-             y="98.848775"
-             id="use5303" />
+             y="98.848778"
+             id="use5303"
+             width="100%"
+             height="100%" />
           <use
-             style="fill:#377eb8;stroke:#377eb8;"
-             x="93.381818"
+             style="fill:#377eb8;stroke:#377eb8"
+             x="93.381821"
              xlink:href="#mbc048895ac"
-             y="98.980703"
-             id="use5305" />
+             y="98.980705"
+             id="use5305"
+             width="100%"
+             height="100%" />
           <use
-             style="fill:#377eb8;stroke:#377eb8;"
+             style="fill:#377eb8;stroke:#377eb8"
              x="90"
              xlink:href="#mbc048895ac"
-             y="99.238212"
-             id="use5307" />
+             y="99.238213"
+             id="use5307"
+             width="100%"
+             height="100%" />
           <use
-             style="fill:#377eb8;stroke:#377eb8;"
-             x="86.618182"
+             style="fill:#377eb8;stroke:#377eb8"
+             x="86.618179"
              xlink:href="#mbc048895ac"
-             y="99.154844"
-             id="use5309" />
+             y="99.154846"
+             id="use5309"
+             width="100%"
+             height="100%" />
           <use
-             style="fill:#377eb8;stroke:#377eb8;"
-             x="83.236364"
+             style="fill:#377eb8;stroke:#377eb8"
+             x="83.236366"
              xlink:href="#mbc048895ac"
-             y="99.186912"
-             id="use5311" />
+             y="99.186913"
+             id="use5311"
+             width="100%"
+             height="100%" />
           <use
-             style="fill:#377eb8;stroke:#377eb8;"
-             x="79.854545"
+             style="fill:#377eb8;stroke:#377eb8"
+             x="79.854546"
              xlink:href="#mbc048895ac"
-             y="99.207708"
-             id="use5313" />
+             y="99.20771"
+             id="use5313"
+             width="100%"
+             height="100%" />
           <use
-             style="fill:#377eb8;stroke:#377eb8;"
-             x="76.472727"
+             style="fill:#377eb8;stroke:#377eb8"
+             x="76.472725"
              xlink:href="#mbc048895ac"
-             y="99.13788"
-             id="use5315" />
+             y="99.137878"
+             id="use5315"
+             width="100%"
+             height="100%" />
           <use
-             style="fill:#377eb8;stroke:#377eb8;"
-             x="73.090909"
+             style="fill:#377eb8;stroke:#377eb8"
+             x="73.090912"
              xlink:href="#mbc048895ac"
-             y="99.332956"
-             id="use5317" />
+             y="99.332954"
+             id="use5317"
+             width="100%"
+             height="100%" />
           <use
-             style="fill:#377eb8;stroke:#377eb8;"
+             style="fill:#377eb8;stroke:#377eb8"
              x="69.709091"
              xlink:href="#mbc048895ac"
-             y="99.345778"
-             id="use5319" />
+             y="99.345779"
+             id="use5319"
+             width="100%"
+             height="100%" />
           <use
-             style="fill:#377eb8;stroke:#377eb8;"
-             x="66.327273"
+             style="fill:#377eb8;stroke:#377eb8"
+             x="66.327271"
              xlink:href="#mbc048895ac"
-             y="99.032259"
-             id="use5321" />
+             y="99.032257"
+             id="use5321"
+             width="100%"
+             height="100%" />
           <use
-             style="fill:#377eb8;stroke:#377eb8;"
-             x="62.945455"
+             style="fill:#377eb8;stroke:#377eb8"
+             x="62.945454"
              xlink:href="#mbc048895ac"
-             y="99.049085"
-             id="use5323" />
+             y="99.049088"
+             id="use5323"
+             width="100%"
+             height="100%" />
           <use
-             style="fill:#377eb8;stroke:#377eb8;"
-             x="59.563636"
+             style="fill:#377eb8;stroke:#377eb8"
+             x="59.563637"
              xlink:href="#mbc048895ac"
-             y="100.102386"
-             id="use5325" />
+             y="100.10239"
+             id="use5325"
+             width="100%"
+             height="100%" />
           <use
-             style="fill:#377eb8;stroke:#377eb8;"
-             x="56.181818"
+             style="fill:#377eb8;stroke:#377eb8"
+             x="56.181816"
              xlink:href="#mbc048895ac"
-             y="98.193793"
-             id="use5327" />
+             y="98.193794"
+             id="use5327"
+             width="100%"
+             height="100%" />
           <use
-             style="fill:#377eb8;stroke:#377eb8;"
-             x="52.8"
+             style="fill:#377eb8;stroke:#377eb8"
+             x="52.799999"
              xlink:href="#mbc048895ac"
-             y="100.434741"
-             id="use5329" />
+             y="100.43474"
+             id="use5329"
+             width="100%"
+             height="100%" />
           <use
-             style="fill:#377eb8;stroke:#377eb8;"
+             style="fill:#377eb8;stroke:#377eb8"
              x="49.418182"
              xlink:href="#mbc048895ac"
-             y="99.587916"
-             id="use5331" />
+             y="99.587914"
+             id="use5331"
+             width="100%"
+             height="100%" />
           <use
-             style="fill:#377eb8;stroke:#377eb8;"
-             x="46.036364"
+             style="fill:#377eb8;stroke:#377eb8"
+             x="46.036366"
              xlink:href="#mbc048895ac"
-             y="99.634701"
-             id="use5333" />
+             y="99.634705"
+             id="use5333"
+             width="100%"
+             height="100%" />
           <use
-             style="fill:#377eb8;stroke:#377eb8;"
+             style="fill:#377eb8;stroke:#377eb8"
              x="42.654545"
              xlink:href="#mbc048895ac"
-             y="99.66173"
-             id="use5335" />
+             y="99.661728"
+             id="use5335"
+             width="100%"
+             height="100%" />
           <use
-             style="fill:#377eb8;stroke:#377eb8;"
-             x="39.272727"
+             style="fill:#377eb8;stroke:#377eb8"
+             x="39.272728"
              xlink:href="#mbc048895ac"
              y="99.867844"
-             id="use5337" />
+             id="use5337"
+             width="100%"
+             height="100%" />
         </g>
       </g>
       <g
          id="patch_3">
         <path
-           d="M 34.2 108.72  L 34.2 0  "
-           style="fill:none;stroke:#000000;stroke-linecap:square;stroke-linejoin:miter;stroke-width:0.5;"
+           d="M 34.2,108.72 V 0"
+           style="fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:square;stroke-linejoin:miter"
            id="path5342" />
       </g>
       <g
          id="patch_4">
         <path
-           d="M 145.8 108.72  L 145.8 0  "
-           style="fill:none;stroke:#000000;stroke-linecap:square;stroke-linejoin:miter;stroke-width:0.5;"
+           d="M 145.8,108.72 V 0"
+           style="fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:square;stroke-linejoin:miter"
            id="path5345" />
       </g>
       <g
          id="patch_5">
         <path
-           d="M 34.2 108.72  L 145.8 108.72  "
-           style="fill:none;stroke:#000000;stroke-linecap:square;stroke-linejoin:miter;stroke-width:0.5;"
+           d="M 34.2,108.72 H 145.8"
+           style="fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:square;stroke-linejoin:miter"
            id="path5348" />
       </g>
       <g
          id="patch_6">
         <path
-           d="M 34.2 0  L 145.8 0  "
-           style="fill:none;stroke:#000000;stroke-linecap:square;stroke-linejoin:miter;stroke-width:0.5;"
+           d="M 34.2,0 H 145.8"
+           style="fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:square;stroke-linejoin:miter"
            id="path5351" />
       </g>
     </g>
@@ -2706,48 +3080,74 @@
       <rect
          height="108.72"
          width="111.6"
-         x="34.2"
+         x="34.200001"
          y="0"
          id="rect5356" />
     </clipPath>
   </defs>
-  <g
-     id="g11456"
-     transform="translate(-11.491091,-15.655526)"
-     style="stroke-linecap:butt;stroke-linejoin:round">
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.00002px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;white-space:pre;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.749999;stroke-linecap:butt;stroke-linejoin:round"
-       x="55.040165"
-       y="26.479759"
-       id="text5770"><tspan
-         sodipodi:role="line"
-         id="tspan5768"
-         style="white-space:pre;stroke-width:0.749999;stroke-linecap:butt;stroke-linejoin:round"
-         x="55.040165"
-         y="26.479759">Sample C</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.00002px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;white-space:pre;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.749999;stroke-linecap:butt;stroke-linejoin:round"
-       x="54.39954"
-       y="35.912025"
-       id="text5774"><tspan
-         sodipodi:role="line"
-         id="tspan5772"
-         style="white-space:pre;stroke-width:0.749999;stroke-linecap:butt;stroke-linejoin:round"
-         x="54.39954"
-         y="35.912025"><tspan
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.00002px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;white-space:pre;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.749999;stroke-linecap:butt;stroke-linejoin:round"
+     x="43.549072"
+     y="12.864219"
+     id="text5770"><tspan
+       sodipodi:role="line"
+       id="tspan5768"
+       style="white-space:pre;stroke-width:0.749999;stroke-linecap:butt;stroke-linejoin:round"
+       x="43.549072"
+       y="12.864219">Sample C</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.00002px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;white-space:pre;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.749999;stroke-linecap:butt;stroke-linejoin:round"
+     x="42.908447"
+     y="22.296486"
+     id="text5774"><tspan
+       sodipodi:role="line"
+       id="tspan5772"
+       style="white-space:pre;stroke-width:0.749999;stroke-linecap:butt;stroke-linejoin:round"
+       x="42.908447"
+       y="22.296486"><tspan
    style="font-style:italic;white-space:pre;stroke-width:0.749999;stroke-linecap:butt;stroke-linejoin:round"
    id="tspan5776">T</tspan> = 100 K</tspan></text>
-  </g>
+  <text
+     xml:space="preserve"
+     style="font-size:9.99997px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
+     x="-68.295334"
+     y="7.280252"
+     id="text1198"
+     transform="rotate(-90)"><tspan
+       sodipodi:role="line"
+       id="tspan1196"
+       x="-68.295334"
+       y="7.280252"
+       style="stroke-width:0.75"><tspan
+   style="font-style:italic"
+   id="tspan1200">I<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan1202">D</tspan></tspan> (A)</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:9.99997px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
+     x="75.643478"
+     y="128.30083"
+     id="text1208"><tspan
+       sodipodi:role="line"
+       id="tspan1206"
+       x="75.643478"
+       y="128.30083"
+       style="stroke-width:0.75"><tspan
+   style="font-style:italic"
+   id="tspan1210">V<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan1212">G</tspan></tspan> (V)</tspan></text>
   <path
      style="white-space:pre;fill:none;fill-opacity:1;stroke:#5f5f5f;stroke-width:1.41732;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker16547)"
-     d="M 61.205569,64.62397 65.504157,45.701694"
+     d="M 61.205569,66.663956 65.504157,47.74168"
      id="path38841"
      inkscape:connector-curvature="0" />
   <path
      style="white-space:pre;fill:none;fill-opacity:1;stroke:#5f5f5f;stroke-width:1.41732;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker16435)"
-     d="m 126.61879,43.912123 -2.59431,19.230186"
+     d="m 126.61879,45.952109 -2.59431,19.230186"
      id="path38841-4"
      inkscape:connector-curvature="0" />
 </svg>

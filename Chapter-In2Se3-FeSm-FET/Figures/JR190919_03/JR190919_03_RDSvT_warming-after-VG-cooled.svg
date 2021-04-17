@@ -14,7 +14,7 @@
    width="141.003252pt"
    id="svg2538"
    sodipodi:docname="JR190919_03_RDSvT_warming-after-VG-cooled.svg"
-   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)">
+   inkscape:version="1.0.2 (e86c870879, 2021-01-15, custom)">
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -24,17 +24,18 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1920"
+     inkscape:window-width="1838"
      inkscape:window-height="1051"
      id="namedview2540"
      showgrid="false"
      inkscape:zoom="3.6692156"
      inkscape:cx="94.002167"
      inkscape:cy="85.576874"
-     inkscape:window-x="1920"
-     inkscape:window-y="0"
+     inkscape:window-x="73"
+     inkscape:window-y="-9"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg2538" />
+     inkscape:current-layer="svg2538"
+     inkscape:document-rotation="0" />
   <metadata
      id="metadata2">
     <rdf:RDF>
@@ -581,14 +582,12 @@
              id="g220">
             <text
                id="text218"><tspan
-                 style="font-family:DejaVu Sans;font-size:10px;font-style:oblique;font-weight:oblique;"
-                 x="0"
-                 y="-0.703125"
-                 id="tspan214">T</tspan><tspan
-                 style="font-family:Arial;font-size:10px;font-style:regular;font-weight:regular;"
-                 x="6.108398 8.886719 12.216797 18.886719"
-                 y="-0.703125"
-                 id="tspan216"> (K)</tspan></text>
+                 style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;font-family:Arial;-inkscape-font-specification:'Arial Italic'"
+                 x="0 6.108398 8.8867188 12.216797 18.886719"
+                 y="-0.703125 -0.703125"
+                 id="tspan214">T <tspan
+   style="font-style:normal"
+   id="tspan2215">(K)</tspan></tspan></text>
           </g>
         </g>
       </g>
@@ -1752,22 +1751,7 @@
           <!-- $\it{R_{DS}}$ (Ω) -->
           <g
              transform="translate(7.3 71.36)rotate(-90)"
-             id="g709">
-            <text
-               id="text707"><tspan
-                 style="font-family:DejaVu Sans;font-size:10px;font-style:oblique;font-weight:oblique;"
-                 x="0"
-                 y="-0.703125"
-                 id="tspan701">R</tspan><tspan
-                 style="font-family:DejaVu Sans;font-size:7px;font-style:oblique;font-weight:oblique;"
-                 x="6.948242 12.338379"
-                 y="0.9375"
-                 id="tspan703">DS</tspan><tspan
-                 style="font-family:Arial;font-size:10px;font-style:regular;font-weight:regular;"
-                 x="17.055176 19.833496 23.163574 30.63916"
-                 y="-0.703125"
-                 id="tspan705"> (Ω)</tspan></text>
-          </g>
+             id="g709" />
         </g>
       </g>
       <g
@@ -7316,4 +7300,20 @@
        y="37.529285"
        style="font-size:8.00003px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.75px"
        id="tspan8810" /></text>
+  <text
+     xml:space="preserve"
+     style="font-size:9.99998px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;stroke-width:0.75"
+     x="-70.996323"
+     y="7.2802587"
+     id="text2219"
+     transform="rotate(-90)"><tspan
+       sodipodi:role="line"
+       id="tspan2217"
+       x="-70.996323"
+       y="7.2802587"
+       style="stroke-width:0.75"><tspan
+   style="font-style:italic"
+   id="tspan2221">R<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan2223">DS</tspan></tspan> (Ω)</tspan></text>
 </svg>

@@ -612,12 +612,12 @@ def main(): #sample D
                           ylim=(None,None), fontsize=10, labelsize=10)
     
     # -- Cross section of loop data --
-    if True or show_all:
+    if False or show_all:
         mp.plot_loopR_cross_section(fileroot, RTloop_filenames, "_JR190815_04_RDS", increments=[0,25,50,75],\
                                       figsize=2, log=True, xlim=(None, None),ylim=(None, None))
     
     # -- 300K ID vs VDS curves
-    if False or show_all:
+    if True or show_all:
         plot_300K_IDvsVDS(figsize=2, log=False)
         plot_300K_IDvsVDS(figsize=2, log=True)
 

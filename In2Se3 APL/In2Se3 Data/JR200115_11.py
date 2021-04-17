@@ -490,7 +490,7 @@ def main(): #sample A
                           ylim=(10**-10,None), fontsize=10, labelsize=10)
     
     # -- Cross section of loop data
-    if False or show_all:
+    if True or show_all:
         mp.plot_loopR_cross_section(fileroot, RTloop_filenames, "_JR200115_11", figsize=1.5, ylim=(0, 1.5), log=False)
         mp.plot_loopR_cross_section(fileroot, RTloop_filenames, "_JR200115_11_inset", figsize=.7, \
                                       log=False, increments=[75], fontsize=10, labelsize=10, colororder=[1])
@@ -498,8 +498,8 @@ def main(): #sample A
                                       xlim=(None, None), ylim=(None, None), log=True, increments=[0, 25, 50, 75], colororder=[0, 3,2,1])
         mp.plot_loopR_cross_section(fileroot, RTloop_filenames, "_JR200115_11", figsize=2,\
                                       xlim=(None, None), ylim=(None, None), log=False, increments=[25, 50, 75], colororder=[3,2,1])
-        #mp.plot_loopR_cross_section(fileroot, RTloop_filenames, "_JR200115_11", figsize=2, ylim=(None, None),\
-        #                              log=True, increments=[0, 25, 50, 75], colororder=[0,3,2,1])
+        mp.plot_loopR_cross_section(fileroot, RTloop_filenames, "_JR200115_11_more", figsize=2, ylim=(None, None),\
+                                      log=True, increments=[-15, -10, -5, 0, 25, 50, 75], colororder=[4,5,6, 0,3,2,1])
     
     # -- 300K ID vs VDS curves
     if False or show_all:

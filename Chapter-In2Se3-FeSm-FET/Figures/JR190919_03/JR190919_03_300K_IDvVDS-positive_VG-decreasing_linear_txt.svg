@@ -13,8 +13,8 @@
    viewBox="0 0 139.271023 128.010625"
    width="139.271023pt"
    id="svg849"
-   sodipodi:docname="_JR190919_03_300K_positive_decreasing_IDvsVDS_linear.svg"
-   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)">
+   sodipodi:docname="JR190919_03_300K_IDvVDS-positive_VG-decreasing_linear_txt.svg"
+   inkscape:version="1.0.2 (e86c870879, 2021-01-15, custom)">
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -24,17 +24,18 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="718"
-     inkscape:window-height="480"
+     inkscape:window-width="1838"
+     inkscape:window-height="1051"
      id="namedview851"
      showgrid="false"
-     inkscape:zoom="1.3008581"
-     inkscape:cx="67.853874"
-     inkscape:cy="59.905126"
-     inkscape:window-x="60"
-     inkscape:window-y="0"
-     inkscape:window-maximized="0"
-     inkscape:current-layer="svg849" />
+     inkscape:zoom="3.6793823"
+     inkscape:cx="87.595932"
+     inkscape:cy="108.65193"
+     inkscape:window-x="73"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg849"
+     inkscape:document-rotation="0" />
   <metadata
      id="metadata2">
     <rdf:RDF>
@@ -449,18 +450,7 @@
           <!-- $\it{%sV_{DS}}$ (V) -->
           <g
              transform="translate(74.032813 126.023125)"
-             id="g162">
-            <text
-               id="text160"><tspan
-                 style="font-family:DejaVu Sans;font-size:10px;font-style:book;font-weight:book;"
-                 x="0 3.178711 13.920898"
-                 y="-0.40625"
-                 id="tspan156"> ()</tspan><tspan
-                 style="font-family:DejaVu Sans;font-size:10px;font-style:oblique;font-weight:oblique;"
-                 x="7.080078"
-                 y="-0.40625"
-                 id="tspan158">V</tspan></text>
-          </g>
+             id="g162" />
         </g>
       </g>
       <g
@@ -1218,22 +1208,7 @@
           <!-- $\it{I_{D}}$ (nA) -->
           <g
              transform="translate(7.3 69.51)rotate(-90)"
-             id="g476">
-            <text
-               id="text474"><tspan
-                 style="font-family:DejaVu Sans;font-size:10px;font-style:oblique;font-weight:oblique;"
-                 x="0"
-                 y="-0.703125"
-                 id="tspan468">I</tspan><tspan
-                 style="font-family:DejaVu Sans;font-size:7px;font-style:oblique;font-weight:oblique;"
-                 x="2.949219"
-                 y="0.9375"
-                 id="tspan470">D</tspan><tspan
-                 style="font-family:Arial;font-size:10px;font-style:regular;font-weight:regular;"
-                 x="8.612793 11.391113 14.721191 20.282715 26.952637"
-                 y="-0.703125"
-                 id="tspan472"> (nA)</tspan></text>
-          </g>
+             id="g476" />
         </g>
       </g>
       <g
@@ -2362,4 +2337,35 @@
      d="M 44.80286,43.254339 V 63.532147"
      id="path5792"
      inkscape:connector-curvature="0" />
+  <text
+     xml:space="preserve"
+     style="font-size:9.99997px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;stroke-width:0.75"
+     x="66.639481"
+     y="125.90614"
+     id="text1350"><tspan
+       sodipodi:role="line"
+       id="tspan1348"
+       x="66.639481"
+       y="125.90614"
+       style="stroke-width:0.75"><tspan
+   style="font-style:italic"
+   id="tspan1356">V<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan1358">DS</tspan></tspan> (V)</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:9.99997px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;stroke-width:0.75"
+     x="-69.036102"
+     y="7.280252"
+     id="text1354"
+     transform="rotate(-90)"><tspan
+       sodipodi:role="line"
+       id="tspan1352"
+       x="-69.036102"
+       y="7.280252"
+       style="stroke-width:0.75"><tspan
+   style="font-style:italic"
+   id="tspan1362">I<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan1364">D</tspan></tspan> (nA)</tspan></text>
 </svg>
