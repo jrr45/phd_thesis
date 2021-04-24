@@ -96,6 +96,18 @@ status open
 Sample fabrication and measurement methods
 \end_layout
 
+\begin_layout Standard
+This chapter serves as an overview of the experimental techniques used or
+ referenced in other chapters.
+ A brief summary of each technique and some of the relevant applications
+ to the overall discussion are described.
+ For some methods, additional specific details are given in an effort to
+ make any reproduction of experimental results or other future works as
+ efficient as possible.
+ A description of the reasoning behind a few experimental choices are also
+ provided for context.
+\end_layout
+
 \begin_layout Section
 Introduction
 \end_layout
@@ -286,7 +298,7 @@ Flake generation
 \end_layout
 
 \begin_layout Subsection
-Alignment marker wafer chips
+Manufacturing alignment marker wafer chips
 \end_layout
 
 \begin_layout Standard
@@ -783,6 +795,10 @@ ing thicknesses, and then create a partial color code (e) for
 \end_layout
 
 \begin_layout Section
+Thin crystal characterization
+\end_layout
+
+\begin_layout Subsection
 Scanning probe microscopy
 \end_layout
 
@@ -818,7 +834,7 @@ noprefix "false"
  shows the the typical setup of most SPM microscopes.
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 Atomic force microscopy
 \end_layout
 
@@ -1217,7 +1233,7 @@ literal "true"
  NanoScope Analysis (v2.0).
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 Piezoresponse force microscopy
 \end_layout
 
@@ -1455,12 +1471,12 @@ literal "true"
 \end_inset
 
 .
- In the first method, the voltage is increased and decreased in a positive
+ In the first method, the bias voltage is increased and decreased in a positive
  to negative loop at a single point on the surface.
  Past the positive and negative coercive fields, a domain begins to nucleate
  and spreads out with time and increasing voltage.
- This shows a hysteresis in phase and amplitude in ferroelectric materials,
- shown in figure 
+ In ferroelectrics this shows a butterfly-like hysteresis in phase and loop-like
+ hysteresis in amplitude, as seen in figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:PFM-and-ferroelectric-materials"
@@ -1550,7 +1566,616 @@ tric, but still can be an excellent tool to used to study properties of
  ferroelectric materials such as domain propagation.
 \end_layout
 
+\begin_layout Subsection
+Optical second harmonic generation
+\end_layout
+
+\begin_layout Standard
+A process frequently used to study crystal structure and material properties
+ is optical second harmonic generation (SHG).
+ A single frequency laser is used to measure the crystal medium.
+ As can be inferred from its name, pairs of photons interact with the medium
+ and generate photons at twice the initial frequency.
+ Keeping to the electric field contribution, this nonlinear process is described
+ mathematically as
+\begin_inset Formula 
+\begin{equation}
+P\left(2\omega\right)=\chi^{\left(2\right)}E\left(\omega\right)E\left(\omega\right)
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $P$
+\end_inset
+
+ is the induced dipole per unit volume, 
+\begin_inset Formula $E\left(\omega\right)$
+\end_inset
+
+ the electric field from a photon with frequency 
+\begin_inset Formula $\omega$
+\end_inset
+
+, and 
+\begin_inset Formula $\chi$
+\end_inset
+
+ the three-rank nonlinear susceptibility tensor of the material
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ma2020richinformation"
+literal "true"
+
+\end_inset
+
+.
+ If we approximate 
+\begin_inset Formula $\chi$
+\end_inset
+
+ in a multipole expansion
+\begin_inset Formula 
+\[
+\chi^{\left(2\right)}\left(\omega,\vec{q}\right)\ensuremath{\approx}\chi_{ED}^{\left(2\right)}\left(\omega\right)+\chi_{EQ}^{\left(2\right)}\left(\omega\right)+O\left(\vec{q}^{2}\right)
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $q$
+\end_inset
+
+ is the wave vector of the incident photon, 
+\begin_inset Formula $\chi_{ED}$
+\end_inset
+
+ is the electric dipole contribution, and 
+\begin_inset Formula $\chi_{EQ}$
+\end_inset
+
+ electric quadrupole
+\begin_inset CommandInset citation
+LatexCommand cite
+key "denev2011probing"
+literal "true"
+
+\end_inset
+
+.
+ Typically the quadrupole response is much smaller than the dipole, though
+ it can still be measured and gives valuable information about some crystal
+ structures, but we can neglect it for this discussion.
+ The 
+\begin_inset Formula $\chi_{EQ}$
+\end_inset
+
+ tensor is constrained by several symmetries giving it just 10 independent
+ parameters, but most importantly it goes to 
+\begin_inset Formula $\chi_{EQ,ijk}=0$
+\end_inset
+
+ in a centrosymmetric system.
+ As ferroelectricity can only exist in non-centrosymmetric systems, SHG
+ response is an important test to see if a crystal is a possible ferroelectric
+ material.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "denev2011probing"
+literal "true"
+
+\end_inset
+
+ While it can not identify ferroelectricity, SHG can quickly screen out
+ non-ferroelectric materials, and can measure 2D crystals down to a single
+ layer
+\begin_inset CommandInset citation
+LatexCommand cite
+key "leisgang2018optical"
+literal "true"
+
+\end_inset
+
+.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Optical-second-harmonic-generation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ shows a simplified setup of how this can be done in practice.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/10.1088_2053-1583_aba564_figure1 - schematic.jpg
+	lyxscale 10
+	width 10cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Optical second harmonic generation
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Optical-second-harmonic-generation"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Schematic of an optical second harmonic measurement setup.
+ Laser light (starting from the left left) passes through a dichroic mirror
+ and is focused on a crystal medium.
+ Generated light is reflected back through the lens and partially reflects
+ of the mirror (to the top left) so that the intensity of the generated-reflecte
+d light may be measured.
+ Used with permission of IOP Publishing, (ref 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "murray2020secondharmonic"
+literal "true"
+
+\end_inset
+
+) “Second harmonic generation in two-dimensional transition metal dichalcogenide
+s with growth and post-synthesis defects,” Murray et al., 2D Materials, 7(4),
+ 2020; permission conveyed through Copyright Clearance Center, Inc.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+One of the notable advantages of SHG is its ability to measure materials
+ down to a single layer thick.
+ SHG intensity scans across a material may be used to identify structural
+ transitions such as grain boundaries
+\begin_inset CommandInset citation
+LatexCommand cite
+key "murray2020secondharmonic"
+literal "true"
+
+\end_inset
+
+.
+ At a grain boundary or defect, photons can interfere with each other destructiv
+ely resulting in a decrease in output intensity compared to a uniform crystal.
+ Another area in which SHG excels is identifying phase transitions, such
+ as a paraelectric to ferroelectric temperature transition, though the slope
+ of the change in response intensity.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "guan2020recentprogress"
+literal "true"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Using polarized light, the SHG measurement of the electric dipole term can
+ help determine the spacial symmetry of a crystal.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "mennel2018optical"
+literal "true"
+
+\end_inset
+
+ The intensity of the light response is given by 
+\begin_inset Formula 
+\begin{align}
+I_{\parallel} & =I\cos^{2}\left(3\theta\right)\\
+I_{\perp} & =I\sin^{2}\left(3\theta\right)
+\end{align}
+
+\end_inset
+
+where 
+\begin_inset Formula $\theta$
+\end_inset
+
+ is the angle between the laser light and the crystalline armchair direction,
+ 
+\begin_inset Formula $I_{\parallel}$
+\end_inset
+
+ and 
+\begin_inset Formula $I_{\perp}$
+\end_inset
+
+ are the parallel and perpendicular polarization-resolved intensity.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "li2013probing"
+literal "true"
+
+\end_inset
+
+ Polarization resolved SHG is often used in place of TEM and other more
+ resource intensive tools to identify crystal polymorphs as it can be done
+ quickly and cheaply.
+ A Ti:Sapphire femtosecond laser (150 fs, 80 MHz) with a wavelength centered
+ around 
+\begin_inset Formula $\lambda=800nn$
+\end_inset
+
+ was used for the measurements reported here, along with a 
+\begin_inset Formula $\lambda/4$
+\end_inset
+
+ wave plate to followed by a linear polarizer that could be freely rotated
+ for both the excitation and generated photon beam
+\begin_inset CommandInset citation
+LatexCommand cite
+key "murray2020nonlinear"
+literal "true"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Raman (TODO: figures, review)
+\end_layout
+
+\begin_layout Standard
+Another optical process often used for crystal characterization of 2D materials
+ is Raman spectroscopy, that uses the inelastic scattering of photons to
+ measure vibration modes in the material.
+ A laser is used to excite electrons in into a higher virtual energy state.
+ Most electrons will drop back down to the initial energy level and emit
+ a photon with the same frequency as the initial photons, a process known
+ as Rayleigh scattering.
+ A small percentage of the electrons will interact with phonons or other
+ excited states.
+ When those electrons return to a lower energy level they emit a photon
+ with lower (higher) energy and frequency in a process known as (Anti-)Stokes
+ scattering.
+ To quantify this, the frequencies of emitted light light are spatially
+ separated using a diffraction grating and their relative intensity recorded.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "zhang2015phononand,liang2018ramanspectroscopy,wu2019structural"
+literal "true"
+
+\end_inset
+
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Raman-Spectroscopy"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+a shows the three aforementioned scattering mechanisms and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Raman-Spectroscopy"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+b a simplified Raman setup.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/Raman scattering.svg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Scattering mechanisms
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/Raman schematic.svg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Schematic
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/Raman WS2 2017_09_28_11_05_41_film_duospot_30um_01.svg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Response from 
+\begin_inset Formula $\mathrm{WS_{2}}$
+\end_inset
+
+ film
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Raman Spectroscopy
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Raman-Spectroscopy"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+(a) Three of the scattering mechanisms of monochromatic light seen in Raman
+ spectroscopy measurements: Rayleigh, Stokes, and Anti-Stokes.
+ Each absorbs a photon for a charges particle to reach an excited state
+ in a virtual band before dropping back down to the virtual state and emitting
+ a photon with the respectively same, less, and more energy than the absorbed
+ photon.
+ (b) A simplified Raman measurement system.
+ Monochromatic light is directed onto a sample then the emitted light is
+ separated out using a grating before being measured using a CCD camera.
+ Polarizers included in some measurements are shown as well.
+ (c) Data from a 
+\begin_inset Formula $\mathrm{WS_{2}}$
+\end_inset
+
+ film taken at room temperature showing two distinctive peaks using a Horiba
+ LabRam HR Evolution microscope.
+ These peaks are typically found around 360 nm (
+\begin_inset Formula $\text{\mathrm{E_{g2}^{1}}}$
+\end_inset
+
+) and 420 nm (
+\begin_inset Formula $\text{\mathrm{A_{1g}}}$
+\end_inset
+
+)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "mccreary2016synthesis"
+literal "true"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The resulting light forms distinct peaks at different frequencies that correspon
+d to the vibration modes of the material, similar to what is shown in figure
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Raman-Spectroscopy"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+c.
+ By looking for specific peak frequencies for a given material it is possible
+ to identify or narrow down the possible polymorphs of a 2D crystal
+\begin_inset CommandInset citation
+LatexCommand cite
+key "wu2019structural,liang2018ramanspectroscopy"
+literal "true"
+
+\end_inset
+
+.
+ This provides a quick, nondestructive method to distinguish materials and
+ properties of a material, similar to SHG.
+ Raman spectroscopy can also use relative intensity of different peaks to
+ distinguish the number of layers of a van der Waals material
+\begin_inset CommandInset citation
+LatexCommand cite
+key "nguyen2014excitation,zhang2015phononand"
+literal "true"
+
+\end_inset
+
+ as well as identify defects within the crystal structure when mapping over
+ the surface
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kim2012ramanspectroscopy,fujisawa2018effectof"
+literal "true"
+
+\end_inset
+
+.
+ All Raman measurements discussed here were done using a Renishaw inVia
+ Raman or Horiba LabRam HR Evolution microscope.
+ Software was used to remove the substrate signal from the background and
+ can fit the peaks to find the wavelength shift for each maximum.
+ 
+\end_layout
+
+\begin_layout Standard
+Raman spectroscopy can be used to to look for signs of ferroelectricity
+ or transition to a ferroelectric state.
+ This is often done by monitoring for Raman modes appear (disappear) correspondi
+ng to the structural transition to a ferroelectric (paraelectric) state
+ while changing temperature
+\begin_inset CommandInset citation
+LatexCommand cite
+key "jin2019ramaninterrogation,tsukada2018ramanscattering"
+literal "true"
+
+\end_inset
+
+, pressure
+\begin_inset CommandInset citation
+LatexCommand cite
+key "swain2020understanding"
+literal "true"
+
+\end_inset
+
+, or other mechanisms.
+ Raman spectroscopy can also be enhanced to used polarized measurements
+ by including rotatable linear polarizers on the excitation and emitted
+ photon beams
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kim2020polarized"
+literal "true"
+
+\end_inset
+
+.
+ This can give additional information about the orientation of the crystal
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kim2020polarized,gabel2021understanding"
+literal "true"
+
+\end_inset
+
+, separate signal from different modes
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kim2020polarized,tsukada2020multivariate,tsukada2018ramanscattering2"
+literal "true"
+
+\end_inset
+
+, and show atomic displacements
+\begin_inset CommandInset citation
+LatexCommand cite
+key "de2021femtometer"
+literal "true"
+
+\end_inset
+
+.
+ 
+\end_layout
+
 \begin_layout Section
+Device manufacture
+\end_layout
+
+\begin_layout Subsection
 Photolithography 
 \end_layout
 
@@ -1600,7 +2225,7 @@ noprefix "false"
  a patterned etch of the substrate or testing device.
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 LOR/SPR stack
 \begin_inset CommandInset label
 LatexCommand label
@@ -1975,7 +2600,7 @@ The resist polymer, chemical developers, and liftoff solvents used in the
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 PMMA/PMGI/SPR stack for alkali-sensitive materials
 \begin_inset CommandInset label
 LatexCommand label
@@ -2279,7 +2904,7 @@ Three of the resist stacks used in device manufacture.
 
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Thin filament shadow mask
 \end_layout
 
@@ -2451,7 +3076,7 @@ Filament device
 
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Metal evaporation and liftoff
 \begin_inset CommandInset label
 LatexCommand label
@@ -2556,8 +3181,8 @@ noprefix "false"
  while the rest of the process was the same.
 \end_layout
 
-\begin_layout Section
-Sample wiring (TODO: figures)
+\begin_layout Subsection
+Sample wiring
 \end_layout
 
 \begin_layout Standard
@@ -2598,7 +3223,17 @@ Sample flake and film crystals were typically a few tens of microns across
  wire to prevent it from coming into contact with any part of the sample
  or other wires.
  This process was repeated for each of the wiring pads on the device.
- 
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Sample-wiring"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+a shows a sample wired to a PPMS puck using this method.
 \end_layout
 
 \begin_layout Standard
@@ -2623,7 +3258,17 @@ literal "false"
 
 \end_inset
 
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Sample-wiring"
+plural "false"
+caps "false"
+noprefix "false"
 
+\end_inset
+
+b shows the setup typically used to prevent static discharge into the sample.
 \end_layout
 
 \begin_layout Standard
@@ -2633,12 +3278,23 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset space \hfill{}
+\end_inset
+
+
 \begin_inset Float figure
 wide false
 sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/Wiring PPMS puck.svg
+	width 8cm
+	groupId wiring
+
+\end_inset
+
 
 \end_layout
 
@@ -2657,29 +3313,20 @@ PPMS puck with wired sample and tweezers
 \end_inset
 
 
-\end_layout
+\begin_inset space \hfill{}
+\end_inset
 
-\begin_layout Plain Layout
+
 \begin_inset Float figure
 wide false
 sideways false
 status open
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Wiring station setup
-\end_layout
-
-\end_inset
-
-
-\end_layout
+\begin_inset Graphics
+	filename Figures/Wiring station.svg
+	width 8cm
+	groupId wiring
 
 \end_inset
 
@@ -2690,12 +3337,7 @@ Wiring station setup
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Wiring
-\end_layout
-
-\end_inset
-
-TODO: figure, wiring
+Wiring station
 \end_layout
 
 \end_inset
@@ -2703,282 +3345,65 @@ TODO: figure, wiring
 
 \end_layout
 
-\begin_layout Section
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sample wiring
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Sample-wiring"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+(a) A PPMS puck with substrate chip, etched film, and evaporated wiring
+ pads.
+ The wiring pads are connected to the PPMS puck using indium dots and gold
+ wires.
+ The modified tweezers are also shown.
+ (b) The larger wiring station setup to prevent static discharge into the
+ sample.
+ A ionizing fan blows air across the sample while wiring to prevent static
+ buildup.
+ The person wiring is isolated from the floor and table using grounded mats.
+ They are also connected to the same ground using an additional cable and
+ conductive strap that ties around an arm.
+ The soldering iron is used to attach gold wires to the sample mount.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
 Layer Transfer? (TODO: after I figure it out)
 \end_layout
 
 \begin_layout Section
+Device characterization
+\end_layout
+
+\begin_layout Subsection
 Electronics, Hall probe (TODO)
 \end_layout
 
-\begin_layout Section
-Optical second harmonic generation
-\end_layout
-
-\begin_layout Standard
-A process frequently used to study crystal structure and material properties
- is optical second harmonic generation (SHG).
- A single frequency laser is used to measure the crystal medium.
- As can be inferred from its name, pairs of photons interact with the medium
- and generate photons at twice the initial frequency.
- Keeping to the electric field contribution, this nonlinear process is described
- mathematically as
-\begin_inset Formula 
-\begin{equation}
-P\left(2\omega\right)=\chi^{\left(2\right)}E\left(\omega\right)E\left(\omega\right)
-\end{equation}
-
-\end_inset
-
-where 
-\begin_inset Formula $P$
-\end_inset
-
- is the induced dipole per unit volume, 
-\begin_inset Formula $E\left(\omega\right)$
-\end_inset
-
- the electric field from a photon with frequency 
-\begin_inset Formula $\omega$
-\end_inset
-
-, and 
-\begin_inset Formula $\chi$
-\end_inset
-
- the three-rank nonlinear susceptibility tensor of the material.
- If we approximate 
-\begin_inset Formula $\chi$
-\end_inset
-
- in a multipole expansion
-\begin_inset Formula 
-\[
-\chi^{\left(2\right)}\left(\omega,\vec{q}\right)\ensuremath{\approx}\chi_{ED}^{\left(2\right)}\left(\omega\right)+\chi_{EQ}^{\left(2\right)}\left(\omega\right)+O\left(\vec{q}^{2}\right)
-\]
-
-\end_inset
-
-where 
-\begin_inset Formula $q$
-\end_inset
-
- is the wave vector of the incident photon, 
-\begin_inset Formula $\chi_{ED}$
-\end_inset
-
- is the electric dipole contribution, and 
-\begin_inset Formula $\chi_{EQ}$
-\end_inset
-
- electric quadrupole
-\begin_inset CommandInset citation
-LatexCommand cite
-key "denev2011probing"
-literal "true"
-
-\end_inset
-
-.
- Typically the quadrupole response is much smaller than the dipole, though
- it can still be measured and gives valuable information about some crystal
- structures, but we can neglect it for this discussion.
- The 
-\begin_inset Formula $\chi_{EQ}$
-\end_inset
-
- tensor is constrained by several symmetries giving it just 10 independent
- parameters, but most importantly it goes to 
-\begin_inset Formula $\chi_{EQ,ijk}=0$
-\end_inset
-
- in a centrosymmetric system.
- As ferroelectricity can only exist in non-centrosymmetric systems, SHG
- response is an important test to see if a crystal is a possible ferroelectric
- material.
-\begin_inset CommandInset citation
-LatexCommand cite
-key "denev2011probing"
-literal "true"
-
-\end_inset
-
- While it can not identify ferroelectricity, SHG can quickly screen out
- non-ferroelectric materials, and can measure 2D crystals down to a single
- layer
-\begin_inset CommandInset citation
-LatexCommand cite
-key "leisgang2018optical"
-literal "true"
-
-\end_inset
-
-.
- Figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Optical-second-harmonic-generation"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- shows a simplified setup of how this can be done in practice.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/10.1088_2053-1583_aba564_figure1 - schematic.jpg
-	lyxscale 10
-	width 10cm
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Optical second harmonic generation
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Optical-second-harmonic-generation"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-Schematic of an optical second harmonic measurement setup.
- Laser light (starting from the left left) passes through a dichroic mirror
- and is focused on a crystal medium.
- Generated light is reflected back through the lens and partially reflects
- of the mirror (to the top left) so that the intensity of the generated-reflecte
-d light may be measured.
- Used with permission of IOP Publishing, from 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "murray2020secondharmonic"
-literal "true"
-
-\end_inset
-
-“Second harmonic generation in two-dimensional transition metal dichalcogenides
- with growth and post-synthesis defects,” Murray et al., 2D Materials, 7(4),
- 2020; permission conveyed through Copyright Clearance Center, Inc.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-One of the notable advantages of SHG is its ability to measure materials
- down to a single layer thick.
- SHG intensity scans across a material may be used to identify structural
- transitions such as grain boundaries
-\begin_inset CommandInset citation
-LatexCommand cite
-key "murray2020secondharmonic"
-literal "true"
-
-\end_inset
-
-.
- At a grain boundary or defect, photons can interfere with each other destructiv
-ely resulting in a decrease in output intensity compared to a uniform crystal.
- Another area in which SHG excels is identifying phase transitions, such
- as a paraelectric to ferroelectric temperature transition, though the slope
- of the change in response intensity.
-\end_layout
-
-\begin_layout Standard
-Using polarized light, the SHG measurement of the electric dipole term can
- help determine the spacial symmetry of a crystal.
-\begin_inset CommandInset citation
-LatexCommand cite
-key "mennel2018optical"
-literal "true"
-
-\end_inset
-
- The intensity of the light response is given by 
-\begin_inset Formula 
-\begin{align}
-I_{\parallel} & =I\cos^{2}\left(3\theta\right)\\
-I_{\perp} & =I\sin^{2}\left(3\theta\right)
-\end{align}
-
-\end_inset
-
-where 
-\begin_inset Formula $\theta$
-\end_inset
-
- is the angle between the laser light and the crystalline armchair direction,
- 
-\begin_inset Formula $I_{\parallel}$
-\end_inset
-
- and 
-\begin_inset Formula $I_{\perp}$
-\end_inset
-
- are the parallel and perpendicular polarization-resolved intensity.
-\begin_inset CommandInset citation
-LatexCommand cite
-key "li2013probing"
-literal "true"
-
-\end_inset
-
- Polarization resolved SHG is often used in place of TEM and other more
- resource intensive tools to identify crystal polymorphs as it can be done
- quickly and cheaply.
- A Ti:Sapphire femtosecond laser (150 fs, 80 MHz) with a wavelength centered
- around 
-\begin_inset Formula $\lambda=800nn$
-\end_inset
-
- was used for the measurements reported here, along with a 
-\begin_inset Formula $\lambda/4$
-\end_inset
-
- wave plate to followed by a linear polarizer that could be freely rotated
- for both the excitation and generated photon beam
-\begin_inset CommandInset citation
-LatexCommand cite
-key "murray2020nonlinear"
-literal "true"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Section
-Raman (TODO)
-\end_layout
-
-\begin_layout Section
-Polarization (TODO)
+\begin_layout Subsection
+Polarization? (TODO)
 \end_layout
 
 \end_body
