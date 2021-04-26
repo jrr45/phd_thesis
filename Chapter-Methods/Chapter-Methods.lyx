@@ -1845,7 +1845,7 @@ literal "true"
 \end_layout
 
 \begin_layout Subsection
-Raman (TODO: figures, review)
+Raman (TODO: review)
 \end_layout
 
 \begin_layout Standard
@@ -1903,11 +1903,13 @@ status open
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Figures/Raman scattering.svg
+	width 5cm
+	groupId Raman
 
 \end_inset
 
@@ -1936,11 +1938,13 @@ Scattering mechanisms
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Figures/Raman schematic.svg
+	width 5cm
+	groupId Raman
 
 \end_inset
 
@@ -1969,11 +1973,13 @@ Schematic
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Figures/Raman WS2 2017_09_28_11_05_41_film_duospot_30um_01.svg
+	width 5cm
+	groupId Raman
 
 \end_inset
 
@@ -3391,7 +3397,71 @@ name "fig:Sample-wiring"
 \end_layout
 
 \begin_layout Subsection
-Layer Transfer? (TODO: after I figure it out)
+Layer Transfer (TODO: figure?, review)
+\end_layout
+
+\begin_layout Standard
+Layer Transfer a method to create complex heterostructures of 2D materials,
+ typically flakes, by vertically stacking multiple materials.
+ Stacked heterostructures can take advantage of the distinct properties
+ of each material without the lower layers altering the growth of subsequent
+ compounds.
+ We began by making thin stamps of PDMS (polydimethylsiloxane), a clear
+ resin that is commonly used for layer transfers.
+ The PDMS stamps are formed using a mix of Sylgard 184 Silicone Elastomer
+ and curing agent in a 12:1 ratio in a flat plastic or petri dish to form
+ a 1mm thin film.
+ The mix is stirred for 3 minutes, sonicated for 4 minutes on low power
+ to remove most bubbles, and any remaining bubbles in the mixture popped
+ by hand using a thin needle or rod.
+ The PDMS is then left to cure for about 12 hours, covered to avoid any
+ particle contamination.
+ The resulting film can be diced to any desired size, and applied to glass
+ slides or other flat platforms to work with.
+ Care must be taken to use a dish with a very flat bottom and it is allowed
+ to cure levelly or the surface of film will move out of microscope focus
+ under horizontal translation.
+ 
+\end_layout
+
+\begin_layout Standard
+We started by exfoliating flakes of crystal directly on to PDMS stamps and
+ identifying the flakes under the optical microscope, similar to what would
+ be done on a typical substrate.
+ This has the advantage of using the fewest steps and compounds to do the
+ transfer
+\begin_inset CommandInset citation
+LatexCommand cite
+key "frisenda2018recentprogress"
+literal "true"
+
+\end_inset
+
+ with the trade-off that flakes less than 10 nm are hard to identify on
+ the clear resin.
+ Once the desired flake on PDMS is identified it can be transferred to the
+ desired substrate.
+ The glass slide is affixed to a mount with the PDMS stamp facing down,
+ with the mount connected to a manual micro precision linear stage capable
+ in moving in any direction.
+ The target substrate is placed on a heating block directly under the stamp
+ and affixed with tape to prevent it adhering to stamp.
+ The flake and target are separately moved to the center of the field of
+ view then aligned with each other.
+ This was typically done by drawing the outline of the substrate on monitor
+ with marker and moving the flake to match.
+ The stamp is then lowered into contact with the substrate, taking into
+ account any lateral stamp-to-substrate shifting from the contact.
+ Once the flake is in contact with the desired part of the substrate the
+ underlying heating is set to 80 C, softening the PDMS.
+ While heated, the flake-substrate van der Waals bond should be stronger
+ than the PDMS-flake bond, so the slide can be removed while the flake adheres
+ to the target.
+ We also used an alternative metal slide with an optical window cut into
+ the center for the PDMS to hang from if the stamp was not flat.
+ The center of the stamp hung below the edges so the flake would always
+ be able to make contact, but the flake was more wont to shift horizontally
+ and force realignment while making contact.
 \end_layout
 
 \begin_layout Section
@@ -3399,11 +3469,11 @@ Device characterization
 \end_layout
 
 \begin_layout Subsection
-Electronics, Hall probe (TODO)
+PPMS, Electronics, Hall probe (TODO)
 \end_layout
 
-\begin_layout Subsection
-Polarization? (TODO)
+\begin_layout Subsubsection
+PPMS (TODO)
 \end_layout
 
 \end_body
