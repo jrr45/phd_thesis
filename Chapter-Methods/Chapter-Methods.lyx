@@ -3397,7 +3397,56 @@ name "fig:Sample-wiring"
 \end_layout
 
 \begin_layout Subsection
-Layer Transfer (TODO: figure?, review)
+Layer Transfer (TODO: review)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Transfer Station.svg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Layer transfer station setup
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Layer-transfer-station"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Our setup to transfer flakes on to substrates with an accuracy of a few
+ microns.
+ (left) XYZ stage with attached transfer mount, (top) Eclipse LV150 microscope
+ (Nikon), and (center) PDMS stamp on glass slide over substrate on heating
+ block.
+ 
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -3443,7 +3492,17 @@ literal "true"
  desired substrate.
  The glass slide is affixed to a mount with the PDMS stamp facing down,
  with the mount connected to a manual micro precision linear stage capable
- in moving in any direction.
+ in moving in any direction, figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Layer-transfer-station"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
  The target substrate is placed on a heating block directly under the stamp
  and affixed with tape to prevent it adhering to stamp.
  The flake and target are separately moved to the center of the field of
@@ -3468,12 +3527,216 @@ literal "true"
 Device characterization
 \end_layout
 
-\begin_layout Subsection
-PPMS, Electronics, Hall probe (TODO)
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/PPMS and Electronics.svg
+
+\end_inset
+
+
 \end_layout
 
-\begin_layout Subsubsection
-PPMS (TODO)
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+PPMS and electronics measurement system
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:PPMS-and-electronics"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Our PPMS measurement systems attached electronics used in material measurements.
+ (left) Model 6000 PPMS computer and gas handling system.
+ (middle) PPMS cryostat with High-Vacuum Option.
+ (right) Electronics measurement system connected to PPMS.
+ The breakout box and electronics are set up for a typical four-point resistance
+ or hall measurement with gating.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Electronic measurement systems (TODO: review)
+\end_layout
+
+\begin_layout Standard
+The electronic measurements of most devices were done using a series of
+ Keithley instruments and a cryostat networked to a computer.
+ Each instrument was networked through a series of GPIB (IEEE 488) cables
+ to a computer for control.
+ GPIB is an older protocol and port for connecting and working with instruments,
+ but was chosen as it worked with all electronics and cryostats used in
+ the lab.
+ It allows for daisy chaining of multiple instruments together where the
+ analog signal is amplified and passed along cables.
+ The protocol is not fault tolerant so care must be taken to ensure instruments
+ do not lock up the entire setup and communication timeouts were set appropriate
+ly to deal with instrument reliability while still providing a large enough
+ window for data to be taken.
+\end_layout
+
+\begin_layout Standard
+For semiconductor measurements a Keithley 6430 was typically used to provide
+ the DC source bias, as it had the largest voltage range and impedance option
+ of the available electronic instruments.
+ The 6430 also worked with triax cabling to reduce parasitic capacitance
+ and external EM fields.
+ It also measured current or voltage for the respective voltage and current
+ feedback loops that could be recorded for two-point data.
+ A Keithley 2400 was used to provide gating bias as it works similar to
+ the 6430 but with less range and unshielded cabling.
+ A Keithley 2182 current source was used for sourcing current with any metallic
+ samples.
+ Finally two Keithley 2182A nano-voltmeters were used in conjunction with
+ the other instruments for measuring additional voltages between leads.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:PPMS-and-electronics"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ shows the electronics setup used in material measurements.
+\end_layout
+
+\begin_layout Standard
+All instruments were controlled and monitored from a single LabView program
+ Project Unity, see 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Project-Unity"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ While LabView is a terrible language for writing a large program in it
+ was chosen because it integrated well with past code and current lab equipment.
+ Project Unity contains a series of launchers that contained easy to change
+ configurations for most measurements.
+ The launcher would then pass the configuration parameters to a separate
+ thread to process.
+ This allowed multiple measurements to be queued, and for subsequent tasks
+ and edited before being run.
+ All measurement parameters were saved in the beginning of each data file
+ in INI format to preserve as much of the state with the data, all data
+ was saved in CSV format.
+ The main thread was responsible for initial configuration of all tools,
+ setting up measurement environments, sending commands and recording instrument
+ data, as well as monitoring overall progress and instrument status.
+ A separate thread was responsible for graphing and fitting live data so
+ it did not impact the run time of the main thread.
+\end_layout
+
+\begin_layout Subsection
+PPMS (TODO: review)
+\end_layout
+
+\begin_layout Standard
+Most of the manufactured devices mentioned in this text were measured in
+ a Physical Property Measurement System (PPMS) from quantum design as it
+ provides an ideal measurement environment platform.
+ The PPMS uses sample wiring puck, figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Sample-wiring"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+a, that can be exchanged while the system is filled with liquid helium without
+ stopping and drying the system out.
+ The puck fits into an inner chamber with wiring pins.
+ The pins are connected to an external port with six pairs of twisted wire,
+ then from the port to a BNC breakout box via a single shielded cable with
+ twisted pairs of all wires.
+ This allowed us to change connections to different Keithley or other electronic
+s without removing the sample from the chamber.
+ While filled with helium the chamber could reach pressures near 0.1 mTorr
+\begin_inset CommandInset citation
+LatexCommand cite
+key "2007physical"
+literal "true"
+
+\end_inset
+
+ with the Cryopump High-Vacuum Option (Quantum Design).
+ The PPMS has a temperature range of 1.7 to 400 K with the ability to cool
+ a puck from room to base temperature in a few hours.
+ Our PPMS was equipped with a 9 T magnet, with field errors around .002 T
+ at low magnetic fields
+\begin_inset CommandInset citation
+LatexCommand cite
+key "2007physical"
+literal "true"
+
+\end_inset
+
+, allowing us to do hall and magnetoresistance measurements.
+\end_layout
+
+\begin_layout Standard
+The PPMS cryostat was run using a Model 6000 (Quantum Design) computer and
+ gas handling system, figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:PPMS-and-electronics"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ The Model 6000 controlled helium circulation and chamber temperature though
+ an integrated series of electronic valves and an external rotary vane pump
+ (Alcatel 2010SD).
+ Because helium is a finite resource, all helium gas was sent to be recovered
+ though an external helium recovery system.
+ All of the the Model 6000 computer system and options were connected to
+ the electronics control desktop computer via GPIB, except the magnet which
+ used a separate USB-connected controller.
+ This allowed the PPMS to be run both at the Model 6000 interface and with
+ the desktop program MultiVu (Quantum Design).
+ A .net SDK with LabView interface provided a way to integrate the PPMS temperatu
+re and magnetic field control into Project Unity.
+ 
+\end_layout
+
+\begin_layout Subsection
+Hall probe (TODO)
+\end_layout
+
+\begin_layout Standard
+algorithm?
 \end_layout
 
 \end_body

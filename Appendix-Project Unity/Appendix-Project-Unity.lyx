@@ -1,0 +1,509 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass psuthesis
+\options bs,schreyer
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package none
+\inputencoding auto
+\fontencoding T1
+\font_roman "lmodern" "default"
+\font_sans "default" "default"
+\font_typewriter "lmodern" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype true
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing other 1.24
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+% !TEX root = ../JustinRodriguez-Dissertation.tex
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Appendix
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+Project Unity control software
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "Project-Unity"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\size footnotesize
+Running Unity 
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+There are several <Measurement Environment> IV launchers for running typical
+ lab measurements with the same electronics setups.
+ You can select different number/type of measurement by selecting the static
+ (constant) or dynamic current and voltage tabs.
+ Individual settings will show additional information and suggestions when
+ the mouse is hovered over them.
+ There are check boxes to disable any gate voltage, temperature, field,
+ rotator position, and others measurements so the program may be run without
+ any knowledge of those components.
+ Static environment parameters allow you to set the measurement conditions
+ before and after the measurement.
+ Dynamic sequences must be set as they are always run.
+ You can create custom launchers by what dynamic and static environments
+ are handed used.
+ Adding more than one dynamic environment will allow you to do a sweep for
+ each data point in the other environment sweeps creating an ND space map
+ of each parameter.
+ The sweeps are done in order, so at each point in the first environment
+ the second environment sweep runs completely once before the first is changed.
+ This is useful if you want to vary the gate voltage at every temperature
+ to test a FET device quickly or similar setups.
+ Multiple measurement setups can also be queued, so you do not have to wait
+ for each to finish to hit “run.” If there are multiple measurements in the
+ queue, not-yet-run measurements can be edited using the “MultiSequence
+ Execution.vi”.
+ Once a sequence is started it cannot be edited without aborting and restarting.
+ The overall program progress can be monitored on “Generic ND Data Collection.vi”
+ while the data can be seen on “Generic Plot Window.vi.” Individual current
+ and voltage measurements can be monitored by using “Measure V Source I.vi”
+ and “Measure I Source V.vi.” As the dilution fridge is more complicated to
+ run the necessary VI to run and monitor it are included in the Dilution
+ Fridge folder.
+ 
+\end_layout
+
+\begin_layout Section
+
+\size footnotesize
+Main Program Structure
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+Project unity aims to take a generic transport measurement configuration
+ then automatically run that measurement while abstracting away setup.
+ Each launcher contains all the settings for a given run, 
+\begin_inset Quotes eld
+\end_inset
+
+Generic ND data collection
+\begin_inset Quotes erd
+\end_inset
+
+ runs each measurement sequence, and the data is then plotted in 
+\begin_inset Quotes eld
+\end_inset
+
+Generic Plot Window
+\begin_inset Quotes erd
+\end_inset
+
+ and written to the data file.
+ All the settings are stored in class files.
+ Classes are used in object-oriented programming (OOP) to group data with
+ functions that act on that data.
+ One of the big advantages to OOP is the ability to create a sub-class of
+ an already existing class and inherit all its functions.
+ This allows you to create special classes for each task while still retaining
+ all the original functionality.
+ Functions can optionally be overridden in the sub-class so that the sub-class
+ has its own function while the programmer using it will still be able to
+ just call the original function and not have to deal with each new specific
+ variant.
+ 
+\end_layout
+
+\begin_layout Subsection
+
+\size footnotesize
+Static Environments 
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+There are two different sets of classes: Static Environments and Dynamic
+ Environments, and several stand alone classes.
+ Static Environment provides the experimental setup before any actual measuremen
+t will run and should stay constant while the entire experiment is running.
+ There current Static Environment classes are: Static Environments all have
+ the following functions (VIs) 
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+• Read Config From File – Loads all the settings from a file into the class
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+• Write Config To File – Writes all the settings to a file from the class
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+• Configure Environment – configures all the hardware associated with the
+ static environment (PPMS, Fridge, …)
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+• Set Initial Environment – returns true/false if the environment should
+ be changed before the measurement process begins • Set Final Environment
+ – returns true/false if the environment should be changed after the measurement
+ process finishes
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+• Setup Initial Static Environment – Uses the hardware to set up the environment
+ hardware before the measurement process begins • Setup Final Static Environment
+ – Uses the hardware to set up the environment hardware after the measurement
+ process finishes
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+• Measurement Names – The column name(s) for any data taken.
+ E.g.
+ Temperature for monitoring the temperature as data is taken • Measure –
+ Record any data associated with the static environment 
+\end_layout
+
+\begin_layout Subsection
+
+\size footnotesize
+Dynamic Environments
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+Dynamic Environments change the environment over the course of a measurement.
+ The Dynamic Sequence class can be used to chain multiple Dynamic Environments
+ to execute one after another, this is different from chaining launchers
+ which is explained later.
+ Dynamic Environments all have the following functions (VIs) • Read Config
+ From File – Loads all the settings from a file into the class • Write Config
+ To File – Writes all the settings to a file from the class • Read/Write
+ Current Step N – gets/sets the current step counter of the environment
+ • Increment N – Increments the step counter • Read/Write Number of Steps
+ – gets/sets the total number of steps the environment should take
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+• Configure environment - configures all the hardware associated with the
+ static environment (PPMS, Fridge, voltmeters, …)
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+• Check if finished – Returns true if the environment is finished taking
+ all data • Cleanup – run after measurement finishes to make sure hardware
+ is safe to leave (e.g.
+ no current on)
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+• Get Next Step Text – get the text to display to the user to let them know
+ what the measurement is doing and monitor progress • Get Static Environment
+ – Produces a static state configuration to measure a single data point
+ • Setup Step – Sets the hardware to the desired state before data is measured
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+• Measurement Names - The column name(s) for any data taken.
+ E.g.
+ Temperature for monitoring the temperature as data is taken • Measure Data
+ – Record any data associated with the dynamic environment
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+• Set Write To File – Set this to false to avoid generating a new file name
+ when the writing to file (this is a bit of a hack) 
+\end_layout
+
+\begin_layout Subsection
+
+\size footnotesize
+Stand alone classes 
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+Stand alone classes: • System information – Helper class that contains all
+ the information for cryogenic hardware configurations (PPMS, Fridge, He3,
+ Dip) 
+\end_layout
+
+\begin_layout Section
+
+\size footnotesize
+Main Algorithm
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+For any measurement run the “Generic ND Data Collection.vi” takes in an array
+ of Static Environments, array of Dynamic Environments, and System Information,
+ and file info.
+ The “Generic ND Data Collection.vi” then does the following 1.
+ Configures all hardware, launches Generic Plot Window, sets starting parameters
+ 2.
+ Sets up the Static Environment(s) in the array in the order given a.
+ Checks each to see if the initial environment should be set b.
+ Displays the setup text to the user c.
+ Sets the hardware for the initial environment 3.
+ For each Dynamic environment in the array a.
+ Sets up step X of the current Dynamic Environment b.
+ Measures data for the all dynamic environments, all static environments,
+ and system c.
+ Writes all data to the data file d.
+ Increments the counter of the last Dynamic Environment, check to see if
+ finished • If finished increment second to last dynamic environment and
+ reset own counter to 0 • Continues down the chain until one is not finished
+ and can just be incremented by 1 or all are done e.
+ If all environments are not finished go to (a), otherwise continue 4.
+ Cleanup all Dynamic Environment hardware (e.g.
+ turn off current) 5.
+ Sets up the Static Environment(s) in the array in the order given to their
+ ‘final’ configuration 6.
+ Cleanup any system hardware The dynamic environment execution sequence
+ is a bit complicated to allow them to be interleaved.
+ For example, take Temperature, Magnetic Field, then Current environments
+ in an array.
+ For each Temperature point, the program would sweep the entire magnetic
+ field, and for each magnetic field point within that a current sweep would
+ run.
+ This lets us set up a single launcher and run a long 4D measurement.
+ For most of the launchers, they offer a static current/voltage configuration
+ which is just translated into a dynamic current/voltage with only a single
+ data point.
+ “Set Write To File.vi” is used to prevent each data point producing a separate
+ file in this case.
+ 
+\end_layout
+
+\begin_layout Section
+
+\size footnotesize
+File format (Parameters to/from File) 
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+Each data file contains all the settings for an individual run before the
+ data, so both are kept together.
+ The parameter information is stored in the .ini format because it is one
+ of the few LabVIEW supports.
+ Data is appended immediately after that in tab separated columns (CSV format)
+ with the first row containing all the measurement names from dynamic and
+ static environment classes.
+ The parameters VIs can both read and write to files to keep the logic together
+ and consistent.
+ 
+\end_layout
+
+\begin_layout Section
+
+\size footnotesize
+Hardware (System Specific Subprograms)
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+In an effort to be able to run everything on new equipment without having
+ to fork the program the hardware interfaces have been separated out and
+ abstracted away as much as possible.
+ The sub-folders contain specific functions written for each piece of hardware
+ to make things simpler.
+ The main hardware interfaces contain VIs for reading/setting magnetic fields,
+ temperature, gate voltage, and rotator positions.
+ Each contain the code for specific platforms under case structures so each
+ machine can individually edited or new ones can be added.
+ 
+\end_layout
+
+\begin_layout Section
+
+\size footnotesize
+DC (Sourcing and Measuring)
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+Subprograms This section contains the configuration and measurement programs
+ responsible for managing current and voltage sources and measurement.
+ It makes use of the system specific subprograms for individual helper functions
+ but is largely designed to abstract away each specific action so each meter
+ and source can be run the same as any of the others.
+ The main program will start by calling the configure voltage and source
+ VIs for each machine it will use, these VIs will call a several VIs to
+ ensure the machine is in a consistent state for each run.
+ Sourcing and Measuring are handled by a similar set of VIs that seek to
+ provide a consistent way of measuring and sourcing current and voltage
+ across devices.
+ The main 2 VIs that work with all of these are “Measure V Source I.vi” and
+ “Measure I Source V.vi.” These handle the source and measurement timing and
+ flip, subtract bias, and static modes.
+ They also display the data as it is taken so you can monitor how the measuremen
+t is doing.
+ 
+\end_layout
+
+\begin_layout Section
+
+\size footnotesize
+Queueing measurements
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+When each launcher runs a measurement it calls “Add to Execution queue.vi.”
+ This VI adds the environment arrays to a queue and starts an asynchronous
+ call to “Generic ND Data Collection.vi.” “Generic ND Data Collection.vi” will
+ then take the environment arrays out of the queue in order of when they
+ were added.
+ This queueing structure allows more than one measurement to be set without
+ the need to wait for the first to finish.
+ “MultiSequence Execution.vi” can edit and rearrange the queue.
+ Any VI that touches the queue should first have acquired the semaphore
+ “ExecutionQueue.” This prevents more than one VI from changing things at
+ the same time and introducing a race condition.
+ 
+\end_layout
+
+\end_body
+\end_document
