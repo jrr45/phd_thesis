@@ -3744,7 +3744,7 @@ re and magnetic field control into Project Unity.
 \end_layout
 
 \begin_layout Subsection
-Measurements and computation (TODO: figure)
+Electronic measurements and calculations (TODO: figure)
 \end_layout
 
 \begin_layout Standard
@@ -3753,6 +3753,17 @@ There are several different lead configurations we use when measuring electronic
  The simplest is a two-terminal rectangular device with uniform dimensions
  between the two leads, most often used in semiconductor measurements with
  a voltage bias.
+ A simple two-point device is shown in figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Lead-patterns"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+a.
  However, just having a source and drain lead means all resistances are
  in series and include the contact resistance or Schottky barriers and resistanc
 e of the wires which may be undesirable.
@@ -3762,7 +3773,17 @@ e of the wires which may be undesirable.
 \begin_layout Standard
 For measuring only the resistance of the material we use a four-point device,
  with pairs of voltage leads placed along the path between the source and
- drain.
+ drain, figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Lead-patterns"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+b.
  We provide a current bias and measure the voltage between the inner leads
  allowing us to remove the contact resistance.
  Ideally the material is made into a uniform rectangle between the source
@@ -3857,7 +3878,17 @@ literal "true"
 \begin_layout Standard
 Conversely, to measure the resistance between the contacts and the material
  a series of voltage leads is constructed with increasing distance between
- each lead and the next.
+ each lead and the next, figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Lead-patterns"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+c.
  The resistance is then measured as a function of channel length which should
  form a linear relationship.
  This can be extrapolated back to a zero-length channel, and thus the resistance
@@ -3866,6 +3897,187 @@ Conversely, to measure the resistance between the contacts and the material
  measured between the source or drain and the nearest voltage contact, but
  this includes the resistance of some of the channel material so is less
  accurate.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Device - two-point.svg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Two-point device
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Device - four-point.svg
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Four-point device
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Device - contact resistance.svg
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Contact resistance device
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Device - Hall bar.svg
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Hall bar device
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Lead patterns used in electronic devices
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Lead-patterns"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+(a) Two-point device with rectangular film and two metal contacts on the
+ ends.
+ (b) Four-point device with two pairs of voltage leads extending off one
+ side.
+ (c) Contact resistance device with increasing distance between contacts.
+ (d) Hall-bar device with four pairs of voltage leads across the film.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -3919,7 +4131,17 @@ literal "true"
 Hall measurements quantify the deflection of charge carriers in a magnetic
  field from the Lorentz force.
  Voltage measurement lead pairs are placed on opposite sides of the channel,
- similar to a four point measurement.
+ similar to a four point measurement, figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Lead-patterns"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+d.
  The Hall voltage is measured as a function of magnetic field with a source-drai
 n current bias.
  Like the four-point probe, multiple pairs are often used to check crystal

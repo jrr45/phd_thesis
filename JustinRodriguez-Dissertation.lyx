@@ -249,6 +249,7 @@
 
 
 \usepackage{listings}
+\usepackage{fancytooltips}
 %%%%%%%%%%%%%%%%%
 % THE BEGINNING %
 %%%%%%%%%%%%%%%%%
@@ -282,6 +283,15 @@
 \paperfontsize 12
 \spacing double
 \use_hyperref false
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
 \papersize default
 \use_geometry false
 \use_package amsmath 2
