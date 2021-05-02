@@ -787,6 +787,7 @@ ing thicknesses, and then create a partial color code (e) for
 \end_inset
 
 .
+ 
 \end_layout
 
 \end_inset
@@ -1845,24 +1846,26 @@ literal "true"
 \end_layout
 
 \begin_layout Subsection
-Raman (TODO: review)
+Raman
 \end_layout
 
 \begin_layout Standard
 Another optical process often used for crystal characterization of 2D materials
- is Raman spectroscopy, that uses the inelastic scattering of photons to
+ is Raman spectroscopy, which uses the inelastic scattering of photons to
  measure vibration modes in the material.
- A laser is used to excite electrons in into a higher virtual energy state.
+ A laser is first used to excite electrons in into a higher virtual energy
+ state.
  Most electrons will drop back down to the initial energy level and emit
  a photon with the same frequency as the initial photons, a process known
  as Rayleigh scattering.
- A small percentage of the electrons will interact with phonons or other
- excited states.
+ The remaining small percentage of the electrons will interact with phonons
+ or other excited states.
  When those electrons return to a lower energy level they emit a photon
  with lower (higher) energy and frequency in a process known as (Anti-)Stokes
  scattering.
  To quantify this, the frequencies of emitted light light are spatially
- separated using a diffraction grating and their relative intensity recorded.
+ separated using a diffraction grating and the relative intensities of each
+ frequency is recorded.
 \begin_inset CommandInset citation
 LatexCommand cite
 key "zhang2015phononand,liang2018ramanspectroscopy,wu2019structural"
@@ -1870,7 +1873,7 @@ literal "true"
 
 \end_inset
 
- Figure 
+ Figures 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Raman-Spectroscopy"
@@ -2026,20 +2029,22 @@ name "fig:Raman-Spectroscopy"
 \begin_layout Plain Layout
 (a) Three of the scattering mechanisms of monochromatic light seen in Raman
  spectroscopy measurements: Rayleigh, Stokes, and Anti-Stokes.
- Each absorbs a photon for a charges particle to reach an excited state
- in a virtual band before dropping back down to the virtual state and emitting
- a photon with the respectively same, less, and more energy than the absorbed
+ Each process starts with the absorption of a photon, propelling a charged
+ particle into an excited state in a virtual energy band.
+ The particle then drops back down to the vibrational energy band and emits
+ a photon with the respective same, less, or more energy than the absorbed
  photon.
  (b) A simplified Raman measurement system.
  Monochromatic light is directed onto a sample then the emitted light is
- separated out using a grating before being measured using a CCD camera.
- Polarizers included in some measurements are shown as well.
+ separated out using a grating and the intensity of each frequency measured
+ using a CCD camera.
+ Polarizers used in some measurements are included.
  (c) Data from a 
 \begin_inset Formula $\mathrm{WS_{2}}$
 \end_inset
 
- film taken at room temperature showing two distinctive peaks using a Horiba
- LabRam HR Evolution microscope.
+ film taken at room temperature showing two distinctive peaks.
+ Acquired using a Horiba LabRam HR Evolution microscope.
  These peaks are typically found around 360 nm (
 \begin_inset Formula $\text{\mathrm{E_{g2}^{1}}}$
 \end_inset
@@ -2065,9 +2070,9 @@ literal "true"
 \end_layout
 
 \begin_layout Standard
-The resulting light forms distinct peaks at different frequencies that correspon
-d to the vibration modes of the material, similar to what is shown in figure
- 
+The resulting light forms intensity peaks at different frequencies that
+ correspond to the vibration modes of the material, similar to what is shown
+ in figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Raman-Spectroscopy"
@@ -2079,7 +2084,7 @@ noprefix "false"
 
 c.
  By looking for specific peak frequencies for a given material it is possible
- to identify or narrow down the possible polymorphs of a 2D crystal
+ to identify or at least narrow down the possible polymorphs of a 2D crystal
 \begin_inset CommandInset citation
 LatexCommand cite
 key "wu2019structural,liang2018ramanspectroscopy"
@@ -2088,8 +2093,8 @@ literal "true"
 \end_inset
 
 .
- This provides a quick, nondestructive method to distinguish materials and
- properties of a material, similar to SHG.
+ This provides a quick, nondestructive method to distinguish thin crystal
+ materials and some properties, similar to SHG.
  Raman spectroscopy can also use relative intensity of different peaks to
  distinguish the number of layers of a van der Waals material
 \begin_inset CommandInset citation
@@ -2111,17 +2116,18 @@ literal "true"
 .
  All Raman measurements discussed here were done using a Renishaw inVia
  Raman or Horiba LabRam HR Evolution microscope.
- Software was used to remove the substrate signal from the background and
- can fit the peaks to find the wavelength shift for each maximum.
+ Software was used to remove the substrate signal from the background.
+ The software can fit the peaks to find the wavelength shift in overlapping
+ peaks when necessary.
  
 \end_layout
 
 \begin_layout Standard
 Raman spectroscopy can be used to to look for signs of ferroelectricity
  or transition to a ferroelectric state.
- This is often done by monitoring for Raman modes appear (disappear) correspondi
-ng to the structural transition to a ferroelectric (paraelectric) state
- while changing temperature
+ This is often done by monitoring for Raman modes that appear (disappear)
+ corresponding to the structural transition to a ferroelectric (paraelectric)
+ state while changing temperature
 \begin_inset CommandInset citation
 LatexCommand cite
 key "jin2019ramaninterrogation,tsukada2018ramanscattering"
@@ -2138,7 +2144,7 @@ literal "true"
 \end_inset
 
 , or other mechanisms.
- Raman spectroscopy can also be enhanced to used polarized measurements
+ Raman spectroscopy can also be enhanced to aquire polarized measurements
  by including rotatable linear polarizers on the excitation and emitted
  photon beams
 \begin_inset CommandInset citation
@@ -2157,7 +2163,7 @@ literal "true"
 
 \end_inset
 
-, separate signal from different modes
+, separate overlapping frequency signals from different modes
 \begin_inset CommandInset citation
 LatexCommand cite
 key "kim2020polarized,tsukada2020multivariate,tsukada2018ramanscattering2"
@@ -3209,11 +3215,11 @@ Sample flake and film crystals were typically a few tens of microns across
 \begin_inset Formula $25\mu m$
 \end_inset
 
-, Alfa Aesar).
+; Alfa Aesar).
  We first adhered the gold wire to the wiring structure with lead-free solder,
  this avoided any currents from the soldering iron from damaging the sample.
- Next we placed an indium dot (TODO source) on each of the sample wiring
- pads using modified tweezers.
+ Next we placed an indium dot (99.99% In, 0.20mm diameter,; Indium Corporation)
+ on each of the sample wiring pads using modified tweezers.
  The tweezers were cut down to a single prong, then the tip cut flat at
  a 45 degree angle and further sanded smooth using the side of a razor blade.
  This allowed the indium dot to adhere to the tip easily.
@@ -3296,7 +3302,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Figures/Wiring PPMS puck.svg
-	width 8cm
+	width 7.5cm
 	groupId wiring
 
 \end_inset
@@ -3331,7 +3337,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Figures/Wiring station.svg
-	width 8cm
+	width 7.5cm
 	groupId wiring
 
 \end_inset
@@ -3397,7 +3403,7 @@ name "fig:Sample-wiring"
 \end_layout
 
 \begin_layout Subsection
-Layer Transfer (TODO: review)
+Layer Transfer
 \end_layout
 
 \begin_layout Standard
@@ -3450,26 +3456,26 @@ Our setup to transfer flakes on to substrates with an accuracy of a few
 \end_layout
 
 \begin_layout Standard
-Layer Transfer a method to create complex heterostructures of 2D materials,
- typically flakes, by vertically stacking multiple materials.
+Layer Transfer is a method to create complex heterostructures of 2D materials,
+ typically flakes, by vertically stacking multiple crystals.
  Stacked heterostructures can take advantage of the distinct properties
  of each material without the lower layers altering the growth of subsequent
- compounds.
- We began by making thin stamps of PDMS (polydimethylsiloxane), a clear
+ compounds as in other methods.
+ We began by fabricating thin stamps of PDMS (polydimethylsiloxane), a clear
  resin that is commonly used for layer transfers.
  The PDMS stamps are formed using a mix of Sylgard 184 Silicone Elastomer
  and curing agent in a 12:1 ratio in a flat plastic or petri dish to form
- a 1mm thin film.
- The mix is stirred for 3 minutes, sonicated for 4 minutes on low power
- to remove most bubbles, and any remaining bubbles in the mixture popped
- by hand using a thin needle or rod.
+ an ~1mm thin film.
+ The mix is stirred for 3 minutes to distribute the agent, then sonicated
+ for 4 minutes on low power to remove most bubbles, and finally any remaining
+ bubbles in the mixture are popped by hand using a thin needle or rod.
  The PDMS is then left to cure for about 12 hours, covered to avoid any
  particle contamination.
- The resulting film can be diced to any desired size, and applied to glass
- slides or other flat platforms to work with.
- Care must be taken to use a dish with a very flat bottom and it is allowed
- to cure levelly or the surface of film will move out of microscope focus
- under horizontal translation.
+ The resulting film can be diced to any desired size, then picked up and
+ applied to glass slides or other flat platforms for use.
+ Care must be taken to choose a dish with a very flat bottom and the mixture
+ is allowed to cure levelly, otherwise the surface of film will move out
+ of microscope focus under horizontal translation.
  
 \end_layout
 
@@ -3477,8 +3483,10 @@ Layer Transfer a method to create complex heterostructures of 2D materials,
 We started by exfoliating flakes of crystal directly on to PDMS stamps and
  identifying the flakes under the optical microscope, similar to what would
  be done on a typical substrate.
- This has the advantage of using the fewest steps and compounds to do the
- transfer
+ Once the desired flake on PDMS is identified it can be transferred directly
+ onto the desired substrate.
+ This process has the advantage of using the fewest steps and compounds
+ to do the transfer
 \begin_inset CommandInset citation
 LatexCommand cite
 key "frisenda2018recentprogress"
@@ -3488,11 +3496,11 @@ literal "true"
 
  with the trade-off that flakes less than 10 nm are hard to identify on
  the clear resin.
- Once the desired flake on PDMS is identified it can be transferred to the
- desired substrate.
- The glass slide is affixed to a mount with the PDMS stamp facing down,
- with the mount connected to a manual micro precision linear stage capable
- in moving in any direction, figure 
+ The glass slide is affixed to a mount with the PDMS stamp on the bottom
+ side.
+ The mount is then connected to a manual micro precision linear stage capable
+ in moving in any direction.
+ This setup is show in figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Layer-transfer-station"
@@ -3504,23 +3512,27 @@ noprefix "false"
 
 .
  The target substrate is placed on a heating block directly under the stamp
- and affixed with tape to prevent it adhering to stamp.
- The flake and target are separately moved to the center of the field of
- view then aligned with each other.
- This was typically done by drawing the outline of the substrate on monitor
- with marker and moving the flake to match.
+ and affixed with double-sided tape to prevent it adhering to stamp after
+ contact.
+ The flake and target are separately moved to the center of the microscope
+ field of view then aligned with each other.
+ This was typically done by drawing the outline of the substrate target
+ on monitor with marker and moving the flake to match.
  The stamp is then lowered into contact with the substrate, taking into
  account any lateral stamp-to-substrate shifting from the contact.
- Once the flake is in contact with the desired part of the substrate the
- underlying heating is set to 80 C, softening the PDMS.
+ Once the flake is in contact with the desired part of the substrate, the
+ underlying heating block is set to 80 C causing the PDMS to soften and
+ lower adhesion.
  While heated, the flake-substrate van der Waals bond should be stronger
  than the PDMS-flake bond, so the slide can be removed while the flake adheres
  to the target.
- We also used an alternative metal slide with an optical window cut into
- the center for the PDMS to hang from if the stamp was not flat.
+ As an alternative to the glass slide, we also used a metal slide with an
+ optical window cut into the center for the PDMS to hang from if the stamp
+ was not flat.
  The center of the stamp hung below the edges so the flake would always
  be able to make contact, but the flake was more wont to shift horizontally
- and force realignment while making contact.
+ and force realignment between flake and target while trying to put them
+ in contact.
 \end_layout
 
 \begin_layout Section
@@ -3559,11 +3571,7 @@ name "fig:PPMS-and-electronics"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
-Our PPMS measurement systems attached electronics used in material measurements.
+PPMS measurement systems attached electronics used in material measurements.
  (left) Model 6000 PPMS computer and gas handling system.
  (middle) PPMS cryostat with High-Vacuum Option.
  (right) Electronics measurement system connected to PPMS.
@@ -3577,37 +3585,38 @@ Our PPMS measurement systems attached electronics used in material measurements.
 \end_layout
 
 \begin_layout Subsection
-Electronic measurement systems (TODO: review)
+Electronic measurement systems
 \end_layout
 
 \begin_layout Standard
-The electronic measurements of most devices were done using a series of
- Keithley instruments and a cryostat networked to a computer.
- Each instrument was networked through a series of GPIB (IEEE 488) cables
- to a computer for control.
+The electronic measurements of most material devices were done using a combinati
+ons of Keithley instruments with a cryostat, all networked though a desktop
+ computer.
+ Each instrument was connected through a series of GPIB (IEEE 488) cables,
+ and eventually to a computer for controlling the system.
  GPIB is an older protocol and port for connecting and working with instruments,
- but was chosen as it worked with all electronics and cryostats used in
- the lab.
+ but was chosen as it was compatible with all electronics and cryostats
+ used in the lab.
  It allows for daisy chaining of multiple instruments together where the
- analog signal is amplified and passed along cables.
+ signal is amplified and passed along cables though the joint connections.
  The protocol is not fault tolerant so care must be taken to ensure instruments
- do not lock up the entire setup and communication timeouts were set appropriate
-ly to deal with instrument reliability while still providing a large enough
+ do not lock up the entire setup, and communication timeouts were set appropriat
+ely to deal with instrument reliability while still providing a large enough
  window for data to be taken.
 \end_layout
 
 \begin_layout Standard
 For semiconductor measurements a Keithley 6430 was typically used to provide
- the DC source bias, as it had the largest voltage range and impedance option
+ the DC source bias, as it had the largest voltage range and impedance options
  of the available electronic instruments.
  The 6430 also worked with triax cabling to reduce parasitic capacitance
- and external EM fields.
- It also measured current or voltage for the respective voltage and current
- feedback loops that could be recorded for two-point data.
- A Keithley 2400 was used to provide gating bias as it works similar to
- the 6430 but with less range and unshielded cabling.
- A Keithley 2182 current source was used for sourcing current with any metallic
- samples.
+ while shielding from external EM fields.
+ It also measured current or voltage, opposite the supplied bias, that could
+ be recorded for two-point data.
+ A Keithley 2400 was used to provide gating voltage bias as it works similar
+ to the 6430 but with less range and unshielded cabling.
+ A Keithley 2182 current source was used for sourcing small current with
+ any metallic samples.
  Finally two Keithley 2182A nano-voltmeters were used in conjunction with
  the other instruments for measuring additional voltages between leads.
  Figure 
@@ -3624,7 +3633,7 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
-All instruments were controlled and monitored from a single LabView program
+All instruments were controlled and monitored from a single LabView program,
  Project Unity, see 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -3636,33 +3645,34 @@ noprefix "false"
 \end_inset
 
 .
- While LabView is a terrible language for writing a large program in it
- was chosen because it integrated well with past code and current lab equipment.
- Project Unity contains a series of launchers that contained easy to change
- configurations for most measurements.
+ While LabView is a terrible language for writing a larger programs in,
+ it was chosen as it integrated well with legacy code and current lab equipment.
+ Project Unity contains a series of launchers that contained easy-to-change
+ configurations for most of our standard measurements.
  The launcher would then pass the configuration parameters to a separate
  thread to process.
  This allowed multiple measurements to be queued, and for subsequent tasks
  and edited before being run.
  All measurement parameters were saved in the beginning of each data file
- in INI format to preserve as much of the state with the data, all data
- was saved in CSV format.
+ in INI format, to preserve as much of the state as possible with the data,
+ while all data was saved in CSV format.
  The main thread was responsible for initial configuration of all tools,
- setting up measurement environments, sending commands and recording instrument
- data, as well as monitoring overall progress and instrument status.
+ setting up measurement environments, sending instrument commands, recording
+ instrument data, as well as monitoring overall progress and instrument
+ status.
  A separate thread was responsible for graphing and fitting live data so
  it did not impact the run time of the main thread.
 \end_layout
 
 \begin_layout Subsection
-PPMS (TODO: review)
+PPMS
 \end_layout
 
 \begin_layout Standard
 Most of the manufactured devices mentioned in this text were measured in
- a Physical Property Measurement System (PPMS) from quantum design as it
- provides an ideal measurement environment platform.
- The PPMS uses sample wiring puck, figure 
+ a Physical Property Measurement System (PPMS; Quantum Design) as it provides
+ an ideal measurement environment platform.
+ The PPMS uses a sample wiring puck, figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Sample-wiring"
@@ -3672,14 +3682,16 @@ noprefix "false"
 
 \end_inset
 
-a, that can be exchanged while the system is filled with liquid helium without
- stopping and drying the system out.
- The puck fits into an inner chamber with wiring pins.
- The pins are connected to an external port with six pairs of twisted wire,
- then from the port to a BNC breakout box via a single shielded cable with
- twisted pairs of all wires.
- This allowed us to change connections to different Keithley or other electronic
-s without removing the sample from the chamber.
+a, that can be exchanged while the system is filled with liquid helium,
+ removing the need to warm the cryostat between samples.
+ The puck fits into an inner chamber with wiring pins at the bottom that
+ lock into the sample puck.
+ The pins are connected electronically to an external port with six pairs
+ of twisted wire.
+ Then from that port to a BNC breakout box via a single shielded cable with
+ six twisted pairs of wires.
+ The breakout box allowed us to change connections to different Keithley
+ or other electronics without removing the sample from the chamber.
  While filled with helium the chamber could reach pressures near 0.1 mTorr
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -3689,7 +3701,7 @@ literal "true"
 \end_inset
 
  with the Cryopump High-Vacuum Option (Quantum Design).
- The PPMS has a temperature range of 1.7 to 400 K with the ability to cool
+ The PPMS has a temperature range of 1.7 to 400 K, with the ability to cool
  a puck from room to base temperature in a few hours.
  Our PPMS was equipped with a 9 T magnet, with field errors around .002 T
  at low magnetic fields
@@ -3700,7 +3712,7 @@ literal "true"
 
 \end_inset
 
-, allowing us to do hall and magnetoresistance measurements.
+, allowing us to do Hall and magnetoresistance measurements.
 \end_layout
 
 \begin_layout Standard
@@ -3721,22 +3733,428 @@ noprefix "false"
  (Alcatel 2010SD).
  Because helium is a finite resource, all helium gas was sent to be recovered
  though an external helium recovery system.
- All of the the Model 6000 computer system and options were connected to
- the electronics control desktop computer via GPIB, except the magnet which
- used a separate USB-connected controller.
- This allowed the PPMS to be run both at the Model 6000 interface and with
- the desktop program MultiVu (Quantum Design).
+ The Model 6000 computer system and all add on options were connected to
+ the electronics control desktop computer via GPIB, except the magnet system
+ which used a separate USB-connected controller.
+ This allowed the PPMS to be run using either the Model 6000 interface or
+ with the desktop program MultiVu (Quantum Design).
  A .net SDK with LabView interface provided a way to integrate the PPMS temperatu
 re and magnetic field control into Project Unity.
  
 \end_layout
 
 \begin_layout Subsection
-Hall probe (TODO)
+Measurements and computation (TODO: figure)
 \end_layout
 
 \begin_layout Standard
-algorithm?
+There are several different lead configurations we use when measuring electronic
+ properties of a material.
+ The simplest is a two-terminal rectangular device with uniform dimensions
+ between the two leads, most often used in semiconductor measurements with
+ a voltage bias.
+ However, just having a source and drain lead means all resistances are
+ in series and include the contact resistance or Schottky barriers and resistanc
+e of the wires which may be undesirable.
+ 
+\end_layout
+
+\begin_layout Standard
+For measuring only the resistance of the material we use a four-point device,
+ with pairs of voltage leads placed along the path between the source and
+ drain.
+ We provide a current bias and measure the voltage between the inner leads
+ allowing us to remove the contact resistance.
+ Ideally the material is made into a uniform rectangle between the source
+ and drain, with arms of material extending to the side.
+ This is so the metal contacts are not placed along the main conductance
+ channel as the metal may dope the underlying material.
+ This construction is more typical for etched film devices, with flakes
+ having the leads directly on the crystal due to size limitations and to
+ avoid doing the otherwise-unnecessary etching step.
+ When measuring, the current is typically biased in both directions to account
+ for device inhomogeneities.
+ The resistivity of the sample can then be computed
+\begin_inset Formula 
+\begin{equation}
+\rho=\frac{1}{\sigma}=\frac{wt}{d}\frac{V_{12}}{I_{D}}=\frac{wt}{d}\frac{V_{12}^{+}-V_{12}^{-}}{I_{D}^{+}-I_{D}^{-}}\label{eq:restivity-3D}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $I_{D}^{\pm}$
+\end_inset
+
+ is the current between the source and drain for positive and negative biases
+ of equal magnitude, 
+\begin_inset Formula $V_{12}^{\pm}$
+\end_inset
+
+ the voltage between leads 1 and 2, 
+\begin_inset Formula $w$
+\end_inset
+
+ the bar width, 
+\begin_inset Formula $t$
+\end_inset
+
+ the bar thickness, and 
+\begin_inset Formula $d$
+\end_inset
+
+ the distance between the centers of voltage leads 1 and 2.
+ If 
+\begin_inset Formula $w$
+\end_inset
+
+, 
+\begin_inset Formula $t$
+\end_inset
+
+, and 
+\begin_inset Formula $d$
+\end_inset
+
+ are in meters (
+\begin_inset Formula $cm$
+\end_inset
+
+), 
+\begin_inset Formula $V$
+\end_inset
+
+ in volts, and 
+\begin_inset Formula $I$
+\end_inset
+
+ in amps, then 
+\begin_inset Formula $\rho$
+\end_inset
+
+ is in 
+\begin_inset Formula $\Omega\cdot m$
+\end_inset
+
+ (
+\begin_inset Formula $\Omega\cdot cm$
+\end_inset
+
+).
+ Multiple pairs of voltage leads are often used to check uniformity within
+ the crystal, which should contain < 10 % difference in resistivity between
+ similar pairs of leads.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "lindemuth2020halleffect"
+literal "true"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Conversely, to measure the resistance between the contacts and the material
+ a series of voltage leads is constructed with increasing distance between
+ each lead and the next.
+ The resistance is then measured as a function of channel length which should
+ form a linear relationship.
+ This can be extrapolated back to a zero-length channel, and thus the resistance
+ between the contact and the material.
+ A four point measurement is sometimes used for simplicity with the voltage
+ measured between the source or drain and the nearest voltage contact, but
+ this includes the resistance of some of the channel material so is less
+ accurate.
+\end_layout
+
+\begin_layout Standard
+These techniques can be extended though the addition of an external magnetic
+ field.
+ The simplest is the measurement of a material's magnetoresistance, or magnetoco
+nductance, which quantifies the change in channel resistance as a function
+ of a perpendicular, out of plane, magnetic field.
+ This is used to look for phenomena such as weak (anti-)localization, Shubnikov–
+de Haas oscillations, anisotropic magnetoresistance, giant magnetoresistance,
+ and others.
+ To improve accuracy a combination of voltage measurements are taken with
+ both directions of current and field to account for inhomogeneities in
+ the device and setup.
+ The magnetoresistivity is then
+\begin_inset Formula 
+\begin{equation}
+\rho_{M}=\frac{1}{\sigma_{M}}=\frac{wt}{d}\frac{V_{ab}\left(B\right)}{I}=\frac{wt}{d}\frac{V_{12}^{+}\left(+B\right)-V_{12}^{-}\left(+B\right)+V_{12}^{+}\left(-B\right)-V_{12}^{-}\left(-B\right)}{I_{D}^{+}\left(+B\right)-I_{D}^{-}\left(+B\right)+I_{D}^{+}\left(-B\right)-I_{D}^{-}\left(-B\right)}\label{eq:magnetoresistivity}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\pm B$
+\end_inset
+
+ is the external magnetic field at positive and negative fields of equal
+ magnitude.
+ The units follow the same relationship as equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:restivity-3D"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ and likewise should not differ greatly between pairs of leads.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "lindemuth2020halleffect"
+literal "true"
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Hall measurements quantify the deflection of charge carriers in a magnetic
+ field from the Lorentz force.
+ Voltage measurement lead pairs are placed on opposite sides of the channel,
+ similar to a four point measurement.
+ The Hall voltage is measured as a function of magnetic field with a source-drai
+n current bias.
+ Like the four-point probe, multiple pairs are often used to check crystal
+ uniformity, and both directions of magnetic field and current are used
+ for a single measurement.
+ The Hall coefficient is given by
+\begin_inset Formula 
+\begin{equation}
+R_{H}=\frac{t}{B}\frac{V_{ab}\left(B\right)}{I}=\frac{t}{B}\frac{V_{ab}^{+}\left(+B\right)-V_{ab}^{-}\left(+B\right)+V_{ab}^{+}\left(-B\right)-V_{ab}^{-}\left(-B\right)}{I_{D}^{+}\left(+B\right)-I_{D}^{-}\left(+B\right)+I_{D}^{+}\left(-B\right)-I_{D}^{-}\left(-B\right)}\label{eq:Hall-coefficient}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $V_{ab}$
+\end_inset
+
+ is the Hall voltage for a pair of leads 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $w$
+\end_inset
+
+ and 
+\begin_inset Formula $t$
+\end_inset
+
+ are in meters, 
+\begin_inset Formula $B$
+\end_inset
+
+ in Tesla, 
+\begin_inset Formula $V$
+\end_inset
+
+ in volts, and 
+\begin_inset Formula $I$
+\end_inset
+
+ in amps, then 
+\begin_inset Formula $R_{H}$
+\end_inset
+
+ is in 
+\begin_inset Formula $m^{3}\cdot C^{-1}$
+\end_inset
+
+.
+ The sign of the Hall coefficient together with the geometrical layout of
+ the device can be used to determine the sign of the charge carriers in
+ a material with a single type of carrier.
+ For improved accuracy, equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Hall-coefficient"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ can be fit to a linear model with respect to magnetic field, though opposite
+ values of Hall voltage for a given magnetic field should be subtracted
+ to remove effects of magnetoresistance, which typically appears as a quadratic
+ function of magnetic field.
+ The Hall effect can be used to measure the mobility in material.
+ This is done by combining equations 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:restivity-3D"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Hall-coefficient"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\mu_{H}=\frac{\left|R_{Havg}\right|}{\rho_{avg}}\label{eq:hall-mobility}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $R_{Havg}$
+\end_inset
+
+ is the average Hall coefficient and 
+\begin_inset Formula $\rho_{avg}$
+\end_inset
+
+ average resistance, both averaging over multiple pairs of leads.
+ The units for 
+\begin_inset Formula $\mu$
+\end_inset
+
+, following what was used in equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Hall-coefficient"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, are then 
+\begin_inset Formula $m^{2}\cdot V^{-1}\cdot s^{-1}$
+\end_inset
+
+.
+ The carrier density is given by
+\begin_inset Formula 
+\begin{equation}
+n_{3D}=\frac{1}{eR_{H}}\label{eq:carrier-density-3D}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $e$
+\end_inset
+
+ is the charge of an electron.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "lindemuth2020halleffect"
+literal "true"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For 2D materials the thickness of a few layers of crystal is often hard
+ to define, making the previous calculations somewhat nebulous.
+ Sheet resistance 
+\begin_inset Formula $R_{s}$
+\end_inset
+
+ (conductance) is often used in the place of resistivity
+\begin_inset Formula 
+\begin{equation}
+R_{s}=R_{channel}\frac{w}{l}=\frac{\rho}{t}\label{eq:sheet resistance}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $l$
+\end_inset
+
+ is the length of channel and 
+\begin_inset Formula $R_{channel}$
+\end_inset
+
+ is the measured resistance.
+ The units for sheet resistance are often given as 
+\begin_inset Formula $\Omega/\square$
+\end_inset
+
+ where 
+\begin_inset Formula $\square$
+\end_inset
+
+ is unit-less, but is useful to denote that the sheet resistance is not
+ the same as resistance.
+ If we define 
+\begin_inset Formula $R_{H2D}=R_{H}/t$
+\end_inset
+
+ then equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:hall-mobility"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ becomes 
+\begin_inset Formula 
+\begin{equation}
+\mu_{H}=\frac{\left|R_{H2D}\right|}{R_{s}},\label{eq:hall-mobility-2D}
+\end{equation}
+
+\end_inset
+
+similarly for equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:carrier-density-3D"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+n_{2D}=t\cdot n_{3D}=\frac{1}{eR_{H2D}}\label{eq:carrier-density-2D}
+\end{equation}
+
+\end_inset
+
+allowing us to drop the thickness from both calculations.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "boggild2017mapping"
+literal "true"
+
+\end_inset
+
+
 \end_layout
 
 \end_body
