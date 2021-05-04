@@ -309,7 +309,7 @@ def plot_contact_generic(filename, colors, savename):
     files = [file]
     
     ax = mp.pretty_plot_single(fig, labels=['$\it{V_{G}}$ (V)', '$\it{R}$ (Ω)'],
-                             yscale='log')
+                             yscale='log', fontsize=10, labelsize=10)
     
     for file in files:
         ax.plot(file['Gate_Voltage_V'], np.abs(file['Resistance_1_Ohms']), '.-', ms=2, linewidth=1, color=colors[0])
@@ -614,21 +614,21 @@ def main(): #sample D
     # -- Cross section of loop data --
     if False or show_all:
         mp.plot_loopR_cross_section(fileroot, RTloop_filenames, "_JR190815_04_RDS", increments=[0,25,50,75],\
-                                      figsize=2, log=True, xlim=(None, None),ylim=(None, None))
+                                      figsize=2, log=True, xlim=(0, 320),ylim=(None, None))
     
     # -- 300K ID vs VDS curves
-    if True or show_all:
+    if False or show_all:
         plot_300K_IDvsVDS(figsize=2, log=False)
         plot_300K_IDvsVDS(figsize=2, log=True)
 
     # hall carrier density
-    if True or show_all:
+    if False or show_all:
         plot_n_hall_2D()
         plot_hall_inset()
         plot_n_hall_3D()
     
     # contact resistance
-    if False or show_all:
+    if True or show_all:
         plot_contact()
     
     # unused but saving

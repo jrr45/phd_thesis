@@ -26,7 +26,7 @@ def plot_rho(figsize=(2, 2)):
     
     fig = plt.figure(figsize=figsize, dpi=300)
     ax = mp.pretty_plot_single(fig, labels=["$\it{T}$ (K)", '$\\rho}$ (kΩ$\cdot$cm)'],
-                             yscale='linear')
+                             yscale='linear', fontsize=10, labelsize=10)
 
     temperaturesab = files[0]['Temperature_K']
     Rxxab = files[0]['Resistance_1_Ohms']
@@ -39,6 +39,7 @@ def plot_rho(figsize=(2, 2)):
     
     ax.minorticks_on()
     ax.xaxis.set_major_locator(MultipleLocator(100))
+    ax.set_xlim((0,322))
     
     mp.save_generic_svg(fig, fileroot, "_Bulk_RT")
 
@@ -69,7 +70,7 @@ def plot_rho_ln(figsize=(2, 2)):
 
 def main():
     plot_rho(figsize=(2, 2))
-    plot_rho_ln(figsize=(2, 2))
+    plot_rho_ln(figsize=(1.2, 1.2))
 
 if __name__== "__main__":
   main()

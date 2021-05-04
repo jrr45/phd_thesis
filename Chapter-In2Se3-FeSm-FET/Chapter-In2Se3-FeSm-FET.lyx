@@ -1310,7 +1310,7 @@ Photoluminescence
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -1441,7 +1441,7 @@ noprefix "false"
  bias for fixed gate voltages, figures 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Sample-B-IDvsVDS"
+reference "fig:Sample-B-IDvsVDS-log"
 plural "false"
 caps "false"
 noprefix "false"
@@ -1451,7 +1451,7 @@ noprefix "false"
  and 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Sample-C-IDvsVDS"
+reference "fig:Sample-C-IDvsVDS-log"
 plural "false"
 caps "false"
 noprefix "false"
@@ -1544,12 +1544,12 @@ status open
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Figures/JR200115_11/JR200115_11_300K_IDvVDS-positive_VG-increasing_log_txt.svg
-	scale 99
+	width 5cm
 	groupId Sample A: ID(VDS)
 
 \end_inset
@@ -1588,7 +1588,7 @@ status collapsed
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Figures/JR200115_11/JR200115_11_300K_IDvVDS-negative_VG-increasing_log_txt.svg
-	scale 99
+	width 5cm
 	groupId Sample A: ID(VDS)
 
 \end_inset
@@ -1627,7 +1627,7 @@ status collapsed
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Figures/JR200115_11/JR200115_11_300K_IDvVDS-loop_VG-increasing_log_txt.svg
-	scale 99
+	width 5cm
 	groupId Sample A: ID(VDS)
 
 \end_inset
@@ -1665,7 +1665,7 @@ status collapsed
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Figures/JR200115_11/JR200115_11_300K_IDvVDS-positive_VG-decreasing_log_txt.svg
-	scale 99
+	width 5cm
 	groupId Sample A: ID(VDS)
 
 \end_inset
@@ -1704,7 +1704,7 @@ status collapsed
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Figures/JR200115_11/JR200115_11_300K_IDvVDS-negative_VG-decreasing_log_txt.svg
-	scale 99
+	width 5cm
 	groupId Sample A: ID(VDS)
 
 \end_inset
@@ -1743,7 +1743,7 @@ status collapsed
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Figures/JR200115_11/JR200115_11_300K_IDvVDS-loop_VG-decreasing_log_txt.svg
-	scale 99
+	width 5cm
 	groupId Sample A: ID(VDS)
 
 \end_inset
@@ -1924,7 +1924,7 @@ status collapsed
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Figures/JR200115_11/JR200115_11_IDvVG_300K_log_txt.svg
-	scale 98
+	width 5cm
 	groupId Sample A: ID(VG)
 
 \end_inset
@@ -1948,6 +1948,10 @@ status collapsed
 \end_inset
 
 
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset Float figure
 wide false
 sideways false
@@ -1956,7 +1960,7 @@ status collapsed
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Figures/JR200115_11/JR200115_11_IDvVG_200K_log_txt.svg
-	scale 98
+	width 5cm
 	groupId Sample A: ID(VG)
 
 \end_inset
@@ -1980,6 +1984,10 @@ status collapsed
 \end_inset
 
 
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset Float figure
 wide false
 sideways false
@@ -1988,7 +1996,7 @@ status collapsed
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Figures/JR200115_11/JR200115_11_IDvVG_150K_log_txt.svg
-	scale 98
+	width 5cm
 	groupId Sample A: ID(VG)
 
 \end_inset
@@ -2023,7 +2031,7 @@ status collapsed
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Figures/JR200115_11/JR200115_11_IDvVG_100K_log_txt.svg
-	scale 98
+	width 5cm
 	groupId Sample A: ID(VG)
 
 \end_inset
@@ -2047,6 +2055,10 @@ status collapsed
 \end_inset
 
 
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset Float figure
 wide false
 sideways false
@@ -2055,7 +2067,7 @@ status collapsed
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Figures/JR200115_11/JR200115_11_IDvVG_050K_log_txt.svg
-	scale 98
+	width 5cm
 	groupId Sample A: ID(VG)
 
 \end_inset
@@ -2079,6 +2091,10 @@ status collapsed
 \end_inset
 
 
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset Float figure
 wide false
 sideways false
@@ -2087,7 +2103,7 @@ status collapsed
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Figures/JR200115_11/JR200115_11_IDvVG_002K_log_txt.svg
-	scale 98
+	width 5cm
 	groupId Sample A: ID(VG)
 
 \end_inset
@@ -2169,10 +2185,6 @@ status open
 
 \begin_layout Plain Layout
 \align center
-\begin_inset space \hspace*{\fill}
-\end_inset
-
-
 \begin_inset Float figure
 wide false
 sideways false
@@ -2181,6 +2193,7 @@ status collapsed
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Figures/In2Se3_Bulk_RT_ln.svg
+	width 5cm
 
 \end_inset
 
@@ -2206,7 +2219,15 @@ Bulk:
 \end_inset
 
 
-\begin_inset space \hspace*{\fill}
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
 \end_inset
 
 
@@ -2216,8 +2237,13 @@ sideways false
 status collapsed
 
 \begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset Graphics
 	filename Figures/JR200115_11/JR200115_11_RDSvVG-cross-section_linear.svg
+	width 4.95cm
 
 \end_inset
 
@@ -2240,18 +2266,10 @@ Sample A:
 \end_inset
 
 
-\begin_inset space \hspace*{\fill}
-\end_inset
-
-
 \end_layout
 
 \begin_layout Plain Layout
 \align center
-\begin_inset space \hspace*{\fill}
-\end_inset
-
-
 \begin_inset Float figure
 wide false
 sideways false
@@ -2260,6 +2278,8 @@ status collapsed
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Figures/JR200115_17/JR200115_17_RDSvVG-cross-section_log.svg
+	width 5cm
+	groupId temperature-dependance
 
 \end_inset
 
@@ -2282,7 +2302,15 @@ Sample B:
 \end_inset
 
 
-\begin_inset space \hspace*{\fill}
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
 \end_inset
 
 
@@ -2298,11 +2326,9 @@ status collapsed
 
 \begin_inset Graphics
 	filename Figures/JR190919_03/JR190919_03_RDSvVG-cross-section_log.svg
+	width 5cm
+	groupId temperature-dependance
 
-\end_inset
-
-
-\begin_inset space ~
 \end_inset
 
 
@@ -2324,10 +2350,6 @@ Sample C:
 
 \end_layout
 
-\end_inset
-
-
-\begin_inset space \hspace*{\fill}
 \end_inset
 
 
@@ -2620,7 +2642,7 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-TODO: fix figure rendering
+TODO: fix figure rendering appendix
 \end_layout
 
 \begin_layout Standard
@@ -2667,10 +2689,6 @@ status open
 
 \begin_layout Plain Layout
 \align center
-\begin_inset space \hspace*{\fill}
-\end_inset
-
-
 \begin_inset Float figure
 wide false
 sideways false
@@ -2679,6 +2697,7 @@ status collapsed
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Figures/JR200115_11/JR200115_11_Magnetoconductance_1.8K.svg
+	width 5cm
 
 \end_inset
 
@@ -2705,7 +2724,15 @@ magnetoconductance
 \end_inset
 
 
-\begin_inset space \hspace*{\fill}
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
 \end_inset
 
 
@@ -2715,6 +2742,13 @@ sideways false
 status collapsed
 
 \begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR190815_04/JR190815_04_Hall_combined.svg
+	width 5cm
+
+\end_inset
+
+
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -2738,10 +2772,6 @@ Carrier density
 
 \end_layout
 
-\end_inset
-
-
-\begin_inset space \hspace*{\fill}
 \end_inset
 
 

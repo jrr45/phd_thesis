@@ -491,18 +491,18 @@ def main(): #sample A
     
     # -- Cross section of loop data
     if False or show_all:
-        mp.plot_loopR_cross_section(fileroot, RTloop_filenames, "_JR200115_11", figsize=1.5, ylim=(0, 1.5), log=False)
+        mp.plot_loopR_cross_section(fileroot, RTloop_filenames, "_JR200115_11", figsize=1.5, xlim=(0,322), ylim=(0, 1.5), log=False)
         mp.plot_loopR_cross_section(fileroot, RTloop_filenames, "_JR200115_11_inset", figsize=.7, \
-                                      log=False, increments=[75], fontsize=10, labelsize=10, colororder=[1])
+                                      log=False, increments=[75], fontsize=10, labelsize=10, colororder=[1], xlim=(0,322))
         mp.plot_loopR_cross_section(fileroot, RTloop_filenames, "_JR200115_11", figsize=2,\
-                                      xlim=(None, None), ylim=(None, None), log=True, increments=[0, 25, 50, 75], colororder=[0, 3,2,1])
+                                       xlim=(0,322), ylim=(None, None), log=True, increments=[0, 25, 50, 75], colororder=[0, 3,2,1])
         mp.plot_loopR_cross_section(fileroot, RTloop_filenames, "_JR200115_11", figsize=2,\
-                                      xlim=(None, None), ylim=(None, None), log=False, increments=[25, 50, 75], colororder=[3,2,1])
+                                       xlim=(0,322), ylim=(None, None), log=False, increments=[25, 50, 75], colororder=[3,2,1])
         mp.plot_loopR_cross_section(fileroot, RTloop_filenames, "_JR200115_11_more", figsize=2, ylim=(None, None),\
                                       log=True, increments=[-15, -10, -5, 0, 25, 50, 75], colororder=[4,5,6, 0,3,2,1])
     
     # -- 300K ID vs VDS curves
-    if True or show_all:
+    if False or show_all:
         mp.plot_IDvVDS_gating_generic(fileroot, 'JR200115_11_', '_IvsV_300.0K.txt', 64, 7, "JR200115_11_300K_", \
                                         figsize=2, xadj=0, log=False, majorx=1)
         mp.plot_IDvVDS_gating_generic(fileroot, 'JR200115_11_', '_IvsV_300.0K.txt', 64, 7, "JR200115_11_300K_", \
@@ -529,7 +529,7 @@ def main(): #sample A
                                            log=False, increments=[25, 50, 75], colororder=[3,2,1])
     
     # loops if ID vs VDS showing hysteresis
-    if False  or show_all:
+    if True  or show_all:
         plot_IDvsVDS_loops(log=True,figsize=2, fontsize=10, labelsize=10)
         plot_IDvsVDS_loops(log=False,figsize=2, fontsize=10, labelsize=10)
         #plot_IDvsVDS_loops2(log=False,figsize=2)

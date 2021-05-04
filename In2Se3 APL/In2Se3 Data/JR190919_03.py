@@ -241,7 +241,7 @@ def plot_IDSvsT_cooling_vs_warming(size=2):
     
     fig = plt.figure(figsize=(size, size), dpi=300)
     ax = mp.pretty_plot_single(fig, labels=["$\it{T}$ (K)", '$\it{I_{D}}$ (A)'],
-                             yscale='log', fontsize=10)
+                             yscale='log', fontsize=10, labelsize=10)
     
     filenames = ['JR190919_03_188_RvsT_75.00Vg_warm.txt',
                  'JR190919_03_186_RvsT_75.00Vg_cool.txt',
@@ -342,9 +342,9 @@ def main(): #Sample C
      # -- Cross section of loop data --
     if False or show_all:
         mp.plot_loopR_cross_section(fileroot, RTloop_filenames, "_JR190919_03_RDS", increments=[0,25,50,75],\
-                                      figsize=figsize, log=True, ylim=(None, None))
+                                      figsize=figsize, log=True, xlim=(0,322), ylim=(None, None))
         mp.plot_loopR_cross_section(fileroot, RTloop_filenames, "_JR190919_03_RDSv2", increments=[50,75],\
-                                      figsize=figsize, log=True, ylim=(None, None), colororder=[2,1])
+                                      figsize=figsize, log=True, xlim=(0,322), ylim=(None, None), colororder=[2,1])
         
     # -- 270K ID vs VDS curves
     if False:

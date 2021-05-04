@@ -255,7 +255,7 @@ def main(): # sample B
     # -- Cross section of loop data --
     if False or show_all:
         mp.plot_loopR_cross_section(fileroot, RTloop_filenames, "_JR200115_17_RDS", increments=[0,25,50,75],\
-                                      figsize=figsize, log=True, xlim=(None, None), ylim=(None, None))
+                                      figsize=figsize, log=True, xlim=(None, None), ylim=(None, 322))
         mp.plot_loopR_cross_section(fileroot, RTloop_filenames[:5], "loop_RDS", increments=[75], figsize=.7,\
                                       log=False, ylim=(None, None), fontsize=8, labelsize=8, xlim=(None, 220), colororder=[1])
         mp.plot_loopR_cross_section(fileroot, RTloop_heated_filenames, "_JR200115_17_RDS_heated", increments=[0,25,50,75],\
@@ -263,7 +263,7 @@ def main(): # sample B
         mp.plot_loopR_cross_section(fileroot, RTloop_after_IV_filenames, "_JR200115_17_RDS_IDVDS", increments=[0,25,50,75], figsize=2,\
                                       log=True, ylim=(None, None), fontsize=10, labelsize=10, xlim=(None, 220))
         mp.plot_loopR_cross_section(fileroot, RTloop_IV_filenames_100V, "_JR200115_17_RDS_100V", increments=[0,25,50,75,100], figsize=2,\
-                                      log=True, ylim=(None, None), fontsize=10, labelsize=10, xlim=(None, None))
+                                      log=True, ylim=(None, None), fontsize=10, labelsize=10, xlim=(0, 322))
 
     
     # -- 3K ID vs VDS curves
@@ -276,7 +276,7 @@ def main(): # sample B
         plot_300K_IDvsVDS(figsize=figsize, log=True)
         
         # -- Effect off heating sample on ID
-    if True or show_all:
+    if False or show_all:
         plot_IDSvsVg_effect_heating()
 
     # -- effect of ramping rate
@@ -299,9 +299,9 @@ def main(): # sample B
         mp.plot_mobility_μ_cross_section(fileroot, RTloop_filenames, "_JR200115_17", JR200115_17_length, JR200115_17_width, figsize=1.5, ylim=(None, None),\
                                            log=False, increments=[25,50,75], colororder=[3,2,1])
             
-    #mp.plot_loopR_cross_section(fileroot, RTloop_filenames, "_JR200115_17_RDS", increments=[0,25,75],\
-    #                                  figsize=figsize, log=True, ylim=(None, 4*10**7),  colororder=[0,3,1,4,5], \
-    #                                  fontsize=10, labelsize=8, xlim=(None, 320))
+    mp.plot_loopR_cross_section(fileroot, RTloop_filenames, "_JR200115_17_RDS", increments=[0,25,50, 75],\
+                                      figsize=figsize, log=True, ylim=(None, 4*10**7),  colororder=[0,3,2,1,4,5], \
+                                      fontsize=10, labelsize=8, xlim=(None, 320))
     
 if __name__== "__main__":
   main()
