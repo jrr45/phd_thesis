@@ -529,7 +529,7 @@ def main(): #sample A
                                            log=False, increments=[25, 50, 75], colororder=[3,2,1])
     
     # loops if ID vs VDS showing hysteresis
-    if True  or show_all:
+    if False  or show_all:
         plot_IDvsVDS_loops(log=True,figsize=2, fontsize=10, labelsize=10)
         plot_IDvsVDS_loops(log=False,figsize=2, fontsize=10, labelsize=10)
         #plot_IDvsVDS_loops2(log=False,figsize=2)
@@ -544,7 +544,9 @@ def main(): #sample A
         plot_σvsB_custom(MR_sweep_files2, '_JR200115_11_MR_sweep', color_order=[0,2,1],\
                             fit_lim=1, size=2,fontsize=10, labelsize=10, xmult=4)
 
-            
+    # min subthreshold slope
+    if True or show_all:
+        mp.plot_maxSS_vs_T(fileroot, RTloop_filenames, '_minSSvsT', Npoints=5, Icutoff=10*10**-11)
     
     
 if __name__== "__main__":

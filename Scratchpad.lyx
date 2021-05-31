@@ -43,9 +43,9 @@
 \use_package stackrel 1
 \use_package stmaryrd 1
 \use_package undertilde 1
-\cite_engine basic
-\cite_engine_type default
-\biblio_style plain
+\cite_engine natbib
+\cite_engine_type numerical
+\biblio_style glsplain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
@@ -82,94 +82,58 @@
 \begin_body
 
 \begin_layout Standard
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align right
-\begin_inset Box Frameless
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "30page%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
-\begin_layout Plain Layout
-\align right
-\begin_inset Graphics
-	filename Chapter-In2Se3-FeSm-FET/Figures/JR200115_17/JR200115_17_300K_IDvVDS-negative_VG-decreasing_linear.svg
-
-\end_inset
-
-
-\begin_inset space \qquad{}
+\begin_inset Separator plain
 \end_inset
 
 
 \end_layout
 
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset Formula $V_{DS}$
-\end_inset
-
- decreasing, 
-\begin_inset Formula $V_{G}$
-\end_inset
-
- increasing
-\begin_inset space \hfill{}
-\end_inset
-
-
+\begin_layout Standard
+axis font: 10pt
 \end_layout
 
-\end_inset
-
-
+\begin_layout Standard
+inside image: 8pt
 \end_layout
 
-\end_inset
+\begin_layout Standard
+axis width: 0.176 mm
+\end_layout
 
+\begin_layout Standard
+arrow width: 0.265mm
+\end_layout
 
+\begin_layout Standard
+colors:
 \end_layout
 
 \begin_layout Itemize
-FE
+Blue: 377eb8ff
 \end_layout
 
 \begin_layout Itemize
-Flake fab/devices
+grey: 999999ff
 \end_layout
 
 \begin_layout Itemize
-Low temp, electronics, IL?
+green: 4daf4aff
 \end_layout
 
 \begin_layout Itemize
-In-Se review
+brown: a65628ff
 \end_layout
 
 \begin_layout Itemize
-Schottky barriers
+purple: 984ea3ff
+\end_layout
+
+\begin_layout Itemize
+orange: ff7f00ff
+\end_layout
+
+\begin_layout Itemize
+red: e41a1cff
 \end_layout
 
 \begin_layout Standard
@@ -177,6 +141,10 @@ Schottky barriers
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+sfds
 \end_layout
 
 \begin_layout Itemize
@@ -297,6 +265,17 @@ Wet Chem: Solvent SS Bench 2 (MSC)
 
 \begin_layout Itemize
 Wet Chem: Solvent SS Bench 3 (MSC)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+slope=\frac{d\log\left(I_{D}\right)}{dV_{G}}=\frac{1}{S}\rightarrow S=1/\left(\frac{d\log\left(I_{D}\right)}{dV_{G}}\right)
+\]
+
+\end_inset
+
+
 \end_layout
 
 \end_body

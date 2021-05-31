@@ -233,6 +233,7 @@ def plot_IDSvsVg_effect_heating():
     mp.plot_IDvsVg_generic(fileroot, files, '_JR200115_17_effect_heating', colors, log=True, size=2, \
                              majorx=40, ylim=(None,None), fontsize=10, labelsize=10)
     
+        
 def main(): # sample B
     show_all = False
 
@@ -299,9 +300,13 @@ def main(): # sample B
         mp.plot_mobility_μ_cross_section(fileroot, RTloop_filenames, "_JR200115_17", JR200115_17_length, JR200115_17_width, figsize=1.5, ylim=(None, None),\
                                            log=False, increments=[25,50,75], colororder=[3,2,1])
             
-    mp.plot_loopR_cross_section(fileroot, RTloop_filenames, "_JR200115_17_RDS", increments=[0,25,50, 75],\
-                                      figsize=figsize, log=True, ylim=(None, 4*10**7),  colororder=[0,3,2,1,4,5], \
-                                      fontsize=10, labelsize=8, xlim=(None, 320))
+    #mp.plot_loopR_cross_section(fileroot, RTloop_filenames, "_JR200115_17_RDS", increments=[0,25,50, 75],\
+    #                                  figsize=figsize, log=True, ylim=(None, 4*10**7),  colororder=[0,3,2,1,4,5], \
+    #                                  fontsize=10, labelsize=8, xlim=(None, 320))
+    
+    # min subthreshold slope
+    if True or show_all:
+        mp.plot_maxSS_vs_T(fileroot, RTloop_filenames, '_minSSvsT', Npoints=5, Icutoff=1*10**-12)
     
 if __name__== "__main__":
   main()

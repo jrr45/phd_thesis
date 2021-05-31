@@ -947,6 +947,9 @@ noprefix "false"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 placement h
 wide false
@@ -1476,7 +1479,7 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-\noindent
+\align center
 \begin_inset Float figure
 wide false
 sideways false
@@ -1485,6 +1488,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Ferroelectrics-Figures/FeFET Device.svg
+	width 7cm
 
 \end_inset
 
@@ -1513,23 +1517,7 @@ name "fig:Typical-FeFET-device"
 \end_inset
 
 
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
+\begin_inset space \hfill{}
 \end_inset
 
 
@@ -1541,7 +1529,12 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Ferroelectrics-Figures/FeFET Current vs Gate Voltage.svg
+	width 7cm
 
+\end_inset
+
+
+\begin_inset space \qquad{}
 \end_inset
 
 
@@ -1569,7 +1562,7 @@ name "fig:FeFET-Current-vs-Gate"
 \end_layout
 
 \begin_layout Plain Layout
-\noindent
+\align center
 \begin_inset Float figure
 wide false
 sideways false
@@ -1578,6 +1571,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Ferroelectrics-Figures/FeFET Band diagram Hold ON.svg
+	width 7.5cm
+	groupId FeFET-band
 
 \end_inset
 
@@ -1614,11 +1609,7 @@ name "fig:FeFET-Hold-ON"
 \end_inset
 
 
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
+\begin_inset space \hfill{}
 \end_inset
 
 
@@ -1630,6 +1621,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Ferroelectrics-Figures/FeFET Band diagram Write ON.svg
+	width 7.5cm
+	groupId FeFET-band
 
 \end_inset
 
@@ -1669,7 +1662,7 @@ name "fig:FeFET-Write-ON"
 \end_layout
 
 \begin_layout Plain Layout
-\noindent
+\align center
 \begin_inset Float figure
 wide false
 sideways false
@@ -1678,6 +1671,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Ferroelectrics-Figures/FeFET Band diagram Write OFF.svg
+	width 7.5cm
+	groupId FeFET-band
 
 \end_inset
 
@@ -1714,11 +1709,7 @@ name "fig:FeFET-channel-Write-OFF"
 \end_inset
 
 
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
+\begin_inset space \hfill{}
 \end_inset
 
 
@@ -1730,6 +1721,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Ferroelectrics-Figures/FeFET Band diagram Hold OFF.svg
+	width 7.5cm
+	groupId FeFET-band
 
 \end_inset
 
@@ -2585,7 +2578,7 @@ name "subsec:Polar-metals"
 
 \end_inset
 
-
+ (TODO review)
 \end_layout
 
 \begin_layout Standard

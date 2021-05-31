@@ -362,7 +362,7 @@ def main(): #Sample C
         plot_R_DSvT_4p(size=figsize)
     
     # -- cooling vs warming difference
-    if True:
+    if False:
         plot_IDSvsT_cooling_vs_warming(size=figsize)
     
     # unused but saving
@@ -379,6 +379,11 @@ def main(): #Sample C
     #calc_field_effect_mobility(fileroot, ['JR190919_03_037_IvsV_300.0K_positive.txt',], (0,1.5))
     #mp.plot_loopR_cross_section(fileroot, RTloop_filenames, "_JR190919_03_RDS", increments=[0,25,50,75],\
     #                                  figsize=1.5, log=True, ylim=(None, 10**9), fontsize=14, labelsize=14, xinc=150)
-
+    
+    # min subthreshold slope
+    if True or show_all:
+        mp.plot_maxSS_vs_T(fileroot, RTloop_filenames, '_minSSvsT', Npoints=5, Icutoff=2*10**-12)
+    
+    
 if __name__== "__main__":
   main()

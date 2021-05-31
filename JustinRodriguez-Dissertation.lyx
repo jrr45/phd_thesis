@@ -249,7 +249,7 @@
 
 
 \usepackage{listings}
-%\usepackage{fancytooltips}
+%\usepackage[redefcite]{xcpdftips}
 %%%%%%%%%%%%%%%%%
 % THE BEGINNING %
 %%%%%%%%%%%%%%%%%
@@ -304,9 +304,9 @@
 \use_package stackrel 0
 \use_package stmaryrd 0
 \use_package undertilde 0
-\cite_engine basic
-\cite_engine_type default
-\biblio_style plain
+\cite_engine natbib
+\cite_engine_type numerical
+\biblio_style plainnat
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
@@ -807,7 +807,7 @@ status open
 
 \begin_layout Plain Layout
 
-%
+% Old command: 
 \backslash
 thesislistofsymbols{SupplementaryMaterial/ListOfSymbols}
 \end_layout
@@ -1005,6 +1005,16 @@ filename "Chapter-In2Se3-FeSm-FET/Chapter-In2Se3-FeSm-FET.lyx"
 \end_layout
 
 \begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "Chapter-Conclusion/Chapter-Conclusion.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \start_of_appendix
 \begin_inset ERT
 status open
@@ -1093,8 +1103,9 @@ allowdisplaybreak command %
 \paragraph_spacing single
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
+btprint "btPrintCited"
 bibfiles "Biblio-Database"
-options "GLG-bibstyle"
+options "bibtotoc,GLG-bibstyle"
 
 \end_inset
 
