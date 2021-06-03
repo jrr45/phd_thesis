@@ -108,6 +108,10 @@ name "chapter:FeSm-FET"
 
 \end_layout
 
+\begin_layout Standard
+<TODO abstract>
+\end_layout
+
 \begin_layout Section
 Introduction
 \end_layout
@@ -442,6 +446,7 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
+\noindent
 \begin_inset Float figure
 wide false
 sideways false
@@ -672,6 +677,7 @@ name "fig:In2Se3-Device-images"
 \end_layout
 
 \begin_layout Standard
+\noindent
 \begin_inset Float table
 wide false
 sideways false
@@ -1363,7 +1369,7 @@ name "fig:In2Se3-Optical-measurements"
 \end_layout
 
 \begin_layout Plain Layout
-Raman (TODO peak numbers) (a), photoluminescence (b), and angle-resolved
+Raman <TODO peak numbers> (a), photoluminescence (b), and angle-resolved
  SHG (c) of exfoliated 
 \begin_inset Formula $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$
 \end_inset
@@ -1534,6 +1540,7 @@ literal "true"
 \end_layout
 
 \begin_layout Standard
+\noindent
 \begin_inset Float figure
 wide false
 sideways false
@@ -1656,6 +1663,7 @@ status collapsed
 \end_layout
 
 \begin_layout Plain Layout
+\noindent
 \align center
 \begin_inset Float figure
 wide false
@@ -1909,6 +1917,7 @@ literal "true"
 \end_layout
 
 \begin_layout Standard
+\noindent
 \begin_inset Float figure
 wide false
 sideways false
@@ -2174,7 +2183,7 @@ name "fig:In2Se3-Sample-A-loops"
 \end_layout
 
 \begin_layout Section
-Discussion
+Discussion (TODO: add?, review)
 \end_layout
 
 \begin_layout Standard
@@ -2564,8 +2573,8 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
-The magnetoconductance (MC) of sample A displayed weak localization even
- while gated to the metallic state at 1.8 K (figure 
+The magnetoconductance (MC) of sample A displayed weak localization while
+ gated into the metallic state at 1.8 K (figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Magnetic-field-measurment"
@@ -2630,7 +2639,7 @@ where
 \begin_inset Formula $dR/dT$
 \end_inset
 
- at low temperatures.
+ at low temperatures
 \begin_inset CommandInset citation
 LatexCommand cite
 key "lee1985disordered"
@@ -2638,47 +2647,11 @@ literal "false"
 
 \end_inset
 
-
+, which is consistent with what we observed.
 \end_layout
 
 \begin_layout Standard
-TODO: smooth discussion transition
-\end_layout
-
-\begin_layout Standard
-TODO: Include discussion on max 2D electric conductivity? No idea where
- the 80
-\begin_inset Formula $\sigma_{0}$
-\end_inset
-
- (quantum conductance) for Prof Liu's calculation comes from.
- I get .1-.2
-\begin_inset Formula $\sigma_{0}$
-\end_inset
-
- for thick samples and ~2.5
-\begin_inset Formula $\sigma_{0}$
-\end_inset
-
- for thin ones.
-\end_layout
-
-\begin_layout Standard
-TODO: Hysteresis shrinks, polarization exists at 2K (invoke 6?).
- Should I include more about charge trapping in the discussion? Finish backgroun
-d discussion on charge trapping first
-\end_layout
-
-\begin_layout Standard
-TODO: Discuss how polarization may change metallic transition.
- Finish background discussion on ferroelectric channels/semiconductors first.
-\end_layout
-
-\begin_layout Standard
-TODO: Include polarization measurement failure in beginning?
-\end_layout
-
-\begin_layout Standard
+\noindent
 \begin_inset Float figure
 wide false
 sideways false
@@ -2804,6 +2777,252 @@ name "fig:Magnetic-field-measurment"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+The 
+\begin_inset Formula $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$
+\end_inset
+
+ sample hysteresis is likely from combination of charge trapping and the
+ ferroelectric nature of the material.
+ In FeFETs both charge trapping and polarization switching can display similar
+ hysteresis behaviors, and care must be taken when determining the explanation
+ of that hysteresis
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kokil2012techniques,osullivan2020defectprofiling,jung2020impactof,yurchuk2016chargetrapping"
+literal "false"
+
+\end_inset
+
+, especially with DC measurements.
+ As almost all MOSFET devices show evidence of charge trapping, even in
+ the long-studied and optimized Si-
+\begin_inset Formula $\mathrm{SiO_{2}}$
+\end_inset
+
+ interface, we can assume it plays some role in our devices.
+ Additionally, the reported devices were manufactured within air, adding
+ increased interface contamination from water and air
+\begin_inset CommandInset citation
+LatexCommand cite
+key "datye2018reduction,bartolomeo2017hysteresis,kim2018analysis"
+literal "false"
+
+\end_inset
+
+.
+ In FETs we expect to see a reduction in charge trapping hysteresis in 
+\begin_inset Formula $I_{D}$
+\end_inset
+
+-
+\begin_inset Formula $V_{G}$
+\end_inset
+
+ sweeps with decreasing temperature
+\begin_inset CommandInset citation
+LatexCommand cite
+key "guo2015chargetrapping,datye2018reduction,kim2018analysis,park2021interface,bartolomeo2017hysteresis"
+literal "false"
+
+\end_inset
+
+, though the effects of charge traps can still be seen even down to cryogenic
+ temperatures
+\begin_inset CommandInset citation
+LatexCommand cite
+key "powell1983chargetrapping,liu2021cryogenic,beckers2020physical,beckers2018cryogenic2,park2021interface"
+literal "false"
+
+\end_inset
+
+.
+ All of the reported devices showed a similar reduction in the size of the
+ hysteresis gate voltage widths with decreasing temperature, shown in figure
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Hysteresis-width-vs-T"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ for various currents.
+ In FeFET devices we would expect an increasing hysteresis window at lower
+ temperature from the suppressed charge trapping effects
+\begin_inset CommandInset citation
+LatexCommand cite
+key "wang2020cryogenic,ni2018critical,ali2020astudy"
+literal "false"
+
+\end_inset
+
+, reduced domain wall motion
+\begin_inset CommandInset citation
+LatexCommand cite
+key "tan2020hotelectrons"
+literal "true"
+
+\end_inset
+
+, or a change in polarization and coercive fields
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ali2020astudy"
+literal "true"
+
+\end_inset
+
+.
+ As the role of ferroelectricity in the semiconductor and dielectric are
+ the switched in a FeSmFET verses a traditional FeFET, the interactions
+ between charge traps dipoles are not the same as in a traditional FeFET.
+ More work is needed to quantify the agency of the hysteresis behavior.
+\end_layout
+
+\begin_layout Standard
+The mechanism responsible for the 
+\begin_inset Formula $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$
+\end_inset
+
+ metallic state has many possible explanations.
+ The origin metal-insulator-transitions (MIT) in MOSFETs is still an area
+ active study
+\begin_inset CommandInset citation
+LatexCommand cite
+key "moon2021metalinsulator"
+literal "false"
+
+\end_inset
+
+, but current theories generally fall under carrier-carrier interactions,
+ disorder scattering, or some combination of the two.
+ Of the former, one of the most prevalent is the theory that in 2D semiconductor
+ TMDs, carrier-carrier interactions are thought to cause a Wigner-Mott transitio
+n
+\begin_inset CommandInset citation
+LatexCommand cite
+key "amaricci2010extended,moon2021metalinsulator,moon2020quantum"
+literal "false"
+
+\end_inset
+
+.
+ In a Mott insulator carriers localize to form spin 1/2 bound states in
+ the potential wells of Coulomb repulsion from surrounding carriers, and
+ at increased carrier density the carriers overcome the repulsion and form
+ a Fermi liquid.
+ A second common suggestion is MITs may result from percolation in layered
+ semiconductors
+\begin_inset CommandInset citation
+LatexCommand cite
+key "moon2019anomalous,tracy2009observation,moon2021metalinsulator,manfra2007transport,dassarma2005twodimensional"
+literal "false"
+
+\end_inset
+
+.
+ In a 2D semiconductor a small change in carrier density leads to a large
+ change in screening, and at low carrier density and screening the disorder
+ of the system has a significant impact on the carrier conduction.
+ Theoretical predictions also have suggested disorder from charge trapping
+ may also display a metal-to-insulator (MIT) in MOSFETs
+\begin_inset CommandInset citation
+LatexCommand cite
+key "brunthaler2007trapmodel,altshuler1999theoryof,hormann2010dipoletrap"
+literal "false"
+
+\end_inset
+
+.
+ From the 
+\begin_inset Formula $I_{D}$
+\end_inset
+
+-
+\begin_inset Formula $V_{DS}$
+\end_inset
+
+ in plane current sweep hysteresis, typically attributed to domain switching
+ in 
+\begin_inset Formula $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$
+\end_inset
+
+ devices, we may postulate that the ferroelectric nature of the 
+\begin_inset Formula $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$
+\end_inset
+
+ crystal likely plays some role in or interacts with the origin of the observed
+ metallic state.
+ However, neither the mechanisms for conductivity in ferroelectric semiconductor
+s<TODO:refs> or the dynamics polarization will play in a FET configuration<TODO:
+refs> are well understood.
+ Additionally, with only one experimentally verified ferroelectric metal
+\begin_inset CommandInset citation
+LatexCommand cite
+key "zhou2020reviewon"
+literal "false"
+
+\end_inset
+
+, demonstrated very recently
+\begin_inset CommandInset citation
+LatexCommand cite
+key "sharma2019aroomtemperature,fei2018ferroelectric"
+literal "false"
+
+\end_inset
+
+, there has been little study of polarization switching behaviors in actual
+ ferroelectric metals.
+ 
+\begin_inset Formula $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$
+\end_inset
+
+ FeSmFETs provide us with a new tool to avenue to study MIT using ferroelectric
+ polarization and possibly a new component to build future electronic technologi
+es.
+ 
+\end_layout
+
+\begin_layout Section
+Conclusion (TODO)
+\end_layout
+
+\begin_layout Standard
+TODO: smooth discussion transition
+\end_layout
+
+\begin_layout Standard
+TODO: Include discussion on max 2D electric conductivity? No idea where
+ the 80
+\begin_inset Formula $\sigma_{0}$
+\end_inset
+
+ (quantum conductance) for Prof Liu's calculation comes from.
+ I get .1-.2
+\begin_inset Formula $\sigma_{0}$
+\end_inset
+
+ for thick samples and ~2.5
+\begin_inset Formula $\sigma_{0}$
+\end_inset
+
+ for thin ones.
+\end_layout
+
+\begin_layout Standard
+TODO: Discuss ferroelectric channel conduction? Finish background discussion
+ on ferroelectric channels/semiconductors first.
+\end_layout
+
+\begin_layout Standard
+TODO: add more discussion on the disorder + localization? Finish localization
+ background first
 \end_layout
 
 \end_body

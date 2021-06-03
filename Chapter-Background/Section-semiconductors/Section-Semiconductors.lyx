@@ -148,7 +148,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Semiconductor-Figures/Material conduciton bands.svg
+	filename Semiconductor-Figures/Material conduction bands.svg
 
 \end_inset
 
@@ -305,7 +305,15 @@ To provide at least a mental picture of a metal-semiconductor system, a
  individual details but gives a broad pattern of behavior.
  Next to the junction, the electrons in the semiconductor move to (or from)
  the conduction band of the metal, depleting (accumulating) electrons in
- the area nearest to the metal.
+ the area nearest to the metal
+\begin_inset CommandInset citation
+LatexCommand cite
+key "sze2012semiconductor"
+literal "true"
+
+\end_inset
+
+.
  This causes the bands to bend relative to one another, shown in Figure
  
 \begin_inset CommandInset ref
@@ -360,7 +368,15 @@ must be the same and constant for both materials, while the vacuum energy
 \begin_inset Formula $E_{vac}$
 \end_inset
 
- must be continuous across the junction.
+ must be continuous across the junction
+\begin_inset CommandInset citation
+LatexCommand cite
+key "sze2012semiconductor"
+literal "true"
+
+\end_inset
+
+.
  The band shift can be estimated using these two conditions.
  The Schottky-Mott rule gives the energy barrier 
 \begin_inset Formula $\phi_{B}$
@@ -1668,7 +1684,15 @@ The metal-oxide-semiconductor, or gate, capacitor can be understood by using
 
  are the potentials needed to completely ionize an electron each material.
  For materials in contact, the vacuum energy must be continuous and the
- Fermi energy is constant.
+ Fermi energy is constant
+\begin_inset CommandInset citation
+LatexCommand cite
+key "sze2012semiconductor"
+literal "true"
+
+\end_inset
+
+.
  In the band model this causes the bands to bend in the oxide and the semiconduc
 tor near the interface, so the bulk of the semiconductor is shifted relative
  to the gate.
@@ -1708,7 +1732,15 @@ where
 \begin_inset Formula $q\psi_{B}$
 \end_inset
 
- is the difference between the Fermi and intrinsic Fermi energies.
+ is the difference between the Fermi and intrinsic Fermi energies
+\begin_inset CommandInset citation
+LatexCommand cite
+key "sze2012semiconductor"
+literal "true"
+
+\end_inset
+
+.
  In an ideal semiconductor there is no band bending and 
 \begin_inset Formula $\phi_{MS}=0$
 \end_inset
@@ -1740,7 +1772,7 @@ status open
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -1775,7 +1807,7 @@ Ideal
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -1810,7 +1842,7 @@ Non-ideal
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -1845,7 +1877,7 @@ Accumulation
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -1880,7 +1912,7 @@ Depletion
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -1926,6 +1958,12 @@ MOS band diagram
 The metal-oxide-semiconductor energy band diagrams for an n-type semiconductor.
  (a) an ideal and (b) non-ideal MOS capacitor, showing the additional band
  shifting necessary for the aliment of the Fermi energies.
+ (c) applying a positive voltage across the gate causes the bands to bend
+ and charges to accumulate.
+ (d) a small negative voltage depletes the area near the interface of majority
+ (electron) charge carriers, while (e) a larger negative voltage will eventually
+ accumulate more minority charges than majority near the interface creating
+ an region of inversion near the interface.
 \end_layout
 
 \end_inset
@@ -1985,7 +2023,14 @@ noprefix "false"
 \end_inset
 
 e.
- 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "sze2012semiconductor"
+literal "true"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1997,6 +2042,14 @@ The doping of the channel with majority and minority carriers leads to the
  This shift corresponds to the linear and saturation behavior as the doped
  channel narrows at one end and eventually eventually pinches off, forcing
  charges to tunnel between channel and contact.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "horowitz2015theart"
+literal "true"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
@@ -2009,7 +2062,15 @@ Types/sources of trapped charge: interface, surface contaminants (water),
 \end_layout
 
 \begin_layout Itemize
-Methods to distinguish trapped charge from FE
+Methods to distinguish
+\begin_inset CommandInset citation
+LatexCommand cite
+key "horowitz2015theart"
+literal "true"
+
+\end_inset
+
+ trapped charge from FE
 \end_layout
 
 \begin_deeper
@@ -2019,6 +2080,14 @@ What trapped charge FET behavior looks like
 
 \begin_layout Itemize
 Frequency measurements
+\begin_inset CommandInset citation
+LatexCommand cite
+key "horowitz2015theart"
+literal "true"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -2036,11 +2105,15 @@ Methods to reduce?
 \end_layout
 
 \begin_layout Subsection
-Weak localization (TODO)
+Localization (TODO)
 \end_layout
 
 \begin_layout Standard
 general picture, MR
+\end_layout
+
+\begin_layout Standard
+weak localization
 \end_layout
 
 \begin_layout Subsection

@@ -2979,7 +2979,14 @@ Hysteresis width
 \begin_inset Formula $\Delta V_{G}$
 \end_inset
 
- versus temperature for samples A, B, C, and D 
+ versus temperature for samples A, B, C, and D
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:dVG-vs-T"
+
+\end_inset
+
+ 
 \end_layout
 
 \end_inset
@@ -3051,7 +3058,7 @@ status open
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -3090,7 +3097,7 @@ Sample A
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -3125,7 +3132,7 @@ Sample B
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -3164,7 +3171,7 @@ Sample C
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -3250,14 +3257,27 @@ noprefix "false"
 \end_inset
 
  (D).
- Calculated values are all well above the 60 mV/dec threshold, values below
- the limit are often used as a sign the hysteresis is an effect of polarization
- switching instead of charge trapping
+ Calculated values are all well above the Boltzman limit threshold
+\begin_inset CommandInset citation
+LatexCommand cite
+key "beckers2018cryogenic"
+literal "false"
+
+\end_inset
+
+, which about 60 mV/dec at 300 K, values below the limit are often used
+ as a sign the hysteresis is an effect of polarization switching instead
+ of charge trapping
 \begin_inset CommandInset citation
 LatexCommand cite
 key "jin2019onthe,jin2020physical"
 literal "true"
 
+\end_inset
+
+.
+ All slopes were calculated using 
+\begin_inset Formula $SS=1/\frac{\partial\log_{10}I_{D}}{\partial V_{G}}$
 \end_inset
 
 .
