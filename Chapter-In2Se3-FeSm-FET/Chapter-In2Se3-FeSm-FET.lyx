@@ -2844,7 +2844,7 @@ literal "false"
  
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Hysteresis-width-vs-T"
+reference "fig:dVG-vs-T"
 plural "false"
 caps "false"
 noprefix "false"
@@ -2979,18 +2979,17 @@ literal "false"
 
 , there has been little study of polarization switching behaviors in actual
  ferroelectric metals.
- 
-\begin_inset Formula $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$
+ FeSmFETs, along with FeFETs
+\begin_inset CommandInset citation
+LatexCommand cite
+key "lu2018electrically"
+literal "false"
+
 \end_inset
 
- FeSmFETs provide us with a new tool to avenue to study MIT using ferroelectric
- polarization and possibly a new component to build future electronic technologi
-es.
+, may provide us with a new avenue to understand MITs using ferroelectric
+ polarization.
  
-\end_layout
-
-\begin_layout Section
-Conclusion (TODO)
 \end_layout
 
 \begin_layout Standard
@@ -3023,6 +3022,14 @@ TODO: Discuss ferroelectric channel conduction? Finish background discussion
 \begin_layout Standard
 TODO: add more discussion on the disorder + localization? Finish localization
  background first
+\end_layout
+
+\begin_layout Standard
+TODO: include trapped charge calculation assuming no FE?
+\end_layout
+
+\begin_layout Section
+Conclusion (TODO)
 \end_layout
 
 \end_body

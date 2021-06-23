@@ -117,7 +117,7 @@ status open
 
 \end_inset
 
-Project Unity control software
+Project Unity - electronic measurements program
 \begin_inset ERT
 status open
 
@@ -136,6 +136,14 @@ name "Project-Unity"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Project Unity is a LabVIEW program developed for the operation of electronic
+ measurement equipment in conjunction with various cryostats.
+ The following is a brief overview of how the code is constructed at a high
+ level and the typical flow of a data measurement process.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -333,7 +341,7 @@ Static Environments provide the experimental setup before any actual measurement
 Static Environments all have the following functions (VIs):
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \noindent
 
 \size footnotesize

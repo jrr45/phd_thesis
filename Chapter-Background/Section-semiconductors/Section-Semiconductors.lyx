@@ -117,8 +117,8 @@ ons with nearby atoms dictate most of the properties of that crystal.
 \begin_inset Formula $E_{G}$
 \end_inset
 
- of a few electron volts (eV), where room temperature thermal excitations
- are often enough to drive some conductivity.
+ of a few electron volts (eV), where room temperature excitations are often
+ enough to drive some conductivity.
  Semiconductors come in two flavors, n-type and p-type, that conduct using
  either quasiparticle electrons or holes respectively.
  N-type carriers reside below the Fermi energy in the fully occupied valance
@@ -2053,55 +2053,461 @@ literal "true"
 \end_layout
 
 \begin_layout Subsubsection
-Charge trapping in FETs (TODO)
+Charge trapping in FETs (TODO: review)
 \end_layout
 
-\begin_layout Itemize
-Types/sources of trapped charge: interface, surface contaminants (water),
- defects, Fixed oxide charges, Oxide trapped charges, Mobile ionic charges....
+\begin_layout Standard
+Discontinuities or imperfections in the MOS crystal structures can create
+ localized electronic states, introducing locations for charges to get trapped
+ so impeding movement through the device.
+ Charge trapping modifies the electric field across the MOS capacitor, altering
+ the conduction within the semiconductor and is usually considered detrimental
+ to typical MOSFETs.
+ As the MOS is gated, carriers become pinned, disrupting the electric field
+ and conduction.
+ Shallow traps, within 
+\begin_inset Formula $\sim1\,k_{B}T$
+\end_inset
+
+ of the band edge, allow carriers to de-trap and continue to move along
+ the band.
+ Deep traps are formed near the intrinsic energy band, where it is much
+ harder for traps to de-trap without non-thermal energy excitations.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Charge-trapping"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+a shows the deep and shallow traps in a weakly localized semiconductor that
+ impedes carrier transport.
+ 
 \end_layout
 
-\begin_layout Itemize
-Methods to distinguish
+\begin_layout Standard
+Charge traps can originate from intrinsic properties of the crystal, due
+ to disorder in the lattice, or from extrinsic sources.
+ Intrinsic static disorder arises from structural defects such as grain
+ boundaries, mobile ions, empty lattice sites, step edges, lattice stacking
+ mismatches, and others.
+ Grain boundaries typically impede current flow, though in some instances
+ can actually act as channels of conduction
 \begin_inset CommandInset citation
 LatexCommand cite
-key "horowitz2015theart"
+key "deuermeier2016highlyconductive,hunter2013observation"
 literal "true"
 
 \end_inset
 
- trapped charge from FE
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-What trapped charge FET behavior looks like
-\end_layout
-
-\begin_layout Itemize
-Frequency measurements
+.
+ Mobile ions are charged atoms, usually manufacturing impurities, that can
+ move through the oxide with a high electric field.
+ As the ions move they alter the capacitance-voltage relationship of the
+ MOS
 \begin_inset CommandInset citation
 LatexCommand cite
-key "horowitz2015theart"
-literal "true"
+key "kuhn1971ioniccontamination"
+literal "false"
+
+\end_inset
+
+.
+ Empty lattice sites, step edges, lattice stacking mismatches all typically
+ reduce the flow of current as they form energy barriers for charge carries
+ along the path of conduction
+\begin_inset CommandInset citation
+LatexCommand cite
+key "haneef2020chargecarrier"
+literal "false"
+
+\end_inset
+
+.
+ Dynamic disorder arises from short lived distortions, such as temperature
+ fluctuations of the lattice and phonons, that localize bands of the lattice
+ and reduce conductivity in a similar manner to static disorder
+\begin_inset CommandInset citation
+LatexCommand cite
+key "fratini2016thetransient"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Extrinsic traps originate from sources external to the semiconductor, such
+ as interfaces with other materials, bias stresses, dopants, and environmental
+ effects.
+ At the metal-semiconductor interface the band structure is altered, forming
+ a barrier for charges traveling through or near the interface.
+ This can form Schottky barriers, as discussed in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Metal-Semiconductor-Metal-conduc"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, and decreases the conductivity of the FET.
+ The surface of the semiconductor often contains defects or contaminates,
+ but the resulting localized states may be screened the semiconductor has
+ a large amount of free carriers.
+ When put in contact with a metal, the depletion region formed at the interface
+ can expose the localized band structure
+\begin_inset CommandInset citation
+LatexCommand cite
+key "tung2014thephysics"
+literal "false"
+
+\end_inset
+
+.
+ Doping the semiconductor near the region of the metal interface is often
+ used to mitigate this effect and produce ohmic contacts.
+ Similarly, the oxide-semiconductor interface in a MOS or a heterostructure
+ interfaces produces localized traps in the semiconductor, reducing mobility
+ or conductivity.
+ Mismatching periodic lattice structures in the two materials can induce
+ regions of strain or disorder in the semiconductor.
+ Different rates of thermal expansion in each material can exaggerate this
+ and introduce an additional temperature dependence to the interface trap
+ behavior.
+ Additionally, dangling bonds along the edge of the oxide can trap charges.
+ The MOS oxide can donate or accept additional charges from the semiconductor
+ to produce a lower energy state, the charges are then trapped and de-trapped
+ as the gate voltage is altered.
+ Environmental contaminates, usually water and oxygen molecules, cause numerous
+ trap phenomenon.
+ Water molecules can absorb into or adhere to the surfaces of the oxide
+ or semiconductor and act as charge traps or cause redox reactions in the
+ MOSFET
+\begin_inset CommandInset citation
+LatexCommand cite
+key "gao2014onthe"
+literal "false"
+
+\end_inset
+
+.
+ Similarly, oxygen can adhere to the surface of either material, creating
+ a localized state and trapping electrons
+\begin_inset CommandInset citation
+LatexCommand cite
+key "nicolai2012unification"
+literal "false"
+
+\end_inset
+
+.
+ Oxygen can also react with many semiconductors, oxidizing the surface and
+ forming an insulating barrier and decreasing the channel thickness.
+ Great care is often taken to avoid exposing MOSFETs to water and oxygen
+ through the use of controlled manufacturing environments and encapsulating
+ the materials within other materials such as h-BN.
+ Finally, exposure to environmental radiation can create deep traps within
+ the semiconductor gap
+\begin_inset CommandInset citation
+LatexCommand cite
+key "haneef2020chargecarrier"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+The effects of charge trapping on MOSFETs are varied and often difficult
+ to distinguish from other phenomena, such as contact resistance or gate
+ bias band bending.
+ Typically, the localization of bands within the lattice decreases the effective
+ conductivity and mobility of carriers in the channel
+\begin_inset CommandInset citation
+LatexCommand cite
+key "neamen2002semiconductor,sze2012semiconductor"
+literal "false"
+
+\end_inset
+
+.
+ Deep traps increase the recombination rate of minority charge carries,
+ and carriers that get localized in deep traps will no longer transport
+ current without a non-thermal excitation or large enough electric field,
+ both reducing the channel current
+\begin_inset CommandInset citation
+LatexCommand cite
+key "neamen2002semiconductor"
+literal "false"
+
+\end_inset
+
+.
+ Shallow traps may actually increase current in some instances, allowing
+ carriers to thermally hop or tunnel between traps
+\begin_inset CommandInset citation
+LatexCommand cite
+key "nenashev2018release"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Trapping impacts the effect of the gate voltage on carrier transport.
+ For FET at low gate voltages the injected charges accumulate in localized
+ states, so that the drain current is mostly transport though the traps
+\begin_inset CommandInset citation
+LatexCommand cite
+key "haneef2020chargecarrier"
+literal "false"
+
+\end_inset
+
+.
+ As the gate voltage increases the trap states continue to be filled, until
+ they are all full and the carriers occupy the extended states and increase
+ the device mobility.
+ As the trapped states in the oxide or semiconductor need to be filled first,
+ this shifts the threshold voltage in the direction of the bias, known as
+ gate bias stress.
+ The shift of the threshold voltage is often used as an indication of charge
+ trapping, though other mechanisms such as carrier density can impact the
+ mobility relationship to gate voltage
+\begin_inset CommandInset citation
+LatexCommand cite
+key "haneef2020chargecarrier,kwon2018relationship"
+literal "false"
+
+\end_inset
+
+.
+ Trapped charge can also cause bias stress instability, where the threshold
+ voltage to continue to shift over time 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "suresh2008biasstress,lan2020gatebias"
+literal "false"
+
+\end_inset
+
+.
+ Gate bias stress is typically reversible, as excitation such as light or
+ large gate voltages can detrap the charges.
+ In the subthreshold region of the FET the trapped charge can continue to
+ conduct, giving a large off current and high subthreshold swing
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kim2018analysis2"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+The gate-voltage trap filling often leads to hysteresis in the 
+\begin_inset Formula $I_{D}$
+\end_inset
+
+-
+\begin_inset Formula $V_{G}$
+\end_inset
+
+ measurements of thin film transistors, forming clockwise, counterclockwise,
+ or a combination of multiple loops.
+ Carriers trapped during a forward gate bias sweep will get released ruing
+ the reverse bias sweep, resulting in a different drain current for the
+ same gate voltage.
+ The traps can exist within the oxide, interface, surface contaminants,
+ or semiconductor along the gate
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kim2018analysis2"
+literal "false"
+
+\end_inset
+
+.
+ Frequency dependence
+\begin_inset CommandInset citation
+LatexCommand cite
+key "guo2015chargetrapping2,zhang2014defectstates,yin2019robusttrap,georgiou2018ferroelectricity"
+literal "false"
+
+\end_inset
+
+, pulsed gate voltage
+\begin_inset CommandInset citation
+LatexCommand cite
+key "datye2018reduction2"
+literal "false"
+
+\end_inset
+
+, temperature dependence
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kumar2003hotcarrier,datye2018reduction2,groeseneken1990temperature,wang2020cryogenic2"
+literal "false"
+
+\end_inset
+
+, illumination
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kumar2003hotcarrier,yin2019robusttrap"
+literal "false"
+
+\end_inset
+
+, and other techniques are all used to attempt to characterize charge trapping
+ and distinguish its hysteresis from other phenomenon.
+ 
+\end_layout
+
+\begin_layout Standard
+Charge traps continue to exist and cause FET hysteresis and bias stress
+ down to cryogenic temperatures
+\begin_inset CommandInset citation
+LatexCommand cite
+key "wang2020cryogenic2,casse2020cryogenic,beckers2020physical2,wang2020temperaturedriven"
+literal "false"
+
+\end_inset
+
+.
+ At low temperatures there is less ionization of dopant ions within the
+ material.
+ The bias stress effect from trapping and can increase and subthreshold
+ swing decrease with decreasing temperate
+\begin_inset CommandInset citation
+LatexCommand cite
+key "beckers2020physical2,wang2020temperaturedriven,kim2018analysis2"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Semiconductor-Figures/Trap transport.svg
+	width 7.5cm
 
 \end_inset
 
 
 \end_layout
 
-\begin_layout Itemize
-Optical
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+DOS and transport
 \end_layout
 
-\begin_layout Itemize
-Temperature dependence - is there a minimum, is there a formula showing
- behavior with respect to T
+\end_inset
+
+
 \end_layout
 
-\end_deeper
-\begin_layout Itemize
-Methods to reduce?
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Semiconductor-Figures/Sources of traps.svg
+	width 7.5cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Types of traps
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Charge trapping
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Charge-trapping"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+a) band structure of a MOS with charge trap localization.
+ The left shows the shallow and deep traps formed in the density of states
+ (DOS) bandgap of an ideal semiconductor.
+ The right shows how those bands may appear along the channel and different
+ forms of transport through the channel with traps.
+ b) types of intrinsic and extrinsic traps found in MOSFET devices.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -2117,7 +2523,7 @@ weak localization
 \end_layout
 
 \begin_layout Subsection
-Variable range hopping? (TODO)
+Variable range hopping / transport? (TODO)
 \end_layout
 
 \begin_layout Standard
