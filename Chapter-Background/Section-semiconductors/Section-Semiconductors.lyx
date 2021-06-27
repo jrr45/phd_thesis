@@ -96,7 +96,7 @@ status open
 \end_layout
 
 \begin_layout Section
-Semiconductors and semiconductor devices (TODO review)
+Semiconductors and MOSFET devices (TODO review)
 \end_layout
 
 \begin_layout Standard
@@ -279,7 +279,7 @@ When constructing electronic devices with multiple materials we must consider
  exists for the interface of metal-semiconductors
 \begin_inset CommandInset citation
 LatexCommand cite
-key "tung2014thephysics,liu2018approaching"
+key "liu2018approaching,tung2014physics"
 literal "true"
 
 \end_inset
@@ -290,7 +290,7 @@ literal "true"
  chemistry, and include the system's geometry
 \begin_inset CommandInset citation
 LatexCommand cite
-key "gong2014theunusual"
+key "gong2014unusual"
 literal "true"
 
 \end_inset
@@ -1624,7 +1624,7 @@ and labeled the saturation region.
  in the gate dialectic instead.
 \begin_inset CommandInset citation
 LatexCommand cite
-key "horowitz2015theart"
+key "horowitz2015art"
 literal "false"
 
 \end_inset
@@ -2044,7 +2044,7 @@ The doping of the channel with majority and minority carriers leads to the
  charges to tunnel between channel and contact.
 \begin_inset CommandInset citation
 LatexCommand cite
-key "horowitz2015theart"
+key "horowitz2015art"
 literal "true"
 
 \end_inset
@@ -2098,7 +2098,7 @@ Charge traps can originate from intrinsic properties of the crystal, due
  can actually act as channels of conduction
 \begin_inset CommandInset citation
 LatexCommand cite
-key "deuermeier2016highlyconductive,hunter2013observation"
+key "hunter2013observation,deuermeier2016highly"
 literal "true"
 
 \end_inset
@@ -2110,7 +2110,7 @@ literal "true"
  MOS
 \begin_inset CommandInset citation
 LatexCommand cite
-key "kuhn1971ioniccontamination"
+key "kuhn1971ionic"
 literal "false"
 
 \end_inset
@@ -2121,7 +2121,7 @@ literal "false"
  along the path of conduction
 \begin_inset CommandInset citation
 LatexCommand cite
-key "haneef2020chargecarrier"
+key "haneef2020charge"
 literal "false"
 
 \end_inset
@@ -2132,7 +2132,7 @@ literal "false"
  and reduce conductivity in a similar manner to static disorder
 \begin_inset CommandInset citation
 LatexCommand cite
-key "fratini2016thetransient"
+key "fratini2016transient"
 literal "false"
 
 \end_inset
@@ -2165,7 +2165,7 @@ noprefix "false"
  can expose the localized band structure
 \begin_inset CommandInset citation
 LatexCommand cite
-key "tung2014thephysics"
+key "tung2014physics"
 literal "false"
 
 \end_inset
@@ -2192,7 +2192,7 @@ literal "false"
  MOSFET
 \begin_inset CommandInset citation
 LatexCommand cite
-key "gao2014onthe"
+key "gao2014redox"
 literal "false"
 
 \end_inset
@@ -2217,7 +2217,7 @@ literal "false"
  the semiconductor gap
 \begin_inset CommandInset citation
 LatexCommand cite
-key "haneef2020chargecarrier"
+key "haneef2020charge"
 literal "false"
 
 \end_inset
@@ -2270,7 +2270,7 @@ Trapping impacts the effect of the gate voltage on carrier transport.
  states, so that the drain current is mostly transport though the traps
 \begin_inset CommandInset citation
 LatexCommand cite
-key "haneef2020chargecarrier"
+key "haneef2020charge"
 literal "false"
 
 \end_inset
@@ -2287,7 +2287,7 @@ literal "false"
  mobility relationship to gate voltage
 \begin_inset CommandInset citation
 LatexCommand cite
-key "haneef2020chargecarrier,kwon2018relationship"
+key "kwon2018relationship,haneef2020charge"
 literal "false"
 
 \end_inset
@@ -2297,7 +2297,7 @@ literal "false"
  voltage to continue to shift over time 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "suresh2008biasstress,lan2020gatebias"
+key "suresh2008bias,lan2020gate"
 literal "false"
 
 \end_inset
@@ -2309,7 +2309,7 @@ literal "false"
  conduct, giving a large off current and high subthreshold swing
 \begin_inset CommandInset citation
 LatexCommand cite
-key "kim2018analysis2"
+key "kim2018analysis"
 literal "false"
 
 \end_inset
@@ -2336,7 +2336,7 @@ The gate-voltage trap filling often leads to hysteresis in the
  or semiconductor along the gate
 \begin_inset CommandInset citation
 LatexCommand cite
-key "kim2018analysis2"
+key "kim2018analysis"
 literal "false"
 
 \end_inset
@@ -2345,7 +2345,7 @@ literal "false"
  Frequency dependence
 \begin_inset CommandInset citation
 LatexCommand cite
-key "guo2015chargetrapping2,zhang2014defectstates,yin2019robusttrap,georgiou2018ferroelectricity"
+key "georgiou2018ferroelectricity,guo2015chargetrapping,zhang2014defect,yin2019robust"
 literal "false"
 
 \end_inset
@@ -2353,7 +2353,7 @@ literal "false"
 , pulsed gate voltage
 \begin_inset CommandInset citation
 LatexCommand cite
-key "datye2018reduction2"
+key "datye2018reduction"
 literal "false"
 
 \end_inset
@@ -2361,7 +2361,7 @@ literal "false"
 , temperature dependence
 \begin_inset CommandInset citation
 LatexCommand cite
-key "kumar2003hotcarrier,datye2018reduction2,groeseneken1990temperature,wang2020cryogenic2"
+key "kumar2003hotcarrier,groeseneken1990temperature,datye2018reduction,wang2020cryogenic"
 literal "false"
 
 \end_inset
@@ -2369,7 +2369,7 @@ literal "false"
 , illumination
 \begin_inset CommandInset citation
 LatexCommand cite
-key "kumar2003hotcarrier,yin2019robusttrap"
+key "kumar2003hotcarrier,yin2019robust"
 literal "false"
 
 \end_inset
@@ -2384,7 +2384,7 @@ Charge traps continue to exist and cause FET hysteresis and bias stress
  down to cryogenic temperatures
 \begin_inset CommandInset citation
 LatexCommand cite
-key "wang2020cryogenic2,casse2020cryogenic,beckers2020physical2,wang2020temperaturedriven"
+key "casse2020cryogenic,wang2020cryogenic,beckers2020physical,wang2020temperature"
 literal "false"
 
 \end_inset
@@ -2393,10 +2393,10 @@ literal "false"
  At low temperatures there is less ionization of dopant ions within the
  material.
  The bias stress effect from trapping and can increase and subthreshold
- swing decrease with decreasing temperate
+ swing decrease with decreasing temperature
 \begin_inset CommandInset citation
 LatexCommand cite
-key "beckers2020physical2,wang2020temperaturedriven,kim2018analysis2"
+key "kim2018analysis,beckers2020physical,wang2020temperature"
 literal "false"
 
 \end_inset
@@ -2515,19 +2515,175 @@ Localization (TODO)
 \end_layout
 
 \begin_layout Standard
-general picture, MR
+general picture, Anderson, Mott, move charge trapping?
+\end_layout
+
+\begin_layout Subsubsection
+Weak localization (TODO: review)
 \end_layout
 
 \begin_layout Standard
-weak localization
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+TODO: make figure
 \end_layout
 
-\begin_layout Subsection
-Variable range hopping / transport? (TODO)
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Weak localization of an electron in lattice with impurities
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Weak-localization"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+A self-intersecting path of an electron and it's time-inverted path.
+ The destructive interference of the different paths lead to weak localization
+ of the electron.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-general picture, temperature dependence 
+Anther form of carrier localization in disordered semiconductors is weak
+ localization.
+ As an electron travels through the semiconductor it will scatter off various
+ defects, moving in a random walk.
+ The probability the electron will take a given path is of course given
+ by the quantum mechanical wave function, and the probability that the electron
+ will travel between two points the sum of all possible path probabilities
+ between those points.
+ The wave functions of these paths often interfere destructively with each
+ other, such as the path of an electron and the corresponding time reversed
+ path, see figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Weak-localization"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ The destructive interference localizes the carrier, increasing the probability
+ it will wander around in a loop, and increasing the effective resistance
+ of the semiconductor.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "bergmann2010weaklocalization"
+literal "true"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This effect can be measured by breaking the path symmetry using magnetic
+ fields.
+ Of note for later discussion, measuring the change in 2D conductivity from
+ a magnetic field according to the Hikami-Larkin-Nagaoka
+\begin_inset CommandInset citation
+LatexCommand cite
+key "hikami1980spinorbit"
+literal "true"
+
+\end_inset
+
+ equation
+\begin_inset Formula 
+\begin{align}
+\sigma\left(B\right)-\sigma\left(0\right)= & \frac{e^{2}}{2\pi^{2}\hbar}\left[\ln\left(\frac{B_{\phi}}{B}\right)-\psi\left(\frac{1}{2}+\frac{B_{\phi}}{B}\right)\right]\nonumber \\
+ & +\frac{e^{2}}{2\pi^{2}\hbar}\left[\ln\left(\frac{B_{SO}+B_{e}}{B}\right)-\psi\left(\frac{1}{2}+\frac{B_{SO}+B_{e}}{B}\right)\right]\nonumber \\
+ & -\frac{3e^{2}}{2\pi^{2}\hbar}\left[\ln\left(\frac{\frac{4}{3}B_{SO}+B_{\phi}}{B}\right)-\psi\left(\frac{1}{2}+\frac{\frac{4}{3}B_{SO}+B_{\phi}}{B}\right)\right]
+\end{align}
+
+\end_inset
+
+where 
+\begin_inset Formula $\psi$
+\end_inset
+
+ is the digamma function, and the characteristic fields are given by: phase
+ coherence 
+\begin_inset Formula $B_{\phi}$
+\end_inset
+
+, elastic 
+\begin_inset Formula $B_{e}$
+\end_inset
+
+, and
+\series bold
+ 
+\series default
+spin-orbit
+\series bold
+ 
+\begin_inset Formula $B_{SO}$
+\end_inset
+
+
+\series default
+.
+ The characteristic fields can be understood using 
+\begin_inset Formula 
+\begin{equation}
+B_{\phi}=\frac{\hbar}{4el_{\phi}^{2}},\,B_{e}=\frac{\hbar}{4el_{e}^{2}},\,B_{\phi}=\frac{\hbar}{4el_{SO}^{2}}
+\end{equation}
+
+\end_inset
+
+where the field is defined by the mean free path of electron interactions:
+ mean distance before an electron loses phase coherence 
+\begin_inset Formula $l_{\phi}$
+\end_inset
+
+, mean distance before elastic scattering 
+\begin_inset Formula $l_{e}$
+\end_inset
+
+, and mean distance before
+\series bold
+ 
+\series default
+spin-orbit interactions
+\series bold
+ 
+\begin_inset Formula $l_{SO}$
+\end_inset
+
+.
+\series default
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "hikami1980spinorbit,bergmann2010weaklocalization"
+literal "true"
+
+\end_inset
+
+
 \end_layout
 
 \end_body
