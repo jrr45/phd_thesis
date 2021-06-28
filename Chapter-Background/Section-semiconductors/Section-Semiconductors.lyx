@@ -2515,11 +2515,101 @@ Localization (TODO)
 \end_layout
 
 \begin_layout Standard
-general picture, Anderson, Mott, move charge trapping?
+general picture, Mott, percolation, move charge trapping?
 \end_layout
 
 \begin_layout Subsubsection
-Weak localization (TODO: review)
+Anderson localization (TODO: review)
+\end_layout
+
+\begin_layout Standard
+The Anderson impurity model
+\begin_inset CommandInset citation
+LatexCommand cite
+key "anderson1958absence"
+literal "true"
+
+\end_inset
+
+ starts with a tight-binding model for a crystal and adds a random on site
+ energy fluctuation to a site 
+\begin_inset Formula $\vec{R}_{j}$
+\end_inset
+
+.
+ The energy at 
+\begin_inset Formula $\vec{R}_{j}$
+\end_inset
+
+ is given by 
+\begin_inset Formula 
+\[
+E_{j}=E_{0}+V\eta_{j}
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $E_{0}$
+\end_inset
+
+ is the interaction energy between nearest neighbors, 
+\begin_inset Formula $V\eta_{j}$
+\end_inset
+
+ the dispersion energy from the disorder at site 
+\begin_inset Formula $j$
+\end_inset
+
+, and 
+\begin_inset Formula $\eta_{j}$
+\end_inset
+
+ is a random dimensionless constant between -1 and 1
+\begin_inset CommandInset citation
+LatexCommand cite
+key "2010condensed"
+literal "true"
+
+\end_inset
+
+.
+ Anderson showed in 1D, 2D, or 3D that if 
+\begin_inset Formula $V/E_{0}$
+\end_inset
+
+ was large enough, the wave function of electrons become localized at site
+ 
+\begin_inset Formula $j$
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "anderson1958absence"
+literal "true"
+
+\end_inset
+
+.
+ These disorder sites are uncorrelated and do not produce an extended state
+ from multiple trapped electron states.
+ The material becomes insulating with Anderson localization, even though
+ there is no bandgap, leading to a disorder-driven metal-insulator transition
+ (MIT)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "2010condensed"
+literal "true"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Weak localization (TODO: figure graphic, review)
 \end_layout
 
 \begin_layout Standard
