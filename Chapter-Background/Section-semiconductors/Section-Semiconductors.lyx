@@ -2511,15 +2511,144 @@ a) band structure of a MOS with charge trap localization.
 \end_layout
 
 \begin_layout Subsection
-Localization (TODO)
+Localization
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Localization"
+
+\end_inset
+
+ (TODO: review, move above MOSFET)
 \end_layout
 
 \begin_layout Standard
-general picture, Mott, percolation, move charge trapping?
+In semiconductors and semiconductor devices the carriers may become localized
+ in space, preventing their conduction through the crystal.
+ This typically results in decrease in conductivity and mobility of the
+ carriers as they may become trapped or scatter off disorder in the crystal.
+ Localization can induce a crystal to undergo a metal-insulator transition
+ (MIT).
+ This transition is observed as a change in the resistivity-temperature
+ behavior, and the shift in resistivity of the crystal from finite to infinite
+ at 0 K.
+ The two predominate models for the localization of carriers in a semiconductor
+ are Anderson Localization and Mott Localization, where the system has disorder
+ or is crystalline respectively
+\begin_inset CommandInset citation
+LatexCommand cite
+key "2010condensed"
+literal "true"
+
+\end_inset
+
+.
+ The origin of the MIT is still an area of active study, but most models
+ attribute it to scattering of carriers from disorder, carrier-carrier interacti
+ons, or a combination of the both.
+ 
 \end_layout
 
 \begin_layout Subsubsection
 Anderson localization (TODO: review)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Semiconductor-Figures/Anderson extended state.svg
+	width 7.5cm
+	groupId Anderson
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Extended state
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Semiconductor-Figures/Anderson localized state.svg
+	width 7.5cm
+	groupId Anderson
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Localized state
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Anderson localization
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Anderson-localization"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+(a) The extended wave function for a periodic lattice in a semiconductor
+ crystal and (b) localized state with added disorder.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2543,9 +2672,9 @@ literal "true"
 
  is given by 
 \begin_inset Formula 
-\[
+\begin{equation}
 E_{j}=E_{0}+V\eta_{j}
-\]
+\end{equation}
 
 \end_inset
 
@@ -2574,12 +2703,8 @@ literal "true"
 \end_inset
 
 .
- Anderson showed in 1D, 2D, or 3D that if 
-\begin_inset Formula $V/E_{0}$
-\end_inset
-
- was large enough, the wave function of electrons become localized at site
- 
+ Anderson showed in 1D, 2D, the wave function of electrons will always be
+ localized at site 
 \begin_inset Formula $j$
 \end_inset
 
@@ -2592,11 +2717,24 @@ literal "true"
 \end_inset
 
 .
- These disorder sites are uncorrelated and do not produce an extended state
- from multiple trapped electron states.
+ 3D localization occurs if the ratio 
+\begin_inset Formula $V/E_{0}$
+\end_inset
+
+ is large enough.
+ The disorder may arise from impurities or from structural discontinuities
+ in the crystal.
+ In the Anderson model the sites of disorder are uncorrelated and do not
+ produce an extended state from multiple trapped electron states.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "2010condensed"
+literal "true"
+
+\end_inset
+
  The material becomes insulating with Anderson localization, even though
- there is no bandgap, leading to a disorder-driven metal-insulator transition
- (MIT)
+ there is no bandgap, leading to a disorder-driven MIT in a 3D system
 \begin_inset CommandInset citation
 LatexCommand cite
 key "2010condensed"
@@ -2605,11 +2743,34 @@ literal "true"
 \end_inset
 
 .
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Anderson-localization"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ shows an extended wave function for an ideal crystal and the localized
+ carrier wave function at a site of disorder.
+ In 2D the carriers are only localized to a limited extent in systems with
+ weak disorder and spin orbit-coupling, allowing for an MIT in finite sized
+ systems
+\begin_inset CommandInset citation
+LatexCommand cite
+key "lee1985disordered,white2020observation"
+literal "false"
+
+\end_inset
+
+.
  
 \end_layout
 
 \begin_layout Subsubsection
-Weak localization (TODO: figure graphic, review)
+Weak localization (TODO: review)
 \end_layout
 
 \begin_layout Standard
@@ -2619,7 +2780,66 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-TODO: make figure
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Semiconductor-Figures/Weak localization.svg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Electron scattering off impurities
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Semiconductor-Figures/Weak localization conductivity.svg
+	width 7.5cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Conductivity magnetic field dependence
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -2642,9 +2862,12 @@ name "fig:Weak-localization"
 \end_layout
 
 \begin_layout Plain Layout
-A self-intersecting path of an electron and it's time-inverted path.
+(a) a self-intersecting path of an electron and it's time-inverted path.
  The destructive interference of the different paths lead to weak localization
  of the electron.
+ (b) the magnetic field dependence on conductivity in a weakly localized
+ crystal.
+ As the temperature increases the effects of weak localization decrease.
 \end_layout
 
 \end_inset
@@ -2673,7 +2896,7 @@ noprefix "false"
 
 \end_inset
 
-.
+a.
  The destructive interference localizes the carrier, increasing the probability
  it will wander around in a loop, and increasing the effective resistance
  of the semiconductor.
@@ -2774,6 +2997,204 @@ literal "true"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsubsection
+Percolation (TODO)
+\end_layout
+
+\begin_layout Subsubsection
+Mott localization (TODO: review)
+\end_layout
+
+\begin_layout Standard
+In conventional band theories, at low temperatures the electrons are bound
+ to the sites of isolated donor atoms.
+ To have free carriers the ionization from excitation must be large enough
+ to overcome the coulomb binding forces to the nucleus.
+ When the thermal (or other) excitations are sufficient, some distribution
+ of the donors will ionize and contribute free electrons to the semiconductor.
+ The electron-electron interactions between the itinerant electrons in the
+ crystal and the electrons of the charged donor atom act to screen the donor
+ atom.
+ This weakens the coulomb attraction of the free electrons to the donor
+ atom.
+\end_layout
+
+\begin_layout Standard
+If additional donors are added to the crystal, the additional electron-electron
+ interactions will increase and further screen the donor atoms, reducing
+ the Mott band gap.
+ Eventually, adding enough donors to the semiconductor will cause the binding
+ energy to reduce below what will form a bound state, making the semiconductor
+ metallic in behavior.
+ In the Mott model this critical transition is typically abrupt, occurring
+ once the concentration of donors crosses the critical donor density 
+\begin_inset Formula $n_{c}$
+\end_inset
+
+.
+ If the donor concentration is above is above this threshold the semiconductor
+ is metallic in nature and has a finite conductivity at 0 K, conversely,
+ if the density of donors is below 
+\begin_inset Formula $n_{c}$
+\end_inset
+
+ then a Mott insulator forms and has infinite resistivity at 0 K.
+ Mott found this critical density to be 
+\begin_inset Formula $n_{c}a_{_{0}}\simeq.24$
+\end_inset
+
+, where 
+\begin_inset Formula $a_{0}$
+\end_inset
+
+ is the Bohr radius.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "mott1949thebasis,2010condensed"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Graphics
+	filename Semiconductor-Figures/Mott-Hubbard.svg
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Mott-Hubbard band splitting
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Mott-MIT"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+The DOS bands in the correlated-metal and Mott-insulator states in the Mott-Hubb
+ard model.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+There are many extensions to the Mott MIT, two pertinent examples are the
+ Mott–Hubbard and Wigner-Mott transitions.
+ In a conventional metal band two electrons are able to occupy a lattice
+ site, one spin-up and the other spin down.
+ In the Mott-Hubbard model, the short range electron-electron interactions
+ allow only one electron per lattice site.
+ If the on-site Coulomb repulsion 
+\begin_inset Formula $U$
+\end_inset
+
+ is much less than the hopping integral 
+\begin_inset Formula $t$
+\end_inset
+
+ then material conducts as a correlated metal.
+ Conversely, if 
+\begin_inset Formula $t\gg U$
+\end_inset
+
+ the band splits and the crystal forms a paramagnetic Mott-Hubbard insulator.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "fujimori2001electronic,greiner2013thinfilm"
+literal "false"
+
+\end_inset
+
+ This model is controversial in two dimensions as any disorder was thought
+ to localize carriers, but more recent work has suggested that the MIT may
+ still be possible in 2D
+\begin_inset CommandInset citation
+LatexCommand cite
+key "camjayi2008coulomb2,pankov20082dmitas,radonjic2012wignermott2,schafer2015fateof,sorella1992semimetalinsulator"
+literal "false"
+
+\end_inset
+
+.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Mott-MIT"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ shows the two band states in the Mott-Hubbard MIT.
+ In a Wigner-Mott transition the carriers may be localized in an insulating
+ Wigner crystal, an electron gas with ordered spin-1/2 bound states, via
+ long-range electron-electron interactions
+\begin_inset CommandInset citation
+LatexCommand cite
+key "vu2020collective"
+literal "false"
+
+\end_inset
+
+.
+ In a Wigner-crystal the electrons break translational symmetry and form
+ a periodic lattice.
+ When the carrier density increases enough to overcome the coulomb repulsion,
+ the crystal forms a strongly correlated electron liquid, showing a metallic
+ behavior
+\begin_inset CommandInset citation
+LatexCommand cite
+key "radonjic2012wignermott,amaricci2010extended2,camjayi2008coulomb,vu2020collective"
+literal "false"
+
+\end_inset
+
+.
+ The Wigner-Mott transition has been shown to exist in 2D as well
+\begin_inset CommandInset citation
+LatexCommand cite
+key "smolenski2021signatures,pankov20082dmitas,camjayi2008coulomb2"
+literal "false"
+
+\end_inset
+
+.
 \end_layout
 
 \end_body
