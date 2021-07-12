@@ -103,7 +103,7 @@ Semiconductor transport and MOSFET devices (TODO review)
 Semiconductors, as their name implies, are characterized by their decreased
  conduction compared to a metal, while still more than an insulating material.
  The quantized energies of electrons around atoms in a crystal and the interacti
-ons with nearby atoms dictate most of the properties of that crystal.
+ons with nearby atoms dictate most of the properties of a crystal.
  The allowed energy levels form bands in both physical and momentum space.
  The relative location of the Fermi energy to various bands determines much
  of conductivity and device behavior.
@@ -119,23 +119,6 @@ ons with nearby atoms dictate most of the properties of that crystal.
 
  of a few electron volts (eV), where room temperature excitations are often
  enough to drive some conductivity.
- Semiconductors come in two flavors, n-type and p-type, that conduct using
- either quasiparticle electrons or holes respectively.
- N-type carriers reside below the Fermi energy in the fully occupied valance
- band but can be exited to move to an unoccupied higher energy band, the
- conduction band.
- This allows electrons to change momentum and conduct though a crystal.
- The gap between the valance and conduction band can be direct, where the
- respective max and minimum energy have the same momentum, or an indirect
- gap which requires the carrier to change momentum for the smallest energy
- jump between bands.
- Changing bands is often the result of thermal excitations, so most semiconducto
-rs have an increased resistance at low temperatures.
- Photons can also excite electrons, or excited electrons can emit photons,
- giving rise to countless applications such as sensors and LEDs.
- Additionally, semiconductor behavior can be altered by introducing other
- elements or electric fields giving rise to a wide range of potential applicatio
-ns in just about every area of modern electronics.
 \end_layout
 
 \begin_layout Standard
@@ -181,46 +164,279 @@ name "Fermi energy"
 
  relative to the conduction and valance bands usually determines if the
  material behaves as a metal, semiconductor, or an insulator.
- For semiconductors the band gap 
-\begin_inset Formula $E_{G}\approx k_{B}T$
-\end_inset
-
-
-\begin_inset CommandInset label
-LatexCommand label
-name "Band gap"
-
-\end_inset
-
-, where 
-\begin_inset Formula $k_{B}$
-\end_inset
-
- is the Boltzmann constant
-\begin_inset CommandInset label
-LatexCommand label
-name "Boltzmann"
-
-\end_inset
-
- and 
-\begin_inset Formula $T$
-\end_inset
-
- 
-\begin_inset CommandInset label
-LatexCommand label
-name "temperature"
-
-\end_inset
-
-, which is a few eV at room temperature.
  The energy bands vary along the crystal lattice and in momentum-space.
 \end_layout
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection
+Charge transport: band and hopping conduction (TODO)
+\end_layout
+
+\begin_layout Standard
+In an in ideal semiconductor, the material is perfectly crystalline, forming
+ periodic bands that run along the entire structure without disorder.
+ All real semiconductors break this assumption with doped impurities, broken
+ bonds, grain boundaries, edge states, missing or extra atoms, and other
+ forms of disorder.
+ For practical devices we define them in terms of macroscopic parameters
+ and behaviors.
+ The mobility 
+\begin_inset Formula $\mu$
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "mobility"
+
+\end_inset
+
+, one such parameter, is the average velocity at with an electron 
+\begin_inset Formula $\mu_{e}$
+\end_inset
+
+ or hole 
+\begin_inset Formula $\mu_{h}$
+\end_inset
+
+ can move through the crystal lattice from an electric field.
+ With this we can define the conductivity of a charge carrier concentration
+ 
+\begin_inset Formula $n$
+\end_inset
+
+, with 
+\begin_inset Formula $\sigma=q\mu n$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+In an ordered crystal the electrons reside in the valance band, the holes
+ in the conduction band, but excitations can push electrons to the conduction
+ band.
+ The gap between the valance and conduction band can be direct, where the
+ respective max and minimum energy have the same momentum, or an indirect
+ gap which requires the carrier to change momentum for the smallest energy
+ jump between bands.
+ Changing bands is often the result of thermal excitations, so most semiconducto
+rs have an increased resistance at low temperatures.
+ Photons can also excite electrons, or excited electrons can drop down the
+ valance band and emit photons, giving rise to countless applications such
+ as sensors and LEDs.
+ In band transport model the electrons are free to move along the conduction
+ band, and holes along the valance band, conducting through the crystal.
+ The carriers form an extended state through the crystal.
+\end_layout
+
+\begin_layout Standard
+In an intrinsic semiconductor the Fermi energy falls near the center of
+ the gap, which makes it hard for carriers to be thermally excited across
+ the gap as 
+\begin_inset Formula $k_{B}T$
+\end_inset
+
+ is only a few 10s of meV.
+ Semiconductors are often doped to provide excess carriers and shift the
+ bands relative to the Fermi energy.
+ Doped semiconductors come in two flavors, n-type and p-type, that conduct
+ primary using either electron or hole quasiparticles, Doping is often achieved
+ by introducing other elements or electric fields giving rise to a wide
+ range of potential applications in just about every area of modern electronics.
+\end_layout
+
+\begin_layout Standard
+As all crystals have some form of disorder, polycrystalline and amorphous
+ semiconductors often use hopping models to describe carrier conduction
+ instead.
+\end_layout
+
+\begin_layout Subsubsection
+Multiple trap and release (TODO: review)
+\end_layout
+
+\begin_layout Standard
+In slightly disordered semiconductors a simple extension to the band model
+ is the multiple trap and release (MTR) model.
+ Small amounts of impurities introduce localized shallow traps states in
+ the band gap near the conduction (valance) band.
+ Electrons (holes) continue to conduct along the band, temporarily getting
+ stuck in the shallow traps and hopping out through thermal excitations.
+ The effective mobility is reduced from the mobility predicted by the defect-fre
+e band model 
+\begin_inset Formula $\mu_{0}$
+\end_inset
+
+.
+ The reduced mobility is given by
+\begin_inset Formula 
+\begin{equation}
+\mu_{eff}=\mu_{0}\exp\left(-\frac{E_{a}}{k_{B}T}\right)=\mu_{0}\frac{n_{band}}{n_{trap}+n_{band}}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $E_{a}$
+\end_inset
+
+ is the activation energy to hop from the trap to the band, 
+\begin_inset Formula $n_{band}$
+\end_inset
+
+ the density of carriers in the band, and 
+\begin_inset Formula $n_{trap}$
+\end_inset
+
+ the density of trapped carriers.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kang2006electrical,shur1984physics,wang2018trapped"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Variable range hopping (TODO: review)
+\end_layout
+
+\begin_layout Standard
+Variable range hopping (VRH) takes place is strongly disordered or amorphous
+ semiconductors at low temperatures.
+ In it, hopping takes place along a narrow band of localized states near,
+ around 
+\begin_inset Formula $\sim1k_{B}T$
+\end_inset
+
+, the Fermi level.
+ In Mott's original paper variable range hopping was restricted to three
+ dimensions and low fields but later authors have extended this theory to
+ be more general and drop those restrictions.
+ Using the probability of hopping between two nearby states within this
+ band, variable range hopping gives the conductivity 
+\begin_inset Formula 
+\begin{equation}
+\sigma=\sigma_{0}\exp\left(-T_{0}/T^{\beta}\right)
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\beta$
+\end_inset
+
+ depends on the model and ranges between 0 and 1, and 
+\begin_inset Formula $T_{0}$
+\end_inset
+
+ is a constant that combines several parameters of the crystal system.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "mahan2010condensed,shklovskii1984variablerange"
+literal "false"
+
+\end_inset
+
+ The mobility-temperature dependence is then given by
+\begin_inset Formula 
+\begin{equation}
+\mu\propto\exp\left(-1/T^{\beta}\right)
+\end{equation}
+
+\end_inset
+
+.
+ In Mott-VHR the term 
+\begin_inset Formula $\beta=\frac{1}{d+1}$
+\end_inset
+
+ where d is the number of dimensions in the crystal.
+ The Efros-Shklovskii-VRH model predicts that Coulomb interactions would
+ open a gap in the density of states and 
+\begin_inset Formula $\beta=\frac{1}{2}$
+\end_inset
+
+ for all dimensions.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "li2017transition,shklovskii1984variablerange"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Percolation hopping (TODO, review, graphic)
+\end_layout
+
+\begin_layout Standard
+Percolation is used to model hopping in amorphous semiconductors and takes
+ two similar approaches.
+ The model starts with an infinite lattice of conducting bonds, carriers
+ are free to move along the bonds in the lattice and freely conduct as they
+ would in a metal.
+ In the bond version, various bonds are blocked along the lattice.
+ In the atom version of percolation, atoms or sites for carriers to occupy
+ are removed instead.
+ As long as the lattice remains below a critical fraction 
+\begin_inset Formula $p_{c}$
+\end_inset
+
+, the carriers will be free to conduct through metallic regions of the lattice,
+ abet with reduced paths to traverse across the lattice.
+ The fraction is depenant on the lattice structure and number of neighbors
+ a carrier can hop to.
+ When the fraction of removed bonds or states 
+\begin_inset Formula $p$
+\end_inset
+
+ is low, the lattice will form small clusters of blocked regions, while
+ larger 
+\begin_inset Formula $p$
+\end_inset
+
+ fractions will form larger blocked clusters with small holes for carriers
+ to pass (percolate) through.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "mahan2010condensed,shklovskii1984variablerange"
+literal "false"
+
+\end_inset
+
+ The mobility follows
+\begin_inset Formula 
+\begin{equation}
+\mu\propto\exp\left(-\frac{E_{t}-E_{F}\left(n,T\right)}{k_{B}T}\right)
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $E_{t}$
+\end_inset
+
+ is the highest energy of sites that contribute to transport, and at low
+ temperatures approaches Efros-Shklovskii-VRH
+\begin_inset CommandInset citation
+LatexCommand cite
+key "nenashev2019percolation,baranovskii2014theoretical"
+literal "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsection
@@ -249,7 +465,7 @@ In semiconductors and semiconductor devices the carriers may become localized
  or is crystalline respectively
 \begin_inset CommandInset citation
 LatexCommand cite
-key "2010condensed"
+key "mahan2010condensed"
 literal "true"
 
 \end_inset
@@ -262,7 +478,7 @@ ons, or a combination of the both.
 \end_layout
 
 \begin_layout Subsubsection
-Anderson localization (TODO: review)
+Anderson localization (TODO: review, mobility edge graphic)
 \end_layout
 
 \begin_layout Standard
@@ -406,7 +622,7 @@ where
  is a random dimensionless constant between -1 and 1
 \begin_inset CommandInset citation
 LatexCommand cite
-key "2010condensed"
+key "mahan2010condensed"
 literal "true"
 
 \end_inset
@@ -437,7 +653,7 @@ literal "true"
  produce an extended state from multiple trapped electron states.
 \begin_inset CommandInset citation
 LatexCommand cite
-key "2010condensed"
+key "mahan2010condensed"
 literal "true"
 
 \end_inset
@@ -446,7 +662,7 @@ literal "true"
  there is no bandgap, leading to a disorder-driven MIT in a 3D system
 \begin_inset CommandInset citation
 LatexCommand cite
-key "2010condensed"
+key "mahan2010condensed"
 literal "true"
 
 \end_inset
@@ -476,6 +692,64 @@ literal "false"
 
 .
  
+\end_layout
+
+\begin_layout Subsubsection
+Mobility edge (TODO: review)
+\end_layout
+
+\begin_layout Standard
+In a system with a small amount of disorder localized states will form a
+ tail of allowed states within the gap leading to hopping between states
+ or to and from the band.
+ Mott extended this by proposing in three dimensions the density of states
+ is continuous near a critical energy 
+\begin_inset Formula $E_{c}$
+\end_inset
+
+, called the mobility edge.
+ The mobility edge defined the energy at which the carriers transitioned
+ between localized and extended states.
+ If the Fermi energy was below the mobility edge 
+\begin_inset Formula $E_{F}<E_{c}$
+\end_inset
+
+, the system would act as an insulator at low temperatures, or in the opposite
+ condition as a metal.
+ The conductivity at 0 K follows 
+\begin_inset Formula 
+\begin{equation}
+\sigma\left(T=0\,K\right)\propto\left(n-n_{c}\right)^{2}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $n_{c}$
+\end_inset
+
+ is the critical carrier concentration, and 
+\begin_inset Formula $s$
+\end_inset
+
+ is a parameter representing disorder in the sample.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "mahan2010condensed"
+literal "true"
+
+\end_inset
+
+ Recent work suggests that the mobility edge model may be valid in 2D materials
+ with high mobility
+\begin_inset CommandInset citation
+LatexCommand cite
+key "wang2019redefining,lee2010band"
+literal "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsubsection
@@ -934,7 +1208,7 @@ r and decreasing conductivity.
  At this point, the semiconductor is a series of isolated metallic islands.
 \begin_inset CommandInset citation
 LatexCommand cite
-key "2010condensed,moon2021metalinsulator"
+key "moon2021metalinsulator,mahan2010condensed"
 literal "true"
 
 \end_inset
@@ -2389,7 +2663,14 @@ As FET gate and channel contacts are within close proximity of each other,
 \end_layout
 
 \begin_layout Subsubsection
-MOS capacitor and gate band bending (TODO: review)
+MOS capacitor and gate band bending
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:MOSFET-and-band-bending"
+
+\end_inset
+
+ (TODO: review)
 \end_layout
 
 \begin_layout Standard
