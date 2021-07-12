@@ -204,8 +204,8 @@ name "mobility"
 \end_inset
 
  can move through the crystal lattice from an electric field.
- With this we can define the conductivity of a charge carrier concentration
- 
+ With this we can define a second parameter, the conductivity of a charge
+ carrier concentration 
 \begin_inset Formula $n$
 \end_inset
 
@@ -231,7 +231,18 @@ rs have an increased resistance at low temperatures.
  valance band and emit photons, giving rise to countless applications such
  as sensors and LEDs.
  In band transport model the electrons are free to move along the conduction
- band, and holes along the valance band, conducting through the crystal.
+ band, and holes along the valance band, conducting through the crystal,
+ figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Hopping-transport"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+a.
  The carriers form an extended state through the crystal.
 \end_layout
 
@@ -258,7 +269,114 @@ As all crystals have some form of disorder, polycrystalline and amorphous
 \end_layout
 
 \begin_layout Subsubsection
-Multiple trap and release (TODO: review)
+Multiple trap and release (MTR) (TODO: review)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Semiconductor-Figures/Trap transport.svg
+	width 7.5cm
+	groupId Hopping
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Band, MTR, and VHR transport
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Semiconductor-Figures/Percolation.svg
+	width 7.5cm
+	groupId Hopping
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Percolation hopping
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Hopping transport
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Hopping-transport"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+(a) density of states and spacial bands showing shallow and deep traps in
+ an n-type semiconductor.
+ Band and MTR transport take place in the conduction band, VRH in the trapped
+ states near the Fermi energy.
+ (b) percolation model for hopping transport.
+ From left to right with conduction: no disorder, band percolation model
+ and atom site percolation model.
+ 
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -267,7 +385,18 @@ In slightly disordered semiconductors a simple extension to the band model
  Small amounts of impurities introduce localized shallow traps states in
  the band gap near the conduction (valance) band.
  Electrons (holes) continue to conduct along the band, temporarily getting
- stuck in the shallow traps and hopping out through thermal excitations.
+ stuck in the shallow traps and hopping out through thermal excitations,
+ figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Hopping-transport"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+a.
  The effective mobility is reduced from the mobility predicted by the defect-fre
 e band model 
 \begin_inset Formula $\mu_{0}$
@@ -306,7 +435,7 @@ literal "false"
 \end_layout
 
 \begin_layout Subsubsection
-Variable range hopping (TODO: review)
+Variable range hopping (VRH) (TODO: review)
 \end_layout
 
 \begin_layout Standard
@@ -317,7 +446,17 @@ Variable range hopping (VRH) takes place is strongly disordered or amorphous
 \begin_inset Formula $\sim1k_{B}T$
 \end_inset
 
-, the Fermi level.
+, the Fermi level, figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Hopping-transport"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+a.
  In Mott's original paper variable range hopping was restricted to three
  dimensions and low fields but later authors have extended this theory to
  be more general and drop those restrictions.
@@ -377,7 +516,7 @@ literal "false"
 \end_layout
 
 \begin_layout Subsubsection
-Percolation hopping (TODO, review, graphic)
+Percolation hopping (TODO, review)
 \end_layout
 
 \begin_layout Standard
@@ -415,6 +554,18 @@ literal "false"
 
 \end_inset
 
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Hopping-transport"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+b shows the lattice without disorder, then band and atomic site percolation
+ models.
  The mobility follows
 \begin_inset Formula 
 \begin{equation}
@@ -478,7 +629,7 @@ ons, or a combination of the both.
 \end_layout
 
 \begin_layout Subsubsection
-Anderson localization (TODO: review, mobility edge graphic)
+Anderson localization (TODO: review)
 \end_layout
 
 \begin_layout Standard
@@ -488,20 +639,52 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-\begin_inset Float figure
-wide false
-sideways false
+\noindent
+\align left
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "50col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status collapsed
 
 \begin_layout Plain Layout
+\noindent
+\align left
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align left
 \begin_inset Graphics
 	filename Semiconductor-Figures/Anderson extended state.svg
-	width 7.5cm
+	width 8cm
 	groupId Anderson
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -516,24 +699,28 @@ Extended state
 \end_inset
 
 
-\begin_inset space \hfill{}
-\end_inset
+\end_layout
 
-
+\begin_layout Plain Layout
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
+\noindent
+\align left
 \begin_inset Graphics
 	filename Semiconductor-Figures/Anderson localized state.svg
-	width 7.5cm
+	width 8cm
 	groupId Anderson
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -548,6 +735,119 @@ Localized state
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "25col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align left
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align left
+\begin_inset Graphics
+	filename Semiconductor-Figures/Mobility edge.svg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Mobility edge
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -569,6 +869,13 @@ name "fig:Anderson-localization"
 \begin_layout Plain Layout
 (a) The extended wave function for a periodic lattice in a semiconductor
  crystal and (b) localized state with added disorder.
+ (c) the density of states of a semiconductor with a small amount of disorder.
+ The mobility edge divides the localized from extended states at the critical
+ energy 
+\begin_inset Formula $E_{c}$
+\end_inset
+
+.
 \end_layout
 
 \end_inset
@@ -709,7 +1016,17 @@ In a system with a small amount of disorder localized states will form a
 
 , called the mobility edge.
  The mobility edge defined the energy at which the carriers transitioned
- between localized and extended states.
+ between localized and extended states, figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Anderson-localization"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+c.
  If the Fermi energy was below the mobility edge 
 \begin_inset Formula $E_{F}<E_{c}$
 \end_inset
@@ -1437,7 +1754,7 @@ status open
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -1519,7 +1836,7 @@ name "fig:Metal-in-contact"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -1558,7 +1875,7 @@ name "fig:Forward-bias"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -2227,7 +2544,7 @@ name "sec:Field-effect-transistors"
 
 \end_inset
 
- (TODO review)
+ (TODO review, SS and VT?)
 \end_layout
 
 \begin_layout Standard
@@ -3092,9 +3409,8 @@ noprefix "false"
 
 \end_inset
 
-a shows the deep and shallow traps in a weakly localized semiconductor that
- impedes carrier transport.
- 
+ shows the types of intrinsic and extrinsic carrier traps found in MOSFET
+ devices and the physical locations they may reside within the device.
 \end_layout
 
 \begin_layout Standard
@@ -3423,11 +3739,11 @@ status open
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Semiconductor-Figures/Trap transport.svg
+	filename Semiconductor-Figures/Sources of traps.svg
 	width 7.5cm
 
 \end_inset
@@ -3439,7 +3755,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-DOS and transport
+Types of traps
 \end_layout
 
 \end_inset
@@ -3457,11 +3773,11 @@ DOS and transport
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Semiconductor-Figures/Sources of traps.svg
+	filename Semiconductor-Figures/MOSFET traps.svg
 	width 7.5cm
 
 \end_inset
@@ -3473,7 +3789,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Types of traps
+MOSFET traps
 \end_layout
 
 \end_inset
@@ -3506,12 +3822,8 @@ name "fig:Charge-trapping"
 \end_layout
 
 \begin_layout Plain Layout
-a) band structure of a MOS with charge trap localization.
- The left shows the shallow and deep traps formed in the density of states
- (DOS) bandgap of an ideal semiconductor.
- The right shows how those bands may appear along the channel and different
- forms of transport through the channel with traps.
- b) types of intrinsic and extrinsic traps found in MOSFET devices.
+(a) types of various intrinsic and extrinsic carrier traps found within
+ MOSFET devices and (b) the location those traps appear in a typical device.
 \end_layout
 
 \end_inset
