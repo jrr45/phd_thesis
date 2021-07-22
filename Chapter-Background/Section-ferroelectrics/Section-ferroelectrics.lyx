@@ -2571,14 +2571,14 @@ n.
 \end_layout
 
 \begin_layout Subsection
-Polar metals
+Polar and ferroelectric metals
 \begin_inset CommandInset label
 LatexCommand label
 name "subsec:Polar-metals"
 
 \end_inset
 
- (TODO review)
+
 \end_layout
 
 \begin_layout Standard
@@ -2594,7 +2594,8 @@ literal "true"
 \begin_inset Formula $V_{3}Si$
 \end_inset
 
- but only recently seen experimental verification in 
+.
+ They were recently verified experimentally, first in 
 \begin_inset Formula $LiOsO_{3}$
 \end_inset
 
@@ -2607,8 +2608,8 @@ literal "true"
 \end_inset
 
 .
- Polar metals must show a continuous phase transition from non-polar to
- polar at their Curie temperature
+ Polar metals show a continuous phase transition from non-polar to polar
+ at their Curie temperature
 \begin_inset CommandInset citation
 LatexCommand cite
 key "benedek2016ferroelectric"
@@ -2616,17 +2617,12 @@ literal "false"
 
 \end_inset
 
- breaking inversion symmetry.
- As metals have an abundance of free charge carriers, the electric fields
- within the material are screened, suggesting that metallicity is the antithesis
- to both prerequisites in the traditional definition of ferroelectricity.
- The carrier screening suppresses long-range coulomb interactions necessary
- for dipole formation and the fields to orient the dipoles.
+, breaking inversion symmetry.
  
 \begin_inset Formula $LiOsO_{3}$
 \end_inset
 
-was shown to shift from 
+was shown to transition from the space group 
 \begin_inset Formula $R\bar{3}c$
 \end_inset
 
@@ -2676,7 +2672,7 @@ literal "false"
 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "takahashi2017polarmetal"
+key "takahashi2017polar"
 literal "false"
 
 \end_inset
@@ -2692,13 +2688,22 @@ literal "false"
 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "du2019highelectrical"
+key "du2019high"
 literal "false"
 
 \end_inset
 
  and other materials.
- Ferroelectricity was reported in 2-3 layer 
+ As polar metals have an abundance of free charge carriers, any static electric
+ fields within the material is screened, suggesting at first glance that
+ metallicity is the antithesis to both prerequisites in the traditional
+ definition of ferroelectricity.
+ The carrier screening suppresses long-range coulomb interactions necessary
+ for dipole formation and the fields to (re)orient the dipoles.
+\end_layout
+
+\begin_layout Standard
+Ferroelectricity in a metal was first reported in 2-3 layer 
 \begin_inset Formula $WTe_{2}$
 \end_inset
 
@@ -2717,17 +2722,13 @@ literal "false"
 \end_inset
 
 ) in a double-gated FeFET.
- The gating response showed a clear transition behavior in 
+ The current response showed a clear transition behavior in 
 \begin_inset Formula $WTe_{2}$
 \end_inset
 
- conductivity while the thin graphene layers used to gate the material showed
- a hysteresis in their conductivity, both are attributed to the polarized
- electric field from the 
-\begin_inset Formula $WTe_{2}$
-\end_inset
-
-.
+ conductivity from the gate electric fields.
+ Additionally, the thin graphene layers used to gate the channel showed
+ a hysteresis in their conductivity.
  Later measurements demonstrated the existence of ferroelectric domains
  with bulk crystals and thin films
 \begin_inset CommandInset citation
@@ -2753,7 +2754,7 @@ literal "false"
 
 \end_inset
 
- possibly extending the polarized state of the crystal.
+ extending the longevity of the polarized state of the crystal.
  The charge screening also lowers the system energy from domain walls of
  different dipole orientations in close proximity, allowing for opposing
  polarization domains to form 
@@ -2767,14 +2768,14 @@ literal "false"
  potential difference
 \begin_inset CommandInset citation
 LatexCommand cite
-key "stone2019atomicand"
+key "stone2019atomic"
 literal "false"
 
 \end_inset
 
 .
- Potential polar metal applications include reducing the size of ferroelectric
- capacitors
+ Potential polar and ferroelectric metal applications include reducing the
+ size of ferroelectric capacitors
 \begin_inset CommandInset citation
 LatexCommand cite
 key "puggioni2018polar"
@@ -2810,14 +2811,14 @@ literal "false"
 \end_layout
 
 \begin_layout Subsection
-FeFETs with ferroelectric channels AND/OR ferroelectric semiconductors
+FeFETs with ferroelectric channels AND/OR ferroelectric semiconductors (TODO)
 \end_layout
 
 \begin_layout Standard
 TODO
 \begin_inset CommandInset citation
 LatexCommand cite
-key "laurita2019evidence,takahashi2017polarmetal"
+key "laurita2019evidence,fang2020designof"
 literal "false"
 
 \end_inset

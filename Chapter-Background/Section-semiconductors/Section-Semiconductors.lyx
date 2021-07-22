@@ -96,22 +96,23 @@ status open
 \end_layout
 
 \begin_layout Section
-Semiconductor transport and MOSFET devices (TODO review)
+Semiconductor transport and MOSFET devices
 \end_layout
 
 \begin_layout Standard
-Semiconductors, as their name implies, are characterized by their decreased
- conduction compared to a metal, while still more than an insulating material.
- The quantized energies of electrons around atoms in a crystal and the interacti
-ons with nearby atoms dictate most of the properties of a crystal.
- The allowed energy levels form bands in both physical and momentum space.
+Semiconductors, as their name implies, are characterized by their conduction
+ falling between that of a metal and an insulating material.
+ The quantized energies of electron orbitals in a crystal and the interactions
+ with nearby atoms dictate most of the properties of a semiconductor.
+ The allowed energy levels form bands across the lattice and in momentum
+ space that dictate the path of an moving electron.
  The relative location of the Fermi energy to various bands determines much
  of conductivity and device behavior.
  In metals the Fermi energy falls within energy-momentum band(s) allowing
  electrons to conduct with little resistance.
- Insulators have a large gap between bands, conventionally 3+ electron volts
- (eV), inside which the Fermi energy sits making conduction difficult without
- a large amount of energy.
+ Insulators have a large gap between bands, conventionally at least 3 electron
+ volts (eV), and each far from the Fermi energy making conduction difficult
+ without a very large energy excitation or electric field.
  Semiconductors fall in between metals and insulators and possess a band
  gap 
 \begin_inset Formula $E_{G}$
@@ -173,7 +174,7 @@ name "Fermi energy"
 \end_layout
 
 \begin_layout Subsection
-Charge transport: band and hopping conduction (TODO)
+Charge transport: band and hopping conduction
 \end_layout
 
 \begin_layout Standard
@@ -209,7 +210,7 @@ name "mobility"
 \begin_inset Formula $n$
 \end_inset
 
-, with 
+, given by 
 \begin_inset Formula $\sigma=q\mu n$
 \end_inset
 
@@ -219,8 +220,9 @@ name "mobility"
 
 \begin_layout Standard
 In an ordered crystal the electrons reside in the valance band, the holes
- in the conduction band, but excitations can push electrons to the conduction
- band.
+ in the conduction band.
+ Energy excitations can push electrons to the conduction band, creating
+ a hole in the valance band by doing so.
  The gap between the valance and conduction band can be direct, where the
  respective max and minimum energy have the same momentum, or an indirect
  gap which requires the carrier to change momentum for the smallest energy
@@ -232,7 +234,7 @@ rs have an increased resistance at low temperatures.
  as sensors and LEDs.
  In band transport model the electrons are free to move along the conduction
  band, and holes along the valance band, conducting through the crystal,
- figure 
+ as shown in figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Hopping-transport"
@@ -243,13 +245,12 @@ noprefix "false"
 \end_inset
 
 a.
- The carriers form an extended state through the crystal.
+ The free carriers form extended states in the crystal.
 \end_layout
 
 \begin_layout Standard
 In an intrinsic semiconductor the Fermi energy falls near the center of
- the gap, which makes it hard for carriers to be thermally excited across
- the gap as 
+ the gap, making it hard for carriers to be thermally excited as 
 \begin_inset Formula $k_{B}T$
 \end_inset
 
@@ -257,19 +258,18 @@ In an intrinsic semiconductor the Fermi energy falls near the center of
  Semiconductors are often doped to provide excess carriers and shift the
  bands relative to the Fermi energy.
  Doped semiconductors come in two flavors, n-type and p-type, that conduct
- primary using either electron or hole quasiparticles, Doping is often achieved
- by introducing other elements or electric fields giving rise to a wide
- range of potential applications in just about every area of modern electronics.
+ primary using either electron or hole quasiparticles.
+ Doping is often achieved by introducing other elements or using electric
+ fields, and is used extensively in modern electronic devices.
 \end_layout
 
 \begin_layout Standard
-As all crystals have some form of disorder, polycrystalline and amorphous
- semiconductors often use hopping models to describe carrier conduction
- instead.
+As all crystals have some form of disorder, so hopping models of conduction
+ are often used describe carrier movement rather than simple band models.
 \end_layout
 
 \begin_layout Subsubsection
-Multiple trap and release (MTR) (TODO: review)
+Multiple trap and release (MTR)
 \end_layout
 
 \begin_layout Standard
@@ -369,8 +369,8 @@ name "fig:Hopping-transport"
  Band and MTR transport take place in the conduction band, VRH in the trapped
  states near the Fermi energy.
  (b) percolation model for hopping transport.
- From left to right with conduction: no disorder, band percolation model
- and atom site percolation model.
+ From left to right: a lattice with no disorder, band percolation model
+ lattice, and atom site percolation model lattice.
  
 \end_layout
 
@@ -380,9 +380,9 @@ name "fig:Hopping-transport"
 \end_layout
 
 \begin_layout Standard
-In slightly disordered semiconductors a simple extension to the band model
- is the multiple trap and release (MTR) model.
- Small amounts of impurities introduce localized shallow traps states in
+In slightly disordered semiconductors, a simple extension to the band-transport
+ model is multiple trap and release (MTR).
+ Small amounts of impurities introduce localized, shallow traps states within
  the band gap near the conduction (valance) band.
  Electrons (holes) continue to conduct along the band, temporarily getting
  stuck in the shallow traps and hopping out through thermal excitations,
@@ -397,16 +397,16 @@ noprefix "false"
 \end_inset
 
 a.
- The effective mobility is reduced from the mobility predicted by the defect-fre
-e band model 
+ The effective mobility is reduced relative to the defect-free band mobility
+ 
 \begin_inset Formula $\mu_{0}$
 \end_inset
 
 .
- The reduced mobility is given by
+ The MTR mobility is given by
 \begin_inset Formula 
 \begin{equation}
-\mu_{eff}=\mu_{0}\exp\left(-\frac{E_{a}}{k_{B}T}\right)=\mu_{0}\frac{n_{band}}{n_{trap}+n_{band}}
+\mu_{MTR}=\mu_{0}\exp\left(-\frac{E_{a}}{k_{B}T}\right)=\mu_{0}\frac{n_{band}}{n_{trap}+n_{band}}
 \end{equation}
 
 \end_inset
@@ -415,7 +415,7 @@ where
 \begin_inset Formula $E_{a}$
 \end_inset
 
- is the activation energy to hop from the trap to the band, 
+ is the average activation energy to hop from a trap to the band, 
 \begin_inset Formula $n_{band}$
 \end_inset
 
@@ -435,18 +435,19 @@ literal "false"
 \end_layout
 
 \begin_layout Subsubsection
-Variable range hopping (VRH) (TODO: review)
+Variable range hopping (VRH)
 \end_layout
 
 \begin_layout Standard
 Variable range hopping (VRH) takes place is strongly disordered or amorphous
  semiconductors at low temperatures.
- In it, hopping takes place along a narrow band of localized states near,
- around 
+ In it, hopping takes place along a narrow band of localized states near
+ the Fermi level, within the range of thermal excitations 
 \begin_inset Formula $\sim1k_{B}T$
 \end_inset
 
-, the Fermi level, figure 
+.
+ Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Hopping-transport"
@@ -456,12 +457,12 @@ noprefix "false"
 
 \end_inset
 
-a.
+a shows VRH near the conduction band in an n-type semiconductor.
  In Mott's original paper variable range hopping was restricted to three
- dimensions and low fields but later authors have extended this theory to
- be more general and drop those restrictions.
+ dimensions and low fields; later authors have extended this theory to be
+ more general and drop those restrictions.
  Using the probability of hopping between two nearby states within this
- band, variable range hopping gives the conductivity 
+ band, variable range hopping gives the conductivity equation
 \begin_inset Formula 
 \begin{equation}
 \sigma=\sigma_{0}\exp\left(-T_{0}/T^{\beta}\right)
@@ -473,7 +474,7 @@ where
 \begin_inset Formula $\beta$
 \end_inset
 
- depends on the model and ranges between 0 and 1, and 
+ depends on the model, and ranges between 0 and 1; and 
 \begin_inset Formula $T_{0}$
 \end_inset
 
@@ -488,19 +489,20 @@ literal "false"
  The mobility-temperature dependence is then given by
 \begin_inset Formula 
 \begin{equation}
-\mu\propto\exp\left(-1/T^{\beta}\right)
+\mu_{VHR}\propto\exp\left(-1/T^{\beta}\right)
 \end{equation}
 
 \end_inset
 
 .
- In Mott-VHR the term 
+ The two most common VHR models are Mott-VHR and Efros-Shklovskii-VRH.
+ In Mott-VHR 
 \begin_inset Formula $\beta=\frac{1}{d+1}$
 \end_inset
 
- where d is the number of dimensions in the crystal.
- The Efros-Shklovskii-VRH model predicts that Coulomb interactions would
- open a gap in the density of states and 
+, where d is the number of dimensions in the crystal, while the Efros-Shklovskii
+-VRH model predicts that Coulomb interactions would open a gap in the density
+ of states and gives 
 \begin_inset Formula $\beta=\frac{1}{2}$
 \end_inset
 
@@ -516,19 +518,25 @@ literal "false"
 \end_layout
 
 \begin_layout Subsubsection
-Percolation hopping (TODO, review)
+Percolation hopping
 \end_layout
 
 \begin_layout Standard
-Percolation is used to model hopping in amorphous semiconductors and takes
- two similar approaches.
- The model starts with an infinite lattice of conducting bonds, carriers
- are free to move along the bonds in the lattice and freely conduct as they
- would in a metal.
- In the bond version, various bonds are blocked along the lattice.
- In the atom version of percolation, atoms or sites for carriers to occupy
- are removed instead.
- As long as the lattice remains below a critical fraction 
+Percolation is used to model hopping in amorphous semiconductors using two
+ similar approaches to simulate a large amount of disorder.
+ Both models start with an infinite lattice of conducting bonds, carriers
+ are free to hop along the bonds between atoms in the lattice and thus freely
+ conduct as they would in a metal.
+ In the bond variant, various bonds are blocked in the lattice preventing
+ the carriers to move along those particular paths.
+ Conversely, In the atom-site approach to percolation, atoms or sites that
+ carriers can occupy are removed from the lattice preventing hopping along
+ those paths.
+ As long as the amount of bonds or sites removed 
+\begin_inset Formula $p$
+\end_inset
+
+ remains below a critical fraction 
 \begin_inset Formula $p_{c}$
 \end_inset
 
@@ -536,16 +544,12 @@ Percolation is used to model hopping in amorphous semiconductors and takes
  abet with reduced paths to traverse across the lattice.
  The fraction is depenant on the lattice structure and number of neighbors
  a carrier can hop to.
- When the fraction of removed bonds or states 
+ When the fraction of removed bonds or states is low, the lattice will form
+ small clusters of blocked regions, while larger 
 \begin_inset Formula $p$
 \end_inset
 
- is low, the lattice will form small clusters of blocked regions, while
- larger 
-\begin_inset Formula $p$
-\end_inset
-
- fractions will form larger blocked clusters with small holes for carriers
+ fractions will form larger insulating clusters with small holes for carriers
  to pass (percolate) through.
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -564,12 +568,12 @@ noprefix "false"
 
 \end_inset
 
-b shows the lattice without disorder, then band and atomic site percolation
- models.
+b shows a disorder-free lattice, then the band and atomic approach to the
+ percolation model.
  The mobility follows
 \begin_inset Formula 
 \begin{equation}
-\mu\propto\exp\left(-\frac{E_{t}-E_{F}\left(n,T\right)}{k_{B}T}\right)
+\mu_{PER}\propto\exp\left(-\frac{E_{t}-E_{F}\left(n,T\right)}{k_{B}T}\right)
 \end{equation}
 
 \end_inset
@@ -578,8 +582,8 @@ where
 \begin_inset Formula $E_{t}$
 \end_inset
 
- is the highest energy of sites that contribute to transport, and at low
- temperatures approaches Efros-Shklovskii-VRH
+ is the highest energy of the sites that contribute to transport.
+ At low temperatures this approaches Efros-Shklovskii-VRH
 \begin_inset CommandInset citation
 LatexCommand cite
 key "nenashev2019percolation,baranovskii2014theoretical"
@@ -598,22 +602,18 @@ name "subsec:Localization"
 
 \end_inset
 
- (TODO: review)
+
 \end_layout
 
 \begin_layout Standard
-In semiconductors and semiconductor devices the carriers may become localized
- in space, preventing their conduction through the crystal.
- This typically results in decrease in conductivity and mobility of the
- carriers as they may become trapped or scatter off disorder in the crystal.
- Localization can induce a crystal to undergo a metal-insulator transition
- (MIT).
- This transition is observed as a change in the resistivity-temperature
- behavior, and the shift in resistivity of the crystal from finite to infinite
- at 0 K.
- The two predominate models for the localization of carriers in a semiconductor
- are Anderson Localization and Mott Localization, where the system has disorder
- or is crystalline respectively
+In semiconductors and semiconductor devices the carriers can become localized
+ as they travel through the lattice.
+ Disorder in the crystal can trap or scatter carriers decreasing their conductiv
+ity and mobility.
+ The localization of carriers from disorder can even induce a crystal to
+ undergo a metal-insulator transition (MIT).
+ MITs display a shift in the resistivity-temperature dependence, particularly
+ at 0 K where the resistivity of the crystal changes from finite to infinite.
 \begin_inset CommandInset citation
 LatexCommand cite
 key "mahan2010condensed"
@@ -621,15 +621,15 @@ literal "true"
 
 \end_inset
 
-.
- The origin of the MIT is still an area of active study, but most models
- attribute it to scattering of carriers from disorder, carrier-carrier interacti
-ons, or a combination of the both.
+ The origin of the MITs in disordered semiconductors is still an area of
+ active study, with most models attributing MITs to the scattering of carriers
+ off various sources of disorder, screening Coulomb forces from electron-electro
+n interactions, or a combination of both.
  
 \end_layout
 
 \begin_layout Subsubsection
-Anderson localization (TODO: review)
+Anderson localization
 \end_layout
 
 \begin_layout Standard
@@ -867,8 +867,8 @@ name "fig:Anderson-localization"
 \end_layout
 
 \begin_layout Plain Layout
-(a) The extended wave function for a periodic lattice in a semiconductor
- crystal and (b) localized state with added disorder.
+The wave function for a carrier in a periodic lattice in (a) an extended
+ state and (b) in a localized state from disorder in the lattice.
  (c) the density of states of a semiconductor with a small amount of disorder.
  The mobility edge divides the localized from extended states at the critical
  energy 
@@ -892,17 +892,18 @@ literal "true"
 
 \end_inset
 
- starts with a tight-binding model for a crystal and adds a random on site
- energy fluctuation to a site 
-\begin_inset Formula $\vec{R}_{j}$
+ proposes a uniform crystal containing isolated sources of disorder.
+ The model extends a tight-binding model by adding a random energy fluctuation
+ to the site 
+\begin_inset Formula $j$
 \end_inset
 
-.
+ in the lattice.
  The energy at 
-\begin_inset Formula $\vec{R}_{j}$
+\begin_inset Formula $j$
 \end_inset
 
- is given by 
+ then becomes
 \begin_inset Formula 
 \begin{equation}
 E_{j}=E_{0}+V\eta_{j}
@@ -914,15 +915,11 @@ where
 \begin_inset Formula $E_{0}$
 \end_inset
 
- is the interaction energy between nearest neighbors, 
+ is the tight-binding interaction energy between nearest neighbors, 
 \begin_inset Formula $V\eta_{j}$
 \end_inset
 
- the dispersion energy from the disorder at site 
-\begin_inset Formula $j$
-\end_inset
-
-, and 
+ the dispersion energy from the disorder, and 
 \begin_inset Formula $\eta_{j}$
 \end_inset
 
@@ -949,11 +946,19 @@ literal "true"
 \end_inset
 
 .
- 3D localization occurs if the ratio 
+ In 3D localization occurs if the ratio 
 \begin_inset Formula $V/E_{0}$
 \end_inset
 
- is large enough.
+ is above a critical threshold that depends on other properties of the crystal
+\begin_inset CommandInset citation
+LatexCommand cite
+key "anderson1958absence"
+literal "true"
+
+\end_inset
+
+.
  The disorder may arise from impurities or from structural discontinuities
  in the crystal.
  In the Anderson model the sites of disorder are uncorrelated and do not
@@ -986,10 +991,10 @@ noprefix "false"
 \end_inset
 
  shows an extended wave function for an ideal crystal and the localized
- carrier wave function at a site of disorder.
+ carrier wave function at a site of disorder in the Anderson model.
  In 2D the carriers are only localized to a limited extent in systems with
  weak disorder and spin orbit-coupling, allowing for an MIT in finite sized
- systems
+ systems within the model
 \begin_inset CommandInset citation
 LatexCommand cite
 key "lee1985disordered,white2020observation"
@@ -1002,21 +1007,21 @@ literal "false"
 \end_layout
 
 \begin_layout Subsubsection
-Mobility edge (TODO: review)
+Mobility edge
 \end_layout
 
 \begin_layout Standard
-In a system with a small amount of disorder localized states will form a
- tail of allowed states within the gap leading to hopping between states
- or to and from the band.
- Mott extended this by proposing in three dimensions the density of states
- is continuous near a critical energy 
+In a system with a small amount of disorder, localized states will form
+ a tail of allowed states extending into the band gap.
+ This lets carriers hop between localized gap states or to-and-from the
+ band.
+ Mott proposed in three dimensions the density of states is continuous at
+ the energy which carriers transition between localized and extended states.
+ This critical transition energy 
 \begin_inset Formula $E_{c}$
 \end_inset
 
-, called the mobility edge.
- The mobility edge defined the energy at which the carriers transitioned
- between localized and extended states, figure 
+ is known as the mobility edge, figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Anderson-localization"
@@ -1031,8 +1036,11 @@ c.
 \begin_inset Formula $E_{F}<E_{c}$
 \end_inset
 
-, the system would act as an insulator at low temperatures, or in the opposite
- condition as a metal.
+, the system will act as an insulator at low temperatures, or when 
+\begin_inset Formula $E_{F}>E_{c}$
+\end_inset
+
+ as a metal.
  The conductivity at 0 K follows 
 \begin_inset Formula 
 \begin{equation}
@@ -1070,7 +1078,251 @@ literal "false"
 \end_layout
 
 \begin_layout Subsubsection
-Weak localization (TODO: review)
+Mott localization
+\end_layout
+
+\begin_layout Standard
+In conventional band theory, at low temperatures electrons are bound to
+ the sites of isolated donor atoms.
+ To have free carriers an excitation must ionize one of those donor atoms.
+ The excitation must be large enough to overcome the coulomb binding forces
+ to the nucleus.
+ When thermal (or other) excitations are sufficient, some distribution of
+ the donors will ionize and contribute free electrons to the semiconductor.
+ The electron-electron interactions between the itinerant carriers in the
+ crystal and the bound electrons of the charged donor atom then act to screen
+ the donor atom.
+ The screening weakens the coulomb attraction of the free electrons to the
+ donor atoms, letting the carriers remain unbound.
+\end_layout
+
+\begin_layout Standard
+If additional donors are added to the crystal, the additional electron-electron
+ interactions will increase and further screen the donor atoms, reducing
+ the Mott band gap.
+ Eventually, adding enough donors to the system will cause the binding energy
+ to reduce below what will form a bound state, making the material metallic
+ in behavior.
+ In the Mott model this critical transition is typically abrupt, occurring
+ once the concentration of donors crosses the critical donor density 
+\begin_inset Formula $n_{c}$
+\end_inset
+
+.
+ If the donor concentration is above is above this threshold the semiconductor
+ is metallic in nature and has a finite conductivity at 0 K, conversely,
+ if the density of donors is below 
+\begin_inset Formula $n_{c}$
+\end_inset
+
+ then a Mott insulator forms and has infinite resistivity at 0 K.
+ Mott found this critical density to be 
+\begin_inset Formula $n_{c}\simeq.24/a_{_{0}}$
+\end_inset
+
+, where 
+\begin_inset Formula $a_{0}$
+\end_inset
+
+ is the Bohr radius.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "mott1949basis,mahan2010condensed"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Graphics
+	filename Semiconductor-Figures/Mott-Hubbard.svg
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Mott-Hubbard band splitting
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Mott-MIT"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+The density of state bands in the correlated-metal and Mott-insulator states
+ in the Mott-Hubbard model.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+There are many extensions to the Mott model MIT, two pertinent examples
+ are the Mott–Hubbard and Wigner-Mott transitions.
+ In a conventional metal band two electrons are able to occupy a lattice
+ site, one spin-up and the other spin down.
+ In the Mott-Hubbard model, the short range electron-electron interactions
+ allow only one electron per lattice site.
+ If the on-site Coulomb repulsion 
+\begin_inset Formula $U$
+\end_inset
+
+ is much less than the hopping integral 
+\begin_inset Formula $t$
+\end_inset
+
+ then material conducts as a correlated metal.
+ Conversely, if 
+\begin_inset Formula $t\gg U$
+\end_inset
+
+ the band splits and the crystal forms a paramagnetic Mott-Hubbard insulator.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "fujimori2001electronic,greiner2013thinfilm"
+literal "false"
+
+\end_inset
+
+ This model is controversial in two dimensions as any disorder was thought
+ to localize carriers, but more recent work has suggested that the Mott-Hubbard
+ MIT may still be possible in 2D
+\begin_inset CommandInset citation
+LatexCommand cite
+key "sorella1992semimetalinsulator,camjayi2008coulomb,pankov20082dmit,radonjic2012wignermott,schafer2015fate"
+literal "false"
+
+\end_inset
+
+.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Mott-MIT"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ shows the two band states, metallic and insulating, in the Mott-Hubbard
+ MIT.
+ In a Wigner-Mott transitionm the carriers may be localized in an insulating
+ Wigner crystal, an electron gas with ordered spin-1/2 bound states, via
+ long-range electron-electron interactions
+\begin_inset CommandInset citation
+LatexCommand cite
+key "vu2020collective"
+literal "false"
+
+\end_inset
+
+.
+ Wigner-crystal electrons break translational symmetry and form a periodic
+ lattice.
+ When the carrier density increases enough to overcome the coulomb repulsion
+ between carriers, the crystal forms a strongly correlated electron liquid,
+ showing metallic behavior
+\begin_inset CommandInset citation
+LatexCommand cite
+key "radonjic2012wignermott,camjayi2008coulomb,vu2020collective,amaricci2010extended"
+literal "false"
+
+\end_inset
+
+.
+ The Wigner-Mott transition has been shown to exist in 2D as well
+\begin_inset CommandInset citation
+LatexCommand cite
+key "smolenski2021signatures,pankov20082dmit,camjayi2008coulomb"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Percolation MIT transition
+\end_layout
+
+\begin_layout Standard
+The percolation MIT model starts with a disordered-metallic semiconductor,
+ where electron-electron interactions screen the carriers from the disorder.
+ If the density of free carriers in a semiconductor is lowered by a small
+ amount, the screening of the carriers from defects decreases greatly in
+ response, in a non-linear relationship.
+ Near the transition, the itinerant carriers behave like a highly inhomogeneous
+ electron gas, allowing free elections to become localized on the defects.
+ To the electrons, the lattice appears as a series of hill and valley potentials
+, causing the carriers to repel or collect in the respective lattice regions.
+ If the density of carriers continues to decrease, the crystal disorder
+ will continue to localize more electrons.
+ This in turn removing paths for carriers though the semiconductor and decreasin
+g conductivity.
+ Eventually when the fraction of sites occupiable by or able to conduct
+ free electrons, sinks below a critical threshold 
+\begin_inset Formula $p_{c}$
+\end_inset
+
+, the semiconductor becomes insulating (
+\begin_inset Formula $0\leq p_{c}\leq1$
+\end_inset
+
+).
+ At this point, the semiconductor is a series of isolated metallic islands.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "moon2021metalinsulator,mahan2010condensed"
+literal "true"
+
+\end_inset
+
+ The percolation MIT is thought to be one possible explanation for the experimen
+tally observed 2D MITs
+\begin_inset CommandInset citation
+LatexCommand cite
+key "chen2015probing,meir2001percolationtype,patil2019gateinduced,dassarma2005twodimensional,manfra2007transport"
+literal "true"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Weak localization
 \end_layout
 
 \begin_layout Standard
@@ -1083,7 +1335,7 @@ status open
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -1118,7 +1370,7 @@ Electron scattering off impurities
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -1166,9 +1418,9 @@ name "fig:Weak-localization"
 
 \begin_layout Plain Layout
 (a) a self-intersecting path of an electron and it's time-inverted path.
- The destructive interference of the different paths lead to weak localization
+ The destructive interference of different paths lead to weak localization
  of the electron.
- (b) the magnetic field dependence on conductivity in a weakly localized
+ (b) the magnetic field dependence of conductivity in a weakly localized
  crystal.
  As the temperature increases the effects of weak localization decrease.
 \end_layout
@@ -1203,7 +1455,6 @@ a.
  The destructive interference localizes the carrier, increasing the probability
  it will wander around in a loop, and increasing the effective resistance
  of the semiconductor.
- 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "bergmann2010weak"
@@ -1217,8 +1468,8 @@ literal "true"
 \begin_layout Standard
 This effect can be measured by breaking the path symmetry using magnetic
  fields.
- Of note for later discussion, measuring the change in 2D conductivity from
- a magnetic field according to the Hikami-Larkin-Nagaoka
+ Of note for later discussion, measuring the change in 2D magnetoconductance
+ according to the Hikami-Larkin-Nagaoka
 \begin_inset CommandInset citation
 LatexCommand cite
 key "hikami1980spinorbit"
@@ -1302,246 +1553,6 @@ literal "true"
 
 \end_layout
 
-\begin_layout Subsubsection
-Mott localization (TODO: review)
-\end_layout
-
-\begin_layout Standard
-In conventional band theories, at low temperatures the electrons are bound
- to the sites of isolated donor atoms.
- To have free carriers the ionization from excitation must be large enough
- to overcome the coulomb binding forces to the nucleus.
- When the thermal (or other) excitations are sufficient, some distribution
- of the donors will ionize and contribute free electrons to the semiconductor.
- The electron-electron interactions between the itinerant electrons in the
- crystal and the electrons of the charged donor atom act to screen the donor
- atom.
- This weakens the coulomb attraction of the free electrons to the donor
- atom.
-\end_layout
-
-\begin_layout Standard
-If additional donors are added to the crystal, the additional electron-electron
- interactions will increase and further screen the donor atoms, reducing
- the Mott band gap.
- Eventually, adding enough donors to the semiconductor will cause the binding
- energy to reduce below what will form a bound state, making the semiconductor
- metallic in behavior.
- In the Mott model this critical transition is typically abrupt, occurring
- once the concentration of donors crosses the critical donor density 
-\begin_inset Formula $n_{c}$
-\end_inset
-
-.
- If the donor concentration is above is above this threshold the semiconductor
- is metallic in nature and has a finite conductivity at 0 K, conversely,
- if the density of donors is below 
-\begin_inset Formula $n_{c}$
-\end_inset
-
- then a Mott insulator forms and has infinite resistivity at 0 K.
- Mott found this critical density to be 
-\begin_inset Formula $n_{c}a_{_{0}}\simeq.24$
-\end_inset
-
-, where 
-\begin_inset Formula $a_{0}$
-\end_inset
-
- is the Bohr radius.
-\begin_inset CommandInset citation
-LatexCommand cite
-key "2010condensed,mott1949basis"
-literal "false"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset space \hfill{}
-\end_inset
-
-
-\begin_inset Graphics
-	filename Semiconductor-Figures/Mott-Hubbard.svg
-
-\end_inset
-
-
-\begin_inset space \hfill{}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Mott-Hubbard band splitting
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Mott-MIT"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-The DOS bands in the correlated-metal and Mott-insulator states in the Mott-Hubb
-ard model.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-There are many extensions to the Mott MIT, two pertinent examples are the
- Mott–Hubbard and Wigner-Mott transitions.
- In a conventional metal band two electrons are able to occupy a lattice
- site, one spin-up and the other spin down.
- In the Mott-Hubbard model, the short range electron-electron interactions
- allow only one electron per lattice site.
- If the on-site Coulomb repulsion 
-\begin_inset Formula $U$
-\end_inset
-
- is much less than the hopping integral 
-\begin_inset Formula $t$
-\end_inset
-
- then material conducts as a correlated metal.
- Conversely, if 
-\begin_inset Formula $t\gg U$
-\end_inset
-
- the band splits and the crystal forms a paramagnetic Mott-Hubbard insulator.
-\begin_inset CommandInset citation
-LatexCommand cite
-key "fujimori2001electronic,greiner2013thinfilm"
-literal "false"
-
-\end_inset
-
- This model is controversial in two dimensions as any disorder was thought
- to localize carriers, but more recent work has suggested that the MIT may
- still be possible in 2D
-\begin_inset CommandInset citation
-LatexCommand cite
-key "sorella1992semimetalinsulator,camjayi2008coulomb,pankov20082dmit,radonjic2012wignermott,schafer2015fate"
-literal "false"
-
-\end_inset
-
-.
- Figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Mott-MIT"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- shows the two band states in the Mott-Hubbard MIT.
- In a Wigner-Mott transition the carriers may be localized in an insulating
- Wigner crystal, an electron gas with ordered spin-1/2 bound states, via
- long-range electron-electron interactions
-\begin_inset CommandInset citation
-LatexCommand cite
-key "vu2020collective"
-literal "false"
-
-\end_inset
-
-.
- In a Wigner-crystal the electrons break translational symmetry and form
- a periodic lattice.
- When the carrier density increases enough to overcome the coulomb repulsion,
- the crystal forms a strongly correlated electron liquid, showing a metallic
- behavior
-\begin_inset CommandInset citation
-LatexCommand cite
-key "radonjic2012wignermott,camjayi2008coulomb,vu2020collective,amaricci2010extended"
-literal "false"
-
-\end_inset
-
-.
- The Wigner-Mott transition has been shown to exist in 2D as well
-\begin_inset CommandInset citation
-LatexCommand cite
-key "smolenski2021signatures,pankov20082dmit,camjayi2008coulomb"
-literal "false"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Subsubsection
-Percolation MIT transition (TODO, review)
-\end_layout
-
-\begin_layout Standard
-The percolation MIT model starts with a disordered-metallic semiconductor,
- where electron-electron interactions screen the carriers from defects.
- As the density of free carriers in a semiconductor is lowered the screening
- of the carriers from defects decreases non-linearly in response.
- Near the transition the itinerant carriers become a highly inhomogeneous
- electron gas, allowing elections to become localized on the defects.
- This is often described as a series of hill and valley potentials, causing
- the carriers to repel or collect in the respective lattice regions.
- If the density of carriers continues to decrease the disorder will continue
- to localize more electrons, removing paths for carriers though the semiconducto
-r and decreasing conductivity.
- Eventually when the fraction of sites able to be occupied by or conduct
- free electrons sinks below a critical threshold 
-\begin_inset Formula $p_{c}$
-\end_inset
-
-, the semiconductor becomes insulating (
-\begin_inset Formula $0\leq p_{c}\leq1$
-\end_inset
-
-).
- At this point, the semiconductor is a series of isolated metallic islands.
-\begin_inset CommandInset citation
-LatexCommand cite
-key "moon2021metalinsulator,mahan2010condensed"
-literal "true"
-
-\end_inset
-
- The percolation MIT is thought to be one possible explanation for the experimen
-tally observed 2D MITs
-\begin_inset CommandInset citation
-LatexCommand cite
-key "chen2015probing,meir2001percolationtype,patil2019gateinduced,dassarma2005twodimensional,manfra2007transport"
-literal "true"
-
-\end_inset
-
-.
-\end_layout
-
 \begin_layout Subsection
 Schottky barriers and metal-semiconductor-metal conduction
 \begin_inset CommandInset label
@@ -1550,19 +1561,20 @@ name "sec:Metal-Semiconductor-Metal-conduc"
 
 \end_inset
 
- (TODO review)
+
 \end_layout
 
 \begin_layout Standard
 When constructing electronic devices with multiple materials we must consider
- the physical and chemical properties of the contact region.
- When placed in contact with each other multiple phenomena can alter the
- materials near the contact region: band structures of the individual crystal
- are altered as a new preferred energy minimum is reached, chemical reactions
- can take place between the two materials, the physical dimensions of one
- material can shift to accommodate the other, etcetera.
- For most electronic transport applications, an ohmic contact is preferred
- as it takes the least potential to form a current and has an easily predictable
+ the physical and chemical properties of the contact region between the
+ two materials.
+ Multiple phenomena can alter the materials near the contact region: the
+ band structures of the individual crystal are shifted as a new preferred
+ energy minimum is reached, chemical reactions take place between the two
+ materials, the physical dimensions of one material shift to accommodate
+ the other, etcetera.
+ For most electronic transport applications, an ohmic contact is preferable
+ as it takes less potential to form a current and has an easily predictable
  behavior.
  Ohmic contact is characterized by a linear relationship between the voltage
  
@@ -1582,10 +1594,10 @@ When constructing electronic devices with multiple materials we must consider
 \end_inset
 
  can depend on many factors like frequency and temperature.
- This typically seen for a metal-metal junction as there is little band
- bending and metals conduct at a wide range of energy levels.
- At the interface between metals and semiconductors a Schottky contact is
- typically formed, which is non-linear in 
+ Ohmic contacts are usually found in a metal-metals junction as there is
+ little band bending and metals conduct over a wide range of energy levels.
+ Schottky contacts typically form at the interface between metals and semiconduc
+tors, and have a non-linear relationship in 
 \begin_inset Formula $I$
 \end_inset
 
@@ -1606,7 +1618,7 @@ literal "true"
 .
  To predict the behavior of a metal-insulator junction one must numerically
  calculate the quantum mechanical states of the system, including the materials
- chemistry, and include the system's geometry
+ chemistry, and take into account the system's geometry
 \begin_inset CommandInset citation
 LatexCommand cite
 key "gong2014unusual"
@@ -1633,7 +1645,7 @@ literal "true"
 \end_inset
 
 .
- This causes the bands to bend relative to one another, shown in Figure
+ This causes the bands to bend relative to one another, shown in figure
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1754,7 +1766,7 @@ status open
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -1930,7 +1942,8 @@ name "fig:M-S band diagram"
 
 \begin_layout Plain Layout
 The band structure (a) before and (b) after a metal is brought into contact
- with a n-type semiconductor and the the relative energy differences
+ with a n-type semiconductor, showing the the relative band shifts to meet
+ the energy boundary conditions
 \begin_inset CommandInset citation
 LatexCommand cite
 key "kittel2005introduction"
@@ -1953,7 +1966,8 @@ literal "true"
 
  the conducting and valance bands.
  A simplified interface region is shown that does not encapsulate all of
- the complex chemical and physics dynamics of a true interface.
+ the complex chemical and physics dynamics that may be found in a real system
+ interface.
  (c) forward and (d) reverse voltage bias applied from right to left.
  The arrow indicates the direction of current flow between the two regions
  under the forward bias.
@@ -2093,12 +2107,12 @@ where the sign corresponds to the direction of current and
 \end_inset
 
  depends on the individual barrier energy 
-\begin_inset Formula $\Phi_{Bn}$
+\begin_inset Formula $\phi_{Bn}$
 \end_inset
 
 .
- We may also consider that the contacts may not be ideal and introduce a
- contact specific parameter 
+ The contacts may not be ideal, so we introduce a contact specific parameter
+ 
 \begin_inset Formula $n_{n}\geq1$
 \end_inset
 
@@ -2151,7 +2165,8 @@ noprefix "false"
 
 \end_inset
 
- shows a typical linear ohmic behavior for large and small resistance.
+ shows a typical linear Ohmic behavior for a large and small resistance
+ material.
  Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -2172,8 +2187,8 @@ noprefix "false"
 
 \end_inset
 
- shows the behavior of a single diode, from a semiconductor with large and
- small resistances.
+ shows the behavior of a single diode, from large and small resistance semicondu
+ctors.
  The increased resistance can be seen in the higher voltages needed to reach
  the saturation current while the barrier height limits the reverse bias
  current.
@@ -2197,9 +2212,10 @@ noprefix "false"
 
 \end_inset
 
- shows the behavior of both barriers and the semiconductor in this model.
+ shows the behavior with a Schottky barrier on each side of the semiconductor
+ channel.
  Similar to the single contact, the barrier height dictates the saturation
- current and the resistance the rate at which increasing voltage reaches
+ current, and the resistance the rate at which increasing voltage reaches
  saturation.
  The ideality factor 
 \begin_inset Formula $n$
@@ -2210,8 +2226,8 @@ noprefix "false"
 \begin_inset Formula $R$
 \end_inset
 
-, making two contacts that have the same barrier height still produce an
- asymmetric behavior.
+; causing two contacts with identical barrier heights to produce an asymmetric
+ behavior.
  This differentiation will decrease as 
 \begin_inset Formula $R$
 \end_inset
@@ -2504,12 +2520,12 @@ noprefix "false"
 \end_inset
 
 .
- (a) ohmic behavior, with no Schottky barrier with large and small resistances.
+ (a) ohmic behavior, with no Schottky barriers, with large and small resistances.
  A single Schottky barrier with small and large resistances and barrier
- heights, in linear (b) and logarithmic (c) plots.
+ heights, in linear (b) and logarithmic (c) scale.
  (d) simplified band diagram for a double Schottky barrier in a metal-semiconduc
 tor-metal device.
- A double Schottky barrier with large and small resistances, barrier heights,
+ A double-Schottky barrier with large and small resistances, barrier heights,
  and ideality factors on a linear (e) and log (f) scale.
  The dashed line shows the asymmetrical behavior of a pair of junctions
  with different ideality factors.
@@ -2522,34 +2538,33 @@ tor-metal device.
 
 \begin_layout Standard
 This non-linear behavior must be taken into account for any electronic transport
- done on a material as the Schottky contact can have multiple competing
- effects on a measurement.
- For a four-terminal device charges may or may not tunnel into a lead in
- contact with the semiconductor based on the size of the barrier and the
- resistance of the material being tested.
- Furthermore by placing a metal in contact with a semiconductor the region
- around the material is altered, breaking the usual assumption that the
- channel material is uniform.
- The ideality factor and barrier height can shift the two terminal resistance
- of a material so the current produced is not symmetric with respect to
- the voltage direction.
+ done on a material as the Schottky contact can have multiple effects on
+ a measurement.
+ For a practical device the barrier may alter the apparent resistance of
+ the material being tested.
+ Furthermore, in a Schottky junction the region of the semiconductor near
+ the contact is altered, breaking the usual assumption that the channel
+ material is uniform.
+ Additionally, the ideality factor and relative barrier heights can shift
+ the two terminal resistance of a device so the current produced is not
+ symmetric with respect to the voltage direction.
  
 \end_layout
 
 \begin_layout Subsection
-Field effect transistors (FET)
+Field effect transistors (FETs)
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:Field-effect-transistors"
 
 \end_inset
 
- (TODO review, SS and VT?)
+ (TODO, review SS)
 \end_layout
 
 \begin_layout Standard
-One of the most common applications of semiconductor devices is a field
- effect transistor (FET).
+One of the most ubiquitous semiconductor devices is the field effect transistor
+ (FET).
  Transistors provide a way to turn a current on or off with a voltage, allowing
  for controllable states in larger circuits.
  This forms the basis of digital logic in modern computers, by defining
@@ -2588,7 +2603,7 @@ tor to change the carrier concentration in the crystal.
  and dynamics between the two contacts.
  Removing carriers, known as depletion, will decrease the conductivity,
  while enhancement adds carriers to increase conductivity.
- There are two common types of FET, junction gate field-effect transistor
+ The two most common types of FET are the junction gate field-effect transistor
  (JFET) and metal-oxide-semiconductor FET (MOSFET).
 \end_layout
 
@@ -2614,7 +2629,7 @@ noprefix "false"
  This expansion eventually pinches off the entire channel forcing carriers
  to tunnel across the depletion region and halting most current, thus forming
  an off state in the JFET.
- Because of this configuration, all JFET must be doped to conduct naturally
+ Because of this configuration, all JFETs must be doped to conduct naturally
  and operate in depletion mode, as the inverse would generate current though
  the gate to the channel.
 \end_layout
@@ -2632,13 +2647,12 @@ noprefix "false"
 \end_inset
 
 .
- This eliminates almost all current between the gate and the gate and the
- conduction channel, a significant advantage of MOSFETs over other types
- of transistors.
+ This eliminates almost all current between the gate and the conduction
+ channel, a significant advantage of MOSFETs over other types of transistors.
  The conduction channel contacts are doped to form ohmic contacts opposite
  to the substrate.
- MOSFET transistors can operate in either enhancement or depletion mode,
- another significant advantage.
+ MOSFETs can operate in either enhancement or depletion mode, another significan
+t advantage.
  Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -2652,10 +2666,10 @@ noprefix "false"
  shows the different operation modes possible in MOSFETs and JFETs.
  In enhancement mode the channel region does not have enough carriers to
  conduct naturally, and by applying a gate voltage carriers are added to
- the region and current flows.
- Conversely, in depletion mode the channel will conduct without any bias,
- often though a doped layer, but an external voltage can be used to remove
- carriers and produce the off state.
+ the region and current flows between the source and drain.
+ Conversely, in depletion mode the channel will conduct without any gate
+ bias, often though a doped layer in the channel, but the gate voltage can
+ be used to remove carriers and produce the off state.
  The bias between the source and drain leads also changes the electric field,
  and thus carrier density, within the conduction channel.
  Too large of a voltage causes the channel to start to pinch off, similar
@@ -2777,7 +2791,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-FET types
+Common FET types
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:FET-types"
@@ -2865,14 +2879,14 @@ Typical (a) JFET and (b) MOSFET devices in n- or p-type configurations.
  Different curves show the deviation for increasing gate voltage increments.
  The transition between ohmic (triode) and saturation occurs near the dotted
  line.
- The shown breakdown behavior is a characteristic of a MOSFET rather than
- most JFET.
+ The shown breakdown behavior is a characteristic of a JFET but atypical
+ in most MOSFETs.
  
 \end_layout
 
 \end_inset
 
-The interplay of drain-source and gate bias on channel behavior in FET lead
+The interplay of drain-source and gate bias on channel behavior in FET leads
  to a non-trivial relationship between channel voltage and current.
  Figure 
 \begin_inset CommandInset ref
@@ -2886,10 +2900,22 @@ noprefix "false"
 
  shows the typical behavior between drain-source voltage and current at
  different gate voltage intervals.
- In the cutoff region the channel conduction is exponentially small, leading
- to low current flow.
- An arbitrary small threshold current is picked for the off state for a
- FET.
+ In the cutoff region the channel conduction is small and the transistor
+ can be seen as off.
+ For current to flow in the channel a minimum voltage is needed between
+ the gate and source, the threshold voltage 
+\begin_inset Formula $V_{th}$
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "threshold voltage"
+
+\end_inset
+
+, which occurs when there is the same volume density of electrons and holes
+ in the channel and semiconductor body.
  As the channel carrier concentration is raised by the gate voltage 
 \begin_inset Formula $V_{G}$
 \end_inset
@@ -2901,13 +2927,9 @@ noprefix "false"
 \end_inset
 
 , the current looks linear and the FET acts like an ohmic resistor.
- 
-\begin_inset Formula $V_{th}$
-\end_inset
-
- is the threshold voltage at which the gate voltage begins to pinch off
- the conduction channel, and dependent on temperature.
- The actual increase in current more closely follows
+ At the threshold voltage the gate voltage begins to pinch off the conduction
+ channel.
+ The increase in current more accurately follows
 \begin_inset Formula 
 \begin{equation}
 I_{D}=2\kappa\left(\left(V_{GS}-V_{th}\right)V_{DS}-\frac{V_{DS}^{2}}{2}\right)
@@ -2929,7 +2951,7 @@ I_{D}=\kappa\left(V_{GS}-V_{th}\right)^{2}
 
 \end_inset
 
-and labeled the saturation region.
+and known as the saturation region.
  The saturation region is what is typically thought of as the on state for
  a FET, providing an easy binary contrast with the cutoff region.
  Finally, once 
@@ -2938,8 +2960,8 @@ and labeled the saturation region.
 
  is large enough, the there is a rapid increase in current known as breakdown,
  due to the avalanche effect.
- This typically occurs only in JFET while MOSFET are limited instead by
- their power dissipation, however MOSFET can suffer an irreversible breakdown
+ This typically occurs only in JFETs while MOSFETs are limited instead by
+ their power dissipation, however MOSFETs can suffer an irreversible breakdown
  in the gate dialectic instead.
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -2966,6 +2988,91 @@ Avalanche breakdown starts when a strong enough electric field propels an
 \end_layout
 
 \begin_layout Standard
+An important quality for practical FETs is the rate at which they switch
+ between their on and off states.
+ In the subthreshold region 
+\begin_inset Formula $V_{G}<V_{T}$
+\end_inset
+
+, the current grows at an exponential rate
+\begin_inset Formula 
+\begin{equation}
+I_{D}\propto e^{q\left(V_{G}-V_{T}\right)/k_{B}T}
+\end{equation}
+
+\end_inset
+
+until the ohmic region is reach.
+ The rate at which a MOSFET switches between the on off states is given
+ by the subthreshold slope
+\begin_inset CommandInset label
+LatexCommand label
+name "subthreshold-swing"
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+SS=\left(\frac{d\left(\log_{10}I_{D}\right)}{dV_{G}}\right)^{-1}=\ln\left(10\right)\frac{k_{B}T}{q}\left(1+\frac{C_{d}}{C_{ox}}\right)\label{eq:subthreshold-swing}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $C_{d}$
+\end_inset
+
+ is the capacitance of the depletion layer and 
+\begin_inset Formula $C_{ox}$
+\end_inset
+
+ the capacitance of the dielectric oxide.
+ For conventional devices the minimum subthreshold slope is found by setting
+ 
+\begin_inset Formula $C_{d}\rightarrow0$
+\end_inset
+
+ and 
+\begin_inset Formula $C_{ox}\rightarrow\infty$
+\end_inset
+
+, giving 
+\begin_inset Formula 
+\begin{equation}
+SS_{min}=\ln\left(10\right)\frac{k_{B}T}{q},\label{eq:subthreshold-swing-min}
+\end{equation}
+
+\end_inset
+
+which is around 
+\begin_inset Formula $60\,mV/dec$
+\end_inset
+
+ at 
+\begin_inset Formula $300\,K$
+\end_inset
+
+, where a 
+\begin_inset Formula $dec$
+\end_inset
+
+ is a 10-fold increase in 
+\begin_inset Formula $I_{D}$
+\end_inset
+
+.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "sze2012semiconductor"
+literal "false"
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
 As FET gate and channel contacts are within close proximity of each other,
  the electric fields produced by the gate will influence the channel contact
  junction behaviors.
@@ -2977,6 +3084,7 @@ As FET gate and channel contacts are within close proximity of each other,
  We must also be wary of assuming all FET device gating response is due
  to the bulk of the semiconductor alone, but instead recognize it is often
  a mix of bulk and contact characteristics.
+ 
 \end_layout
 
 \begin_layout Subsubsection
@@ -2987,7 +3095,7 @@ name "subsec:MOSFET-and-band-bending"
 
 \end_inset
 
- (TODO: review)
+
 \end_layout
 
 \begin_layout Standard
@@ -3022,8 +3130,8 @@ literal "true"
  In the band model this causes the bands to bend in the oxide and the semiconduc
 tor near the interface, so the bulk of the semiconductor is shifted relative
  to the gate.
- As the number of charges in the oxide is negligible, the change in potential
- 
+ As the number of free charges in an ideal oxide is negligible, the change
+ in potential 
 \begin_inset Formula $V_{O}$
 \end_inset
 
@@ -3338,7 +3446,7 @@ d.
  As larger negative (positive) voltages are applied the bands begin to invert
  and minority charges begin to accumulate in the oxide-semiconductor region.
  Eventually more minority than majority charges accumulate within the interface
- region, known as inversion and shown in figure 
+ region, known as inversion, shown in figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:MOSFET"
@@ -3379,13 +3487,13 @@ literal "true"
 \end_layout
 
 \begin_layout Subsubsection
-Charge trapping in FETs (TODO: review)
+Charge trapping in FETs
 \end_layout
 
 \begin_layout Standard
 Discontinuities or imperfections in the MOS crystal structures can create
  localized electronic states, introducing locations for charges to get trapped
- so impeding movement through the device.
+ and impeding movement through the device.
  Charge trapping modifies the electric field across the MOS capacitor, altering
  the conduction within the semiconductor and is usually considered detrimental
  to typical MOSFETs.
@@ -3414,322 +3522,7 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
-Charge traps can originate from intrinsic properties of the crystal, due
- to disorder in the lattice, or from extrinsic sources.
- Intrinsic static disorder arises from structural defects such as grain
- boundaries, mobile ions, empty lattice sites, step edges, lattice stacking
- mismatches, and others.
- Grain boundaries typically impede current flow, though in some instances
- can actually act as channels of conduction
-\begin_inset CommandInset citation
-LatexCommand cite
-key "hunter2013observation,deuermeier2016highly"
-literal "true"
-
-\end_inset
-
-.
- Mobile ions are charged atoms, usually manufacturing impurities, that can
- move through the oxide with a high electric field.
- As the ions move they alter the capacitance-voltage relationship of the
- MOS
-\begin_inset CommandInset citation
-LatexCommand cite
-key "kuhn1971ionic"
-literal "false"
-
-\end_inset
-
-.
- Empty lattice sites, step edges, lattice stacking mismatches all typically
- reduce the flow of current as they form energy barriers for charge carries
- along the path of conduction
-\begin_inset CommandInset citation
-LatexCommand cite
-key "haneef2020charge"
-literal "false"
-
-\end_inset
-
-.
- Dynamic disorder arises from short lived distortions, such as temperature
- fluctuations of the lattice and phonons, that localize bands of the lattice
- and reduce conductivity in a similar manner to static disorder
-\begin_inset CommandInset citation
-LatexCommand cite
-key "fratini2016transient"
-literal "false"
-
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-Extrinsic traps originate from sources external to the semiconductor, such
- as interfaces with other materials, bias stresses, dopants, and environmental
- effects.
- At the metal-semiconductor interface the band structure is altered, forming
- a barrier for charges traveling through or near the interface.
- This can form Schottky barriers, as discussed in 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sec:Metal-Semiconductor-Metal-conduc"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-, and decreases the conductivity of the FET.
- The surface of the semiconductor often contains defects or contaminates,
- but the resulting localized states may be screened the semiconductor has
- a large amount of free carriers.
- When put in contact with a metal, the depletion region formed at the interface
- can expose the localized band structure
-\begin_inset CommandInset citation
-LatexCommand cite
-key "tung2014physics"
-literal "false"
-
-\end_inset
-
-.
- Doping the semiconductor near the region of the metal interface is often
- used to mitigate this effect and produce ohmic contacts.
- Similarly, the oxide-semiconductor interface in a MOS or a heterostructure
- interfaces produces localized traps in the semiconductor, reducing mobility
- or conductivity.
- Mismatching periodic lattice structures in the two materials can induce
- regions of strain or disorder in the semiconductor.
- Different rates of thermal expansion in each material can exaggerate this
- and introduce an additional temperature dependence to the interface trap
- behavior.
- Additionally, dangling bonds along the edge of the oxide can trap charges.
- The MOS oxide can donate or accept additional charges from the semiconductor
- to produce a lower energy state, the charges are then trapped and de-trapped
- as the gate voltage is altered.
- Environmental contaminates, usually water and oxygen molecules, cause numerous
- trap phenomenon.
- Water molecules can absorb into or adhere to the surfaces of the oxide
- or semiconductor and act as charge traps or cause redox reactions in the
- MOSFET
-\begin_inset CommandInset citation
-LatexCommand cite
-key "gao2014redox"
-literal "false"
-
-\end_inset
-
-.
- Similarly, oxygen can adhere to the surface of either material, creating
- a localized state and trapping electrons
-\begin_inset CommandInset citation
-LatexCommand cite
-key "nicolai2012unification"
-literal "false"
-
-\end_inset
-
-.
- Oxygen can also react with many semiconductors, oxidizing the surface and
- forming an insulating barrier and decreasing the channel thickness.
- Great care is often taken to avoid exposing MOSFETs to water and oxygen
- through the use of controlled manufacturing environments and encapsulating
- the materials within other materials such as h-BN.
- Finally, exposure to environmental radiation can create deep traps within
- the semiconductor gap
-\begin_inset CommandInset citation
-LatexCommand cite
-key "haneef2020charge"
-literal "false"
-
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-The effects of charge trapping on MOSFETs are varied and often difficult
- to distinguish from other phenomena, such as contact resistance or gate
- bias band bending.
- Typically, the localization of bands within the lattice decreases the effective
- conductivity and mobility of carriers in the channel
-\begin_inset CommandInset citation
-LatexCommand cite
-key "neamen2002semiconductor,sze2012semiconductor"
-literal "false"
-
-\end_inset
-
-.
- Deep traps increase the recombination rate of minority charge carries,
- and carriers that get localized in deep traps will no longer transport
- current without a non-thermal excitation or large enough electric field,
- both reducing the channel current
-\begin_inset CommandInset citation
-LatexCommand cite
-key "neamen2002semiconductor"
-literal "false"
-
-\end_inset
-
-.
- Shallow traps may actually increase current in some instances, allowing
- carriers to thermally hop or tunnel between traps
-\begin_inset CommandInset citation
-LatexCommand cite
-key "nenashev2018release"
-literal "false"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-Trapping impacts the effect of the gate voltage on carrier transport.
- For FET at low gate voltages the injected charges accumulate in localized
- states, so that the drain current is mostly transport though the traps
-\begin_inset CommandInset citation
-LatexCommand cite
-key "haneef2020charge"
-literal "false"
-
-\end_inset
-
-.
- As the gate voltage increases the trap states continue to be filled, until
- they are all full and the carriers occupy the extended states and increase
- the device mobility.
- As the trapped states in the oxide or semiconductor need to be filled first,
- this shifts the threshold voltage in the direction of the bias, known as
- gate bias stress.
- The shift of the threshold voltage is often used as an indication of charge
- trapping, though other mechanisms such as carrier density can impact the
- mobility relationship to gate voltage
-\begin_inset CommandInset citation
-LatexCommand cite
-key "kwon2018relationship,haneef2020charge"
-literal "false"
-
-\end_inset
-
-.
- Trapped charge can also cause bias stress instability, where the threshold
- voltage to continue to shift over time 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "suresh2008bias,lan2020gate"
-literal "false"
-
-\end_inset
-
-.
- Gate bias stress is typically reversible, as excitation such as light or
- large gate voltages can detrap the charges.
- In the subthreshold region of the FET the trapped charge can continue to
- conduct, giving a large off current and high subthreshold swing
-\begin_inset CommandInset citation
-LatexCommand cite
-key "kim2018analysis"
-literal "false"
-
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-The gate-voltage trap filling often leads to hysteresis in the 
-\begin_inset Formula $I_{D}$
-\end_inset
-
--
-\begin_inset Formula $V_{G}$
-\end_inset
-
- measurements of thin film transistors, forming clockwise, counterclockwise,
- or a combination of multiple loops.
- Carriers trapped during a forward gate bias sweep will get released ruing
- the reverse bias sweep, resulting in a different drain current for the
- same gate voltage.
- The traps can exist within the oxide, interface, surface contaminants,
- or semiconductor along the gate
-\begin_inset CommandInset citation
-LatexCommand cite
-key "kim2018analysis"
-literal "false"
-
-\end_inset
-
-.
- Frequency dependence
-\begin_inset CommandInset citation
-LatexCommand cite
-key "georgiou2018ferroelectricity,zhang2014defect,yin2019robust,guo2015charge"
-literal "false"
-
-\end_inset
-
-, pulsed gate voltage
-\begin_inset CommandInset citation
-LatexCommand cite
-key "datye2018reduction"
-literal "false"
-
-\end_inset
-
-, temperature dependence
-\begin_inset CommandInset citation
-LatexCommand cite
-key "kumar2003hotcarrier,groeseneken1990temperature,datye2018reduction,wang2020cryogenic"
-literal "false"
-
-\end_inset
-
-, illumination
-\begin_inset CommandInset citation
-LatexCommand cite
-key "kumar2003hotcarrier,yin2019robust"
-literal "false"
-
-\end_inset
-
-, and other techniques are all used to attempt to characterize charge trapping
- and distinguish its hysteresis from other phenomenon.
- 
-\end_layout
-
-\begin_layout Standard
-Charge traps continue to exist and cause FET hysteresis and bias stress
- down to cryogenic temperatures
-\begin_inset CommandInset citation
-LatexCommand cite
-key "casse2020cryogenic,wang2020cryogenic,beckers2020physical,wang2020temperaturedriven"
-literal "false"
-
-\end_inset
-
-.
- At low temperatures there is less ionization of dopant ions within the
- material.
- The bias stress effect from trapping and can increase and subthreshold
- swing decrease with decreasing temperature
-\begin_inset CommandInset citation
-LatexCommand cite
-key "kim2018analysis,beckers2020physical,wang2020temperaturedriven"
-literal "false"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
+\noindent
 \begin_inset Float figure
 wide false
 sideways false
@@ -3823,12 +3616,337 @@ name "fig:Charge-trapping"
 
 \begin_layout Plain Layout
 (a) types of various intrinsic and extrinsic carrier traps found within
- MOSFET devices and (b) the location those traps appear in a typical device.
+ MOSFET devices and (b) the location those traps may appear in the device.
 \end_layout
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Charge traps can originate from intrinsic properties of the crystal, disorder
+ in the lattice, or from extrinsic sources.
+ Intrinsic static disorder arises from structural defects such as grain
+ boundaries, mobile ions, empty lattice sites, step edges, lattice stacking
+ mismatches, and others.
+ Grain boundaries typically impede current flow, though in some instances
+ can actually act as channels of conduction
+\begin_inset CommandInset citation
+LatexCommand cite
+key "hunter2013observation,deuermeier2016highly"
+literal "true"
+
+\end_inset
+
+.
+ Mobile ions are charged atoms, usually manufacturing impurities, that can
+ move through the oxide with a high electric field.
+ As the ions move they alter the capacitance-voltage relationship of the
+ MOS
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kuhn1971ionic"
+literal "false"
+
+\end_inset
+
+.
+ Empty lattice sites, step edges, lattice stacking mismatches all typically
+ reduce the flow of current as they form energy barriers for charge carries
+ along the path of conduction
+\begin_inset CommandInset citation
+LatexCommand cite
+key "haneef2020charge"
+literal "false"
+
+\end_inset
+
+.
+ Dynamic disorder arises from short lived distortions, such as temperature
+ fluctuations of the lattice and phonons, that localize bands of the lattice
+ and reduce conductivity in a similar manner to static disorder
+\begin_inset CommandInset citation
+LatexCommand cite
+key "fratini2016transient"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Extrinsic traps originate from sources external to the semiconductor, such
+ as interfaces with other materials, bias stresses, dopants, and environmental
+ effects.
+ At the metal-semiconductor interface the band structure is altered, forming
+ a barrier for charges traveling through or near the interface.
+ This can form Schottky barriers, as discussed in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Metal-Semiconductor-Metal-conduc"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, and decreases the conductivity of the FET.
+ The surface of the semiconductor often contains defects or contaminates,
+ but the resulting localized states may be screened the semiconductor has
+ a large amount of free carriers.
+ When put in contact with a metal, the depletion region formed at the interface
+ can expose the localized band structure
+\begin_inset CommandInset citation
+LatexCommand cite
+key "tung2014physics"
+literal "false"
+
+\end_inset
+
+.
+ Doping the semiconductor near the region of the metal interface is often
+ used to mitigate this effect and produce ohmic contacts.
+ Similarly, the oxide-semiconductor interface in a MOS or a heterostructure
+ interfaces produces localized traps in the semiconductor, reducing mobility
+ or conductivity.
+ Mismatching periodic lattice structures in the two materials can induce
+ regions of strain or disorder in the semiconductor.
+ Different rates of thermal expansion in each material can exaggerate this
+ and introduce an additional temperature dependence to the interface trap
+ behavior.
+ Additionally, dangling bonds along the edge of the oxide can trap charges.
+ The MOS oxide can donate or accept additional charges from the semiconductor
+ to produce a lower energy state, the charges are then trapped and de-trapped
+ as the gate voltage is altered.
+ Environmental contaminates, usually water and oxygen molecules, cause numerous
+ trap phenomenon.
+ Water molecules can absorb into or adhere to the surfaces of the oxide
+ or semiconductor and act as charge traps or cause redox reactions in the
+ MOSFET
+\begin_inset CommandInset citation
+LatexCommand cite
+key "gao2014redox"
+literal "false"
+
+\end_inset
+
+.
+ Similarly, oxygen can adhere to the surface of either material, creating
+ a localized state and trapping electrons
+\begin_inset CommandInset citation
+LatexCommand cite
+key "nicolai2012unification"
+literal "false"
+
+\end_inset
+
+.
+ Oxygen can also react with many semiconductors, oxidizing the surface and
+ forming an insulating barrier and decreasing the channel thickness.
+ Great care is often taken to avoid exposing MOSFETs to water and oxygen
+ through the use of controlled manufacturing environments and encapsulating
+ sensitive materials within other materials such as h-BN.
+ Finally, exposure to environmental radiation can create deep traps within
+ the semiconductor gap
+\begin_inset CommandInset citation
+LatexCommand cite
+key "haneef2020charge"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+The effects of charge trapping on MOSFETs are varied and often difficult
+ to distinguish from other phenomena, such as contact resistance or gate
+ bias band bending.
+ Typically, the localization of bands within the lattice decreases the effective
+ conductivity and mobility of carriers in the channel
+\begin_inset CommandInset citation
+LatexCommand cite
+key "neamen2002semiconductor,sze2012semiconductor"
+literal "false"
+
+\end_inset
+
+.
+ Deep traps increase the recombination rate of minority charge carries and
+ will localize carriers without a large enough non-thermal excitation or
+ electric field, both reducing the channel current
+\begin_inset CommandInset citation
+LatexCommand cite
+key "neamen2002semiconductor"
+literal "false"
+
+\end_inset
+
+.
+ Shallow traps may actually increase current in disordered semiconductors
+ in some instances, allowing carriers to thermally hop or tunnel between
+ traps
+\begin_inset CommandInset citation
+LatexCommand cite
+key "nenashev2018release"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Trapping impacts the effect of the gate voltage on carrier transport.
+ For FET at low gate voltages the injected charges accumulate in localized
+ states, so that the drain current is mostly transport though the traps
+\begin_inset CommandInset citation
+LatexCommand cite
+key "haneef2020charge"
+literal "false"
+
+\end_inset
+
+.
+ As the gate voltage increases the trap states continue to be filled, until
+ they are all full and the carriers occupy the extended states and increase
+ the device mobility.
+ As the trapped states in the oxide or semiconductor need to be filled first,
+ this shifts the threshold voltage in the direction of the bias, known as
+ gate bias stress.
+ The shift of the threshold voltage is often used as an indication of charge
+ trapping, though other mechanisms such as carrier density can impact the
+ mobility relationship to gate voltage
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kwon2018relationship,haneef2020charge"
+literal "false"
+
+\end_inset
+
+.
+ Trapped charge can also cause bias stress instability, where the threshold
+ voltage to continue to shift over time 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "suresh2008bias,lan2020gate"
+literal "false"
+
+\end_inset
+
+.
+ Gate bias stress is typically reversible, as excitations such as light
+ or large gate voltages can detrap the charges.
+ In the FET subthreshold region the trapped charge can continue to conduct,
+ giving a large off current and high subthreshold swing
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kim2018analysis"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+The gate-voltage trap filling often leads to hysteresis in the 
+\begin_inset Formula $I_{D}$
+\end_inset
+
+-
+\begin_inset Formula $V_{G}$
+\end_inset
+
+ measurements of thin film transistors.
+ The hysteresis loops are complex, forming clockwise or counterclockwise
+ 
+\begin_inset Formula $I_{D}$
+\end_inset
+
+ responses as 
+\begin_inset Formula $V_{G}$
+\end_inset
+
+ is swept, and can even form a combination of multiple-direction loops.
+ Carriers trapped during a forward gate bias sweep will get released ruing
+ the reverse bias sweep, resulting in a different drain current for the
+ same gate voltage.
+ The traps can exist within the oxide, interface, surface contaminants,
+ or semiconductor along the gate
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kim2018analysis"
+literal "false"
+
+\end_inset
+
+.
+ Frequency dependence
+\begin_inset CommandInset citation
+LatexCommand cite
+key "georgiou2018ferroelectricity,zhang2014defect,yin2019robust,guo2015charge"
+literal "false"
+
+\end_inset
+
+, pulsed gate voltage
+\begin_inset CommandInset citation
+LatexCommand cite
+key "datye2018reduction"
+literal "false"
+
+\end_inset
+
+, temperature dependence
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kumar2003hotcarrier,groeseneken1990temperature,datye2018reduction,wang2020cryogenic"
+literal "false"
+
+\end_inset
+
+, illumination
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kumar2003hotcarrier,yin2019robust"
+literal "false"
+
+\end_inset
+
+, and other techniques are all used to attempt to characterize charge trapping
+ and distinguish its hysteresis from other phenomenon.
+ 
+\end_layout
+
+\begin_layout Standard
+Charge traps continue to exist and cause FET hysteresis and bias stress
+ down to cryogenic temperatures
+\begin_inset CommandInset citation
+LatexCommand cite
+key "casse2020cryogenic,wang2020cryogenic,beckers2020physical,wang2020temperaturedriven"
+literal "false"
+
+\end_inset
+
+.
+ At low temperatures there is less ionization of dopant ions within the
+ material.
+ The bias stress effect from trapping and can increase and subthreshold
+ swing decrease with decreasing temperature
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kim2018analysis,beckers2020physical,wang2020temperaturedriven"
+literal "false"
+
+\end_inset
+
+.
 \end_layout
 
 \end_body
