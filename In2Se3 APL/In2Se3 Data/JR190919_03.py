@@ -381,9 +381,12 @@ def main(): #Sample C
     #                                  figsize=1.5, log=True, ylim=(None, 10**9), fontsize=14, labelsize=14, xinc=150)
     
     # min subthreshold slope
-    if True or show_all:
+    if False or show_all:
         mp.plot_maxSS_vs_T(fileroot, RTloop_filenames, '_minSSvsT', Npoints=5, Icutoff=2*10**-12)
     
+    # delta voltage threshold
+    if True or show_all:
+        mp.plot_ΔVTvT(fileroot, RTloop_filenames, '_ΔVTvsT', Npoints=5, Icutoff=1*10**-11)
     
 if __name__== "__main__":
   main()

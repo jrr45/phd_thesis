@@ -7,6 +7,9 @@
 \textclass psuthesis
 \options phd
 \use_default_options false
+\begin_modules
+boxedfloat
+\end_modules
 \maintain_unincluded_children false
 \language english
 \language_package none
@@ -387,7 +390,7 @@ literal "false"
 \end_layout
 
 \begin_layout Section
-Device manufacture
+Device fabrication
 \end_layout
 
 \begin_layout Standard
@@ -1113,7 +1116,11 @@ noprefix "false"
 \end_layout
 
 \begin_layout Section
-Optical crystal measurements
+Optical characterization of the 
+\begin_inset Formula $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$
+\end_inset
+
+ crystal flakes
 \end_layout
 
 \begin_layout Standard
@@ -2596,42 +2603,53 @@ noprefix "false"
 
 ).
  The MC data was quantitatively fit to the Hikami-Larkin-Nagaoka theory
- of 2D weak localization with spin-orbital coupling
-\begin_inset CommandInset citation
-LatexCommand cite
-key "hikami1980spinorbit"
-literal "true"
+ of 2D weak localization, equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Hikami-Larkin-Nagaoka"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
+ discussed in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Weak-localization"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ The fit quality decreases significantly with increasing temperature, as
+ might be expected with the lessening of the localization, shown in table
  
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-\Delta\sigma\left(B\right)=\alpha\frac{e^{2}}{2\pi^{2}\hbar}\left[\ln\left(\frac{B_{\phi}}{B}\right)-\psi\left(\frac{1}{2}+\frac{B_{\phi}}{B}\right)\right]
-\end{equation}
+\begin_inset CommandInset ref
+LatexCommand pageref
+reference "tab:Sample-A:-magnetoconductance"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
-where 
-\begin_inset Formula $\psi$
+.
+ All temperatures show similar mean free paths of phase coherence 
+\begin_inset Formula $l_{\phi}$
 \end_inset
 
- is the digamma function, 
-\begin_inset Formula $B_{\phi}$
+ and elastic scattering 
+\begin_inset Formula $l_{e}$
 \end_inset
 
- is the dephasing magnetic field, 
-\begin_inset Formula $\alpha=1/2$
+, much smaller than the spin-orbit coupling 
+\begin_inset Formula $l_{SO}$
 \end_inset
 
- for weak anti-localization and 
-\begin_inset Formula $1$
-\end_inset
-
- for weak localization.
+.
  Sample C shows a small uptick in cross-section resistance near liquid helium
  temperatures, this is likely a result of disorder in the sample C crystal.
  Weak localization in a 2D system can manifest a non-metallic, negative
@@ -2662,11 +2680,11 @@ status open
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Figures/JR200115_11/JR200115_11_Magnetoconductance_1.8K.svg
+	filename Figures/JR200115_11/JR200115_11_Magnetoconductance_All-K_fit.svg
 	width 5cm
 
 \end_inset
@@ -2705,46 +2723,7 @@ magnetoconductance fit
 \begin_inset Float figure
 wide false
 sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/JR200115_11/JR200115_11_Magnetoconductance_All-K.svg
-	width 5cm
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Sample A: magnetoconductance multiple temperatures
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -2802,16 +2781,270 @@ name "fig:Magnetic-field-measurment"
 \end_layout
 
 \begin_layout Plain Layout
-(a) The magnetoconductance of sample A taken at 1.8 K.
+(a) The magnetoconductance of sample A taken at 1.8, 10 and 50 K.
  The data was symmetrized to remove odd-term magnetic field dependence,
  and normalized to the difference from the measured value at zero-field.
- (b) The magnetoconductance of sample A taken at 1.8, 10, and 50 K.
- (c) Sample D carrier density at various temperatures, the inset shows the
+ The fitting parameters are given in table 
+\begin_inset CommandInset ref
+LatexCommand pageref
+reference "tab:Sample-A:-magnetoconductance"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, showing a better fit at lower temperatures.
+ (b) Sample D carrier density at various temperatures, the inset shows the
  hall data used the the carrier density calculations.
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Float table
+wide false
+sideways false
+status open
+
 \begin_layout Plain Layout
-TODO combine a and b
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $l_{\phi}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $l_{SO}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $l_{e}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $r^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.8 K
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+29 nm
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+420 nm
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+28 nm
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.937
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10 K
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+27 nm
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+460 nm
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+27 nm
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.820
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+50K
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+29 nm
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+140 nm
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+28 nm
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.732
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sample A: magnetoconductance fit parameters
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Sample-A:-magnetoconductance"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2941,9 +3174,8 @@ literal "false"
 
 , but current theories generally fall under carrier-carrier interactions,
  disorder scattering, or some combination of the two.
- Of the former, one of the most prevalent is the theory that in 2D semiconductor
- TMDs, carrier-carrier interactions are thought to cause a Wigner-Mott transitio
-n
+ Of the former, one of the most prevalent is the prediction that in 2D semicondu
+ctor TMDs, carrier-carrier interactions cause a Wigner-Mott transition
 \begin_inset CommandInset citation
 LatexCommand cite
 key "amaricci2010extended,moon2021metalinsulator,moon2020quantum"
@@ -2956,8 +3188,8 @@ literal "false"
  the potential wells of Coulomb repulsion from surrounding carriers, and
  at increased carrier density the carriers overcome the repulsion and form
  a Fermi liquid.
- A second common suggestion is MITs may result from percolation in layered
- semiconductors
+ A second common suggestion is that MITs may result from percolation in
+ layered semiconductors
 \begin_inset CommandInset citation
 LatexCommand cite
 key "moon2019anomalous,tracy2009observation,moon2021metalinsulator,manfra2007transport,dassarma2005twodimensional"
@@ -2979,7 +3211,7 @@ literal "false"
 \end_inset
 
 .
- See 
+ See section 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "subsec:Localization"
@@ -3068,11 +3300,6 @@ TODO: Include discussion on max 2D electric conductivity? No idea where
 \begin_layout Standard
 TODO: Discuss ferroelectric channel conduction? Finish background discussion
  on ferroelectric channels/semiconductors first.
-\end_layout
-
-\begin_layout Standard
-TODO: add more discussion on the disorder + localization? Finish localization
- background first
 \end_layout
 
 \begin_layout Standard
@@ -3422,6 +3649,7 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
+\noindent
 \begin_inset Float figure
 wide false
 sideways false
@@ -3748,6 +3976,7 @@ name "fig:Sample-B-IDvsVDS-log"
 \end_layout
 
 \begin_layout Standard
+\noindent
 \begin_inset Float figure
 wide false
 sideways false
@@ -4100,6 +4329,7 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
+\noindent
 \begin_inset Float figure
 wide false
 sideways false
@@ -4422,6 +4652,7 @@ name "fig:Sample-C-IDvsVDS-log"
 \end_layout
 
 \begin_layout Standard
+\noindent
 \begin_inset Float figure
 wide false
 sideways false
@@ -4766,6 +4997,7 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
+\noindent
 \begin_inset Float figure
 wide false
 sideways false
@@ -5050,6 +5282,7 @@ name "fig:Sample-B-loops"
 \end_layout
 
 \begin_layout Standard
+\noindent
 \begin_inset Float figure
 wide false
 sideways false
@@ -5411,6 +5644,7 @@ name "fig:Sample-C-loops"
 \end_layout
 
 \begin_layout Standard
+\noindent
 \begin_inset Float figure
 wide false
 sideways false
@@ -5690,6 +5924,7 @@ name "fig:Sample-D-loops"
 \end_layout
 
 \begin_layout Standard
+\noindent
 \begin_inset Float figure
 wide false
 sideways false
@@ -5928,6 +6163,45 @@ status collapsed
 \end_layout
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/Devices/Devices_DVTvT.svg
+	width 4.8cm
+	groupId dVGvT
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Threshold voltage, 
+\begin_inset Formula $\Delta V_{T}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -5953,7 +6227,7 @@ name "fig:dVG-vs-T"
 \begin_layout Plain Layout
 The width of the gate voltage hysteresis versus temperatures for all four
  sample devices.
- (a-f) Show the width for different current levels, in multiples of 10.
+ (a-f) shows the width for different current levels, in multiples of 10.
  Values found using the data shown in figures (Sample) 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -5995,10 +6269,17 @@ noprefix "false"
 \end_inset
 
  (D).
-\end_layout
+ (g) hysteresis width of the threshold voltage for the four samples.
+ The threshold voltage was found by separately fitting the increasing and
+ decreasing linear voltage regions
+\begin_inset CommandInset citation
+LatexCommand cite
+key "2013revisiting"
+literal "true"
 
-\begin_layout Plain Layout
-TODO: should this be delta-VT?
+\end_inset
+
+.
 \end_layout
 
 \end_inset
@@ -6007,6 +6288,7 @@ TODO: should this be delta-VT?
 \end_layout
 
 \begin_layout Standard
+\noindent
 \begin_inset Float figure
 wide false
 sideways false
@@ -6255,6 +6537,7 @@ literal "true"
 \end_layout
 
 \begin_layout Standard
+\noindent
 \begin_inset Float figure
 wide false
 sideways false
@@ -6416,6 +6699,7 @@ Sample C (a) two-point and (b) four-point resistance measured at
 \end_layout
 
 \begin_layout Standard
+\noindent
 \begin_inset Float figure
 wide false
 sideways false
@@ -6544,6 +6828,7 @@ name "fig:Sample-B-rate-dependance"
 \end_layout
 
 \begin_layout Standard
+\noindent
 \begin_inset Float figure
 wide false
 sideways false
@@ -6598,6 +6883,7 @@ Sample D
 \end_layout
 
 \begin_layout Standard
+\noindent
 \begin_inset Float figure
 wide false
 sideways false

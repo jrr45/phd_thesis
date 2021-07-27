@@ -237,23 +237,26 @@ def plot_IDSvsB_custom(filenames, savename, color_order=[0,1,2,3,4,5], log=False
     
     mp.save_generic_svg(fig, fileroot, savename)
 
-
+# Reuse WL expression
 def F(Bx, B):
     return np.log(Bx/B) - special.digamma(.5 + (Bx/B))
 def F2(Bx, B):
     return np.log(B/Bx) + special.digamma(.5 + 1./(B/Bx))
 def F3(Bx, B):
     return np.log(Bx/B) + special.digamma(.5 + 1./(Bx/B))
+
+#pack as vector
 def WL_wiki2(B, Bx):
     (Bϕ, BSO, Be) = (Bx[0], Bx[1], B[2])
     e22π2ħ = (mp.fundamental_charge_e**2)/(2*np.pi**2 * mp.ħ) 
     return e22π2ħ * (.5*F(Bϕ, B) + F(BSO+Be, B) - 3*.5*F(3*.5*BSO + Bϕ, B))  #WIKI
+# full WL formula
 def WL_wiki(B, Bϕ, BSO, Be):
     e22π2ħ = (mp.fundamental_charge_e**2)/(2*np.pi**2 * mp.ħ) 
     return e22π2ħ * (.5*F(Bϕ, B) + F(BSO+Be, B) - 3*.5*F(3*.5*BSO + Bϕ, B))  #WIKI
-def WL(B, Bϕ, BSO, Be, α):
-    e22π2ħ = (mp.fundamental_charge_e**2)/(2*np.pi**2 * mp.ħ) 
-    return e22π2ħ * (.5*F(Bϕ, B) + F(BSO+Be, B) - 3*.5*F(3*.5*BSO + Bϕ, B))  #WIKI
+#def WL(B, Bϕ, BSO, Be, α):
+#    e22π2ħ = (mp.fundamental_charge_e**2)/(2*np.pi**2 * mp.ħ) 
+#    return e22π2ħ * (.5*F(Bϕ, B) + F(BSO+Be, B) - 3*.5*F(3*.5*BSO + Bϕ, B))  #WIKI
     ##return -e22π2ħ * (F2(BSO + Bϕ, B) - .5*(F2(Bϕ, B) - F2(2*BSO + Bϕ, B))) + α*B**2 # TaSe
     ##return -e22π2ħ * (.5*F(Bϕ, B) - F(Bϕ+BSO, B) - .5*F(2*BSO + Bϕ, B)) #VSe2
     #return α*e22π2ħ*F(Bϕ, B) # SSOC
@@ -326,7 +329,7 @@ def plot_σvsB_custom(filenames, savename, color_order=[0,1,2,3,4,5], log=False,
         best_r2 = 0
         best_popt = [1,1,1]
         
-        
+        # run multiple times and take the best one
         for i in range(1,10):
             #result = annealing.curve_fit(WL_wiki2, H, Δσ, bounds=bounds)
 
@@ -358,7 +361,7 @@ def plot_σvsB_custom(filenames, savename, color_order=[0,1,2,3,4,5], log=False,
 
         #best_popt = result.x # optimal fit parameters
         print(best_popt)
-        Δσfit = WL_wiki(abs(H), *best_popt)
+        Δσfit = WL_wiki(H, *best_popt)
         ax.plot(H, Δσfit *10**9, '-', ms=3, linewidth=1., color='black')
         
         Bϕ = best_popt[0]
@@ -545,9 +548,12 @@ def main(): #sample A
                             fit_lim=1, size=2,fontsize=10, labelsize=10, xmult=4)
 
     # min subthreshold slope
-    if True or show_all:
+    if False or show_all:
         mp.plot_maxSS_vs_T(fileroot, RTloop_filenames, '_minSSvsT', Npoints=5, Icutoff=10*10**-11)
     
-    
+    # delta voltage threshold
+    if True or show_all:
+        mp.plot_ΔVTvT(fileroot, RTloop_filenames, '_ΔVTvsT', Npoints=5, Icutoff=10*10**-11)
+        
 if __name__== "__main__":
   main()
