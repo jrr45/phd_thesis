@@ -328,13 +328,13 @@ Centrosymmetric:
 <lyxtabular version="3" rows="74" columns="6">
 <features booktabs="true" islongtable="true" longtabularalignment="center">
 <column alignment="left" valignment="top" width="0pt" special="@{}l">
-<column alignment="none" valignment="top" special="@{}l">
-<column alignment="left" valignment="top">
+<column alignment="left" valignment="top" width="0pt" special="@{}l">
+<column alignment="left" valignment="top" width="0pt">
 <column alignment="left" valignment="top">
 <column alignment="none" valignment="top" special="l@{}">
 <column alignment="left" valignment="top" width="0pt" special="l@{}">
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<row endhead="true">
+<cell alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -345,7 +345,7 @@ Crystal system
 
 \end_inset
 </cell>
-<cell alignment="none" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -359,7 +359,7 @@ Crystal system
 
 \end_inset
 </cell>
-<cell multicolumn="1" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell multicolumn="1" alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -388,7 +388,7 @@ Point group
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -410,7 +410,7 @@ Space groups
 
 \end_inset
 </cell>
-<cell alignment="none" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -472,7 +472,7 @@ Order
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -481,7 +481,7 @@ Order
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -534,7 +534,7 @@ Triclinic
 
 \end_inset
 </cell>
-<cell alignment="none" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -614,7 +614,7 @@ Triclinic
 
 \end_inset
 </cell>
-<cell alignment="none" valignment="top" topline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -691,7 +691,7 @@ Monoclinic
 
 \end_inset
 </cell>
-<cell multirow="3" alignment="none" valignment="middle" topline="true" usebox="none">
+<cell multirow="3" alignment="left" valignment="middle" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -772,7 +772,7 @@ Monoclinic
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -781,7 +781,7 @@ Monoclinic
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -834,7 +834,7 @@ Monoclinic
 
 \end_inset
 </cell>
-<cell multirow="3" alignment="none" valignment="middle" topline="true" usebox="none">
+<cell multirow="3" alignment="left" valignment="middle" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -918,7 +918,7 @@ Monoclinic
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -927,7 +927,7 @@ Monoclinic
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -984,7 +984,7 @@ Monoclinic
 
 \end_inset
 </cell>
-<cell multirow="3" alignment="none" valignment="middle" topline="true" usebox="none">
+<cell multirow="3" alignment="left" valignment="middle" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1063,7 +1063,7 @@ Monoclinic
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1072,7 +1072,7 @@ Monoclinic
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1132,7 +1132,7 @@ Monoclinic
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1141,7 +1141,7 @@ Monoclinic
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1195,7 +1195,7 @@ Orthorhombic
 
 \end_inset
 </cell>
-<cell multirow="3" alignment="none" valignment="middle" topline="true" usebox="none">
+<cell multirow="3" alignment="left" valignment="middle" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1287,7 +1287,7 @@ Orthorhombic
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1296,7 +1296,7 @@ Orthorhombic
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1361,7 +1361,7 @@ Orthorhombic
 
 \end_inset
 </cell>
-<cell multirow="3" alignment="none" valignment="middle" topline="true" usebox="none">
+<cell multirow="3" alignment="left" valignment="middle" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1461,7 +1461,7 @@ Orthorhombic
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1470,7 +1470,7 @@ Orthorhombic
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1535,7 +1535,7 @@ Orthorhombic
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1544,7 +1544,7 @@ Orthorhombic
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1613,7 +1613,7 @@ Orthorhombic
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1622,7 +1622,7 @@ Orthorhombic
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1679,7 +1679,7 @@ Orthorhombic
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1688,7 +1688,7 @@ Orthorhombic
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1745,7 +1745,7 @@ Orthorhombic
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1754,7 +1754,7 @@ Orthorhombic
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1815,7 +1815,7 @@ Orthorhombic
 
 \end_inset
 </cell>
-<cell multirow="3" alignment="none" valignment="middle" topline="true" usebox="none">
+<cell multirow="3" alignment="left" valignment="middle" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1910,7 +1910,7 @@ Orthorhombic
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1919,7 +1919,7 @@ Orthorhombic
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1991,7 +1991,7 @@ Orthorhombic
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2000,7 +2000,7 @@ Orthorhombic
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2064,7 +2064,7 @@ Orthorhombic
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2073,7 +2073,7 @@ Orthorhombic
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2145,7 +2145,7 @@ Orthorhombic
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2154,7 +2154,7 @@ Orthorhombic
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2210,7 +2210,7 @@ Orthorhombic
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2219,7 +2219,7 @@ Orthorhombic
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2285,7 +2285,7 @@ Tetragonal
 
 \end_inset
 </cell>
-<cell alignment="none" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2385,7 +2385,7 @@ Tetragonal
 
 \end_inset
 </cell>
-<cell alignment="none" valignment="top" topline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2469,7 +2469,7 @@ Tetragonal
 
 \end_inset
 </cell>
-<cell multirow="3" alignment="none" valignment="middle" topline="true" usebox="none">
+<cell multirow="3" alignment="left" valignment="middle" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2556,7 +2556,7 @@ Tetragonal
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2565,7 +2565,7 @@ Tetragonal
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2621,7 +2621,7 @@ Tetragonal
 
 \end_inset
 </cell>
-<cell multirow="3" alignment="none" valignment="middle" topline="true" usebox="none">
+<cell multirow="3" alignment="left" valignment="middle" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2717,7 +2717,7 @@ Tetragonal
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2726,7 +2726,7 @@ Tetragonal
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2787,7 +2787,7 @@ Tetragonal
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2796,7 +2796,7 @@ Tetragonal
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2853,7 +2853,7 @@ Tetragonal
 
 \end_inset
 </cell>
-<cell multirow="3" alignment="none" valignment="middle" topline="true" usebox="none">
+<cell multirow="3" alignment="left" valignment="middle" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2953,7 +2953,7 @@ Tetragonal
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2962,7 +2962,7 @@ Tetragonal
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3019,7 +3019,7 @@ Tetragonal
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3028,7 +3028,7 @@ Tetragonal
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3093,7 +3093,7 @@ Tetragonal
 
 \end_inset
 </cell>
-<cell multirow="3" alignment="none" valignment="middle" topline="true" usebox="none">
+<cell multirow="3" alignment="left" valignment="middle" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3193,7 +3193,7 @@ Tetragonal
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3202,7 +3202,7 @@ Tetragonal
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3259,7 +3259,7 @@ Tetragonal
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3268,7 +3268,7 @@ Tetragonal
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3333,7 +3333,7 @@ Tetragonal
 
 \end_inset
 </cell>
-<cell multirow="3" alignment="none" valignment="middle" topline="true" usebox="none">
+<cell multirow="3" alignment="left" valignment="middle" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3420,7 +3420,7 @@ Tetragonal
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3429,7 +3429,7 @@ Tetragonal
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3493,7 +3493,7 @@ Tetragonal
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3502,7 +3502,7 @@ Tetragonal
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3566,7 +3566,7 @@ Tetragonal
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3575,7 +3575,7 @@ Tetragonal
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3639,7 +3639,7 @@ Tetragonal
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3648,7 +3648,7 @@ Tetragonal
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3714,7 +3714,7 @@ Trigonal
 
 \end_inset
 </cell>
-<cell multirow="3" alignment="none" valignment="middle" topline="true" usebox="none">
+<cell multirow="3" alignment="left" valignment="middle" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3802,7 +3802,7 @@ Trigonal
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3811,7 +3811,7 @@ Trigonal
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3864,7 +3864,7 @@ Trigonal
 
 \end_inset
 </cell>
-<cell alignment="none" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3943,7 +3943,7 @@ Trigonal
 
 \end_inset
 </cell>
-<cell multirow="3" alignment="none" valignment="middle" topline="true" leftline="true" usebox="none">
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4043,7 +4043,7 @@ Trigonal
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4052,7 +4052,7 @@ Trigonal
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4105,7 +4105,7 @@ Trigonal
 
 \end_inset
 </cell>
-<cell multirow="3" alignment="none" valignment="middle" topline="true" leftline="true" usebox="none">
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4197,7 +4197,7 @@ Trigonal
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4206,7 +4206,7 @@ Trigonal
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4263,7 +4263,7 @@ Trigonal
 
 \end_inset
 </cell>
-<cell multirow="3" alignment="none" valignment="middle" topline="true" leftline="true" usebox="none">
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4350,7 +4350,7 @@ Trigonal
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4359,7 +4359,7 @@ Trigonal
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4417,7 +4417,7 @@ Hexagonal
 
 \end_inset
 </cell>
-<cell alignment="none" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4517,7 +4517,7 @@ Hexagonal
 
 \end_inset
 </cell>
-<cell alignment="none" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4597,7 +4597,7 @@ Hexagonal
 
 \end_inset
 </cell>
-<cell alignment="none" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4676,7 +4676,7 @@ Hexagonal
 
 \end_inset
 </cell>
-<cell multirow="3" alignment="none" valignment="middle" topline="true" leftline="true" usebox="none">
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4772,7 +4772,7 @@ Hexagonal
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4781,7 +4781,7 @@ Hexagonal
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4834,7 +4834,7 @@ Hexagonal
 
 \end_inset
 </cell>
-<cell alignment="none" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4926,7 +4926,7 @@ Hexagonal
 
 \end_inset
 </cell>
-<cell alignment="none" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5018,7 +5018,7 @@ Hexagonal
 
 \end_inset
 </cell>
-<cell alignment="none" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5107,7 +5107,7 @@ Cubic
 
 \end_inset
 </cell>
-<cell multirow="3" alignment="none" valignment="middle" topline="true" usebox="none">
+<cell multirow="3" alignment="left" valignment="middle" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5195,7 +5195,7 @@ Cubic
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5204,7 +5204,7 @@ Cubic
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5261,7 +5261,7 @@ Cubic
 
 \end_inset
 </cell>
-<cell alignment="none" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5360,7 +5360,7 @@ Cubic
 
 \end_inset
 </cell>
-<cell multirow="3" alignment="none" valignment="middle" topline="true" leftline="true" usebox="none">
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5444,7 +5444,7 @@ Cubic
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5453,7 +5453,7 @@ Cubic
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5510,7 +5510,7 @@ Cubic
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5519,7 +5519,7 @@ Cubic
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5572,7 +5572,7 @@ Cubic
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5581,7 +5581,7 @@ Cubic
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5642,7 +5642,7 @@ Cubic
 
 \end_inset
 </cell>
-<cell multirow="3" alignment="none" valignment="middle" topline="true" leftline="true" usebox="none">
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5730,7 +5730,7 @@ Cubic
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5739,7 +5739,7 @@ Cubic
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5800,7 +5800,7 @@ Cubic
 
 \end_inset
 </cell>
-<cell multirow="3" alignment="none" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5887,7 +5887,7 @@ Cubic
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5896,7 +5896,7 @@ Cubic
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5960,7 +5960,7 @@ Cubic
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5969,7 +5969,7 @@ Cubic
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout

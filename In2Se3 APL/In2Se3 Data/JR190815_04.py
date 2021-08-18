@@ -645,12 +645,15 @@ def main(): #sample D
                                            log=False, increments=[25, 50, 75], colororder=[3,2,1])
         
     # min subthreshold slope
-    if True or show_all:
+    if False or show_all:
         mp.plot_maxSS_vs_T(fileroot, RTloop_filenames, '_minSSvsT', Npoints=5, Icutoff=10*10**-11)
         
     #files = [mp.process_file(os.path.join(fileroot, x)) for x in ['JR190815_04_125_RvsVg_300.0K.txt']]
     #print(mp.width_Vg(files[0],10**-8))
     
+        # delta voltage threshold
+    if True or show_all:
+        mp.plot_ΔVTvT(fileroot, RTloop_filenames, '_ΔVTvsT', Npoints=5, Icutoff=1*10**-11)
     
 if __name__== "__main__":
   main()

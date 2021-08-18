@@ -3306,8 +3306,38 @@ TODO: Discuss ferroelectric channel conduction? Finish background discussion
 TODO: include trapped charge calculation assuming no FE?
 \end_layout
 
+\begin_layout Standard
+TODO: 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "hu2021firstprinciples"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Future work (TODO)
+\end_layout
+
+\begin_layout Itemize
+simulations: In2Se3 has dipole locking.
+ FeSmFETs have not been studied.
+ Narrow bandgap semiconductor domains
+\end_layout
+
+\begin_layout Itemize
+PFM measurements showing domain motion during gating, MIT
+\end_layout
+
+\begin_layout Itemize
+Domain wall conductivity
+\end_layout
+
+\begin_layout Itemize
+effects of encapsulation on MIT
 \end_layout
 
 \begin_layout Section
@@ -6167,7 +6197,7 @@ status collapsed
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -6280,6 +6310,8 @@ literal "true"
 \end_inset
 
 .
+ Sample D data was excluded at higher temperatures due to noise or too few
+ points in the linear region to fit well.
 \end_layout
 
 \end_inset

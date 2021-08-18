@@ -173,7 +173,7 @@ def plot_YvsX_generic(Xaxis, Xlabel, Yaxis, Ylabel, XvsYname, \
     print(str(savename)+XvsYname+scalename)   
     
     if savename is None:
-        return (fig, ax)
+        return (fig, ax, scale_pow)
     else:
         save_generic_svg(fig, fileroot, savename+XvsYname+scalename)
         plt.show() 
@@ -817,6 +817,145 @@ def width_Vg(file, current):
     
     return np.abs(VG2 - VG1)
 
+def calc_max_IVG_slope(fileroot, file, Npoints=4, subplot=True, startend=-75, switch=75, Icutoff=5*10**-11):    
+    # split relevant ranges
+    (file1, start_ind, end_ind) = slice_data(file, 'Gate_Voltage_V', start=startend, end=switch, tol=.01, starting_index=0)
+    (file2, start_ind, end_ind) = slice_data(file, 'Gate_Voltage_V', start=switch, end=startend, tol=.01, starting_index=0)
+    (fileall, start_ind, end_ind) = slice_data(file, 'Gate_Voltage_V', start=startend, end=startend, tol=.01, starting_index=0)
+    
+    
+    Vgs1 = file1['Gate_Voltage_V']
+    Is1 = file1['Current_A']
+    Vgs2 = file2['Gate_Voltage_V']
+    Is2 = file2['Current_A']
+    
+    # make sure it just didn't go to the ends
+    if (abs(file1['Gate_Voltage_V'][0] - -75) > .2 or 
+        abs(file1['Gate_Voltage_V'][-1] - 75) > .2 or 
+        abs(file2['Gate_Voltage_V'][0] - 75) > .2 or 
+        abs(file2['Gate_Voltage_V'][-1] - -75) > .2):
+        print("Something went wrong with bounds")
+        return np.nan
+    
+    # min size of split
+    if len(Vgs1) <= Npoints or len(Vgs2) <= Npoints:
+        print("Something went wrong with bounds splitting")
+        return np.nan
+    
+    Icutoff = np.abs(Icutoff)
+    
+    IVGslope1 = []
+    IVGslope2 = []
+    IVGintercept1 = []
+    IVGintercept2 = []
+    
+    # fit lines to the first sets of points, record slopes and intercepts
+    for i in range(len(Is1)-Npoints):
+        # to be fit
+        subVG = Vgs1[i:i+Npoints]
+        subI = Is1[i:i+Npoints]
+        
+        # fit
+        (pcoefs, residuals, rank, singular_values, rcond) = \
+                np.polyfit(subVG, subI, 1, full = True)
+        
+        ivfit = np.poly1d(pcoefs)
+        slope = ivfit.c[0]
+        if np.any(subI < Icutoff):
+            slope = np.NINF
+        IVGslope1.append(slope)
+        IVGintercept1.append(ivfit.c[1])
+    
+    # fit lines to the second sets of points, record slopes and intercepts
+    for i in range(len(Is2)-Npoints):
+        # to be fit
+        subVG = Vgs2[i:i+Npoints]
+        subI = Is2[i:i+Npoints]
+        
+        # fit
+        (pcoefs, residuals, rank, singular_values, rcond) = \
+                np.polyfit(subVG, subI, 1, full = True)
+        
+        ivfit = np.poly1d(pcoefs)
+        slope = ivfit.c[0]
+        if np.any(subI < Icutoff):
+            slope = np.NINF
+        IVGslope2.append(slope)
+        IVGintercept2.append(ivfit.c[1])
+    
+    # location of max slopes
+    IVGmax1 = np.argmax(IVGslope1)
+    IVGmax2 = np.argmax(IVGslope2)
+    VT1 = -IVGintercept1[IVGmax1]/IVGslope1[IVGmax1]
+    VT2 = -IVGintercept2[IVGmax2]/IVGslope2[IVGmax2]
+    
+    if subplot:
+        fig, ax, scale_pow = plot_IDvsVg_generic(fileroot, [fileall], None, [colors_set1[1]], log=False, size=2, majorx=25,
+                              ylim=(None,None), fontsize=10, labelsize=10)
+        # add fit 1
+        VGs = np.array([Vgs1[IVGmax1], Vgs1[IVGmax1+Npoints-1]])
+        b = IVGintercept1[IVGmax1]
+        m = IVGslope1[IVGmax1]
+        Is = (VGs*m+b)*scale_pow
+        print(VGs)
+        print(Is)
+        ax.plot(VGs, Is, '-', ms=1, linewidth=1.5, color=colors_set1[0])
+    
+        #add fit 2
+        VGs = np.array([Vgs2[IVGmax2], Vgs2[IVGmax2+Npoints-1]])
+        b = IVGintercept2[IVGmax2]
+        m = IVGslope2[IVGmax2]
+        Is = (VGs*m+b)*scale_pow
+        print(VGs)
+        print(Is)
+        ax.plot(VGs, Is, '-', ms=1, linewidth=1.5, color=colors_set1[2])
+        plt.show() 
+        plt.clf()
+        
+    return (VT1, #threshold voltage value for increasing
+            Vgs1[IVGmax1], Vgs1[IVGmax1+Npoints], #starting and ending of line
+            VT2, #threshold voltage value for decresasing
+            Vgs2[IVGmax2], Vgs2[IVGmax2+Npoints] #starting and ending of line
+            )
+
+def plot_ΔVTvT(fileroot, filenames, savename, size=2, showthreshold=False, subplot=True, Npoints=4, Icutoff=5*10**-11):
+    files = [process_file(os.path.join(fileroot, x)) for x in filenames]
+    
+    temperatures = []
+    VTinc = []
+    VTdec = []
+    ΔVT = []
+    
+    for file in files:
+        temperature = file['Temperature_K'][0]
+        print("Temperature %s K" % str(temperature))
+        temperatures.append(temperature)
+        VTi, Vgsi1, Vgsi2, VTd, Vgsd1, Vgsd2 = calc_max_IVG_slope(fileroot, file, Npoints=Npoints,
+                                                          subplot=subplot, Icutoff=Icutoff)
+        VTinc.append(VTi)
+        VTdec.append(VTd)
+        ΔVT.append(VTd-VTi)
+    
+    fig = plt.figure(figsize=(size, size), dpi=300)
+    ax = pretty_plot_single(fig, labels=["$\it{T}$ (K)", '$\it{ΔV_T}}$ (V)'],
+                             yscale='linear', fontsize=10, labelsize=10)
+    
+    ax.plot(temperatures, ΔVT, '.-', ms=3, linewidth=1.5, color=colors_set1[0])
+    
+    print(ΔVT)
+    
+    ax.set_ylim(0, None)
+    ax.xaxis.set_major_locator(MultipleLocator(100))
+    ax.set_xlim(0, 322)
+    
+    if savename is None:
+        return (fig, ax)
+    else:
+        save_generic_svg(fig, fileroot, savename)
+        plt.show() 
+        plt.clf()
+        return None
+
 def calc_minSS(fileroot, file, Npoints=4, subplot=True, startend=-75, switch=75, Icutoff=5*10**-11):    
     # split relevant ranges
     (file1, start_ind, end_ind) = slice_data(file, 'Gate_Voltage_V', start=startend, end=switch, tol=.01, starting_index=0)
@@ -890,7 +1029,7 @@ def calc_minSS(fileroot, file, Npoints=4, subplot=True, startend=-75, switch=75,
     SS2 = 1/np.array(SS2)
     
     if subplot:
-        fig, ax = plot_IDvsVg_generic(fileroot, [fileall], None, [colors_set1[1]], log=True, size=2, majorx=25,
+        fig, ax, scale_pow = plot_IDvsVg_generic(fileroot, [fileall], None, [colors_set1[1]], log=True, size=2, majorx=25,
                               ylim=(None,None), fontsize=10, labelsize=10)
         # add fit 1
         VGs = np.array([Vgs1[SS1min], Vgs1[SS1min+Npoints-1]])
@@ -908,11 +1047,14 @@ def calc_minSS(fileroot, file, Npoints=4, subplot=True, startend=-75, switch=75,
         plt.show() 
         plt.clf()
         
-    return (SS1[SS1min], Vgs1[SS1min], Vgs1[SS1min+Npoints], SS2[SS2min], Vgs2[SS2min], Vgs2[SS2min+Npoints])
+    return (SS1[SS1min], #min value for increasing
+            Vgs1[SS1min], Vgs1[SS1min+Npoints], #starting and ending of line
+            SS2[SS2min], #min value for decresasing
+            Vgs2[SS2min], Vgs2[SS2min+Npoints] #starting and ending of line
+            )
 
 
 ##### UNUSED
-
 def plot_ΔVGvT(fileroot, filenames, current, size=def_size, log=False):
     savename = '_DVGvT'
     size = 2

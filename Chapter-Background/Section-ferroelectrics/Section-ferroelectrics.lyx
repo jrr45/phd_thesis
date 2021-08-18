@@ -326,7 +326,7 @@ noprefix "false"
  The depolarization field will cause the dipoles to reorient as thermal
  fluctuations let the dipoles to find new local energy minimums.
  As the electric field is reduced to 0 from 
-\begin_inset Formula $\pm\vec{E}_{s}$
+\begin_inset Formula $\pm\vec{\mathcal{E}}_{s}$
 \end_inset
 
  the depolarization field will force some domains to flip directions, but
@@ -540,11 +540,11 @@ Polarization
 (a) Ferroelectric domains and dipole orientation within a crystal.
  Polarization vs electric field for a (b) paraelectric and (c) ferroelectric.
  
-\begin_inset Formula $\vec{E}_{c}$
+\begin_inset Formula $\vec{\mathcal{E}}_{c}$
 \end_inset
 
 , 
-\begin_inset Formula $\vec{E}_{s}$
+\begin_inset Formula $\vec{\mathcal{E}}_{s}$
 \end_inset
 
 , 
@@ -598,7 +598,14 @@ literal "true"
 \end_layout
 
 \begin_layout Subsection
-Phase transitions
+Landau phase transitions
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Landau-phase-transitions"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -621,7 +628,7 @@ literal "true"
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-F=F_{0}+\frac{\alpha}{2}P+\frac{\beta}{4}P^{2}+\frac{\gamma}{6}P^{6}\cdots-EP\label{eq:Landau-Free-Energy}
+F=F_{0}+\frac{\alpha}{2}P+\frac{\beta}{4}P^{2}+\frac{\gamma}{6}P^{6}\cdots-\mathcal{E}P\label{eq:Landau-Free-Energy}
 \end{equation}
 
 \end_inset
@@ -644,10 +651,28 @@ where
 
 is the free energy density of the disordered (high temperature) phase near
  the transition, and 
-\begin_inset Formula $E$
+\begin_inset Formula $\mathcal{E}$
 \end_inset
 
  the external field.
+ The strain 
+\begin_inset Formula $\sigma_{i}$
+\end_inset
+
+ is neglected in this discussion, but would add two additional terms to
+ the free energy (
+\begin_inset Formula $-\frac{1}{2}s_{ik}\sigma_{i}\sigma_{k}+P^{2}Q_{k}\sigma_{k}$
+\end_inset
+
+ where 
+\begin_inset Formula $s_{ik}is$
+\end_inset
+
+the compliance matrix and 
+\begin_inset Formula $Q_{k}$
+\end_inset
+
+ the electrostriction coefficient) which modify the parameters below.
  In the paraelectric phase the Hamiltonian must be invariant under a transformat
 ion from 
 \begin_inset Formula $P$
@@ -734,13 +759,13 @@ literal "true"
  To find the local minimums in the free energy we take the derivative
 \begin_inset Formula 
 \begin{equation}
-\frac{\partial F}{\partial P}=\alpha P+\beta P^{3}+\gamma P^{5}-E=0\label{eq:Landau-FE-derivative}
+\frac{\partial F}{\partial P}=\alpha P+\beta P^{3}+\gamma P^{5}-\mathcal{E}=0\label{eq:Landau-FE-derivative}
 \end{equation}
 
 \end_inset
 
 We set 
-\begin_inset Formula $E=0$
+\begin_inset Formula $\mathcal{E}=0$
 \end_inset
 
  to look at the system in the simplest scenario, without external fields,
@@ -1483,7 +1508,7 @@ status open
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -1524,7 +1549,7 @@ name "fig:Typical-FeFET-device"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -1566,7 +1591,7 @@ name "fig:FeFET-Current-vs-Gate"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -1616,7 +1641,7 @@ name "fig:FeFET-Hold-ON"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -1666,7 +1691,7 @@ name "fig:FeFET-Write-ON"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -1716,7 +1741,7 @@ name "fig:FeFET-channel-Write-OFF"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -1821,7 +1846,7 @@ hold OFF
 \end_inset
 
  (f) stages of the FeFET show in (b).
- 
+ As before, 
 \begin_inset Formula $E_{F}$
 \end_inset
 
@@ -2147,7 +2172,7 @@ separation "3pt"
 shadowsize "4pt"
 framecolor "black"
 backgroundcolor "none"
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \noindent
@@ -2340,7 +2365,7 @@ separation "3pt"
 shadowsize "4pt"
 framecolor "black"
 backgroundcolor "none"
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \noindent
@@ -2538,7 +2563,7 @@ FTJ schematic (a) with top and bottom electrodes and depleted regions.
 \begin_inset Formula $q$
 \end_inset
 
- is the fundamental charge, 
+ is the fundamental charge of a carrier, 
 \begin_inset Formula $V_{bias}$
 \end_inset
 
@@ -2811,11 +2836,90 @@ literal "false"
 \end_layout
 
 \begin_layout Subsection
-FeFETs with ferroelectric channels AND/OR ferroelectric semiconductors (TODO)
+Ferroelectric semiconductors (TODO)
 \end_layout
 
 \begin_layout Standard
-FiXme
+The semiconductor properties of a crystal will alter slightly the ferroelectric
+ insulator properties discussed above.
+ Following the Landau theory from section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Landau-phase-transitions"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ the free energy becomes
+\begin_inset Formula 
+\begin{equation}
+F=F_{0}+\frac{\alpha}{2}P+\frac{\beta}{4}P^{2}+\frac{\gamma}{6}P^{6}\cdots+\sum_{i}N_{i}E_{i}\left(T,P,\sigma_{k}\right)
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $N_{i}$
+\end_inset
+
+ is the number or free charge carriers and 
+\begin_inset Formula $E_{i}$
+\end_inset
+
+ the energy of those carriers.
+ As before, the strain 
+\begin_inset Formula $\sigma_{i}$
+\end_inset
+
+ is neglected for this discussion and electric field 
+\begin_inset Formula $\mathcal{E}$
+\end_inset
+
+ is taken to be zero to address the simplest case.
+ For an n-type semiconductor with doping concentration 
+\begin_inset Formula $N_{D}$
+\end_inset
+
+ the sum becomes
+\begin_inset Formula 
+\begin{equation}
+\sum_{i}N_{i}E_{i}\left(T,P,\sigma_{k}\right)=nE_{G}+N_{D}^{+}\left(E_{c}-E_{D}\right)-p\left(E_{A}-E_{v}\right)\approx N_{D}^{+}\tilde{E}_{G}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $E_{D}$
+\end_inset
+
+ the energy of the donor sites, 
+\begin_inset Formula $E_{A}$
+\end_inset
+
+ the energy of the acceptor sites, 
+\begin_inset Formula $n$
+\end_inset
+
+ the electron density, 
+\begin_inset Formula $p$
+\end_inset
+
+ the hole density.
+ The reduced bandwidth gap is given by 
+\begin_inset Formula $\tilde{E}_{G}=E_{D}-E_{A}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Ferroelectric semiconductor channels (TODO)
+\end_layout
+
+\begin_layout Standard
+TODO
 \begin_inset CommandInset citation
 LatexCommand cite
 key "laurita2019evidence,fang2020designof"

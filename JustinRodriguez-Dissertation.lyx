@@ -250,6 +250,8 @@
 
 \usepackage{listings}
 %\usepackage[redefcite]{xcpdftips}
+\usepackage{pdflscape}
+
 %%%%%%%%%%%%%%%%%
 % THE BEGINNING %
 %%%%%%%%%%%%%%%%%
@@ -312,6 +314,7 @@ todonotes
 \cite_engine natbib
 \cite_engine_type numerical
 \biblio_style plainnat
+\biblio_options sort&compress,super
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
