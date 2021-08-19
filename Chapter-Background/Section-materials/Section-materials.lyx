@@ -266,7 +266,7 @@ literal "false"
 \begin_inset Formula $\mathrm{In_{2}Se_{3}}$
 \end_inset
 
- polymorphs in literature
+ polymorphs in literature (TODO: review)
 \end_layout
 
 \begin_layout Standard
@@ -397,7 +397,25 @@ noprefix "false"
 \end_inset
 
  lists the different polymorphs reported in literature and the identified
- space groups.
+ space groups, the structures reported by Liu et al.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "liu2019atomically"
+literal "true"
+
+\end_inset
+
+ are shown in figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:-crystal-structure"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
  
 \end_layout
 
@@ -405,7 +423,7 @@ noprefix "false"
 \begin_inset Float table
 wide false
 sideways true
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Tabular
@@ -3153,6 +3171,314 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/a(2H) In2Se3 combined.png
+	lyxscale 10
+	width 5cm
+	groupId In2Se3-crystals
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\alpha\mathrm{\left[2H\right]\left(P6_{3}mc\right)}$
+\end_inset
+
+ hexagonal
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/a(3R) In2Se3 combined.png
+	lyxscale 10
+	width 5cm
+	groupId In2Se3-crystals
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\alpha\left[3R\right]\left(R3m\right)$
+\end_inset
+
+ rhombohedral
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/b(1T) In2Se3 combined.png
+	lyxscale 10
+	width 5cm
+	groupId In2Se3-crystals
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\beta\left[1T\right]\left(P\bar{3}m1\right)$
+\end_inset
+
+ trigonal
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/b(2H) In2Se3 combined.png
+	lyxscale 10
+	width 5cm
+	groupId In2Se3-crystals
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\beta\mathrm{\left[2H\right]\left(P6_{3}mc\right)}$
+\end_inset
+
+ hexagonal
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/b(3R) In2Se3 combined.png
+	lyxscale 10
+	width 5cm
+	groupId In2Se3-crystals
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\beta\left[3R\right]\left(R\bar{3}m\right)$
+\end_inset
+
+ rhombohedral
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/g In2Se3 combined.png
+	lyxscale 10
+	width 5cm
+	groupId In2Se3-crystals
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\gamma$
+\end_inset
+
+ Hexagonal
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{In_{2}Se_{3}}$
+\end_inset
+
+ crystal structure
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:-crystal-structure"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+The common 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, 
+\begin_inset Formula $\beta$
+\end_inset
+
+, and 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ polymorph crystal structures, following the space groups and lattice constants
+ given by Liu et al.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "liu2019atomically"
+literal "true"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula $\ensuremath{\alpha}\textrm{-In}_{2}\textrm{Se}_{3}$
 \end_inset
 
@@ -3920,215 +4246,7 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-TODO: connect figure with text, add other polymorphs?
-\end_layout
 
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename Figures/a(2H) In2Se3 combined.png
-	lyxscale 10
-	width 4cm
-	groupId In2Se3-crystals
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset Formula $\alpha\mathrm{\left(2H\right)}$
-\end_inset
-
- hexagonal
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename Figures/a(3R) In2Se3 combined.png
-	lyxscale 10
-	width 4cm
-	groupId In2Se3-crystals
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset Formula $\alpha\mathrm{\left(3R\right)}$
-\end_inset
-
- rhombohedral
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename Figures/b(3R) In2Se3 combined.png
-	lyxscale 10
-	width 4cm
-	groupId In2Se3-crystals
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset Formula $\beta\mathrm{\left(3R\right)}$
-\end_inset
-
- rhombohedral
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename Figures/g In2Se3 combined.png
-	lyxscale 10
-	width 4cm
-	groupId In2Se3-crystals
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset Formula $\gamma$
-\end_inset
-
- Hexagonal
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset Formula $\mathrm{In_{2}Se_{3}}$
-\end_inset
-
- crystal structure
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Formula $\alpha\left[2H\right]\left(P6_{3}mc\right)$
-\end_inset
-
-
-\begin_inset CommandInset citation
-LatexCommand cite
-key "kupers2018controlled"
-literal "false"
-
-\end_inset
-
-, 
-\begin_inset Formula $\alpha\left[3R\right]\left(R3m\right)$
-\end_inset
-
-
-\begin_inset CommandInset citation
-LatexCommand cite
-key "kupers2018controlled"
-literal "false"
-
-\end_inset
-
-, 
-\begin_inset Formula $\beta\left[3R\right]\left(R\bar{3}m\right)$
-\end_inset
-
-, and 
-\begin_inset Formula $\gamma\left(P6_{1}\right)$
-\end_inset
-
- crystal structures.
-\end_layout
-
-\end_inset
-
- 
 \end_layout
 
 \begin_layout Subsubsection
