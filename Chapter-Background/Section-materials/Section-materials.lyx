@@ -153,7 +153,7 @@ name "subsec:In-Se-compounds"
 
 \end_inset
 
- (TODO: review, figure expand)
+ (TODO: review)
 \end_layout
 
 \begin_layout Standard
@@ -163,8 +163,8 @@ Indium-Selenium together can form a variety of binary compounds ranging
  to get different In-Se crystal growth and structures.
  Figure 
 \begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:In-Se_alloy_diagram"
+LatexCommand eqref
+reference "fig:In-Se-alloy-diagram"
 plural "false"
 caps "false"
 noprefix "false"
@@ -195,18 +195,36 @@ literal "false"
 
 .
  
-\begin_inset Formula $\mathrm{In_{2}Se_{3}}$
-\end_inset
-
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+In-Se
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
  polymorphs and polytypes vary greatly in properties like durability, conductivi
 ty, photoresponse, bandgap, and exhibit different phenomina such as superconduct
 ivity, charge density waves, and ferroelectricity.
  With this, care must be taken to establish the correct crystal structure
- when comparing and reporting 
-\begin_inset Formula $\mathrm{In_{2}Se_{3}}$
-\end_inset
-
- crystals.
+ when comparing and reporting crystals.
 \end_layout
 
 \begin_layout Standard
@@ -231,7 +249,7 @@ status open
 In-Se alloy phase diagram
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:In-Se_alloy_diagram"
+name "fig:In-Se-alloy-diagram"
 
 \end_inset
 
@@ -246,7 +264,8 @@ name "fig:In-Se_alloy_diagram"
 \begin_layout Plain Layout
 The various Indium-Selenium compounds grown from literature using both experimen
 tal and calculated data.
- Compiled by ref 
+ Adapted with permission from Han et al.
+ and Okamoto et al.
 \begin_inset CommandInset citation
 LatexCommand cite
 key "okamoto2006se"
@@ -254,7 +273,9 @@ literal "false"
 
 \end_inset
 
-.
+ Copyright 2014 2014 WILEY-VCH Verlag GmbH & Co., Copyright 2006, ASM Internation
+al.
+ 
 \end_layout
 
 \end_inset
@@ -266,7 +287,7 @@ literal "false"
 \begin_inset Formula $\mathrm{InSe}$
 \end_inset
 
- polymorphs in literature (TODO: review, figure)
+ polymorphs in literature (TODO: review)
 \end_layout
 
 \begin_layout Standard
@@ -337,7 +358,7 @@ literal "false"
  that increases and changes to indirect as the crystal decreases in thickness
 \begin_inset CommandInset citation
 LatexCommand cite
-key "brotons-gisbert2016nanotexturing,bandurin2017highelectron,huang2018phaseengineered,sang2019twodimensional"
+key "brotons-gisbert2016nanotexturing,huang2018phaseengineered,bandurin2017high,sang2019two"
 literal "false"
 
 \end_inset
@@ -363,7 +384,7 @@ literal "false"
  Dai et al.
 \begin_inset CommandInset citation
 LatexCommand cite
-key "dai2019robustpiezophototronic"
+key "dai2019robust"
 literal "false"
 
 \end_inset
@@ -380,7 +401,7 @@ literal "false"
  Additionally, Li and Wu
 \begin_inset CommandInset citation
 LatexCommand cite
-key "li2017binarycompound"
+key "li2017binary"
 literal "false"
 
 \end_inset
@@ -790,7 +811,7 @@ literal "true"
 4.002
 \begin_inset CommandInset citation
 LatexCommand cite
-key "mudd2016thedirecttoindirect"
+key "mudd2016directtoindirect"
 literal "false"
 
 \end_inset
@@ -853,7 +874,7 @@ literal "false"
 3.37
 \begin_inset CommandInset citation
 LatexCommand cite
-key "bandurin2017highelectron"
+key "bandurin2017high"
 literal "false"
 
 \end_inset
@@ -959,7 +980,7 @@ literal "true"
 16.61
 \begin_inset CommandInset citation
 LatexCommand cite
-key "sun2020insesingle"
+key "sun2020einse"
 literal "false"
 
 \end_inset
@@ -971,7 +992,7 @@ literal "false"
 16.66
 \begin_inset CommandInset citation
 LatexCommand cite
-key "hao2019phaseidentification"
+key "hao2019phase"
 literal "false"
 
 \end_inset
@@ -997,7 +1018,7 @@ AB
 1.24
 \begin_inset CommandInset citation
 LatexCommand cite
-key "hao2019phaseidentification"
+key "hao2019phase"
 literal "false"
 
 \end_inset
@@ -1034,7 +1055,7 @@ literal "false"
 115, 176, 199, 226 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "sun2020insesingle"
+key "sun2020einse"
 literal "false"
 
 \end_inset
@@ -1046,7 +1067,7 @@ literal "false"
 114.4, 176.5, 226.2
 \begin_inset CommandInset citation
 LatexCommand cite
-key "hao2019phaseidentification"
+key "hao2019phase"
 literal "false"
 
 \end_inset
@@ -1150,7 +1171,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Figures/beta InSe combined.png
+	filename Figures/InSe-beta combined.png
 	lyxscale 10
 	width 5cm
 	groupId In2Se3-crystals
@@ -1193,7 +1214,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Figures/gamma InSe combined.png
+	filename Figures/InSe-gamma combined.png
 	lyxscale 10
 	width 5cm
 	groupId In2Se3-crystals
@@ -1236,7 +1257,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Figures/epsilon InSe combined.png
+	filename Figures/InSe-epsilon combined.png
 	lyxscale 10
 	width 5cm
 	groupId In2Se3-crystals
@@ -1250,7 +1271,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-\begin_inset Formula $\beta\left[2H\right]\left(P\bar{6}m2\right)$
+\begin_inset Formula $\epsilon\left[2H\right]\left(P\bar{6}m2\right)$
 \end_inset
 
  hexagonal
@@ -1471,7 +1492,7 @@ noprefix "false"
 \begin_inset Float table
 wide false
 sideways true
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Tabular
@@ -2715,7 +2736,7 @@ literal "false"
 \begin_inset Float table
 wide false
 sideways true
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset ERT
@@ -4217,7 +4238,7 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Figures/a(2H) In2Se3 combined.png
+	filename Figures/In2Se3-alpha(2H) combined.png
 	lyxscale 10
 	width 5cm
 	groupId In2Se3-crystals
@@ -4260,7 +4281,7 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Figures/a(3R) In2Se3 combined.png
+	filename Figures/In2Se3-alpha(3R) combined.png
 	lyxscale 10
 	width 5cm
 	groupId In2Se3-crystals
@@ -4303,7 +4324,7 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Figures/b(1T) In2Se3 combined.png
+	filename Figures/In2Se3-beta(1T) combined.png
 	lyxscale 10
 	width 5cm
 	groupId In2Se3-crystals
@@ -4342,7 +4363,7 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Figures/b(2H) In2Se3 combined.png
+	filename Figures/In2Se3-beta(2H) combined.png
 	lyxscale 10
 	width 5cm
 	groupId In2Se3-crystals
@@ -4385,7 +4406,7 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Figures/b(3R) In2Se3 combined.png
+	filename Figures/In2Se3-beta(3R) combined.png
 	lyxscale 10
 	width 5cm
 	groupId In2Se3-crystals
@@ -4428,7 +4449,7 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Figures/g In2Se3 combined.png
+	filename Figures/In2Se3-gamma combined.png
 	lyxscale 10
 	width 5cm
 	groupId In2Se3-crystals
