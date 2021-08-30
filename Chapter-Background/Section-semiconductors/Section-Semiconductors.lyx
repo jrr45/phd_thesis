@@ -1701,7 +1701,7 @@ name "semiconductor electron affinity"
 \begin_inset Formula $E_{F}$
 \end_inset
 
-must be the same and constant for both materials, while the vacuum energy
+ must be the same and constant for both materials, while the vacuum energy
  
 \begin_inset Formula $E_{vac}$
 \end_inset
@@ -1735,8 +1735,8 @@ name "energy barrier"
 \begin_inset Formula 
 \begin{equation}
 \begin{cases}
-\phi_{B,n}=\phi_{M}-\chi_{S} & n-type\\
-\phi_{B,p}=\chi_{S}-\phi_{M} & p-type
+q\phi_{B,n}=q\phi_{M}-q\chi_{S} & n-type\\
+q\phi_{B,p}=E_{g}-\left(q\phi_{M}-q\chi_{S}\right) & p-type
 \end{cases}
 \end{equation}
 
@@ -1752,12 +1752,46 @@ literal "true"
 
 .
  The bulk of the semiconductor band shifts to accommodate the difference
- in work functions of both materials 
-\begin_inset Formula $\phi_{M}-\phi_{S}$
+ in Fermi energy of both materials while ensuring the vacuum level is continuous
+ across the boundary.
+ For an 
+\begin_inset Formula $n$
+\end_inset
+
+-type semiconductor, an electron will see a built in potential 
+\begin_inset Formula $V_{bi}$
+\end_inset
+
+ when moving from the conduction band to the metal
+\begin_inset Formula 
+\begin{equation}
+V_{bi}=\phi_{Bn}-V_{n}=\phi_{Bn}-\frac{k_{B}T}{q}\ln\left(\frac{N_{C}}{N_{D}\left(T\right)}\right)\label{eq:voltage-built-in}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $V_{n}$
+\end_inset
+
+ is the distance between the Fermi energy in the semiconductor bulk and
+ the conduction band energy, 
+\begin_inset Formula $N_{C}$
+\end_inset
+
+ the effective density of states in the conduction band, 
+\begin_inset Formula $N_{D}$
+\end_inset
+
+ the donor-impurity density
+\begin_inset CommandInset citation
+LatexCommand cite
+key "sze2012semiconductor"
+literal "true"
+
 \end_inset
 
 .
- 
 \end_layout
 
 \begin_layout Standard
@@ -1773,7 +1807,7 @@ status open
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -1815,7 +1849,7 @@ name "fig:Before-contact"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -2036,8 +2070,8 @@ ing region.
 \end_layout
 
 \begin_layout Standard
-For Schottky contacts behavior can be modeled using thermionic emission
- theory.
+The behavior of Schottky contact current can be modeled using thermionic
+ emission theory.
  The current density
 \begin_inset CommandInset label
 LatexCommand label
@@ -3217,6 +3251,44 @@ noprefix "false"
 
 a-b shows an ideal and non-ideal MOS capacitor with n-type semiconductor
  without and with the a shift in band structure.
+ The potential 
+\begin_inset Formula $\psi$
+\end_inset
+
+ as a function of distance 
+\begin_inset Formula $x$
+\end_inset
+
+ from the surface can be found by using by the Poisson equation
+\begin_inset Formula 
+\begin{equation}
+\frac{d^{2}\psi}{dx^{2}}=-\frac{\rho_{s}\left(x\right)}{\epsilon_{0}\epsilon_{r}}\label{eq:Poisson}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\rho_{s}=e\left(N_{D}^{+}-N_{A}^{-}+p-n\right)$
+\end_inset
+
+ is the charge density per unit volume at 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $\epsilon_{r}=1+\chi$
+\end_inset
+
+ the relative dielectric permittivity.
+ In an 
+\begin_inset Formula $n$
+\end_inset
+
+-type semiconductor 
+\begin_inset Formula $\rho_{s}\approx e\left(N_{D}^{+}-n\right)$
+\end_inset
+
+.
  
 \end_layout
 
@@ -3471,7 +3543,8 @@ d.
  As larger negative (positive) voltages are applied the bands begin to invert
  and minority charges begin to accumulate in the oxide-semiconductor region.
  Eventually more minority than majority charges accumulate within the interface
- region, known as inversion, shown in figure 
+ region and is known as inversion.
+ This shown in figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:MOSFET"
@@ -3481,7 +3554,11 @@ noprefix "false"
 
 \end_inset
 
-e.
+e, as 
+\begin_inset Formula $\psi_{s}>\psi_{B}$
+\end_inset
+
+.
 \begin_inset CommandInset citation
 LatexCommand cite
 key "sze2012semiconductor"
@@ -3489,7 +3566,7 @@ literal "true"
 
 \end_inset
 
-
+ 
 \end_layout
 
 \begin_layout Standard

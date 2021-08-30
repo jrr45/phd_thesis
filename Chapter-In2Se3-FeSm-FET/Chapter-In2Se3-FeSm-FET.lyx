@@ -7,9 +7,6 @@
 \textclass psuthesis
 \options phd
 \use_default_options false
-\begin_modules
-boxedfloat
-\end_modules
 \maintain_unincluded_children false
 \language english
 \language_package none
@@ -137,7 +134,7 @@ noprefix "false"
  gate dielectric.
 \begin_inset CommandInset citation
 LatexCommand cite
-key "dunkel2017afefet,si2018ferroelectric"
+key "si2018ferroelectric,dunkel2017fefet"
 literal "true"
 
 \end_inset
@@ -237,7 +234,7 @@ literal "true"
  ferroelectricity
 \begin_inset CommandInset citation
 LatexCommand cite
-key "cui2018intercorrelated,wan2018roomtemperature,hou2019alphaintextrm2setextrm3,hou2019resistive,dai2020intrinsic"
+key "cui2018intercorrelated,wan2018roomtemperature,hou2019resistive,dai2020intrinsic,hou2019ain2se3"
 literal "true"
 
 \end_inset
@@ -255,7 +252,7 @@ literal "false"
  correlation
 \begin_inset CommandInset citation
 LatexCommand cite
-key "hou2019alphaintextrm2setextrm3,dai2020intrinsic,hou2019resistive,xiao2018intrinsic,cui2018intercorrelated,liu2019atomically"
+key "dai2020intrinsic,hou2019resistive,xiao2018intrinsic,cui2018intercorrelated,liu2019atomically,hou2019ain2se3"
 literal "false"
 
 \end_inset
@@ -264,7 +261,7 @@ literal "false"
 on measured by PFM
 \begin_inset CommandInset citation
 LatexCommand cite
-key "hou2019alphaintextrm2setextrm3"
+key "hou2019ain2se3"
 literal "false"
 
 \end_inset
@@ -1057,7 +1054,7 @@ Flakes of crystal were made into four-point probe and Hall bar FET devices
  processes.
 \begin_inset CommandInset citation
 LatexCommand cite
-key "choi2011su8protective,choi2008aprotective"
+key "choi2011su8,choi2008protective"
 literal "true"
 
 \end_inset
@@ -1493,7 +1490,7 @@ noprefix "false"
 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "island2015gatecontrolled,1986electrical"
+key "island2015gate,julien1986electrical"
 literal "true"
 
 \end_inset
@@ -1538,7 +1535,7 @@ literal "true"
 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "julien1986electrical,island2015gatecontrolled"
+key "julien1986electrical,island2015gate"
 literal "true"
 
 \end_inset
@@ -2786,7 +2783,7 @@ name "fig:Magnetic-field-measurment"
  and normalized to the difference from the measured value at zero-field.
  The fitting parameters are given in table 
 \begin_inset CommandInset ref
-LatexCommand pageref
+LatexCommand ref
 reference "tab:Sample-A:-magnetoconductance"
 plural "false"
 caps "false"
@@ -3064,7 +3061,7 @@ The
  of that hysteresis
 \begin_inset CommandInset citation
 LatexCommand cite
-key "kokil2012techniques,osullivan2020defectprofiling,jung2020impactof,yurchuk2016chargetrapping"
+key "kokil2012techniques,yurchuk2016chargetrapping,osullivan2020defect,jung2020impact"
 literal "false"
 
 \end_inset
@@ -3097,7 +3094,7 @@ literal "false"
  sweeps with decreasing temperature
 \begin_inset CommandInset citation
 LatexCommand cite
-key "guo2015chargetrapping,datye2018reduction,kim2018analysis,park2021interface,bartolomeo2017hysteresis"
+key "datye2018reduction,kim2018analysis,park2021interface,bartolomeo2017hysteresis,guo2015charge"
 literal "false"
 
 \end_inset
@@ -3106,7 +3103,7 @@ literal "false"
  temperatures
 \begin_inset CommandInset citation
 LatexCommand cite
-key "powell1983chargetrapping,liu2021cryogenic,beckers2020physical,park2021interface,beckers2018cryogenic"
+key "liu2021cryogenic,beckers2020physical,park2021interface,beckers2018cryogenic,powell1983charge"
 literal "false"
 
 \end_inset
@@ -3129,7 +3126,7 @@ noprefix "false"
  temperature from the suppressed charge trapping effects
 \begin_inset CommandInset citation
 LatexCommand cite
-key "wang2020cryogenic,ni2018critical,ali2020astudy"
+key "wang2020cryogenic,ni2018critical,ali2020study"
 literal "false"
 
 \end_inset
@@ -3137,7 +3134,7 @@ literal "false"
 , reduced domain wall motion
 \begin_inset CommandInset citation
 LatexCommand cite
-key "tan2020hotelectrons"
+key "tan2020hot"
 literal "true"
 
 \end_inset
@@ -3145,7 +3142,7 @@ literal "true"
 , or a change in polarization and coercive fields
 \begin_inset CommandInset citation
 LatexCommand cite
-key "ali2020astudy"
+key "ali2020study"
 literal "true"
 
 \end_inset
@@ -3205,7 +3202,7 @@ literal "false"
  may also display a metal-to-insulator (MIT) in MOSFETs
 \begin_inset CommandInset citation
 LatexCommand cite
-key "brunthaler2007trapmodel,altshuler1999theoryof,hormann2010dipoletrap"
+key "brunthaler2007trap,altshuler1999theory,hormann2010dipole"
 literal "false"
 
 \end_inset
@@ -3247,7 +3244,7 @@ refs> are well understood.
  Additionally, with only one experimentally verified ferroelectric metal
 \begin_inset CommandInset citation
 LatexCommand cite
-key "zhou2020reviewon"
+key "zhou2020review"
 literal "false"
 
 \end_inset
@@ -3255,7 +3252,7 @@ literal "false"
 , demonstrated very recently
 \begin_inset CommandInset citation
 LatexCommand cite
-key "sharma2019aroomtemperature,fei2018ferroelectric"
+key "fei2018ferroelectric,sharma2019roomtemperature"
 literal "false"
 
 \end_inset

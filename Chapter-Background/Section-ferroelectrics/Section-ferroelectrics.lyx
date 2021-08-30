@@ -567,7 +567,7 @@ Polarization
 \begin_layout Standard
 One of the largest hindrances to ferroelectrics in many applications is
  the susceptibility of ferroelectric films to aging and fatigue.
- Aging is the slow changing of a material's characteristics over time, while
+ Aging is the slow changing of material characteristics over time, while
  fatigue takes place under high electric field.
  Both take multiple forms and can have similar effects, though the mechanisms
  are still areas of active research
@@ -610,7 +610,7 @@ name "subsec:Landau-phase-transitions"
 
 \begin_layout Standard
 Phase transitions in ferroelectrics is usually modeled with the Landau phenomeno
-logical approach, or Landau–Devonshire theory.
+logical approach, or Landau–Ginsburg–Devonshire theory.
 \begin_inset CommandInset citation
 LatexCommand cite
 key "dai2020ferroic,bain2017ferroelectrics"
@@ -849,13 +849,13 @@ noprefix "false"
  as the term inside the square root becomes negative.
  Then
 \begin_inset Formula 
-\[
+\begin{equation}
 P_{s}=\begin{cases}
 \pm\sqrt{\frac{-\beta+\sqrt{\beta^{2}-4\alpha_{0}\gamma\left(T-T_{0}\right)}}{2\gamma}} & T<T_{0}\\
 0,\,\pm\sqrt{\frac{-\beta+\sqrt{\beta^{2}-4\alpha_{0}\gamma\left(T-T_{0}\right)}}{2\gamma}} & T_{0}<T<T_{1}\\
 0 & T>T_{1}
 \end{cases}
-\]
+\end{equation}
 
 \end_inset
 
@@ -886,14 +886,14 @@ is the ferroelectric temperature limit.
 \end_inset
 
  by setting 
-\begin_inset Formula $F\left(P_{s}=0\right)=F\left(P_{S}=\pm\sqrt{}\right)=0$
+\begin_inset Formula $F\left(P_{s}=0\right)=F\left(P_{s}=\pm\sqrt{}\right)=0$
 \end_inset
 
  and solving
 \begin_inset Formula 
-\[
+\begin{equation}
 T_{C}\approx T_{0}+\frac{3\beta^{2}}{16\alpha_{0}\gamma}
-\]
+\end{equation}
 
 \end_inset
 
@@ -907,9 +907,9 @@ We can do the same for
 
 
 \begin_inset Formula 
-\[
+\begin{equation}
 T_{1}=T_{0}+\frac{\beta^{2}}{4\alpha_{0}\gamma}
-\]
+\end{equation}
 
 \end_inset
 
@@ -972,6 +972,19 @@ noprefix "false"
 \end_inset
 
 .
+ The discontinuity at 
+\begin_inset Formula $T_{1}$
+\end_inset
+
+ is given by
+\begin_inset Formula 
+\begin{equation}
+P_{0}=P_{s}\left(T_{1}\right)=\pm\sqrt{-\frac{3\beta}{4\gamma}}\,.
+\end{equation}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1198,13 +1211,13 @@ noprefix "false"
 \end_inset
 
  and Taylor expand the term under the square root, noting 
-\begin_inset Formula $P^{2}>0$
+\begin_inset Formula $P_{s}^{2}>0$
 \end_inset
 
  this gives 
 \begin_inset Formula 
 \begin{equation}
-P=\begin{cases}
+P_{s}=\begin{cases}
 0 & T<T_{0}\\
 \sqrt{\frac{\alpha_{0}\left(T_{0}-T\right)}{\beta}} & T>T_{0}
 \end{cases}
@@ -1427,6 +1440,136 @@ name "fig:Landau-second-order"
  as a function of increasing temperature and constant electric fields.
  
 \end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Landau transitions in ferroelectric semiconductors (TODO: review)
+\end_layout
+
+\begin_layout Standard
+The semiconductor properties of a crystal will alter slightly the ferroelectric
+ insulator properties discussed above.
+ The results below are drawn from the Ferrelectric Semiconductors book and
+ work of Fridkin and Fridkine
+\begin_inset CommandInset citation
+LatexCommand cite
+key "fridkin1980ferroelectric"
+literal "true"
+
+\end_inset
+
+.
+ As the derivations follow the same methods used in the previous sections
+ and are harder to follow, just the results are shown.
+ The Landau phenomenological approach free energy becomes
+\begin_inset Formula 
+\begin{equation}
+F=F_{0}+\frac{\alpha}{2}P+\frac{\beta}{4}P^{2}+\frac{\gamma}{6}P^{6}\cdots+\sum_{i}N_{i}E_{i}\left(T,P,\sigma_{k}\right)
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $N_{i}$
+\end_inset
+
+ is the number or free charge carriers and 
+\begin_inset Formula $E_{i}$
+\end_inset
+
+ the energy of those carriers.
+ As before, the strain 
+\begin_inset Formula $\sigma_{i}$
+\end_inset
+
+ is neglected for this discussion and electric field 
+\begin_inset Formula $\mathcal{E}$
+\end_inset
+
+ is taken to be zero to address the simplest case.
+ For an n-type semiconductor with doping concentration 
+\begin_inset Formula $N_{D}$
+\end_inset
+
+ the sum becomes
+\begin_inset Formula 
+\begin{equation}
+\sum_{i}N_{i}E_{i}\left(T,P,\sigma_{k}\right)=nE_{G}+N_{D}^{+}\left(E_{c}-E_{D}\right)-p\left(E_{A}-E_{v}\right)\approx N_{D}^{+}\tilde{E}_{G}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $E_{D}$
+\end_inset
+
+ the energy of the donor sites, 
+\begin_inset Formula $E_{A}$
+\end_inset
+
+ the energy of the acceptor sites, 
+\begin_inset Formula $n$
+\end_inset
+
+ the electron density, 
+\begin_inset Formula $p$
+\end_inset
+
+ the hole density.
+ The reduced bandwidth gap is given by 
+\begin_inset Formula $\tilde{E}_{G}=E_{D}-E_{A}$
+\end_inset
+
+.
+ From this, the spontaneous polarization can be found, 
+\begin_inset Formula 
+\begin{equation}
+P_{s,N_{D}}=\pm P_{s}\left(T\right)\sqrt{1+\left(\frac{\partial^{4}\tilde{E}_{G}}{\partial P^{4}}\right)\frac{P^{2}\left(T\right)N_{D}^{+}}{\beta P^{2}\left(T\right)+2\alpha}+\left(\frac{\partial^{6}\tilde{E}_{G}}{\partial P^{6}}\right)\frac{\alpha P^{4}\left(T\right)N_{D}^{+}}{\beta P^{2}\left(T\right)+2\alpha}-\left(\frac{\partial^{6}\tilde{E}_{G}}{\partial P^{6}}\right)\frac{N_{D}^{+}}{\gamma}}
+\end{equation}
+
+\end_inset
+
+though it now takes on a much more complicated form.
+ As does the discontinuity for the first order transition
+\begin_inset Formula 
+\begin{equation}
+P_{0,N_{D}}=\pm P_{0}\sqrt{1+\left(\frac{\partial^{4}\tilde{E}_{G}}{\partial P^{4}}\right)\frac{N_{D}^{+}}{\beta}-\left(\frac{\partial^{6}\tilde{E}_{G}}{\partial P^{6}}\right)\frac{N_{D}^{+}}{\gamma}}\,.
+\end{equation}
+
+\end_inset
+
+The Curie point is shifted, with the change is given by
+\begin_inset Formula 
+\begin{equation}
+T_{0,N_{D}}=T_{0}-C_{c}\left(\frac{\partial^{2}\tilde{E}_{G}}{\partial P^{2}}\right)N_{D}^{+}
+\end{equation}
+
+\end_inset
+
+ where 
+\begin_inset Formula $C_{c}=\frac{1}{\alpha_{0}}$
+\end_inset
+
+ is the Curie constant.
+ The minimization of the free energy means 
+\begin_inset Formula $\left(\partial^{2}F/\partial P^{2}\right)=N_{D}^{+}\left(\partial^{2}\tilde{E}_{G}/\partial P^{2}\right)>0$
+\end_inset
+
+ is positive along with 
+\begin_inset Formula $N_{_{D}^{+}}$
+\end_inset
+
+, so the free electrons will cause the Curie temperature to decrease.
+ The first order transition also acquires a hysteresis in the discontinuity
+ temperature between increasing and decreasing temperature 
+\begin_inset Formula 
+\begin{equation}
+\Delta T_{h,N_{D}}\approx\frac{3C\beta^{2}}{16\gamma}\left[1+\left(\frac{\partial^{4}\tilde{E}_{G}}{\partial P^{4}}\right)\frac{2N_{D}^{+}}{\beta}-\left(\frac{\partial^{6}\tilde{E}_{G}}{\partial P^{6}}\right)\frac{N_{D}^{+}}{\gamma}\right]\,.
+\end{equation}
 
 \end_inset
 
@@ -2172,7 +2315,7 @@ separation "3pt"
 shadowsize "4pt"
 framecolor "black"
 backgroundcolor "none"
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \noindent
@@ -2836,82 +2979,319 @@ literal "false"
 \end_layout
 
 \begin_layout Subsection
-Ferroelectric semiconductors (TODO)
+Band bending in a ferroelectric semiconductor (TODO: review)
 \end_layout
 
 \begin_layout Standard
-The semiconductor properties of a crystal will alter slightly the ferroelectric
- insulator properties discussed above.
- Following the Landau theory from section 
+In 2000 Matsuura
+\begin_inset CommandInset citation
+LatexCommand cite
+key "matsuura2000calculation"
+literal "true"
+
+\end_inset
+
+ proposed a modified version of the Poisson equation (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "subsec:Landau-phase-transitions"
+reference "eq:Poisson"
 plural "false"
 caps "false"
 noprefix "false"
 
 \end_inset
 
- the free energy becomes
+) 
+\family typewriter
+
 \begin_inset Formula 
 \begin{equation}
-F=F_{0}+\frac{\alpha}{2}P+\frac{\beta}{4}P^{2}+\frac{\gamma}{6}P^{6}\cdots+\sum_{i}N_{i}E_{i}\left(T,P,\sigma_{k}\right)
+\nabla^{2}V=-\frac{1}{\epsilon}\left(\rho_{s}\left(\vec{x}\right)-\nabla\vec{P}\right)
+\end{equation}
+
+\end_inset
+
+
+\family default
+where polarization is can vary as a function of the distance 
+\begin_inset Formula $\vec{x}$
+\end_inset
+
+ from the surface.
+ If we look at a domain near the interface of the ferroelectric, the dipoles
+ close to the interface will fall within the band-bending region.
+ The positive side of the aligned dipoles will form a sheet of negative
+ uncompensated charge in the respective region, with a sheet of positive
+ charge forming on the opposite region.
+ The polarized sheet of charge will create an depolarization electric field,
+ effecting mobile carriers on each end, and altering the respective difference
+ in band energies.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "apostol2015bandbending"
+literal "false"
+
+\end_inset
+
+ From the Poisson equation we can get the additional band bending energy
+ induced by the polarization charges
+\begin_inset Formula 
+\begin{equation}
+\Delta\phi_{FE}=\pm\frac{P\delta}{\epsilon_{r}\epsilon_{0}}
 \end{equation}
 
 \end_inset
 
 where 
-\begin_inset Formula $N_{i}$
+\begin_inset Formula $\delta$
 \end_inset
 
- is the number or free charge carriers and 
-\begin_inset Formula $E_{i}$
-\end_inset
+ is the distance from the surface to the polarized charge sheet
+\begin_inset CommandInset citation
+LatexCommand cite
+key "pintilie2005metalferroelectricmetal"
+literal "true"
 
- the energy of those carriers.
- As before, the strain 
-\begin_inset Formula $\sigma_{i}$
-\end_inset
-
- is neglected for this discussion and electric field 
-\begin_inset Formula $\mathcal{E}$
-\end_inset
-
- is taken to be zero to address the simplest case.
- For an n-type semiconductor with doping concentration 
-\begin_inset Formula $N_{D}$
-\end_inset
-
- the sum becomes
-\begin_inset Formula 
-\begin{equation}
-\sum_{i}N_{i}E_{i}\left(T,P,\sigma_{k}\right)=nE_{G}+N_{D}^{+}\left(E_{c}-E_{D}\right)-p\left(E_{A}-E_{v}\right)\approx N_{D}^{+}\tilde{E}_{G}
-\end{equation}
-
-\end_inset
-
-where 
-\begin_inset Formula $E_{D}$
-\end_inset
-
- the energy of the donor sites, 
-\begin_inset Formula $E_{A}$
-\end_inset
-
- the energy of the acceptor sites, 
-\begin_inset Formula $n$
-\end_inset
-
- the electron density, 
-\begin_inset Formula $p$
-\end_inset
-
- the hole density.
- The reduced bandwidth gap is given by 
-\begin_inset Formula $\tilde{E}_{G}=E_{D}-E_{A}$
 \end_inset
 
 .
+ The polarization across the depletion region region will vary as a function
+ of the electron density, which we can approximate as
+\begin_inset Formula 
+\[
+P=P_{max}-\tilde{p}\cdot n
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\tilde{p}$
+\end_inset
+
+ should be close to the dipole moment of an elementary cell in the ferroelectric
+\begin_inset CommandInset citation
+LatexCommand cite
+key "apostol2015bandbending"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+There are two important interfaces to consider for most devices, the ferroelectr
+ic-vacuum interfaces and ferroelectric-metal interface.
+ For the former, the electric field at the surface is known, giving the
+ boundary condition
+\begin_inset Formula 
+\begin{equation}
+E\left(x_{i}\right)=\left(\frac{dV}{dx}\right)_{x_{i}}=P_{0}\sqrt{\frac{k_{B}T}{\epsilon_{0}\epsilon_{r}n_{0}}}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $P_{0}$
+\end_inset
+
+ is the bulk polarization and 
+\begin_inset Formula $n_{0}$
+\end_inset
+
+ is the bulk electron density.
+ For the metal-ferroelectric interference we have an additional boundary
+ condition, the potential at the interface is fixed by the potential of
+ the meal contact.
+ For an interface between a metal and 
+\begin_inset Formula $n$
+\end_inset
+
+-type semiconductor the built in voltage becomes
+\begin_inset CommandInset citation
+LatexCommand cite
+key "pintilie2005metalferroelectricmetal"
+literal "true"
+
+\end_inset
+
+ (modifying equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:voltage-built-in"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+)
+\begin_inset Formula 
+\begin{equation}
+V_{bi,p}=\phi_{Bn}-\frac{k_{B}T}{q}\ln\left(\frac{N_{C}}{N_{D}\left(T\right)}\right)\pm\frac{P\delta}{\epsilon_{r}\epsilon_{0}}.
+\end{equation}
+
+\end_inset
+
+The electric field at the interface is then 
+\begin_inset Formula 
+\begin{equation}
+E\left(x_{i}\right)=\sqrt{\frac{2qN_{C}\left(V+V_{bi,p}\right)}{\epsilon_{r}\epsilon_{0}}}\pm\frac{P}{\epsilon_{r}\epsilon_{0}}
+\end{equation}
+
+\end_inset
+
+where the last term an addition when the polarization charge has the same
+ sign as the fixed charge in the space charge region
+\begin_inset CommandInset citation
+LatexCommand cite
+key "pintilie2005metalferroelectricmetal"
+literal "true"
+
+\end_inset
+
+.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:FES-band-bending"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ shows how the polarization may shift the bands in the region of the vacuum-
+ and metal-ferroelectric interfaces.
+ The system may be described more completely by finding the numerical solution
+ to the the differential equation
+\begin_inset Formula 
+\begin{equation}
+\frac{1}{k_{B}T}\frac{d^{2}V}{dx^{2}}+\tilde{p}\sqrt{\frac{n_{0}}{\epsilon_{r}\epsilon_{0}k_{B}^{3}T^{3}}}\exp\left(-\frac{V}{k_{B}T}\right)\frac{dV}{dx}=\frac{N_{D}/n_{0}}{1+2\exp\left(\frac{E_{F}-E_{D,0}-V}{k_{B}T}\right)}-\exp\left(\frac{V}{k_{B}T}\right)
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $E_{D,0}$
+\end_inset
+
+ is the donor energy without band bending
+\begin_inset CommandInset citation
+LatexCommand cite
+key "apostol2015bandbending"
+literal "false"
+
+\end_inset
+
+.
+ 
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Ferroelectrics-Figures/FE-SC vacuum band diagram.svg
+	width 7.5cm
+	groupId metal-sc band
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+ferroelectric-vacuum
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Ferroelectrics-Figures/FE-SC metal band diagram.svg
+	width 7.5cm
+	groupId metal-sc band
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+ferroelectric-metal
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Ferroelectric-semiconductor interface band bending
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:FES-band-bending"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+The band bending for a ferroelectric semiconductor in (a) vacuum and (b)
+ with metal contacts.
+ A sheet of charges accumulates in the depletion regions to compensate for
+ the fixed dipoles.
+ The bands shift in energy by 
+\begin_inset Formula $\pm eP\delta/\epsilon_{0}\epsilon_{r}$
+\end_inset
+
+ in each system.
+ Metal 1 and 2 are both chosen to be held at the same voltage and have the
+ same 
+\begin_inset Formula $\phi_{M}$
+\end_inset
+
+, which forms an electric field is across the bulk of the ferroelectric.
+ 
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -2928,6 +3308,29 @@ literal "false"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Ferroelectric semiconductors can be used to construct devices similar to
+ FTJ or planer channels that show a hysteresis in their current.
+ The metal/ferroelectric-semiconductor/metal device typically forms two
+ back-to-back rectifying Schottky contacts.
+ They are assumed to be thick enough that the depletion region of each Schottky
+ contact do not overlap, which would likely render it a FTJ, and some volume
+ of the film froms flat bands.
+ The hysteresis in the current is typically attributed to the polarization
+ band bending altering the Schottky barriers of the contacts on the channel.
+ This has been observed in 
+\end_layout
+
+\begin_layout Standard
+Figure x shows the band structures of a 
+\begin_inset Formula $n$
+\end_inset
+
+-type ferroelectric semiconductor channel and the hysteresis observed in
+ the current as the voltage is changed.
+ 
 \end_layout
 
 \end_body
