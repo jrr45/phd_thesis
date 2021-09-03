@@ -314,7 +314,7 @@ noprefix "false"
 \end_inset
 
 , and occurs at 
-\begin_inset Formula $E_{s}$
+\begin_inset Formula $\mathcal{E}_{s}$
 \end_inset
 
 .
@@ -989,7 +989,6 @@ P_{0}=P_{s}\left(T_{1}\right)=\pm\sqrt{-\frac{3\beta}{4\gamma}}\,.
 
 \begin_layout Standard
 \begin_inset Float figure
-placement h
 wide false
 sideways false
 status open
@@ -1286,7 +1285,6 @@ noprefix "false"
 \begin_layout Standard
 \noindent
 \begin_inset Float figure
-placement h
 wide false
 sideways false
 status open
@@ -2292,6 +2290,7 @@ noprefix "false"
 \begin_layout Standard
 \noindent
 \begin_inset Float figure
+placement h
 wide false
 sideways false
 status open
@@ -2315,7 +2314,7 @@ separation "3pt"
 shadowsize "4pt"
 framecolor "black"
 backgroundcolor "none"
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \noindent
@@ -2731,6 +2730,16 @@ FTJ schematic (a) with top and bottom electrodes and depleted regions.
 n.
  Current density vs voltage of a FTJ with (e) symmetric (f) asymmetric electrode
 -ferroelectric interfaces.
+ Adapted with permission from Setter et al.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "setter2006ferroelectric"
+literal "true"
+
+\end_inset
+
+.
+ Copyright 2006 AIP Publishing LLC.
 \end_layout
 
 \end_inset
@@ -2767,7 +2776,7 @@ literal "true"
 \begin_inset Formula $LiOsO_{3}$
 \end_inset
 
- 
+
 \begin_inset CommandInset citation
 LatexCommand cite
 key "shi2013ferroelectriclike"
@@ -2868,6 +2877,22 @@ literal "false"
  definition of ferroelectricity.
  The carrier screening suppresses long-range coulomb interactions necessary
  for dipole formation and the fields to (re)orient the dipoles.
+ Recently, Laurita et al.
+ demonstrated evidence showing a partial decoupling of the itinerant electrons
+ from the displacive transverse optical polar phonons responsible for the
+ polar transitions in 
+\begin_inset Formula $LiOsO_{3}$
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "laurita2019evidence"
+literal "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -2979,7 +3004,7 @@ literal "false"
 \end_layout
 
 \begin_layout Subsection
-Band bending in a ferroelectric semiconductor (TODO: review)
+Band bending in a ferroelectric semiconductor (TODO: review, current?)
 \end_layout
 
 \begin_layout Standard
@@ -3028,7 +3053,7 @@ where polarization is can vary as a function of the distance
  in band energies.
 \begin_inset CommandInset citation
 LatexCommand cite
-key "apostol2015bandbending"
+key "apostol2015band"
 literal "false"
 
 \end_inset
@@ -3037,7 +3062,7 @@ literal "false"
  induced by the polarization charges
 \begin_inset Formula 
 \begin{equation}
-\Delta\phi_{FE}=\pm\frac{P\delta}{\epsilon_{r}\epsilon_{0}}
+\Delta\phi_{FE}=\pm\frac{P\delta}{\epsilon_{r}\epsilon_{0}}\label{eq:polarization-energy-shift}
 \end{equation}
 
 \end_inset
@@ -3071,7 +3096,7 @@ where
  should be close to the dipole moment of an elementary cell in the ferroelectric
 \begin_inset CommandInset citation
 LatexCommand cite
-key "apostol2015bandbending"
+key "apostol2015band"
 literal "false"
 
 \end_inset
@@ -3080,13 +3105,13 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-There are two important interfaces to consider for most devices, the ferroelectr
-ic-vacuum interfaces and ferroelectric-metal interface.
+There are two important interfaces to consider for later discussions, the
+ ferroelectric-vacuum interfaces and ferroelectric-metal interface.
  For the former, the electric field at the surface is known, giving the
  boundary condition
 \begin_inset Formula 
 \begin{equation}
-E\left(x_{i}\right)=\left(\frac{dV}{dx}\right)_{x_{i}}=P_{0}\sqrt{\frac{k_{B}T}{\epsilon_{0}\epsilon_{r}n_{0}}}
+\mathcal{E}_{m}\left(x_{i}\right)=\left(\frac{dV}{dx}\right)_{x_{i}}=P_{0}\sqrt{\frac{k_{B}T}{\epsilon_{0}\epsilon_{r}n_{0}}}
 \end{equation}
 
 \end_inset
@@ -3103,11 +3128,7 @@ where
  For the metal-ferroelectric interference we have an additional boundary
  condition, the potential at the interface is fixed by the potential of
  the meal contact.
- For an interface between a metal and 
-\begin_inset Formula $n$
-\end_inset
-
--type semiconductor the built in voltage becomes
+ Pintilie et al.
 \begin_inset CommandInset citation
 LatexCommand cite
 key "pintilie2005metalferroelectricmetal"
@@ -3115,7 +3136,9 @@ literal "true"
 
 \end_inset
 
- (modifying equation 
+ modeled the polarization component of the in the metal-ferroelectric band
+ bending as an additional term in the built in voltage, modifying equation
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:voltage-built-in"
@@ -3125,10 +3148,15 @@ noprefix "false"
 
 \end_inset
 
-)
+.
+ For an interface between a metal and 
+\begin_inset Formula $n$
+\end_inset
+
+-type semiconductor the built in voltage becomes
 \begin_inset Formula 
 \begin{equation}
-V_{bi,p}=\phi_{Bn}-\frac{k_{B}T}{q}\ln\left(\frac{N_{C}}{N_{D}\left(T\right)}\right)\pm\frac{P\delta}{\epsilon_{r}\epsilon_{0}}.
+V_{bi,p}=\phi_{Bn}-\frac{k_{B}T}{q}\ln\left(\frac{N_{C}}{N_{D}\left(T\right)}\right)\pm\frac{P\delta}{\epsilon_{r}\epsilon_{0}}.\label{eq:voltage-built-in-polarization}
 \end{equation}
 
 \end_inset
@@ -3136,7 +3164,7 @@ V_{bi,p}=\phi_{Bn}-\frac{k_{B}T}{q}\ln\left(\frac{N_{C}}{N_{D}\left(T\right)}\ri
 The electric field at the interface is then 
 \begin_inset Formula 
 \begin{equation}
-E\left(x_{i}\right)=\sqrt{\frac{2qN_{C}\left(V+V_{bi,p}\right)}{\epsilon_{r}\epsilon_{0}}}\pm\frac{P}{\epsilon_{r}\epsilon_{0}}
+\mathcal{E}_{m}\left(x_{i}\right)=\sqrt{\frac{2qN_{C}\left(V+V_{bi,p}\right)}{\epsilon_{r}\epsilon_{0}}}\pm\frac{P}{\epsilon_{r}\epsilon_{0}}\label{eq:M-FE-interface-electric-field-polarization}
 \end{equation}
 
 \end_inset
@@ -3163,7 +3191,17 @@ noprefix "false"
 
  shows how the polarization may shift the bands in the region of the vacuum-
  and metal-ferroelectric interfaces.
- The system may be described more completely by finding the numerical solution
+ Using these boundary conditions, including 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:polarization-energy-shift"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, the system may be described more completely by finding the numerical solution
  to the the differential equation
 \begin_inset Formula 
 \begin{equation}
@@ -3179,7 +3217,7 @@ where
  is the donor energy without band bending
 \begin_inset CommandInset citation
 LatexCommand cite
-key "apostol2015bandbending"
+key "apostol2015band"
 literal "false"
 
 \end_inset
@@ -3295,42 +3333,446 @@ The band bending for a ferroelectric semiconductor in (a) vacuum and (b)
 \end_layout
 
 \begin_layout Subsection
-Ferroelectric semiconductor channels (TODO)
-\end_layout
-
-\begin_layout Standard
-TODO
-\begin_inset CommandInset citation
-LatexCommand cite
-key "laurita2019evidence,fang2020designof"
-literal "false"
-
-\end_inset
-
-
+Ferroelectric semiconductor channels (TODO: review)
 \end_layout
 
 \begin_layout Standard
 Ferroelectric semiconductors can be used to construct devices similar to
- FTJ or planer channels that show a hysteresis in their current.
- The metal/ferroelectric-semiconductor/metal device typically forms two
+ FTJ, planer channels, or other more complex devices, where the channel
+ polarization alters the bands.
+ This appears in a hysteresis-current behaviour, and has been seen in many
+ different ferroelectric semiconductors such as , 
+\begin_inset Formula $\mathrm{In_{2}Se_{3}}$
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "xu2020optical,si2021asymmetric"
+literal "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\mathrm{BiFeO_{3}}$
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "lee2011polarity,fan2015enhanced,yang2009photovoltaic,zhou2014photovoltaic,chen2013theconduction,yi2011mechanism"
+literal "false"
+
+\end_inset
+
+, SbSI
+\begin_inset CommandInset citation
+LatexCommand cite
+key "mistewicz2019aferroelectricphotovoltaic"
+literal "false"
+
+\end_inset
+
+, PZT
+\begin_inset CommandInset citation
+LatexCommand cite
+key "li2014switchable,pintilie2007ferroelectric"
+literal "false"
+
+\end_inset
+
+, SnS
+\begin_inset CommandInset citation
+LatexCommand cite
+key "higashitarumizu2020purelyinplane,kwon2020inplane"
+literal "false"
+
+\end_inset
+
+, GeS
+\begin_inset CommandInset citation
+LatexCommand cite
+key "yan2021inplane"
+literal "false"
+
+\end_inset
+
+, and many others.
+ The metal-(ferroelectric-semiconductor)-metal device typically forms two
  back-to-back rectifying Schottky contacts.
- They are assumed to be thick enough that the depletion region of each Schottky
- contact do not overlap, which would likely render it a FTJ, and some volume
- of the film froms flat bands.
- The hysteresis in the current is typically attributed to the polarization
- band bending altering the Schottky barriers of the contacts on the channel.
- This has been observed in 
+ The electric field 
+\begin_inset Formula $\mathcal{E}_{m}$
+\end_inset
+
+ in equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:M-FE-interface-electric-field-polarization"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ modifies the exponential in the Schottky barrier current seen in equation
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Schottky-barrier"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ (or 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Schotty-Simmons"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ Fan et al.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "fan2017ferroelectric"
+literal "true"
+
+\end_inset
+
+ extended the work of Pintilie et al.
+ and Matsuura, to include charge trapping in the depleted layer as an additional
+ term in the built in voltage and maximum electric field.
+ Together with the earlier Schottky barrier current equations this gives
+\begin_inset Formula 
+\begin{align}
+J & =A^{**}T^{2}\exp\left(-\frac{q\Phi_{B}}{k_{B}T}-\frac{q}{k_{B}T}\sqrt{\frac{q\mathcal{E}_{m}}{4\pi\epsilon_{0}\epsilon_{r}}}\right)\qquad l>t_{FE}\tag{\ref{eq:Schottky-barrier}}\nonumber \\
+J & =2q\left(\frac{2\pi m_{0}k_{B}}{h^{2}}\right)^{3/2}T^{3/2}\mathcal{E}_{m}\mu\left(\frac{m^{*}}{m_{0}}\right)\exp\left(-\frac{q\Phi_{B}}{k_{B}T}-\frac{q}{k_{B}T}\sqrt{\frac{q\mathcal{E}_{m}}{4\pi\epsilon_{0}\epsilon_{r}}}\right)\qquad l<t_{FE}\tag{\ref{eq:Schotty-Simmons}}\nonumber \\
+\mathcal{E}_{m} & =\sqrt{\frac{2qN_{eff}\left(V+V_{bi,p}\right)}{\epsilon_{r}\epsilon_{0}}}\pm\frac{P}{\epsilon_{r}\epsilon_{0}}\mp\tag{\frac{qN_{trapped}}{2\epsilon_{r}\epsilon_{0}}\ensuremath{\delta}\qquad\ensuremath{\delta\leq\sqrt{\frac{2qN_{eff}\left(V+V_{bi,p}\right)}{\epsilon_{r}\epsilon_{0}}}\leq\frac{t_{FE}}{2}}}\\
+V_{bi,p} & =\phi_{Bn}-\frac{k_{B}T}{q}\ln\left(\frac{N_{C}}{N_{D}\left(T\right)}\right)\mp\frac{P\delta}{\epsilon_{r}\epsilon_{0}}\pm\frac{qN_{trapped}\delta^{2}}{2\epsilon_{r}\epsilon_{0}}
+\end{align}
+
+\end_inset
+
+where 
+\begin_inset Formula $N_{eff}$
+\end_inset
+
+ is the effective charge density in the space-charge region of the barrier
+ and 
+\begin_inset Formula $t_{FE}$
+\end_inset
+
+ is the thickness of the ferroelectric channel.
 \end_layout
 
 \begin_layout Standard
-Figure x shows the band structures of a 
-\begin_inset Formula $n$
+Increasing voltage across a metal-(ferroelectric-semiconductor)-metal channel
+ will initially behave similar to what was discussed in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Metal-Semiconductor-Metal-conduction"
+plural "false"
+caps "false"
+noprefix "false"
+
 \end_inset
 
--type ferroelectric semiconductor channel and the hysteresis observed in
- the current as the voltage is changed.
- 
+ and figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:IV-overall"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ However, the increasing voltage will introduce an electric field that will
+ change the polarization of domains, shifting domain walls and reorienting
+ individual dipoles.
+ The polarization shift alters the barrier height of each ferroelectric-dipole.
+ Depending on the various materials chosen and device properties, this will
+ cause particular junctions to transition back and forth between Ohmic-
+ and Schottky-like behaviors.
+ The shifting of domains and barrier height can be measured though techniques
+ like Piezoresponse force microscopy (PFM)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kalinin2018surfacescreening"
+literal "false"
+
+\end_inset
+
+, X-Ray Photoelectron Spectroscopy (XPS)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "apostol2015band"
+literal "false"
+
+\end_inset
+
+, and indirectly though analysis of the 
+\begin_inset Formula $I$
+\end_inset
+
+-
+\begin_inset Formula $V$
+\end_inset
+
+ behavior
+\begin_inset CommandInset citation
+LatexCommand cite
+key "borkar2017experimental"
+literal "false"
+
+\end_inset
+
+.
+ Decreasing the voltage across the channel may cause the domains to rapidly
+ shift back to their previous orientation, or if the shift of the barrier
+ is stable, to create a hysteresis in the current across the channel dependent
+ on the previous voltages.
+ Increasing and decreasing the voltage in the opposite direction causes
+ similar reorientation of the dipoles, and a second hysteresis.
+ The polarization from the initial sweep may prevent the hysteresis from
+ forming until the field across the channel nears the coercive field of
+ the ferroelectric.
+ The complexity of the various parameters: metal work function, ferroelectric
+ electron affinity, depletion width, ferroelectric polarization, coercive
+ field, carrier density, etcetera; prevent a single, easy description of
+ the hysteresis in the current that forms as the voltage as swept.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:FES-channel-hysteresis"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ shows several possible hysteresis loops as the current as swept, following
+ the naming convention from Chen et al.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "chen2020couplings"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset Graphics
+	filename Ferroelectrics-Figures/FES-channel C-CC.svg
+	width 5cm
+	groupId FES-channel-hysteresis
+
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Clockwise-counterclockwise
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset Graphics
+	filename Ferroelectrics-Figures/FES-channel CC-C.svg
+	width 5cm
+	groupId FES-channel-hysteresis
+
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Counterclockwise-Clockwise
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset Graphics
+	filename Ferroelectrics-Figures/FES-channel CC-CC.svg
+	width 5cm
+	groupId FES-channel-hysteresis
+
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Counterclockwise-counterclockwise
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset Graphics
+	filename Ferroelectrics-Figures/FES-channel C-C.svg
+	width 5cm
+	groupId FES-channel-hysteresis
+
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Clockwise-clockwise
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Ferroelectric semiconductor channel hysteresis loops
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:FES-channel-hysteresis"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Schematic of four of the different possible current hysteresis loops seen
+ in a ferroelectric semiconductor channel device.
+ The barrier height of each contact, coercive field, polarization, charge
+ density, contact dimensions, and other device properties determine the
+ general shape of the loops formed.
+ Most real devices will appear more complicated than these examples, and
+ possibly be asymmetric or have other features that further distort the
+ behavior of current from these examples.
+ Adapted with permission from Chen et al.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "chen2020couplings"
+literal "false"
+
+\end_inset
+
+.
+ Copyright 2020 WILEY-VCH Verlag GmbH & Co.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body

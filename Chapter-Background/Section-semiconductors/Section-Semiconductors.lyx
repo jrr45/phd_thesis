@@ -1377,7 +1377,7 @@ Electron scattering off impurities
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -1564,7 +1564,7 @@ literal "true"
 Schottky barriers and metal-semiconductor-metal conduction
 \begin_inset CommandInset label
 LatexCommand label
-name "sec:Metal-Semiconductor-Metal-conduc"
+name "sec:Metal-Semiconductor-Metal-conduction"
 
 \end_inset
 
@@ -1735,8 +1735,8 @@ name "energy barrier"
 \begin_inset Formula 
 \begin{equation}
 \begin{cases}
-q\phi_{B,n}=q\phi_{M}-q\chi_{S} & n-type\\
-q\phi_{B,p}=E_{g}-\left(q\phi_{M}-q\chi_{S}\right) & p-type
+q\phi_{Bn}=q\phi_{M}-q\chi_{S} & n-type\\
+q\phi_{Bp}=E_{g}-\left(q\phi_{M}-q\chi_{S}\right) & p-type
 \end{cases}
 \end{equation}
 
@@ -1797,6 +1797,7 @@ literal "true"
 \begin_layout Standard
 \noindent
 \begin_inset Float figure
+placement h
 wide false
 sideways false
 status open
@@ -2082,28 +2083,27 @@ name "current density"
  is given by
 \begin_inset Formula 
 \begin{align}
-J & =J_{0}\left(\exp\left(\frac{qV}{k_{B}T}\right)-1\right),\\
-J_{0} & =A^{**}T^{2}\exp\left(-\frac{q\Phi_{B}}{k_{B}T}\right)
+J & =A^{**}T^{2}\exp\left(-\frac{q\Phi_{B}}{k_{B}T}-\frac{q}{k_{B}T}\sqrt{\frac{q\mathcal{E}_{m}}{4\pi\epsilon_{0}\epsilon_{r}}}\right)\label{eq:Schottky-barrier}\\
+ & =J_{0}\left[\exp\left(\frac{qV}{k_{B}T}\right)-1\right]\\
+J_{0} & =A^{**}T^{2}\exp\left(-\frac{q\phi_{Bn}}{k_{B}T}\right)\\
+A^{**} & =\frac{4\pi qk^{2}m^{*}}{h^{3}}=\frac{120m^{*}}{m_{0}}
 \end{align}
 
 \end_inset
 
-where 
-\begin_inset Formula $J_{0}$
-\end_inset
 
- is the saturation current density
-\begin_inset CommandInset label
-LatexCommand label
-name "saturation current density"
-
-\end_inset
-
-, 
 \begin_inset Formula $q$
 \end_inset
 
- the fundamental charge, and 
+ the fundamental charge, 
+\begin_inset Formula $J_{0}$
+\end_inset
+
+ the saturation current, 
+\begin_inset Formula $\mathcal{E}_{m}$
+\end_inset
+
+ the maximum electric field at the interface, 
 \begin_inset Formula $A^{**}$
 \end_inset
 
@@ -2114,10 +2114,46 @@ name "Richardson"
 
 \end_inset
 
- the Richardson constant
+ the Richardson constant, 
+\begin_inset Formula $m^{*}$
+\end_inset
+
+ the effective electron mass, 
+\begin_inset Formula $m_{0}$
+\end_inset
+
+ the free electron mass, and 
+\begin_inset Formula $h$
+\end_inset
+
+ 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "elhadidy2011symmetrical,osvald2015backtoback,nouchi2014extraction"
+key "elhadidy2011symmetrical,osvald2015backtoback,nouchi2014extraction,sze2012semiconductor"
+literal "false"
+
+\end_inset
+
+.
+ There is some dispute if the 
+\begin_inset Formula $\epsilon_{r}$
+\end_inset
+
+ in equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Schottky-barrier"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ should be taken at low or optical frequencies, and attempts have been made
+ to address this discrepency
+\begin_inset CommandInset citation
+LatexCommand cite
+key "lau2012extended"
 literal "false"
 
 \end_inset
@@ -2278,8 +2314,46 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
+Simmons demonstrated that the Schottky equation was no long valid when the
+ dielectric material between two contacts was below the mean free path of
+ the carriers traveling through the dielectric
+\begin_inset CommandInset citation
+LatexCommand cite
+key "simmons1965richardsonschottky"
+literal "true"
+
+\end_inset
+
+.
+ Carrier movement in this instance may be described as an interface controlled
+ injection then a low mobility drift through the crystal.
+ The Schottky-Richardson-Simmons equation is
+\begin_inset Formula 
+\begin{align}
+J & =2q\left(\frac{2\pi m_{0}k_{B}}{h^{2}}\right)^{3/2}T^{3/2}\mathcal{E}_{m}\mu\left(\frac{m^{*}}{m_{0}}\right)\exp\left(-\frac{q\Phi_{B}}{k_{B}T}-\frac{q}{k_{B}T}\sqrt{\frac{q\mathcal{E}_{m}}{4\pi\epsilon_{0}\epsilon_{r}}}\right)\label{eq:Schotty-Simmons}\\
+ & =\alpha^{*}T^{3/2}\mathcal{E}_{m}\mu\left(\frac{m^{*}}{m_{0}}\right)\exp\left(-\frac{q\Phi_{B}}{k_{B}T}-\frac{q}{k_{B}T}\sqrt{\frac{q\mathcal{E}_{m}}{4\pi\epsilon_{0}\epsilon_{r}}}\right)\\
+\alpha^{*} & =2q\left(\frac{2\pi m_{0}k_{B}}{h^{2}}\right)^{3/2}
+\end{align}
+
+\end_inset
+
+where 
+\begin_inset Formula $\mu$
+\end_inset
+
+ the mobility in the crystal.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "pintilie2007ferroelectric,simmons1965richardsonschottky"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
-placement h
 wide false
 sideways false
 status open
@@ -2289,7 +2363,7 @@ status open
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -2331,7 +2405,7 @@ name "fig:IV Ohmic,-linear-scale"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -3795,7 +3869,7 @@ Extrinsic traps originate from sources external to the semiconductor, such
  This can form Schottky barriers, as discussed in section 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "sec:Metal-Semiconductor-Metal-conduc"
+reference "sec:Metal-Semiconductor-Metal-conduction"
 plural "false"
 caps "false"
 noprefix "false"

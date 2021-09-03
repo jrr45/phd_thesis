@@ -11,7 +11,7 @@ Ferroelectric field effect transistors (FeFETs, see \ref{subsec:FeFETs})
 are a natural evolution to field effect transistors (FET), providing
 a means of maintaining the transistor state without the need for a
 constant gate voltage. Typically this is achieved as a standard FET
-with a ferroelectric replacing gate dielectric.\citep{dunkel2017afefet,si2018ferroelectric}
+with a ferroelectric replacing gate dielectric.\citep{si2018ferroelectric,dunkel2017fefet}
 Further engineering for use in devices like ferroelectric random access
 memory add a metal layer in between the ferroelectric and channel
 to enhance the field, and adapt the FinFET design to utilize this
@@ -39,13 +39,13 @@ though the material. In lieu of those measurements many distinct experiments
 form a pool of evidence for the existence of ferroelectricity in $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$.
 Second harmonic generation (SHG) shows a breaking of inversion symmetry\citep{dai2020intrinsic,xiao2018intrinsic,zhou2017outofplane},
 a necessary requirement for ferroelectricity. Piezoelectric force
-microscopy (PFM) has also shown evidence supporting ferroelectricity\citep{cui2018intercorrelated,wan2018roomtemperature,hou2019alphaintextrm2setextrm3,hou2019resistive,dai2020intrinsic},
+microscopy (PFM) has also shown evidence supporting ferroelectricity\citep{cui2018intercorrelated,wan2018roomtemperature,hou2019resistive,dai2020intrinsic,hou2019ain2se3},
 though PFM can often give false positives as similar responses arise
 from other phenomena.\citep{vasudevan2017ferroelectric} To counter
-this some authors have looked at both IP and OOP PFM response correlation\citep{hou2019alphaintextrm2setextrm3,dai2020intrinsic,hou2019resistive,xiao2018intrinsic,cui2018intercorrelated,liu2019atomically},
+this some authors have looked at both IP and OOP PFM response correlation\citep{dai2020intrinsic,hou2019resistive,xiao2018intrinsic,cui2018intercorrelated,liu2019atomically,hou2019ain2se3},
 as well as observing the effect IP electric fields to alter the OOP
-polarization measured by PFM\citep{hou2019alphaintextrm2setextrm3},
-narrowing the possibilities of what may be producing false positives.
+polarization measured by PFM\citep{hou2019ain2se3}, narrowing the
+possibilities of what may be producing false positives.
 
 The largest experimental verification of ferroelectricity in $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$
 comes from several disparate devices designs that show signs of polarization.
@@ -156,24 +156,24 @@ Flakes of crystal were made into four-point probe and Hall bar FET
 devices using photolithography and e-beam metal deposition. Similar
 to many other van der Waals chalcogenide materials, $\textrm{In}_{2}\textrm{Se}_{3}$
 is sensitive to the alkali (base) developers used in many photodevelopment
-processes.\citep{choi2011su8protective,choi2008aprotective} Initial
-Hall bar devices with thinner crystal flakes were completely inoperative
-after manufacture, while thicker devices showed substantial Schottky
-barriers on various contacts. Milling away crystal material between
-the lithography and metal evaporation produced better contacts, but
-inconstantly, and only worked with thicker devices. To circumvent
-this effect, we modified our lithography step to only allow solvent
-developers in contact with the flake material, with the procedure
-described in section \ref{subsec:PMMA+PMGI+SPR}. 5 nm of titanium
-and 45 nm of gold was evaporated using either a Lab-18 Thin Film Deposition
-System (Kurt J. Lesker Co.) or a Temescale FC2000 (Ferrotec). The
-excess material was removed using the solvent Remover-PG (Microchem).
-Figure \ref{fig:In2Se3-Device-images} shows the layout and optical
-images of the devices measured in this chapter, table \ref{tab:In2Se3-Device-parameters}
-the corresponding parameters of those devices. All measurements were
-carried out in low vacuum, less than 1 mTorr, in a Model 6000 Physical
-Properties Measurement System (PPMS, Quantum Design). A Keithley 6340
-was used as the current and voltage bias source as well as the corresponding
+processes.\citep{choi2011su8,choi2008protective} Initial Hall bar
+devices with thinner crystal flakes were completely inoperative after
+manufacture, while thicker devices showed substantial Schottky barriers
+on various contacts. Milling away crystal material between the lithography
+and metal evaporation produced better contacts, but inconstantly,
+and only worked with thicker devices. To circumvent this effect, we
+modified our lithography step to only allow solvent developers in
+contact with the flake material, with the procedure described in section
+\ref{subsec:PMMA+PMGI+SPR}. 5 nm of titanium and 45 nm of gold was
+evaporated using either a Lab-18 Thin Film Deposition System (Kurt
+J. Lesker Co.) or a Temescale FC2000 (Ferrotec). The excess material
+was removed using the solvent Remover-PG (Microchem). Figure \ref{fig:In2Se3-Device-images}
+shows the layout and optical images of the devices measured in this
+chapter, table \ref{tab:In2Se3-Device-parameters} the corresponding
+parameters of those devices. All measurements were carried out in
+low vacuum, less than 1 mTorr, in a Model 6000 Physical Properties
+Measurement System (PPMS, Quantum Design). A Keithley 6340 was used
+as the current and voltage bias source as well as the corresponding
 two-point voltage and current measurements, two Keithley 2182A were
 used for four-point and hall measurements across the voltage leads,
 and a Keithley 2400 was used to provide the gate voltage bias.
@@ -236,7 +236,7 @@ $V_{DS}$ bias for fixed gate voltages, figures \ref{fig:Sample-B-IDvsVDS-log}
 and \ref{fig:Sample-C-IDvsVDS-log}. None of the samples measured
 were seen to saturate within $\pm10$ V for any gate bias. The lower
 $I_{D}$ for negative $V_{DS}$ bias than positive is typical of n-type
-semiconductors, which is seen in most reports of $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$\citep{island2015gatecontrolled,1986electrical}.
+semiconductors, which is seen in most reports of $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$\citep{island2015gate,julien1986electrical}.
 Sample A $V_{DS}$ was cycled from 0 V, 10 V, -10V, to 0 V, forming
 asymmetric hysteresis in the current. The switching behavior is similar
 to previous reports of $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$
@@ -245,7 +245,7 @@ thought to modify the Schottky barrier between the material and the
 metal leads.\citep{yang2019nonvolatile,wan2018roomtemperature,cui2018intercorrelated,dai2020intrinsic}
 The increasing drain current with positive gate voltages is indiciative
 of a $n$-type semiconductor\citep{horowitz2015art}, consistent with
-previous measurements on $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$\citep{julien1986electrical,island2015gatecontrolled}.
+previous measurements on $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$\citep{julien1986electrical,island2015gate}.
 
 \noindent 
 \begin{figure}
@@ -380,7 +380,7 @@ which is consistent with what we observed.
 (a) The magnetoconductance of sample A taken at 1.8, 10 and 50 K.
 The data was symmetrized to remove odd-term magnetic field dependence,
 and normalized to the difference from the measured value at zero-field.
-The fitting parameters are given in table \pageref{tab:Sample-A:-magnetoconductance},
+The fitting parameters are given in table \ref{tab:Sample-A:-magnetoconductance},
 showing a better fit at lower temperatures. (b) Sample D carrier density
 at various temperatures, the inset shows the hall data used the the
 carrier density calculations.
@@ -409,7 +409,7 @@ The $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$ sample hysteresis
 is likely from combination of charge trapping and the ferroelectric
 nature of the material. In FeFETs both charge trapping and polarization
 switching can display similar hysteresis behaviors, and care must
-be taken when determining the explanation of that hysteresis\citep{kokil2012techniques,osullivan2020defectprofiling,jung2020impactof,yurchuk2016chargetrapping},
+be taken when determining the explanation of that hysteresis\citep{kokil2012techniques,yurchuk2016chargetrapping,osullivan2020defect,jung2020impact},
 especially with DC measurements. As almost all MOSFET devices show
 evidence of charge trapping, even in the long-studied and optimized
 Si-$\mathrm{SiO_{2}}$ interface, we can assume it plays some role
@@ -417,21 +417,20 @@ in our devices. Additionally, the reported devices were manufactured
 within air, adding increased interface contamination from water and
 air\citep{datye2018reduction,bartolomeo2017hysteresis,kim2018analysis}.
 In FETs we expect to see a reduction in charge trapping hysteresis
-in $I_{D}$-$V_{G}$ sweeps with decreasing temperature\citep{guo2015chargetrapping,datye2018reduction,kim2018analysis,park2021interface,bartolomeo2017hysteresis},
+in $I_{D}$-$V_{G}$ sweeps with decreasing temperature\citep{datye2018reduction,kim2018analysis,park2021interface,bartolomeo2017hysteresis,guo2015charge},
 though the effects of charge traps can still be seen even down to
-cryogenic temperatures\citep{powell1983chargetrapping,liu2021cryogenic,beckers2020physical,park2021interface,beckers2018cryogenic}.
+cryogenic temperatures\citep{liu2021cryogenic,beckers2020physical,park2021interface,beckers2018cryogenic,powell1983charge}.
 All of the reported devices showed a similar reduction in the size
 of the hysteresis gate voltage widths with decreasing temperature,
 shown in figure \ref{fig:dVG-vs-T} for various currents. In FeFET
 devices we would expect an increasing hysteresis window at lower temperature
-from the suppressed charge trapping effects\citep{wang2020cryogenic,ni2018critical,ali2020astudy},
-reduced domain wall motion\citep{tan2020hotelectrons}, or a change
-in polarization and coercive fields\citep{ali2020astudy}. As the
-role of ferroelectricity in the semiconductor and dielectric are the
-switched in a FeSmFET verses a traditional FeFET, the interactions
-between charge traps dipoles are not the same as in a traditional
-FeFET. More work is needed to quantify the agency of the hysteresis
-behavior.
+from the suppressed charge trapping effects\citep{wang2020cryogenic,ni2018critical,ali2020study},
+reduced domain wall motion\citep{tan2020hot}, or a change in polarization
+and coercive fields\citep{ali2020study}. As the role of ferroelectricity
+in the semiconductor and dielectric are the switched in a FeSmFET
+verses a traditional FeFET, the interactions between charge traps
+dipoles are not the same as in a traditional FeFET. More work is needed
+to quantify the agency of the hysteresis behavior.
 
 The mechanism responsible for the $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$
 metallic state has many possible explanations. The origin metal-insulator-transitions
@@ -449,7 +448,7 @@ In a 2D semiconductor a small change in carrier density leads to a
 large change in screening, and at low carrier density and screening
 the disorder of the system has a significant impact on the carrier
 conduction. Theoretical predictions also have suggested disorder from
-charge trapping may also display a metal-to-insulator (MIT) in MOSFETs\citep{brunthaler2007trapmodel,altshuler1999theoryof,hormann2010dipoletrap}.
+charge trapping may also display a metal-to-insulator (MIT) in MOSFETs\citep{brunthaler2007trap,altshuler1999theory,hormann2010dipole}.
 See section \ref{subsec:Localization} for a more thorough description
 of the aforementioned MITs. From the $I_{D}$-$V_{DS}$ in plane current
 sweep hysteresis, typically attributed to domain switching in $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$
@@ -458,8 +457,8 @@ crystal likely plays some role in or interacts with the origin of
 the observed metallic state. However, neither the mechanisms for conductivity
 in ferroelectric semiconductors<TODO:refs> or the dynamics polarization
 will play in a FET configuration<TODO:refs> are well understood. Additionally,
-with only one experimentally verified ferroelectric metal\citep{zhou2020reviewon},
-demonstrated very recently\citep{sharma2019aroomtemperature,fei2018ferroelectric},
+with only one experimentally verified ferroelectric metal\citep{zhou2020review},
+demonstrated very recently\citep{fei2018ferroelectric,sharma2019roomtemperature},
 there has been little study of polarization switching behaviors in
 actual ferroelectric metals. FeSmFETs, along with FeFETs\citep{lu2018electrically},
 may provide us with a new avenue to understand MITs using ferroelectric
@@ -477,7 +476,16 @@ discussion on ferroelectric channels/semiconductors first.
 
 TODO: include trapped charge calculation assuming no FE?
 
+TODO: \citep{hu2021firstprinciples}
+
 \section{Future work (TODO)}
+\begin{itemize}
+\item simulations: In2Se3 has dipole locking. FeSmFETs have not been studied.
+Narrow bandgap semiconductor domains
+\item PFM measurements showing domain motion during gating, MIT
+\item Domain wall conductivity
+\item effects of encapsulation on MIT
+\end{itemize}
 
 \section{Conclusion (TODO)}
 
