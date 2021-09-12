@@ -109,7 +109,57 @@ name "chapter:FeSm-FET"
 \end_layout
 
 \begin_layout Standard
-<TODO abstract>
+Ferroelectrics, already ubiquitous in many modern applications, have the
+ potential to enable fast and low power persistent memory devices.
+ The recent demonstration of a ferroelectric-semiconductor ferroelectric
+ field effect transistor (FeSmFETs) by Si et al.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "si2019ferroelectric"
+literal "false"
+
+\end_inset
+
+ has given us a novel method to induce persistent states in a field effect
+ transistor channel.
+ This behavior in part, is enabled by the coupled in-plane and out-of-plane
+ polarization of 
+\begin_inset Formula $\ensuremath{\alpha}\textrm{-In}_{2}\textrm{Se}_{3}$
+\end_inset
+
+, a relatively unique property among ferroelectrics.
+ Before FeSmFETs can be used in commercial devices we must establish the
+ impact of changing conditions, such as device temperature, have on the
+ 
+\begin_inset Formula $\ensuremath{\alpha}\textrm{-In}_{2}\textrm{Se}_{3}$
+\end_inset
+
+ polarization, persistent states, and overall device behavior.
+ Here we report evidence for the a metallic state formed by an electric
+ field in 
+\begin_inset Formula $\ensuremath{\alpha}\textrm{-In}_{2}\textrm{Se}_{3}$
+\end_inset
+
+ FeSmFETs, measured from room to liquid helium temperatures.
+ Our devices display clear evidence that the polarization alters the current,
+ however, the emergence of the metallic behavior is more consistent with
+ a disorder-driven transition in the 
+\begin_inset Formula $\ensuremath{\alpha}\textrm{-In}_{2}\textrm{Se}_{3}$
+\end_inset
+
+.
+ Ferroelectrics are typically thought of as insulators or wide-band gap
+ semiconductors, with a few recent reports that 
+\begin_inset Formula $\mathrm{WTe_{2}}$
+\end_inset
+
+ is the first ferroelectric metal.
+ A metallic state in a ferroelectric semiconductor may be an alternative
+ path to understand the coupling of bound and itinerant electrons in a ferroelec
+tric and polar metals.
+ Additionally, we confirm of the feasibility of FeSmFET devices as an alternativ
+e to traditional ferroelectric field effect transistors.
+ 
 \end_layout
 
 \begin_layout Section
@@ -131,7 +181,7 @@ noprefix "false"
  means of maintaining the transistor state without the need for a constant
  gate voltage.
  Typically this is achieved as a standard FET with a ferroelectric replacing
- gate dielectric.
+ gate dielectric
 \begin_inset CommandInset citation
 LatexCommand cite
 key "si2018ferroelectric,dunkel2017fefet"
@@ -139,9 +189,10 @@ literal "true"
 
 \end_inset
 
+.
  Further engineering for use in devices like ferroelectric random access
  memory add a metal layer in between the ferroelectric and channel to enhance
- the field, and adapt the FinFET design to utilize this design.
+ the field, and adapt the FinFET design to utilize this design
 \begin_inset CommandInset citation
 LatexCommand cite
 key "khan2020future"
@@ -149,10 +200,11 @@ literal "true"
 
 \end_inset
 
+.
  FeFET commercialization, in FRAM and beyond, still faces many engineering
  challenges including retention duration, finding an optimal coercive field
  and polarization strength, leakage current through the ferroelectric dielectric
-, material interface mismatches, limits to minimization of the ferroelectric.
+, material interface mismatches, limits to minimization of the ferroelectric
 \begin_inset CommandInset citation
 LatexCommand cite
 key "ma2002why,khan2020future"
@@ -160,18 +212,12 @@ literal "true"
 
 \end_inset
 
- With the discovery of conductive ferroelectric compounds, see 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "subsec:Polar-metals"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-, we can construct a new variation of the FeFET, where the ferroelectric
- acts the role of the semiconductor device channel.
+.
+ With the use of conductive ferroelectric compounds, we can construct a
+ new variation of the FeFET, where the ferroelectric acts the role of the
+ semiconductor device channel.
+ Si.
+ et al.
 \begin_inset CommandInset citation
 LatexCommand cite
 key "si2018ferroelectric"
@@ -179,9 +225,12 @@ literal "true"
 
 \end_inset
 
- Ferroelectric semiconductor field effect transistors (FeSmFETs) opens up
- many new possibilities for future devices and may one day answer the aforementi
-oned obstacles.
+ constructed the first of these ferroelectric-semiconductor field effect
+ transistors (FeSmFETs or FeSFETs) which may one day address the aforementioned
+ obstacles.
+ FeSmFETs allow a wide range of stable states that are of interest for neuromorp
+hic computing and opens up many new possibilities for future devices.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -193,7 +242,8 @@ In 2017
 \begin_inset Formula $\textrm{\ensuremath{\beta}-In}_{2}\textrm{Se}_{3}$
 \end_inset
 
- were first predicted to be ferroelectric down to one unit cell.
+ were first predicted to be ferroelectric down to one unit cell by Ding
+ et al.
 \begin_inset CommandInset citation
 LatexCommand cite
 key "ding2017prediction"
@@ -201,27 +251,54 @@ literal "true"
 
 \end_inset
 
+.
  The 
 \begin_inset Formula $\textrm{\ensuremath{\alpha}-}$
 \end_inset
 
-phase prediction indicated a combined binary in-plane (IP) and out-of-plane
- (OOP) polarization as the selenium atom shifted in the lattice, while the
+phase prediction, for both the 2H and 3R polytypes, indicated a combined
+ binary in-plane (IP) and out-of-plane (OOP) polarization as the selenium
+ atom shifted in the lattice.
+ This feature is rather unique among known ferroelectrics, and may allow
+ the OOP polarization to persist down to a single unit cell.
  
 \begin_inset Formula $\textrm{\ensuremath{\beta}-}$
 \end_inset
 
-phase showed only binary IP polarization.
- Due to the conductive nature of polar metals it is difficult to preform
- traditional capacitance-polarization methods on a crystal as much of the
- capacitance voltage simply leaks though the material.
- In lieu of those measurements many distinct experiments form a pool of
- evidence for the existence of ferroelectricity in 
-\begin_inset Formula $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$
+phase was also predicted to show binary IP polarization, though the ferroelectri
+c phase may be better known as the 
+\begin_inset Formula $\beta^{\prime}$
+\end_inset
+
+-phase, see the discussion in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:In2Se3-polymorphs-in-lit"
+plural "false"
+caps "false"
+noprefix "false"
+
 \end_inset
 
 .
- Second harmonic generation (SHG) shows a breaking of inversion symmetry
+ Typically, in insulating ferroelectrics, a capacitor is made with the ferroelec
+tric to measure polarization switching.
+ By applying a voltage wave and measuring the current over time we can see
+ the charge on the capacitor for a given electric field.
+ Due to the nature of ferroelectric semiconductors, current conducts through
+ the material before, during, and after the polarization switching in such
+ a measurement.
+ In lieu of the capacitor measurements on 
+\begin_inset Formula $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$
+\end_inset
+
+, many disparate experiments form a pool of evidence for the existence of
+ ferroelectricity.
+ Second harmonic generation (SHG) measurements of 
+\begin_inset Formula $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$
+\end_inset
+
+ show breaking of inversion symmetry
 \begin_inset CommandInset citation
 LatexCommand cite
 key "dai2020intrinsic,xiao2018intrinsic,zhou2017outofplane"
@@ -231,7 +308,7 @@ literal "true"
 
 , a necessary requirement for ferroelectricity.
  Piezoelectric force microscopy (PFM) has also shown evidence supporting
- ferroelectricity
+ ferroelectricity though the hysteresis loops and remnant polarized domains
 \begin_inset CommandInset citation
 LatexCommand cite
 key "cui2018intercorrelated,wan2018roomtemperature,hou2019resistive,dai2020intrinsic,hou2019ain2se3"
@@ -239,8 +316,8 @@ literal "true"
 
 \end_inset
 
-, though PFM can often give false positives as similar responses arise from
- other phenomena.
+, but PFM can often give false positives as similar responses arise from
+ other phenomena
 \begin_inset CommandInset citation
 LatexCommand cite
 key "vasudevan2017ferroelectric"
@@ -248,8 +325,9 @@ literal "false"
 
 \end_inset
 
- To counter this some authors have looked at both IP and OOP PFM response
- correlation
+.
+ To counter this, some authors have looked at the correlation between IP
+ and OOP PFM responses
 \begin_inset CommandInset citation
 LatexCommand cite
 key "dai2020intrinsic,hou2019resistive,xiao2018intrinsic,cui2018intercorrelated,liu2019atomically,hou2019ain2se3"
@@ -257,8 +335,8 @@ literal "false"
 
 \end_inset
 
-, as well as observing the effect IP electric fields to alter the OOP polarizati
-on measured by PFM
+, as well as observing IP electric fields altering the OOP polarization
+ measured by PFM
 \begin_inset CommandInset citation
 LatexCommand cite
 key "hou2019ain2se3"
@@ -266,27 +344,18 @@ literal "false"
 
 \end_inset
 
-, narrowing the possibilities of what may be producing false positives.
+.
+ Both methods reducing the possibilities of what may be producing false
+ positives.
 \end_layout
 
 \begin_layout Standard
-The largest experimental verification of ferroelectricity in 
+The most compelling experimental verification of ferroelectricity in 
 \begin_inset Formula $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$
 \end_inset
 
- comes from several disparate devices designs that show signs of polarization.
- The most explicit example was from an 
-\begin_inset Formula $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$
-\end_inset
-
-/graphene heterostructure FET.
- The graphene channel fermi-level shifts from the electric field produced
- by the FET gate and the 
-\begin_inset Formula $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$
-\end_inset
-
- polarization, forming two peaks in the channel resistance as gate voltage
- is swept and the fermi-level passes though the charge neutral point.
+ comes from several distinct devices that show signs of polarization.
+ The first by Wan et al.
 \begin_inset CommandInset citation
 LatexCommand cite
 key "wan2019nonvolatile"
@@ -294,6 +363,19 @@ literal "false"
 
 \end_inset
 
+, an 
+\begin_inset Formula $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$
+\end_inset
+
+/graphene heterostructure FET.
+ The FET gate electric field produced and the 
+\begin_inset Formula $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$
+\end_inset
+
+ polarization shifted the graphene channel fermi-level relative to the charge
+ neutral point.
+ This formed two peaks in the channel resistance as gate voltage was swept
+ and the fermi-level passes though the charge neutral point.
  The authors use this to estimate a polarization value of 0.92 
 \begin_inset Formula $\mathrm{\mu C/cm^{2}}$
 \end_inset
@@ -340,19 +422,27 @@ literal "false"
  semiconductor channel.
  Above the threshold voltage the device current shows a significant change
  in slope, and a large hysteresis between increasing and decreasing voltage
- sweeps, see figure 
+ sweeps.
+ The switching behavior is discussed more in section 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:In2Se3-SampleA-I_DSvV_DS"
+reference "subsec:FeS-channel"
 plural "false"
 caps "false"
 noprefix "false"
 
 \end_inset
 
-c and f.
- Finally, the recent pioneering of the first FeSmFET using thin crystals
- of
+.
+ Finally, Si et al.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "si2019ferroelectric"
+literal "false"
+
+\end_inset
+
+ reported the first FeSmFET using thin crystals of
 \begin_inset Formula $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$
 \end_inset
 
@@ -368,14 +458,7 @@ c and f.
  When gated, the channel current showed a large hysteresis, forming clockwise
  and counterclockwise loops with the respective gate dielectric, and persisting
  down to liquid helium temperatures.
-\begin_inset CommandInset citation
-LatexCommand cite
-key "si2019ferroelectric"
-literal "false"
-
-\end_inset
-
- Below we discuss the manufacture and measurement of similar 
+ Below, we detail the manufacture and measurement of similar 
 \begin_inset Formula $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$
 \end_inset
 
@@ -432,9 +515,9 @@ noprefix "false"
 
 .
  Flakes were identified using an optical microscope and atomic force microscopy
- was used to establish a rough microscope color code to judge the thickness
+ was used to establish a rough optical color code to judge the thickness
  of the flakes.
- Below 20nm, flakes hue was unchanged but appeared increasingly transparent
+ Below 20nm, flakes hue remained blue but appeared increasingly transparent
  as thickness decreased.
  To promote better van der Walls adhesion of the flake to the substrate,
  the latter was first cleaned in Nanostrip, Acetone, 2-Proponal, and DI-water,
@@ -1122,8 +1205,8 @@ Optical characterization of the
 
 \begin_layout Standard
 Indium and selenium can form a variety of compounds, and the growth process
- is complicated and may result in crystals with mixed polymorphs, see section
- 
+ is complicated and may result in crystals with mixed polymorphs, discussed
+ in depth in section 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "subsec:In-Se-compounds"
@@ -1134,13 +1217,6 @@ noprefix "false"
 \end_inset
 
 .
-\begin_inset CommandInset citation
-LatexCommand cite
-key "liu2019atomically"
-literal "true"
-
-\end_inset
-
  Because of this, several optical measurements were used to confirm the
  stoichiometry and lattice stacking of the material used in our devices.
  X-Ray diffraction measurements displayed peaks corresponding to the 
@@ -1209,7 +1285,7 @@ literal "true"
 \begin_inset Formula $R3m$
 \end_inset
 
- (166) space group lattice.
+ {number 166} space group lattice
 \begin_inset CommandInset citation
 LatexCommand cite
 key "hou2019resistive,dai2020intrinsic,xiao2018intrinsic"
@@ -1217,6 +1293,7 @@ literal "true"
 
 \end_inset
 
+.
  Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1373,8 +1450,7 @@ name "fig:In2Se3-Optical-measurements"
 \end_layout
 
 \begin_layout Plain Layout
-Raman <TODO peak numbers> (a), photoluminescence (b), and angle-resolved
- SHG (c) of exfoliated 
+Optical measurements of exfoliated 
 \begin_inset Formula $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$
 \end_inset
 
@@ -1382,7 +1458,26 @@ Raman <TODO peak numbers> (a), photoluminescence (b), and angle-resolved
 \begin_inset Formula $\mathrm{SiO_{2}}$
 \end_inset
 
-substrate.
+substrates.
+ Raman (a) displaying peaks near near 104, 179, and 193 
+\begin_inset Formula $cm^{-1}$
+\end_inset
+
+; and photoluminescence (b) with a peak near 1.4 
+\begin_inset Formula $eV$
+\end_inset
+
+ consistent with the two polytypes of 
+\begin_inset Formula $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$
+\end_inset
+
+.
+ Angle-resolved SHG showing a six-fold symmetry (c) showing the material
+ is the 
+\begin_inset Formula $R3m$
+\end_inset
+
+ [3R] polytype.
 \end_layout
 
 \end_inset
@@ -1391,7 +1486,7 @@ substrate.
 \end_layout
 
 \begin_layout Section
-FET measurements
+FET measurements and evidence for a metallic state
 \end_layout
 
 \begin_layout Standard
@@ -1474,16 +1569,20 @@ noprefix "false"
 \end_inset
 
  V for any gate bias.
- The lower 
+ The higher 
 \begin_inset Formula $I_{D}$
 \end_inset
 
- for negative 
+ for positive 
 \begin_inset Formula $V_{DS}$
 \end_inset
 
- bias than positive is typical of n-type semiconductors, which is seen in
- most reports of 
+ bias, compared to the negative 
+\begin_inset Formula $V_{DS}$
+\end_inset
+
+, is typical of n-type semiconductors, which is seen in most reports of
+ 
 \begin_inset Formula $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$
 \end_inset
 
@@ -1506,8 +1605,8 @@ literal "true"
 \begin_inset Formula $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$
 \end_inset
 
- rectifying devices, where the ferroelectric polarization field is thought
- to modify the Schottky barrier between the material and the metal leads.
+ rectifying devices, where the ferroelectric polarization field modifies
+ the Schottky barriers between the material and the metal leads
 \begin_inset CommandInset citation
 LatexCommand cite
 key "yang2019nonvolatile,wan2018roomtemperature,cui2018intercorrelated,dai2020intrinsic"
@@ -1515,7 +1614,8 @@ literal "false"
 
 \end_inset
 
- The increasing drain current with positive gate voltages is indiciative
+.
+ The increasing drain current with positive gate voltages is indicative
  of a 
 \begin_inset Formula $n$
 \end_inset
@@ -1821,7 +1921,11 @@ name "fig:In2Se3-SampleA-I_DSvV_DS"
 \begin_inset Formula $V_{DS}$
 \end_inset
 
- is cycled from 0 V, 10 V, -10 V, to 0 V.
+ is cycled from 
+\begin_inset Formula $0\,V\rightarrow10\,V\rightarrow-10\,V\rightarrow0\,V$
+\end_inset
+
+.
  Measurements (a - c) are taken while 
 \begin_inset Formula $V_{G}$
 \end_inset
@@ -1846,15 +1950,21 @@ FET transistor transfer curves, current as a function of gate voltage
 \end_inset
 
 , were measured for each device.
- All measurements shown were performed with a fixed 
-\begin_inset Formula $V_{DS}=.1V$
-\end_inset
-
-, with the 
+ 
 \begin_inset Formula $V_{G}$
 \end_inset
 
- cycled from 0 V, to -75 V, 75 V, -75 V, to 0 V, shown in figure 
+ was cycled from 
+\begin_inset Formula $0\,V\rightarrow-75\,V\rightarrow75\,V\rightarrow-75\,V\rightarrow0\,V$
+\end_inset
+
+ to examine the hysteresis in the current and gate voltage.
+ For clarity, only the data between 
+\begin_inset Formula $-75\,V\rightarrow75\,V\rightarrow-75\,V$
+\end_inset
+
+ is displayed, as that behavior is persistent across multiple loops.
+ All measurements shown, figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:In2Se3-Sample-A-loops"
@@ -1864,17 +1974,16 @@ noprefix "false"
 
 \end_inset
 
+, were performed with a fixed 
+\begin_inset Formula $V_{DS}=.1\,V$
+\end_inset
+
 .
- For clarity, only the data between -75 V, 75 V, to -75 V is shown, as that
- behavior is persistent across multiple loops.
- The measurement was repeated at various, fixed temperatures from 300 K
- to 2-4 K, the lowest temperature reached is sample dependent due to ice
- blockages in the PPMS cooling.
- For each gate voltage sweep sweep the current formed a clockwise hysteresis
+ The measurement was repeated at various temperatures intervals from 300
+ K to 2-4 K, the lowest temperature reached was sample dependent due to
+ ice blockages forming in the PPMS cyrostat during use.
+ For each gate voltage sweep, the current formed a clockwise hysteresis
  loop.
- In all samples the width of the loop decreased with decreasing temperature,
- though each sample still exhibited a finite hysteresis at the lowest temperatur
-e.
  Samples B and C showed similar clockwise hysteresis behavior, shown in
  
 \begin_inset CommandInset ref
@@ -1909,7 +2018,7 @@ noprefix "false"
 \begin_inset Formula $\textrm{Si}\textrm{O}_{2}$
 \end_inset
 
- FeSmFETs.
+ FeSmFETs
 \begin_inset CommandInset citation
 LatexCommand cite
 key "si2019ferroelectric"
@@ -1917,6 +2026,10 @@ literal "true"
 
 \end_inset
 
+.
+ In all samples the width of the loop decreased with decreasing temperature,
+ though each sample still exhibited a finite hysteresis at the lowest temperatur
+e.
  
 \end_layout
 
@@ -2186,11 +2299,8 @@ name "fig:In2Se3-Sample-A-loops"
 
 \end_layout
 
-\begin_layout Section
-Discussion (TODO: add?, review)
-\end_layout
-
 \begin_layout Standard
+\noindent
 \begin_inset Float figure
 wide false
 sideways false
@@ -2229,10 +2339,6 @@ Bulk:
 
 \end_layout
 
-\end_inset
-
-
-\begin_inset space ~
 \end_inset
 
 
@@ -2323,10 +2429,6 @@ Sample B:
 \end_inset
 
 
-\begin_inset space ~
-\end_inset
-
-
 \begin_inset Float figure
 wide false
 sideways false
@@ -2389,6 +2491,15 @@ name "fig:Temperature-dependence"
 
 \begin_layout Plain Layout
 (a) Bulk crystal resistivity along the c-axis and in-plane.
+ (a inset) fitting to 3D Mott variable range hopping, 
+\begin_inset Formula $T_{0,IP}=588.5\,K$
+\end_inset
+
+ and 
+\begin_inset Formula $T_{0,c-axis}=586.3\,K$
+\end_inset
+
+.
  (b-d) Temperature cross-section of the 
 \begin_inset Formula $I_{D}\left(V_{G}\right)$
 \end_inset
@@ -2459,15 +2570,15 @@ noprefix "false"
 
 a, with variable range hopping conduction appearing below approximately
  40 K.
- In contrast thin gated crystals of 
+ In contrast, thin gated crystals of 
 \begin_inset Formula $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$
 \end_inset
 
-showed a more positive 
+showed a positive 
 \begin_inset Formula $dR/dT$
 \end_inset
 
- slope for increasing positive gate voltages.
+ slope, the slope increasing with increasing-positive gate voltages.
  Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -2530,7 +2641,7 @@ noprefix "false"
 
  is used to examine the metallic transition of the devices as the increased
  conductivity state was quickly destroyed with changing temperatures, and
- was sensitive to the previous state of the system, see figure 
+ was sensitive to the previous state of the system, figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Sample-C-effects-of-warming-cooling"
@@ -2541,44 +2652,375 @@ noprefix "false"
 \end_inset
 
 .
- In all samples the onset of the uptick in conductivity occurs at higher
- voltages as temperatures decrease, leading to a shrinking but finite hysteresis
- loop.
- These behaviors seem to be independent of ramping rate of 
+ In all samples the onset of the uptick in conductivity occurs at lower
+ voltages as temperatures decrease, leading to a shrinking but still finite
+ hysteresis loop.
+ The transport behaviors were independent of the ramping rate of 
 \begin_inset Formula $V_{G}$
 \end_inset
 
- (
+.
+ Figure 
 \begin_inset Formula $\ref{fig:Sample-B-rate-dependance}$
 \end_inset
 
-) and contact resistance does not appear to play a significant role in sample
- resistance (figures 
+ shows the rate dependance at (a) 300 K and (b) 2 K with the rate at which
+ the voltage was steps between measurements increased by roughly an order
+ of magnitude.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR200115_17/JR200115_17_IDvVG-rate_300K_log.svg
+	width 5cm
+	groupId Rate
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+300 K
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR200115_17/JR200115_17_IDvVG-rate_3K_log.svg
+	width 5cm
+	groupId Rate
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+3 K
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sample B: 
+\begin_inset Formula $I_{D}\left(V_{G}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $V_{G}$
+\end_inset
+
+ rate dependence
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Sample-B-rate-dependance"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $I_{D}\left(V_{G}\right)$
+\end_inset
+
+ of sample C taken at (a) 300 K and (b) 3 K.
+ Each curve was taken with 
+\begin_inset Formula $V_{G}$
+\end_inset
+
+ increased and decreased at the indicated rate with 
+\begin_inset Formula $V_{DS}=0.1\,V$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Discussion
+\end_layout
+
+\begin_layout Standard
+The 
+\begin_inset Formula $I_{D}\left(V_{DS}\right)$
+\end_inset
+
+ curves were fit to several different models, shown in figures 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Sample-C-effects-of-warming-cooling"
+reference "fig:Sample-A-IDvsVDS-fit"
 plural "false"
 caps "false"
 noprefix "false"
 
 \end_inset
 
- and 
+-
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Sample-D-contact-resistance"
+reference "fig:Sample-D-IDvsVDS-fit"
 plural "false"
 caps "false"
 noprefix "false"
 
 \end_inset
 
-).
+.
+ All of the samples were first fit for power-law behaviors in different
+ 
+\begin_inset Formula $V_{DS}$
+\end_inset
+
+ regions, examining the linearity in 
+\begin_inset Formula $\ln\left(I_{D}\right)$
+\end_inset
+
+-
+\begin_inset Formula $\ln\left(V_{DS}\right)$
+\end_inset
+
+.
+ The values of the various fit slopes 
+\begin_inset Formula $m$
+\end_inset
+
+ are listed in table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Slope-lnJ-lnV"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ and may indicate a relationship 
+\begin_inset Formula $I_{D}\propto V_{DS}^{m}$
+\end_inset
+
+.
+ Samples A and B showed a more disjointed behavior with positive 
+\begin_inset Formula $V_{DS}$
+\end_inset
+
+, while samples C and D were more consistent between negative and positive
+ 
+\begin_inset Formula $V_{DS}$
+\end_inset
+
+.
+ This may be a result of the reduced thickness of samples A and B.
+ Samples C and D shows an exponent (slope) near 1 for positive 
+\begin_inset Formula $V_{DS}$
+\end_inset
+
+ at lower voltages suggesting quasi-ohmic conduction, then transition to
+ exponents ~0.5 which would better match Schottky-like behavior
+\begin_inset CommandInset citation
+LatexCommand cite
+key "xia2007fieldinduced"
+literal "false"
+
+\end_inset
+
+.
+ The negative 
+\begin_inset Formula $V_{DS}$
+\end_inset
+
+ appears to largely show the same exponent of 1-1.5 throughout the entire
+ range.
+ For positive 
+\begin_inset Formula $V_{DS}$
+\end_inset
+
+ the slopes of samples C and D were near 1 at low voltages which suggests
+ the conduction was quasi-Ohmic in behavior.
+ At higher voltages the slopes dropped to be near 0.5, implying Schottky-like
+ conduction.
+ Examining the samples as 
+\begin_inset Formula $\ln\left(I_{D}\right)$
+\end_inset
+
+-
+\begin_inset Formula $V_{DS}^{1/2}$
+\end_inset
+
+, both display a linear relationship for larger positive voltages, further
+ supporting that this region fits the Schottky model.
+\end_layout
+
+\begin_layout Standard
+Samples A (and B) with positive 
+\begin_inset Formula $V_{DS}$
+\end_inset
+
+ and increasing gate voltage, both show multiple changes in slope.
+ The slope is large (2-5) below ~1.5 V (3 V), decreases until 3 V (6V), then
+ shows a significant uptick as the voltage is further increased.
+ The distance between the center leads used for the source and drain account
+ for the difference between the two samples, making the regions consistent
+ in electric field.
+ This transition can be attributed to the Schottky barriers of the contacts.
+ Sample B has a much wider contact area, around six-fold that of A, which
+ would diminish this effect and likely explains why the transitions are
+ not as pronounced.
+ This switching effect can also be seen in the negative 
+\begin_inset Formula $V_{DS}$
+\end_inset
+
+ for sample A, though not B, likely because of this difference in contact
+ area.
+ Neither sample showed this switching with decreasing gate voltage, which
+ displayed largely quasi-Ohmic current.
+ This switching behavior is likely the result of the 
+\begin_inset Formula $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$
+\end_inset
+
+ polarization altering the size of the Schottky barrier, with the electric
+ field from the increasing gate voltage reseting the polarization and barrier
+ height.
+ Other models are often used to describe the switching behavior in ferroelectric
+ semiconductor tunnels, including Fowler-Nordheim tunneling, space charge
+ limited conduction (SCLC), Poole-Frenkel (PF) emission models
+\begin_inset CommandInset citation
+LatexCommand cite
+key "borkar2017experimental"
+literal "true"
+
+\end_inset
+
+.
+ The former is a contact limited conduction model, the latter two are bulk
+ conduction limited current models.
+ None of the device behaviors fit well to any of these theories, which were
+ ruled out based on their 
+\begin_inset Formula $I_{D}$
+\end_inset
+
+-
+\begin_inset Formula $V_{DS}$
+\end_inset
+
+ relationships.
+ 
+\end_layout
+
+\begin_layout Standard
+The relationship between the polarization and the Schottky barriers is more
+ pronounced when the source-drain voltage is swept continuously between
+ the max positive and negative voltages in sample A.
+ With positive 
+\begin_inset Formula $V_{DS}$
+\end_inset
+
+ there is a large hysteresis in the current that is can be attributed to
+ the polarization, as the effects of traps is unlikely to produce this countercl
+ockwise-counterclockwise behavior.
+ The asymmetry is likely the result of the differing electrode contacts,
+ the asymmetry in contact area can be readily seen in figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:In2Se3-Device-images"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+b.
+ This hysteresis is only present the first time the current is swept 
+\begin_inset Formula $0\,V\rightarrow10\,V\rightarrow0\,V$
+\end_inset
+
+; if the voltage is cycled repeatedly without a negative 
+\begin_inset Formula $V_{DS}$
+\end_inset
+
+ or 
+\begin_inset Formula $V_{G}$
+\end_inset
+
+ change, the loop collapses and the current increase is much smaller, figure
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Sample-A-repeated-sweeps"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
 The magnetoconductance (MC) of sample A displayed weak localization while
- gated into the metallic state at 1.8 K (figure 
+ gated into the metallic state at 1.8, 10, and 50 K, figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Magnetic-field-measurment"
@@ -2588,29 +3030,19 @@ noprefix "false"
 
 \end_inset
 
-d), as well as 10 and 50 K (figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Sample-A:-magnetoconductance-All-K"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-).
+.
  The MC data was quantitatively fit to the Hikami-Larkin-Nagaoka theory
- of 2D weak localization, equation 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:Hikami-Larkin-Nagaoka"
-plural "false"
-caps "false"
-noprefix "false"
+ of 2D weak localization, 
+\begin_inset Formula 
+\begin{align*}
+\sigma\left(B\right)-\sigma\left(0\right)= & \frac{e^{2}}{2\pi^{2}\hbar}\left[\ln\left(\frac{B_{\phi}}{B}\right)-\psi\left(\frac{1}{2}+\frac{B_{\phi}}{B}\right)\right]\\
+ & +\frac{e^{2}}{2\pi^{2}\hbar}\left[\ln\left(\frac{B_{SO}+B_{e}}{B}\right)-\psi\left(\frac{1}{2}+\frac{B_{SO}+B_{e}}{B}\right)\right]\tag{\ref{eq:Hikami-Larkin-Nagaoka}}\\
+ & -\frac{3e^{2}}{2\pi^{2}\hbar}\left[\ln\left(\frac{\frac{4}{3}B_{SO}+B_{\phi}}{B}\right)-\psi\left(\frac{1}{2}+\frac{\frac{4}{3}B_{SO}+B_{\phi}}{B}\right)\right]
+\end{align*}
 
 \end_inset
 
- discussed in section 
+discussed in section 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "subsec:Weak-localization"
@@ -2648,7 +3080,8 @@ noprefix "false"
 
 .
  Sample C shows a small uptick in cross-section resistance near liquid helium
- temperatures, this is likely a result of disorder in the sample C crystal.
+ temperatures, this is also likely a result of disorder in the sample C
+ crystal.
  Weak localization in a 2D system can manifest a non-metallic, negative
  
 \begin_inset Formula $dR/dT$
@@ -3054,14 +3487,14 @@ The
 \begin_inset Formula $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$
 \end_inset
 
- sample hysteresis is likely from combination of charge trapping and the
- ferroelectric nature of the material.
+ sample hysteresis is from a combination of charge trapping and the ferroelectri
+c polarization of the material.
  In FeFETs both charge trapping and polarization switching can display similar
  hysteresis behaviors, and care must be taken when determining the explanation
- of that hysteresis
+ of drain current hysteresis
 \begin_inset CommandInset citation
 LatexCommand cite
-key "kokil2012techniques,yurchuk2016chargetrapping,osullivan2020defect,jung2020impact"
+key "kokil2012techniques,yurchuk2016chargetrapping,osullivan2020defect,jung2020impact,fan2017ferroelectric"
 literal "false"
 
 \end_inset
@@ -3074,7 +3507,7 @@ literal "false"
 
  interface, we can assume it plays some role in our devices.
  Additionally, the reported devices were manufactured within air, adding
- increased interface contamination from water and air
+ increased interface contamination from water, oxygen, and air particles
 \begin_inset CommandInset citation
 LatexCommand cite
 key "datye2018reduction,bartolomeo2017hysteresis,kim2018analysis"
@@ -3109,19 +3542,30 @@ literal "false"
 \end_inset
 
 .
- All of the reported devices showed a similar reduction in the size of the
- hysteresis gate voltage widths with decreasing temperature, shown in figure
- 
+ All of the reported devices here showed a similar reduction in the size
+ of the hysteresis gate voltage widths with decreasing temperature.
+ This can be seen in the width of the threshold voltage hysteresis and the
+ difference in gate voltages for larger currents, figures 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:dVG-vs-T"
+reference "fig:dVG-vs-T-threshold-V"
 plural "false"
 caps "false"
 noprefix "false"
 
 \end_inset
 
- for various currents.
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:dVG-vs-T-I-interval"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
  In FeFET devices we would expect an increasing hysteresis window at lower
  temperature from the suppressed charge trapping effects
 \begin_inset CommandInset citation
@@ -3155,6 +3599,70 @@ literal "true"
 \end_layout
 
 \begin_layout Standard
+\noindent
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Devices/Devices_DVTvT.svg
+	width 4.8cm
+	groupId dVGvT
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Hysteresis width 
+\begin_inset Formula $\Delta V_{G}$
+\end_inset
+
+ of the threshold voltage versus temperature for samples A, B, C, and D
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:dVG-vs-T-threshold-V"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+The width of the gate voltage hysteresis for the threshold voltage versus
+ temperatures for all four sample devices.
+ The threshold voltage was found by separately fitting the increasing and
+ decreasing linear voltage regions
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ortiz-conde2013revisiting"
+literal "true"
+
+\end_inset
+
+.
+ Sample D data was excluded at higher temperatures due to noise or too few
+ points in the linear region for a practical fit.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 The mechanism responsible for the 
 \begin_inset Formula $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$
 \end_inset
@@ -3172,7 +3680,8 @@ literal "false"
 , but current theories generally fall under carrier-carrier interactions,
  disorder scattering, or some combination of the two.
  Of the former, one of the most prevalent is the prediction that in 2D semicondu
-ctor TMDs, carrier-carrier interactions cause a Wigner-Mott transition
+ctor transition metal dichalcogenides, carrier-carrier interactions cause
+ a Wigner-Mott transition
 \begin_inset CommandInset citation
 LatexCommand cite
 key "amaricci2010extended,moon2021metalinsulator,moon2020quantum"
@@ -3219,7 +3728,300 @@ noprefix "false"
 \end_inset
 
  for a more thorough description of the aforementioned MITs.
- From the 
+ The cross sectional current-temperature behavior did not match the common
+ 
+\begin_inset Formula $I_{D}$
+\end_inset
+
+-
+\begin_inset Formula $T$
+\end_inset
+
+ models for disorder in a semiconductor: multiple trap and release, variable
+ range hopping, and percolation.
+ The shrinking hysteresis window with decreasing temperature was also seen
+ in a previous work from Li et al.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "li2019nonvolatile"
+literal "false"
+
+\end_inset
+
+, who used optical-laser manipulation to alter the state of the FeSmFET
+ (it should be noted, this paper was published at the same time as the FeSmFET
+ paper by Si et al.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "si2019ferroelectric"
+literal "true"
+
+\end_inset
+
+).
+ They attributed the hysteresis to charge trapping in their devices, which
+ are similar in construction to our unencapsulated devices.
+ The large subthreshold slope (SS) seen in the device loops is consistent
+ with devices with charge trapping, figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Min-subthreshold-slope-vs-T"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+; a SS below the Boltzmann limit of 
+\begin_inset Formula $60\,V/decade$
+\end_inset
+
+ at 
+\begin_inset Formula $300\,K$
+\end_inset
+
+ would be indicative that the switching behavior is likely from other phenomena
+\begin_inset CommandInset citation
+LatexCommand cite
+key "beckers2020theoretical"
+literal "false"
+
+\end_inset
+
+.
+ Annealing the samples in vacuum at 400 K showed a marked decrease in the
+ current of each sample, figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Sample-AB-Annealing"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ The metallic state in sample B was no longer apparent after annealing for
+ three hours.
+ The process likely removed surface contaminates and reduced disorder in
+ the system, but also may have altered the barrier height between the contacts
+ and the polarized crystal; making it difficult to relate the effect of
+ the annealing treatment to the mechanism for the metallic state.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR190919_03/JR190919_03_IDvVDS_effect-of-heating_linear.svg
+	width 5cm
+	groupId annealing
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sample C: 
+\begin_inset Formula $I_{D}\left(V_{DS}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR190919_03/JR190919_03_IDvVG_effect-of-heating_linear.svg
+	width 4.9cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sample C: 
+\begin_inset Formula $I_{D}\left(V_{G}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR200115_17/JR200115_17_IDvVG_effect-of-heating_log.svg
+	width 5.31cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sample B: 
+\begin_inset Formula $I_{D}\left(V_{G}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR200115_17/JR200115_17_RDSvVG-cross-section_log_heating.svg
+	width 5cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sample B post-anneal: 
+\begin_inset Formula $R_{DS}\left(T\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sample A and B: annealing
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Sample-AB-Annealing"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Samples A (a & b) and B (c) were annealed in vacuum at 400 K in 1 hour intervals.
+ (a) Show 
+\begin_inset Formula $I_{D}\left(V_{DS}\right)$
+\end_inset
+
+ measurements and (b & c) 
+\begin_inset Formula $I_{D}\left(V_{G}\right)$
+\end_inset
+
+, each taken at 300 K.
+ (d) Temperature cross-section of the 
+\begin_inset Formula $I_{D}\left(V_{G}\right)$
+\end_inset
+
+ transfer characteristics for sample B taken after the annealing shown in
+ (c).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+From the 
 \begin_inset Formula $I_{D}$
 \end_inset
 
@@ -3227,20 +4029,446 @@ noprefix "false"
 \begin_inset Formula $V_{DS}$
 \end_inset
 
- in plane current sweep hysteresis, typically attributed to domain switching
- in 
-\begin_inset Formula $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$
-\end_inset
-
- devices, we may postulate that the ferroelectric nature of the 
+ in-plane current sweep hysteresis, attributed to the double Schottky barriers
+ in ferroelectric-semiconductor devices, we have evidence that polarization
+ switching is observable in our devices.
+ We may postulate that the ferroelectric nature of the 
 \begin_inset Formula $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$
 \end_inset
 
  crystal likely plays some role in or interacts with the origin of the observed
  metallic state.
- However, neither the mechanisms for conductivity in ferroelectric semiconductor
-s<TODO:refs> or the dynamics polarization will play in a FET configuration<TODO:
-refs> are well understood.
+ There are several likely models describing the relationship of ferroelectricity
+ and current at various temperatures: Schottky, Schottky-Simmons, Poole-Frenkel,
+ and space charge limited conduction (SCLC).
+ Examining the Schottky model and assuming a constant voltage we would expect
+ a linear relationship when examining the current-temperature relationship
+ in the form 
+\begin_inset Formula $\ln\left(J/T^{2/3}\right)\propto1/T$
+\end_inset
+
+.
+ Similarly, for the Schottky-Simmons model: 
+\begin_inset Formula $\ln\left(J/T^{2}\right)\propto1/T$
+\end_inset
+
+, both are discussed more in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:FeS-channel"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ However, the cross-sectional data, figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Temperature-dependence"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+b-d, does not show the expected behavior making the metallic state unlikely
+ to be a result of the polarization altering the 
+\begin_inset Formula $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$
+\end_inset
+
+-contact barriers, though it could still play a role.
+ The bulk resistance also appears to be larger than the contact resistance,
+ as can be seen in figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Sample-D-contact-resistance"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ As the gate voltage was increased both the sample and contact resistance
+ dropped, though the latter was much more significant.
+ The contact measurement includes a small portion of the crystal in the
+ measurement so this effect may be larger if the crystal can be completely
+ subtracted from the measurement.
+ Examining the cross section of the increasing current and temperature using
+ Poole-Frenkel emission we would expect the relationship 
+\begin_inset Formula $\ln\left(J\right)\propto1/T$
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "chen2013conduction"
+literal "false"
+
+\end_inset
+
+, but this also fits poorly.
+ The SCLC with with shallow traps should follow 
+\begin_inset Formula $\ln\left(J/T^{2/3}\right)\propto1/T$
+\end_inset
+
+, or with deep traps 
+\begin_inset Formula $\ln\left(J/T\right)\propto1/T$
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "juan2004temperature"
+literal "false"
+
+\end_inset
+
+, neither of which fit well to our data.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/JR190815_04/JR190815_04_RvVG_300K_contact-and-sample.svg
+	width 5.2cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sample D: contact resistance
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Sample-D-contact-resistance"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Sample D 
+\begin_inset Formula $R\left(V_{G}\right)$
+\end_inset
+
+ contact and four-point sample resistance, taken at 300 K with increasing
+ 
+\begin_inset Formula $V_{G}$
+\end_inset
+
+.
+ Both measurements were taken simultaneously, with the contact voltage taken
+ between the current lead a hall voltage lead so that a small portion of
+ the crystal was included in the measurement.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Future work
+\end_layout
+
+\begin_layout Standard
+There have been some additional studies since the initial publication of
+ this data that gives further context to the discussion.
+ Li.
+ et al.
+ used the OOP polarization of 
+\begin_inset Formula $\textrm{\ensuremath{\alpha}[3R]-In}_{2}\textrm{Se}_{3}$
+\end_inset
+
+ to modify the current of 
+\begin_inset Formula $\mathrm{MoS_{2}}$
+\end_inset
+
+ via IP voltage pulses, providing additional evidence that the material
+ is ferroelectric and the two polarizations are coupled
+\begin_inset CommandInset citation
+LatexCommand cite
+key "li2020orthogonal"
+literal "false"
+
+\end_inset
+
+.
+ Si.
+ et al.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "si2021asymmetric"
+literal "false"
+
+\end_inset
+
+ and Saha et al.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "saha2020ain2se3"
+literal "false"
+
+\end_inset
+
+ produced OOP resistive switching junctions using the polarization-controlled
+ Schottky barriers to produce persistent states, with the latter fitting
+ it to an extensive device simulation.
+ Their devices matched our switching current measurements for IP voltages
+ and those of previous studies.
+ Yang et al.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "yang2020planar"
+literal "false"
+
+\end_inset
+
+, Hu and Ouyang
+\begin_inset CommandInset citation
+LatexCommand cite
+key "hu2021firstprinciples"
+literal "false"
+
+\end_inset
+
+, and Su et al.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "su2021controllable"
+literal "false"
+
+\end_inset
+
+, reported first principle calculations of 
+\begin_inset Formula $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$
+\end_inset
+
+ interacting with different contact metals, including how both the IP and
+ OOP polarization interact together with the contacts.
+ Their work shows the shift between Ohmic and Schottky contacts due to polarizat
+ion changing the potential barrier 
+\begin_inset Formula $\phi_{B}$
+\end_inset
+
+, and matches the resistive switching behavior seen in our and others devices.
+ Gabel and Gu
+\begin_inset CommandInset citation
+LatexCommand cite
+key "gabel2020understanding"
+literal "false"
+
+\end_inset
+
+ compared double-Schottky and Schottky-Ohmic 
+\begin_inset Formula $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$
+\end_inset
+
+ devices.
+ Using Kelvin probe force microscopy, they reported a switching between
+ high and low resistance states that was due to the changing barrier heights
+ across the domain formed between 
+\begin_inset Formula $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$
+\end_inset
+
+ and 
+\begin_inset Formula $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$
+\end_inset
+
+ with the gold contact deposited on top.
+ Chen et al.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "chen2020couplings"
+literal "false"
+
+\end_inset
+
+ proposed an extended model of SCLC with the polarization coupling to the
+ charge traps.
+ This may explain the behavior of the 
+\begin_inset Formula $I_{D}$
+\end_inset
+
+-
+\begin_inset Formula $V_{DS}$
+\end_inset
+
+ hysteresis loops seen in samples A and B that were discussed above.
+ 
+\end_layout
+
+\begin_layout Standard
+There have also been several studies reporting similarly constructed 
+\begin_inset Formula $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$
+\end_inset
+
+ FeSmFETs.
+ Wang et al.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "wang2020exploring"
+literal "false"
+
+\end_inset
+
+, Wang et al.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "wang2021twodimensional"
+literal "false"
+
+\end_inset
+
+, Tang et al.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "tang2020novel"
+literal "false"
+
+\end_inset
+
+, Gao et al.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "gao2021intrinsic"
+literal "false"
+
+\end_inset
+
+ all explored the possibility of using encapsulated 
+\begin_inset Formula $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$
+\end_inset
+
+ FeSmFETs devices in neuromorphic computing.
+ Wang et al.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "wang2020exploring"
+literal "false"
+
+\end_inset
+
+ reported no change in the gate voltage hysteresis width between 300 and
+ 80 K.
+ Xu et al.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "xu2020optical"
+literal "false"
+
+\end_inset
+
+ observed the FeSmFETs using illumination to alter the device states, similar
+ to the work done by Li et al.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "li2019nonvolatile"
+literal "false"
+
+\end_inset
+
+.
+ They manufactured 
+\begin_inset Formula $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$
+\end_inset
+
+ FeSmFETs on 
+\begin_inset Formula $\mathrm{Al_{2}O_{3}}$
+\end_inset
+
+ with an embedded gate, with some devices including a h-BN dielectric layer
+ and graphene top gate.
+ With the dual gate devices they observed a coercive field of 
+\begin_inset Formula $0.12\,V/nm$
+\end_inset
+
+ and an increasing hysteresis 
+\begin_inset Formula $I_{D}$
+\end_inset
+
+-
+\begin_inset Formula $V_{G}$
+\end_inset
+
+ width with decreasing temperature.
+ The authors claim their use of low temperatures, using pulsed gate voltage
+ then waiting a few minutes before measuring, and encapsulation with a dual
+ gate, reduced the effects of trapping that were seen in previous devices.
+\end_layout
+
+\begin_layout Standard
+To further understand the how disorder and ferroelectricity interact in
+ this MIT more work is needed.
+ Encapsulating the FeSmFET appears to drastically alter the behavior of
+ the ferroelectric channel, but this could be attributed to both charge
+ trapping and to the OOP polarization of the channel.
+ Additionally, the dielectric material has been shown to alter the direction
+ of the hysteresis but this effect has not been thoroughly investigated.
+ Furthermore, the effect of contamination of water and air on the metallic
+ state should be excluded.
+ PFM and optical illumination may serve to help us understand the intersection
+ of polarization and disorder in the MIT as they can be used to manipulate
+ FeSmFETs without altering the devices.
+ Future simulations that take into account disorder in the crystal along
+ with the polarization barrier shift may help to resolve the nature of the
+ metallic state.
+\end_layout
+
+\begin_layout Section
+Conclusion
+\end_layout
+
+\begin_layout Standard
+In conclusion, we observed the emergence of a metallic state induced by
+ electric fields in thin crystal 
+\begin_inset Formula $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$
+\end_inset
+
+ FeSmFET devices.
+ The FeSmFET devices displayed 
+\begin_inset Formula $I_{D}$
+\end_inset
+
+-
+\begin_inset Formula $V_{DS}$
+\end_inset
+
+ behavior that is consistent with polarization controlled double-Schottky
+ barriers seen in ferroelectric channel devices.
+ The hysteresis in the transfer characteristics appears to be dominated
+ by trapped charge and disorder at higher temperatures but still shows signs
+ of polarization at liquid helium temperatures.
+ However, none of the common bulk carrier limited or barrier limited transport
+ mechanisms matched well with the temperature dependence of the metallic
+ behavior.
+ 
+\begin_inset Formula $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$
+\end_inset
+
+ FeSmFETs maintain a persistent state after the removal of the gate voltage,
+ which has the potential for applications in low power device memories and
+ neuromorphic computing.
  Additionally, with only one experimentally verified ferroelectric metal
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -3259,94 +4487,29 @@ literal "false"
 
 , there has been little study of polarization switching behaviors in actual
  ferroelectric metals.
- FeSmFETs, along with FeFETs
-\begin_inset CommandInset citation
-LatexCommand cite
-key "lu2018electrically"
-literal "false"
-
+ 
+\begin_inset Formula $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$
 \end_inset
 
-, may provide us with a new avenue to understand MITs using ferroelectric
- polarization.
+ FeSmFETs may provide us with a new avenue to understand ferroelectric metals
+ though MITs in ferroelectric semiconductors.
  
 \end_layout
 
 \begin_layout Standard
-TODO: smooth discussion transition
-\end_layout
-
-\begin_layout Standard
-TODO: Include discussion on max 2D electric conductivity? No idea where
- the 80
-\begin_inset Formula $\sigma_{0}$
-\end_inset
-
- (quantum conductance) for Prof Liu's calculation comes from.
- I get .1-.2
-\begin_inset Formula $\sigma_{0}$
-\end_inset
-
- for thick samples and ~2.5
-\begin_inset Formula $\sigma_{0}$
-\end_inset
-
- for thin ones.
-\end_layout
-
-\begin_layout Standard
-TODO: Discuss ferroelectric channel conduction? Finish background discussion
- on ferroelectric channels/semiconductors first.
-\end_layout
-
-\begin_layout Standard
-TODO: include trapped charge calculation assuming no FE?
-\end_layout
-
-\begin_layout Standard
-TODO: 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "hu2021firstprinciples"
-literal "false"
-
+\begin_inset Newpage pagebreak
 \end_inset
 
 
 \end_layout
 
 \begin_layout Section
-Future work (TODO)
-\end_layout
-
-\begin_layout Itemize
-simulations: In2Se3 has dipole locking.
- FeSmFETs have not been studied.
- Narrow bandgap semiconductor domains
-\end_layout
-
-\begin_layout Itemize
-PFM measurements showing domain motion during gating, MIT
-\end_layout
-
-\begin_layout Itemize
-Domain wall conductivity
-\end_layout
-
-\begin_layout Itemize
-effects of encapsulation on MIT
-\end_layout
-
-\begin_layout Section
-Conclusion (TODO)
-\end_layout
-
-\begin_layout Section
-Data from additional samples (TODO: integrate more with above)
+Data from additional samples and analysis
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -3678,6 +4841,7 @@ noprefix "false"
 \begin_layout Standard
 \noindent
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -3749,7 +4913,7 @@ status open
 \end_inset
 
 
-\begin_inset space \quad{}
+\begin_inset space \enskip{}
 \end_inset
 
 
@@ -3883,7 +5047,7 @@ status open
 \end_inset
 
 
-\begin_inset space \quad{}
+\begin_inset space \enskip{}
 \end_inset
 
 
@@ -4005,6 +5169,7 @@ name "fig:Sample-B-IDvsVDS-log"
 \begin_layout Standard
 \noindent
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -4076,7 +5241,7 @@ status open
 \end_inset
 
 
-\begin_inset space \quad{}
+\begin_inset space \enskip{}
 \end_inset
 
 
@@ -4176,7 +5341,7 @@ separation "3pt"
 shadowsize "4pt"
 framecolor "black"
 backgroundcolor "none"
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align right
@@ -4218,7 +5383,7 @@ status open
 \end_inset
 
 
-\begin_inset space \quad{}
+\begin_inset space \enskip{}
 \end_inset
 
 
@@ -4358,6 +5523,7 @@ noprefix "false"
 \begin_layout Standard
 \noindent
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -4425,7 +5591,7 @@ status open
 \end_inset
 
 
-\begin_inset space \quad{}
+\begin_inset space \enskip{}
 \end_inset
 
 
@@ -4559,7 +5725,7 @@ status open
 \end_inset
 
 
-\begin_inset space \quad{}
+\begin_inset space \enskip{}
 \end_inset
 
 
@@ -4681,6 +5847,7 @@ name "fig:Sample-C-IDvsVDS-log"
 \begin_layout Standard
 \noindent
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -4751,7 +5918,7 @@ status open
 \end_inset
 
 
-\begin_inset space \quad{}
+\begin_inset space \enskip{}
 \end_inset
 
 
@@ -4891,7 +6058,7 @@ status open
 \end_inset
 
 
-\begin_inset space \quad{}
+\begin_inset space \enskip{}
 \end_inset
 
 
@@ -5026,6 +6193,7 @@ noprefix "false"
 \begin_layout Standard
 \noindent
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -5311,6 +6479,7 @@ name "fig:Sample-B-loops"
 \begin_layout Standard
 \noindent
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -5673,6 +6842,7 @@ name "fig:Sample-C-loops"
 \begin_layout Standard
 \noindent
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -5953,6 +7123,146 @@ name "fig:Sample-D-loops"
 \begin_layout Standard
 \noindent
 \begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR200115_11/JR200115_11_300K_IDvVDS-2xloops_VG-increasing_linear.svg
+	width 4.8cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $I_{D}\left(V_{DS,\updownarrow},\,V_{G,\uparrow}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR200115_11/JR200115_11_300K_IDvVDS-2xloops_VG-decreasing_linear.svg
+	width 4.8cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $I_{D}\left(V_{DS,\updownarrow},\,V_{G,\downarrow}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sample A: 
+\begin_inset Formula $I_{D}\left(V_{DS,\updownarrow},\,V_{G,}\right)$
+\end_inset
+
+ repeated sweeps
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Sample-A-repeated-sweeps"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $I_{D}\left(V_{DS}\right)$
+\end_inset
+
+ hysteresis of sample A with 
+\begin_inset Formula $V_{DS}$
+\end_inset
+
+ swept over the same intervals multiple times in succession.
+ 
+\begin_inset Formula $V_{DS}$
+\end_inset
+
+ was cycled from 
+\begin_inset Formula $0\,V\rightarrow10\,V\rightarrow0\,V\rightarrow10\,V\rightarrow0\,V$
+\end_inset
+
+, the cycle number accompanies the indicated direction.
+ Measurements are taken while 
+\begin_inset Formula $V_{G}$
+\end_inset
+
+ is held at 75 V intervals increasing (a) sequentially for each curve, and
+ (b) decreasing .
+ All measurements were done at 300 K.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -5965,22 +7275,18 @@ sideways false
 status collapsed
 
 \begin_layout Plain Layout
-\align center
 \begin_inset Graphics
-	filename Figures/Devices/Devices_DVGvT_10uA.svg
-	width 4.8cm
-	groupId dVGvT
+	filename Figures/JR190919_03/JR190919_03_RDSvT_warming-after-VG-cooled.svg
+	width 5cm
+	groupId Cooling-vs-warming
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-10 μA
+two-point
 \end_layout
 
 \end_inset
@@ -5988,10 +7294,6 @@ status collapsed
 
 \end_layout
 
-\end_inset
-
-
-\begin_inset space ~
 \end_inset
 
 
@@ -6005,22 +7307,18 @@ sideways false
 status collapsed
 
 \begin_layout Plain Layout
-\align center
 \begin_inset Graphics
-	filename Figures/Devices/Devices_DVGvT_1uA.svg
-	width 4.8cm
-	groupId dVGvT
+	filename Figures/JR190919_03/JR190919_03_R4PTvT_warming-after-VG-cooled.svg
+	width 5cm
+	groupId Cooling-vs-warming
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-1 μA
+four-point
 \end_layout
 
 \end_inset
@@ -6028,126 +7326,6 @@ status collapsed
 
 \end_layout
 
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/Devices/Devices_DVGvT_100nA.svg
-	width 4.8cm
-	groupId dVGvT
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-100 nA
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/Devices/Devices_DVGvT_10nA.svg
-	width 4.8cm
-	groupId dVGvT
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-10 nA
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/Devices/Devices_DVGvT_1nA.svg
-	width 4.8cm
-	groupId dVGvT
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-1 nA
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset space ~
 \end_inset
 
 
@@ -6161,61 +7339,17 @@ sideways false
 status collapsed
 
 \begin_layout Plain Layout
-\align center
 \begin_inset Graphics
-	filename Figures/Devices/Devices_DVGvT_100pA.svg
-	width 4.8cm
-	groupId dVGvT
+	filename Figures/JR190919_03/JR190919_03_IDvT_cooling-vs-warming-at-VG-75V.svg
+	width 5.2cm
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-100 pA
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename Figures/Devices/Devices_DVTvT.svg
-	width 4.8cm
-	groupId dVGvT
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Threshold voltage, 
-\begin_inset Formula $\Delta V_{T}$
-\end_inset
-
-
+Cooling vs warming
 \end_layout
 
 \end_inset
@@ -6232,14 +7366,10 @@ Threshold voltage,
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Hysteresis width 
-\begin_inset Formula $\Delta V_{G}$
-\end_inset
-
- versus temperature for samples A, B, C, and D
+Sample C: effects of warming and cooling while gated
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:dVG-vs-T"
+name "fig:Sample-C-effects-of-warming-cooling"
 
 \end_inset
 
@@ -6252,63 +7382,39 @@ name "fig:dVG-vs-T"
 \end_layout
 
 \begin_layout Plain Layout
-The width of the gate voltage hysteresis versus temperatures for all four
- sample devices.
- (a-f) shows the width for different current levels, in multiples of 10.
- Values found using the data shown in figures (Sample) 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:In2Se3-Sample-A-loops"
-plural "false"
-caps "false"
-noprefix "false"
-
+Sample C (a) two-point and (b) four-point resistance measured at 
+\begin_inset Formula $V_{G}=75\,V$
 \end_inset
 
- (A), 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Sample-B-loops"
-plural "false"
-caps "false"
-noprefix "false"
-
+ with increasing temperature from 2 to 300 K.
+ Before each measurement, sample were cycled at 300 K to 
+\begin_inset Formula $V_{G}=-75\,V$
 \end_inset
 
- (B), 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Sample-C-loops"
-plural "false"
-caps "false"
-noprefix "false"
-
+, then fixed at 25, 50, and 75 V as indicated, then finally cooled from
+ 300 to 2 K with the 
+\begin_inset Formula $V_{G}$
 \end_inset
 
- (C), and 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Sample-D-loops"
-plural "false"
-caps "false"
-noprefix "false"
-
+ still held constant.
+ (c) Sample was cycled at 2 K (300 K) to 
+\begin_inset Formula $V_{G}=-75\,\mathrm{V}$
 \end_inset
 
- (D).
- (g) hysteresis width of the threshold voltage for the four samples.
- The threshold voltage was found by separately fitting the increasing and
- decreasing linear voltage regions
-\begin_inset CommandInset citation
-LatexCommand cite
-key "ortiz-conde2013revisiting"
-literal "true"
+ then to 75 V and held fixed.
+ 
+\begin_inset Formula $I_{D}$
+\end_inset
 
+ was measured while sample was warmed (cooled) with constant 
+\begin_inset Formula $V_{G}$
+\end_inset
+
+ and 
+\begin_inset Formula $V_{DS}=1\,\mathrm{V}$
 \end_inset
 
 .
- Sample D data was excluded at higher temperatures due to noise or too few
- points in the linear region to fit well.
 \end_layout
 
 \end_inset
@@ -6319,6 +7425,7 @@ literal "true"
 \begin_layout Standard
 \noindent
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -6568,6 +7675,7 @@ literal "true"
 \begin_layout Standard
 \noindent
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -6580,18 +7688,22 @@ sideways false
 status collapsed
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
-	filename Figures/JR190919_03/JR190919_03_RDSvT_warming-after-VG-cooled.svg
-	width 5cm
-	groupId Cooling-vs-warming
+	filename Figures/Devices/Devices_DVGvT_10uA.svg
+	width 4.8cm
+	groupId dVGvT
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-two-point
+10 μA
 \end_layout
 
 \end_inset
@@ -6606,24 +7718,32 @@ two-point
 \end_inset
 
 
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset Float figure
 wide false
 sideways false
 status collapsed
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
-	filename Figures/JR190919_03/JR190919_03_R4PTvT_warming-after-VG-cooled.svg
-	width 5cm
-	groupId Cooling-vs-warming
+	filename Figures/Devices/Devices_DVGvT_1uA.svg
+	width 4.8cm
+	groupId dVGvT
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-four-point
+1 μA
 \end_layout
 
 \end_inset
@@ -6638,29 +7758,21 @@ four-point
 \end_inset
 
 
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset Float figure
 wide false
 sideways false
 status collapsed
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
-	filename Figures/JR190919_03/JR190919_03_IDvT_cooling-vs-warming-at-VG-75V.svg
-	width 5.2cm
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Cooling vs warming
-\end_layout
-
-\end_inset
-
-
-\end_layout
+	filename Figures/Devices/Devices_DVGvT_100nA.svg
+	width 4.8cm
+	groupId dVGvT
 
 \end_inset
 
@@ -6671,10 +7783,147 @@ Cooling vs warming
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Sample C: effects of warming and cooling while gated
+100 nA
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Devices/Devices_DVGvT_10nA.svg
+	width 4.8cm
+	groupId dVGvT
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+10 nA
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Devices/Devices_DVGvT_1nA.svg
+	width 4.8cm
+	groupId dVGvT
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+1 nA
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Devices/Devices_DVGvT_100pA.svg
+	width 4.8cm
+	groupId dVGvT
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+100 pA
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Hysteresis width 
+\begin_inset Formula $\Delta V_{G}$
+\end_inset
+
+ at current intervals versus temperature for samples A, B, C, and D
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:Sample-C-effects-of-warming-cooling"
+name "fig:dVG-vs-T-I-interval"
 
 \end_inset
 
@@ -6687,39 +7936,403 @@ name "fig:Sample-C-effects-of-warming-cooling"
 \end_layout
 
 \begin_layout Plain Layout
-Sample C (a) two-point and (b) four-point resistance measured at 
-\begin_inset Formula $V_{G}=75\,V$
+The width of the gate voltage hysteresis versus temperatures for all four
+ sample devices.
+ (a-f) shows the width for different current levels, in multiples of 10.
+ Values found using the data shown in figures (Sample) 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:In2Se3-Sample-A-loops"
+plural "false"
+caps "false"
+noprefix "false"
+
 \end_inset
 
- with increasing temperature from 2 to 300 K.
- Before each measurement, sample were cycled at 300 K to 
-\begin_inset Formula $V_{G}=-75\,V$
+ (A), 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Sample-B-loops"
+plural "false"
+caps "false"
+noprefix "false"
+
 \end_inset
 
-, then fixed at 25, 50, and 75 V as indicated, then finally cooled from
- 300 to 2 K with the 
-\begin_inset Formula $V_{G}$
+ (B), 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Sample-C-loops"
+plural "false"
+caps "false"
+noprefix "false"
+
 \end_inset
 
- still held constant.
- (c) Sample was cycled at 2 K (300 K) to 
-\begin_inset Formula $V_{G}=-75\,\mathrm{V}$
+ (C), and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Sample-D-loops"
+plural "false"
+caps "false"
+noprefix "false"
+
 \end_inset
 
- then to 75 V and held fixed.
- 
+ (D).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Float figure
+placement H
+wide false
+sideways true
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $I_{D}\left(V_{DS,\uparrow},\,V_{G,\uparrow}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $I_{D}\left(V_{DS,\uparrow},\,V_{G,\downarrow}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $I_{D}\left(V_{DS,\downarrow},\,V_{G,\uparrow}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $I_{D}\left(V_{DS,\downarrow},\,V_{G,\downarrow}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Power
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR200115_11/IDvsVDS_fit/JR200115_11_300K__IDvVDS-positive_VG-increasing_power.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR200115_11/IDvsVDS_fit/JR200115_11_300K__IDvVDS-positive_VG-decreasing_power.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR200115_11/IDvsVDS_fit/JR200115_11_300K__IDvVDS-negative_VG-increasing_power.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR200115_11/IDvsVDS_fit/JR200115_11_300K__IDvVDS-negative_VG-decreasing_power.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Schottky
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR200115_11/IDvsVDS_fit/JR200115_11_300K__IDvVDS-positive_VG-increasing_Schottky.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR200115_11/IDvsVDS_fit/JR200115_11_300K__IDvVDS-positive_VG-decreasing_Schottky.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR200115_11/IDvsVDS_fit/JR200115_11_300K__IDvVDS-negative_VG-increasing_Schottky.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR200115_11/IDvsVDS_fit/JR200115_11_300K__IDvVDS-negative_VG-decreasing_Schottky.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Poole-Frenkel
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR200115_11/IDvsVDS_fit/JR200115_11_300K__IDvVDS-positive_VG-increasing_PooleFrenkel.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR200115_11/IDvsVDS_fit/JR200115_11_300K__IDvVDS-positive_VG-decreasing_PooleFrenkel.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR200115_11/IDvsVDS_fit/JR200115_11_300K__IDvVDS-negative_VG-increasing_PooleFrenkel.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR200115_11/IDvsVDS_fit/JR200115_11_300K__IDvVDS-negative_VG-decreasing_PooleFrenkel.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sample A: 
 \begin_inset Formula $I_{D}$
 \end_inset
 
- was measured while sample was warmed (cooled) with constant 
-\begin_inset Formula $V_{G}$
+ versus 
+\begin_inset Formula $V_{DS}$
 \end_inset
 
- and 
-\begin_inset Formula $V_{DS}=1\,\mathrm{V}$
+ fit
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Sample-A-IDvsVDS-fit"
+
 \end_inset
 
-.
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -6730,34 +8343,99 @@ Sample C (a) two-point and (b) four-point resistance measured at
 \begin_layout Standard
 \noindent
 \begin_inset Float figure
+placement H
 wide false
-sideways false
+sideways true
 status open
 
 \begin_layout Plain Layout
 \align center
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $I_{D}\left(V_{DS,\uparrow},\,V_{G,\uparrow}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $I_{D}\left(V_{DS,\uparrow},\,V_{G,\downarrow}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $I_{D}\left(V_{DS,\downarrow},\,V_{G,\uparrow}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $I_{D}\left(V_{DS,\downarrow},\,V_{G,\downarrow}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Power
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Figures/JR200115_17/JR200115_17_IDvVG-rate_300K_log.svg
-	width 5cm
-	groupId Rate
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-300 K
-\end_layout
+	filename Figures/JR200115_17/IDvsVDS_fit/JR200115_17_300K__IDvVDS-positive_VG-increasing_power.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
 
 \end_inset
 
@@ -6765,43 +8443,218 @@ status collapsed
 \end_layout
 
 \end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Figures/JR200115_17/JR200115_17_IDvVG-rate_3K_log.svg
-	width 5cm
-	groupId Rate
+	filename Figures/JR200115_17/IDvsVDS_fit/JR200115_17_300K__IDvVDS-positive_VG-decreasing_power.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
 
 \end_inset
 
 
 \end_layout
 
-\begin_layout Plain Layout
-\begin_inset Caption Standard
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
 
 \begin_layout Plain Layout
-3 K
-\end_layout
+\begin_inset Graphics
+	filename Figures/JR200115_17/IDvsVDS_fit/JR200115_17_300K__IDvVDS-negative_VG-increasing_power.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
 
 \end_inset
 
 
 \end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR200115_17/IDvsVDS_fit/JR200115_17_300K__IDvVDS-negative_VG-decreasing_power.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Schottky
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR200115_17/IDvsVDS_fit/JR200115_17_300K__IDvVDS-positive_VG-increasing_Schottky.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR200115_17/IDvsVDS_fit/JR200115_17_300K__IDvVDS-positive_VG-decreasing_Schottky.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR200115_17/IDvsVDS_fit/JR200115_17_300K__IDvVDS-negative_VG-increasing_Schottky.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR200115_17/IDvsVDS_fit/JR200115_17_300K__IDvVDS-negative_VG-decreasing_Schottky.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Poole-Frenkel
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR200115_17/IDvsVDS_fit/JR200115_17_300K__IDvVDS-positive_VG-increasing_PooleFrenkel.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR200115_17/IDvsVDS_fit/JR200115_17_300K__IDvVDS-positive_VG-decreasing_PooleFrenkel.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR200115_17/IDvsVDS_fit/JR200115_17_300K__IDvVDS-negative_VG-increasing_PooleFrenkel.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR200115_17/IDvsVDS_fit/JR200115_17_300K__IDvVDS-negative_VG-decreasing_PooleFrenkel.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
 
 \end_inset
 
@@ -6813,17 +8666,17 @@ status collapsed
 
 \begin_layout Plain Layout
 Sample B: 
-\begin_inset Formula $I_{D}\left(V_{G}\right)$
+\begin_inset Formula $I_{D}$
 \end_inset
 
-, 
-\begin_inset Formula $V_{G}$
+ versus 
+\begin_inset Formula $V_{DS}$
 \end_inset
 
- rate dependence
+ fit
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:Sample-B-rate-dependance"
+name "fig:Sample-B-IDvsVDS-fit"
 
 \end_inset
 
@@ -6833,22 +8686,6 @@ name "fig:Sample-B-rate-dependance"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Formula $I_{D}\left(V_{G}\right)$
-\end_inset
-
- of sample C taken at (a) 300 K and (b) 3 K.
- Each curve was taken with 
-\begin_inset Formula $V_{G}$
-\end_inset
-
- increased and decreased at the indicated rate with 
-\begin_inset Formula $V_{DS}=0.1\,V$
-\end_inset
-
-.
 \end_layout
 
 \end_inset
@@ -6859,29 +8696,99 @@ name "fig:Sample-B-rate-dependance"
 \begin_layout Standard
 \noindent
 \begin_inset Float figure
+placement H
 wide false
-sideways false
+sideways true
 status open
 
 \begin_layout Plain Layout
 \align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $I_{D}\left(V_{DS,\uparrow},\,V_{G,\uparrow}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $I_{D}\left(V_{DS,\uparrow},\,V_{G,\downarrow}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $I_{D}\left(V_{DS,\downarrow},\,V_{G,\uparrow}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $I_{D}\left(V_{DS,\downarrow},\,V_{G,\downarrow}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Power
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 \begin_inset Graphics
-	filename Figures/JR190815_04/JR190815_04_RvVG_300K_contact-and-sample.svg
-	width 5.2cm
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Sample D: contact resistance
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Sample-D-contact-resistance"
+	filename Figures/JR190919_03/IDvsVDS_fit/JR190919_03_300K__IDvVDS-positive_VG-increasing_power.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
 
 \end_inset
 
@@ -6889,47 +8796,218 @@ name "fig:Sample-D-contact-resistance"
 \end_layout
 
 \end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-Sample D 
-\begin_inset Formula $R\left(V_{G}\right)$
-\end_inset
-
- contact and four-point sample resistance, taken at 300 K with increasing
- 
-\begin_inset Formula $V_{G}$
-\end_inset
-
-.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\noindent
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Figures/JR190919_03/JR190919_03_IDvVDS_effect-of-heating_linear.svg
-	width 5cm
-	groupId annealing
+	filename Figures/JR190919_03/IDvsVDS_fit/JR190919_03_300K__IDvVDS-positive_VG-decreasing_power.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR190919_03/IDvsVDS_fit/JR190919_03_300K__IDvVDS-negative_VG-increasing_power.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR190919_03/IDvsVDS_fit/JR190919_03_300K__IDvVDS-negative_VG-decreasing_power.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Schottky
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR190919_03/IDvsVDS_fit/JR190919_03_300K__IDvVDS-positive_VG-increasing_Schottky.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR190919_03/IDvsVDS_fit/JR190919_03_300K__IDvVDS-positive_VG-decreasing_Schottky.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR190919_03/IDvsVDS_fit/JR190919_03_300K__IDvVDS-negative_VG-increasing_Schottky.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR190919_03/IDvsVDS_fit/JR190919_03_300K__IDvVDS-negative_VG-decreasing_Schottky.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Poole-Frenkel
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR190919_03/IDvsVDS_fit/JR190919_03_300K__IDvVDS-positive_VG-increasing_PooleFrenkel.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR190919_03/IDvsVDS_fit/JR190919_03_300K__IDvVDS-positive_VG-decreasing_PooleFrenkel.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR190919_03/IDvsVDS_fit/JR190919_03_300K__IDvVDS-negative_VG-increasing_PooleFrenkel.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR190919_03/IDvsVDS_fit/JR190919_03_300K__IDvVDS-negative_VG-decreasing_PooleFrenkel.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
 
 \end_inset
 
@@ -6941,118 +9019,1675 @@ status collapsed
 
 \begin_layout Plain Layout
 Sample C: 
-\begin_inset Formula $I_{D}\left(V_{DS}\right)$
+\begin_inset Formula $I_{D}$
 \end_inset
 
-
-\end_layout
-
+ versus 
+\begin_inset Formula $V_{DS}$
 \end_inset
 
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename Figures/JR190919_03/JR190919_03_IDvVG_effect-of-heating_linear.svg
-	width 4.9cm
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Sample C: 
-\begin_inset Formula $I_{D}\left(V_{G}\right)$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename Figures/JR200115_17/JR200115_17_IDvVG_effect-of-heating_log.svg
-	width 5.31cm
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Sample B: 
-\begin_inset Formula $I_{D}\left(V_{G}\right)$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Sample A and B: annealing
+ fit
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:Sample-AB-Annealing"
+name "fig:Sample-C-IDvsVDS-fit"
 
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Float figure
+placement H
+wide false
+sideways true
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="bottom" width="0pt">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $I_{D}\left(V_{DS,\uparrow},\,V_{G,\uparrow}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $I_{D}\left(V_{DS,\uparrow},\,V_{G,\downarrow}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $I_{D}\left(V_{DS,\downarrow},\,V_{G,\uparrow}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $I_{D}\left(V_{DS,\downarrow},\,V_{G,\downarrow}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Power
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR190815_04/IDvsVDS_fit/JR190815_04_300K__IDvVDS-positive_VG-increasing_power.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR190815_04/IDvsVDS_fit/JR190815_04_300K__IDvVDS-positive_VG-decreasing_power.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR190815_04/IDvsVDS_fit/JR190815_04_300K__IDvVDS-negative_VG-increasing_power.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR190815_04/IDvsVDS_fit/JR190815_04_300K__IDvVDS-negative_VG-decreasing_power.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Schottky
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR190815_04/IDvsVDS_fit/JR190815_04_300K__IDvVDS-positive_VG-increasing_Schottky.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR190815_04/IDvsVDS_fit/JR190815_04_300K__IDvVDS-positive_VG-decreasing_Schottky.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR190815_04/IDvsVDS_fit/JR190815_04_300K__IDvVDS-negative_VG-increasing_Schottky.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR190815_04/IDvsVDS_fit/JR190815_04_300K__IDvVDS-negative_VG-decreasing_Schottky.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Poole-Frenkel
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR190815_04/IDvsVDS_fit/JR190815_04_300K__IDvVDS-positive_VG-increasing_PooleFrenkel.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR190815_04/IDvsVDS_fit/JR190815_04_300K__IDvVDS-positive_VG-decreasing_PooleFrenkel.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR190815_04/IDvsVDS_fit/JR190815_04_300K__IDvVDS-negative_VG-increasing_PooleFrenkel.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR190815_04/IDvsVDS_fit/JR190815_04_300K__IDvVDS-negative_VG-decreasing_PooleFrenkel.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sample D: 
+\begin_inset Formula $I_{D}$
+\end_inset
+
+ versus 
+\begin_inset Formula $V_{DS}$
+\end_inset
+
+ fit
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Sample-D-IDvsVDS-fit"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Float table
+placement H
+wide false
+sideways true
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="8">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="2.5cm">
+<column alignment="center" valignment="top" width="2.5cm">
+<column alignment="center" valignment="top" width="2.5cm">
+<column alignment="center" valignment="top" width="2.5cm">
+<column alignment="center" valignment="top" width="2.5cm">
+<column alignment="center" valignment="top" width="2.5cm">
+<column alignment="center" valignment="top" width="2.5cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sample A
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-75 V
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-50 V
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-25 V
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0 V
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+25 V
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+50 V
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+75 V
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $V_{DS,\uparrow},\,V_{G,\uparrow}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.4(0.1-0.7V) 0.7(0.8-1.1V) 1.9(1.2-1.4V) 5.9(1.5-3.8V) 3.5(3.9-4.5V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.9(0.3-0.9V) -0.4(1.1-1.4V) 0.3(2.9-3.1V) 2.1(3.3-4.7V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.0(0.1-0.4V) 2.9(0.5-1.1V) -0.8(1.3-1.6V) -0.2(2.2-2.4V) 1.8(4.2-4.5V) 1.8(4.6-4.8V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.5(0.6-0.9V) -0.7(1.3-1.7V) -0.2(2.5-2.7V) 0.4(2.9-3.1V) 0.6(3.6-3.9V) 1.3(4.5-4.9V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.2(0.5-0.9V) 2.1(1.0-1.2V) -0.8(1.6-1.8V) -0.2(2.9-3.1V) 1.2(3.8-4.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.0(0.2-0.4V) 2.4(0.5-1.2V) -0.4(2.2-2.4V) 0.3(2.8-3.0V) 1.2(3.9-4.1V) 2.0(4.7-5.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.9(0.1-0.5V) 2.7(0.6-1.1V) 0.2(1.2-1.4V) -0.5(2.7-2.9V)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $V_{DS,\uparrow},\,V_{G,\downarrow}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.6(0.1-0.5V) 3.3(0.6-1.2V) 0.8(3.6-3.8V) 2.1(4.0-4.2V) 2.6(4.7-4.9V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.1(0.5-1.2V) 0.4(2.2-2.4V) 0.8(3.1-3.3V) 2.2(4.5-5.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.1(0.4-1.2V) 0.5(3.2-3.4V) 3.6(4.5-4.7V) 2.3(4.8-5.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.2(0.2-0.5V) 3.5(0.6-1.1V) 0.8(1.2-1.4V) 0.3(1.5-1.7V) 0.7(2.3-2.5V) 0.9(4.2-4.4V) 2.5(4.6-4.9V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.7(0.1-0.4V) 3.7(0.5-1.1V) 0.5(1.2-1.4V) 0.8(3.1-3.3V) 1.4(3.6-3.9V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.9(0.5-1.1V) 0.4(2.6-2.8V) 1.4(3.2-3.4V) 2.0(4.0-4.2V) 1.0(4.3-4.5V) 1.1(4.6-4.8V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.1(0.1-0.5V) 3.6(0.6-1.1V) -0.4(1.9-2.1V) 0.4(2.7-2.9V) 0.9(4.2-4.5V)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $V_{DS,\downarrow},\,V_{G,\uparrow}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.3(0.2-5.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.9(0.1-1.1V) 0.7(2.9-3.8V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.7(0.1-1.1V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.7(0.1-1.1V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.6(0.1-1.2V)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $V_{DS,\downarrow},\,V_{G,\downarrow}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.6(0.1-1.5V) 1.6(3.1-5.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.7(0.1-1.7V) 1.1(1.8-2.7V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.8(0.1-1.1V) 0.6(1.2-2.1V) 1.7(3.7-4.6V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.8(0.1-1.3V) 2.2(3.6-4.8V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.9(0.1-1.4V) 1.4(2.7-5.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.9(0.1-5.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.8(0.1-1.7V)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Float table
+placement H
+wide false
+sideways true
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ContinuedFloat
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="8">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="2.5cm">
+<column alignment="center" valignment="top" width="2.5cm">
+<column alignment="center" valignment="top" width="2.5cm">
+<column alignment="center" valignment="top" width="2.5cm">
+<column alignment="center" valignment="top" width="2.5cm">
+<column alignment="center" valignment="top" width="2.5cm">
+<column alignment="center" valignment="top" width="2.5cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sample B
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-75 V
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-50 V
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-25 V
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0 V
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+25 V
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+50 V
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+75 V
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $V_{DS,\uparrow},\,V_{G,\uparrow}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.9(1.2-2.9V) 5.6(3.3-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.4(0.4-1.9V) 1.4(4.0-6.0V) 2.9(6.1-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.5(0.3-1.8V) 1.8(5.7-9.9V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.6(0.2-1.5V) 1.6(7.9-9.7V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.7(0.1-1.5V) 0.3(1.6-2.5V) 1.1(7.2-8.4V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.6(0.3-2.0V) 0.6(5.5-6.4V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.5(0.7-2.1V)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $V_{DS,\uparrow},\,V_{G,\downarrow}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.7(0.3-1.9V) 2.0(2.2-3.1V) 3.3(3.2-5.3V) 5.9(5.4-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.7(0.3-1.4V) 1.2(1.5-2.4V) 2.8(2.7-4.7V) 5.4(4.8-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.8(0.3-1.8V) 3.5(3.4-5.4V) 5.6(5.5-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.8(0.3-1.6V) 3.0(2.8-5.4V) 5.3(5.5-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.9(1.2-4.8V) 4.8(5.4-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.4(0.1-4.5V) 3.3(4.6-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.7(0.2-3.6V) 1.1(3.7-7.8V) 1.6(7.9-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $V_{DS,\downarrow},\,V_{G,\uparrow}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.0(0.3-8.8V) 2.7(8.9-9.8V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.2(0.6-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.0(0.3-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.0(0.3-9.2V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.9(0.1-6.7V) 1.3(8.1-9.1V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.9(0.1-9.2V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.9(0.1-9.9V)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $V_{DS,\downarrow},\,V_{G,\downarrow}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.2(0.4-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.2(0.4-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.2(0.4-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.1(0.4-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.9(0.3-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.7(0.2-9.6V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.6(0.1-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float table
+placement H
+wide false
+sideways true
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ContinuedFloat
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="8">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="2.5cm">
+<column alignment="center" valignment="top" width="2.5cm">
+<column alignment="center" valignment="top" width="2.5cm">
+<column alignment="center" valignment="top" width="2.5cm">
+<column alignment="center" valignment="top" width="2.5cm">
+<column alignment="center" valignment="top" width="2.5cm">
+<column alignment="center" valignment="top" width="2.5cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sample C
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-75 V
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-50 V
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-25 V
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0 V
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+25 V
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+50 V
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+75 V
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $V_{DS,\uparrow},\,V_{G,\uparrow}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.8(2.5-6.0V) 1.0(6.5-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.5(2.0-4.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.4(2.0-6.5V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.5(2.0-4.5V) 0.3(5.0-7.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.6(1.5-7.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.6(1.0-9.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.6(1.0-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $V_{DS,\uparrow},\,V_{G,\downarrow}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.9(0.5-3.0V) 0.7(5.0-7.5V) 1.0(8.0-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.5(2.0-4.5V) 0.8(5.5-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.5(2.0-5.5V) 1.0(7.5-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.6(1.5-5.5V) 0.5(6.0-8.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.4(2.5-4.5V) 0.8(6.5-9.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.6(2.0-5.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.7(0.5-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $V_{DS,\downarrow},\,V_{G,\uparrow}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.0(0.5-5.0V) 1.7(5.5-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.1(0.5-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.1(0.5-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.0(0.5-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.9(0.5-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.8(0.5-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.8(0.5-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $V_{DS,\downarrow},\,V_{G,\downarrow}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.4(2.0-9.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.3(1.5-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.4(1.5-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.4(1.5-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.4(1.5-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.2(1.0-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.0(0.5-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float table
+placement H
+wide false
+sideways true
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ContinuedFloat
 \end_layout
 
 \end_inset
@@ -7061,16 +10696,431 @@ name "fig:Sample-AB-Annealing"
 \end_layout
 
 \begin_layout Plain Layout
-Samples A (a & b) and B (c) were annealed in vacuum at 400 K in 1 hour intervals.
- (a) Show 
-\begin_inset Formula $I_{D}\left(V_{DS}\right)$
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="8">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="2.5cm">
+<column alignment="center" valignment="top" width="2.5cm">
+<column alignment="center" valignment="top" width="2.5cm">
+<column alignment="center" valignment="top" width="2.5cm">
+<column alignment="center" valignment="top" width="2.5cm">
+<column alignment="center" valignment="top" width="2.5cm">
+<column alignment="center" valignment="top" width="2.5cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sample D
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-75 V
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-50 V
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-25 V
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0 V
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+25 V
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+50 V
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+75 V
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $V_{DS,\uparrow},\,V_{G,\uparrow}$
 \end_inset
 
- measurements and (b & c) 
-\begin_inset Formula $I_{D}\left(V_{G}\right)$
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.0(0.2-1.6V) 0.7(1.8-3.8V) 0.8(4.0-5.0V) 0.6(5.8-7.2V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.8(0.2-2.2V) 0.4(2.4-3.4V) 0.3(4.4-5.2V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.8(0.2-2.0V) 0.4(2.2-3.2V) 0.2(3.6-4.8V) 0.1(5.0-5.8V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.7(0.2-2.4V) 0.3(2.6-5.6V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.7(0.2-2.4V) 0.3(2.6-4.4V) 0.3(5.2-6.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.8(0.2-2.2V) 0.3(2.4-8.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.8(0.2-2.2V) 0.4(2.4-4.0V) 0.3(4.4-5.8V)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $V_{DS,\uparrow},\,V_{G,\downarrow}$
 \end_inset
 
-, each taken at 300 K.
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.9(0.2-1.6V) 0.5(1.8-3.6V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.9(0.2-1.4V) 0.5(1.6-3.6V) 0.5(5.0-5.8V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.8(0.2-3.0V) 0.3(7.8-8.8V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.8(0.2-2.6V) 0.3(2.8-3.6V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.9(0.2-1.4V) 0.4(1.6-7.0V) 0.4(7.6-8.4V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.9(0.2-1.2V) 0.5(1.4-4.0V) 0.4(4.2-5.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.5(1.0-3.8V) 0.3(4.0-5.2V) 0.3(7.4-8.4V)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $V_{DS,\downarrow},\,V_{G,\uparrow}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.0(0.2-7.6V) 0.7(9.2-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.4(0.2-9.4V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.4(0.2-9.2V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.5(0.2-9.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.5(0.2-5.2V) 0.8(5.4-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.5(0.2-4.6V) 0.9(4.8-8.4V) 0.9(8.6-9.4V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.5(0.2-3.4V) 1.0(3.6-7.2V) 0.8(8.2-9.8V)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $V_{DS,\downarrow},\,V_{G,\downarrow}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.0(0.4-9.8V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.0(0.2-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.1(0.2-9.6V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.2(0.2-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.3(0.2-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.4(0.2-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.5(0.2-4.2V) 1.1(4.4-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Slope (voltage range) for linear fits of 
+\begin_inset Formula $\ln\left(J\right)$
+\end_inset
+
+ versus 
+\begin_inset Formula $\ln\left(V\right)$
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Slope-lnJ-lnV"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset

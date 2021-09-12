@@ -1,0 +1,30 @@
+[Main]
+Experiment = "_400.0K"
+Header length = 29    
+Date = "20200206 12:53:40"
+Comments = ""
+
+[System]
+System = "PPMS"
+Magnet stability range (G) = 5.000000E+1
+Magnet check interval (s) = 1.000000E+0
+Magnet approach mode = "Linear Approach"
+Magnet mode = "Persistent"
+Temperature stability time (s) = 1.000000E+0
+Temperature approach mode = "Fast Settle"
+
+[Static Temperature]
+Set initial temperature = TRUE
+Initial temperature (K) = 4.000000E+2
+Delay after setting initial temperature (s) = 3.600000E+3
+Initial temperature stabilization (K) = 2.000000E-1
+Initial temperature ramp rate (K/min) = 1.000000E+1
+Wait for initial temperature to stabilize = TRUE
+Set final temperature = TRUE
+Finish temperature (K) = 3.000000E+2
+Delay after setting finish temperature (s) = 0.000000E+0
+Finish temperature stabiliation (K) = 2.000000E-1
+Finish temperature ramp rate (K/min) = 1.000000E+1
+Wait for finish temperature to stabilize = TRUE
+Time (s)	Temperature (K)
+0.000000000E+0	400.000300000E+0

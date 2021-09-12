@@ -24,6 +24,19 @@ def_size = 2
 cmap = plt.cm.get_cmap('Set1')
 colors_set1 = cmap(np.linspace(0,1,9))
 
+class flake_device:
+    fileroot = ""
+    name = ""
+    thickness = 0 # meters
+    length = 0 # meters
+    width = 0 # meters
+    volt_spacing = 0 # meters
+
+def get_IDvsVDS_colors():
+    colors = colors_set1
+    return [colors[0], colors[4], colors[3], colors[6], colors[2], colors[8], colors[1]]
+
+
 def first_occurance_1D(array, val, tol=0.2, starting_index=0):
     itemindex = np.where(abs(array[starting_index:] - val) < abs(tol))
     return itemindex[0][0]
@@ -72,10 +85,10 @@ def save_generic_both(fig, root, filename):
 def save_generic_png(fig, root, filename):
     fig.savefig(os.path.join(root, filename +'.png'), format='png', transparent=True, bbox_inches='tight',pad_inches=.1)
     
-def save_generic_svg(fig, root, filename):
+def save_generic_svg(fig, device, filename):
     plt.rcParams["svg.fonttype"] = "none"
     plt.rcParams["text.usetex"] = False
-    fig.savefig(os.path.join(root, filename +'.svg'), format='svg', transparent=True, bbox_inches='tight',pad_inches=0)
+    fig.savefig(os.path.join(device.fileroot, filename +'.svg'), format='svg', transparent=True, bbox_inches='tight',pad_inches=0)
 
 def pretty_plot_single(fig, labels=['',''], color='#000000', yscale='linear', fontsize=10, labelsize=8, labelpad=[0,0]):
     ax = fig.add_subplot(111)
@@ -111,7 +124,7 @@ def pretty_plot_single(fig, labels=['',''], color='#000000', yscale='linear', fo
 
 
 def plot_YvsX_generic(Xaxis, Xlabel, Yaxis, Ylabel, XvsYname, \
-                      fileroot, files, savename, colors, log=False, size=def_size, majorx=None, \
+                      device, files, savename, colors, log=False, size=def_size, majorx=None, \
                       xlim=(None,None), ylim=(None,None), markers=[], \
                       fontsize=def_fontsize, labelsize=def_labelsize, invertaxes=False):    
     for file in files:
@@ -141,8 +154,9 @@ def plot_YvsX_generic(Xaxis, Xlabel, Yaxis, Ylabel, XvsYname, \
     ax = pretty_plot_single(fig, labels=[Xlabel, Ylabel],
                              yscale=('log' if log else 'linear'), fontsize=fontsize, labelsize=labelsize)
     
-    markers += ['.-']*len(colors)
-
+    colors = list(colors)
+    markers.extend(['.-']*len(colors))
+    
     i = 0
     for file in files:
         if isinstance(Yaxis, list): 
@@ -175,7 +189,7 @@ def plot_YvsX_generic(Xaxis, Xlabel, Yaxis, Ylabel, XvsYname, \
     if savename is None:
         return (fig, ax, scale_pow)
     else:
-        save_generic_svg(fig, fileroot, savename+XvsYname+scalename)
+        save_generic_svg(fig, device, savename+XvsYname+scalename)
         plt.show() 
         plt.clf()
         return None
@@ -215,8 +229,8 @@ def m_order(data):
     return (scale, label)
 
 # cross sections of gating loops
-def get_cross_section(fileroot, filenames, increments, V_index):
-    files = [process_file(os.path.join(fileroot, x)) for x in filenames]
+def get_cross_section(device, filenames, increments, V_index):
+    files = [process_file(os.path.join(device.fileroot, x)) for x in filenames]
     
     indexes = []
     for inc in increments:
@@ -234,12 +248,12 @@ def get_cross_section(fileroot, filenames, increments, V_index):
     
     return (np.array(Currents), np.array(Voltages), np.array(Gate_Voltages), Temperatures)
 
-def plot_loopI_cross_section(fileroot, filenames, savename, increments=[0,25,50,75], \
+def plot_loopI_cross_section(device, filenames, savename, increments=[0,25,50,75], \
                              figsize=def_size, xlim=(None, 330), ylim=(None,None), log=True, \
                              fontsize=def_fontsize, labelsize=def_labelsize, colororder=[0,3,2,1,4,5]):
     colors = colors_set1[colororder]
               
-    (Currents, Voltages, GateVoltages, Temperatures) = get_cross_section(fileroot, filenames, increments, 1)
+    (Currents, Voltages, GateVoltages, Temperatures) = get_cross_section(device, filenames, increments, 1)
     ymax = [10.] if log else np.nanmax([np.nanmax(y) for y in Currents]) 
     (scale_pow, scale_label) = m_order(ymax)
     
@@ -256,16 +270,17 @@ def plot_loopI_cross_section(fileroot, filenames, savename, increments=[0,25,50,
     
     scalename = "_log" if log else "_linear"
     print(savename+  "_loop_I-cross" +scalename)
-    save_generic_svg(fig, fileroot, savename + "_loop_I-cross" + scalename)
+    save_generic_svg(fig, device, savename + "_loop_I-cross" + scalename)
     plt.show()
     plt.clf()
 
-def plot_loopR_cross_section(fileroot, filenames, savename, increments=[0,25,50,75], \
+def plot_loopR_cross_section(device, filenames, savename, increments=[0,25,50,75], \
                              figsize=def_size, xlim=(None, 330), xinc=100, ylim=(None,None), log=True, \
                              fontsize=def_fontsize, labelsize=def_labelsize, colororder=[0,3,2,1,4,5]):
     colors = colors_set1[colororder]
     
-    (Currents, Voltages, GateVoltages, Temperatures) = get_cross_section(fileroot, filenames, increments, 1)
+    (Currents, Voltages, GateVoltages, Temperatures) = \
+        get_cross_section(device, filenames, increments, 1)
     Resistances = []
     for (Vs, Is) in zip(Voltages, Currents):    
         Resistances.append(np.array([v/i for (v,i) in zip(Vs,Is)]))
@@ -290,22 +305,23 @@ def plot_loopR_cross_section(fileroot, filenames, savename, increments=[0,25,50,
     
     scalename = "_log" if log else "_linear"
     print(savename+  "_loop_R-cross" +scalename)
-    save_generic_svg(fig, fileroot, savename + "_loop_R-cross" + scalename)
+    save_generic_svg(fig, device, savename + "_loop_R-cross" + scalename)
     plt.show()
     plt.clf()
     
     
-def plot_mobility_μ_cross_section(fileroot, filenames, savename, length, width, increments=[0,25,50,75], \
+def plot_mobility_μ_cross_section(device, filenames, savename, increments=[0,25,50,75], \
                              figsize=3, xlim=(None, 330), ylim=(None,None), log=True, fontsize=def_fontsize, labelsize=def_labelsize, colororder=[0,3,2,1,4,5]):
     colors = colors_set1[colororder]
     
-    (Currents, Voltages, GateVoltages, Temperatures) = get_cross_section(fileroot, filenames, increments, 1)
+    (Currents, Voltages, GateVoltages, Temperatures) = \
+        get_cross_section(device, filenames, increments, 1)
     
     mobilities = []
     for (Vs, Is, V_G) in zip(Voltages, Currents, increments):    
         Rs = np.array([v/i for (v,i) in zip(Vs,Is)])
         n = wafer_carrier_density_n(V_G)
-        σs = sheet_conductivity(Rs, length, width)
+        σs = sheet_conductivity(Rs, device.length, device.width)
         μs = carrier_mobility_μ(σs, n)
         mobilities.append(μs)
         
@@ -333,15 +349,15 @@ def plot_mobility_μ_cross_section(fileroot, filenames, savename, length, width,
 
     scalename = "_log" if log else "_linear"
     print(savename+  "_loop_μ-cross" +scalename)
-    save_generic_svg(fig, fileroot, savename + "_loop_μ-cross" + scalename)
+    save_generic_svg(fig, device, savename + "_loop_μ-cross" + scalename)
     plt.show()
     plt.clf()
 
 # generic functions
-def plot_IDvsVg_each(fileroot, filenames, savename, log=False, size=def_size, majorx=25,\
+def plot_IDvsVg_each(device, filenames, savename, log=False, size=def_size, majorx=25,\
                      ylim=(None,None), fontsize=def_fontsize, labelsize=def_labelsize):
    
-    files = [process_file(os.path.join(fileroot, x)) for x in filenames]
+    files = [process_file(os.path.join(device.fileroot, x)) for x in filenames]
     for file in files:
         Iname = '_IDvsVg_' + str(round(file['Temperature_K'][0],1)).zfill(5) + 'K'
         (file0, start_ind, end_ind) = slice_data(file, 'Gate_Voltage_V', -75., -75., .1, starting_index=0)
@@ -350,24 +366,24 @@ def plot_IDvsVg_each(fileroot, filenames, savename, log=False, size=def_size, ma
         ind = np.where(file0['Current_A'] > 2*10**-12)
         file0 = file0[ind]
         
-        plot_IDvsVg_generic(fileroot, [file0], savename + Iname, [colors_set1[1]], log=log, \
+        plot_IDvsVg_generic(device, [file0], savename + Iname, [colors_set1[1]], log=log, \
                               size=size, majorx=majorx, ylim=ylim, fontsize=fontsize, labelsize=labelsize)
 
       
-def plot_IDvsVg_generic(fileroot, files, savename, colors, log=False, size=def_size, majorx=25, 
+def plot_IDvsVg_generic(device, files, savename, colors, log=False, size=def_size, majorx=25, 
                         xlim=(None,None), ylim=(None,None), fontsize=def_fontsize, labelsize=def_labelsize):
     return plot_YvsX_generic('Gate_Voltage_V', '$\it{V_{G}}$ (V)', 'Current_A', '$\it{I_{D}}$ (%sA)', '_IDvsVG',
-                      fileroot=fileroot, files=files, savename=savename, colors=colors, log=log, size=size, majorx=majorx,
+                      device=device, files=files, savename=savename, colors=colors, log=log, size=size, majorx=majorx,
                       xlim=xlim, ylim=ylim, fontsize=fontsize, labelsize=labelsize)
 
 
-def plot_IDvsVg_subleak_generic(fileroot, files, savename, colors, log=False, size=def_size, majorx=25):    
+def plot_IDvsVg_subleak_generic(device, files, savename, colors, log=False, size=def_size, majorx=25):    
     for file in files:
         file['Current_A'] = file['Current_A']-file['Gate_Leak_Current_A']
         
-    return plot_IDvsVg_generic(fileroot, files, savename, colors, log=log, size=size, majorx=majorx)
+    return plot_IDvsVg_generic(device, files, savename, colors, log=log, size=size, majorx=majorx)
     
-def plot_IleakvsVg_generic(fileroot, files, savename, colors, log=False, adjust=True):    
+def plot_IleakvsVg_generic(device, files, savename, colors, log=False, adjust=True):    
     fig = plt.figure(figsize=(1.5, 1.5), dpi=300)
     scale_pow = 1
     scale_label = ''
@@ -393,11 +409,11 @@ def plot_IleakvsVg_generic(fileroot, files, savename, colors, log=False, adjust=
 
     scalename = "_log" if log else "_linear"
     print(savename+scalename)
-    save_generic_svg(fig, fileroot, savename+scalename)
+    save_generic_svg(fig, device, savename+scalename)
     plt.show()
     plt.clf()
 
-def plot_RDSvsVg_generic(fileroot, files, savename, colors=colors_set1, R_ind=1, log=False, size=def_size, majorx=25, ylim=(None,None)):    
+def plot_RDSvsVg_generic(device, files, savename, colors=colors_set1, R_ind=1, log=False, size=def_size, majorx=25, ylim=(None,None)):    
     fig = plt.figure(figsize=(size, size), dpi=300)
     R_pow = 1
     R_label = ''
@@ -420,69 +436,42 @@ def plot_RDSvsVg_generic(fileroot, files, savename, colors=colors_set1, R_ind=1,
     
     scalename = "_log" if log else "_linear"
     print(savename+scalename)
-    save_generic_svg(fig, fileroot, savename+scalename)
+    save_generic_svg(fig, device, savename+scalename)
     plt.show()
     plt.clf()
     
-# 300K IV plots
-def plot_IDvVDS_gating_generic(fileroot, sample, end_name, startindex, incindex, savename, \
-                               figsize=def_size, xadj=1, log=False, majorx=None, ylim=None):
-    colors = colors_set1[[0,4,3,6,2,8,1]]
     
-    start = startindex 
-    inc = incindex
-    filenames = [(sample + str(i).zfill(3) + end_name) for i in range(start, start+1*inc)]
-    files = [process_file(os.path.join(fileroot, x)) for x in filenames]
-    plot_IDvsVDS_generic(fileroot, files, savename + 'positive_increasing', colors,\
-                         size=figsize, xadj=xadj, ylim=ylim, log=log, majorx=majorx)
-    
-    filenames = [(sample + str(i).zfill(3) + end_name) for i in range(start+1*inc, start+2*inc)]
-    files = [process_file(os.path.join(fileroot, x)) for x in filenames]
-    plot_IDvsVDS_generic(fileroot, files, savename + 'positive_decreasing', colors[::-1],\
-                         size=figsize, xadj=xadj, ylim=ylim, log=log, majorx=majorx)
-    
-    filenames = [(sample + str(i).zfill(3) + end_name) for i in range(start+2*inc, start+3*inc)]
-    files = [process_file(os.path.join(fileroot, x)) for x in filenames]
-    plot_IDvsVDS_generic(fileroot, files, savename + 'negative_increasing', colors,\
-                         size=figsize, invertaxes=True, xadj=xadj, ylim=ylim, log=log, majorx=majorx)
-    
-    filenames = [(sample + str(i).zfill(3) + end_name) for i in range(start+3*inc, start+4*inc)]
-    files = [process_file(os.path.join(fileroot, x)) for x in filenames]
-    plot_IDvsVDS_generic(fileroot, files, savename + 'negative_decreasing', colors[::-1],\
-                         size=figsize, invertaxes=True, xadj=xadj, ylim=ylim, log=log, majorx=majorx)
-
-    
-def plot_IDvsVDS_generic(fileroot, files, savename, colors, log=False, invertaxes=False, size=def_size, majorx=None, \
+def plot_IDvsVDS_generic(device, files, savename, colors, log=False, invertaxes=False, size=def_size, majorx=None, \
                          xadj=0, x_mult=5, fontsize=def_fontsize, labelsize=def_labelsize, xlim=None, ylim=None):    
     return plot_YvsX_generic('Voltage_1_V', '$\it{V_{DS}}$ (V)', 'Current_A', '$\it{I_{D}}$ (%sA)', '_IDvsVDS',
-                      fileroot=fileroot, files=files, savename=savename, colors=colors, log=log, size=size, majorx=majorx,
+                      device=device, files=files, savename=savename, colors=colors, log=log, size=size, majorx=majorx,
                       xlim=xlim, ylim=ylim, fontsize=fontsize, labelsize=labelsize, invertaxes=invertaxes)
     
-def plot_IDvsB_generic(fileroot, files, savename, colors, log=False, symm=False, size=def_size, \
+def plot_IDvsB_generic(device, files, savename, colors, log=False, symm=False, size=def_size, \
                        xlim=None, ylim=None, majorx=None, fontsize=def_fontsize, labelsize=def_labelsize):
     return plot_YvsX_generic('Magnetic_Field_T', '$\it{B}$ (T)', 'Current_A', '$\it{I_{D}}$ (%sA)', '_IDvsB',
-                      fileroot=fileroot, files=files, savename=savename, colors=colors, log=log, size=size, majorx=majorx,
+                      device=device, files=files, savename=savename, colors=colors, log=log, size=size, majorx=majorx,
                       xlim=xlim, ylim=ylim, fontsize=fontsize, labelsize=labelsize)
     
-def plot_IDSvsTime_generic(fileroot, files, savename, colors=colors_set1, log=False, size=def_size,\
+def plot_IDSvsTime_generic(device, files, savename, colors=colors_set1, log=False, size=def_size,\
                            majorx=1800, xlim=(None,None), ylim=(None,None), fontsize=def_fontsize, labelsize=def_labelsize):    
     return plot_YvsX_generic('Time_s', '$\it{t_{s}}$ (V)', 'Current_A', '$\it{I_{D}}$ (%sA)', '_IDvst',
-                      fileroot=fileroot, files=files, savename=savename, colors=colors, log=log, size=size, majorx=majorx,
+                      device=device, files=files, savename=savename, colors=colors, log=log, size=size, majorx=majorx,
                       xlim=xlim, ylim=ylim, fontsize=fontsize, labelsize=labelsize)
 
-def plot_IDvsT_generic(fileroot, files, savename, colors, log=False, size=def_size, majorx=None, 
+def plot_IDvsT_generic(device, files, savename, colors, log=False, size=def_size, majorx=None, 
                         xlim=(None,None), ylim=(None,None), fontsize=def_fontsize, labelsize=def_labelsize):
     return plot_YvsX_generic('Temperature_K', '$\it{T$ (K)', 'Current_A', '$\it{I_{D}}$ (%sA)', '_IDvsT',
-                      fileroot=fileroot, files=files, savename=savename, colors=colors, log=log, size=size, majorx=majorx,
+                      device=device, files=files, savename=savename, colors=colors, log=log, size=size, majorx=majorx,
                       xlim=xlim, ylim=ylim, fontsize=fontsize, labelsize=labelsize)
     
-def plot_RSDvsT_generic(fileroot, files, savename, colors, log=False, size=def_size, majorx=None, 
+def plot_RSDvsT_generic(device, files, savename, colors, log=False, size=def_size, majorx=None, 
                         xlim=(None,None), ylim=(None,None), fontsize=def_fontsize, labelsize=def_labelsize):
     return plot_YvsX_generic('Temperature_K', '$\it{T}$ (K)', 'Resistance_1_Ohms', '$\it{R_{DS}}$ (%sΩ)', '_RSDvsT',
-                      fileroot=fileroot, files=files, savename=savename, colors=colors, log=log, size=size, majorx=majorx,
+                      device=device, files=files, savename=savename, colors=colors, log=log, size=size, majorx=majorx,
                       xlim=xlim, ylim=ylim, fontsize=fontsize, labelsize=labelsize)
     
-def plot_LnRSDvsPowT_generic(fileroot, files, savename, colors, power, power_label, \
+def plot_LnRSDvsPowT_generic(device, files, savename, colors, power, power_label, \
                         size=def_size, majorx=None, xlim=(None,None), ylim=(None,None), \
                         fontsize=def_fontsize, labelsize=def_labelsize):
 
@@ -514,7 +503,7 @@ def plot_LnRSDvsPowT_generic(fileroot, files, savename, colors, power, power_lab
     clean_label = power_label.replace(r"/", "_") 
     return plot_YvsX_generic('PowTemperature_K', '$\it{T^{%s}}$ ($K^{%s}$)' % (power_label, power_label),
                       'LnResistance_LnOhms', '$\it{ln(R)}$ (ln(Ω))', '_logRSDvsT_' + clean_label,
-                      fileroot=fileroot, files=newfiles, savename=savename, colors=colors, log=False, size=size, majorx=majorx,
+                      device=device, files=newfiles, savename=savename, colors=colors, log=False, size=size, majorx=majorx,
                       xlim=xlim, ylim=ylim, fontsize=fontsize, labelsize=labelsize)
 
     
@@ -663,7 +652,7 @@ def process_hall_data(Hall_file, device_width, device_length, device_volt_spacin
     B_data = Hall_file['Magnetic_Field_T']
     return (B_data, VH_datas, np.array(n2Ds), fits, fitdata, r_squareds, np.array(μH))
 
-def process_MR_data(fileroot, data_file, volt_fields, Bfitlimits=(None,None), plot_data=True, fit_data=True):
+def process_MR_data(device, data_file, volt_fields, Bfitlimits=(None,None), plot_data=True, fit_data=True):
     Bfield_data = data_file['Magnetic_Field_T']
     r_squareds = []
     Resistances = []
@@ -725,7 +714,7 @@ def process_MR_data(fileroot, data_file, volt_fields, Bfitlimits=(None,None), pl
             
         return plot_YvsX_generic('Magnetic_Field_T', '$\it{B}$ (T)',
                           volt_fields, '$\it{V}$ (%sV)', '_IvsV-fit_', markers=markers,
-                          fileroot=fileroot, files=[data_file], savename="MR", colors=plot_colors, log=False)
+                          device=device, files=[data_file], savename="MR", colors=plot_colors, log=False)
 
 
 def width_Vg(file, current):
@@ -817,7 +806,7 @@ def width_Vg(file, current):
     
     return np.abs(VG2 - VG1)
 
-def calc_max_IVG_slope(fileroot, file, Npoints=4, subplot=True, startend=-75, switch=75, Icutoff=5*10**-11):    
+def calc_max_IVG_slope(device, file, Npoints=4, subplot=True, startend=-75, switch=75, Icutoff=5*10**-11):    
     # split relevant ranges
     (file1, start_ind, end_ind) = slice_data(file, 'Gate_Voltage_V', start=startend, end=switch, tol=.01, starting_index=0)
     (file2, start_ind, end_ind) = slice_data(file, 'Gate_Voltage_V', start=switch, end=startend, tol=.01, starting_index=0)
@@ -890,7 +879,7 @@ def calc_max_IVG_slope(fileroot, file, Npoints=4, subplot=True, startend=-75, sw
     VT2 = -IVGintercept2[IVGmax2]/IVGslope2[IVGmax2]
     
     if subplot:
-        fig, ax, scale_pow = plot_IDvsVg_generic(fileroot, [fileall], None, [colors_set1[1]], log=False, size=2, majorx=25,
+        fig, ax, scale_pow = plot_IDvsVg_generic(device, [fileall], None, [colors_set1[1]], log=False, size=2, majorx=25,
                               ylim=(None,None), fontsize=10, labelsize=10)
         # add fit 1
         VGs = np.array([Vgs1[IVGmax1], Vgs1[IVGmax1+Npoints-1]])
@@ -918,8 +907,8 @@ def calc_max_IVG_slope(fileroot, file, Npoints=4, subplot=True, startend=-75, sw
             Vgs2[IVGmax2], Vgs2[IVGmax2+Npoints] #starting and ending of line
             )
 
-def plot_ΔVTvT(fileroot, filenames, savename, size=2, showthreshold=False, subplot=True, Npoints=4, Icutoff=5*10**-11):
-    files = [process_file(os.path.join(fileroot, x)) for x in filenames]
+def plot_ΔVTvT(device, filenames, savename, size=2, showthreshold=False, subplot=True, Npoints=4, Icutoff=5*10**-11):
+    files = [process_file(os.path.join(device.fileroot, x)) for x in filenames]
     
     temperatures = []
     VTinc = []
@@ -930,7 +919,7 @@ def plot_ΔVTvT(fileroot, filenames, savename, size=2, showthreshold=False, subp
         temperature = file['Temperature_K'][0]
         print("Temperature %s K" % str(temperature))
         temperatures.append(temperature)
-        VTi, Vgsi1, Vgsi2, VTd, Vgsd1, Vgsd2 = calc_max_IVG_slope(fileroot, file, Npoints=Npoints,
+        VTi, Vgsi1, Vgsi2, VTd, Vgsd1, Vgsd2 = calc_max_IVG_slope(device, file, Npoints=Npoints,
                                                           subplot=subplot, Icutoff=Icutoff)
         VTinc.append(VTi)
         VTdec.append(VTd)
@@ -951,12 +940,13 @@ def plot_ΔVTvT(fileroot, filenames, savename, size=2, showthreshold=False, subp
     if savename is None:
         return (fig, ax)
     else:
-        save_generic_svg(fig, fileroot, savename)
+        save_generic_svg(fig, device, savename)
         plt.show() 
         plt.clf()
         return None
 
-def calc_minSS(fileroot, file, Npoints=4, subplot=True, startend=-75, switch=75, Icutoff=5*10**-11):    
+def calc_minSS(device, file, Npoints=4, subplot=True, startend=-75, switch=75,
+               Icutoff=5*10**-11):    
     # split relevant ranges
     (file1, start_ind, end_ind) = slice_data(file, 'Gate_Voltage_V', start=startend, end=switch, tol=.01, starting_index=0)
     (file2, start_ind, end_ind) = slice_data(file, 'Gate_Voltage_V', start=switch, end=startend, tol=.01, starting_index=0)
@@ -969,10 +959,10 @@ def calc_minSS(fileroot, file, Npoints=4, subplot=True, startend=-75, switch=75,
     Is2 = file2['Current_A']
     
     # make sure it just didn't go to the ends
-    if (abs(file1['Gate_Voltage_V'][0] - -75) > .2 or 
-        abs(file1['Gate_Voltage_V'][-1] - 75) > .2 or 
-        abs(file2['Gate_Voltage_V'][0] - 75) > .2 or 
-        abs(file2['Gate_Voltage_V'][-1] - -75) > .2):
+    if (abs(file1['Gate_Voltage_V'][0] - startend) > .2 or 
+        abs(file1['Gate_Voltage_V'][-1] - switch) > .2 or 
+        abs(file2['Gate_Voltage_V'][0] - switch) > .2 or 
+        abs(file2['Gate_Voltage_V'][-1] - startend) > .2):
         print("Something went wrong with bounds")
         return np.nan
     
@@ -1029,7 +1019,8 @@ def calc_minSS(fileroot, file, Npoints=4, subplot=True, startend=-75, switch=75,
     SS2 = 1/np.array(SS2)
     
     if subplot:
-        fig, ax, scale_pow = plot_IDvsVg_generic(fileroot, [fileall], None, [colors_set1[1]], log=True, size=2, majorx=25,
+        fig, ax, scale_pow = plot_IDvsVg_generic(device, [fileall], None,
+                                [colors_set1[1]], log=True, size=2, majorx=25,
                               ylim=(None,None), fontsize=10, labelsize=10)
         # add fit 1
         VGs = np.array([Vgs1[SS1min], Vgs1[SS1min+Npoints-1]])
@@ -1053,14 +1044,362 @@ def calc_minSS(fileroot, file, Npoints=4, subplot=True, startend=-75, switch=75,
             Vgs2[SS2min], Vgs2[SS2min+Npoints] #starting and ending of line
             )
 
+def plot_Schottky_cross_section(device, filenames, savename, increments=[0,25,50,75], \
+                             figsize=def_size, xlim=(None, None), xinc=None, ylim=(None,None), \
+                             fontsize=def_fontsize, labelsize=def_labelsize, colororder=[0,3,2,1,4,5]):
+    colors = colors_set1[colororder]
+    
+    (Currents, Voltages, GateVoltages, Temperatures) = \
+        get_cross_section(device, filenames, increments, 1)
+    JT32 = np.log((Currents/(device.width*device.thickness))*np.power(Temperatures, -2))
+    T1000 = 1000/Temperatures
 
-##### UNUSED
-def plot_ΔVGvT(fileroot, filenames, current, size=def_size, log=False):
+    #ymax = [10.] if log else np.nanmax([np.nanmax(J) for J in JT32]) 
+    #(scale_pow, scale_label) = m_order(ymax)
+
+    fig = plt.figure(figsize=(figsize, figsize), dpi=300)
+    ax = pretty_plot_single(fig, labels=["$\it{1000/T}$", '$\it{ln(J/T^{2})}$'],
+                             yscale='linear', fontsize=fontsize, labelsize=labelsize)
+
+    for (color, JT32s) in zip (colors, JT32):
+        #real filter
+        #ind = np.where(np.logical_and(np.isfinite(JT32s), JT32s > 0))
+        
+        ax.plot(T1000, JT32s, '.-', ms=3, linewidth=1.5, color=color)
+
+    ax.set_xlim(xlim)
+    ax.set_ylim(ylim)
+    if xinc is not None:
+        ax.xaxis.set_major_locator(MultipleLocator(xinc))
+    
+    print(savename+  "_loop_Schottky-cross")
+    save_generic_svg(fig, device, savename + "_loop_Schottky-cross")
+    plt.show()
+    plt.clf()
+
+def plot_Schottky_Simmons_cross_section(device, filenames, savename, increments=[0,25,50,75], \
+                             figsize=def_size, xlim=(None, None), xinc=None, ylim=(None,None), \
+                             fontsize=def_fontsize, labelsize=def_labelsize, colororder=[0,3,2,1,4,5]):
+    colors = colors_set1[colororder]
+    
+    (Currents, Voltages, GateVoltages, Temperatures) = \
+        get_cross_section(device, filenames, increments, 1)
+    JT32 = np.log((Currents/(device.width*device.thickness))*np.power(Temperatures, -3/2))
+    T1000 = 1000/Temperatures
+
+    #ymax = [10.] if log else np.nanmax([np.nanmax(J) for J in JT32]) 
+    #(scale_pow, scale_label) = m_order(ymax)
+
+    fig = plt.figure(figsize=(figsize, figsize), dpi=300)
+    ax = pretty_plot_single(fig, labels=["$\it{1000/T}$", '$\it{ln(J/T^{3/2})}$'],
+                             yscale='linear', fontsize=fontsize, labelsize=labelsize)
+
+    for (color, JT32s) in zip (colors, JT32):
+        #real filter
+        ind = np.where(np.logical_and(np.isfinite(JT32s), JT32s > 0))
+        
+        ax.plot(T1000[ind], JT32s[ind], '.-', ms=3, linewidth=1.5, color=color)
+
+    ax.set_xlim(xlim)
+    ax.set_ylim(ylim)
+    if xinc is not None:
+        ax.xaxis.set_major_locator(MultipleLocator(xinc))
+    
+    print(savename+  "_loop_Schottky_Simmons-cross")
+    save_generic_svg(fig, device, savename + "_loop_Schottky_Simmons-cross")
+    plt.show()
+    plt.clf()
+    
+def plot_play_cross_section(device, filenames, savename, increments=[0,25,50,75], \
+                             figsize=def_size, xlim=(None, None), xinc=None, ylim=(None,None), \
+                             fontsize=def_fontsize, labelsize=def_labelsize, colororder=[0,3,2,1,4,5]):
+    colors = colors_set1[colororder]
+    
+    (Currents, Voltages, GateVoltages, Temperatures) = get_cross_section(device, filenames, increments, 1)
+    xdata = np.power(Temperatures, -1)
+    ydata = np.log(Currents/np.power(Temperatures, 2))
+
+    #ymax = [10.] if log else np.nanmax([np.nanmax(J) for J in JT32]) 
+    #(scale_pow, scale_label) = m_order(ymax)
+
+    fig = plt.figure(figsize=(figsize, figsize), dpi=300)
+    ax = pretty_plot_single(fig, labels=["$\it{T^?}$", '$\it{J^?}$'],
+                             yscale='linear', fontsize=fontsize, labelsize=labelsize)
+
+    for (color, ydata_i) in zip (colors, ydata):
+        #real filter
+        #ind = np.where(np.isfinite)
+        
+        ax.plot(xdata, ydata_i, '.-', ms=3, linewidth=1.5, color=color)
+
+    ax.set_xlim(xlim)
+    #ax.set_ylim(ylim)
+    if xinc is not None:
+        ax.xaxis.set_major_locator(MultipleLocator(xinc))
+    
+    print(savename+  "_loop_Schottky_Simmons-cross")
+    save_generic_svg(fig, device, savename + "_loop_Schottky_Simmons-cross")
+    plt.show()
+    plt.clf()
+
+def plot_IDvsVDS_fit_generic(device, files, savename, colors, 
+                             funcurrent, funvoltage, revoltage, labelcurrent, labelvoltage, labelplot,
+                         invertaxes=False, size=def_size, majorx=None, 
+                         xadj=0, x_mult=5, fontsize=def_fontsize, labelsize=def_labelsize, xlim=None, ylim=None,
+                         Icutoff=5*10**-11, fit=True, fitR2=.996, fitpoints=10, fitpower=1):    
+    
+    fig = plt.figure(figsize=(size, size), dpi=300)
+    ax = pretty_plot_single(fig, labels=[labelcurrent, labelvoltage],
+                            yscale='linear', fontsize=10, labelsize=10)
+    
+    for (file, color) in zip(files, colors):
+        current = np.abs(file['Current_A'])
+        voltages = np.abs(file['Voltage_1_V'])
+        
+        ind = np.where(np.logical_and(current > Icutoff, voltages > 0))
+        current = current[ind]
+        voltages = voltages[ind]
+        
+        xdata = funvoltage(voltages)
+        ydata = funcurrent(current, voltages)
+        
+        ax.plot(xdata, ydata, '.-', ms=3, linewidth=1.5, color=color)
+        
+        if fit:
+            fit_data_list = fit_to_limit_multiple(np.flip(xdata), np.flip(ydata),
+                                                  R2=fitR2, points=fitpoints, power=fitpower)
+            
+            fit_string = savename + " VG = " + str(file['Gate_Voltage_V'][0]) +" V, slopes = "
+            
+            if len(fit_data_list) > 0:
+                for fit_data in reversed(fit_data_list):
+                    ax.plot(fit_data[2], fit_data[3], '.-', ms=0, linewidth=1., color='black')
+                    coeffs = fit_data[0]
+                    xfit = revoltage(fit_data[2])
+                    fit_string = fit_string + ("%.1f(%.1f-%.1fV), " %
+                                  (coeffs[0], np.min(xfit), np.max(xfit)))
+
+            print(fit_string)
+       
+    ax.set_ylim(ylim)
+    if majorx is not None:
+        ax.xaxis.set_major_locator(MultipleLocator(majorx))
+    ax.set_xlim(xlim)
+    
+    if savename is None:
+        return (fig, ax)
+    else:
+        save_generic_svg(fig, device, savename  + labelplot)
+        plt.show() 
+        plt.clf()
+        return None
+        
+def plot_IDvsVDS_power_generic(device, files, savename, colors, 
+                         invertaxes=False, size=def_size, majorx=None, 
+                         xadj=0, x_mult=5, fontsize=def_fontsize, labelsize=def_labelsize, xlim=None, ylim=None,
+                         Icutoff=5*10**-11, fit=True, fitR2=.996, fitpoints=10, fitpower=1):    
+    
+    funvoltage = lambda V : np.log(V)
+    revoltage = lambda fV : np.exp(fV)
+    funcurrent = lambda I, V : np.log(I)
+    labelcurrent = "ln(V)"
+    labelvoltage = 'ln(%sI)' % ('-' if invertaxes else '')
+    labelplot = '_power'
+    
+    plot_IDvsVDS_fit_generic(device, files, savename, colors, 
+                             funcurrent, funvoltage, revoltage, labelcurrent, labelvoltage, labelplot,
+                             invertaxes=invertaxes, size=size, majorx=majorx, 
+                             xadj=xadj, x_mult=x_mult, fontsize=fontsize, labelsize=labelsize, xlim=xlim, ylim=ylim,
+                             Icutoff=Icutoff, fit=fit, fitR2=fitR2, fitpoints=fitpoints, fitpower=fitpower)
+
+    
+def plot_IDvsVDS_SCLC_generic(device, files, savename, colors, 
+                         invertaxes=False, size=def_size, majorx=None, 
+                         xadj=0, x_mult=5, fontsize=def_fontsize, labelsize=def_labelsize, xlim=None, ylim=None,
+                         Icutoff=5*10**-11, fit=True, fitR2=.996, fitpoints=10, fitpower=1):    
+
+    funvoltage = lambda V : np.log(np.power(V, 2))
+    revoltage = lambda fV : np.power(np.exp(fV), .5)
+    funcurrent = lambda I, V : np.log(I)
+    labelcurrent = "ln(V^2)"
+    labelvoltage = 'ln(%sI)' % ('-' if invertaxes else '')
+    labelplot = '_SCLC'
+    
+    plot_IDvsVDS_fit_generic(device, files, savename, colors, 
+                             funcurrent, funvoltage, revoltage, labelcurrent, labelvoltage, labelplot,
+                             invertaxes=invertaxes, size=size, majorx=majorx, 
+                             xadj=xadj, x_mult=x_mult, fontsize=fontsize, labelsize=labelsize, xlim=xlim, ylim=ylim,
+                             Icutoff=Icutoff, fit=fit, fitR2=fitR2, fitpoints=fitpoints, fitpower=fitpower)
+
+
+def plot_IDvsVD_Schottky_generic(device, files, savename, colors, 
+                         invertaxes=False, size=def_size, majorx=None, 
+                         xadj=0, x_mult=5, fontsize=def_fontsize, labelsize=def_labelsize, xlim=None, ylim=None,
+                         Icutoff=5*10**-11, fit=True, fitR2=.996, fitpoints=10, fitpower=1):    
+
+    funvoltage = lambda V : np.power(V, .5)
+    revoltage = lambda fV : np.power(fV, 2)
+    funcurrent = lambda I, V : np.log(I)
+    labelcurrent = "V^{1/2}"
+    labelvoltage = 'ln(%sI)' % ('-' if invertaxes else '')
+    labelplot = '_Schottky'
+    
+    plot_IDvsVDS_fit_generic(device, files, savename, colors, 
+                             funcurrent, funvoltage, revoltage, labelcurrent, labelvoltage, labelplot,
+                             invertaxes=invertaxes, size=size, majorx=majorx, 
+                             xadj=xadj, x_mult=x_mult, fontsize=fontsize, labelsize=labelsize, xlim=xlim, ylim=ylim,
+                             Icutoff=Icutoff, fit=fit, fitR2=fitR2, fitpoints=fitpoints, fitpower=fitpower)
+   
+def plot_IDVvsVDS_PooleFrenkel_generic(device, files, savename, colors, 
+                             invertaxes=False, size=def_size, majorx=None, 
+                             xadj=0, x_mult=5, fontsize=def_fontsize, labelsize=def_labelsize, xlim=None, ylim=None,
+                             Icutoff=5*10**-11, fit=True, fitR2=.996, fitpoints=10, fitpower=1):    
+
+    funvoltage = lambda V : np.power(V, .5)
+    revoltage = lambda fV : np.power(fV, 2)
+    funcurrent = lambda I, V : np.log(I/V)
+    labelcurrent = "V^{1/2}"
+    labelvoltage = 'ln(%sI/V)' % ('-' if invertaxes else '')
+    labelplot = '_PooleFrenkel'
+    
+    plot_IDvsVDS_fit_generic(device, files, savename, colors, 
+                             funcurrent, funvoltage, revoltage, labelcurrent, labelvoltage, labelplot,
+                             invertaxes=invertaxes, size=size, majorx=majorx, 
+                             xadj=xadj, x_mult=x_mult, fontsize=fontsize, labelsize=labelsize, xlim=xlim, ylim=ylim,
+                             Icutoff=Icutoff, fit=fit, fitR2=fitR2, fitpoints=fitpoints, fitpower=fitpower)
+
+def plot_IDVvsVDS_FowlerNordheim_generic(device, files, savename, colors, 
+                             invertaxes=False, size=def_size, majorx=None, 
+                             xadj=0, x_mult=5, fontsize=def_fontsize, labelsize=def_labelsize, xlim=None, ylim=None,
+                             Icutoff=5*10**-11, fit=True, fitR2=.996, fitpoints=10, fitpower=1):    
+
+    funvoltage = lambda V : np.power(V, -1)
+    revoltage = lambda fV : np.power(fV, -1)
+    funcurrent = lambda I, V : np.log(I/np.power(V, 2))
+    labelcurrent = "1/V"
+    labelvoltage = 'ln(%sI/V^2)' % ('-' if invertaxes else '')
+    labelplot = '_FowlerNordheim'
+    
+    plot_IDvsVDS_fit_generic(device, files, savename, colors, 
+                             funcurrent, funvoltage, revoltage, labelcurrent, labelvoltage, labelplot,
+                             invertaxes=invertaxes, size=size, majorx=majorx, 
+                             xadj=xadj, x_mult=x_mult, fontsize=fontsize, labelsize=labelsize, xlim=xlim, ylim=ylim,
+                             Icutoff=Icutoff, fit=fit, fitR2=fitR2, fitpoints=fitpoints, fitpower=fitpower)
+
+def plot_IDVvsVDS_DirectTunneling_generic(device, files, savename, colors, 
+                             invertaxes=False, size=def_size, majorx=None, 
+                             xadj=0, x_mult=5, fontsize=def_fontsize, labelsize=def_labelsize, xlim=None, ylim=None,
+                             Icutoff=5*10**-11, fit=True, fitR2=.996, fitpoints=10, fitpower=1):    
+
+    funvoltage = lambda V : np.log(np.power(V, -1))
+    revoltage = lambda fV : np.exp(np.power(fV, -1))
+    funcurrent = lambda I, V : np.log(I/np.power(V, 2))
+    labelcurrent = "log(1/V)"
+    labelvoltage = 'ln(%sI/V^2)' % ('-' if invertaxes else '')
+    labelplot = '_FowlerNordheim'
+    
+    plot_IDvsVDS_fit_generic(device, files, savename, colors, 
+                             funcurrent, funvoltage, revoltage, labelcurrent, labelvoltage, labelplot,
+                             invertaxes=invertaxes, size=size, majorx=majorx, 
+                             xadj=xadj, x_mult=x_mult, fontsize=fontsize, labelsize=labelsize, xlim=xlim, ylim=ylim,
+                             Icutoff=Icutoff, fit=fit, fitR2=fitR2, fitpoints=fitpoints, fitpower=fitpower)
+
+
+def plot_IDVvsVDS_Play_generic(device, files, savename, colors, 
+                             invertaxes=False, size=def_size, majorx=None, 
+                             xadj=0, x_mult=5, fontsize=def_fontsize, labelsize=def_labelsize, xlim=None, ylim=None,
+                             Icutoff=5*10**-11, fit=True, fitR2=.996, fitpoints=10, fitpower=1):    
+
+    funvoltage = lambda V : np.log(np.power(V, -1))
+    revoltage = lambda fV : np.exp(np.power(fV, -1))
+    funcurrent = lambda I, V : np.log(I/np.power(V, 2))
+    labelcurrent = "log(1/V) ??"
+    labelvoltage = 'ln(%sI/V^2) ??' % ('-' if invertaxes else '')
+    labelplot = '_Play'
+    
+    plot_IDvsVDS_fit_generic(device, files, savename, colors, 
+                             funcurrent, funvoltage, revoltage, labelcurrent, labelvoltage, labelplot,
+                             invertaxes=invertaxes, size=size, majorx=majorx, 
+                             xadj=xadj, x_mult=x_mult, fontsize=fontsize, labelsize=labelsize, xlim=xlim, ylim=ylim,
+                             Icutoff=Icutoff, fit=fit, fitR2=fitR2, fitpoints=fitpoints, fitpower=fitpower)
+
+def plot_IDVvsVDS_Thermionic_generic(device, files, savename, colors, 
+                             invertaxes=False, size=def_size, majorx=None, 
+                             xadj=0, x_mult=5, fontsize=def_fontsize, labelsize=def_labelsize, xlim=None, ylim=None,
+                             Icutoff=5*10**-11, fit=True, fitR2=.996, fitpoints=10, fitpower=1):    
+
+    funvoltage = lambda V : np.power(V, 2)
+    revoltage = lambda fV : np.power(fV, 1/2)
+    funcurrent = lambda I, V : np.log(I/V)
+    labelcurrent = "V^2"
+    labelvoltage = 'ln(%sI/V^2)' % ('-' if invertaxes else '')
+    labelplot = '_FowlerNordheim'
+    
+    plot_IDvsVDS_fit_generic(device, files, savename, colors, 
+                             funcurrent, funvoltage, revoltage, labelcurrent, labelvoltage, labelplot,
+                             invertaxes=invertaxes, size=size, majorx=majorx, 
+                             xadj=xadj, x_mult=x_mult, fontsize=fontsize, labelsize=labelsize, xlim=xlim, ylim=ylim,
+                             Icutoff=Icutoff, fit=fit, fitR2=fitR2, fitpoints=fitpoints, fitpower=fitpower)
+
+
+def fit_to_limit(xdata, ydata, R2=.99, points=5, power=1):
+    lenx = xdata.size
+    pcoefslast = None
+    pfit = None
+    fitlen = 0
+    r_squared_calc = 0
+    
+    for i in range(0, lenx):
+        try:
+            (pcoefs, residuals, rank, singular_values, rcond) = \
+                np.polyfit(xdata[:i+points], ydata[:i+points],
+                           power, full = True)
+        except np.linalg.LinAlgError:
+            break
+        
+        # error in fit
+        pfit = np.poly1d(pcoefs)
+        residuals = ydata[:i+points] - pfit(xdata[:i+points])
+        ss_res = np.sum(residuals**2)
+        ss_tot = np.sum((ydata[:i+points]-np.mean(ydata[:i+points]))**2)
+        r_squared_calc = 1 - (ss_res / ss_tot)
+        
+        if r_squared_calc < R2:
+            break
+        pcoefslast = pcoefs
+        fitlen = i
+    
+    if pcoefslast is None:
+        return None, 0, np.array(np.NaN), np.array([np.NaN]),
+    
+    # coeffs, R^2, xfit, yfit
+    pfit = np.poly1d(pcoefslast)
+    return (pcoefslast, r_squared_calc, xdata[0:fitlen+points], \
+            pfit(xdata[0:fitlen+points]))
+        
+def fit_to_limit_multiple(xdata, ydata, R2=.99, points=5, power=1):
+    fit_data_list = []
+    
+    while xdata.size > points:
+        fit_data = fit_to_limit(xdata, ydata, R2=R2, points=points, power=power)
+        if fit_data[0] is None:
+            xdata = xdata[1:]
+            ydata = ydata[1:]
+        else:
+            fit_data_list.append(fit_data)
+            lenfit = fit_data[2].size
+            xdata = xdata[lenfit:]
+            ydata = ydata[lenfit:]
+    
+    return fit_data_list
+    
+
+def plot_ΔVGvT(device, filenames, current, size=def_size, log=False):
     savename = '_DVGvT'
     size = 2
     colors = colors_set1
 
-    files = [process_file(fileroot + x) for x in filenames]
+    files = [process_file(device.fileroot + x) for x in filenames]
     
     fig = plt.figure(figsize=(size, size), dpi=300)
     ax = pretty_plot_single(fig, labels=["$\it{T}$ (K)", '$\it{ΔV_{G}}$ (V)'],
@@ -1079,12 +1418,13 @@ def plot_ΔVGvT(fileroot, filenames, current, size=def_size, log=False):
     
     scalename = "_log" if log else "_linear"
     print(savename+scalename)
-    save_generic_svg(fig, fileroot, savename+scalename)
+    save_generic_svg(fig, device, savename+scalename)
     plt.show()
     plt.clf()
 
-def plot_maxSS_vs_T(fileroot, filenames, savename, size=2, showthreshold=False, subplot=True, Npoints=4, Icutoff=5*10**-11):
-    files = [process_file(os.path.join(fileroot, x)) for x in filenames]
+def plot_maxSS_vs_T(device, filenames, savename, size=2, showthreshold=False,
+                    subplot=True, Npoints=4, Icutoff=5*10**-11, startend=-75, switch=+75):
+    files = [process_file(os.path.join(device.fileroot, x)) for x in filenames]
     
     temperatures = []
     SSinc = []
@@ -1094,8 +1434,8 @@ def plot_maxSS_vs_T(fileroot, filenames, savename, size=2, showthreshold=False, 
         temperature = file['Temperature_K'][0]
         print("Temperature %s K" % str(temperature))
         temperatures.append(temperature)
-        SSi, Vgsi1, Vgsi2, SSd, Vgsd1, Vgsd2 = calc_minSS(fileroot, file, Npoints=Npoints,
-                                                          subplot=subplot, Icutoff=Icutoff)
+        SSi, Vgsi1, Vgsi2, SSd, Vgsd1, Vgsd2 = \
+            calc_minSS(device, file, Npoints=Npoints, subplot=subplot, Icutoff=Icutoff, startend=-75.0, switch=75.0)
         SSinc.append(SSi)
         SSdec.append(SSd)
     
@@ -1121,17 +1461,18 @@ def plot_maxSS_vs_T(fileroot, filenames, savename, size=2, showthreshold=False, 
     if savename is None:
         return (fig, ax)
     else:
-        save_generic_svg(fig, fileroot, savename)
+        save_generic_svg(fig, device, savename)
         plt.show() 
         plt.clf()
         return None
 
-def process_R_4pt(RTloop_2_4pt_filenames):
+##### UNUSED
+def process_R_4pt(device, RTloop_2_4pt_filenames, T):
     #seperate files for R_4pt
     (cs_Currents_left, cs_Voltages_left, _, cs_Temperatures) = \
-        get_cross_section(fileroot, RTloop_2_4pt_filenames, [75.], 1)
+        get_cross_section(device, RTloop_2_4pt_filenames, [75.], 1)
     (cs_Currents_right, cs_Voltages_right, _, cs_Temperatures) = \
-        get_cross_section(fileroot, RTloop_2_4pt_filenames, [75.], 2)
+        get_cross_section(device, RTloop_2_4pt_filenames, [75.], 2)
         
     occ0 = first_occurance_1D(cs_Temperatures, T, tol=.2, starting_index=0)
     R_left = cs_Voltages_left[0][occ0]/cs_Currents_left[0][occ0]
@@ -1140,7 +1481,7 @@ def process_R_4pt(RTloop_2_4pt_filenames):
     Rxx_4pt = (R_left+R_right)/2
 
 
-def process_IV_data(fileroot, data_file, volt_fields, Ilimits=(None,None), plot_data=True):
+def process_IV_data(device, data_file, volt_fields, Ilimits=(None,None), plot_data=True):
     current_data = data_file['Current_A']
     r_squareds = []
     Resistances = []
@@ -1200,7 +1541,7 @@ def process_IV_data(fileroot, data_file, volt_fields, Ilimits=(None,None), plot_
             
         return plot_YvsX_generic('Current_A', '$\it{I}$ (A)',
                           volt_fields, '$\it{V}$ (%sV)', '_IvsV-fit_', markers=markers,
-                          fileroot=fileroot, files=[data_file], savename=None, colors=plot_colors, log=False)
+                          device=device, files=[data_file], savename=None, colors=plot_colors, log=False)
     
     return (Ravg, Resistances, r_squareds)
 

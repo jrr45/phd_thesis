@@ -1,0 +1,81 @@
+[Main]
+Experiment = "RvsVg_300.0K"
+Header length = 74    
+Date = "20191105 00:45:51"
+Comments = "SD: 2V- to 1Vb; Volt1: 2Va to 2I+; Volt2: 2Vb to 2I-; Gate: 1I+ to 1Vb"
+
+[System]
+System = "PPMS"
+Magnet stability range (G) = 5.000000E+1
+Magnet check interval (s) = 1.000000E+0
+Magnet approach mode = "Linear Approach"
+Magnet mode = "Persistent"
+Temperature stability time (s) = 1.000000E+0
+Temperature approach mode = "Fast Settle"
+
+[Static Temperature]
+Set initial temperature = TRUE
+Initial temperature (K) = 3.000000E+2
+Delay after setting initial temperature (s) = 1.000000E+2
+Initial temperature stabilization (K) = 2.000000E-1
+Initial temperature ramp rate (K/min) = 1.000000E+1
+Wait for initial temperature to stabilize = TRUE
+Set final temperature = FALSE
+
+[Dynamic Gate Voltage]
+Pattern = "Linear"
+Cycles = 1
+Initial gate voltage (V) = -7.500000E+1
+Final gate voltage (V) = 7.500000E+1
+Measurement interval (V) = 2.500000E+1
+Ramp step (V) = 1.000000E-1
+Ramp delay (s) = 0.100000
+Pre-measurement Delay = 1.000000E+0
+Leak current measurement threshold = 1.000000
+Check compliance = TRUE
+Gate voltage source type = "Keithley 2400"
+GPIB = "GPIB0::16::INSTR"
+Gate leak limit (A) = 1.000000E-6
+Autorange = TRUE
+Number of current measurements = 30
+Speed = 1.000000
+Set finish gate voltage = FALSE
+
+[Measure Voltage Configuration1]
+Voltage meter = "Keithley 2182A"
+Auto-range = "Manual"
+GPIB = "GPIB0::7::INSTR"
+Range (V) = 1.000000E+0
+Speed = 1.000000
+
+[Measure Voltage Configuration2]
+Voltage meter = "Keithley 2182A"
+Auto-range = "Manual"
+GPIB = "GPIB0::8::INSTR"
+Range (V) = 1.000000E+0
+Speed = 1.000000
+
+[Dynamic Voltage]
+Voltage source = "Keithley 6430"
+GPIB = "GPIB0::9::INSTR"
+Initial Voltage (V) = 100.000000E-3
+Final Voltage (V) = 100.000000E-3
+Voltage step (V) = 1.000000E-12
+Number of measurement sequences = 1.000000E+0
+Samples/sequence = 100.000000E+0
+Pre-measuement delay (s) = 1.000000E+0
+Current limit (A) = 100.000000E-6
+Auto-range = 0
+Manual range (V) = 10.000000E+0
+Measurement Type = "Subtract bias"
+Pattern = "Linear"
+Check compliance = 0
+Measurement Speed = 1.000000
+Time (s)	Gate Voltage (V)	Gate Leak Current (A)	Voltage 1 (V)	Current (A)	STD_Current (A)	Resistance 1 (Ohms)	STD_Resistance 1 (Ohms)	Voltage 2 (V)	Voltage 3 (V)	STD_Voltage 2 (V)	STD_Voltage 3 (V)	Resistance 2 (Ohms)	Resistance 3 (Ohms)	STD_Resistance 2 (Ohms)	STD_Resistance 3 (Ohms)	Temperature (K)
+193.123850822E+0	-75.000000000E+0	-637.413009411E-12	100.000001490E-3	311.553415300E-12	19.469646638E-12	320.972252523E+6	20.058250144E+6	7.782440465E-3	NaN	5.339034879E-3	NaN	24.979474090E+6	NaN	17.136820259E+6	NaN	300.002600000E+0
+302.601668358E+0	-50.000000000E+0	-223.970069343E-12	100.000001490E-3	1.224772024E-9	139.140726896E-12	81.647849142E+6	9.275637304E+6	21.372469180E-3	NaN	1.934480549E-3	NaN	17.450161134E+6	NaN	1.579461737E+6	NaN	300.003200000E+0
+393.256951332E+0	-25.000000000E+0	-55.964883885E-12	100.000001490E-3	3.018771531E-9	209.973581954E-12	33.126058220E+6	2.304115111E+6	21.507865440E-3	NaN	610.708061884E-6	NaN	7.124707921E+6	NaN	202.303505122E+3	NaN	299.997600000E+0
+481.324645042E+0	0.000000000E+0	67.804771028E-12	100.000001490E-3	6.453020085E-9	341.339322074E-12	15.496620214E+6	819.710115388E+3	19.091933718E-3	159.160707624E-3	329.182302725E-6	144.899611409E-3	2.958604416E+6	24.664530023E+6	51.012130506E+3	22.454542137E+6	299.999900000E+0
+572.254272938E+0	25.000000000E+0	163.997042104E-12	100.000001490E-3	10.945883745E-9	286.417849427E-12	9.135854520E+6	239.055325750E+3	17.500704031E-3	53.579542274E-3	211.517357518E-6	19.236353249E-3	1.598838836E+6	4.894948962E+6	19.323917780E+3	1.757405222E+6	300.006200000E+0
+661.402235985E+0	50.000000000E+0	248.099477074E-12	100.000001490E-3	15.618179948E-9	389.834130849E-12	6.402794809E+6	159.815545576E+3	16.282365573E-3	33.923702981E-3	139.121839348E-6	5.867320740E-3	1.042526442E+6	2.172065061E+6	8.907685775E+3	375.672502163E+3	300.000100000E+0
+750.275853157E+0	75.000000000E+0	329.218620883E-12	100.000001490E-3	20.334320651E-9	553.033046746E-12	4.917794069E+6	133.749372985E+3	15.102355139E-3	26.739134802E-3	123.636634491E-6	3.164555818E-3	742.702714210E+3	1.314975566E+6	6.080194987E+3	155.626335988E+3	299.999200000E+0

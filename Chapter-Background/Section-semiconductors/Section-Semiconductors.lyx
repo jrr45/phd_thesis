@@ -489,13 +489,12 @@ literal "false"
  The mobility-temperature dependence is then given by
 \begin_inset Formula 
 \begin{equation}
-\mu_{VHR}\propto\exp\left(-1/T^{\beta}\right)
+\mu_{VHR}\propto\exp\left(-1/T^{\beta}\right)\,.
 \end{equation}
 
 \end_inset
 
-.
- The two most common VHR models are Mott-VHR and Efros-Shklovskii-VRH.
+The two most common VHR models are Mott-VHR and Efros-Shklovskii-VRH.
  In Mott-VHR 
 \begin_inset Formula $\beta=\frac{1}{d+1}$
 \end_inset
@@ -2566,7 +2565,7 @@ name "fig:IV Metal-S.C.-metal,-linear-scale"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
