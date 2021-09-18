@@ -16,6 +16,7 @@ import configparser
 fundamental_charge_e = -1.602176634 * (10**-19) # SI: C
 ħ = 1.0545718 * 10**-34 #SI m^2 kg / s
 kB = 1.38064852 * (10**-23) # m^2 * kg / (s^2 * K)  Boltzmann constant
+kBeV = 8.617333262145 * (10**-5) # eV / K  Boltzmann constant
 
 def_fontsize=10
 def_labelsize=10
@@ -24,9 +25,11 @@ def_size = 2
 cmap = plt.cm.get_cmap('Set1')
 colors_set1 = cmap(np.linspace(0,1,9))
 
-class flake_device:
+class device:
     fileroot = ""
     name = ""
+
+class flake_device(device):
     thickness = 0 # meters
     length = 0 # meters
     width = 0 # meters
@@ -77,6 +80,12 @@ def process_file(file):
     #print(experiment)
     #print(data.dtype.names)
     return data
+
+def process_device_files(device, files):
+    if isinstance(files, list):
+        return [process_file(os.path.join(device.fileroot, x)) for x in files]
+    else:
+        return [process_file(os.path.join(device.fileroot, files))]
 
 def save_generic_both(fig, root, filename):
     save_generic_png(fig, root, filename)
@@ -561,8 +570,7 @@ def compute_r2_weighted(y_true, y_pred, weight=None):
     return r2_score, sse, tse
 
 
-def process_hall_data(Hall_file, device_width, device_length, device_volt_spacing, device_thickness,
-                      T_Rxx_4pt=None,
+def process_hall_data(device, Hall_file, T_Rxx_4pt=None,
                       hall_fields=['Voltage_1_V', 'Voltage_2_V'], symmeterize=True, Bfitlimits=(-10,10)):
     
     n2Ds = [] # 2D hall density
@@ -580,13 +588,13 @@ def process_hall_data(Hall_file, device_width, device_length, device_volt_spacin
     # pull R from seperate 4pt data 
     if T_Rxx_4pt is not None:
         #σs = l/(Rxx*w)
-        σs = device_volt_spacing / (T_Rxx_4pt * device_width)
+        σs = device.volt_spacing / (T_Rxx_4pt * device.width)
     # R from 2pt resistance in actual measurement
     else:
         VDS_data = Hall_file['Voltage_3_V']
         ind = first_occurance_1D(B_data, 0, tol=0.01, starting_index=0)
         R_2pt = VDS_data[ind]/current ##
-        σs = device_length / (R_2pt * device_width)
+        σs = device.length / (R_2pt * device.width)
     
     B_data = B_data[occ0:occ1]
     VH_datas = []
@@ -627,7 +635,7 @@ def process_hall_data(Hall_file, device_width, device_length, device_volt_spacin
         
         # n2D = B/(Rxy*e) = 1/RH2D*e 
         n2D = B_point*current/((V_hall_T-V_hall0T)*abs(fundamental_charge_e))
-        n3D = n2D/device_thickness
+        n3D = n2D/device.thickness
         print("%s K: n2D: %s cm^-2, n3D: %s cm^-3" % (round(T,1),
                     np.format_float_scientific(n2D/(100*100), unique=False, precision=5),
                     np.format_float_scientific(n3D/(100*100*100), unique=False, precision=5))
@@ -1143,13 +1151,14 @@ def plot_play_cross_section(device, filenames, savename, increments=[0,25,50,75]
     plt.clf()
 
 def plot_IDvsVDS_fit_generic(device, files, savename, colors, 
-                             funcurrent, funvoltage, revoltage, labelcurrent, labelvoltage, labelplot,
+                             funcurrent, funvoltage, revoltage, labelcurrent,
+                             labelvoltage, labelplot,
                          invertaxes=False, size=def_size, majorx=None, 
                          xadj=0, x_mult=5, fontsize=def_fontsize, labelsize=def_labelsize, xlim=None, ylim=None,
                          Icutoff=5*10**-11, fit=True, fitR2=.996, fitpoints=10, fitpower=1):    
     
     fig = plt.figure(figsize=(size, size), dpi=300)
-    ax = pretty_plot_single(fig, labels=[labelcurrent, labelvoltage],
+    ax = pretty_plot_single(fig, labels=[labelvoltage, labelcurrent],
                             yscale='linear', fontsize=10, labelsize=10)
     
     for (file, color) in zip(files, colors):
@@ -1189,7 +1198,7 @@ def plot_IDvsVDS_fit_generic(device, files, savename, colors,
     if savename is None:
         return (fig, ax)
     else:
-        save_generic_svg(fig, device, savename  + labelplot)
+        save_generic_svg(fig, device, savename + labelplot)
         plt.show() 
         plt.clf()
         return None
@@ -1202,8 +1211,8 @@ def plot_IDvsVDS_power_generic(device, files, savename, colors,
     funvoltage = lambda V : np.log(V)
     revoltage = lambda fV : np.exp(fV)
     funcurrent = lambda I, V : np.log(I)
-    labelcurrent = "ln(V)"
-    labelvoltage = 'ln(%sI)' % ('-' if invertaxes else '')
+    labelvoltage = "ln(V)"
+    labelcurrent = 'ln(%sI)' % ('-' if invertaxes else '') 
     labelplot = '_power'
     
     plot_IDvsVDS_fit_generic(device, files, savename, colors, 
@@ -1221,8 +1230,8 @@ def plot_IDvsVDS_SCLC_generic(device, files, savename, colors,
     funvoltage = lambda V : np.log(np.power(V, 2))
     revoltage = lambda fV : np.power(np.exp(fV), .5)
     funcurrent = lambda I, V : np.log(I)
-    labelcurrent = "ln(V^2)"
-    labelvoltage = 'ln(%sI)' % ('-' if invertaxes else '')
+    labelvoltage = "ln(V^2)"
+    labelcurrent = 'ln(%sI)' % ('-' if invertaxes else '')
     labelplot = '_SCLC'
     
     plot_IDvsVDS_fit_generic(device, files, savename, colors, 
@@ -1240,8 +1249,8 @@ def plot_IDvsVD_Schottky_generic(device, files, savename, colors,
     funvoltage = lambda V : np.power(V, .5)
     revoltage = lambda fV : np.power(fV, 2)
     funcurrent = lambda I, V : np.log(I)
-    labelcurrent = "V^{1/2}"
-    labelvoltage = 'ln(%sI)' % ('-' if invertaxes else '')
+    labelvoltage = "V^{1/2}"
+    labelcurrent = 'ln(%sI)' % ('-' if invertaxes else '')
     labelplot = '_Schottky'
     
     plot_IDvsVDS_fit_generic(device, files, savename, colors, 
@@ -1258,8 +1267,8 @@ def plot_IDVvsVDS_PooleFrenkel_generic(device, files, savename, colors,
     funvoltage = lambda V : np.power(V, .5)
     revoltage = lambda fV : np.power(fV, 2)
     funcurrent = lambda I, V : np.log(I/V)
-    labelcurrent = "V^{1/2}"
-    labelvoltage = 'ln(%sI/V)' % ('-' if invertaxes else '')
+    labelvoltage = "V^{1/2}"
+    labelcurrent = 'ln(%sI/V)' % ('-' if invertaxes else '')
     labelplot = '_PooleFrenkel'
     
     plot_IDvsVDS_fit_generic(device, files, savename, colors, 
@@ -1276,8 +1285,8 @@ def plot_IDVvsVDS_FowlerNordheim_generic(device, files, savename, colors,
     funvoltage = lambda V : np.power(V, -1)
     revoltage = lambda fV : np.power(fV, -1)
     funcurrent = lambda I, V : np.log(I/np.power(V, 2))
-    labelcurrent = "1/V"
-    labelvoltage = 'ln(%sI/V^2)' % ('-' if invertaxes else '')
+    labelvoltage = "1/V"
+    labelcurrent = 'ln(%sI/V^2)' % ('-' if invertaxes else '')
     labelplot = '_FowlerNordheim'
     
     plot_IDvsVDS_fit_generic(device, files, savename, colors, 
@@ -1294,8 +1303,8 @@ def plot_IDVvsVDS_DirectTunneling_generic(device, files, savename, colors,
     funvoltage = lambda V : np.log(np.power(V, -1))
     revoltage = lambda fV : np.exp(np.power(fV, -1))
     funcurrent = lambda I, V : np.log(I/np.power(V, 2))
-    labelcurrent = "log(1/V)"
-    labelvoltage = 'ln(%sI/V^2)' % ('-' if invertaxes else '')
+    labelvoltage = "log(1/V)"
+    labelcurrent = 'ln(%sI/V^2)' % ('-' if invertaxes else '')
     labelplot = '_FowlerNordheim'
     
     plot_IDvsVDS_fit_generic(device, files, savename, colors, 
@@ -1313,8 +1322,8 @@ def plot_IDVvsVDS_Play_generic(device, files, savename, colors,
     funvoltage = lambda V : np.log(np.power(V, -1))
     revoltage = lambda fV : np.exp(np.power(fV, -1))
     funcurrent = lambda I, V : np.log(I/np.power(V, 2))
-    labelcurrent = "log(1/V) ??"
-    labelvoltage = 'ln(%sI/V^2) ??' % ('-' if invertaxes else '')
+    labelvoltage = "log(1/V) ??"
+    labelcurrent = 'ln(%sI/V^2) ??' % ('-' if invertaxes else '')
     labelplot = '_Play'
     
     plot_IDvsVDS_fit_generic(device, files, savename, colors, 
@@ -1331,8 +1340,8 @@ def plot_IDVvsVDS_Thermionic_generic(device, files, savename, colors,
     funvoltage = lambda V : np.power(V, 2)
     revoltage = lambda fV : np.power(fV, 1/2)
     funcurrent = lambda I, V : np.log(I/V)
-    labelcurrent = "V^2"
-    labelvoltage = 'ln(%sI/V^2)' % ('-' if invertaxes else '')
+    labelvoltage = "V^2"
+    labelcurrent = 'ln(%sI/V^2)' % ('-' if invertaxes else '')
     labelplot = '_FowlerNordheim'
     
     plot_IDvsVDS_fit_generic(device, files, savename, colors, 
@@ -1393,6 +1402,243 @@ def fit_to_limit_multiple(xdata, ydata, R2=.99, points=5, power=1):
     
     return fit_data_list
     
+
+def plot_WvsT_fit_generic(device, file, savename,
+                         size=2, majorx=None, fit=True, R1=True, R2=True,
+                         fitR2=.996, Tmin=0, Tmax=401, fitpower=1):
+    colors=colors_set1
+    Temperature = file['Temperature_K']
+    ind = np.logical_and(Temperature > Tmin, Temperature < Tmax)
+    
+    #file = append_fields(file, 'rho1_Ohmscm', rho1, np.double, usemask=False)
+    #file = append_fields(file, 'rho2_Ohmscm', rho2, np.double, usemask=False)
+    #file = append_fields(file, 'rhosd_Ohmscm', rhosd, np.double, usemask=False)
+    
+    rhos = []
+    rhonames = []
+    rhocolors = []
+    fitcoefs = []
+    if R1:
+        R1 = file['Resistance_1_Ohms']
+        rho1 = R1 * device.width * device.thickness / device.volt_length
+        rhos.append(rho1)
+        rhonames.append('rho1')
+        rhocolors.append(colors[0])
+        
+    if R2:
+        R2 = file['Resistance_2_Ohms']
+        rho2 = R2 * device.width * device.thickness / device.volt_length
+        rhos.append(rho2)
+        rhonames.append('rho2')
+        rhocolors.append(colors[1])
+    
+    Rsd = file['Resistance_3_Ohms']
+    rhoDS = Rsd * device.width * device.thickness / device.volt_length
+    rhos.append(rhoDS)
+    rhonames.append('rhoDS')
+    rhocolors.append(colors[2])
+        
+    fig = plt.figure(figsize=(size, size), dpi=300)
+    ax = pretty_plot_single(fig, labels=['ln(w)', 'ln(T)'],
+                            yscale='linear', fontsize=10, labelsize=10)
+    
+    for (rho, rho_name, color) in zip(rhos, rhonames, rhocolors):
+        
+        DeltaT = Temperature[1:] - Temperature[:-1]
+        lnrho = np.log(rho)
+        Deltarho = lnrho[1:] - lnrho[:-1]
+        Tavg = (Temperature[1:] + Temperature[:-1])/2
+        w = -Tavg*Deltarho/DeltaT
+        
+        xdata = np.log(Tavg)
+        ydata = np.log(w)
+        
+        ax.plot(xdata, ydata, '.-', ms=3, linewidth=1.5, color=color)
+        
+        #xdata = funtemperature(Temperature[ind])
+        #ydata = funresistivity(rho[ind], Temperature[ind])
+        ind2 = np.isfinite(ydata)
+        xdata = xdata[ind2]
+        ydata = ydata[ind2]
+        
+        try:
+            (pcoefs, residuals, rank, singular_values, rcond) = \
+                np.polyfit(xdata, ydata,
+                           1, full = True)
+        except np.linalg.LinAlgError:
+            continue
+        
+        fitcoefs.append(pcoefs)
+        
+        # error in fit
+        pfit = np.poly1d(pcoefs)
+        residuals = ydata - pfit(xdata)
+        ss_res = np.sum(residuals**2)
+        ss_tot = np.sum((ydata-np.mean(ydata))**2)
+        r_squared_calc = 1 - (ss_res / ss_tot)
+        
+        
+        fit_string = "%s %s slope = %3.3f, R^2 = %f" % \
+            (savename, rho_name, pcoefs[0], r_squared_calc)
+        print(fit_string)
+        
+        ax.plot(xdata, pfit(xdata), '.-', ms=0, linewidth=1., color='black')
+        
+    if savename is None:
+        return (fig, ax, fitcoefs, rhonames)
+    else:
+        save_generic_svg(fig, device, savename)
+        plt.show() 
+        plt.clf()
+        return (fitcoefs, rhonames)
+
+def plot_rhovsT_fit_generic(device, file, savename, colors, 
+                         funtemperature, revtemperature, funresistivity, 
+                         labeltemperature, labelresistivity, labelplot,
+                         size=2, majorx=None, fit=True, R1=True, R2=True,
+                         fitR2=.996, Tmin=299, Tmax=401, fitpower=1):
+    
+    Temperature = file['Temperature_K']
+    ind = np.logical_and(Temperature > Tmin, Temperature < Tmax)
+    
+    #file = append_fields(file, 'rho1_Ohmscm', rho1, np.double, usemask=False)
+    #file = append_fields(file, 'rho2_Ohmscm', rho2, np.double, usemask=False)
+    #file = append_fields(file, 'rhosd_Ohmscm', rhosd, np.double, usemask=False)
+    
+    rhos = []
+    rhonames = []
+    rhocolors = []
+    fitcoefs = []
+    if R1:
+        R1 = file['Resistance_1_Ohms']
+        rho1 = R1 * device.width * device.thickness / device.volt_length
+        rhos.append(rho1)
+        rhonames.append('rho1')
+        rhocolors.append(colors[0])
+        
+    if R2:
+        R2 = file['Resistance_2_Ohms']
+        rho2 = R2 * device.width * device.thickness / device.volt_length
+        rhos.append(rho2)
+        rhonames.append('rho2')
+        rhocolors.append(colors[1])
+    
+    Rsd = file['Resistance_3_Ohms']
+    rhoDS = Rsd * device.width * device.thickness / device.volt_length
+    rhos.append(rhoDS)
+    rhonames.append('rhoDS')
+    rhocolors.append(colors[2])
+        
+    fig = plt.figure(figsize=(size, size), dpi=300)
+    ax = pretty_plot_single(fig, labels=[labeltemperature, labelresistivity],
+                            yscale='linear', fontsize=10, labelsize=10)
+    
+    for (rho, rho_name, color) in zip(rhos, rhonames, rhocolors):
+        
+        xdata = funtemperature(Temperature)
+        ydata = funresistivity(rho, Temperature)
+        
+        ax.plot(xdata, ydata, '.-', ms=3, linewidth=1.5, color=color)
+        
+        xdata = funtemperature(Temperature[ind])
+        ydata = funresistivity(rho[ind], Temperature[ind])
+        ind2 = np.isfinite(ydata)
+        xdata = xdata[ind2]
+        ydata = ydata[ind2]
+        
+        try:
+            (pcoefs, residuals, rank, singular_values, rcond) = \
+                np.polyfit(xdata, ydata,
+                           1, full = True)
+        except np.linalg.LinAlgError:
+            continue
+        
+        fitcoefs.append(pcoefs)
+        
+        # error in fit
+        pfit = np.poly1d(pcoefs)
+        residuals = ydata - pfit(xdata)
+        ss_res = np.sum(residuals**2)
+        ss_tot = np.sum((ydata-np.mean(ydata))**2)
+        r_squared_calc = 1 - (ss_res / ss_tot)
+        
+        
+        fit_string = "%s %s slope = %3.3f, R^2 = %f" % \
+            (savename, rho_name, pcoefs[0], r_squared_calc)
+        print(fit_string)
+        
+        ax.plot(xdata, pfit(xdata), '.-', ms=0, linewidth=1., color='black')
+        
+    if savename is None:
+        return (fig, ax, fitcoefs, rhonames)
+    else:
+        save_generic_svg(fig, device, savename)
+        plt.show() 
+        plt.clf()
+        return (fitcoefs, rhonames)
+        
+            
+def plot_rho_vs_T_power_generic(device, file, size=2,
+                                R1=True, R2=True, Tmin=0, Tmax=500):
+    colors=colors_set1
+    
+    funtemperature = lambda T : np.log10(T)
+    revtemperature = lambda fT : np.power(10, fT)
+    funresistivity = lambda rho, T : np.log10(rho)
+    labeltemperature = "ln10(T)"
+    labelresistivity = 'ln10(ρ)'
+    labelplot = ''
+    
+    plot_rhovsT_fit_generic(device, file, '_power', colors, 
+                            funtemperature, revtemperature, funresistivity, 
+                            labeltemperature, labelresistivity, labelplot,
+                            size=size, fitpower=1, R1=R1, R2=R2,
+                            Tmin=Tmin, Tmax=Tmax)
+    
+def plot_rho_vs_T_hopping_generic(device, file, power=1, power_label='?',
+                                  size=2, R1=True, R2=True, Tmin=0, Tmax=500):
+    colors=colors_set1
+    
+    funtemperature = lambda T : np.power(T, power)
+    revtemperature = lambda fT : np.power(fT, 1/power)
+    funresistivity = lambda rho, T : np.log10(rho)
+    labeltemperature = "T^" + power_label
+    labelresistivity = 'ln10(ρ)'
+    labelplot = ''
+    
+    clean_label = power_label.replace(r"/", "_") 
+    return plot_rhovsT_fit_generic(device, file, '_hopping_'+clean_label+'_', colors, 
+                            funtemperature, revtemperature, funresistivity, 
+                            labeltemperature, labelresistivity, labelplot,
+                            size=size, fitpower=1, R1=R1, R2=R2,
+                            Tmin=Tmin, Tmax=Tmax)
+        
+
+def plot_rho_vs_T_intrinsic_generic(device, file,
+                                  size=2, R1=True, R2=True, Tmin=0, Tmax=500):
+    colors=colors_set1
+    power = -1
+    power_label = '-1' 
+    
+    funtemperature = lambda T : np.power(T, power)
+    revtemperature = lambda fT : np.power(fT, 1/power)
+    funresistivity = lambda rho, T : np.log10(rho)
+    labeltemperature = "T^" + power_label
+    labelresistivity = 'ln10(ρ)'
+    labelplot = ''
+    
+    clean_label = power_label.replace(r"/", "_") 
+    (fitcoefs, rhonames) = plot_rhovsT_fit_generic(device, 
+                            file, '_intrinsic_'+clean_label+'_', colors, 
+                            funtemperature, revtemperature, funresistivity, 
+                            labeltemperature, labelresistivity, labelplot,
+                            size=size, fitpower=1, R1=R1, R2=R2,
+                            Tmin=Tmin, Tmax=Tmax)
+
+    for (fit, name) in zip(fitcoefs, rhonames):
+        # slope = EG/2KB
+        energy = fit[0]*2*kBeV
+        print("%s: slope = %10.4f, E = %6.4f" % (name, fit[0], energy))
 
 def plot_ΔVGvT(device, filenames, current, size=def_size, log=False):
     savename = '_DVGvT'
@@ -1539,7 +1785,7 @@ def process_IV_data(device, data_file, volt_fields, Ilimits=(None,None), plot_da
             plot_colors = np.append(plot_colors, [[0,0,0,1]], axis=0)
             volt_fields.append('IVfit_' + str(i))
             
-        return plot_YvsX_generic('Current_A', '$\it{I}$ (A)',
+        plot_YvsX_generic('Current_A', '$\it{I}$ (A)',
                           volt_fields, '$\it{V}$ (%sV)', '_IvsV-fit_', markers=markers,
                           device=device, files=[data_file], savename=None, colors=plot_colors, log=False)
     

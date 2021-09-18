@@ -92,6 +92,77 @@ status open
 
 \end_layout
 
+\begin_layout Standard
+The organization of this dissertation is as follows: This chapter gives
+ a brief overview of why ferroelectrics and 2D materials are areas of active
+ study and some historical context for those areas.
+ Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chapter:Background"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ outlines some of the relevant background and literature that is helpful
+ in understanding the later chapters, focusing on semiconductors, ferroelectrics
+, and 2D indium-selenium materials.
+ Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Sample-fabrication-methods"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ goes over the experimental techniques used for the work done in this dissertati
+on.
+ Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chapter:InSe-films"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ discusses our work on InSe film devices.
+ Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chapter:FeSm-FET"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ discusses our work on 
+\begin_inset Formula $\ensuremath{\alpha}\textrm{-In}_{2}\textrm{Se}_{3}$
+\end_inset
+
+ ferroelectric-semiconductor channel field effect transistors, showing evidence
+ for ferroelectricity in thin flake devices and the emergence of a electric
+ field induced metallic state.
+ Finally, chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chapter:Conclusion"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ gives a short summary of the work done and possible future directions of
+ study.
+\end_layout
+
 \begin_layout Chapter
 Introduction
 \begin_inset CommandInset label
@@ -176,7 +247,7 @@ literal "true"
 \begin_inset Formula $\mathrm{BaTiO_{3}}$
 \end_inset
 
-showed that oxide crystals could be ferroelectric and in the decades following
+showed that oxide crystals could be ferroelectric, and in the decades following
  the Second World War hundreds new ferroelectric compounds were discovered.
  Ceramics are the most common ferroelectrics in use, due to the ease of
  manufacture and the ability to build complex configurations in while still
@@ -192,8 +263,8 @@ showed that oxide crystals could be ferroelectric and in the decades following
 
 \begin_layout Standard
 The applications of ferroelectrics to modern electronics are numerous and
- diverse, but perhaps the most sought after utilization is enhancing random
- access memory (RAM) with a ferroelectric dielectric.
+ diverse, but one of most sought after goals is to enhance random access
+ memory (RAM) with a ferroelectric dielectric.
  While the original idea for ferroelectric RAM (FeRAM) was first proposed
  by Dudley Allen Buck’s in his 1952 master’s thesis, limitations of the
  known ferroelectric materials have prevented commercialization.
@@ -212,14 +283,34 @@ literal "true"
 
  and since then researchers and engineers have continued to push towards
  this goal.
- The recent explosive growth in 2D material research, and the subsequent
- discovery of ferroelectricity down to a few layers of material has opened
- the possibility of integrating ferroelectric memory with the logic circuits
- of modern processors.
+ 
 \end_layout
 
 \begin_layout Standard
-TODO: discuss what contents of later chapters are.
+Since the initial exfoliation of graphene using tape, interest in 2D materials
+ has exploded.
+ Mechanical exfoliation of bulk crystals provides a means to generate high-quali
+ty, thin crystals and remove the constraints of the substrate when growing
+ a material.
+ The 2D nature of the materials means they have fewer dangling bonds along
+ one surface and less interface effects than a typical 3D crystal.
+ Exfoliation has let us study the intrinsic properties of the material,
+ reducing the influence of the substrate.
+ It can also be used to quickly manufacture new devices, such as field effect
+ transistors (FETs).
+ These devices in turn, let us modify the crystal though the application
+ of electric or magnetic fields, heterostructure interfaces, light, strain
+ and stress, and many other methods.
+ With this we can select materials with useful quantities, such as high
+ carrier mobility or ferroelectricity, to be used in commercial and research
+ applications.
+ Exfoliated flakes of material are too inconsistent in size and quality
+ to scale to most applications.
+ Grown films are used instead as they can be made as large as needed, and
+ can be optimized to match the properties of the flakes.
+ The films can be introduced into industrial scale processing, allowing
+ companies to enhance modern electronics with the desired properties of
+ the 2D materials.
 \end_layout
 
 \end_body
