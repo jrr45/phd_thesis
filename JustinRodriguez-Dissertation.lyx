@@ -164,15 +164,15 @@
 % FRONT-MATTER %
 %%%%%%%%%%%%%%%%
 % Title
-\title{Dynamics of Fish}
+\title{Transport mesurements in 2D indium-selenide crystal devices}
 
 % Author and Department
-\author{Your Name}
+\author{Justin Rodriguez}
 \dept{Physics}
 % the degree will be conferred on this date
-\degreedate{May 2013}
+\degreedate{Jan 2022}
 % year of your copyright
-\copyrightyear{2013}
+\copyrightyear{2021}
 
 % This command is used for students submitting a thesis to the
 % Schreyer Honors College and for students in Engineering Science.
@@ -184,8 +184,8 @@
 % This is the document type. For example, this could also be:
 %	Comprehensive Document
 %	Thesis Proposal
-\documenttype{Thesis}
-%\documenttype{Dissertation}
+%\documenttype{Thesis}
+\documenttype{Dissertation}
 %\documenttype{Comprehensive Document}
 
 
@@ -195,7 +195,7 @@
 
 % This is the college to which you are submitting the
 % thesis/dissertation.
-\collegesubmittedto{College of Engineering}
+\collegesubmittedto{Eberly College of Science}
 
 
 %%%%%%%%%%%%%%%%%%
@@ -205,34 +205,27 @@
 % and up to 6 readers.
 %
 % Begin by specifying the number of readers.
-\numberofreaders{4}
+\numberofreaders{3}
 
 
 % Input reader information below. The optional argument, which
 % comes first, goes on the second line before the name.
 \advisor[Thesis Advisor][Chair of Committee]
-		{Joseph H. Blow}
-		{Professor of SomeThing}
+		{Ying Liu}
+		{Professor of Professor}
 
 \readerone[Optional Title Here]
-			{Reader Name}
-			{Professor of SomeThing}
+			{Chaoxing Liu}
+			{Professor of Physics}
 
 \readertwo[Optional Title Here]
-			{Reader Name}
-			{Professor of SomeThing}
+			{Zhiqiang Mao}
+			{Professor of Physics, Material Science and Engineering, and Chemistry}
 
-\readerthree[Optional Title Here]
-			{Reader Name}
-			{Professor of SomeThing}
+\readerthree[Robert E. Kirby Chair Professor]
+			{Tom Jackson}
+			{Professor of Electrical Engineering}
 
-\readerfour[Optional Title Here]
-			{Reader Name}
-			{Professor of SomeThing}
-
-\readerfive[Optional Title Here]
-			{Reader Name}
-			{Professor of SomeThing}
 
 % Format the Chapter headings using the titlesec package.
 % You can format section headings and the like here too.
@@ -534,15 +527,6 @@ status open
 psutitlepage
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
 \begin_layout Plain Layout
 
 % Generates the committee page -- this is bound with your
@@ -554,15 +538,6 @@ status open
 \backslash
 psucommitteepage
 \end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
 
 \begin_layout Plain Layout
 
@@ -583,15 +558,6 @@ status open
 thesisabstract{SupplementaryMaterial/Abstract}
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
 \begin_layout Plain Layout
 
 % Generates the Table of Contents
@@ -603,15 +569,6 @@ status open
 \backslash
 thesistableofcontents
 \end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
 
 \begin_layout Plain Layout
 
@@ -630,6 +587,10 @@ status open
 \end_inset
 
  
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
 \begin_inset ERT
 status open
 
@@ -644,12 +605,6 @@ cftparskip}{
 baselineskip}
 \end_layout
 
-\end_inset
-
- 
-\begin_inset ERT
-status open
-
 \begin_layout Plain Layout
 
 
@@ -657,11 +612,9 @@ status open
 addcontentsline{toc}{chapter}{List of Figures}
 \end_layout
 
-\end_inset
+\begin_layout Plain Layout
 
- 
-\begin_inset ERT
-status open
+\end_layout
 
 \begin_layout Plain Layout
 
@@ -672,30 +625,10 @@ fancypagestyle{plain}{%
 
 \begin_layout Plain Layout
 
-\end_layout
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
 %
 \backslash
 fancyhf{} % clear all header and footer fields
 \end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset ERT
-status open
 
 \begin_layout Plain Layout
 
@@ -706,13 +639,13 @@ fancyfoot[C]{
 thepage}} % except the center
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
 \begin_inset FloatList figure
 
 \end_inset
@@ -765,12 +698,6 @@ cftparskip}{
 \backslash
 baselineskip}
 \end_layout
-
-\end_inset
-
- 
-\begin_inset ERT
-status open
 
 \begin_layout Plain Layout
 
@@ -885,7 +812,7 @@ status open
 
 \begin_layout Plain Layout
 
-%
+
 \backslash
 thesisdedication{SupplementaryMaterial/Dedication}{Dedication}
 \end_layout
@@ -1004,6 +931,16 @@ filename "Chapter-Methods/Chapter-Methods.lyx"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
+filename "Chapter-InSe-films/Chapter-InSe-films.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
 filename "Chapter-In2Se3-FeSm-FET/Chapter-In2Se3-FeSm-FET.lyx"
 
 \end_inset
@@ -1022,7 +959,15 @@ filename "Chapter-Conclusion/Chapter-Conclusion.lyx"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \start_of_appendix
+\noindent
 \begin_inset ERT
 status open
 
@@ -1040,13 +985,44 @@ selectfont
 \backslash
 bfseries
 \backslash
-sffamily}{Appendix 
+sffamily}{Chapter 
 \backslash
 thechapter
+\backslash
+hsp
 \backslash
 textcolor{gray75}{
 \backslash
 raisebox{3pt}{|}}}{0pt}{}{}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+titleformat{
+\backslash
+section}[block]{
+\backslash
+Large
+\backslash
+bfseries
+\backslash
+sffamily}{
+\backslash
+thesection}{12pt}{}{} 
+\backslash
+titleformat{
+\backslash
+subsection}[block]{
+\backslash
+large
+\backslash
+bfseries
+\backslash
+sffamily}{
+\backslash
+thesubsection}{12pt}{}{} 
 \end_layout
 
 \end_inset
@@ -1079,6 +1055,27 @@ filename "Appendix-Project Unity/Appendix-Project-Unity.lyx"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+btprint "btPrintCited"
+bibfiles "Biblio-Database"
+options "bibtotoc,GLG-bibstyle"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
 \begin_inset ERT
 status open
 
@@ -1095,33 +1092,11 @@ allowdisplaybreak command %
 \end_layout
 
 \begin_layout Standard
-\paragraph_spacing single
-\begin_inset CommandInset bibtex
-LatexCommand bibtex
-btprint "btPrintCited"
-bibfiles "Biblio-Database"
-options "bibtotoc,GLG-bibstyle"
 
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-% Vita
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-vita{SupplementaryMaterial/Vita}
-\end_layout
+\family sans
+\begin_inset CommandInset include
+LatexCommand include
+filename "SupplementaryMaterial/Vita.lyx"
 
 \end_inset
 

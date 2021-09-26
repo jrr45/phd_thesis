@@ -1,0 +1,372 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass psuthesis
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package none
+\inputencoding auto
+\fontencoding default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 0
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+% !TEX root = ../JustinRodriguez-Dissertation.tex
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+% Place your vita below.
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+titleformat{
+\backslash
+chapter}[display]{
+\backslash
+fontsize{30}{30}
+\backslash
+selectfont
+\backslash
+bfseries
+\backslash
+sffamily
+\backslash
+centering}{Chapter 
+\backslash
+thechapter
+\backslash
+hsp
+\backslash
+textcolor{gray75}{
+\backslash
+raisebox{3pt}{|}}}{0pt}{}{}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+titleformat{
+\backslash
+section}[block]{
+\backslash
+Large
+\backslash
+bfseries
+\backslash
+sffamily}{
+\backslash
+thesection}{12pt}{}{} 
+\backslash
+titleformat{
+\backslash
+subsection}[block]{
+\backslash
+large
+\backslash
+bfseries
+\backslash
+sffamily}{
+\backslash
+thesubsection}{12pt}{}{} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{singlespace}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter*
+Vita
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+Justin Rodriguez
+\end_layout
+
+\begin_layout Standard
+\noindent
+
+\series bold
+\bar under
+Education:
+\end_layout
+
+\begin_layout Standard
+\noindent
+Ph.D.
+ in Physics, TODO
+\end_layout
+
+\begin_layout Standard
+\noindent
+Pennsylvania State University, State College, PA
+\begin_inset Newline newline
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+M.S.
+ in Applied and Engineering Physics, January 2015
+\end_layout
+
+\begin_layout Standard
+\noindent
+Cornell University, Ithaca, NY
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+B.A.
+ in Physics, January 2011
+\end_layout
+
+\begin_layout Standard
+\noindent
+Cornell University, Ithaca, NY
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+
+\series bold
+\bar under
+Honors and Awards:
+\end_layout
+
+\begin_layout Standard
+\noindent
+2021 Departmental Service Award from the George A.
+ and Margaret M.
+ Downsbrough Department Head's Chair in Physics
+\end_layout
+
+\begin_layout Standard
+\noindent
+2018 Graduate Teaching Assistant Award
+\end_layout
+
+\begin_layout Standard
+\noindent
+2017 Graduate Teaching Assistant Award
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+
+\series bold
+\bar under
+Publications:
+\end_layout
+
+\begin_layout Standard
+\noindent
+Rodriguez, J.
+ R., W.
+ Murray, K.
+ Fujisawa, S.
+ H.
+ Lee, A.
+ L.
+ Kotrick, Y.
+ Chen, N.
+ Mckee, S.
+ Lee, M.
+ Terrones, S.
+ Trolier-McKinstry, T.
+ N.
+ Jackson, Z.
+ Mao, Z.
+ Liu, and Y.
+ Liu (2020) “Electric Field Induced Metallic Behavior in Thin Crystals of
+ Ferroelectric α-In2Se3,” Applied Physics Letters, 117(5), p.
+ 052901.
+ DOI: 
+\begin_inset CommandInset href
+LatexCommand href
+name "10.1063/5.0014945"
+target "https://www.doi.org/10.1063/5.0014945"
+literal "false"
+
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+
+\series bold
+\bar under
+Talks:
+\end_layout
+
+\begin_layout Standard
+\noindent
+Rodriguez, J.
+ R., M.
+ Hilse, R.
+ Engel-Herbert, T.
+ Jackson, S.
+ H.
+ Lee, Z.
+ Mao, Y.
+ Liu, 
+\begin_inset Quotes eld
+\end_inset
+
+Electric field effect studies of ferroelectric 2D crystals of α-In2Se3 and
+ MBE grown fields of γ-InSe,
+\begin_inset Quotes erd
+\end_inset
+
+ Virtual oral presentation at American Physical Society March Meeting 2021,
+ March 2021.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+
+\series bold
+\bar under
+Community Service:
+\end_layout
+
+\begin_layout Standard
+\noindent
+2020-2021 Graduate student member of the Reimagining PSU Physics Committee
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{singlespace}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

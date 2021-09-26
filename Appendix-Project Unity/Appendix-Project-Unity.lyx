@@ -30,7 +30,7 @@
 \bibtex_command default
 \index_command default
 \paperfontsize 12
-\spacing other 1.24
+\spacing double
 \use_hyperref false
 \papersize default
 \use_geometry false
@@ -94,41 +94,10 @@ status open
 \end_inset
 
 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-Appendix
 \end_layout
 
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-{
-\end_layout
-
-\end_inset
-
+\begin_layout Chapter
 Project Unity - electronic measurements software
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-
 \begin_inset CommandInset label
 LatexCommand label
 name "Project-Unity"
@@ -147,11 +116,11 @@ Project Unity is a LabVIEW program developed for the operation of electronic
 \end_layout
 
 \begin_layout Standard
+\noindent
 \begin_inset Float figure
-placement h
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -1295,6 +1264,13 @@ When each launcher runs a measurement it calls “Add to Execution queue.vi.”
  “ExecutionQueue.” This prevents more than one VI from changing things at
  the same time and introducing a race condition.
  
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
 \end_layout
 
 \end_body

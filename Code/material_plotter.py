@@ -8,16 +8,16 @@ import numpy.polynomial.polynomial as poly
 from scipy.stats import linregress
 from scipy.optimize import curve_fit
 import configparser
+import re
+from io import StringIO
 
-#cmap = plt.cm.get_cmap('Set1')
-#colors_set1 = cmap(np.linspace(0,1,9))
-#colors = colors_set1[[0,3,2,1,4,5]]
-
+#%% physics constants
 fundamental_charge_e = -1.602176634 * (10**-19) # SI: C
 ħ = 1.0545718 * 10**-34 #SI m^2 kg / s
 kB = 1.38064852 * (10**-23) # m^2 * kg / (s^2 * K)  Boltzmann constant
 kBeV = 8.617333262145 * (10**-5) # eV / K  Boltzmann constant
 
+#%% default properties for figures
 def_fontsize=10
 def_labelsize=10
 def_size = 2
@@ -25,39 +25,65 @@ def_size = 2
 cmap = plt.cm.get_cmap('Set1')
 colors_set1 = cmap(np.linspace(0,1,9))
 
+# standard set of colors to use with IV plots
+def get_IDvsVDS_colors():
+    colors = colors_set1
+    return [colors[0], colors[4], colors[3], colors[6], colors[2], colors[8], colors[1]]
+
+#%% Device classes
+# Generic device, where data is stored and what it's called
 class device:
     fileroot = ""
     name = ""
 
+# Hall bar device
 class flake_device(device):
     thickness = 0 # meters
     length = 0 # meters
     width = 0 # meters
     volt_spacing = 0 # meters
+    
+# Capacitor device
+class capacitor_device(device):
+    thickness = 0 # meters
+    length = 0 # meters
+    width = 0 # meters
 
-def get_IDvsVDS_colors():
-    colors = colors_set1
-    return [colors[0], colors[4], colors[3], colors[6], colors[2], colors[8], colors[1]]
+#%% Array manipulation
 
-
+# returns the 1st occurance of a value within an array
 def first_occurance_1D(array, val, tol=0.2, starting_index=0):
     itemindex = np.where(abs(array[starting_index:] - val) < abs(tol))
     return itemindex[0][0]
 
+# returns the nth occurance of a value within an array
 def nth_occurance_1D(array, val, n, tol=0.2, starting_index=0):
     itemindex = np.where(abs(array[starting_index:] - val) < tol)
     return itemindex[0][n-1]
 
-def add_subplot(fig):
-    n = len(fig.axes)
-    for i in range(n):
-        fig.axes[i].change_geometry(n+1, 1, i+1)
+def slice_data(file, column, start, end, tol, nth_start=1, nth_finish=1, starting_index=0):
+    if start is None:
+        occ0 = 0
+    else:
+        occ0 = nth_occurance_1D(file[column], start, nth_start, tol=tol, starting_index=starting_index)
+    if end is None:
+        occ1 = np.size(file) - occ0 - 1
+    else:
+        occ1 = nth_occurance_1D(file[column], end, nth_finish, tol=tol, starting_index=occ0+1)
+    file2 = np.copy(file[occ0:occ0+occ1+2])
     
-    # add the new
-    ax = fig.add_subplot(n+1, 1, n+1)
-    fig.set_size_inches(8, 6*(n+1))
-    return (fig, ax)
+    return (file2, occ0+starting_index, occ1+occ0+starting_index)
 
+def slice_data_each(files, column, start, end, tol, nth_start=1, nth_finish=1, starting_index=0):
+    for i, file in enumerate(files):
+        (files[i],_,_) = slice_data(file, column, start, end, tol, nth_start=nth_start,
+                                    nth_finish=nth_finish, starting_index=starting_index)
+    return files
+
+#%% Read from files
+
+# reads in a file from our data taking programs. First few lines are in an 
+# ini format, then data is CSV. Returns an masked numpy ndarray
 def process_file(file):
     print(file)
     if not os.path.isfile(file):
@@ -77,31 +103,107 @@ def process_file(file):
     data = np.genfromtxt(file, skip_header=headerlength-1, names=True, 
                          dtype='<f8', delimiter='\t')
     
-    #print(experiment)
-    #print(data.dtype.names)
     return data
 
+# reads in multiple device filesfrom our data taking programs. First few lines 
+# are in an ini format, then data is CSV. Returns list of masked numpy ndarrays
 def process_device_files(device, files):
     if isinstance(files, list):
         return [process_file(os.path.join(device.fileroot, x)) for x in files]
     else:
         return [process_file(os.path.join(device.fileroot, files))]
+    
+# reads in a capacitor file following the MSC probe station format. Returns a
+# list of (Real_or_Imag, measurement_type, data)
+def process_capacitor_file(device, filename, column_names):
+    datachunks = []
+    
+    with open(os.path.join(device.fileroot, filename), "r") as file:
+        line = "placeholder"
+        while True:
+            line = file.readline()
+            if not line:
+                break
+            line = line.strip()
+            if line == "1" or not line:
+                continue
+            
+            # match "Real/Imag Part of EXP" and extract Real/Imag and EXP
+            m = re.match("^(Real|Imag) Part of ([A-Z]+\d)$", line)
+            if not m:
+                error = "something went wrong with measurement line:" + line
+                print(error)
+                raise ValueError(error)
+            
+            RoI = m.groups()[0]
+            Measurement = m.groups()[1] 
+            
+            # match "COL columns of FREQ_set" and extract COL
+            line = file.readline().strip()
+            m = re.match("^(\d+)\s+columns of FREQ_set \(log\)$", line)
+            columns = int(m.groups()[0])
+            if not m or (columns+1 != len(column_names)):
+                error = "something went wrong with columns line:" + line
+                print(error)
+                raise ValueError(error)
+            
+            # match "ROW rows of TEMP_set" and extract ROW
+            line = file.readline().strip()
+            m = re.match("^(\d+)\s+rows of TEMP_set$", line)
+            rows = int(m.groups()[0])
+            if not m or (rows <= 0):
+                error = "something went wrong with rows line:" + line
+                print(error)
+                raise ValueError(error)
+            
+            # read rows and process
+            data = []
+            line = file.readline()
+            while re.match("^.?\d+", line.strip()):
+                data.append(line)
+                line = file.readline()
+            data = ''.join(data).replace('\t\t', '\t')
+            data = np.genfromtxt(StringIO(data), dtype=float, delimiter='\t', skip_header=1, names=column_names)
+            datachunks.append((RoI, Measurement, data))
+            
+        return datachunks
 
+#%%  Generic plot function
+
+#def add_subplot(fig):
+#    n = len(fig.axes)
+#    for i in range(n):
+#        fig.axes[i].change_geometry(n+1, 1, i+1)
+#    
+#    # add the new
+#    ax = fig.add_subplot(n+1, 1, n+1)
+#    fig.set_size_inches(8, 6*(n+1))
+#    return (fig, ax)
+
+# save figure as png and svg
 def save_generic_both(fig, root, filename):
     save_generic_png(fig, root, filename)
     save_generic_svg(fig, root, filename)
-    
+
+# save figure as png
 def save_generic_png(fig, root, filename):
-    fig.savefig(os.path.join(root, filename +'.png'), format='png', transparent=True, bbox_inches='tight',pad_inches=.1)
-    
+    fig.savefig(os.path.join(root, filename +'.png'), format='png', 
+                transparent=True, bbox_inches='tight',pad_inches=.1)
+
+# save figure as SVG    
 def save_generic_svg(fig, device, filename):
     plt.rcParams["svg.fonttype"] = "none"
     plt.rcParams["text.usetex"] = False
-    fig.savefig(os.path.join(device.fileroot, filename +'.svg'), format='svg', transparent=True, bbox_inches='tight',pad_inches=0)
+    fig.savefig(os.path.join(device.fileroot, filename +'.svg'), format='svg',
+                transparent=True, bbox_inches='tight',pad_inches=0)
 
-def pretty_plot_single(fig, labels=['',''], color='#000000', yscale='linear', fontsize=10, labelsize=8, labelpad=[0,0]):
+# generates a single plot with default parameters, formatted to follow APS 
+# style. Returns a reference to the (sub)plot
+def pretty_plot_single(fig, labels=['',''], color='#000000', yscale='linear', 
+                       fontsize=10, labelsize=8, labelpad=[0,0]):
     ax = fig.add_subplot(111)
     
+    # Set font parameters for SVG
     plt.rcParams["font.family"] = "Arial"
     plt.rcParams['mathtext.fontset'] = 'custom'
     plt.rcParams['mathtext.it'] = 'Arial:italic'
@@ -111,6 +213,7 @@ def pretty_plot_single(fig, labels=['',''], color='#000000', yscale='linear', fo
     ax.set_xlabel(labels[0], fontname="Arial", fontsize=fontsize, labelpad=labelpad[0])
     ax.set_ylabel(labels[1], fontname="Arial", fontsize=fontsize, color=color, labelpad=labelpad[1])
    
+    # setup ticks following APS style
     ax.set_yscale(yscale)
     ax.tick_params(bottom=True, top=True, left=True, right=True,
                    which='both', direction='in', labelsize=labelsize, pad=1)
@@ -131,16 +234,19 @@ def pretty_plot_single(fig, labels=['',''], color='#000000', yscale='linear', fo
 
     return ax
 
-
+# One-shot very generic plot with lots of parameters. Saves file or returns
+# reference to plot. 
 def plot_YvsX_generic(Xaxis, Xlabel, Yaxis, Ylabel, XvsYname, \
                       device, files, savename, colors, log=False, size=def_size, majorx=None, \
                       xlim=(None,None), ylim=(None,None), markers=[], \
                       fontsize=def_fontsize, labelsize=def_labelsize, invertaxes=False):    
+    # before we do anything, check to make sure data is in the right format
     for file in files:
         if type(file) is not np.ndarray:
             raise TypeError("Only Numpy arrays allowed. Found: " + str(type(file))) 
     
-    fig = plt.figure(figsize=(size, size), dpi=300)
+    # if the yaxis is a linear scale, figure out how to rescale the data to
+    # display approprately
     scale_pow = 1
     scale_label = ''
     
@@ -157,15 +263,18 @@ def plot_YvsX_generic(Xaxis, Xlabel, Yaxis, Ylabel, XvsYname, \
         Ylabel = Ylabel % (scale_label) 
     except:
         print('failed to scale y label')
-        
-    print(scale_label)
     
+    # make the plot
+    fig = plt.figure(figsize=(size, size), dpi=300)
     ax = pretty_plot_single(fig, labels=[Xlabel, Ylabel],
-                             yscale=('log' if log else 'linear'), fontsize=fontsize, labelsize=labelsize)
+                             yscale=('log' if log else 'linear'), 
+                             fontsize=fontsize, labelsize=labelsize)
     
+    # default data display to be lines and dots
     colors = list(colors)
     markers.extend(['.-']*len(colors))
     
+    # plot each set of data
     i = 0
     for file in files:
         if isinstance(Yaxis, list): 
@@ -178,6 +287,7 @@ def plot_YvsX_generic(Xaxis, Xlabel, Yaxis, Ylabel, XvsYname, \
                     markers[i], ms=3, linewidth=1.5, color=colors[i])
             i = i + 1
     
+    # set up ticks and labels
     if majorx is not None:
         ax.xaxis.set_major_locator(MultipleLocator(majorx))
         
@@ -191,8 +301,8 @@ def plot_YvsX_generic(Xaxis, Xlabel, Yaxis, Ylabel, XvsYname, \
         if not log:
             ax.set_ylim(ylim[1], ylim[0])
     
+    # save figure or return it
     scalename = "_log" if log else "_linear"
-    
     print(str(savename)+XvsYname+scalename)   
     
     if savename is None:
@@ -200,9 +310,10 @@ def plot_YvsX_generic(Xaxis, Xlabel, Yaxis, Ylabel, XvsYname, \
     else:
         save_generic_svg(fig, device, savename+XvsYname+scalename)
         plt.show() 
-        plt.clf()
+        plt.clf() # no need to keep this in memory
         return None
 
+# SI units to label and scale linear plots
 def m_order(data):
     maxV = np.nanmax(np.abs(data))
     if maxV > 10**12:
@@ -236,6 +347,8 @@ def m_order(data):
         scale = 0
         label = 'SCALE ISSUE'
     return (scale, label)
+
+#%% Cross section temperature dependence of gating loops 
 
 # cross sections of gating loops
 def get_cross_section(device, filenames, increments, V_index):
@@ -361,6 +474,8 @@ def plot_mobility_μ_cross_section(device, filenames, savename, increments=[0,25
     save_generic_svg(fig, device, savename + "_loop_μ-cross" + scalename)
     plt.show()
     plt.clf()
+
+#%% Generic 2D plots
 
 # generic functions
 def plot_IDvsVg_each(device, filenames, savename, log=False, size=def_size, majorx=25,\
@@ -515,25 +630,7 @@ def plot_LnRSDvsPowT_generic(device, files, savename, colors, power, power_label
                       device=device, files=newfiles, savename=savename, colors=colors, log=False, size=size, majorx=majorx,
                       xlim=xlim, ylim=ylim, fontsize=fontsize, labelsize=labelsize)
 
-    
-def slice_data(file, column, start, end, tol, nth_start=1, nth_finish=1, starting_index=0):
-    if start is None:
-        occ0 = 0
-    else:
-        occ0 = nth_occurance_1D(file[column], start, nth_start, tol=tol, starting_index=starting_index)
-    if end is None:
-        occ1 = np.size(file) - occ0 - 1
-    else:
-        occ1 = nth_occurance_1D(file[column], end, nth_finish, tol=tol, starting_index=occ0+1)
-    file2 = np.copy(file[occ0:occ0+occ1+2])
-    
-    return (file2, occ0+starting_index, occ1+occ0+starting_index)
-
-def slice_data_each(files, column, start, end, tol, nth_start=1, nth_finish=1, starting_index=0):
-    for i, file in enumerate(files):
-        (files[i],_,_) = slice_data(file, column, start, end, tol, nth_start=nth_start,
-                                    nth_finish=nth_finish, starting_index=starting_index)
-    return files
+#%% FET utility functions
 
 def sheet_conductivity(resistance_2T, length, width):
     # σs = L/(R*W)
@@ -560,16 +657,6 @@ def wafer_carrier_density_n(gate_voltage):
     return εr_SiO2*ε0*gate_voltage/(thickness*abs(fundamental_charge_e)) # C/m^2
 
 
-def compute_r2_weighted(y_true, y_pred, weight=None):
-    if weight is None:
-        weight = np.ones(np.shape(y_true))
-    sse = (weight * (y_true - y_pred) ** 2).sum(axis=0, dtype=np.float64)
-    tse = (weight * (y_true - np.average(
-        y_true, axis=0, weights=weight)) ** 2).sum(axis=0, dtype=np.float64)
-    r2_score = 1 - (sse / tse)
-    return r2_score, sse, tse
-
-
 def process_hall_data(device, Hall_file, T_Rxx_4pt=None,
                       hall_fields=['Voltage_1_V', 'Voltage_2_V'], symmeterize=True, Bfitlimits=(-10,10)):
     
@@ -588,7 +675,7 @@ def process_hall_data(device, Hall_file, T_Rxx_4pt=None,
     # pull R from seperate 4pt data 
     if T_Rxx_4pt is not None:
         #σs = l/(Rxx*w)
-        σs = device.volt_spacing / (T_Rxx_4pt * device.width)
+        σs = device.volt_length / (T_Rxx_4pt * device.width)
     # R from 2pt resistance in actual measurement
     else:
         VDS_data = Hall_file['Voltage_3_V']
@@ -652,7 +739,10 @@ def process_hall_data(device, Hall_file, T_Rxx_4pt=None,
         print("Fit R^2: %s" % r_squared)
         
     if len(hall_fields) == 2:
-        print("Percent diff: %s%%" % (np.abs((μH[0] - μH[1])/μH[0])*100))
+        if μH[0] == 0.0:
+            print("mobility is 0, something is wrong")
+        else:
+            print("Percent diff: %f%%" % (np.abs((μH[0] - μH[1])/μH[0])*100))
         
         μH.insert(0, (μH[0] + μH[1])/2)
         n2Ds.insert(0, (n2Ds[0] + n2Ds[1])/2)
@@ -1052,6 +1142,80 @@ def calc_minSS(device, file, Npoints=4, subplot=True, startend=-75, switch=75,
             Vgs2[SS2min], Vgs2[SS2min+Npoints] #starting and ending of line
             )
 
+def plot_ΔVGvT(device, filenames, current, size=def_size, log=False):
+    savename = '_DVGvT'
+    size = 2
+    colors = colors_set1
+
+    files = [process_file(device.fileroot + x) for x in filenames]
+    
+    fig = plt.figure(figsize=(size, size), dpi=300)
+    ax = pretty_plot_single(fig, labels=["$\it{T}$ (K)", '$\it{ΔV_{G}}$ (V)'],
+                             yscale=('log' if log else 'linear'))
+    
+    DVG = []
+    T = []
+    for file in files:
+        T.append(file['Temperature_K'][0])
+        dVg = width_Vg(file, current)
+        DVG.append(dVg)
+        
+    ax.plot(T, DVG, '.-', ms=3, linewidth=1.5, color=colors[0])
+    
+    ax.xaxis.set_major_locator(MultipleLocator(100))
+    
+    scalename = "_log" if log else "_linear"
+    print(savename+scalename)
+    save_generic_svg(fig, device, savename+scalename)
+    plt.show()
+    plt.clf()
+
+def plot_maxSS_vs_T(device, filenames, savename, size=2, showthreshold=False,
+                    subplot=True, Npoints=4, Icutoff=5*10**-11, startend=-75, switch=+75):
+    files = [process_file(os.path.join(device.fileroot, x)) for x in filenames]
+    
+    temperatures = []
+    SSinc = []
+    SSdec = []
+    
+    for file in files:
+        temperature = file['Temperature_K'][0]
+        print("Temperature %s K" % str(temperature))
+        temperatures.append(temperature)
+        SSi, Vgsi1, Vgsi2, SSd, Vgsd1, Vgsd2 = \
+            calc_minSS(device, file, Npoints=Npoints, subplot=subplot, Icutoff=Icutoff, startend=-75.0, switch=75.0)
+        SSinc.append(SSi)
+        SSdec.append(SSd)
+    
+    fig = plt.figure(figsize=(size, size), dpi=300)
+    ax = pretty_plot_single(fig, labels=["$\it{T}$ (K)", '$\it{SS_{min}}$ (V/dec)'],
+                             yscale='linear', fontsize=10, labelsize=10)
+    
+    ax.plot(temperatures, SSinc, '.-', ms=3, linewidth=1.5, color=colors_set1[0])
+    ax.plot(temperatures, SSdec, '.-', ms=3, linewidth=1.5, color=colors_set1[2])
+    
+    print(SSinc)
+    print(SSdec)
+    
+    # add threshold
+    if showthreshold:
+        threshold = np.log(10)*kB*np.array(temperatures)/np.abs(fundamental_charge_e)
+        ax.plot(temperatures, threshold, '.-', ms=3, linewidth=1.5, color=colors_set1[1])
+    
+    ax.set_ylim(0, None)
+    ax.xaxis.set_major_locator(MultipleLocator(100))
+    ax.set_xlim(0, 322)
+    
+    if savename is None:
+        return (fig, ax)
+    else:
+        save_generic_svg(fig, device, savename)
+        plt.show() 
+        plt.clf()
+        return None
+    
+#%% Cross section fitting to temperature dependence
+
 def plot_Schottky_cross_section(device, filenames, savename, increments=[0,25,50,75], \
                              figsize=def_size, xlim=(None, None), xinc=None, ylim=(None,None), \
                              fontsize=def_fontsize, labelsize=def_labelsize, colororder=[0,3,2,1,4,5]):
@@ -1149,6 +1313,8 @@ def plot_play_cross_section(device, filenames, savename, increments=[0,25,50,75]
     save_generic_svg(fig, device, savename + "_loop_Schottky_Simmons-cross")
     plt.show()
     plt.clf()
+
+#%% Fit ID vs VDS
 
 def plot_IDvsVDS_fit_generic(device, files, savename, colors, 
                              funcurrent, funvoltage, revoltage, labelcurrent,
@@ -1350,6 +1516,17 @@ def plot_IDVvsVDS_Thermionic_generic(device, files, savename, colors,
                              xadj=xadj, x_mult=x_mult, fontsize=fontsize, labelsize=labelsize, xlim=xlim, ylim=ylim,
                              Icutoff=Icutoff, fit=fit, fitR2=fitR2, fitpoints=fitpoints, fitpower=fitpower)
 
+#%% Fitting helper functions
+
+def compute_r2_weighted(y_true, y_pred, weight=None):
+    if weight is None:
+        weight = np.ones(np.shape(y_true))
+    sse = (weight * (y_true - y_pred) ** 2).sum(axis=0, dtype=np.float64)
+    tse = (weight * (y_true - np.average(
+        y_true, axis=0, weights=weight)) ** 2).sum(axis=0, dtype=np.float64)
+    r2_score = 1 - (sse / tse)
+    return r2_score, sse, tse
+
 
 def fit_to_limit(xdata, ydata, R2=.99, points=5, power=1):
     lenx = xdata.size
@@ -1402,7 +1579,7 @@ def fit_to_limit_multiple(xdata, ydata, R2=.99, points=5, power=1):
     
     return fit_data_list
     
-
+#%% Fitting rho vs T
 def plot_WvsT_fit_generic(device, file, savename,
                          size=2, majorx=None, fit=True, R1=True, R2=True,
                          fitR2=.996, Tmin=0, Tmax=401, fitpower=1):
@@ -1639,80 +1816,84 @@ def plot_rho_vs_T_intrinsic_generic(device, file,
         # slope = EG/2KB
         energy = fit[0]*2*kBeV
         print("%s: slope = %10.4f, E = %6.4f" % (name, fit[0], energy))
-
-def plot_ΔVGvT(device, filenames, current, size=def_size, log=False):
-    savename = '_DVGvT'
-    size = 2
-    colors = colors_set1
-
-    files = [process_file(device.fileroot + x) for x in filenames]
-    
-    fig = plt.figure(figsize=(size, size), dpi=300)
-    ax = pretty_plot_single(fig, labels=["$\it{T}$ (K)", '$\it{ΔV_{G}}$ (V)'],
-                             yscale=('log' if log else 'linear'))
-    
-    DVG = []
-    T = []
-    for file in files:
-        T.append(file['Temperature_K'][0])
-        dVg = width_Vg(file, current)
-        DVG.append(dVg)
         
-    ax.plot(T, DVG, '.-', ms=3, linewidth=1.5, color=colors[0])
+def plot_rho_vs_T_generic(device, file, savename, size=2, log=True, 
+                          power=(1), power_label='1',
+                          majorx=None, xlim=(None,None), ylim=(None,None),
+                          R1=True, R2=True, RDS=True, RAVG=False):
+        
+    Tpow = np.power(file['Temperature_K'], power)
+    file = append_fields(file, 'PowTemperature_K', Tpow, np.double, usemask=False)
     
-    ax.xaxis.set_major_locator(MultipleLocator(100))
+    rhos = []
+    rho_fields = []
+    colors = []
+    # compute resistivities
+    if R1:
+        Resistance1 = file['Resistance_1_Ohms']
+        rho1 = Resistance1 * device.width * device.thickness / device.volt_length
+        file = append_fields(file, 'rho1_Ohmscm', rho1, np.double, usemask=False)
+        rhos.append(rho1)
+        rho_fields.append('rho1_Ohmscm')
+        colors.append(colors_set1[0])
+    if R2:
+        Resistance2 = file['Resistance_2_Ohms']
+        rho2 = Resistance2 * device.width * device.thickness / device.volt_length
+        file = append_fields(file, 'rho2_Ohmscm', rho2, np.double, usemask=False)
+        rhos.append(rho2)
+        rho_fields.append('rho2_Ohmscm')
+        colors.append(colors_set1[1])
+    if RDS:
+        Rsd = file['Resistance_3_Ohms']
+        rhoDS = Rsd * device.width * device.thickness / device.volt_length
+        file = append_fields(file, 'rhoDS_Ohmscm', rhoDS, np.double, usemask=False)
+        rhos.append(rhoDS)
+        rho_fields.append('rhoDS_Ohmscm')
+        colors.append(colors_set1[2])
+    if RAVG:
+        Resistance1 = file['Resistance_1_Ohms']
+        Resistance2 = file['Resistance_2_Ohms']
+        rho1 = Resistance1 * device.width * device.thickness / device.volt_length
+        rho2 = Resistance2 * device.width * device.thickness / device.volt_length
+        rhoAVG = (rho1+rho2)/2
+        file = append_fields(file, 'rhoAVG_Ohmscm', rhoAVG, np.double, usemask=False)
+        rhos.append(rhoAVG)
+        rho_fields.append('rhoAVG_Ohmscm')
+        colors.append(colors_set1[3])
+        
+        # print fits
+        for (rho, field) in zip(rhos, rho_fields):
+            lnrho = np.log(rho*100)
+            Tpowcut = Tpow[~np.isnan(lnrho)]
+            lnrho = lnrho[~np.isnan(lnrho)]
+            
+            coeff, stats = poly.polyfit(Tpowcut, lnrho, 1, full = True)
+            print("%s slope: %5f, Intercept: %8f, T0: %8.8f K"
+                  % (field, coeff[1], coeff[0], np.power(coeff[1],-1./power)))
+            
+            lnRfit = poly.polyval(Tpowcut, coeff)
+            r2_score, sse, tse = compute_r2_weighted(lnrho, lnRfit)
+            print("%s R^2: %5f" % (field, r2_score))
+        
+            print("%s T: %s K, rho: %s Ohm*cm" % (field, file['Temperature_K'][0], rho[0]))
+            print("%s T: %s K, rho: %s Ohm*cm" % (field, file['Temperature_K'][-1], rho[-1]))
     
-    scalename = "_log" if log else "_linear"
-    print(savename+scalename)
-    save_generic_svg(fig, device, savename+scalename)
-    plt.show()
-    plt.clf()
+    # power info for plot
+    xaxis = 'PowTemperature_K'
+    xlabel = '$\it{T^{%s}}$ ($K^{%s}$)' % (power_label, power_label)
+    if power == 1:
+        xaxis = 'Temperature_K'
+        xlabel = '$\it{T}$ ($K$)'
+    
+    # plot
+    clean_label = power_label.replace(r"/", "") 
+    plot_YvsX_generic(xaxis, xlabel, rho_fields, '$\it{ρ}$ (Ω$\cdot$cm)',
+                      '_rho_vs_T' + clean_label,
+                      device=device, files=[file], savename=savename, 
+                      colors=colors, log=log, size=size,
+                      majorx=majorx, xlim=xlim, ylim=ylim)
 
-def plot_maxSS_vs_T(device, filenames, savename, size=2, showthreshold=False,
-                    subplot=True, Npoints=4, Icutoff=5*10**-11, startend=-75, switch=+75):
-    files = [process_file(os.path.join(device.fileroot, x)) for x in filenames]
-    
-    temperatures = []
-    SSinc = []
-    SSdec = []
-    
-    for file in files:
-        temperature = file['Temperature_K'][0]
-        print("Temperature %s K" % str(temperature))
-        temperatures.append(temperature)
-        SSi, Vgsi1, Vgsi2, SSd, Vgsd1, Vgsd2 = \
-            calc_minSS(device, file, Npoints=Npoints, subplot=subplot, Icutoff=Icutoff, startend=-75.0, switch=75.0)
-        SSinc.append(SSi)
-        SSdec.append(SSd)
-    
-    fig = plt.figure(figsize=(size, size), dpi=300)
-    ax = pretty_plot_single(fig, labels=["$\it{T}$ (K)", '$\it{SS_{min}}$ (V/dec)'],
-                             yscale='linear', fontsize=10, labelsize=10)
-    
-    ax.plot(temperatures, SSinc, '.-', ms=3, linewidth=1.5, color=colors_set1[0])
-    ax.plot(temperatures, SSdec, '.-', ms=3, linewidth=1.5, color=colors_set1[2])
-    
-    print(SSinc)
-    print(SSdec)
-    
-    # add threshold
-    if showthreshold:
-        threshold = np.log(10)*kB*np.array(temperatures)/np.abs(fundamental_charge_e)
-        ax.plot(temperatures, threshold, '.-', ms=3, linewidth=1.5, color=colors_set1[1])
-    
-    ax.set_ylim(0, None)
-    ax.xaxis.set_major_locator(MultipleLocator(100))
-    ax.set_xlim(0, 322)
-    
-    if savename is None:
-        return (fig, ax)
-    else:
-        save_generic_svg(fig, device, savename)
-        plt.show() 
-        plt.clf()
-        return None
-
-##### UNUSED
+#%% UNUSED
 def process_R_4pt(device, RTloop_2_4pt_filenames, T):
     #seperate files for R_4pt
     (cs_Currents_left, cs_Voltages_left, _, cs_Temperatures) = \
