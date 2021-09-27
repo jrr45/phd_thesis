@@ -93,7 +93,12 @@ status open
 \end_layout
 
 \begin_layout Chapter
-InSe film devices
+High mobility of charge carriers in molecular beam epitaxy grown films of
+ 
+\begin_inset Formula $\gamma$
+\end_inset
+
+-InSe
 \begin_inset CommandInset label
 LatexCommand label
 name "chapter:InSe-films"
@@ -103,8 +108,12 @@ name "chapter:InSe-films"
 
 \end_layout
 
+\begin_layout Standard
+TODO: Abstract
+\end_layout
+
 \begin_layout Section
-Introduction
+Introduction (TODO: review)
 \end_layout
 
 \begin_layout Standard
@@ -159,38 +168,113 @@ literal "false"
 .
 \end_layout
 
-\begin_layout Itemize
-InSe blather
-\end_layout
+\begin_layout Standard
+InSe has become an area of active study due to the high reported carrier
+ mobility and optoelectronic properties.
+ InSe has three common polymorphs or phases, typically named 
+\begin_inset Formula $\beta$
+\end_inset
 
-\begin_deeper
-\begin_layout Itemize
-High mobility SC
-\end_layout
+, 
+\begin_inset Formula $\gamma$
+\end_inset
 
-\begin_layout Itemize
-Film growth
-\end_layout
+, and 
+\begin_inset Formula $\varepsilon$
+\end_inset
 
-\end_deeper
-\begin_layout Itemize
-What we did blather
+; with the respective stacking and space groups: 2H-
+\begin_inset Formula $P6_{3}/mmc$
+\end_inset
+
+, 3R-
+\begin_inset Formula $R3m$
+\end_inset
+
+, and 2H-
+\begin_inset Formula $P\bar{6}m2$
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "grimaldi2020structural"
+literal "false"
+
+\end_inset
+
+.
+ All three phases have reported direct bulk band gaps of approximately 1.26
+ eV, and as the crystals thickness decreases the band gap increases up to
+ 2.11 eV due to quantum confinement and becomes indirect 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "mudd2016thedirecttoindirect,bandurin2017highelectron,yang2017waferscale"
+literal "false"
+
+\end_inset
+
+.
+ There have been many reports of high carrier mobility in InSe, well in
+ excess of 
+\begin_inset Formula $\mathrm{1000\,cm^{2}V^{-1}s^{-1}}$
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "wang2021magnetotransport,jiang2019stableinse,yuan2019realization2,li2018highmobilities,zheng2018pulsedlaser"
+literal "false"
+
+\end_inset
+
+.
+ The carrier mobility can be further enhanced by choice of substrate
+\begin_inset CommandInset citation
+LatexCommand cite
+key "feng2014backgated,zheng2018pulsedlaser,zeng2018gatetunable"
+literal "false"
+
+\end_inset
+
+ or encapsulating with other materials
+\begin_inset CommandInset citation
+LatexCommand cite
+key "chang2018synthesis,liang2018improved,siangchng2020nitrogenmediated"
+literal "false"
+
+\end_inset
+
+.
+ The mobility reported in grown thin films tends to be lower than similar
+ devices manufactured from exfoliated crystals, which must be understood
+ and addressed for commercial use.
 \end_layout
 
 \begin_layout Standard
-Encapsulation with hBN or other materials is often used as a method to increase
- the mobility of InSe crystals<TODO REF, move intro?>.
- The high mobility in InSe is attributed to the low effective electron mass
- <TODO value and refs, move intro>.
- 
+In this work we report the thin film growth of of InSe on GaAs by molecular
+ beam epitaxy and characterization of the films.
+ Optically measurements of Raman and X-ray Powder Diffraction (XRD) determine
+ the single phase structure of the InSe films.
+ EDS revealed the presence of relatively few impurities in the film, showing
+ a nearly 1:1 ratio of In-Se within the film <TODO>.
+ Transmission electron microscopy (TEM) was used to further characterize
+ the presence of stacking defects in the films.
+ Finally, Hall devices manufactured from the InSe we used for transport
+ measurements.
+ The resistivity behavior both in-plane (IP) and out-of-plane (OOP) showed
+ insulating behavior typical of a semiconducting film.
+ From hall measurements, the carrier density of the films were found to
+ range between X-X at 300 K and Y-Y at 400 K; with a high mobility of X-X
+ and Y-Y at the respective temperatures<TODO>.
 \end_layout
 
 \begin_layout Section
-Film characterization and device manufacture
+Film characterization and device manufacture (TODO)
 \end_layout
 
 \begin_layout Standard
-TODO fix XRD
+TODO fix XRD to include disappearance of peak 5.
 \end_layout
 
 \begin_layout Standard
@@ -311,7 +395,7 @@ literal "true"
 \end_inset
 
  and 
-\begin_inset Formula $\epsilon$
+\begin_inset Formula $\varepsilon$
 \end_inset
 
  phases
@@ -925,7 +1009,7 @@ TEM, HAADF, and EDS of film and metal leads
 \end_layout
 
 \begin_layout Section
-Device fabrication and measurements
+Device fabrication and measurements (TODO)
 \end_layout
 
 \begin_layout Standard
@@ -1624,7 +1708,7 @@ g behavior as samples A and B.
 \end_layout
 
 \begin_layout Section
-Discussion
+Discussion (TODO)
 \end_layout
 
 \begin_layout Standard
@@ -2152,7 +2236,7 @@ Hall mobilities of samples A, B, and C at 300 and 400 K.
 \end_layout
 
 \begin_layout Section
-Conclusion
+Conclusion (TODO: update, review)
 \end_layout
 
 \begin_layout Standard
@@ -2166,7 +2250,7 @@ d) flake devices but not often seen in film-based devices.
 \end_layout
 
 \begin_layout Section
-Additional samples and analysis
+Additional samples and analysis (TODO: update, review)
 \end_layout
 
 \begin_layout Standard
@@ -4845,7 +4929,10 @@ A overview of some recent reported values of InSe carrier mobility.
  variations that impacted the mobility.
  Acronyms used: FET = field effect transistor, FeFET = ferroelectric FET,
  PM = polymorph or phase, RT = room or ambient temperature, DFT = density
- field theory
+ field theory, PMMA = polymethyl methacrylate.
+ Top-down vertical stacking of materials is described and given using a
+ `/', e.g.
+ X on Y as X/Y.
 \end_layout
 
 \end_inset
