@@ -1,0 +1,209 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass psuthesis
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package none
+\inputencoding auto
+\fontencoding default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 0
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter*
+Abstract
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{chapter}{Abstract}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{singlespace}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Modern microelectronics seeks to ever miniaturize transistors following
+ Moore's Law, seeking faster logic, lower power usage, and denser storage.
+ Progress in this direction can no longer rely on traditional techniques
+ and materials, as fundamental limits to materials become more significant
+ as devices shrink.
+ In this dissertation I present crystal characterization and transport measureme
+nts on two layered indium-selenium compounds featuring van der Waals interlayer
+ coupling, 
+\begin_inset Formula $\gamma$
+\end_inset
+
+-InSe and 
+\begin_inset Formula $\ensuremath{\alpha}\textrm{-In}_{2}\textrm{Se}_{3}$
+\end_inset
+
+, that may provide new avenues to build better electronics, integrating
+ with and supplementing traditional materials.
+\end_layout
+
+\begin_layout Standard
+I first present our work on 
+\begin_inset Formula $\ensuremath{\alpha}\textrm{-In}_{2}\textrm{Se}_{3}$
+\end_inset
+
+ ferroelectric-field effect transistors (FeSmFET).
+ The devices are prepared from mechanically exfoliated crystals, using 
+\begin_inset Formula $\ensuremath{\alpha}\textrm{-In}_{2}\textrm{Se}_{3}$
+\end_inset
+
+ for the channel layer.
+ Contact to the crystal was done using a novel photolithography process
+ and metal evaporation.
+ In traditional ferroelectric-field effect transistors the semiconducting
+ channel is controlled using a ferroelectric-dielectric, this is reversed
+ in a FeSmFET where the channel is a ferroelectric-semiconductor and a tradition
+al, non-polar dielectric can be used.
+ I present transport measurements in the FeSmFET devices, showing behavior
+ expected of field effect transistors with evidence for polarization-controlled
+ current-behavior in thinner 
+\begin_inset Formula $\ensuremath{\alpha}\textrm{-In}_{2}\textrm{Se}_{3}$
+\end_inset
+
+ devices.
+ Temperature- and gating-dependent current measurements of the FeSmFET suggest
+ evidence for a electric-field-induced metallic state.
+ Magnetic field transport measurements show evidence for weak localization
+ and high carrier densities at low temperatures in the metallic state.
+ 
+\end_layout
+
+\begin_layout Standard
+Next I discuss our work on molecular beam epitaxy grown films of 
+\begin_inset Formula $\gamma$
+\end_inset
+
+-InSe on GaAs.
+ Raman, X-ray Diffraction, and transmission electron microscopy were used
+ to characterize the film quality and phase.
+ Thin film devices were then fabricated using photolithography, plasma etching,
+ and metal evaporation.
+ I measured the temperature dependent resistivity from 300 to 400 K and
+ Hall effect.
+ Our InSe samples show high mobility, typically reported in (encapsulated)
+ exfoliated and a few thin film devices.
+ Further examination of the film using transmission electron microscopy
+ and energy-dispersive X-ray spectroscopy reveal stacking faults within
+ the growth, likely limiting the overall mobility of our devices.
+\end_layout
+
+\begin_layout Standard
+Results obtained in our 
+\begin_inset Formula $\ensuremath{\alpha}\textrm{-In}_{2}\textrm{Se}_{3}$
+\end_inset
+
+ devices further demonstrate the feasibility of using FeSmFETs as persistent
+ logic-memory devices.
+ Additionally these devices may be an avenue to study how ferroelectric
+ dipoles behave within a metallic crystal and examine the interaction of
+ polarization and itinerant electrons.
+ Our film devices illustrate the utility of molecular beam epitaxy grown
+ InSe as a practical candidate for integration into commercial semiconductor
+ applications.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{singlespace}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

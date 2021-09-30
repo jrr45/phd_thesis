@@ -83,17 +83,6 @@ status open
 
 \begin_layout Plain Layout
 
-% !TEX root = ../JustinRodriguez-Dissertation.tex
-\end_layout
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
 % Place your vita below.
 \end_layout
 
@@ -151,6 +140,13 @@ bfseries
 sffamily}{
 \backslash
 thesubsection}{12pt}{}{} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{chapter}{Vita}
 \end_layout
 
 \begin_layout Plain Layout

@@ -78,22 +78,8 @@
 
 \begin_body
 
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-% !TEX root = ../JustinRodriguez-Dissertation.tex
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Chapter
-Conclusion (TODO)
+Conclusions
 \begin_inset CommandInset label
 LatexCommand label
 name "chapter:Conclusion"
@@ -104,7 +90,76 @@ name "chapter:Conclusion"
 \end_layout
 
 \begin_layout Standard
-Finish other stuff first
+In this dissertation, we discussed transport measurements and characterization
+ of thin 2D crystals of indium and selenium.
+ 
+\begin_inset Formula $\textrm{In}_{2}\textrm{Se}_{3}$
+\end_inset
+
+ ferroelectric-semiconductor field effect transistors (FeSmFETs) were manufactur
+ed from 2D crystals mechanically exfoliated from bulk crystals on 
+\begin_inset Formula $\mathrm{SiO_{2}}$
+\end_inset
+
+/Si substrates.
+ The 
+\begin_inset Formula $\textrm{In}_{2}\textrm{Se}_{3}$
+\end_inset
+
+ was determined to belong to the 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ polymorph through Raman and X-ray Diffraction microscopy, and the 
+\begin_inset Formula $R3m$
+\end_inset
+
+ space group with angle-resolved second harmonic generation.
+ Room temperature field effect transistor measurements showed behavior typical
+ of a semiconductor with Schottky barrier contacts.
+ Thinner samples displayed an atypical source-drain current-voltage behavior
+ indicative of polarization controlled Schottky barriers.
+ Current-gate voltage sweep displayed hysteresis that is likely from a combinati
+on of charge trapping and polarization switching altering the contact barriers.
+ The 
+\begin_inset Formula $\textrm{In}_{2}\textrm{Se}_{3}$
+\end_inset
+
+ FeSmFETs gate hysteresis persisted down to liquid helium temperatures.
+ Examination of the effects of temperature for particular gate voltages,
+ extracted from a voltage sweep, displayed a changing conduction behavior.
+ When the gate voltage was swept to 75 V, the temperature-conduction showed
+ the emergence of a metal-like state.
+ This behavior was fit to various conduction theories, including for polarizatio
+n-controlled ferroelectric channels and disorder driven conduction.
+ Magnetic-field measurements showed weak localization at low temperatures
+ and a carrier density at 75 V typical of what is seen in a metal channel.
+ 
+\end_layout
+
+\begin_layout Standard
+InSe was grown via molecular beam epitaxy on GaAs substrates.
+ Raman, X-ray Diffraction, and transmission electron microscopy were used
+ to determine the film was the 
+\begin_inset Formula $\gamma$
+\end_inset
+
+-polymorph and likely single phase.
+ The resistivity behavior of the film was typical of a semiconducting device,
+ decreasing with increasing temperature, and values around 21-27 
+\begin_inset Formula $\mathrm{\Omega\cdot cm}$
+\end_inset
+
+at room temperature.
+ Hall measurements showed high mobility at 300 and 400 K, in the range TODO
+ and TODO 
+\begin_inset Formula $\mathrm{cm^{2}V^{-1}s^{-1}}$
+\end_inset
+
+ respectively.
+ Analysis by transmission electron microscopy revealed the presence of stacking
+ faults within the film, likely limiting the maximum mobility achievable
+ within our devices.
 \end_layout
 
 \end_body

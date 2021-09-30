@@ -78,56 +78,23 @@
 
 \begin_body
 
-\begin_layout Standard
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-% !TEX root = ../YourName-Dissertation.tex
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
+\begin_layout Chapter
+Additional 
+\begin_inset Formula $\ensuremath{\alpha}\textrm{-In}_{2}\textrm{Se}_{3}$
 \end_inset
 
+ FeSmFET samples and analysis
+\end_layout
 
+\begin_layout Standard
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
 
 \backslash
-Appendix
-\end_layout
-
-\end_inset
-
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-{
-\end_layout
-
-\end_inset
-
-Additional 
-\begin_inset Formula $α\textrm{-In}_{2}\textrm{Se}_{3}$
-\end_inset
-
- Figures
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-}
+begin{singlespace}
 \end_layout
 
 \end_inset
@@ -136,7 +103,9 @@ status collapsed
 \end_layout
 
 \begin_layout Standard
+\noindent
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -466,7 +435,9 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
+\noindent
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -538,7 +509,7 @@ status open
 \end_inset
 
 
-\begin_inset space \quad{}
+\begin_inset space \enskip{}
 \end_inset
 
 
@@ -672,7 +643,7 @@ status open
 \end_inset
 
 
-\begin_inset space \quad{}
+\begin_inset space \enskip{}
 \end_inset
 
 
@@ -792,7 +763,9 @@ name "fig:Sample-B-IDvsVDS-log"
 \end_layout
 
 \begin_layout Standard
+\noindent
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -864,7 +837,7 @@ status open
 \end_inset
 
 
-\begin_inset space \quad{}
+\begin_inset space \enskip{}
 \end_inset
 
 
@@ -964,7 +937,7 @@ separation "3pt"
 shadowsize "4pt"
 framecolor "black"
 backgroundcolor "none"
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align right
@@ -1006,7 +979,7 @@ status open
 \end_inset
 
 
-\begin_inset space \quad{}
+\begin_inset space \enskip{}
 \end_inset
 
 
@@ -1144,7 +1117,9 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
+\noindent
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -1212,7 +1187,7 @@ status open
 \end_inset
 
 
-\begin_inset space \quad{}
+\begin_inset space \enskip{}
 \end_inset
 
 
@@ -1346,7 +1321,7 @@ status open
 \end_inset
 
 
-\begin_inset space \quad{}
+\begin_inset space \enskip{}
 \end_inset
 
 
@@ -1466,7 +1441,9 @@ name "fig:Sample-C-IDvsVDS-log"
 \end_layout
 
 \begin_layout Standard
+\noindent
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -1537,7 +1514,7 @@ status open
 \end_inset
 
 
-\begin_inset space \quad{}
+\begin_inset space \enskip{}
 \end_inset
 
 
@@ -1677,7 +1654,7 @@ status open
 \end_inset
 
 
-\begin_inset space \quad{}
+\begin_inset space \enskip{}
 \end_inset
 
 
@@ -1810,7 +1787,9 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
+\noindent
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -2094,7 +2073,9 @@ name "fig:Sample-B-loops"
 \end_layout
 
 \begin_layout Standard
+\noindent
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -2455,7 +2436,9 @@ name "fig:Sample-C-loops"
 \end_layout
 
 \begin_layout Standard
+\noindent
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -2734,7 +2717,561 @@ name "fig:Sample-D-loops"
 \end_layout
 
 \begin_layout Standard
+\noindent
 \begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR200115_11/JR200115_11_300K_IDvVDS-2xloops_VG-increasing_linear.svg
+	width 4.8cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $I_{D}\left(V_{DS,\updownarrow},\,V_{G,\uparrow}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR200115_11/JR200115_11_300K_IDvVDS-2xloops_VG-decreasing_linear.svg
+	width 4.8cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $I_{D}\left(V_{DS,\updownarrow},\,V_{G,\downarrow}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sample A: 
+\begin_inset Formula $I_{D}\left(V_{DS,\updownarrow},\,V_{G,}\right)$
+\end_inset
+
+ repeated sweeps
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Sample-A-repeated-sweeps"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $I_{D}\left(V_{DS}\right)$
+\end_inset
+
+ hysteresis of sample A with 
+\begin_inset Formula $V_{DS}$
+\end_inset
+
+ swept over the same intervals multiple times in succession.
+ 
+\begin_inset Formula $V_{DS}$
+\end_inset
+
+ was cycled from 
+\begin_inset Formula $0\,V\rightarrow10\,V\rightarrow0\,V\rightarrow10\,V\rightarrow0\,V$
+\end_inset
+
+, the cycle number accompanies the indicated direction.
+ Measurements are taken while 
+\begin_inset Formula $V_{G}$
+\end_inset
+
+ is held at 75 V intervals increasing (a) sequentially for each curve, and
+ (b) decreasing .
+ All measurements were done at 300 K.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR190919_03/JR190919_03_RDSvT_warming-after-VG-cooled.svg
+	width 5cm
+	groupId Cooling-vs-warming
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+two-point
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR190919_03/JR190919_03_R4PTvT_warming-after-VG-cooled.svg
+	width 5cm
+	groupId Cooling-vs-warming
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+four-point
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR190919_03/JR190919_03_IDvT_cooling-vs-warming-at-VG-75V.svg
+	width 5.2cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Cooling vs warming
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sample C: effects of warming and cooling while gated
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Sample-C-effects-of-warming-cooling"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Sample C (a) two-point and (b) four-point resistance measured at 
+\begin_inset Formula $V_{G}=75\,V$
+\end_inset
+
+ with increasing temperature from 2 to 300 K.
+ Before each measurement, sample were cycled at 300 K to 
+\begin_inset Formula $V_{G}=-75\,V$
+\end_inset
+
+, then fixed at 25, 50, and 75 V as indicated, then finally cooled from
+ 300 to 2 K with the 
+\begin_inset Formula $V_{G}$
+\end_inset
+
+ still held constant.
+ (c) Sample was cycled at 2 K (300 K) to 
+\begin_inset Formula $V_{G}=-75\,\mathrm{V}$
+\end_inset
+
+ then to 75 V and held fixed.
+ 
+\begin_inset Formula $I_{D}$
+\end_inset
+
+ was measured while sample was warmed (cooled) with constant 
+\begin_inset Formula $V_{G}$
+\end_inset
+
+ and 
+\begin_inset Formula $V_{DS}=1\,\mathrm{V}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR200115_11/JR200115_11_minSSvsT.svg
+	width 5cm
+	groupId SSvsT
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sample A
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR200115_17/JR200115_17_minSSvsT.svg
+	width 5cm
+	groupId SSvsT
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sample B
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR190919_03/JR190919_03_minSSvsT.svg
+	width 5cm
+	groupId SSvsT
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sample C
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR190815_04/JR190815_04_minSSvsT.svg
+	width 5cm
+	groupId SSvsT
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sample D
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Minimum subthreshold slope (SS) versus temperature
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Min-subthreshold-slope-vs-T"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+The minimum threshold slope for increasing and decreasing gate voltage sweeps.
+ Maximum slope (minimum SS) was found for five data points for measurements
+ shown in in figures (Sample) 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:In2Se3-Sample-A-loops"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ (A), 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Sample-B-loops"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ (B), 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Sample-C-loops"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ (C), and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Sample-D-loops"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ (D).
+ Calculated values are all well above the Boltzman limit threshold
+\begin_inset CommandInset citation
+LatexCommand cite
+key "beckers2018cryogenic"
+literal "false"
+
+\end_inset
+
+, which about 60 mV/dec at 300 K, values below the limit are often used
+ as a sign the hysteresis is an effect of polarization switching instead
+ of charge trapping
+\begin_inset CommandInset citation
+LatexCommand cite
+key "jin2020physical,jin2019physical"
+literal "true"
+
+\end_inset
+
+.
+ All slopes were calculated using 
+\begin_inset Formula $SS=1/\frac{\partial\log_{10}I_{D}}{\partial V_{G}}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -2979,14 +3516,14 @@ Hysteresis width
 \begin_inset Formula $\Delta V_{G}$
 \end_inset
 
- versus temperature for samples A, B, C, and D
+ at current intervals versus temperature for samples A, B, C, and D
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:dVG-vs-T"
+name "fig:dVG-vs-T-I-interval"
 
 \end_inset
 
- 
+
 \end_layout
 
 \end_inset
@@ -2997,7 +3534,7 @@ name "fig:dVG-vs-T"
 \begin_layout Plain Layout
 The width of the gate voltage hysteresis versus temperatures for all four
  sample devices.
- (a-f) Show the width for different current levels, in multiples of 10.
+ (a-f) shows the width for different current levels, in multiples of 10.
  Values found using the data shown in figures (Sample) 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -3039,7 +3576,6 @@ noprefix "false"
 \end_inset
 
  (D).
- 
 \end_layout
 
 \end_inset
@@ -3048,23 +3584,320 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
+\noindent
 \begin_inset Float figure
+placement H
 wide false
-sideways false
+sideways true
 status open
 
 \begin_layout Plain Layout
 \align center
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $I_{D}\left(V_{DS,\uparrow},\,V_{G,\uparrow}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $I_{D}\left(V_{DS,\uparrow},\,V_{G,\downarrow}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $I_{D}\left(V_{DS,\downarrow},\,V_{G,\uparrow}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $I_{D}\left(V_{DS,\downarrow},\,V_{G,\downarrow}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Power
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Figures/JR200115_11/JR200115_11_minSSvsT.svg
-	width 5cm
-	groupId SSvsT
+	filename Figures/JR200115_11/IDvsVDS_fit/JR200115_11_300K__IDvVDS-positive_VG-increasing_power.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR200115_11/IDvsVDS_fit/JR200115_11_300K__IDvVDS-positive_VG-decreasing_power.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR200115_11/IDvsVDS_fit/JR200115_11_300K__IDvVDS-negative_VG-increasing_power.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR200115_11/IDvsVDS_fit/JR200115_11_300K__IDvVDS-negative_VG-decreasing_power.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Schottky
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR200115_11/IDvsVDS_fit/JR200115_11_300K__IDvVDS-positive_VG-increasing_Schottky.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR200115_11/IDvsVDS_fit/JR200115_11_300K__IDvVDS-positive_VG-decreasing_Schottky.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR200115_11/IDvsVDS_fit/JR200115_11_300K__IDvVDS-negative_VG-increasing_Schottky.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR200115_11/IDvsVDS_fit/JR200115_11_300K__IDvVDS-negative_VG-decreasing_Schottky.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Poole-Frenkel
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR200115_11/IDvsVDS_fit/JR200115_11_300K__IDvVDS-positive_VG-increasing_PooleFrenkel.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR200115_11/IDvsVDS_fit/JR200115_11_300K__IDvVDS-positive_VG-decreasing_PooleFrenkel.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR200115_11/IDvsVDS_fit/JR200115_11_300K__IDvVDS-negative_VG-increasing_PooleFrenkel.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR200115_11/IDvsVDS_fit/JR200115_11_300K__IDvVDS-negative_VG-decreasing_PooleFrenkel.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
 
 \end_inset
 
@@ -3073,12 +3906,1504 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sample A: 
+\begin_inset Formula $I_{D}$
+\end_inset
+
+ versus 
+\begin_inset Formula $V_{DS}$
+\end_inset
+
+ fit
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Sample-A-IDvsVDS-fit"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Float figure
+placement H
+wide false
+sideways true
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $I_{D}\left(V_{DS,\uparrow},\,V_{G,\uparrow}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $I_{D}\left(V_{DS,\uparrow},\,V_{G,\downarrow}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $I_{D}\left(V_{DS,\downarrow},\,V_{G,\uparrow}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $I_{D}\left(V_{DS,\downarrow},\,V_{G,\downarrow}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Power
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR200115_17/IDvsVDS_fit/JR200115_17_300K__IDvVDS-positive_VG-increasing_power.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR200115_17/IDvsVDS_fit/JR200115_17_300K__IDvVDS-positive_VG-decreasing_power.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR200115_17/IDvsVDS_fit/JR200115_17_300K__IDvVDS-negative_VG-increasing_power.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR200115_17/IDvsVDS_fit/JR200115_17_300K__IDvVDS-negative_VG-decreasing_power.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Schottky
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR200115_17/IDvsVDS_fit/JR200115_17_300K__IDvVDS-positive_VG-increasing_Schottky.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR200115_17/IDvsVDS_fit/JR200115_17_300K__IDvVDS-positive_VG-decreasing_Schottky.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR200115_17/IDvsVDS_fit/JR200115_17_300K__IDvVDS-negative_VG-increasing_Schottky.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR200115_17/IDvsVDS_fit/JR200115_17_300K__IDvVDS-negative_VG-decreasing_Schottky.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Poole-Frenkel
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR200115_17/IDvsVDS_fit/JR200115_17_300K__IDvVDS-positive_VG-increasing_PooleFrenkel.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR200115_17/IDvsVDS_fit/JR200115_17_300K__IDvVDS-positive_VG-decreasing_PooleFrenkel.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR200115_17/IDvsVDS_fit/JR200115_17_300K__IDvVDS-negative_VG-increasing_PooleFrenkel.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR200115_17/IDvsVDS_fit/JR200115_17_300K__IDvVDS-negative_VG-decreasing_PooleFrenkel.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sample B: 
+\begin_inset Formula $I_{D}$
+\end_inset
+
+ versus 
+\begin_inset Formula $V_{DS}$
+\end_inset
+
+ fit
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Sample-B-IDvsVDS-fit"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Float figure
+placement H
+wide false
+sideways true
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $I_{D}\left(V_{DS,\uparrow},\,V_{G,\uparrow}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $I_{D}\left(V_{DS,\uparrow},\,V_{G,\downarrow}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $I_{D}\left(V_{DS,\downarrow},\,V_{G,\uparrow}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $I_{D}\left(V_{DS,\downarrow},\,V_{G,\downarrow}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Power
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR190919_03/IDvsVDS_fit/JR190919_03_300K__IDvVDS-positive_VG-increasing_power.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR190919_03/IDvsVDS_fit/JR190919_03_300K__IDvVDS-positive_VG-decreasing_power.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR190919_03/IDvsVDS_fit/JR190919_03_300K__IDvVDS-negative_VG-increasing_power.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR190919_03/IDvsVDS_fit/JR190919_03_300K__IDvVDS-negative_VG-decreasing_power.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Schottky
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR190919_03/IDvsVDS_fit/JR190919_03_300K__IDvVDS-positive_VG-increasing_Schottky.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR190919_03/IDvsVDS_fit/JR190919_03_300K__IDvVDS-positive_VG-decreasing_Schottky.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR190919_03/IDvsVDS_fit/JR190919_03_300K__IDvVDS-negative_VG-increasing_Schottky.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR190919_03/IDvsVDS_fit/JR190919_03_300K__IDvVDS-negative_VG-decreasing_Schottky.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Poole-Frenkel
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR190919_03/IDvsVDS_fit/JR190919_03_300K__IDvVDS-positive_VG-increasing_PooleFrenkel.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR190919_03/IDvsVDS_fit/JR190919_03_300K__IDvVDS-positive_VG-decreasing_PooleFrenkel.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR190919_03/IDvsVDS_fit/JR190919_03_300K__IDvVDS-negative_VG-increasing_PooleFrenkel.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR190919_03/IDvsVDS_fit/JR190919_03_300K__IDvVDS-negative_VG-decreasing_PooleFrenkel.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sample C: 
+\begin_inset Formula $I_{D}$
+\end_inset
+
+ versus 
+\begin_inset Formula $V_{DS}$
+\end_inset
+
+ fit
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Sample-C-IDvsVDS-fit"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Float figure
+placement H
+wide false
+sideways true
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="bottom" width="0pt">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $I_{D}\left(V_{DS,\uparrow},\,V_{G,\uparrow}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $I_{D}\left(V_{DS,\uparrow},\,V_{G,\downarrow}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $I_{D}\left(V_{DS,\downarrow},\,V_{G,\uparrow}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $I_{D}\left(V_{DS,\downarrow},\,V_{G,\downarrow}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Power
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR190815_04/IDvsVDS_fit/JR190815_04_300K__IDvVDS-positive_VG-increasing_power.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR190815_04/IDvsVDS_fit/JR190815_04_300K__IDvVDS-positive_VG-decreasing_power.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR190815_04/IDvsVDS_fit/JR190815_04_300K__IDvVDS-negative_VG-increasing_power.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR190815_04/IDvsVDS_fit/JR190815_04_300K__IDvVDS-negative_VG-decreasing_power.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Schottky
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR190815_04/IDvsVDS_fit/JR190815_04_300K__IDvVDS-positive_VG-increasing_Schottky.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR190815_04/IDvsVDS_fit/JR190815_04_300K__IDvVDS-positive_VG-decreasing_Schottky.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR190815_04/IDvsVDS_fit/JR190815_04_300K__IDvVDS-negative_VG-increasing_Schottky.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR190815_04/IDvsVDS_fit/JR190815_04_300K__IDvVDS-negative_VG-decreasing_Schottky.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Poole-Frenkel
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR190815_04/IDvsVDS_fit/JR190815_04_300K__IDvVDS-positive_VG-increasing_PooleFrenkel.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR190815_04/IDvsVDS_fit/JR190815_04_300K__IDvVDS-positive_VG-decreasing_PooleFrenkel.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR190815_04/IDvsVDS_fit/JR190815_04_300K__IDvVDS-negative_VG-increasing_PooleFrenkel.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/JR190815_04/IDvsVDS_fit/JR190815_04_300K__IDvVDS-negative_VG-decreasing_PooleFrenkel.svg
+	lyxscale 130
+	height 4cm
+	groupId IDvsVDS_fit
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sample D: 
+\begin_inset Formula $I_{D}$
+\end_inset
+
+ versus 
+\begin_inset Formula $V_{DS}$
+\end_inset
+
+ fit
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Sample-D-IDvsVDS-fit"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Float table
+placement H
+wide false
+sideways true
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="8">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="2.5cm">
+<column alignment="center" valignment="top" width="2.5cm">
+<column alignment="center" valignment="top" width="2.5cm">
+<column alignment="center" valignment="top" width="2.5cm">
+<column alignment="center" valignment="top" width="2.5cm">
+<column alignment="center" valignment="top" width="2.5cm">
+<column alignment="center" valignment="top" width="2.5cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
 
 \begin_layout Plain Layout
 Sample A
 \end_layout
 
 \end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-75 V
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-50 V
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-25 V
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0 V
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+25 V
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+50 V
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+75 V
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $V_{DS,\uparrow},\,V_{G,\uparrow}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.4(0.1-0.7V) 0.7(0.8-1.1V) 1.9(1.2-1.4V) 5.9(1.5-3.8V) 3.5(3.9-4.5V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.9(0.3-0.9V) -0.4(1.1-1.4V) 0.3(2.9-3.1V) 2.1(3.3-4.7V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.0(0.1-0.4V) 2.9(0.5-1.1V) -0.8(1.3-1.6V) -0.2(2.2-2.4V) 1.8(4.2-4.5V) 1.8(4.6-4.8V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.5(0.6-0.9V) -0.7(1.3-1.7V) -0.2(2.5-2.7V) 0.4(2.9-3.1V) 0.6(3.6-3.9V) 1.3(4.5-4.9V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.2(0.5-0.9V) 2.1(1.0-1.2V) -0.8(1.6-1.8V) -0.2(2.9-3.1V) 1.2(3.8-4.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.0(0.2-0.4V) 2.4(0.5-1.2V) -0.4(2.2-2.4V) 0.3(2.8-3.0V) 1.2(3.9-4.1V) 2.0(4.7-5.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.9(0.1-0.5V) 2.7(0.6-1.1V) 0.2(1.2-1.4V) -0.5(2.7-2.9V)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $V_{DS,\uparrow},\,V_{G,\downarrow}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.6(0.1-0.5V) 3.3(0.6-1.2V) 0.8(3.6-3.8V) 2.1(4.0-4.2V) 2.6(4.7-4.9V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.1(0.5-1.2V) 0.4(2.2-2.4V) 0.8(3.1-3.3V) 2.2(4.5-5.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.1(0.4-1.2V) 0.5(3.2-3.4V) 3.6(4.5-4.7V) 2.3(4.8-5.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.2(0.2-0.5V) 3.5(0.6-1.1V) 0.8(1.2-1.4V) 0.3(1.5-1.7V) 0.7(2.3-2.5V) 0.9(4.2-4.4V) 2.5(4.6-4.9V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.7(0.1-0.4V) 3.7(0.5-1.1V) 0.5(1.2-1.4V) 0.8(3.1-3.3V) 1.4(3.6-3.9V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.9(0.5-1.1V) 0.4(2.6-2.8V) 1.4(3.2-3.4V) 2.0(4.0-4.2V) 1.0(4.3-4.5V) 1.1(4.6-4.8V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.1(0.1-0.5V) 3.6(0.6-1.1V) -0.4(1.9-2.1V) 0.4(2.7-2.9V) 0.9(4.2-4.5V)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $V_{DS,\downarrow},\,V_{G,\uparrow}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.3(0.2-5.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.9(0.1-1.1V) 0.7(2.9-3.8V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.7(0.1-1.1V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.7(0.1-1.1V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.6(0.1-1.2V)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $V_{DS,\downarrow},\,V_{G,\downarrow}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.6(0.1-1.5V) 1.6(3.1-5.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.7(0.1-1.7V) 1.1(1.8-2.7V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.8(0.1-1.1V) 0.6(1.2-2.1V) 1.7(3.7-4.6V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.8(0.1-1.3V) 2.2(3.6-4.8V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.9(0.1-1.4V) 1.4(2.7-5.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.9(0.1-5.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.8(0.1-1.7V)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
 
 
 \end_layout
@@ -3086,38 +5411,430 @@ Sample A
 \end_inset
 
 
-\begin_inset space ~
-\end_inset
+\end_layout
 
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset Float figure
+\begin_layout Standard
+\noindent
+\begin_inset Float table
+placement H
 wide false
-sideways false
-status collapsed
+sideways true
+status open
 
 \begin_layout Plain Layout
-\begin_inset Graphics
-	filename Figures/JR200115_17/JR200115_17_minSSvsT.svg
-	width 5cm
-	groupId SSvsT
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ContinuedFloat
+\end_layout
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="8">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="2.5cm">
+<column alignment="center" valignment="top" width="2.5cm">
+<column alignment="center" valignment="top" width="2.5cm">
+<column alignment="center" valignment="top" width="2.5cm">
+<column alignment="center" valignment="top" width="2.5cm">
+<column alignment="center" valignment="top" width="2.5cm">
+<column alignment="center" valignment="top" width="2.5cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
 
 \begin_layout Plain Layout
 Sample B
 \end_layout
 
 \end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-75 V
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-50 V
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-25 V
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0 V
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+25 V
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+50 V
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+75 V
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $V_{DS,\uparrow},\,V_{G,\uparrow}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.9(1.2-2.9V) 5.6(3.3-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.4(0.4-1.9V) 1.4(4.0-6.0V) 2.9(6.1-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.5(0.3-1.8V) 1.8(5.7-9.9V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.6(0.2-1.5V) 1.6(7.9-9.7V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.7(0.1-1.5V) 0.3(1.6-2.5V) 1.1(7.2-8.4V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.6(0.3-2.0V) 0.6(5.5-6.4V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.5(0.7-2.1V)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $V_{DS,\uparrow},\,V_{G,\downarrow}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.7(0.3-1.9V) 2.0(2.2-3.1V) 3.3(3.2-5.3V) 5.9(5.4-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.7(0.3-1.4V) 1.2(1.5-2.4V) 2.8(2.7-4.7V) 5.4(4.8-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.8(0.3-1.8V) 3.5(3.4-5.4V) 5.6(5.5-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.8(0.3-1.6V) 3.0(2.8-5.4V) 5.3(5.5-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.9(1.2-4.8V) 4.8(5.4-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.4(0.1-4.5V) 3.3(4.6-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.7(0.2-3.6V) 1.1(3.7-7.8V) 1.6(7.9-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $V_{DS,\downarrow},\,V_{G,\uparrow}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.0(0.3-8.8V) 2.7(8.9-9.8V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.2(0.6-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.0(0.3-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.0(0.3-9.2V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.9(0.1-6.7V) 1.3(8.1-9.1V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.9(0.1-9.2V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.9(0.1-9.9V)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $V_{DS,\downarrow},\,V_{G,\downarrow}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.2(0.4-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.2(0.4-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.2(0.4-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.1(0.4-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.9(0.3-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.7(0.2-9.6V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.6(0.1-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
 
 
 \end_layout
@@ -3125,34 +5842,426 @@ Sample B
 \end_inset
 
 
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Float figure
+\begin_inset Float table
+placement H
 wide false
-sideways false
-status collapsed
+sideways true
+status open
 
 \begin_layout Plain Layout
-\begin_inset Graphics
-	filename Figures/JR190919_03/JR190919_03_minSSvsT.svg
-	width 5cm
-	groupId SSvsT
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ContinuedFloat
+\end_layout
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="8">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="2.5cm">
+<column alignment="center" valignment="top" width="2.5cm">
+<column alignment="center" valignment="top" width="2.5cm">
+<column alignment="center" valignment="top" width="2.5cm">
+<column alignment="center" valignment="top" width="2.5cm">
+<column alignment="center" valignment="top" width="2.5cm">
+<column alignment="center" valignment="top" width="2.5cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
 
 \begin_layout Plain Layout
 Sample C
 \end_layout
 
 \end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-75 V
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-50 V
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-25 V
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0 V
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+25 V
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+50 V
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+75 V
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $V_{DS,\uparrow},\,V_{G,\uparrow}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.8(2.5-6.0V) 1.0(6.5-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.5(2.0-4.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.4(2.0-6.5V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.5(2.0-4.5V) 0.3(5.0-7.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.6(1.5-7.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.6(1.0-9.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.6(1.0-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $V_{DS,\uparrow},\,V_{G,\downarrow}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.9(0.5-3.0V) 0.7(5.0-7.5V) 1.0(8.0-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.5(2.0-4.5V) 0.8(5.5-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.5(2.0-5.5V) 1.0(7.5-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.6(1.5-5.5V) 0.5(6.0-8.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.4(2.5-4.5V) 0.8(6.5-9.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.6(2.0-5.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.7(0.5-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $V_{DS,\downarrow},\,V_{G,\uparrow}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.0(0.5-5.0V) 1.7(5.5-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.1(0.5-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.1(0.5-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.0(0.5-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.9(0.5-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.8(0.5-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.8(0.5-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $V_{DS,\downarrow},\,V_{G,\downarrow}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.4(2.0-9.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.3(1.5-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.4(1.5-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.4(1.5-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.4(1.5-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.2(1.0-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.0(0.5-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
 
 
 \end_layout
@@ -3160,24 +6269,22 @@ Sample C
 \end_inset
 
 
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset Float figure
+\begin_inset Float table
+placement H
 wide false
-sideways false
-status collapsed
+sideways true
+status open
 
 \begin_layout Plain Layout
-\begin_inset Graphics
-	filename Figures/JR190815_04/JR190815_04_minSSvsT.svg
-	width 5cm
-	groupId SSvsT
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ContinuedFloat
+\end_layout
 
 \end_inset
 
@@ -3185,16 +6292,400 @@ status collapsed
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="8">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="2.5cm">
+<column alignment="center" valignment="top" width="2.5cm">
+<column alignment="center" valignment="top" width="2.5cm">
+<column alignment="center" valignment="top" width="2.5cm">
+<column alignment="center" valignment="top" width="2.5cm">
+<column alignment="center" valignment="top" width="2.5cm">
+<column alignment="center" valignment="top" width="2.5cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
 
 \begin_layout Plain Layout
 Sample D
 \end_layout
 
 \end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-75 V
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-50 V
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-25 V
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0 V
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+25 V
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+50 V
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+75 V
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $V_{DS,\uparrow},\,V_{G,\uparrow}$
+\end_inset
 
 
 \end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.0(0.2-1.6V) 0.7(1.8-3.8V) 0.8(4.0-5.0V) 0.6(5.8-7.2V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.8(0.2-2.2V) 0.4(2.4-3.4V) 0.3(4.4-5.2V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.8(0.2-2.0V) 0.4(2.2-3.2V) 0.2(3.6-4.8V) 0.1(5.0-5.8V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.7(0.2-2.4V) 0.3(2.6-5.6V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.7(0.2-2.4V) 0.3(2.6-4.4V) 0.3(5.2-6.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.8(0.2-2.2V) 0.3(2.4-8.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.8(0.2-2.2V) 0.4(2.4-4.0V) 0.3(4.4-5.8V)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $V_{DS,\uparrow},\,V_{G,\downarrow}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.9(0.2-1.6V) 0.5(1.8-3.6V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.9(0.2-1.4V) 0.5(1.6-3.6V) 0.5(5.0-5.8V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.8(0.2-3.0V) 0.3(7.8-8.8V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.8(0.2-2.6V) 0.3(2.8-3.6V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.9(0.2-1.4V) 0.4(1.6-7.0V) 0.4(7.6-8.4V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.9(0.2-1.2V) 0.5(1.4-4.0V) 0.4(4.2-5.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.5(1.0-3.8V) 0.3(4.0-5.2V) 0.3(7.4-8.4V)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $V_{DS,\downarrow},\,V_{G,\uparrow}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.0(0.2-7.6V) 0.7(9.2-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.4(0.2-9.4V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.4(0.2-9.2V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.5(0.2-9.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.5(0.2-5.2V) 0.8(5.4-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.5(0.2-4.6V) 0.9(4.8-8.4V) 0.9(8.6-9.4V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.5(0.2-3.4V) 1.0(3.6-7.2V) 0.8(8.2-9.8V)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $V_{DS,\downarrow},\,V_{G,\downarrow}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.0(0.4-9.8V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.0(0.2-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.1(0.2-9.6V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.2(0.2-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.3(0.2-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.4(0.2-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.5(0.2-4.2V) 1.1(4.4-10.0V)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
 
 \end_inset
 
@@ -3205,10 +6696,18 @@ Sample D
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Minimum subthreshold slope (SS) versus temperature
+Slope (voltage range) for linear fits of 
+\begin_inset Formula $\ln\left(J\right)$
+\end_inset
+
+ versus 
+\begin_inset Formula $\ln\left(V\right)$
+\end_inset
+
+
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:Min-subthreshold-slope-vs-T"
+name "tab:Slope-lnJ-lnV"
 
 \end_inset
 
@@ -3218,76 +6717,6 @@ name "fig:Min-subthreshold-slope-vs-T"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Plain Layout
-The minimum threshold slope for increasing and decreasing gate voltage sweeps.
- Maximum slope (minimum SS) was found for five data points for measurements
- shown in in figures (Sample) 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:In2Se3-Sample-A-loops"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- (A), 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Sample-B-loops"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- (B), 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Sample-C-loops"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- (C), and 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Sample-D-loops"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- (D).
- Calculated values are all well above the Boltzman limit threshold
-\begin_inset CommandInset citation
-LatexCommand cite
-key "beckers2018cryogenic"
-literal "false"
-
-\end_inset
-
-, which about 60 mV/dec at 300 K, values below the limit are often used
- as a sign the hysteresis is an effect of polarization switching instead
- of charge trapping
-\begin_inset CommandInset citation
-LatexCommand cite
-key "jin2019onthe,jin2020physical"
-literal "true"
-
-\end_inset
-
-.
- All slopes were calculated using 
-\begin_inset Formula $SS=1/\frac{\partial\log_{10}I_{D}}{\partial V_{G}}$
-\end_inset
-
-.
 \end_layout
 
 \end_inset
@@ -3296,560 +6725,14 @@ literal "true"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
 
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename Figures/JR190919_03/JR190919_03_RDSvT_warming-after-VG-cooled.svg
-	width 5cm
-	groupId Cooling-vs-warming
 
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-two-point
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename Figures/JR190919_03/JR190919_03_R4PTvT_warming-after-VG-cooled.svg
-	width 5cm
-	groupId Cooling-vs-warming
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-four-point
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename Figures/JR190919_03/JR190919_03_IDvT_cooling-vs-warming-at-VG-75V.svg
-	width 5.2cm
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Cooling vs warming
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Sample C: effects of warming and cooling while gated
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Sample-C-effects-of-warming-cooling"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-Sample C (a) two-point and (b) four-point resistance measured at 
-\begin_inset Formula $V_{G}=75\,V$
-\end_inset
-
- with increasing temperature from 2 to 300 K.
- Before each measurement, sample were cycled at 300 K to 
-\begin_inset Formula $V_{G}=-75\,V$
-\end_inset
-
-, then fixed at 25, 50, and 75 V as indicated, then finally cooled from
- 300 to 2 K with the 
-\begin_inset Formula $V_{G}$
-\end_inset
-
- still held constant.
- (c) Sample was cycled at 2 K (300 K) to 
-\begin_inset Formula $V_{G}=-75\,\mathrm{V}$
-\end_inset
-
- then to 75 V and held fixed.
- 
-\begin_inset Formula $I_{D}$
-\end_inset
-
- was measured while sample was warmed (cooled) with constant 
-\begin_inset Formula $V_{G}$
-\end_inset
-
- and 
-\begin_inset Formula $V_{DS}=1\,\mathrm{V}$
-\end_inset
-
-.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename Figures/JR200115_17/JR200115_17_IDvVG-rate_300K_log.svg
-	width 5cm
-	groupId Rate
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-300 K
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename Figures/JR200115_17/JR200115_17_IDvVG-rate_3K_log.svg
-	width 5cm
-	groupId Rate
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-3 K
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Sample B: 
-\begin_inset Formula $I_{D}\left(V_{G}\right)$
-\end_inset
-
-, 
-\begin_inset Formula $V_{G}$
-\end_inset
-
- rate dependence
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Sample-B-rate-dependance"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Formula $I_{D}\left(V_{G}\right)$
-\end_inset
-
- of sample C taken at (a) 300 K and (b) 3 K.
- Each curve was taken with 
-\begin_inset Formula $V_{G}$
-\end_inset
-
- increased and decreased at the indicated rate with 
-\begin_inset Formula $V_{DS}=0.1\,V$
-\end_inset
-
-.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/JR190815_04/JR190815_04_RvVG_300K_contact-and-sample.svg
-	width 5.2cm
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Sample D: contact resistance
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Sample-D-contact-resistance"
-
-\end_inset
-
- 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-Sample D 
-\begin_inset Formula $R\left(V_{G}\right)$
-\end_inset
-
- contact and four-point sample resistance, taken at 300 K with increasing
- 
-\begin_inset Formula $V_{G}$
-\end_inset
-
-.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename Figures/JR190919_03/JR190919_03_IDvVDS_effect-of-heating_linear.svg
-	width 5cm
-	groupId annealing
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Sample C: 
-\begin_inset Formula $I_{D}\left(V_{DS}\right)$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename Figures/JR190919_03/JR190919_03_IDvVG_effect-of-heating_linear.svg
-	width 4.9cm
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Sample C: 
-\begin_inset Formula $I_{D}\left(V_{G}\right)$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename Figures/JR200115_17/JR200115_17_IDvVG_effect-of-heating_log.svg
-	width 5.31cm
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Sample B: 
-\begin_inset Formula $I_{D}\left(V_{G}\right)$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Sample A and B: annealing
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Sample-AB-Annealing"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-Samples A (a & b) and B (c) were annealed in vacuum at 400 K in 1 hour intervals.
- (a) Show 
-\begin_inset Formula $I_{D}\left(V_{DS}\right)$
-\end_inset
-
- measurements and (b & c) 
-\begin_inset Formula $I_{D}\left(V_{G}\right)$
-\end_inset
-
-, each taken at 300 K.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/JR200115_11/JR200115_11_Magnetoconductance_All-K.svg
-	width 5cm
-
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Sample A: magnetoconductance
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Sample-A:-magnetoconductance-All-K"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-The magnetoconductance of sample A taken at 1.8, 10, and 50 K.
+\backslash
+end{singlespace}
 \end_layout
 
 \end_inset

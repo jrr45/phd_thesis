@@ -164,7 +164,7 @@
 % FRONT-MATTER %
 %%%%%%%%%%%%%%%%
 % Title
-\title{Transport mesurements in 2D indium-selenide crystal devices}
+\title{Material properties and device applications of ferroelectric $\mathrm{In_{2}Se_{3}}$ and high-mobility InSe}
 
 % Author and Department
 \author{Justin Rodriguez}
@@ -226,17 +226,6 @@
 			{Tom Jackson}
 			{Professor of Electrical Engineering}
 
-
-% Format the Chapter headings using the titlesec package.
-% You can format section headings and the like here too.
-\definecolor{gray75}{gray}{0.75}
-\newcommand{\hsp}{\hspace{15pt}}
-\titleformat{\chapter}[display]{\fontsize{30}{30}\selectfont\bfseries\sffamily}{Chapter \thechapter\hsp\textcolor{gray75}{\raisebox{3pt}{|}}}{0pt}{}{}
-
-\titleformat{\section}[block]{\Large\bfseries\sffamily}{\thesection}{12pt}{}{}
-\titleformat{\subsection}[block]{\large\bfseries\sffamily}{\thesubsection}{12pt}{}{}
-
-
 % Makes use of LaTeX's include facility. Add as many chapters
 % and appendices as you like.
 
@@ -280,7 +269,7 @@ todonotes
 \bibtex_command default
 \index_command default
 \paperfontsize 12
-\spacing double
+\spacing onehalf
 \use_hyperref false
 \pdf_bookmarks true
 \pdf_bookmarksnumbered false
@@ -346,6 +335,94 @@ status open
 
 %%% https://www.paulkiddie.com/2010/02/adding-custom-class-files-cls-to-lyx-in-win
 dows-vista-windows-7-environment/
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+% Format the Chapter headings using the titlesec package.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+% You can format section headings and the like here too.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+definecolor{gray75}{gray}{0.75} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+hsp}{
+\backslash
+hspace{15pt}} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+titleformat{
+\backslash
+chapter}[display]{
+\backslash
+fontsize{30}{30}
+\backslash
+selectfont
+\backslash
+bfseries
+\backslash
+sffamily}{Chapter 
+\backslash
+thechapter
+\backslash
+hsp
+\backslash
+textcolor{gray75}{
+\backslash
+raisebox{3pt}{|}}}{0pt}{}{}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+titleformat{
+\backslash
+section}[block]{
+\backslash
+Large
+\backslash
+bfseries
+\backslash
+sffamily}{
+\backslash
+thesection}{12pt}{}{} 
+\backslash
+titleformat{
+\backslash
+subsection}[block]{
+\backslash
+large
+\backslash
+bfseries
+\backslash
+sffamily}{
+\backslash
+thesubsection}{12pt}{}{} 
 \end_layout
 
 \begin_layout Plain Layout
@@ -553,10 +630,35 @@ psucommitteepage
 
 \begin_layout Plain Layout
 
-
+%
 \backslash
 thesisabstract{SupplementaryMaterial/Abstract}
 \end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\begin_inset CommandInset include
+LatexCommand include
+filename "SupplementaryMaterial/Abstract.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\begin_inset ERT
+status open
 
 \begin_layout Plain Layout
 
@@ -902,6 +1004,7 @@ fancyhead{}
 \end_layout
 
 \begin_layout Standard
+\align block
 \begin_inset CommandInset include
 LatexCommand include
 filename "Chapter-Introduction/Chapter-Introduction.lyx"
@@ -911,7 +1014,7 @@ filename "Chapter-Introduction/Chapter-Introduction.lyx"
 
 \begin_inset CommandInset include
 LatexCommand include
-filename "Chapter-Background/Chapter-Background.lyx"
+filename "Chapter-Background/Background-semiconductors.lyx"
 
 \end_inset
 
@@ -919,6 +1022,29 @@ filename "Chapter-Background/Chapter-Background.lyx"
 \end_layout
 
 \begin_layout Standard
+\align block
+\begin_inset CommandInset include
+LatexCommand include
+filename "Chapter-Background/Background-ferroelectrics.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset CommandInset include
+LatexCommand include
+filename "Chapter-Background/Background-materials.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align block
 \begin_inset CommandInset include
 LatexCommand include
 filename "Chapter-Methods/Chapter-Methods.lyx"
@@ -929,16 +1055,7 @@ filename "Chapter-Methods/Chapter-Methods.lyx"
 \end_layout
 
 \begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand include
-filename "Chapter-InSe-films/Chapter-InSe-films.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
+\align block
 \begin_inset CommandInset include
 LatexCommand include
 filename "Chapter-In2Se3-FeSm-FET/Chapter-In2Se3-FeSm-FET.lyx"
@@ -949,9 +1066,10 @@ filename "Chapter-In2Se3-FeSm-FET/Chapter-In2Se3-FeSm-FET.lyx"
 \end_layout
 
 \begin_layout Standard
+\align block
 \begin_inset CommandInset include
 LatexCommand include
-filename "Chapter-Conclusion/Chapter-Conclusion.lyx"
+filename "Chapter-InSe-films/Chapter-InSe-films.lyx"
 
 \end_inset
 
@@ -959,7 +1077,11 @@ filename "Chapter-Conclusion/Chapter-Conclusion.lyx"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage clearpage
+\align block
+\begin_inset CommandInset include
+LatexCommand include
+filename "Chapter-Conclusion/Chapter-Conclusion.lyx"
+
 \end_inset
 
 
@@ -985,7 +1107,7 @@ selectfont
 \backslash
 bfseries
 \backslash
-sffamily}{Chapter 
+sffamily}{Appendix 
 \backslash
 thechapter
 \backslash
@@ -993,7 +1115,7 @@ hsp
 \backslash
 textcolor{gray75}{
 \backslash
-raisebox{3pt}{|}}}{0pt}{}{}
+raisebox{3pt}{|}}}{0pt}{}{} 
 \end_layout
 
 \begin_layout Plain Layout
@@ -1022,7 +1144,7 @@ bfseries
 \backslash
 sffamily}{
 \backslash
-thesubsection}{12pt}{}{} 
+thesubsection}{12pt}{}{}
 \end_layout
 
 \end_inset
@@ -1031,11 +1153,9 @@ thesubsection}{12pt}{}{}
 \end_layout
 
 \begin_layout Standard
-
-\family sans
 \begin_inset CommandInset include
 LatexCommand include
-filename "Appendix-crystal-symmetry-groups/Appendix-crystal-symmetry-groups.lyx"
+filename "Chapter-In2Se3-FeSm-FET/Appendix-Additional In2Se3 Figures.lyx"
 
 \end_inset
 
@@ -1043,18 +1163,13 @@ filename "Appendix-crystal-symmetry-groups/Appendix-crystal-symmetry-groups.lyx"
 \end_layout
 
 \begin_layout Standard
-
-\family sans
 \begin_inset CommandInset include
 LatexCommand include
-filename "Appendix-Project Unity/Appendix-Project-Unity.lyx"
+filename "Chapter-InSe-films/Appendix-Additional InSe Figures.lyx"
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Newpage clearpage
 \end_inset
 

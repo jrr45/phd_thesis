@@ -1,0 +1,5351 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass psuthesis
+\begin_preamble
+\usepackage{lscape}
+\end_preamble
+\options phd
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package none
+\inputencoding auto
+\fontencoding default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 0
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Indium-selenium materials
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:2D-indium-selenium-materials"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Started by the discovery of graphene, 2D materials have become a large area
+ of research due to their unique qualities and ability to integrate with
+ conventional electronics.
+ Typically defined by layered nature, many can be mechanically exfoliated
+ to small crystals or grown as thin films.
+ The sharp reduction in one dimension often provides additional fundamental
+ electronic properties from the bulk that can be exploited.
+ Chalcogenides, typically sulfides, selenides, tellurides; often form 2D
+ materials with Van der Waals inter-layer bonding with a semiconductor bandgap.
+ Some of the most studied of these compounds are the transition metal chalcogeni
+des with the stoichiometry 
+\begin_inset Formula $MX_{n}$
+\end_inset
+
+, where 
+\begin_inset Formula $M$
+\end_inset
+
+ is a transition metal such as 
+\begin_inset Formula $Mo$
+\end_inset
+
+ or 
+\begin_inset Formula $W$
+\end_inset
+
+ and 
+\begin_inset Formula $X$
+\end_inset
+
+ a chalcogen 
+\begin_inset Formula $S$
+\end_inset
+
+, 
+\begin_inset Formula $Se$
+\end_inset
+
+, or 
+\begin_inset Formula $Te$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+In-Se compounds
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:In-Se-compounds"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Indium-Selenium together can form a variety of binary compounds ranging
+ with completely disparate properties.
+ Depending on the temperature and prevalence of each element it is possible
+ to get different In-Se crystal growth and structures.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "fig:In-Se-alloy-diagram"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ shows a alloy phase diagram compiled from various calculations and experimental
+ly published sources up to 2003, showing the likely phases to form for a
+ given mixture of indium and selenium and annealed in a set temperature
+ range.
+ Alternate configurations of the same stoichiometry, known as polymorphs
+ (and often phases), can form with the atoms forming different crystal symmetrie
+s and periodicity.
+ Polymorphs may also include different stackings of atoms, or polytypes.
+ The plethora of In-Se compounds, and the sensitivity of growth to both
+ temperature and concentration, makes the manufacture of a single uniform
+ crystal harder to control than alloys that form only a single structure.
+ There is no standard convention for what phase or polymorph represents
+ for a 2D material, and names are often simply set in order of historical
+ discovery, leading to a large amount of confusion in the reporting of some
+ 2D materials in the literature
+\begin_inset CommandInset citation
+LatexCommand cite
+key "bergeron2021polymorphism"
+literal "false"
+
+\end_inset
+
+.
+ 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+In-Se
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ polymorphs and polytypes vary greatly in properties like durability, conductivi
+ty, photoresponse, bandgap, and exhibit different phenomina such as superconduct
+ivity, charge density waves, and ferroelectricity.
+ With this, care must be taken to establish the correct crystal structure
+ when comparing and reporting crystals.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Materials-Figures/In-Se phase diagram - modified.svg
+	lyxscale 30
+	width 15cm
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+In-Se alloy phase diagram
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:In-Se-alloy-diagram"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+The various Indium-Selenium compounds grown from literature using both experimen
+tal and calculated data.
+ Adapted with permission from Han et al.
+ and Okamoto et al.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "okamoto2006se"
+literal "false"
+
+\end_inset
+
+ Copyright 2014 WILEY-VCH Verlag GmbH & Co., Copyright 2006, ASM International.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+\begin_inset Formula $\mathrm{InSe}$
+\end_inset
+
+ polymorphs
+\end_layout
+
+\begin_layout Standard
+InSe has gained a lot of interested in recent years due to its potential
+ applications in optoelectronics.
+ There are currently three well known polymorps: 
+\begin_inset Formula $\beta$
+\end_inset
+
+ belonging to the 
+\begin_inset Formula $P6_{3}/mmc$
+\end_inset
+
+ space group, 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ with group 
+\begin_inset Formula $R3m$
+\end_inset
+
+, and 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ of group 
+\begin_inset Formula $P\bar{6}m2$
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "srour2018comparative,grimaldi2020structural"
+literal "true"
+
+\end_inset
+
+.
+ 
+\begin_inset Formula $\beta$
+\end_inset
+
+ and 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ phases have similar hexagon structures and lattice constants
+\begin_inset CommandInset citation
+LatexCommand cite
+key "grimaldi2020structural"
+literal "false"
+
+\end_inset
+
+ but can be distinguished via Raman spectroscopy
+\begin_inset CommandInset citation
+LatexCommand cite
+key "grimaldi2020structural,xie2020temperaturedependent"
+literal "false"
+
+\end_inset
+
+.
+ All three polymorphs have a direct bulk band gap of 
+\begin_inset Formula $\sim1.26eV$
+\end_inset
+
+ that increases and changes to indirect as the crystal decreases in thickness
+\begin_inset CommandInset citation
+LatexCommand cite
+key "brotons-gisbert2016nanotexturing,huang2018phaseengineered,bandurin2017high,sang2019two"
+literal "false"
+
+\end_inset
+
+.
+ There is a small amount of evidence suggesting one or more of the InSe
+ polymorphs may be ferroelectric or piezoelectric.
+ Recently Hu.
+ et al.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "hu2021outofplane,hu2019roomtemperature"
+literal "false"
+
+\end_inset
+
+ reported in-plane and out-of-plane ferroelectricity in 
+\begin_inset Formula $\beta$
+\end_inset
+
+-InSe using a combination of PFM detection of hysteresis loops and remnant
+ polarization, SHG, and ferroelectric channel devices.
+ Dai et al.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "dai2019robust"
+literal "false"
+
+\end_inset
+
+ observed a piezoelectric response in both 
+\begin_inset Formula $\beta$
+\end_inset
+
+- and 
+\begin_inset Formula $\gamma$
+\end_inset
+
+-phase InSe flake devices manufactured on flexible substrates.
+ Additionally, Li and Wu
+\begin_inset CommandInset citation
+LatexCommand cite
+key "li2017binary"
+literal "false"
+
+\end_inset
+
+ predicted a polarization of 
+\begin_inset Formula $.24pC/cm$
+\end_inset
+
+ in 
+\begin_inset Formula $\gamma$
+\end_inset
+
+-InSe, even though it is centrosymmetric.
+ Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:InSe-stable-polymorphs"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ lists the three common polymorphs reported in literature and the identified
+ space groups, the structures rare shown in figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:In2Se3-crystal-structure"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Materials-Figures/InSe-beta combined.png
+	lyxscale 10
+	width 5cm
+	groupId In2Se3-crystals
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\beta\mathrm{\left[2H\right]\left(P6_{3}/mmc\right)}$
+\end_inset
+
+ hexagonal
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Materials-Figures/InSe-gamma combined.png
+	lyxscale 10
+	width 5cm
+	groupId In2Se3-crystals
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\gamma\left[3R\right]\left(R3m\right)$
+\end_inset
+
+ rhombohedral
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Materials-Figures/InSe-epsilon combined.png
+	lyxscale 10
+	width 5cm
+	groupId In2Se3-crystals
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\epsilon\left[2H\right]\left(P\bar{6}m2\right)$
+\end_inset
+
+ hexagonal
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{InSe}$
+\end_inset
+
+ crystal structures
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:InSe-crystal-structures"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+The common 
+\begin_inset Formula $\beta$
+\end_inset
+
+, 
+\begin_inset Formula $\gamma$
+\end_inset
+
+, and 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ polymorph crystal structures.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Float table
+wide false
+sideways true
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+clearpage
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="8">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="0pt">
+<column alignment="left" valignment="middle" width="2.4cm">
+<column alignment="left" valignment="top" width="5cm">
+<column alignment="left" valignment="top" width="1cm">
+<column alignment="left" valignment="top" width="1.7cm">
+<column alignment="left" valignment="top" width="1cm">
+<column alignment="left" valignment="top" width="1.7cm">
+<column alignment="left" valignment="top" width="5cm">
+<row endhead="true" endfirsthead="true">
+<cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PM
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Structure
+\begin_inset Newline newline
+\end_inset
+
+[Ramsdell]
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Space group {number}
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+lattice (Å)
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PT
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Band gap (eV)
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Raman (approximate 
+\begin_inset Formula $\mathrm{cm^{-1}}$
+\end_inset
+
+)
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row endhead="true" endfirsthead="true">
+<cell multirow="4" alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+a
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+c
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\beta$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Hexagonal
+\end_layout
+
+\begin_layout Plain Layout
+[2H]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $P6_{3}/mmc\left\{ 194\right\} $
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "srour2018comparative"
+literal "true"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+(FE 
+\begin_inset Formula $Ama2\left\{ 40\right\} $
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "hu2021outofplane"
+literal "true"
+
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.005
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+16.64
+\begin_inset CommandInset citation
+LatexCommand cite
+key "osman2016modulation"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+AB
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.26
+\begin_inset CommandInset citation
+LatexCommand cite
+key "osman2016modulation"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+116, 176, 228
+\begin_inset CommandInset citation
+LatexCommand cite
+key "hu2019roomtemperature"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+115, 176, 227
+\begin_inset CommandInset citation
+LatexCommand cite
+key "hu2018temperaturedependent"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+41, 117, 176, 202, 209, 225 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "osman2016modulation"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\gamma$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Rhombohedral
+\end_layout
+
+\begin_layout Plain Layout
+[3R]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $R3m\left\{ 160\right\} $
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "srour2018comparative"
+literal "true"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.002
+\begin_inset CommandInset citation
+LatexCommand cite
+key "mudd2016directtoindirect"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+24.961
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ABC
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(
+\begin_inset Formula $\mathrm{D\rightarrow I}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+1.25
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+2
+\begin_inset CommandInset citation
+LatexCommand cite
+key "brotons-gisbert2016nanotexturing"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+1.25
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+3.37
+\begin_inset CommandInset citation
+LatexCommand cite
+key "bandurin2017high"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+117, 179, 228
+\begin_inset CommandInset citation
+LatexCommand cite
+key "balakrishnan2018epitaxial"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+115, 177, 199, 226
+\begin_inset CommandInset citation
+LatexCommand cite
+key "wu2019crystal"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Hexagonal
+\end_layout
+
+\begin_layout Plain Layout
+[2H]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $P\bar{6}m2\left\{ 187\right\} $
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "srour2018comparative"
+literal "true"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.01
+\end_layout
+
+\begin_layout Plain Layout
+4.01
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+16.61
+\begin_inset CommandInset citation
+LatexCommand cite
+key "sun2020einse"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+16.66
+\begin_inset CommandInset citation
+LatexCommand cite
+key "hao2019phase"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+AB
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.24
+\begin_inset CommandInset citation
+LatexCommand cite
+key "hao2019phase"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+(
+\begin_inset Formula $\mathrm{D\rightarrow I}$
+\end_inset
+
+)
+\begin_inset Formula $1.3\rightarrow2$
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "huang2018phaseengineered"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+115, 176, 199, 226 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "sun2020einse"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+114.4, 176.5, 226.2
+\begin_inset CommandInset citation
+LatexCommand cite
+key "hao2019phase"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+40, 115, 177, 201, 211, 227
+\begin_inset CommandInset citation
+LatexCommand cite
+key "huang2018phaseengineered"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{InSe}$
+\end_inset
+
+ stable polymorphs
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:InSe-stable-polymorphs"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+The common 
+\begin_inset Formula $\beta$
+\end_inset
+
+, 
+\begin_inset Formula $\gamma$
+\end_inset
+
+, and 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ polymorph crystal structures of InSe.
+ PM: polymorph, PT: polytype, Band gap I/D: indirect/direct.
+ The structure is also denoted by the Ramsdell notation 
+\begin_inset Formula $nZ$
+\end_inset
+
+, where 
+\begin_inset Formula $n$
+\end_inset
+
+ is the number of layers in a unit cell and 
+\begin_inset Formula $Z$
+\end_inset
+
+ the crystal system of the lattice.
+ The ones used above are: 
+\begin_inset Formula $H$
+\end_inset
+
+ a hexagonal crystal with a hexagonal Bravais system and 
+\begin_inset Formula $R$
+\end_inset
+
+ a trigonal crystal system with a rhombohedral Bravais lattice.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+\begin_inset Formula $\mathrm{In_{2}Se_{3}}$
+\end_inset
+
+ polymorphs
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:In2Se3-polymorphs-in-lit"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathrm{In_{2}Se_{3}}$
+\end_inset
+
+ is perhaps one of the most complicated of the In-Se stoichiometries.
+ Currently there are thought to be 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, 
+\begin_inset Formula $\beta$
+\end_inset
+
+, 
+\begin_inset Formula $\gamma$
+\end_inset
+
+, 
+\begin_inset Formula $\delta$
+\end_inset
+
+, and 
+\begin_inset Formula $\kappa$
+\end_inset
+
+ stable phases of 
+\begin_inset Formula $\mathrm{In_{2}Se_{3}}$
+\end_inset
+
+, and 
+\begin_inset Formula $\beta^{\prime}$
+\end_inset
+
+ and 
+\begin_inset Formula $\beta^{\prime\prime}$
+\end_inset
+
+ distorted phases
+\begin_inset CommandInset citation
+LatexCommand cite
+key "han2014indium"
+literal "false"
+
+\end_inset
+
+.
+ Liu et al.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "liu2019atomically"
+literal "true"
+
+\end_inset
+
+ is likely the most comprehensive single study of the common polymorphs
+ 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, 
+\begin_inset Formula $\beta$
+\end_inset
+
+, 
+\begin_inset Formula $\gamma$
+\end_inset
+
+.
+ The polymorphs 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, 
+\begin_inset Formula $\beta$
+\end_inset
+
+, 
+\begin_inset Formula $\delta$
+\end_inset
+
+ and 
+\begin_inset Formula $\kappa$
+\end_inset
+
+ are 2D layered Van der Waals materials while 
+\begin_inset Formula $\mathrm{\gamma\textrm{-In}_{2}\textrm{Se}_{3}}$
+\end_inset
+
+ is 3D in nature.
+ 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ and 
+\begin_inset Formula $\beta$
+\end_inset
+
+ are semiconductors and have multiple sub-polymorphic structures with different
+ layer stackings.
+ 
+\begin_inset Formula $\ensuremath{\kappa}\textrm{-In}_{2}\textrm{Se}_{3}$
+\end_inset
+
+ is typically formed by doping with impurities like Ag, Sb, Te, and Zn,
+ and is similar to the 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ phase
+\begin_inset CommandInset citation
+LatexCommand cite
+key "jiang2019construction,li2011thermal,li2011thermal,kang2014thermally"
+literal "false"
+
+\end_inset
+
+.
+ Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:In2Se3-polymorphs"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ lists the different polymorphs reported in literature and the identified
+ space groups, the structures reported by Liu et al.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "liu2019atomically"
+literal "true"
+
+\end_inset
+
+ are shown in figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:In2Se3-crystal-structure"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Materials-Figures/In2Se3-alpha(2H) combined.png
+	lyxscale 10
+	width 5cm
+	groupId In2Se3-crystals
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\alpha\mathrm{\left[2H\right]\left(P6_{3}mc\right)}$
+\end_inset
+
+ hexagonal
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Materials-Figures/In2Se3-alpha(3R) combined.png
+	lyxscale 10
+	width 5cm
+	groupId In2Se3-crystals
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\alpha\left[3R\right]\left(R3m\right)$
+\end_inset
+
+ rhombohedral
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Materials-Figures/In2Se3-beta(1T) combined.png
+	lyxscale 10
+	width 5cm
+	groupId In2Se3-crystals
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\beta\left[1T\right]\left(P\bar{3}m1\right)$
+\end_inset
+
+ trigonal
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Materials-Figures/In2Se3-beta(2H) combined.png
+	lyxscale 10
+	width 5cm
+	groupId In2Se3-crystals
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\beta\mathrm{\left[2H\right]\left(P6_{3}mc\right)}$
+\end_inset
+
+ hexagonal
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Materials-Figures/In2Se3-beta(3R) combined.png
+	lyxscale 10
+	width 5cm
+	groupId In2Se3-crystals
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\beta\left[3R\right]\left(R\bar{3}m\right)$
+\end_inset
+
+ rhombohedral
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Materials-Figures/In2Se3-gamma combined.png
+	lyxscale 10
+	width 5cm
+	groupId In2Se3-crystals
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\gamma$
+\end_inset
+
+ Hexagonal
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{In_{2}Se_{3}}$
+\end_inset
+
+ crystal structures
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:In2Se3-crystal-structure"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+The common 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, 
+\begin_inset Formula $\beta$
+\end_inset
+
+, and 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ polymorph crystal structures, following the space groups and lattice constants
+ given by Liu et al.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "liu2019atomically"
+literal "true"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float table
+wide false
+sideways true
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+clearpage
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="8">
+<features islongtable="true" longtabularalignment="center">
+<column alignment="left" valignment="top" width="0pt">
+<column alignment="left" valignment="top" width="2.4cm">
+<column alignment="left" valignment="top" width="5cm">
+<column alignment="left" valignment="top" width="1cm">
+<column alignment="left" valignment="top" width="1.7cm">
+<column alignment="left" valignment="top" width="1cm">
+<column alignment="left" valignment="top" width="1.7cm">
+<column alignment="left" valignment="top" width="5cm">
+<row endhead="true" endfirsthead="true">
+<cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PM
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Structure
+\begin_inset Newline newline
+\end_inset
+
+[Ramsdell]
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Space group {number}
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+lattice (Å)
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PT
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Band gap (eV)
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Raman (approximate 
+\begin_inset Formula $\mathrm{cm^{-1}}$
+\end_inset
+
+)
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row endhead="true" endfirsthead="true">
+<cell multirow="4" alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+a
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+c
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\alpha$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Rhombohedral
+\end_layout
+
+\begin_layout Plain Layout
+[3R]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $R3m\left\{ 160\right\} $
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "liu2019atomically,kupers2018controlled,osamura1966crystal,vilaplana2018experimental,ye1998crystal"
+literal "true"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+(or 
+\begin_inset Formula $R\bar{3}m\left\{ 166\right\} $
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "popovic1979revised,liu2019atomically,nguyen20192d,tao2013crystalline"
+literal "true"
+
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.05
+\end_layout
+
+\begin_layout Plain Layout
+4.032
+\end_layout
+
+\begin_layout Plain Layout
+4.028 4.026
+\end_layout
+
+\begin_layout Plain Layout
+4.00
+\end_layout
+
+\begin_layout Plain Layout
+4.025
+\end_layout
+
+\begin_layout Plain Layout
+4.205
+\end_layout
+
+\begin_layout Plain Layout
+4.05
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+29.64
+\begin_inset CommandInset citation
+LatexCommand cite
+key "liu2019atomically"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+28.705
+\begin_inset CommandInset citation
+LatexCommand cite
+key "nguyen20192d"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+28.731
+\begin_inset CommandInset citation
+LatexCommand cite
+key "vilaplana2018experimental"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+28.75
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kupers2018controlled"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+28.80
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ye1998crystal"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+28.762 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "popovic1979revised"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+28.742 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "tao2013crystalline"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+28.77
+\begin_inset CommandInset citation
+LatexCommand cite
+key "osamura1966crystal"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ABC
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(D)1.3
+\begin_inset CommandInset citation
+LatexCommand cite
+key "cui2018intercorrelated"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+(D)1.365
+\end_layout
+
+\begin_layout Plain Layout
+(D)1.39
+\begin_inset CommandInset citation
+LatexCommand cite
+key "nguyen20192d"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+(D)1.39
+\begin_inset CommandInset citation
+LatexCommand cite
+key "si2019ferroelectric"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+(D)1.39
+\begin_inset CommandInset citation
+LatexCommand cite
+key "si2019novel"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+(D)1.39
+\begin_inset CommandInset citation
+LatexCommand cite
+key "balakrishnan2018epitaxial"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+95, 108, 185
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kambas1984raman"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+104, 182
+\begin_inset CommandInset citation
+LatexCommand cite
+key "lewandowska2001raman"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+104, 181, 200
+\begin_inset CommandInset citation
+LatexCommand cite
+key "tao2013crystalline"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+108, 180, 203
+\begin_inset CommandInset citation
+LatexCommand cite
+key "feng2016sensitive"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+103, 204
+\begin_inset CommandInset citation
+LatexCommand cite
+key "cui2018intercorrelated"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+88, 104, 159, 179, 193, 250
+\begin_inset CommandInset citation
+LatexCommand cite
+key "liu2019atomically"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+107, 186, 196
+\begin_inset CommandInset citation
+LatexCommand cite
+key "nguyen20192d"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+108, 173, 205
+\begin_inset CommandInset citation
+LatexCommand cite
+key "dai2020intrinsic"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+90, 104, 182, 201, 251
+\begin_inset CommandInset citation
+LatexCommand cite
+key "li2020orthogonal"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+104, 180, 198, 251
+\begin_inset CommandInset citation
+LatexCommand cite
+key "yang2019nonvolatile"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+110, 175, 205
+\begin_inset CommandInset citation
+LatexCommand cite
+key "zhou2017outofplane"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+89, 105, 158, 180, 187, 194
+\begin_inset CommandInset citation
+LatexCommand cite
+key "si2019ferroelectric"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+89, 105, 158, 180, 187, 194
+\begin_inset CommandInset citation
+LatexCommand cite
+key "si2019novel"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+179 , 195
+\begin_inset CommandInset citation
+LatexCommand cite
+key "zhou2015controlled"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+88, 103, 182, 193, 204
+\begin_inset CommandInset citation
+LatexCommand cite
+key "hou2019resistive"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+89, 104, 180, 196, 266
+\begin_inset CommandInset citation
+LatexCommand cite
+key "wan2018roomtemperature"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+105, 182
+\begin_inset CommandInset citation
+LatexCommand cite
+key "igo2018anharmonic"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+105, 159, 182, 187, 203
+\begin_inset CommandInset citation
+LatexCommand cite
+key "balakrishnan2018epitaxial"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Hexagonal
+\end_layout
+
+\begin_layout Plain Layout
+[2H]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $P6_{3}mc\left\{ 186\right\} $
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "liu2019atomically,kupers2018controlled"
+literal "true"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+(or 
+\begin_inset Formula $P6_{3}/mmc\left\{ 194\right\} $
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "popovic1979revised"
+literal "true"
+
+\end_inset
+
+)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "jacobs-gedrim2014extraordinary"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.05
+\end_layout
+
+\begin_layout Plain Layout
+4.023
+\end_layout
+
+\begin_layout Plain Layout
+4.025
+\end_layout
+
+\begin_layout Plain Layout
+4.0
+\end_layout
+
+\begin_layout Plain Layout
+4.025
+\end_layout
+
+\begin_layout Plain Layout
+4.05
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+19.75
+\begin_inset CommandInset citation
+LatexCommand cite
+key "liu2019atomically"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+19.217
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kupers2018controlled"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+19.235
+\begin_inset CommandInset citation
+LatexCommand cite
+key "lyu2020thicknessdependent"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+X
+\begin_inset CommandInset citation
+LatexCommand cite
+key "poh2018molecularbeam"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+19.235
+\begin_inset CommandInset citation
+LatexCommand cite
+key "popovic1979revised"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+19.23
+\begin_inset CommandInset citation
+LatexCommand cite
+key "jacobs-gedrim2014extraordinary"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+AB
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(I)1.44
+\begin_inset CommandInset citation
+LatexCommand cite
+key "lyu2020thicknessdependent"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+(I)1.55
+\begin_inset CommandInset citation
+LatexCommand cite
+key "poh2018molecularbeam"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+88, 104, 159, 179, 193, 250
+\begin_inset CommandInset citation
+LatexCommand cite
+key "liu2019atomically"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+89, 105, 147, 181, 194
+\begin_inset CommandInset citation
+LatexCommand cite
+key "wang2021twodimensional"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+90, 104, 180, 195
+\begin_inset CommandInset citation
+LatexCommand cite
+key "xue2018roomtemperature"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+84, 108, 176, 206
+\begin_inset CommandInset citation
+LatexCommand cite
+key "lv2021layerdependent"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+89, 104, 159, 181, 196
+\begin_inset CommandInset citation
+LatexCommand cite
+key "gao2021intrinsic"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+90, 104, 180, 195
+\begin_inset CommandInset citation
+LatexCommand cite
+key "xue2018multidirection"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+108, 176, and 205
+\begin_inset CommandInset citation
+LatexCommand cite
+key "poh2018molecularbeam"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\beta$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Trigonal
+\end_layout
+
+\begin_layout Plain Layout
+[1T]
+\begin_inset Formula $^{\star}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $P\bar{3}m1\left\{ 164\right\} $
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "liu2019atomically"
+literal "true"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.04
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9.76 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "liu2019atomically"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+AA
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(I)1.55
+\begin_inset CommandInset citation
+LatexCommand cite
+key "almeida2017colloidal"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+110, 176, 205
+\begin_inset CommandInset citation
+LatexCommand cite
+key "liu2019atomically"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Hexagonal
+\end_layout
+
+\begin_layout Plain Layout
+[2H]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $P6_{3}mc\left\{ 186\right\} $
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "liu2019atomically"
+literal "true"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+(or 
+\begin_inset Formula $P6_{3}/mmc\left\{ 194\right\} $
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "lutz1988zur"
+literal "false"
+
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.06
+\end_layout
+
+\begin_layout Plain Layout
+4.016
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+19.48
+\begin_inset CommandInset citation
+LatexCommand cite
+key "liu2019atomically"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+1.919
+\begin_inset CommandInset citation
+LatexCommand cite
+key "lutz1988zur"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+AB
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+110, 176, 205
+\begin_inset CommandInset citation
+LatexCommand cite
+key "liu2019atomically"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Float table
+wide false
+sideways true
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ContinuedFloat
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="11" columns="8">
+<features islongtable="true" longtabularalignment="center">
+<column alignment="left" valignment="top" width="0pt">
+<column alignment="left" valignment="top" width="2.4cm">
+<column alignment="left" valignment="top" width="5cm">
+<column alignment="left" valignment="top" width="1cm">
+<column alignment="left" valignment="top" width="1.7cm">
+<column alignment="left" valignment="top" width="1cm">
+<column alignment="left" valignment="top" width="1.7cm">
+<column alignment="left" valignment="top" width="5cm">
+<row endhead="true" endfirsthead="true">
+<cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PM
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Structure
+\begin_inset Newline newline
+\end_inset
+
+[Ramsdell]
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Space group {number}
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+lattice (Å)
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PT
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Band gap (eV)
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Raman (approximate 
+\begin_inset Formula $\mathrm{cm^{-1}}$
+\end_inset
+
+)
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row endhead="true" endfirsthead="true">
+<cell multirow="4" alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+a
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+c
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row newpage="true">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\beta$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Rhombohedral
+\end_layout
+
+\begin_layout Plain Layout
+[3R]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $R\bar{3}m\left\{ 166\right\} $
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "popovic1979revised,vilaplana2018experimental,osamura1966crystal,kupers2018controlled,lutz1988zur,li2018largea,tao2013crystalline"
+literal "true"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.166
+\end_layout
+
+\begin_layout Plain Layout
+3.832
+\end_layout
+
+\begin_layout Plain Layout
+4.000
+\end_layout
+
+\begin_layout Plain Layout
+3.99
+\end_layout
+
+\begin_layout Plain Layout
+3.99
+\end_layout
+
+\begin_layout Plain Layout
+4.026
+\end_layout
+
+\begin_layout Plain Layout
+3.993
+\end_layout
+
+\begin_layout Plain Layout
+4.05
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+28.213
+\begin_inset CommandInset citation
+LatexCommand cite
+key "tao2013crystalline"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+25.16
+\begin_inset CommandInset citation
+LatexCommand cite
+key "vilaplana2018experimental"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+28.33
+\begin_inset CommandInset citation
+LatexCommand cite
+key "popovic1979revised"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+X
+\begin_inset CommandInset citation
+LatexCommand cite
+key "zhang2019atomicscale"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+28.31
+\begin_inset CommandInset citation
+LatexCommand cite
+key "balakrishnan2016quantum"
+literal "true"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+28.75
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kupers2018controlled"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+28.39
+\begin_inset CommandInset citation
+LatexCommand cite
+key "lutz1988zur"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+28.33
+\begin_inset CommandInset citation
+LatexCommand cite
+key "osamura1966crystal"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ABC
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(I)1.43
+\begin_inset CommandInset citation
+LatexCommand cite
+key "balakrishnan2016quantum"
+literal "true"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+(I)1.46
+\begin_inset CommandInset citation
+LatexCommand cite
+key "wang2017phasedefined"
+literal "true"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+(D)1.43
+\begin_inset CommandInset citation
+LatexCommand cite
+key "balakrishnan2018epitaxial"
+literal "true"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+110
+\begin_inset CommandInset citation
+LatexCommand cite
+key "zhang2019atomicscale"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+110, 175, 205
+\begin_inset CommandInset citation
+LatexCommand cite
+key "balakrishnan2016quantum"
+literal "true"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+110, 179, 206
+\begin_inset CommandInset citation
+LatexCommand cite
+key "wang2017phasedefined"
+literal "true"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+110, 175, 205
+\begin_inset CommandInset citation
+LatexCommand cite
+key "balakrishnan2018epitaxial"
+literal "true"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+110, 176, 207
+\begin_inset CommandInset citation
+LatexCommand cite
+key "feng2018phaseengineeringdriven"
+literal "true"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+109, 178, 201, 206
+\begin_inset CommandInset citation
+LatexCommand cite
+key "igo2018anharmonic"
+literal "true"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row newpage="true">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\gamma$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Hexagonal
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $P6_{1}\left\{ 169\right\} $
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "liu2019atomically,marsillac1996experimental,likforman1978structure,wei2020synthesis"
+literal "true"
+
+\end_inset
+
+ (or 
+\begin_inset Formula $P6_{5}\left\{ 170\right\} $
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "marsillac1996experimental,vassilev1998thermodynamic,jacobs-gedrim2014extraordinary,liu2019atomically"
+literal "true"
+
+\end_inset
+
+)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "pfitzner1996redetermination,lutz1988zur"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7.128
+\end_layout
+
+\begin_layout Plain Layout
+7.35
+\end_layout
+
+\begin_layout Plain Layout
+7.129
+\end_layout
+
+\begin_layout Plain Layout
+7.11
+\end_layout
+
+\begin_layout Plain Layout
+7.17
+\end_layout
+
+\begin_layout Plain Layout
+7.129
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+19.382
+\begin_inset CommandInset citation
+LatexCommand cite
+key "wei2020synthesis"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+20.02
+\begin_inset CommandInset citation
+LatexCommand cite
+key "liu2019atomically"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+19.381
+\begin_inset CommandInset citation
+LatexCommand cite
+key "pfitzner1996redetermination"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+19.34
+\begin_inset CommandInset citation
+LatexCommand cite
+key "likforman1978structure"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+19.41
+\begin_inset CommandInset citation
+LatexCommand cite
+key "vassilev1998thermodynamic"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(D)1.78
+\begin_inset CommandInset citation
+LatexCommand cite
+key "wei2020synthesis"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+(D)1.95
+\begin_inset CommandInset citation
+LatexCommand cite
+key "balakrishnan2018epitaxial"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+81, 95, 150, 177, 203, 228
+\begin_inset CommandInset citation
+LatexCommand cite
+key "liu2019atomically"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+152, 205, 221, 230
+\begin_inset CommandInset citation
+LatexCommand cite
+key "balakrishnan2018epitaxial"
+literal "true"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+152, 205, 221 , 230
+\begin_inset CommandInset citation
+LatexCommand cite
+key "balakrishnan2018epitaxial"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\delta$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Trigonal
+\begin_inset Formula $^{\star}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $P3m1\left\{ 156\right\} $
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "lutz1988zur"
+literal "false"
+
+\end_inset
+
+ or 
+\begin_inset Formula $P\bar{3}m1\left\{ 164\right\} $
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "popovic1979revised,li2018largea"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.014
+\end_layout
+
+\begin_layout Plain Layout
+4.018
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9.64
+\begin_inset CommandInset citation
+LatexCommand cite
+key "popovic1979revised"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+9.646
+\begin_inset CommandInset citation
+LatexCommand cite
+key "lutz1988zur"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\kappa$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Hexagonal
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset citation
+LatexCommand cite
+key "jiang2019construction,jasinski2002crystal,li2011thermal,li2011thermal,kang2014thermally,yu2013atomistic,li2011thermal,kang2014thermally"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8.09
+\end_layout
+
+\begin_layout Plain Layout
+7.05
+\end_layout
+
+\begin_layout Plain Layout
+8.09
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+19.85
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kang2014thermally"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+19.85
+\begin_inset CommandInset citation
+LatexCommand cite
+key "khusayfan2018design"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+19.8
+\begin_inset CommandInset citation
+LatexCommand cite
+key "jasinski2002crystal"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.75
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\beta^{\prime}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Monoclinic
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $C2/m\left\{ 12\right\} $
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "vilaplana2018experimental,zhao2014structure"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+99.9 167.9 177.3 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "vilaplana2018experimental"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cubic
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $I\bar{4}3d\left\{ 220\right\} $
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "zhao2014structure,ke2017decompressiondriven"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\beta^{\prime}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Hexagonal
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Monoclinic
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\beta^{\prime\prime}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Hexagonal
+\begin_inset Newline newline
+\end_inset
+
++Rectangular
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{In_{2}Se_{3}}$
+\end_inset
+
+ stable polymorphs
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:In2Se3-polymorphs"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+The common polymorphs and polytypes of 
+\begin_inset Formula $\mathrm{In_{2}Se_{3}}$
+\end_inset
+
+.
+ PM: polymorph, PT: polytype, Band gap I/D: indirect/direct.
+ The Ramsdell notation 
+\begin_inset Formula $T$
+\end_inset
+
+ is a trigonal crystal system with a hexagonal Bravais lattice.
+ 
+\begin_inset Formula $^{\star}$
+\end_inset
+
+The structure in 
+\begin_inset Formula $1T$
+\end_inset
+
+ 
+\begin_inset Formula $\beta$
+\end_inset
+
+-phase reported by Liu et al.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "liu2019atomically"
+literal "true"
+
+\end_inset
+
+ is similar to the 
+\begin_inset Formula $\delta$
+\end_inset
+
+-phase calculated by Li et al.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "li2018largea"
+literal "false"
+
+\end_inset
+
+, as well as the few earlier reported measurements of the 
+\begin_inset Formula $\delta$
+\end_inset
+
+-phase.
+ As these phase have only a few spare reports, more work is needed to clarify
+ their structure and relationship.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\ensuremath{\alpha}\textrm{-In}_{2}\textrm{Se}_{3}$
+\end_inset
+
+ is formed in a rhombohedral [3R] or hexagonal [2H] stacking
+\begin_inset CommandInset citation
+LatexCommand cite
+key "liu2019atomically,han2014indium"
+literal "false"
+
+\end_inset
+
+.
+ Both phases were predicted to be ferroelectric semiconductors
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ding2017prediction"
+literal "false"
+
+\end_inset
+
+ and multiple experiments have shown evidence of ferroelectricity in the
+ 2H
+\begin_inset CommandInset citation
+LatexCommand cite
+key "poh2018molecularbeam,xue2018roomtemperature,liu2019atomically,xue2019gatetunable,wang2021twodimensional"
+literal "false"
+
+\end_inset
+
+ and 3R
+\begin_inset CommandInset citation
+LatexCommand cite
+key "zhou2017outofplane,cui2018intercorrelated,wan2018roomtemperature,xiao2018intrinsic,hou2019resistive,liu2019atomically,yang2019nonvolatile,dai2020intrinsic,li2020orthogonal,wang2020exploring,si2019novel,si2018ferroelectric,saha2020ain2se3,hou2019ain2se3"
+literal "false"
+
+\end_inset
+
+ stacking.
+ Of note, the ferroelectricity in both show a locked in-plane and out-of-plane
+ polarization, something not seen in other ferroelectric materials
+\begin_inset CommandInset citation
+LatexCommand cite
+key "dai2020intrinsic,hou2019resistive,xiao2018intrinsic,cui2018intercorrelated,liu2019atomically,hou2019ain2se3"
+literal "false"
+
+\end_inset
+
+.
+ Both polytypes have experimentally reported direct band gaps of ~1.39 eV
+\begin_inset CommandInset citation
+LatexCommand cite
+key "balakrishnan2018epitaxial,lyu2020thicknessdependent,nguyen20192d"
+literal "false"
+
+\end_inset
+
+, which increases as the material thickness decreases
+\begin_inset CommandInset citation
+LatexCommand cite
+key "lyu2020thicknessdependent,poh2018molecularbeam"
+literal "false"
+
+\end_inset
+
+.
+ Both polytpes also show similar Raman peaks near 88, 104, 159, 179, 193,
+ and 250 
+\begin_inset Formula $\mathrm{cm^{-1}}$
+\end_inset
+
+; corresponding to the 
+\begin_inset Formula $\mathrm{E^{2}}$
+\end_inset
+
+, 
+\begin_inset Formula $\mathrm{A_{1}^{1}}$
+\end_inset
+
+, 
+\begin_inset Formula $\mathrm{E^{3}}$
+\end_inset
+
+, 
+\begin_inset Formula $\mathrm{E^{4}}$
+\end_inset
+
+, 
+\begin_inset Formula $\mathrm{A_{1}^{3}}$
+\end_inset
+
+, and 
+\begin_inset Formula $\mathrm{E_{1}^{4}}$
+\end_inset
+
+ phonon modes
+\begin_inset CommandInset citation
+LatexCommand cite
+key "liu2019atomically"
+literal "false"
+
+\end_inset
+
+; with the peaks near 90, 105, 180, 195 the most commonly reported
+\begin_inset CommandInset citation
+LatexCommand cite
+key "liu2019atomically,lv2021layerdependent,wang2021twodimensional,xue2018roomtemperature,xue2018multidirection,zhou2017outofplane,igo2018anharmonic,lewandowska2001raman,nguyen20192d,kambas1984raman,feng2016sensitive,tao2013crystalline,zhou2015controlled,balakrishnan2018epitaxial,island2015gate,vilaplana2018experimental"
+literal "false"
+
+\end_inset
+
+.
+ The specific stacking can be resolved using other techniques, such as selected
+ area electron diffraction (SAED)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "cui2018intercorrelated,si2019ferroelectric"
+literal "true"
+
+\end_inset
+
+, scanning transmission electron microscopy (STEM)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "zhou2017outofplane,cui2018intercorrelated,liu2019atomically,kupers2018controlled,zhou2015controlled,si2019ferroelectric"
+literal "true"
+
+\end_inset
+
+, elected area electron diffraction (SAED)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "cui2018intercorrelated,si2019ferroelectric,han2014indium"
+literal "false"
+
+\end_inset
+
+, and angle-resolved second harmonic generation (SHG)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "dai2020intrinsic,xiao2018intrinsic,xue2018multidirection,xue2018roomtemperature,zhou2017outofplane"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+There are three reported 
+\begin_inset Formula $\ensuremath{\beta}\textrm{-In}_{2}\textrm{Se}_{3}$
+\end_inset
+
+ polytypes: trigonal 
+\begin_inset Formula $1T$
+\end_inset
+
+, hexagonal 
+\begin_inset Formula $2H$
+\end_inset
+
+, and and rhombohedral 
+\begin_inset Formula $3R$
+\end_inset
+
+; with the 
+\begin_inset Formula $3R$
+\end_inset
+
+ polytype is the most commonly reported.
+ The 
+\begin_inset Formula $\beta$
+\end_inset
+
+ polymorph shows Raman peaks at approximately 110, 176, and 205 
+\begin_inset Formula $\mathrm{cm^{-1}}$
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "liu2019atomically"
+literal "false"
+
+\end_inset
+
+; corresponding to the 
+\begin_inset Formula $\mathrm{A_{1g}^{1}}$
+\end_inset
+
+, 
+\begin_inset Formula $\mathrm{E_{g}^{2}}$
+\end_inset
+
+, and 
+\begin_inset Formula $\mathrm{A_{1g}^{2}}$
+\end_inset
+
+ phonon modes.
+ The reported band gap ranges from about 1.43-1.5 in the 
+\begin_inset Formula $1T$
+\end_inset
+
+ and 
+\begin_inset Formula $3R$
+\end_inset
+
+ polytypes
+\begin_inset CommandInset citation
+LatexCommand cite
+key "almeida2017colloidal,wang2017phasedefined,balakrishnan2016quantum,balakrishnan2018epitaxial"
+literal "false"
+
+\end_inset
+
+.
+ Similarly to the 
+\begin_inset Formula $\alpha$
+\end_inset
+
+-polymorph, additional techniques may be necessary to distinguish the stacking
+ of the layers.
+ The reported 
+\begin_inset Formula $1T$
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "liu2019atomically"
+literal "false"
+
+\end_inset
+
+ is similar in stacking
+\begin_inset CommandInset citation
+LatexCommand cite
+key "popovic1979revised,li2018largea"
+literal "false"
+
+\end_inset
+
+ and lattice constants
+\begin_inset CommandInset citation
+LatexCommand cite
+key "popovic1979revised,lutz1988zur"
+literal "false"
+
+\end_inset
+
+ to the rarely reported 
+\begin_inset Formula $\delta$
+\end_inset
+
+-polymorph, which may be an indication of multiple names for the same crystal
+ structure.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\textrm{In}_{2}\textrm{Se}_{3}$
+\end_inset
+
+ can easily transition between the different polymorphs, and care must be
+ taken while measuring the material to either avoid the transition or record
+ when the transition occurred, which has caused some confusion in older
+ reported material properties.
+ This has been widely reported in the polymorph transitions from 
+\begin_inset Formula $\alpha\rightarrow\beta\rightarrow\gamma\rightarrow\delta$
+\end_inset
+
+ as the material is heated.
+ The 
+\begin_inset Formula $\alpha\rightarrow\beta$
+\end_inset
+
+ transition occurs at 473 K in bulk
+\begin_inset CommandInset citation
+LatexCommand cite
+key "popovic1979revised,vanlanduyt1975phase,manolikas1988new"
+literal "false"
+
+\end_inset
+
+, and with increasing temperatures up to 603 K as the material thickness
+ decreases
+\begin_inset CommandInset citation
+LatexCommand cite
+key "xiao2018intrinsic,tao2013crystalline"
+literal "false"
+
+\end_inset
+
+.
+ This transition also occurs under high pressure
+\begin_inset CommandInset citation
+LatexCommand cite
+key "rasmussen2013pressureinduced,zhao2014structure,vilaplana2018experimental,liu2019pyroelectrica"
+literal "false"
+
+\end_inset
+
+, and discussed more below.
+ The 
+\begin_inset Formula $\alpha\rightarrow\beta$
+\end_inset
+
+ transition is typically irreversible, except where bulk crystals transition
+ from 
+\begin_inset Formula $\beta\rightarrow\beta^{\prime}\rightarrow\alpha$
+\end_inset
+
+, where the 
+\begin_inset Formula $\beta^{\prime}$
+\end_inset
+
+ phase is unstable below 333 K
+\begin_inset CommandInset citation
+LatexCommand cite
+key "vanlanduyt1975phase,manolikas1988new"
+literal "false"
+
+\end_inset
+
+.
+ When 
+\begin_inset Formula $\ensuremath{\beta}\textrm{-In}_{2}\textrm{Se}_{3}$
+\end_inset
+
+ is heated it further transitions into the 
+\begin_inset Formula $\gamma$
+\end_inset
+
+-phase.
+ The temperature at which this transition occurs varies in the reporting:
+ 623 K by Likforman et al.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "likforman1980transitions,likforman1978structure"
+literal "false"
+
+\end_inset
+
+ and Manolikas et al.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "manolikas1988new"
+literal "false"
+
+\end_inset
+
+, 793 K by Popovic et al.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "popovic1979revised,popovic1971xray"
+literal "false"
+
+\end_inset
+
+, 923 K by Landuty et al.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "vanlanduyt1975phase"
+literal "false"
+
+\end_inset
+
+.
+ Choi et al.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "choi2017electrically"
+literal "false"
+
+\end_inset
+
+ reported a phase change memory device capable of electrically reversible
+ switching between the 
+\begin_inset Formula $\beta$
+\end_inset
+
+ and 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ polymorphs.
+ Continuing to heat the 
+\begin_inset Formula $\gamma$
+\end_inset
+
+-phase will transform it into the 
+\begin_inset Formula $\delta$
+\end_inset
+
+-phase, at 823 K
+\begin_inset CommandInset citation
+LatexCommand cite
+key "manolikas1988new"
+literal "false"
+
+\end_inset
+
+ or 1003 K
+\begin_inset CommandInset citation
+LatexCommand cite
+key "popovic1971xray,popovic1979revised"
+literal "false"
+
+\end_inset
+
+.
+ Finally, annealing the 
+\begin_inset Formula $\kappa$
+\end_inset
+
+-polymorph causes it transform into 
+\begin_inset Formula $\alpha\left[2H\right]$
+\end_inset
+
+ polymorph
+\begin_inset CommandInset citation
+LatexCommand cite
+key "li2011thermal"
+literal "false"
+
+\end_inset
+
+ at 773 K and into another layered structure at 973 K
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kang2014thermally"
+literal "false"
+
+\end_inset
+
+ (possibly the 
+\begin_inset Formula $\delta$
+\end_inset
+
+ or 
+\begin_inset Formula $\beta\left[1T\right]$
+\end_inset
+
+ phase).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\textrm{In}_{2}\textrm{Se}_{3}$
+\end_inset
+
+ has several additional polymorphs, typically labeled 
+\begin_inset Formula $\beta^{\prime}$
+\end_inset
+
+ and either 
+\begin_inset Formula $\alpha^{\prime}$
+\end_inset
+
+ or 
+\begin_inset Formula $\beta^{\prime\prime}$
+\end_inset
+
+, that are labeled distorted or metastable phases of the common 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ and 
+\begin_inset Formula $\beta$
+\end_inset
+
+ polymorphs.
+ These polymorphs can be somewhat grouped according to their method of formation
+, through increasing pressure or decreasing temperature.
+ Zhao and Yang
+\begin_inset CommandInset citation
+LatexCommand cite
+key "zhao2014structure"
+literal "false"
+
+\end_inset
+
+ reported 
+\begin_inset Formula $\alpha\left(R3m\right)\textrm{-In}_{2}\textrm{Se}_{3}$
+\end_inset
+
+ transforming to 
+\begin_inset Formula $\beta^{\prime}\left(C2/m\right)$
+\end_inset
+
+ from 0.81-1.81 GPa, 
+\begin_inset Formula $\beta\left(R\bar{3}m\right)$
+\end_inset
+
+ from 5.02-20.6 GPa, then finally a body-centered cubic (BCC) with space group
+ 
+\begin_inset Formula $I\bar{4}3d$
+\end_inset
+
+ from 32.1-50 GPa.
+ Ke et al.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ke2017decompressiondriven"
+literal "false"
+
+\end_inset
+
+ observed a transition from the 
+\begin_inset Formula $R\bar{3}m$
+\end_inset
+
+ group to 
+\begin_inset Formula $I\bar{4}3d$
+\end_inset
+
+ starting at 35.6 GPa and a superconducting transition beginning at 41.3 GPa,
+ which increased in 
+\begin_inset Formula $T_{C}$
+\end_inset
+
+ with decreasing pressure and lasted until the pressure dropped below 10.7
+ GPa.
+ Vilaplana et al.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "vilaplana2018experimental"
+literal "false"
+
+\end_inset
+
+ similarly reported a transition from 
+\begin_inset Formula $\alpha\left(R3m\right)\textrm{-In}_{2}\textrm{Se}_{3}$
+\end_inset
+
+ to 
+\begin_inset Formula $\beta^{\prime}\left(C2/m\right)$
+\end_inset
+
+ at 0.9 GPa, then a second transition to 
+\begin_inset Formula $\beta\left(R\bar{3}m\right)$
+\end_inset
+
+ beginning at 10 GPa.
+\end_layout
+
+\begin_layout Standard
+When the 
+\begin_inset Formula $\beta\left(R\bar{3}m\right)$
+\end_inset
+
+-phase is cooled below 200 C it transitions into what has been labeled the
+ 
+\begin_inset Formula $\beta^{\prime}$
+\end_inset
+
+-phase
+\begin_inset CommandInset citation
+LatexCommand cite
+key "zhang2019atomicscale,collins2020electronic,xu2021twodimensional,manolikas1988new,zheng2018room,chen2021atomic,vanlanduyt1975phase"
+literal "false"
+
+\end_inset
+
+, which displays a striped domain pattern.
+ It was originally believed to only be stable between 333-473 K
+\begin_inset CommandInset citation
+LatexCommand cite
+key "vanlanduyt1975phase,lutz1988zur,manolikas1988new"
+literal "false"
+
+\end_inset
+
+, however, recent measurements show this polymorph is stable at and below
+ at room temperature
+\begin_inset CommandInset citation
+LatexCommand cite
+key "xu2021twodimensional,zhang2019atomicscale,collins2020electronic,xu2021twodimensional,zheng2018room,chen2021atomic"
+literal "false"
+
+\end_inset
+
+.
+ This has been attributed to different crystal purity or thickness below
+ 400 nm
+\begin_inset CommandInset citation
+LatexCommand cite
+key "xu2021twodimensional,manolikas1988new"
+literal "false"
+
+\end_inset
+
+.
+ Zheng et al.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "zheng2018room"
+literal "false"
+
+\end_inset
+
+ demonstrated the existence of an in-plane ferroelectric response in this
+ phase using PFM, while Xu et al.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "xu2020twodimensional,xu2021twodimensional"
+literal "false"
+
+\end_inset
+
+ claim this phase is anti-ferroelectric using STEM, SAED, SHG, scanning
+ tunneling microscopy (STM), and density functional theory (DFT) calculations.
+ The 
+\begin_inset Formula $\beta^{\prime}$
+\end_inset
+
+ phase domains form at 
+\begin_inset Formula $60^{\circ}$
+\end_inset
+
+ or 
+\begin_inset Formula $120^{\circ}$
+\end_inset
+
+ to one another and are clearly visible under multiple imaging techniques
+\begin_inset CommandInset citation
+LatexCommand cite
+key "dong2020influence,xu2021twodimensional,collins2020electronic,zhang2019atomicscale,chen2021atomic,zheng2018room,vanlanduyt1975phase"
+literal "false"
+
+\end_inset
+
+.
+ Dong et al.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "dong2020influence"
+literal "false"
+
+\end_inset
+
+, Zhang et al.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "zhang2019atomicscale"
+literal "false"
+
+\end_inset
+
+, and Chen et al.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "chen2021atomic"
+literal "false"
+
+\end_inset
+
+ all reported the appearance of an additional polymorph, named 
+\begin_inset Formula $\beta^{\prime\prime}$
+\end_inset
+
+ by the latter two groups, and appearing around 98 K
+\begin_inset CommandInset citation
+LatexCommand cite
+key "zhang2019atomicscale"
+literal "false"
+
+\end_inset
+
+.
+ The (anti)ferroelectric domains can be switched via STM
+\begin_inset CommandInset citation
+LatexCommand cite
+key "zhang2019atomicscale,chen2021atomic"
+literal "false"
+
+\end_inset
+
+, and appeared at 
+\begin_inset Formula $30^{\circ}$
+\end_inset
+
+ or 
+\begin_inset Formula $90^{\circ}$
+\end_inset
+
+to the 
+\begin_inset Formula $\beta^{\prime}$
+\end_inset
+
+ phase
+\begin_inset CommandInset citation
+LatexCommand cite
+key "chen2021atomic"
+literal "false"
+
+\end_inset
+
+.
+ Xu et al.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "xu2021twodimensional"
+literal "false"
+
+\end_inset
+
+ report both an 
+\begin_inset Formula $2H$
+\end_inset
+
+ (hexagonal) and 
+\begin_inset Formula $3R$
+\end_inset
+
+ (monoclinic) 
+\begin_inset Formula $\beta^{\prime}$
+\end_inset
+
+-polymorph, with the 
+\begin_inset Formula $3R$
+\end_inset
+
+ showing more 
+\begin_inset Formula $60^{\circ}$
+\end_inset
+
+ domain wall intersections than 
+\begin_inset Formula $120^{\circ}$
+\end_inset
+
+compared to 
+\begin_inset Formula $2H$
+\end_inset
+
+.
+ The 
+\begin_inset Formula $3R$
+\end_inset
+
+ also demonstrated unusual surface wrinkles when measured by AFM, and was
+ attributed to out-of-plane shear strain.
+ This phase is likely the same as the previously reported low-temperature
+ 
+\begin_inset Formula $\alpha^{\prime}$
+\end_inset
+
+ phase that shows many of the same characteristics
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kambas1982preparation,manolikas1988new"
+literal "false"
+
+\end_inset
+
+.
+ More work is needed to clarify how the various 
+\begin_inset Formula $\beta^{\prime}$
+\end_inset
+
+ and 
+\begin_inset Formula $\beta^{\prime\prime}$
+\end_inset
+
+ phases relate to each other and their distinguishing characteristics.
+\end_layout
+
+\end_body
+\end_document

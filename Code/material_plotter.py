@@ -54,11 +54,15 @@ class capacitor_device(device):
 # returns the 1st occurance of a value within an array
 def first_occurance_1D(array, val, tol=0.2, starting_index=0):
     itemindex = np.where(abs(array[starting_index:] - val) < abs(tol))
+    if len(itemindex) == 0:
+        return None
     return itemindex[0][0]
 
 # returns the nth occurance of a value within an array
 def nth_occurance_1D(array, val, n, tol=0.2, starting_index=0):
     itemindex = np.where(abs(array[starting_index:] - val) < tol)
+    if len(itemindex) == 0:
+        return None
     return itemindex[0][n-1]
 
 def slice_data(file, column, start, end, tol, nth_start=1, nth_finish=1, starting_index=0):
@@ -125,7 +129,7 @@ def process_capacitor_file(device, filename, column_names):
             if not line:
                 break
             line = line.strip()
-            if line == "1" or not line:
+            if re.match("^\d+$", line) or not line:
                 continue
             
             # match "Real/Imag Part of EXP" and extract Real/Imag and EXP

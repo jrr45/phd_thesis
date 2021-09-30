@@ -17,7 +17,7 @@ import numpy.polynomial.polynomial as poly
 small_trapazoid_1 = mp.flake_device()
 small_trapazoid_1.name = 'small_trapazoid_1'
 small_trapazoid_1.fileroot = os.path.join('In-plane', 'small_trapazoid')
-small_trapazoid_1.thickness = 42.e-9
+small_trapazoid_1.thickness = 45.e-9
 small_trapazoid_1.width = 20.e-6
 small_trapazoid_1.volt_length = 38.e-6
 small_trapazoid_1.length = 52.e-6
@@ -204,9 +204,10 @@ def plot_IDvsVDS(size=2):
 def main(): 
     show_all = False
     
-    plot_rho_vs_T(size=2, log=False)
-    plot_VH_vs_H_300K(size=2)
-    plot_VH_vs_H_400K(size=2)
+    plot_MR_vs_H_400K(size=2)
+    #plot_rho_vs_T(size=2, log=True)
+    #plot_VH_vs_H_300K(size=2)
+    #plot_VH_vs_H_400K(size=2)
     #plot_IDvsVDS(size=2)
     
     #plot_rho_vs_T_fits(size=2)

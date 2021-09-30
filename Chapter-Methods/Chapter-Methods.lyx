@@ -78,22 +78,8 @@
 
 \begin_body
 
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-% !TEX root = ../YourName-Dissertation.tex
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Chapter
-Sample fabrication and measurement methods
+Sample fabrication and measurement
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:Sample-fabrication-methods"
@@ -1853,7 +1839,7 @@ literal "true"
 \end_layout
 
 \begin_layout Subsection
-Raman
+Raman spectroscopy
 \end_layout
 
 \begin_layout Standard
@@ -2191,7 +2177,7 @@ literal "true"
 \end_layout
 
 \begin_layout Section
-Device manufacture
+Device fabrication
 \end_layout
 
 \begin_layout Subsection
@@ -3672,7 +3658,7 @@ noprefix "false"
 \end_layout
 
 \begin_layout Subsection
-PPMS
+Physical Properties Measurement System cryostat
 \end_layout
 
 \begin_layout Standard
@@ -3751,11 +3737,11 @@ re and magnetic field control into Project Unity.
 \end_layout
 
 \begin_layout Subsection
-Electronic measurements and calculations (TODO: figure)
+Electrical measurements
 \end_layout
 
 \begin_layout Standard
-There are several different lead configurations we use when measuring electronic
+There are several different lead configurations we use when measuring electrical
  properties of a material.
  The simplest is a two-terminal rectangular device with uniform dimensions
  between the two leads, most often used in semiconductor measurements with
@@ -4058,7 +4044,7 @@ Hall bar device
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Lead patterns used in electronic devices
+Lead patterns used in electrical devices
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Lead-patterns"

@@ -1,0 +1,4124 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass psuthesis
+\begin_preamble
+\PassOptionsToPackage{usenames,dvipsnames}{xcolor}
+\end_preamble
+\options phd
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package none
+\inputencoding auto
+\fontencoding default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 0
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Electrical transport properties of semiconductors and field-effect transistors
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Semiconductor-transport"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Semiconductor-Figures/Material conduction bands.svg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Energy bands in metals, semiconductors, and insulators
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+The location of the Fermi energy 
+\begin_inset Formula $E_{F}$
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "Fermi energy"
+
+\end_inset
+
+ relative to the conduction and valance bands usually determines if the
+ material behaves as a metal, semiconductor, or an insulator.
+ The energy bands vary along the crystal lattice and in momentum-space.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Semiconductors, as their name implies, are characterized by their conduction
+ falling between that of a metal and an insulating material.
+ The quantized energies of electron orbitals in a crystal and the interactions
+ with nearby atoms dictate most of the properties of a semiconductor.
+ The allowed energy levels form bands across the lattice and in momentum
+ space that dictate the path of an moving electron.
+ The relative location of the Fermi energy to various bands determines much
+ of conductivity and device behavior.
+ In metals the Fermi energy falls within energy-momentum band(s) allowing
+ electrons to conduct with little resistance.
+ Insulators have a large gap between bands, conventionally at least 3 electron
+ volts (eV), and each far from the Fermi energy making conduction difficult
+ without a very large energy excitation or electric field.
+ Semiconductors fall in between metals and insulators and possess a band
+ gap 
+\begin_inset Formula $E_{G}$
+\end_inset
+
+ of a few electron volts (eV), where room temperature excitations are often
+ enough to drive some conductivity.
+\end_layout
+
+\begin_layout Section
+Charge transport: band and hopping conduction
+\end_layout
+
+\begin_layout Standard
+In an in ideal semiconductor, the material is perfectly crystalline, forming
+ periodic bands that run along the entire structure without disorder.
+ All real semiconductors break this assumption with doped impurities, broken
+ bonds, grain boundaries, edge states, missing or extra atoms, and other
+ forms of disorder.
+ For practical devices we define them in terms of macroscopic parameters
+ and behaviors.
+ The mobility 
+\begin_inset Formula $\mu$
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "mobility"
+
+\end_inset
+
+, one such parameter, is the average velocity at with an electron 
+\begin_inset Formula $\mu_{e}$
+\end_inset
+
+ or hole 
+\begin_inset Formula $\mu_{h}$
+\end_inset
+
+ can move through the crystal lattice from an electric field.
+ With this we can define a second parameter, the conductivity of a charge
+ carrier concentration 
+\begin_inset Formula $n$
+\end_inset
+
+, given by 
+\begin_inset Formula $\sigma=q\mu n$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+In an ordered crystal the electrons reside in the valance band, the holes
+ in the conduction band.
+ Energy excitations can push electrons to the conduction band, creating
+ a hole in the valance band by doing so.
+ The gap between the valance and conduction band can be direct, where the
+ respective max and minimum energy have the same momentum, or an indirect
+ gap which requires the carrier to change momentum for the smallest energy
+ jump between bands.
+ Changing bands is often the result of thermal excitations, so most semiconducto
+rs have an increased resistance at low temperatures.
+ Photons can also excite electrons, or excited electrons can drop down the
+ valance band and emit photons, giving rise to countless applications such
+ as sensors and LEDs.
+ In band transport model the electrons are free to move along the conduction
+ band, and holes along the valance band, conducting through the crystal,
+ as shown in figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Hopping-transport"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+a.
+ The free carriers form extended states in the crystal.
+\end_layout
+
+\begin_layout Standard
+In an intrinsic semiconductor the Fermi energy falls near the center of
+ the gap, making it hard for carriers to be thermally excited as 
+\begin_inset Formula $k_{B}T$
+\end_inset
+
+ is only a few 10s of meV.
+ Semiconductors are often doped to provide excess carriers and shift the
+ bands relative to the Fermi energy.
+ Doped semiconductors come in two flavors, n-type and p-type, that conduct
+ primary using either electron or hole quasiparticles.
+ Doping is often achieved by introducing other elements or using electric
+ fields, and is used extensively in modern electronic devices.
+\end_layout
+
+\begin_layout Standard
+As all crystals have some form of disorder, so hopping models of conduction
+ are often used describe carrier movement rather than simple band models.
+\end_layout
+
+\begin_layout Subsection
+Multiple trap and release
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Semiconductor-Figures/Trap transport.svg
+	width 7.5cm
+	groupId Hopping
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Band, MTR, and VHR transport
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Semiconductor-Figures/Percolation.svg
+	width 7.5cm
+	groupId Hopping
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Percolation hopping
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Hopping transport
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Hopping-transport"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+(a) density of states and spacial bands showing shallow and deep traps in
+ an n-type semiconductor.
+ Band and MTR transport take place in the conduction band, VRH in the trapped
+ states near the Fermi energy.
+ (b) percolation model for hopping transport.
+ From left to right: a lattice with no disorder, band percolation model
+ lattice, and atom site percolation model lattice.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In slightly disordered semiconductors, a simple extension to the band-transport
+ model is multiple trap and release (MTR).
+ Small amounts of impurities introduce localized, shallow traps states within
+ the band gap near the conduction (valance) band.
+ Electrons (holes) continue to conduct along the band, temporarily getting
+ stuck in the shallow traps and hopping out through thermal excitations,
+ figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Hopping-transport"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+a.
+ The effective mobility is reduced relative to the defect-free band mobility
+ 
+\begin_inset Formula $\mu_{0}$
+\end_inset
+
+.
+ The MTR mobility is given by
+\begin_inset Formula 
+\begin{equation}
+\mu_{MTR}=\mu_{0}\exp\left(-\frac{E_{a}}{k_{B}T}\right)=\mu_{0}\frac{n_{band}}{n_{trap}+n_{band}}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $E_{a}$
+\end_inset
+
+ is the average activation energy to hop from a trap to the band, 
+\begin_inset Formula $n_{band}$
+\end_inset
+
+ the density of carriers in the band, and 
+\begin_inset Formula $n_{trap}$
+\end_inset
+
+ the density of trapped carriers.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kang2006electrical,shur1984physics,wang2018trapped"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Variable range hopping
+\end_layout
+
+\begin_layout Standard
+Variable range hopping (VRH) takes place is strongly disordered or amorphous
+ semiconductors at low temperatures.
+ In it, hopping takes place along a narrow band of localized states near
+ the Fermi level, within the range of thermal excitations 
+\begin_inset Formula $\sim1k_{B}T$
+\end_inset
+
+.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Hopping-transport"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+a shows VRH near the conduction band in an n-type semiconductor.
+ In Mott's original paper variable range hopping was restricted to three
+ dimensions and low fields; later authors have extended this theory to be
+ more general and drop those restrictions.
+ Using the probability of hopping between two nearby states within this
+ band, variable range hopping gives the conductivity equation
+\begin_inset Formula 
+\begin{equation}
+\sigma=\sigma_{0}\exp\left(-T_{0}/T^{\beta}\right)
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\beta$
+\end_inset
+
+ depends on the model, and ranges between 0 and 1; and 
+\begin_inset Formula $T_{0}$
+\end_inset
+
+ is a constant that combines several parameters of the crystal system.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "mahan2010condensed,shklovskii1984variablerange"
+literal "false"
+
+\end_inset
+
+ The mobility-temperature dependence is then given by
+\begin_inset Formula 
+\begin{equation}
+\mu_{VHR}\propto\exp\left(-1/T^{\beta}\right)\,.
+\end{equation}
+
+\end_inset
+
+The two most common VHR models are Mott-VHR and Efros-Shklovskii-VRH.
+ In Mott-VHR 
+\begin_inset Formula $\beta=\frac{1}{d+1}$
+\end_inset
+
+, where d is the number of dimensions in the crystal, while the Efros-Shklovskii
+-VRH model predicts that Coulomb interactions would open a gap in the density
+ of states and gives 
+\begin_inset Formula $\beta=\frac{1}{2}$
+\end_inset
+
+ for all dimensions.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "li2017transition,shklovskii1984variablerange"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Percolation hopping
+\end_layout
+
+\begin_layout Standard
+Percolation is used to model hopping in amorphous semiconductors using two
+ similar approaches to simulate a large amount of disorder.
+ Both models start with an infinite lattice of conducting bonds, carriers
+ are free to hop along the bonds between atoms in the lattice and thus freely
+ conduct as they would in a metal.
+ In the bond variant, various bonds are blocked in the lattice preventing
+ the carriers to move along those particular paths.
+ Conversely, In the atom-site approach to percolation, atoms or sites that
+ carriers can occupy are removed from the lattice preventing hopping along
+ those paths.
+ As long as the amount of bonds or sites removed 
+\begin_inset Formula $p$
+\end_inset
+
+ remains below a critical fraction 
+\begin_inset Formula $p_{c}$
+\end_inset
+
+, the carriers will be free to conduct through metallic regions of the lattice,
+ abet with reduced paths to traverse across the lattice.
+ The fraction is depenant on the lattice structure and number of neighbors
+ a carrier can hop to.
+ When the fraction of removed bonds or states is low, the lattice will form
+ small clusters of blocked regions, while larger 
+\begin_inset Formula $p$
+\end_inset
+
+ fractions will form larger insulating clusters with small holes for carriers
+ to pass (percolate) through.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "mahan2010condensed,shklovskii1984variablerange"
+literal "false"
+
+\end_inset
+
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Hopping-transport"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+b shows a disorder-free lattice, then the band and atomic approach to the
+ percolation model.
+ The mobility follows
+\begin_inset Formula 
+\begin{equation}
+\mu_{PER}\propto\exp\left(-\frac{E_{t}-E_{F}\left(n,T\right)}{k_{B}T}\right)
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $E_{t}$
+\end_inset
+
+ is the highest energy of the sites that contribute to transport.
+ At low temperatures this approaches Efros-Shklovskii-VRH
+\begin_inset CommandInset citation
+LatexCommand cite
+key "nenashev2019percolation,baranovskii2014theoretical"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Localization and metal-insulator transitions
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Localization"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In semiconductors and semiconductor devices the carriers can become localized
+ as they travel through the lattice.
+ Disorder in the crystal can trap or scatter carriers decreasing their conductiv
+ity and mobility.
+ The localization of carriers from disorder can even induce a crystal to
+ undergo a metal-insulator transition (MIT).
+ MITs display a shift in the resistivity-temperature dependence, particularly
+ at 0 K where the resistivity of the crystal changes from finite to infinite.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "mahan2010condensed"
+literal "true"
+
+\end_inset
+
+ The origin of the MITs in disordered semiconductors is still an area of
+ active study, with most models attributing MITs to the scattering of carriers
+ off various sources of disorder, screening Coulomb forces from electron-electro
+n interactions, or a combination of both.
+ 
+\end_layout
+
+\begin_layout Subsection
+Anderson localization
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align left
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "50col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align left
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align left
+\begin_inset Graphics
+	filename Semiconductor-Figures/Anderson extended state.svg
+	width 8cm
+	groupId Anderson
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Extended state
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align left
+\begin_inset Graphics
+	filename Semiconductor-Figures/Anderson localized state.svg
+	width 8cm
+	groupId Anderson
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Localized state
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "25col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align left
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align left
+\begin_inset Graphics
+	filename Semiconductor-Figures/Mobility edge.svg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Mobility edge
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Anderson localization
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Anderson-localization"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+The wave function for a carrier in a periodic lattice in (a) an extended
+ state and (b) in a localized state from disorder in the lattice.
+ (c) the density of states of a semiconductor with a small amount of disorder.
+ The mobility edge divides the localized from extended states at the critical
+ energy 
+\begin_inset Formula $E_{c}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The Anderson impurity model
+\begin_inset CommandInset citation
+LatexCommand cite
+key "anderson1958absence"
+literal "true"
+
+\end_inset
+
+ proposes a uniform crystal containing isolated sources of disorder.
+ The model extends a tight-binding model by adding a random energy fluctuation
+ to the site 
+\begin_inset Formula $j$
+\end_inset
+
+ in the lattice.
+ The energy at 
+\begin_inset Formula $j$
+\end_inset
+
+ then becomes
+\begin_inset Formula 
+\begin{equation}
+E_{j}=E_{0}+V\eta_{j}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $E_{0}$
+\end_inset
+
+ is the tight-binding interaction energy between nearest neighbors, 
+\begin_inset Formula $V\eta_{j}$
+\end_inset
+
+ the dispersion energy from the disorder, and 
+\begin_inset Formula $\eta_{j}$
+\end_inset
+
+ is a random dimensionless constant between -1 and 1
+\begin_inset CommandInset citation
+LatexCommand cite
+key "mahan2010condensed"
+literal "true"
+
+\end_inset
+
+.
+ Anderson showed in 1D, 2D, the wave function of electrons will always be
+ localized at site 
+\begin_inset Formula $j$
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "anderson1958absence"
+literal "true"
+
+\end_inset
+
+.
+ In 3D localization occurs if the ratio 
+\begin_inset Formula $V/E_{0}$
+\end_inset
+
+ is above a critical threshold that depends on other properties of the crystal
+\begin_inset CommandInset citation
+LatexCommand cite
+key "anderson1958absence"
+literal "true"
+
+\end_inset
+
+.
+ The disorder may arise from impurities or from structural discontinuities
+ in the crystal.
+ In the Anderson model the sites of disorder are uncorrelated and do not
+ produce an extended state from multiple trapped electron states.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "mahan2010condensed"
+literal "true"
+
+\end_inset
+
+ The material becomes insulating with Anderson localization, even though
+ there is no bandgap, leading to a disorder-driven MIT in a 3D system
+\begin_inset CommandInset citation
+LatexCommand cite
+key "mahan2010condensed"
+literal "true"
+
+\end_inset
+
+.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Anderson-localization"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ shows an extended wave function for an ideal crystal and the localized
+ carrier wave function at a site of disorder in the Anderson model.
+ In 2D the carriers are only localized to a limited extent in systems with
+ weak disorder and spin orbit-coupling, allowing for an MIT in finite sized
+ systems within the model
+\begin_inset CommandInset citation
+LatexCommand cite
+key "lee1985disordered,white2020observation"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsection
+Mobility edge
+\end_layout
+
+\begin_layout Standard
+In a system with a small amount of disorder, localized states will form
+ a tail of allowed states extending into the band gap.
+ This lets carriers hop between localized gap states or to-and-from the
+ band.
+ Mott proposed in three dimensions the density of states is continuous at
+ the energy which carriers transition between localized and extended states.
+ This critical transition energy 
+\begin_inset Formula $E_{c}$
+\end_inset
+
+ is known as the mobility edge, figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Anderson-localization"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+c.
+ If the Fermi energy was below the mobility edge 
+\begin_inset Formula $E_{F}<E_{c}$
+\end_inset
+
+, the system will act as an insulator at low temperatures, or when 
+\begin_inset Formula $E_{F}>E_{c}$
+\end_inset
+
+ as a metal.
+ The conductivity at 0 K follows 
+\begin_inset Formula 
+\begin{equation}
+\sigma\left(T=0\,K\right)\propto\left(n-n_{c}\right)^{2}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $n_{c}$
+\end_inset
+
+ is the critical carrier concentration, and 
+\begin_inset Formula $s$
+\end_inset
+
+ is a parameter representing disorder in the sample.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "mahan2010condensed"
+literal "true"
+
+\end_inset
+
+ Recent work suggests that the mobility edge model may be valid in 2D materials
+ with high mobility
+\begin_inset CommandInset citation
+LatexCommand cite
+key "wang2019redefining,lee2010band"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Mott insulators
+\end_layout
+
+\begin_layout Standard
+In conventional band theory, at low temperatures electrons are bound to
+ the sites of isolated donor atoms.
+ To have free carriers an excitation must ionize one of those donor atoms.
+ The excitation must be large enough to overcome the coulomb binding forces
+ to the nucleus.
+ When thermal (or other) excitations are sufficient, some distribution of
+ the donors will ionize and contribute free electrons to the semiconductor.
+ The electron-electron interactions between the itinerant carriers in the
+ crystal and the bound electrons of the charged donor atom then act to screen
+ the donor atom.
+ The screening weakens the coulomb attraction of the free electrons to the
+ donor atoms, letting the carriers remain unbound.
+\end_layout
+
+\begin_layout Standard
+If additional donors are added to the crystal, the additional electron-electron
+ interactions will increase and further screen the donor atoms, reducing
+ the Mott band gap.
+ Eventually, adding enough donors to the system will cause the binding energy
+ to reduce below what will form a bound state, making the material metallic
+ in behavior.
+ In the Mott model this critical transition is typically abrupt, occurring
+ once the concentration of donors crosses the critical donor density 
+\begin_inset Formula $n_{c}$
+\end_inset
+
+.
+ If the donor concentration is above is above this threshold the semiconductor
+ is metallic in nature and has a finite conductivity at 0 K, conversely,
+ if the density of donors is below 
+\begin_inset Formula $n_{c}$
+\end_inset
+
+ then a Mott insulator forms and has infinite resistivity at 0 K.
+ Mott found this critical density to be 
+\begin_inset Formula $n_{c}\simeq.24/a_{_{0}}$
+\end_inset
+
+, where 
+\begin_inset Formula $a_{0}$
+\end_inset
+
+ is the Bohr radius.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "mott1949basis,mahan2010condensed"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Graphics
+	filename Semiconductor-Figures/Mott-Hubbard.svg
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Mott-Hubbard band splitting
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Mott-MIT"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+The density of state bands in the correlated-metal and Mott-insulator states
+ in the Mott-Hubbard model.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+There are many extensions to the Mott model MIT, two pertinent examples
+ are the Mott–Hubbard and Wigner-Mott transitions.
+ In a conventional metal band two electrons are able to occupy a lattice
+ site, one spin-up and the other spin down.
+ In the Mott-Hubbard model, the short range electron-electron interactions
+ allow only one electron per lattice site.
+ If the on-site Coulomb repulsion 
+\begin_inset Formula $U$
+\end_inset
+
+ is much less than the hopping integral 
+\begin_inset Formula $t$
+\end_inset
+
+ then material conducts as a correlated metal.
+ Conversely, if 
+\begin_inset Formula $t\gg U$
+\end_inset
+
+ the band splits and the crystal forms a paramagnetic Mott-Hubbard insulator.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "fujimori2001electronic,greiner2013thinfilm"
+literal "false"
+
+\end_inset
+
+ This model is controversial in two dimensions as any disorder was thought
+ to localize carriers, but more recent work has suggested that the Mott-Hubbard
+ MIT may still be possible in 2D
+\begin_inset CommandInset citation
+LatexCommand cite
+key "sorella1992semimetalinsulator,camjayi2008coulomb,pankov20082dmit,radonjic2012wignermott,schafer2015fate"
+literal "false"
+
+\end_inset
+
+.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Mott-MIT"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ shows the two band states, metallic and insulating, in the Mott-Hubbard
+ MIT.
+ In a Wigner-Mott transitionm the carriers may be localized in an insulating
+ Wigner crystal, an electron gas with ordered spin-1/2 bound states, via
+ long-range electron-electron interactions
+\begin_inset CommandInset citation
+LatexCommand cite
+key "vu2020collective"
+literal "false"
+
+\end_inset
+
+.
+ Wigner-crystal electrons break translational symmetry and form a periodic
+ lattice.
+ When the carrier density increases enough to overcome the coulomb repulsion
+ between carriers, the crystal forms a strongly correlated electron liquid,
+ showing metallic behavior
+\begin_inset CommandInset citation
+LatexCommand cite
+key "radonjic2012wignermott,camjayi2008coulomb,vu2020collective,amaricci2010extended"
+literal "false"
+
+\end_inset
+
+.
+ The Wigner-Mott transition has been shown to exist in 2D as well
+\begin_inset CommandInset citation
+LatexCommand cite
+key "smolenski2021signatures,pankov20082dmit,camjayi2008coulomb"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Percolation 
+\end_layout
+
+\begin_layout Standard
+The percolation MIT model starts with a disordered-metallic semiconductor,
+ where electron-electron interactions screen the carriers from the disorder.
+ If the density of free carriers in a semiconductor is lowered by a small
+ amount, the screening of the carriers from defects decreases greatly in
+ response, in a non-linear relationship.
+ Near the transition, the itinerant carriers behave like a highly inhomogeneous
+ electron gas, allowing free elections to become localized on the defects.
+ To the electrons, the lattice appears as a series of hill and valley potentials
+, causing the carriers to repel or collect in the respective lattice regions.
+ If the density of carriers continues to decrease, the crystal disorder
+ will continue to localize more electrons.
+ This in turn removing paths for carriers though the semiconductor and decreasin
+g conductivity.
+ Eventually when the fraction of sites occupiable by or able to conduct
+ free electrons, sinks below a critical threshold 
+\begin_inset Formula $p_{c}$
+\end_inset
+
+, the semiconductor becomes insulating (
+\begin_inset Formula $0\leq p_{c}\leq1$
+\end_inset
+
+).
+ At this point, the semiconductor is a series of isolated metallic islands.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "moon2021metalinsulator,mahan2010condensed"
+literal "true"
+
+\end_inset
+
+ The percolation MIT is thought to be one possible explanation for the experimen
+tally observed 2D MITs
+\begin_inset CommandInset citation
+LatexCommand cite
+key "chen2015probing,meir2001percolationtype,patil2019gateinduced,dassarma2005twodimensional,manfra2007transport"
+literal "true"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Weak localization and magnetoconductance
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Weak-localization"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Semiconductor-Figures/Weak localization.svg
+	width 7.5cm
+	groupId weak-localization
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Electron scattering off impurities
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Semiconductor-Figures/Weak localization conductivity.svg
+	width 7.5cm
+	groupId weak-localization
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Magnetoconductance
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Weak localization of an electron in lattice with impurities
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Weak-localization"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+(a) a self-intersecting path of an electron and it's time-inverted path.
+ The destructive interference of different paths lead to weak localization
+ of the electron.
+ (b) the magnetic field dependence of conductivity in a weakly localized
+ crystal.
+ As the temperature increases the effects of weak localization decrease.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Anther form of carrier localization in disordered semiconductors is weak
+ localization.
+ As an electron travels through the semiconductor it will scatter off various
+ defects, moving in a random walk.
+ The probability the electron will take a given path is of course given
+ by the quantum mechanical wave function, and the probability that the electron
+ will travel between two points the sum of all possible path probabilities
+ between those points.
+ The wave functions of these paths often interfere destructively with each
+ other, such as the path of an electron and the corresponding time reversed
+ path, see figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Weak-localization"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+a.
+ The destructive interference localizes the carrier, increasing the probability
+ it will wander around in a loop, and increasing the effective resistance
+ of the semiconductor.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "bergmann2010weak"
+literal "true"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This effect can be measured by breaking the path symmetry using magnetic
+ fields.
+ Of note for later discussion, measuring the change in 2D magnetoconductance
+ according to the Hikami-Larkin-Nagaoka
+\begin_inset CommandInset citation
+LatexCommand cite
+key "hikami1980spinorbit"
+literal "true"
+
+\end_inset
+
+ equation
+\begin_inset Formula 
+\begin{align}
+\sigma\left(B\right)-\sigma\left(0\right)= & \frac{e^{2}}{2\pi^{2}\hbar}\left[\ln\left(\frac{B_{\phi}}{B}\right)-\psi\left(\frac{1}{2}+\frac{B_{\phi}}{B}\right)\right]\nonumber \\
+ & +\frac{e^{2}}{2\pi^{2}\hbar}\left[\ln\left(\frac{B_{SO}+B_{e}}{B}\right)-\psi\left(\frac{1}{2}+\frac{B_{SO}+B_{e}}{B}\right)\right]\nonumber \\
+ & -\frac{3e^{2}}{2\pi^{2}\hbar}\left[\ln\left(\frac{\frac{4}{3}B_{SO}+B_{\phi}}{B}\right)-\psi\left(\frac{1}{2}+\frac{\frac{4}{3}B_{SO}+B_{\phi}}{B}\right)\right]\label{eq:Hikami-Larkin-Nagaoka}
+\end{align}
+
+\end_inset
+
+where 
+\begin_inset Formula $\psi$
+\end_inset
+
+ is the digamma function, and the characteristic fields are given by: phase
+ coherence 
+\begin_inset Formula $B_{\phi}$
+\end_inset
+
+, elastic 
+\begin_inset Formula $B_{e}$
+\end_inset
+
+, and
+\series bold
+ 
+\series default
+spin-orbit
+\series bold
+ 
+\begin_inset Formula $B_{SO}$
+\end_inset
+
+
+\series default
+.
+ The characteristic fields can be understood using 
+\begin_inset Formula 
+\begin{equation}
+B_{\phi}=\frac{\hbar}{4el_{\phi}^{2}},\,B_{e}=\frac{\hbar}{4el_{e}^{2}},\,B_{\phi}=\frac{\hbar}{4el_{SO}^{2}}
+\end{equation}
+
+\end_inset
+
+where the field is defined by the mean free path of electron interactions:
+ mean distance before an electron loses phase coherence 
+\begin_inset Formula $l_{\phi}$
+\end_inset
+
+, mean distance before elastic scattering 
+\begin_inset Formula $l_{e}$
+\end_inset
+
+, and mean distance before
+\series bold
+ 
+\series default
+spin-orbit interactions
+\series bold
+ 
+\begin_inset Formula $l_{SO}$
+\end_inset
+
+.
+\series default
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "hikami1980spinorbit,bergmann2010weak"
+literal "true"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Schottky barriers
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Metal-Semiconductor-Metal-conduction"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+When constructing electronic devices with multiple materials we must consider
+ the physical and chemical properties of the contact region between the
+ two materials.
+ Multiple phenomena can alter the materials near the contact region: the
+ band structures of the individual crystal are shifted as a new preferred
+ energy minimum is reached, chemical reactions take place between the two
+ materials, the physical dimensions of one material shift to accommodate
+ the other, etcetera.
+ For most electronic transport applications, an ohmic contact is preferable
+ as it takes less potential to form a current and has an easily predictable
+ behavior.
+ Ohmic contact is characterized by a linear relationship between the voltage
+ 
+\begin_inset Formula $V$
+\end_inset
+
+ and current 
+\begin_inset Formula $I$
+\end_inset
+
+ given by the usual equation 
+\begin_inset Formula $V=IR$
+\end_inset
+
+, where the resistance 
+\begin_inset Formula $R$
+\end_inset
+
+ can depend on many factors like frequency and temperature.
+ Ohmic contacts are usually found in a metal-metals junction as there is
+ little band bending and metals conduct over a wide range of energy levels.
+ Schottky contacts typically form at the interface between metals and semiconduc
+tors, and have a non-linear relationship in 
+\begin_inset Formula $I$
+\end_inset
+
+ and 
+\begin_inset Formula $V$
+\end_inset
+
+.
+ The actual nature of Schottky contacts is complicated and no simple model
+ exists for the interface of metal-semiconductors
+\begin_inset CommandInset citation
+LatexCommand cite
+key "liu2018approaching,tung2014physics"
+literal "true"
+
+\end_inset
+
+.
+ To predict the behavior of a metal-insulator junction one must numerically
+ calculate the quantum mechanical states of the system, including the materials
+ chemistry, and take into account the system's geometry
+\begin_inset CommandInset citation
+LatexCommand cite
+key "gong2014unusual"
+literal "true"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+To provide at least a mental picture of a metal-semiconductor system, a
+ simplistic model is given for a Schottky contact that ignores some of the
+ individual details but gives a broad pattern of behavior.
+ Next to the junction, the electrons in the semiconductor move to (or from)
+ the conduction band of the metal, depleting (accumulating) electrons in
+ the area nearest to the metal
+\begin_inset CommandInset citation
+LatexCommand cite
+key "sze2012semiconductor"
+literal "true"
+
+\end_inset
+
+.
+ This causes the bands to bend relative to one another, shown in figure
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Before-contact"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+-
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Metal-in-contact"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ The work function of the metal 
+\begin_inset Formula $\phi_{M}$
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "metal work function"
+
+\end_inset
+
+ and semiconductor electron affinity 
+\begin_inset Formula $\chi_{S}$
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "semiconductor electron affinity"
+
+\end_inset
+
+ are the potentials needed to completely ionize an electron from both materials.
+ When placed in contact, the Fermi energy 
+\begin_inset Formula $E_{F}$
+\end_inset
+
+ must be the same and constant for both materials, while the vacuum energy
+ 
+\begin_inset Formula $E_{vac}$
+\end_inset
+
+ must be continuous across the junction
+\begin_inset CommandInset citation
+LatexCommand cite
+key "sze2012semiconductor"
+literal "true"
+
+\end_inset
+
+.
+ The band shift can be estimated using these two conditions.
+ The Schottky-Mott rule gives the energy barrier 
+\begin_inset Formula $\phi_{B}$
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "energy barrier"
+
+\end_inset
+
+ of a charge carrier 
+\begin_inset Formula $q$
+\end_inset
+
+ between the two materials
+\begin_inset Formula 
+\begin{equation}
+\begin{cases}
+q\phi_{Bn}=q\phi_{M}-q\chi_{S} & n-type\\
+q\phi_{Bp}=E_{g}-\left(q\phi_{M}-q\chi_{S}\right) & p-type
+\end{cases}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "liu2018approaching"
+literal "true"
+
+\end_inset
+
+.
+ The bulk of the semiconductor band shifts to accommodate the difference
+ in Fermi energy of both materials while ensuring the vacuum level is continuous
+ across the boundary.
+ For an 
+\begin_inset Formula $n$
+\end_inset
+
+-type semiconductor, an electron will see a built in potential 
+\begin_inset Formula $V_{bi}$
+\end_inset
+
+ when moving from the conduction band to the metal
+\begin_inset Formula 
+\begin{equation}
+V_{bi}=\phi_{Bn}-V_{n}=\phi_{Bn}-\frac{k_{B}T}{q}\ln\left(\frac{N_{C}}{N_{D}\left(T\right)}\right)\label{eq:voltage-built-in}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $V_{n}$
+\end_inset
+
+ is the distance between the Fermi energy in the semiconductor bulk and
+ the conduction band energy, 
+\begin_inset Formula $N_{C}$
+\end_inset
+
+ the effective density of states in the conduction band, 
+\begin_inset Formula $N_{D}$
+\end_inset
+
+ the donor-impurity density
+\begin_inset CommandInset citation
+LatexCommand cite
+key "sze2012semiconductor"
+literal "true"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Semiconductor-Figures/Schottky_barrier_no-contact3.svg
+	width 7.5cm
+	groupId metal-sc band
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Before contact
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Before-contact"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Semiconductor-Figures/Schottky_barrier_zero_bias3.svg
+	width 7.5cm
+	groupId metal-sc band
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Metal in contact with semiconductor
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Metal-in-contact"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Semiconductor-Figures/Schottky_barrier_forward_bias3.svg
+	width 7.5cm
+	groupId metal-sc band
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Forward bias
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Forward-bias"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Semiconductor-Figures/Schottky_barrier_reverse_bias3.svg
+	width 7.5cm
+	groupId metal-sc band
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Reverse bias
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Reverse-bias"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Band diagrams of metal and n-type semiconductor forming a Schottky barrier
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:M-S band diagram"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+The band structure (a) before and (b) after a metal is brought into contact
+ with a n-type semiconductor, showing the the relative band shifts to meet
+ the energy boundary conditions
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kittel2005introduction"
+literal "true"
+
+\end_inset
+
+.
+ 
+\begin_inset Formula $\phi_{B}$
+\end_inset
+
+ is the Schottky barrier height, 
+\begin_inset Formula $E_{C}$
+\end_inset
+
+ and 
+\begin_inset Formula $E_{V}$
+\end_inset
+
+ the conducting and valance bands.
+ A simplified interface region is shown that does not encapsulate all of
+ the complex chemical and physics dynamics that may be found in a real system
+ interface.
+ (c) forward and (d) reverse voltage bias applied from right to left.
+ The arrow indicates the direction of current flow between the two regions
+ under the forward bias.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Applying a forward voltage bias to the system allows electrons from the
+ semiconductor band to tunnel into the metal forming a current.
+ Applying a bias in reverse causes only a few thermally excited electrons
+ in the metal to tunnel to the semiconductor resulting in almost no current.
+ Taken together, for an n-type semiconductor electrons can more easily flow
+ from the semiconductor to the metal than the reverse
+\begin_inset CommandInset citation
+LatexCommand cite
+key "osullivan2012schottky"
+literal "true"
+
+\end_inset
+
+.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Forward-bias"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+-
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Reverse-bias"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ shows the potential shifting the bands in a forward and reverse bias.
+ However, if a large enough reverse voltage bias is applied the carriers
+ can instead move to the valance band of the semiconductor.
+ This voltage-current curve is used to form diodes that conduct current
+ only in one direction, where the reverse current is considered the breakdown
+ potential of the diode.
+ In order to reduce the band mismatch various techniques are often used
+ to achieve ohmic contact.
+ Selecting the appropriate metal can reduce the energy band mismatch though
+ it will likely still have a significant barrier.
+ A common solution is to instead dope the semiconductor near the region
+ of contact to provide a smooth transition between the metal and the semiconduct
+ing region.
+\end_layout
+
+\begin_layout Standard
+The behavior of Schottky contact current can be modeled using thermionic
+ emission theory.
+ The current density
+\begin_inset CommandInset label
+LatexCommand label
+name "current density"
+
+\end_inset
+
+ is given by
+\begin_inset Formula 
+\begin{align}
+J & =A^{**}T^{2}\exp\left(-\frac{q\Phi_{B}}{k_{B}T}-\frac{q}{k_{B}T}\sqrt{\frac{q\mathcal{E}_{m}}{4\pi\epsilon_{0}\epsilon_{r}}}\right)\label{eq:Schottky-barrier}\\
+ & =J_{0}\left[\exp\left(\frac{qV}{k_{B}T}\right)-1\right]\\
+J_{0} & =A^{**}T^{2}\exp\left(-\frac{q\phi_{Bn}}{k_{B}T}\right)\\
+A^{**} & =\frac{4\pi qk^{2}m^{*}}{h^{3}}=\frac{120m^{*}}{m_{0}}
+\end{align}
+
+\end_inset
+
+
+\begin_inset Formula $q$
+\end_inset
+
+ the fundamental charge, 
+\begin_inset Formula $J_{0}$
+\end_inset
+
+ the saturation current, 
+\begin_inset Formula $\mathcal{E}_{m}$
+\end_inset
+
+ the maximum electric field at the interface, 
+\begin_inset Formula $A^{**}$
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "Richardson"
+
+\end_inset
+
+ the Richardson constant, 
+\begin_inset Formula $m^{*}$
+\end_inset
+
+ the effective electron mass, 
+\begin_inset Formula $m_{0}$
+\end_inset
+
+ the free electron mass, and 
+\begin_inset Formula $h$
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "elhadidy2011symmetrical,osvald2015backtoback,nouchi2014extraction,sze2012semiconductor"
+literal "false"
+
+\end_inset
+
+.
+ There is some dispute if the 
+\begin_inset Formula $\epsilon_{r}$
+\end_inset
+
+ in equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Schottky-barrier"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ should be taken at low or optical frequencies, and attempts have been made
+ to address this discrepency
+\begin_inset CommandInset citation
+LatexCommand cite
+key "lau2012extended"
+literal "false"
+
+\end_inset
+
+.
+ For a complete conduction channel though a semiconductor, both metal contacts
+ must be considered, current in and out, as both are Schottky barriers.
+ If we apply a voltage across the entire structure we have to consider the
+ potential drop across each contact 
+\begin_inset Formula $V_{n}$
+\end_inset
+
+ as well as the material itself 
+\begin_inset Formula $V_{SC}$
+\end_inset
+
+.
+ The voltage drop across a single diode is then 
+\begin_inset Formula 
+\begin{equation}
+V_{n}=\pm\frac{k_{B}T}{q}\ln\left(\pm\frac{J}{J_{0n}}+1\right)
+\end{equation}
+
+\end_inset
+
+where the sign corresponds to the direction of current and 
+\begin_inset Formula $J_{0n}$
+\end_inset
+
+ depends on the individual barrier energy 
+\begin_inset Formula $\phi_{Bn}$
+\end_inset
+
+.
+ The contacts may not be ideal, so we introduce a contact specific parameter
+ 
+\begin_inset Formula $n_{n}\geq1$
+\end_inset
+
+ to take this into account.
+ With this we have the total voltage across the contacts
+\begin_inset Formula 
+\begin{align}
+V & =V_{1}+V_{SC}+V_{2}\\
+V & =\frac{n_{1}k_{B}T}{q}\ln\left(\frac{J}{J_{01}}+1\right)+RAJ-\frac{n_{2}k_{B}T}{q}\ln\left(-\frac{J}{J_{02}}+1\right)\label{eq:IV MScM}
+\end{align}
+
+\end_inset
+
+where 
+\begin_inset Formula $A$
+\end_inset
+
+ is the surface area and 
+\begin_inset Formula $R$
+\end_inset
+
+ the resistance of the semiconductor
+\begin_inset CommandInset citation
+LatexCommand cite
+key "elhadidy2011symmetrical,osvald2015backtoback,nouchi2014extraction"
+literal "false"
+
+\end_inset
+
+.
+ This equation is not directly solvable for the current density but it is
+ possible to numerically model the behavior as shown in figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:IV-overall"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:IV Ohmic,-linear-scale"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ shows a typical linear Ohmic behavior for a large and small resistance
+ material.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:IV Schottky-Diode,-linear"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:IV Schottky-Diode,-log"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ shows the behavior of a single diode, from large and small resistance semicondu
+ctors.
+ The increased resistance can be seen in the higher voltages needed to reach
+ the saturation current while the barrier height limits the reverse bias
+ current.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:IV Metal-S.C.-metal,-linear-scale"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:IV Metal-S.C.-metal,-log-scale"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ shows the behavior with a Schottky barrier on each side of the semiconductor
+ channel.
+ Similar to the single contact, the barrier height dictates the saturation
+ current, and the resistance the rate at which increasing voltage reaches
+ saturation.
+ The ideality factor 
+\begin_inset Formula $n$
+\end_inset
+
+ produces a deviation from the ideal curves which can easily be seen with
+ a smaller 
+\begin_inset Formula $R$
+\end_inset
+
+; causing two contacts with identical barrier heights to produce an asymmetric
+ behavior.
+ This differentiation will decrease as 
+\begin_inset Formula $R$
+\end_inset
+
+ increases and the semiconductor resistance becomes as large as the contacts.
+ 
+\end_layout
+
+\begin_layout Standard
+Simmons demonstrated that the Schottky equation was no long valid when the
+ dielectric material between two contacts was below the mean free path of
+ the carriers traveling through the dielectric
+\begin_inset CommandInset citation
+LatexCommand cite
+key "simmons1965richardsonschottky"
+literal "true"
+
+\end_inset
+
+.
+ Carrier movement in this instance may be described as an interface controlled
+ injection then a low mobility drift through the crystal.
+ The Schottky-Richardson-Simmons equation is
+\begin_inset Formula 
+\begin{align}
+J & =2q\left(\frac{2\pi m_{0}k_{B}}{h^{2}}\right)^{3/2}T^{3/2}\mathcal{E}_{m}\mu\left(\frac{m^{*}}{m_{0}}\right)\exp\left(-\frac{q\Phi_{B}}{k_{B}T}-\frac{q}{k_{B}T}\sqrt{\frac{q\mathcal{E}_{m}}{4\pi\epsilon_{0}\epsilon_{r}}}\right)\label{eq:Schotty-Simmons}\\
+ & =\alpha^{*}T^{3/2}\mathcal{E}_{m}\mu\left(\frac{m^{*}}{m_{0}}\right)\exp\left(-\frac{q\Phi_{B}}{k_{B}T}-\frac{q}{k_{B}T}\sqrt{\frac{q\mathcal{E}_{m}}{4\pi\epsilon_{0}\epsilon_{r}}}\right)\\
+\alpha^{*} & =2q\left(\frac{2\pi m_{0}k_{B}}{h^{2}}\right)^{3/2}
+\end{align}
+
+\end_inset
+
+where 
+\begin_inset Formula $\mu$
+\end_inset
+
+ the mobility in the crystal.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "pintilie2007ferroelectric,simmons1965richardsonschottky"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Semiconductor-Figures/Ohmic.svg
+	width 5cm
+	groupId IV curves
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Ohmic, linear scale
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:IV Ohmic,-linear-scale"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Semiconductor-Figures/SchottkyDiode_linear.svg
+	width 5cm
+	groupId IV curves
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Schottky Diode, linear scale
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:IV Schottky-Diode,-linear"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Semiconductor-Figures/SchottkyDiode_log.svg
+	width 5cm
+	groupId IV curves
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Schottky Diode, log scale
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:IV Schottky-Diode,-log"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Semiconductor-Figures/MScM_diagram.svg
+	width 5cm
+	groupId IV curves
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Metal-semiconductor-metal
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Semiconductor-Figures/MetalSCMetal_linear.svg
+	width 5cm
+	groupId IV curves
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Metal-S.C.-metal, linear scale
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:IV Metal-S.C.-metal,-linear-scale"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Semiconductor-Figures/MetalSCMetal_log.svg
+	width 5cm
+	groupId IV curves
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Metal-S.C.-metal, log scale
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:IV Metal-S.C.-metal,-log-scale"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Current-voltage behavior of various junctions
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:IV-overall"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Current-voltage graphs of the behaviors of different junction parameters
+ from equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:IV MScM"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ (a) ohmic behavior, with no Schottky barriers, with large and small resistances.
+ A single Schottky barrier with small and large resistances and barrier
+ heights, in linear (b) and logarithmic (c) scale.
+ (d) simplified band diagram for a double Schottky barrier in a metal-semiconduc
+tor-metal device.
+ A double-Schottky barrier with large and small resistances, barrier heights,
+ and ideality factors on a linear (e) and log (f) scale.
+ The dashed line shows the asymmetrical behavior of a pair of junctions
+ with different ideality factors.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This non-linear behavior must be taken into account for any electronic transport
+ done on a material as the Schottky contact can have multiple effects on
+ a measurement.
+ For a practical device the barrier may alter the apparent resistance of
+ the material being tested.
+ Furthermore, in a Schottky junction the region of the semiconductor near
+ the contact is altered, breaking the usual assumption that the channel
+ material is uniform.
+ Additionally, the ideality factor and relative barrier heights can shift
+ the two terminal resistance of a device so the current produced is not
+ symmetric with respect to the voltage direction.
+ 
+\end_layout
+
+\begin_layout Section
+Field effect transistors
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Field-effect-transistors"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+One of the most ubiquitous semiconductor devices is the field effect transistor
+ (FET).
+ Transistors provide a way to turn a current on or off with a voltage, allowing
+ for controllable states in larger circuits.
+ This forms the basis of digital logic in modern computers, by defining
+ a threshold current as 
+\begin_inset Quotes eld
+\end_inset
+
+on
+\begin_inset Quotes erd
+\end_inset
+
+ or 
+\begin_inset Quotes eld
+\end_inset
+
+off
+\begin_inset Quotes erd
+\end_inset
+
+ we form a binary system.
+ Transistors also allow for circuit elements to be isolated from each other,
+ providing a path for different parts of a circuit to interact with one
+ element while independent of the rest.
+\end_layout
+
+\begin_layout Standard
+The typical structure of a FET contains two ohmic source-drain contacts
+ along a semiconductor conduction channel.
+ Within the conduction channel the majority charge carries of the semiconductor,
+ electrons or holes, can pass to form a current.
+ The natural conductivity of the channel can be altered by doping the semiconduc
+tor to change the carrier concentration in the crystal.
+ Between the contacts, a metallic gate is positioned on the semiconductor
+ to control conduction within the channel.
+ The gate utilizes an electric field to alter the carrier concentration
+ and dynamics between the two contacts.
+ Removing carriers, known as depletion, will decrease the conductivity,
+ while enhancement adds carriers to increase conductivity.
+ The two most common types of FET are the junction gate field-effect transistor
+ (JFET) and metal-oxide-semiconductor FET (MOSFET).
+\end_layout
+
+\begin_layout Standard
+JFET gates are composed of two contacts placed on either side of the conduction
+ channel.
+ The gates are opposite in type to the channel, so if the channel is n-type
+ the gate is p-type and vise-versa, figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:JFET"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ This junction sets up a depletion region around the gates, each with a
+ lower carrier concentration.
+ By applying a bias between the source and the gate the depletion region
+ can be expanded, shrinking the conduction channel.
+ This expansion eventually pinches off the entire channel forcing carriers
+ to tunnel across the depletion region and halting most current, thus forming
+ an off state in the JFET.
+ Because of this configuration, all JFETs must be doped to conduct naturally
+ and operate in depletion mode, as the inverse would generate current though
+ the gate to the channel.
+\end_layout
+
+\begin_layout Standard
+MOSFETs incorporate a thin insulating oxide barrier between the metal gate
+ and the conduction channel, isolating the gate, as seen in figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:MOSFET"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ This eliminates almost all current between the gate and the conduction
+ channel, a significant advantage of MOSFETs over other types of transistors.
+ The conduction channel contacts are doped to form ohmic contacts opposite
+ to the substrate.
+ MOSFETs can operate in either enhancement or depletion mode, another significan
+t advantage.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:FET-types"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ shows the different operation modes possible in MOSFETs and JFETs.
+ In enhancement mode the channel region does not have enough carriers to
+ conduct naturally, and by applying a gate voltage carriers are added to
+ the region and current flows between the source and drain.
+ Conversely, in depletion mode the channel will conduct without any gate
+ bias, often though a doped layer in the channel, but the gate voltage can
+ be used to remove carriers and produce the off state.
+ The bias between the source and drain leads also changes the electric field,
+ and thus carrier density, within the conduction channel.
+ Too large of a voltage causes the channel to start to pinch off, similar
+ to a JFET, and setting a limit on the current that can be sourced between
+ the contacts.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Semiconductor-Figures/JFET v2.svg
+	width 7cm
+	groupId FET
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+JFET
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:JFET"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Semiconductor-Figures/MOSFET v2.svg
+	width 7cm
+	groupId FET
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+MOSFET
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:MOSFET"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Semiconductor-Figures/FET types.svg
+	width 7cm
+	groupId FET
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Common FET types
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:FET-types"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Semiconductor-Figures/FET behavior.svg
+	width 7cm
+	groupId FET
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Current-voltage relationship
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:FET-IV-Behavior"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+FET
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:FET"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Typical (a) JFET and (b) MOSFET devices in n- or p-type configurations.
+ (c) Tree of possible standard FETs used.
+ (d) Source-drain current vs voltage of a generic FET.
+ Different curves show the deviation for increasing gate voltage increments.
+ The transition between ohmic (triode) and saturation occurs near the dotted
+ line.
+ The shown breakdown behavior is a characteristic of a JFET but atypical
+ in most MOSFETs.
+ 
+\end_layout
+
+\end_inset
+
+The interplay of drain-source and gate bias on channel behavior in FET leads
+ to a non-trivial relationship between channel voltage and current.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:FET-IV-Behavior"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ shows the typical behavior between drain-source voltage and current at
+ different gate voltage intervals.
+ In the cutoff region the channel conduction is small and the transistor
+ can be seen as off.
+ For current to flow in the channel a minimum voltage is needed between
+ the gate and source, the threshold voltage 
+\begin_inset Formula $V_{th}$
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "threshold voltage"
+
+\end_inset
+
+, which occurs when there is the same volume density of electrons and holes
+ in the channel and semiconductor body.
+ As the channel carrier concentration is raised by the gate voltage 
+\begin_inset Formula $V_{G}$
+\end_inset
+
+ the semiconductor has enough free charges for current flow through the
+ channel.
+ For low voltages, 
+\begin_inset Formula $V_{DS}\leq V_{G}-V_{th}$
+\end_inset
+
+, the current looks linear and the FET acts like an ohmic resistor.
+ At the threshold voltage the gate voltage begins to pinch off the conduction
+ channel.
+ The increase in current more accurately follows
+\begin_inset Formula 
+\begin{equation}
+I_{D}=2\kappa\left(\left(V_{GS}-V_{th}\right)V_{DS}-\frac{V_{DS}^{2}}{2}\right)
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\kappa$
+\end_inset
+
+ is a scaling factor that depends on multiple factors like temperature,
+ device geometry, and gate capacitance.
+ Above this limit the current is roughly constant
+\begin_inset Formula 
+\begin{equation}
+I_{D}=\kappa\left(V_{GS}-V_{th}\right)^{2}
+\end{equation}
+
+\end_inset
+
+and known as the saturation region.
+ The saturation region is what is typically thought of as the on state for
+ a FET, providing an easy binary contrast with the cutoff region.
+ Finally, once 
+\begin_inset Formula $V_{DS}$
+\end_inset
+
+ is large enough, the there is a rapid increase in current known as breakdown,
+ due to the avalanche effect.
+ This typically occurs only in JFETs while MOSFETs are limited instead by
+ their power dissipation, however MOSFETs can suffer an irreversible breakdown
+ in the gate dialectic instead.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "horowitz2015art"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Avalanche breakdown starts when a strong enough electric field propels an
+ electron or hole into an atom ionizing an additional free charge.
+ The charges can be further driven though the material gaining kinetic energy
+ and ionizing more and more atoms along the way.
+ This creates a runaway effect as the ions produce a conduction channel
+ for more current and more free carriers.
+ Avalanche breakdown can occur in both semiconductors and insulators and
+ is usually irreversible as it forms a permanent conduction medium even
+ after the field is removed.
+ The breakdown oftentimes damages the material as rapid heating arises with
+ the current.
+\end_layout
+
+\begin_layout Standard
+An important quality for practical FETs is the rate at which they switch
+ between their on and off states.
+ In the subthreshold region 
+\begin_inset Formula $V_{G}<V_{T}$
+\end_inset
+
+, the current grows at an exponential rate
+\begin_inset Formula 
+\begin{equation}
+I_{D}\propto e^{q\left(V_{G}-V_{T}\right)/k_{B}T}
+\end{equation}
+
+\end_inset
+
+until the ohmic region is reached.
+ The rate at which a MOSFET switches between the on off states is given
+ by the subthreshold slope
+\begin_inset CommandInset label
+LatexCommand label
+name "subthreshold-swing"
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+SS=\left(\frac{d\left(\log_{10}I_{D}\right)}{dV_{G}}\right)^{-1}=\ln\left(10\right)\frac{k_{B}T}{q}\left(1+\frac{C_{d}}{C_{ox}}+\frac{C_{t}}{C_{ox}}\right)\label{eq:subthreshold-swing}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $C_{d}$
+\end_inset
+
+ is the capacitance of the depletion layer, 
+\begin_inset Formula $C_{ox}$
+\end_inset
+
+ the capacitance of the dielectric oxide, 
+\begin_inset Formula $C_{t}$
+\end_inset
+
+ the capacitance of the interface traps (see section 
+\begin_inset CommandInset ref
+LatexCommand pageref
+reference "subsec:Charge-trapping-in"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ For conventional devices the minimum subthreshold slope is found by setting
+ 
+\begin_inset Formula $C_{d}\rightarrow0$
+\end_inset
+
+, 
+\begin_inset Formula $C\rightarrow0$
+\end_inset
+
+ and 
+\begin_inset Formula $C_{ox}\rightarrow\infty$
+\end_inset
+
+, giving 
+\begin_inset Formula 
+\begin{equation}
+SS_{min}=\ln\left(10\right)\frac{k_{B}T}{q},\label{eq:subthreshold-swing-min}
+\end{equation}
+
+\end_inset
+
+which is around 
+\begin_inset Formula $\mathrm{60\,mV/dec}$
+\end_inset
+
+ at 300 K, where a 
+\begin_inset Formula $dec$
+\end_inset
+
+ is a 10-fold increase in 
+\begin_inset Formula $I_{D}$
+\end_inset
+
+.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "sze2012semiconductor"
+literal "false"
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+As FET gate and channel contacts are within close proximity of each other,
+ the electric fields produced by the gate will influence the channel contact
+ junction behaviors.
+ The electric field will cause the bands to bend at the junction between
+ materials, potentially changing the barrier height, band bending rate,
+ ideality factor, or other properties.
+ Dealing with this often leads to many real world engineering complications
+ and must be accounted for in device design.
+ We must also be wary of assuming all FET device gating response is due
+ to the bulk of the semiconductor alone, but instead recognize it is often
+ a mix of bulk and contact characteristics.
+ 
+\end_layout
+
+\begin_layout Subsection
+MOS capacitor and gate band bending
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:MOSFET-and-band-bending"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The metal-oxide-semiconductor, or gate, capacitor can be understood by using
+ a similar process to construct the Schottky barriers band structure.
+ Unlike the Schottky barriers, there are typically fewer reactions between
+ the oxide and the semiconductor or metals, so the interface region behaviors
+ are more well defined.
+ As before, work function of the metal 
+\begin_inset Formula $\phi_{M}$
+\end_inset
+
+, semiconductor electron affinity 
+\begin_inset Formula $\chi_{S}$
+\end_inset
+
+, and oxide electron affinity 
+\begin_inset Formula $\chi_{O}$
+\end_inset
+
+ are the potentials needed to completely ionize an electron each material.
+ For materials in contact, the vacuum energy must be continuous and the
+ Fermi energy is constant
+\begin_inset CommandInset citation
+LatexCommand cite
+key "sze2012semiconductor"
+literal "true"
+
+\end_inset
+
+.
+ In the band model this causes the bands to bend in the oxide and the semiconduc
+tor near the interface, so the bulk of the semiconductor is shifted relative
+ to the gate.
+ As the number of free charges in an ideal oxide is negligible, the change
+ in potential 
+\begin_inset Formula $V_{O}$
+\end_inset
+
+ is linear over the width of the oxide.
+ The remaining change in potential between the two sides resides in the
+ semiconductor valance, intrinsic, and conduction bands all bending by the
+ surface potential 
+\begin_inset Formula $\psi_{S}$
+\end_inset
+
+.
+ The overall shift between the gate and the semiconductor bands is given
+ by
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+q\phi_{MS}=q\phi_{M}-q\phi_{S}=\begin{cases}
+q\phi_{M}-\left(q\chi_{S}+\frac{E_{G}}{2}+q\psi_{B}\right) & \text{p-type}\\
+q\phi_{M}-\left(q\chi_{S}+\frac{E_{G}}{2}-q\psi_{B}\right) & \text{n-type}
+\end{cases}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $q\phi_{S}$
+\end_inset
+
+ is the semiconductor work function, and 
+\begin_inset Formula $q\psi_{B}$
+\end_inset
+
+ is the difference between the Fermi and intrinsic Fermi energies
+\begin_inset CommandInset citation
+LatexCommand cite
+key "sze2012semiconductor"
+literal "true"
+
+\end_inset
+
+.
+ In an ideal semiconductor there is no band bending and 
+\begin_inset Formula $\phi_{MS}=0$
+\end_inset
+
+.
+ Figures 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:MOSFET"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+a-b shows an ideal and non-ideal MOS capacitor with n-type semiconductor
+ without and with the a shift in band structure.
+ The potential 
+\begin_inset Formula $\psi$
+\end_inset
+
+ as a function of distance 
+\begin_inset Formula $x$
+\end_inset
+
+ from the surface can be found by using by the Poisson equation
+\begin_inset Formula 
+\begin{equation}
+\frac{d^{2}\psi}{dx^{2}}=-\frac{\rho_{s}\left(x\right)}{\epsilon_{0}\epsilon_{r}}\label{eq:Poisson}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\rho_{s}=e\left(N_{D}^{+}-N_{A}^{-}+p-n\right)$
+\end_inset
+
+ is the charge density per unit volume at 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $\epsilon_{r}=1+\chi$
+\end_inset
+
+ the relative dielectric permittivity.
+ In an 
+\begin_inset Formula $n$
+\end_inset
+
+-type semiconductor 
+\begin_inset Formula $\rho_{s}\approx e\left(N_{D}^{+}-n\right)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Semiconductor-Figures/MOSFET flat band.svg
+	width 7.5cm
+	groupId metal-sc band
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Ideal
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Semiconductor-Figures/MOSFET non-ideal.svg
+	width 7.5cm
+	groupId metal-sc band
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Non-ideal
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Semiconductor-Figures/MOSFET accumulation.svg
+	width 7.5cm
+	groupId metal-sc band
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Accumulation
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Semiconductor-Figures/MOSFET depletion.svg
+	width 7.5cm
+	groupId metal-sc band
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Depletion
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Semiconductor-Figures/MOSFET Inversion.svg
+	width 7.5cm
+	groupId metal-sc band
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Inversion
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+MOS band diagram
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+The metal-oxide-semiconductor energy band diagrams for an n-type semiconductor.
+ (a) an ideal and (b) non-ideal MOS capacitor, showing the additional band
+ shifting necessary for the aliment of the Fermi energies.
+ (c) applying a positive voltage across the gate causes the bands to bend
+ and charges to accumulate.
+ (d) a small negative voltage depletes the area near the interface of majority
+ (electron) charge carriers, while (e) a larger negative voltage will eventually
+ accumulate more minority charges than majority near the interface creating
+ an region of inversion near the interface.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+By applying an additional voltage across the gate the Fermi energy of the
+ metal can be raised or lowered, changing the band structure across the
+ capacitor.
+ In a non-ideal semiconductor, a state similar to the flat bands of ideal
+ semiconductor is reached by applying the flat-band voltage 
+\begin_inset Formula $V_{FB}=\phi_{MS}$
+\end_inset
+
+.
+ In a n-type (p-type) applying a positive (negative) voltage bends the bands
+ and dopes the region near the gate causing additional majority charge carriers
+ to accumulate, figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:MOSFET"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+c.
+ This corresponds to an excess equal number of charges per unit area collecting
+ on the metal-oxide interface.
+ Applying a smaller negative (positive) voltage has the opposite effect,
+ depleting the region near the gate of charges and decreasing conductivity,
+ figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:MOSFET"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+d.
+ As larger negative (positive) voltages are applied the bands begin to invert
+ and minority charges begin to accumulate in the oxide-semiconductor region.
+ Eventually more minority than majority charges accumulate within the interface
+ region and is known as inversion.
+ This shown in figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:MOSFET"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+e, as 
+\begin_inset Formula $\psi_{s}>\psi_{B}$
+\end_inset
+
+.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "sze2012semiconductor"
+literal "true"
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+The doping of the channel with majority and minority carriers leads to the
+ change in channel current and its relationship to gate voltage described
+ above.
+ The further modification of the electric field within the channel from
+ source-drain voltage produces an asymmetry of the conductive region.
+ This shift corresponds to the linear and saturation behavior as the doped
+ channel narrows at one end and eventually eventually pinches off, forcing
+ charges to tunnel between channel and contact.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "horowitz2015art"
+literal "true"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Charge trapping in FETs
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Charge-trapping-in"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Discontinuities or imperfections in the MOS crystal structures can create
+ localized electronic states, introducing locations for charges to get trapped
+ and impeding movement through the device.
+ Charge trapping modifies the electric field across the MOS capacitor, altering
+ the conduction within the semiconductor and is usually considered detrimental
+ to typical MOSFETs.
+ As the MOS is gated, carriers become pinned, disrupting the electric field
+ and conduction.
+ Shallow traps, within 
+\begin_inset Formula $\sim1\,k_{B}T$
+\end_inset
+
+ of the band edge, allow carriers to de-trap and continue to move along
+ the band.
+ Deep traps are formed near the intrinsic energy band, where it is much
+ harder for traps to de-trap without non-thermal energy excitations.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Charge-trapping"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ shows the types of intrinsic and extrinsic carrier traps found in MOSFET
+ devices and the physical locations they may reside within the device.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Semiconductor-Figures/Sources of traps.svg
+	width 7.5cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Types of traps
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Semiconductor-Figures/MOSFET traps.svg
+	width 7.5cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+MOSFET traps
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Charge trapping
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Charge-trapping"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+(a) types of various intrinsic and extrinsic carrier traps found within
+ MOSFET devices and (b) the location those traps may appear in the device.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Charge traps can originate from intrinsic properties of the crystal, disorder
+ in the lattice, or from extrinsic sources.
+ Intrinsic static disorder arises from structural defects such as grain
+ boundaries, mobile ions, empty lattice sites, step edges, lattice stacking
+ mismatches, and others.
+ Grain boundaries typically impede current flow, though in some instances
+ can actually act as channels of conduction
+\begin_inset CommandInset citation
+LatexCommand cite
+key "hunter2013observation,deuermeier2016highly"
+literal "true"
+
+\end_inset
+
+.
+ Mobile ions are charged atoms, usually manufacturing impurities, that can
+ move through the oxide with a high electric field.
+ As the ions move they alter the capacitance-voltage relationship of the
+ MOS
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kuhn1971ionic"
+literal "false"
+
+\end_inset
+
+.
+ Empty lattice sites, step edges, lattice stacking mismatches all typically
+ reduce the flow of current as they form energy barriers for charge carries
+ along the path of conduction
+\begin_inset CommandInset citation
+LatexCommand cite
+key "haneef2020charge"
+literal "false"
+
+\end_inset
+
+.
+ Dynamic disorder arises from short lived distortions, such as temperature
+ fluctuations of the lattice and phonons, that localize bands of the lattice
+ and reduce conductivity in a similar manner to static disorder
+\begin_inset CommandInset citation
+LatexCommand cite
+key "fratini2016transient"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Extrinsic traps originate from sources external to the semiconductor, such
+ as interfaces with other materials, bias stresses, dopants, and environmental
+ effects.
+ At the metal-semiconductor interface the band structure is altered, forming
+ a barrier for charges traveling through or near the interface.
+ This can form Schottky barriers, as discussed in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Metal-Semiconductor-Metal-conduction"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, and decreases the conductivity of the FET.
+ The surface of the semiconductor often contains defects or contaminates,
+ but the resulting localized states may be screened the semiconductor has
+ a large amount of free carriers.
+ When put in contact with a metal, the depletion region formed at the interface
+ can expose the localized band structure
+\begin_inset CommandInset citation
+LatexCommand cite
+key "tung2014physics"
+literal "false"
+
+\end_inset
+
+.
+ Doping the semiconductor near the region of the metal interface is often
+ used to mitigate this effect and produce ohmic contacts.
+ Similarly, the oxide-semiconductor interface in a MOS or a heterostructure
+ interfaces produces localized traps in the semiconductor, reducing mobility
+ or conductivity.
+ Mismatching periodic lattice structures in the two materials can induce
+ regions of strain or disorder in the semiconductor.
+ Different rates of thermal expansion in each material can exaggerate this
+ and introduce an additional temperature dependence to the interface trap
+ behavior.
+ Additionally, dangling bonds along the edge of the oxide can trap charges.
+ The MOS oxide can donate or accept additional charges from the semiconductor
+ to produce a lower energy state, the charges are then trapped and de-trapped
+ as the gate voltage is altered.
+ Environmental contaminates, usually water and oxygen molecules, cause numerous
+ trap phenomenon.
+ Water molecules can absorb into or adhere to the surfaces of the oxide
+ or semiconductor and act as charge traps or cause redox reactions in the
+ MOSFET
+\begin_inset CommandInset citation
+LatexCommand cite
+key "gao2014redox"
+literal "false"
+
+\end_inset
+
+.
+ Similarly, oxygen can adhere to the surface of either material, creating
+ a localized state and trapping electrons
+\begin_inset CommandInset citation
+LatexCommand cite
+key "nicolai2012unification"
+literal "false"
+
+\end_inset
+
+.
+ Oxygen can also react with many semiconductors, oxidizing the surface and
+ forming an insulating barrier and decreasing the channel thickness.
+ Great care is often taken to avoid exposing MOSFETs to water and oxygen
+ through the use of controlled manufacturing environments and encapsulating
+ sensitive materials within other materials such as h-BN.
+ Finally, exposure to environmental radiation can create deep traps within
+ the semiconductor gap
+\begin_inset CommandInset citation
+LatexCommand cite
+key "haneef2020charge"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+The effects of charge trapping on MOSFETs are varied and often difficult
+ to distinguish from other phenomena, such as contact resistance or gate
+ bias band bending.
+ Typically, the localization of bands within the lattice decreases the effective
+ conductivity and mobility of carriers in the channel
+\begin_inset CommandInset citation
+LatexCommand cite
+key "neamen2002semiconductor,sze2012semiconductor"
+literal "false"
+
+\end_inset
+
+.
+ Deep traps increase the recombination rate of minority charge carries and
+ will localize carriers without a large enough non-thermal excitation or
+ electric field, both reducing the channel current
+\begin_inset CommandInset citation
+LatexCommand cite
+key "neamen2002semiconductor"
+literal "false"
+
+\end_inset
+
+.
+ Shallow traps may actually increase current in disordered semiconductors
+ in some instances, allowing carriers to thermally hop or tunnel between
+ traps
+\begin_inset CommandInset citation
+LatexCommand cite
+key "nenashev2018release"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Trapping impacts the effect of the gate voltage on carrier transport.
+ For FET at low gate voltages the injected charges accumulate in localized
+ states, so that the drain current is mostly transport though the traps
+\begin_inset CommandInset citation
+LatexCommand cite
+key "haneef2020charge"
+literal "false"
+
+\end_inset
+
+.
+ As the gate voltage increases the trap states continue to be filled, until
+ they are all full and the carriers occupy the extended states and increase
+ the device mobility.
+ As the trapped states in the oxide or semiconductor need to be filled first,
+ this shifts the threshold voltage in the direction of the bias, known as
+ gate bias stress.
+ The shift of the threshold voltage is often used as an indication of charge
+ trapping, though other mechanisms such as carrier density can impact the
+ mobility relationship to gate voltage
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kwon2018relationship,haneef2020charge"
+literal "false"
+
+\end_inset
+
+.
+ Trapped charge can also cause bias stress instability, where the threshold
+ voltage to continue to shift over time 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "suresh2008bias,lan2020gate"
+literal "false"
+
+\end_inset
+
+.
+ Gate bias stress is typically reversible, as excitations such as light
+ or large gate voltages can detrap the charges.
+ In the FET subthreshold region the trapped charge can continue to conduct,
+ giving a large off current and high subthreshold swing
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kim2018analysis"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+The gate-voltage trap filling often leads to hysteresis in the 
+\begin_inset Formula $I_{D}$
+\end_inset
+
+-
+\begin_inset Formula $V_{G}$
+\end_inset
+
+ measurements of thin film transistors.
+ The hysteresis loops are complex, forming clockwise or counterclockwise
+ 
+\begin_inset Formula $I_{D}$
+\end_inset
+
+ responses as 
+\begin_inset Formula $V_{G}$
+\end_inset
+
+ is swept, and can even form a combination of multiple-direction loops.
+ Carriers trapped during a forward gate bias sweep will get released ruing
+ the reverse bias sweep, resulting in a different drain current for the
+ same gate voltage.
+ The traps can exist within the oxide, interface, surface contaminants,
+ or semiconductor along the gate
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kim2018analysis"
+literal "false"
+
+\end_inset
+
+.
+ Frequency dependence
+\begin_inset CommandInset citation
+LatexCommand cite
+key "georgiou2018ferroelectricity,zhang2014defect,yin2019robust,guo2015charge"
+literal "false"
+
+\end_inset
+
+, pulsed gate voltage
+\begin_inset CommandInset citation
+LatexCommand cite
+key "datye2018reduction"
+literal "false"
+
+\end_inset
+
+, temperature dependence
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kumar2003hotcarrier,groeseneken1990temperature,datye2018reduction,wang2020cryogenic"
+literal "false"
+
+\end_inset
+
+, illumination
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kumar2003hotcarrier,yin2019robust"
+literal "false"
+
+\end_inset
+
+, and other techniques are all used to attempt to characterize charge trapping
+ and distinguish its hysteresis from other phenomenon.
+ 
+\end_layout
+
+\begin_layout Standard
+Charge traps continue to exist and cause FET hysteresis and bias stress
+ down to cryogenic temperatures
+\begin_inset CommandInset citation
+LatexCommand cite
+key "casse2020cryogenic,wang2020cryogenic,beckers2020physical,wang2020temperaturedriven"
+literal "false"
+
+\end_inset
+
+.
+ At low temperatures there is less ionization of dopant ions within the
+ material.
+ The bias stress effect from trapping and can increase and subthreshold
+ swing decrease with decreasing temperature
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kim2018analysis,beckers2020physical,wang2020temperaturedriven"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\end_body
+\end_document
