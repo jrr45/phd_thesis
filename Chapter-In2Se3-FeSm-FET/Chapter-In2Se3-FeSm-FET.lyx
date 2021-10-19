@@ -94,60 +94,6 @@ name "chapter:FeSm-FET"
 
 \end_layout
 
-\begin_layout Standard
-Ferroelectrics, already ubiquitous in many modern applications, have the
- potential to enable fast and low power persistent memory devices.
- The recent demonstration of a ferroelectric-semiconductor ferroelectric
- field effect transistor (FeSmFETs) by Si et al.
-\begin_inset CommandInset citation
-LatexCommand cite
-key "si2019ferroelectric"
-literal "false"
-
-\end_inset
-
- has given us a novel method to induce persistent states in a field effect
- transistor channel.
- This behavior in part, is enabled by the coupled in-plane and out-of-plane
- polarization of 
-\begin_inset Formula $\ensuremath{\alpha}\textrm{-In}_{2}\textrm{Se}_{3}$
-\end_inset
-
-, a relatively unique property among ferroelectrics.
- Before FeSmFETs can be used in commercial devices we must establish the
- impact of changing conditions, such as device temperature, have on the
- 
-\begin_inset Formula $\ensuremath{\alpha}\textrm{-In}_{2}\textrm{Se}_{3}$
-\end_inset
-
- polarization, persistent states, and overall device behavior.
- Here we report evidence for the a metallic state formed by an electric
- field in 
-\begin_inset Formula $\ensuremath{\alpha}\textrm{-In}_{2}\textrm{Se}_{3}$
-\end_inset
-
- FeSmFETs, measured from room to liquid helium temperatures.
- Our devices display clear evidence that the polarization alters the current,
- however, the emergence of the metallic behavior is more consistent with
- a disorder-driven transition in the 
-\begin_inset Formula $\ensuremath{\alpha}\textrm{-In}_{2}\textrm{Se}_{3}$
-\end_inset
-
-.
- Ferroelectrics are typically thought of as insulators or wide-band gap
- semiconductors, with a few recent reports that 
-\begin_inset Formula $\mathrm{WTe_{2}}$
-\end_inset
-
- is the first ferroelectric metal.
- A metallic state in a ferroelectric semiconductor may be an alternative
- path to understand the coupling of bound and itinerant electrons in a ferroelec
-tric and polar metals.
- Additionally, we confirm of the feasibility of FeSmFET devices as an alternativ
-e to traditional ferroelectric field effect transistors.
- 
-\end_layout
-
 \begin_layout Section
 Introduction
 \end_layout
@@ -3285,7 +3231,7 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $r^{2}$
+\begin_inset Formula $R^{2}$
 \end_inset
 
 
@@ -3805,7 +3751,7 @@ status open
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics

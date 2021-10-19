@@ -89,13 +89,6 @@ status open
 
 
 \backslash
-addcontentsline{toc}{chapter}{Abstract}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
 begin{singlespace}
 \end_layout
 
@@ -105,14 +98,15 @@ begin{singlespace}
 \end_layout
 
 \begin_layout Standard
-Modern microelectronics seeks to ever miniaturize transistors following
- Moore's Law, seeking faster logic, lower power usage, and denser storage.
+Modern microelectronics seeks to miniaturize transistors and follows Moore's
+ Law, seeking faster logic, lower power usage, and denser storage.
  Progress in this direction can no longer rely on traditional techniques
  and materials, as fundamental limits to materials become more significant
  as devices shrink.
- In this dissertation I present crystal characterization and transport measureme
-nts on two layered indium-selenium compounds featuring van der Waals interlayer
- coupling, 
+ In this dissertation I present work I carried out in collaboration with
+ other researchers, which includes crystal characterization and transport
+ measurements on two layered indium-selenium compounds featuring van der
+ Waals interlayer coupling, 
 \begin_inset Formula $\gamma$
 \end_inset
 
@@ -120,73 +114,85 @@ nts on two layered indium-selenium compounds featuring van der Waals interlayer
 \begin_inset Formula $\ensuremath{\alpha}\textrm{-In}_{2}\textrm{Se}_{3}$
 \end_inset
 
-, that may provide new avenues to build better electronics, integrating
- with and supplementing traditional materials.
+, that may provide new avenues to advance microelectronics.
 \end_layout
 
 \begin_layout Standard
-I first present our work on 
+I first review back ground information on semiconductors, field effect transisto
+rs, ferroelectricity, and layered transition metal chalcogenides.
+ I summarize experimental methods including device preparation and measurements.
+ I then present our work on 
 \begin_inset Formula $\ensuremath{\alpha}\textrm{-In}_{2}\textrm{Se}_{3}$
 \end_inset
 
  ferroelectric-field effect transistors (FeSmFET).
- The devices are prepared from mechanically exfoliated crystals, using 
+ The devices are prepared from mechanically exfoliated ultrathin crystals,
+ using 
 \begin_inset Formula $\ensuremath{\alpha}\textrm{-In}_{2}\textrm{Se}_{3}$
 \end_inset
 
  for the channel layer.
  Contact to the crystal was done using a novel photolithography process
  and metal evaporation.
- In traditional ferroelectric-field effect transistors the semiconducting
+ In traditional ferroelectric field effect transistors the semiconducting
  channel is controlled using a ferroelectric-dielectric, this is reversed
- in a FeSmFET where the channel is a ferroelectric-semiconductor and a tradition
-al, non-polar dielectric can be used.
- I present transport measurements in the FeSmFET devices, showing behavior
- expected of field effect transistors with evidence for polarization-controlled
- current-behavior in thinner 
+ in a FeSmFET where the channel is a ferroelectric semiconductor.
+ I present results of our transport measurements on the FeSmFET devices,
+ evidence for polarization-controlled behavior and evidence for an electric-fiel
+d-induced metallic state in thin crystals of 
 \begin_inset Formula $\ensuremath{\alpha}\textrm{-In}_{2}\textrm{Se}_{3}$
 \end_inset
 
- devices.
- Temperature- and gating-dependent current measurements of the FeSmFET suggest
- evidence for a electric-field-induced metallic state.
- Magnetic field transport measurements show evidence for weak localization
- and high carrier densities at low temperatures in the metallic state.
+.
+ Magneto electrical transport measurements revealed the effect of weak localizat
+ion and high carrier densities in the metallic state.
  
 \end_layout
 
 \begin_layout Standard
-Next I discuss our work on molecular beam epitaxy grown films of 
+I also present our work on molecular beam epitaxy (MBE) grown films of 
 \begin_inset Formula $\gamma$
 \end_inset
 
 -InSe on GaAs.
- Raman, X-ray Diffraction, and transmission electron microscopy were used
- to characterize the film quality and phase.
- Thin film devices were then fabricated using photolithography, plasma etching,
- and metal evaporation.
- I measured the temperature dependent resistivity from 300 to 400 K and
- Hall effect.
- Our InSe samples show high mobility, typically reported in (encapsulated)
+ Raman spectroscopy, X-ray diffraction, and transmission electron microscopy
+ were used to characterize these films.
+ Hall bar devices were then fabricated using photolithography and plasma
+ etching.
+ These films were found to be extremely resistive, with the temperature
+ dependent resistivity measurable only above room temperature, showing insulatin
+g behavior.
+ Together with the Hall effect, these films of 
+\begin_inset Formula $\gamma$
+\end_inset
+
+-InSe were found to show high mobility, typically reported in (encapsulated)
  exfoliated and a few thin film devices.
- Further examination of the film using transmission electron microscopy
- and energy-dispersive X-ray spectroscopy reveal stacking faults within
- the growth, likely limiting the overall mobility of our devices.
+ Transmission electron microscopy and energy-dispersive X-ray spectroscopy
+ revealed no interdiffusion between 
+\begin_inset Formula $\gamma$
+\end_inset
+
+-InSe film and GaAs substrate, suggesting that the high mobility found is
+ an intrinsic properties of the MBE grown films despite of the presence
+ of many stacking faults within the growth.
 \end_layout
 
 \begin_layout Standard
-Results obtained in our 
+Work on 
 \begin_inset Formula $\ensuremath{\alpha}\textrm{-In}_{2}\textrm{Se}_{3}$
 \end_inset
 
- devices further demonstrate the feasibility of using FeSmFETs as persistent
- logic-memory devices.
- Additionally these devices may be an avenue to study how ferroelectric
- dipoles behave within a metallic crystal and examine the interaction of
- polarization and itinerant electrons.
- Our film devices illustrate the utility of molecular beam epitaxy grown
- InSe as a practical candidate for integration into commercial semiconductor
- applications.
+ and 
+\begin_inset Formula $\gamma$
+\end_inset
+
+-InSe presented in this dissertation shows the great potential of these
+ two layered TMCs as electronic materials.
+ Potentially providing an avenue to study ferroelectric dipoles in a metallic
+ state and examine the interaction of polarization and conduction electrons.
+ Our work also illustrates the potential application of molecular beam epitaxy
+ grown InSe microelectronics.
 \end_layout
 
 \begin_layout Standard

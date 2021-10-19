@@ -299,7 +299,7 @@ def plot_σvsB_custom(filenames, savename, color_order=[0,1,2,3,4,5], log=False,
         #symmetrize it
         R = (R+R[::-1])/2
         
-        Rsq = mp.sheet_resistance(R, JR200115_11.length, JR200115_11.width)
+        Rsq = mp.sheet_resistance(JR200115_11, R)
         
         #print(H)
         Rsq_0 = Rsq[np.argmin(np.abs(H))] 

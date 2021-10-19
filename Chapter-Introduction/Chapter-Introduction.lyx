@@ -78,20 +78,6 @@
 
 \begin_body
 
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-% !TEX root = ../JustinRodriguez-Dissertation.tex
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Chapter
 Introduction
 \begin_inset CommandInset label
@@ -101,6 +87,51 @@ name "chapter:Introduction"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+In the pursuit of ever smaller and more-power efficient microelectronics,
+ new materials and techniques are needed that integrate into traditional
+ fabrication processes.
+ In this dissertation I present work, carried out in collaboration with
+ other researchers, on two van der Waals materials, 
+\begin_inset Formula $\gamma$
+\end_inset
+
+-InSe and 
+\begin_inset Formula $\ensuremath{\alpha}\textrm{-In}_{2}\textrm{Se}_{3}$
+\end_inset
+
+.
+ These materials may provide a path to further microelectronics manufacturing
+ with unique combinations of semiconductor properties.
+\end_layout
+
+\begin_layout Standard
+Since the initial experimental demonstration of graphene using mechanical,
+ interest in two-dimensional (2D) materials has exploded.
+ Mechanical exfoliation of bulk crystals provides a means to generate high-quali
+ty, thin crystals and remove the constraints of the substrate when growing
+ a material.
+ The 2D nature of the materials means they have fewer dangling bonds along
+ one surface and less interface effects than a typical 3D crystal.
+ Exfoliation has let us study the intrinsic properties of the material,
+ reducing the influence of the substrate.
+ It can also be used to quickly manufacture new devices, such as field effect
+ transistors (FETs).
+ These devices in turn, let us modify the crystal though the application
+ of electric or magnetic fields, heterostructure interfaces, light, strain
+ and stress, and many other methods.
+ With this we can select materials with useful quantities, such as high
+ carrier mobility or ferroelectricity, to be used in commercial and research
+ applications.
+ Exfoliated flakes of material are too inconsistent in size and quality
+ to scale to most applications.
+ Grown films are used instead as they can be made as large as needed, and
+ can be optimized to match the properties of the flakes.
+ The films can be introduced into industrial scale processing, allowing
+ companies to enhance modern electronics with the desired properties of
+ the 2D materials.
 \end_layout
 
 \begin_layout Standard
@@ -125,19 +156,6 @@ literal "false"
 \end_inset
 
 .
- Ferromagnetism was already known at the time of the discovery so Valasek
- made the analogous connection showing the relationship between magnetic
- and electric fields.
- This gave rise to the term 
-\begin_inset Quotes eld
-\end_inset
-
-ferroelectricity
-\begin_inset Quotes erd
-\end_inset
-
- even though such materials rarely contain iron like their ferromagnetic
- precursors.
  Ferroelectricity was largely ignored until the discovery of barium titanate
  (
 \begin_inset Formula $\mathrm{BaTiO_{3}}$
@@ -169,10 +187,7 @@ literal "true"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
+ 
 \begin_inset Formula $\mathrm{BaTiO_{3}}$
 \end_inset
 
@@ -184,10 +199,7 @@ showed that oxide crystals could be ferroelectric, and in the decades following
  In 1952 lead zirconate-titanate (PZT) was discovered and has become one
  of the most widely used piezoelectric ceramics, though recent efforts have
  sought to find lead-free alternatives that are more environmentally friends.
- All ferroelectric materials are also piezoelectric and pyroelectric, though
- the reverse is not true, and many have found applications in ultrasound,
- capacitors, transducers, micropositioners, energy harvesters, night vision,
- sensors, and many other devices.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -213,33 +225,6 @@ literal "true"
  and since then researchers and engineers have continued to push towards
  this goal.
  
-\end_layout
-
-\begin_layout Standard
-Since the initial experimental demonstration of graphene using mechanical,
- interest in two-dimensional (2D) materials has exploded.
- Mechanical exfoliation of bulk crystals provides a means to generate high-quali
-ty, thin crystals and remove the constraints of the substrate when growing
- a material.
- The 2D nature of the materials means they have fewer dangling bonds along
- one surface and less interface effects than a typical 3D crystal.
- Exfoliation has let us study the intrinsic properties of the material,
- reducing the influence of the substrate.
- It can also be used to quickly manufacture new devices, such as field effect
- transistors (FETs).
- These devices in turn, let us modify the crystal though the application
- of electric or magnetic fields, heterostructure interfaces, light, strain
- and stress, and many other methods.
- With this we can select materials with useful quantities, such as high
- carrier mobility or ferroelectricity, to be used in commercial and research
- applications.
- Exfoliated flakes of material are too inconsistent in size and quality
- to scale to most applications.
- Grown films are used instead as they can be made as large as needed, and
- can be optimized to match the properties of the flakes.
- The films can be introduced into industrial scale processing, allowing
- companies to enhance modern electronics with the desired properties of
- the 2D materials.
 \end_layout
 
 \begin_layout Standard

@@ -759,9 +759,6 @@ Department Head \\
 
 \mbox{}\vfill
 
-\noindent
-\parbox{\textwidth}{$^{*}$Signatures are on file in the Graduate School.}
-
 \newpage
 }
 

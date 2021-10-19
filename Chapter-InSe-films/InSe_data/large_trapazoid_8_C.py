@@ -16,7 +16,7 @@ import numpy.polynomial.polynomial as poly
 
 large_trapazoid_8 = mp.flake_device
 large_trapazoid_8.name = 'large_trapazoid_8'
-large_trapazoid_8.fileroot = os.path.join('In-plane', 'large_trapazoid')
+large_trapazoid_8.fileroot = os.path.join('In-plane', 'large_trapazoid_8')
 large_trapazoid_8.thickness = 45.e-9
 large_trapazoid_8.width = 20.e-6
 large_trapazoid_8.volt_length = 38.e-6
@@ -72,10 +72,11 @@ def plot_VH_vs_H_400K(size=2):
     IV_file['Voltage_1_V'] = -IV_file['Voltage_1_V']
     
     (R4pt, _, _) = mp.process_IV_data(device, IV_file, ['Voltage_1_V', 'Voltage_2_V'], Ilimits=(None,None))
-
+    
     (B_data, VH_datas, n2Ds, fits, fitdata, r_squared, μH) = \
         mp.process_hall_data(device, Hall_file, T_Rxx_4pt=R4pt,
-                             hall_fields=['Voltage_1_V', 'Voltage_2_V'], symmeterize=True, Bfitlimits=(-1.4,1.4))
+                             hall_fields=['Voltage_1_V', 'Voltage_2_V'],
+                             symmeterize=True, Bfitlimits=(-2,2))
 
     Hall_file['Magnetic_Field_T'] = B_data
     Hall_file = append_fields(Hall_file, 'Hall_Voltage_1_V', VH_datas[0], np.float64, usemask=False)
@@ -111,11 +112,11 @@ def plot_VH_vs_H_300K(size=2):
     B_data[:occ0] = np.nan
     B_data[occ1+1:] = np.nan
     Hall_file['Magnetic_Field_T'] = B_data
-
+    
     (B_data, VH_datas, n2Ds, fits, fitdata, r_squared, μH) = \
         mp.process_hall_data(device, Hall_file, T_Rxx_4pt=R4pt,
                              hall_fields=['Voltage_2_V'], symmeterize=True,
-                             Bfitlimits=(-1.4,1.4))
+                             Bfitlimits=(-2,2))
 
 
     Hall_file['Magnetic_Field_T'] = B_data
@@ -138,8 +139,8 @@ def plot_VH_vs_H_300K(size=2):
 def main(): 
     show_all = False
     
-    plot_rho_vs_T(size=2, log=False)
-    plot_VH_vs_H_400K(size=2)
+    #plot_rho_vs_T(size=2, log=False)
+    #plot_VH_vs_H_400K(size=2)
     plot_VH_vs_H_300K(size=2)
     
     #plot_rho_vs_T_fits(size=2)

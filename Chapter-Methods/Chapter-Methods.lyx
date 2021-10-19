@@ -89,28 +89,15 @@ name "chap:Sample-fabrication-methods"
 
 \end_layout
 
-\begin_layout Standard
-This chapter serves as an overview of the experimental techniques used or
- referenced in other chapters.
- A brief summary of each technique and some of the relevant applications
- to the overall discussion are described.
- For some methods, additional specific details are given in an effort to
- make any reproduction of experimental results or other future works as
- efficient as possible.
- A description of the reasoning behind a few experimental choices are also
- provided for context.
-\end_layout
-
 \begin_layout Section
 Introduction
 \end_layout
 
 \begin_layout Standard
-The relatively simple innovation of using adhesive tape to exfoliate van
- der Waals crystal spearheaded a boom in 2D material research and driven
- the development of new techniques to explore these materials.
- 2D crystals are typically manufactured in one of two methods: films grown
- on premanufactured substrates or exfoliated flakes from van der Waals crystals.
+Using adhesive tape to exfoliate van der Waals crystal spearheaded a boom
+ in 2D material research.
+ 2D crystals are typically prepared in one of two methods: films grown on
+ premanufactured substrates or exfoliated flakes from van der Waals crystals.
  Films are sought for material commercialization as they can be incorporated
  into large-scale manufacturing processes.
  Industrial scale process require a lot of time to development to insure
@@ -127,13 +114,13 @@ The relatively simple innovation of using adhesive tape to exfoliate van
  Flakes may additionally be stacked in layered hetrostructures to create
  devises with more unique properties, and can display new phenomina such
  as interface effects between the layers.
- Advances in flake devices often drive development of film manufacturing
- to incorporate the 2D crystal properties into commercial devices.
+ Advances in flake devices often drive development of film growth to incorporate
+ the 2D crystal properties into commercial devices.
  
 \end_layout
 
 \begin_layout Standard
-Both flake and film device manufacture follow similar processes to add wires
+Both flake and film device fabrication follow similar processes to add wires
  or pattern the crystal by etching.
  Figure 
 \begin_inset CommandInset ref
@@ -256,7 +243,7 @@ Film-device process
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Device manufacture.
+Device fabrication.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:device-process"
@@ -287,11 +274,11 @@ name "fig:device-process"
 \end_layout
 
 \begin_layout Section
-Flake generation
+Flake preparation
 \end_layout
 
 \begin_layout Subsection
-Manufacturing alignment marker wafer chips
+Alignment markers
 \end_layout
 
 \begin_layout Standard
@@ -390,7 +377,7 @@ a.
 \end_layout
 
 \begin_layout Subsection
-Mechanical exfoliation from bulk crystals to thin flakes
+Mechanical exfoliation of bulk crystals
 \begin_inset CommandInset label
 LatexCommand label
 name "subsec:Mechanical-flake-exfoliation"
@@ -786,1394 +773,6 @@ ing thicknesses, and then create a partial color code (e) for
 \end_inset
 
 
-\end_layout
-
-\begin_layout Section
-Thin crystal characterization
-\end_layout
-
-\begin_layout Subsection
-Scanning probe microscopy
-\end_layout
-
-\begin_layout Standard
-Scanning probe microscopy (SPM) is a series of techniques to produce detailed
- characterization over a 3D surface.
- A long, sharp needle of material is held perpendicular to the plane of
- the surface allowing the SPM to measure the interactions of the tip and
- surface.
- The tip is traced across the plane forming a map of the tip-surface interaction
-s.
- Piezoelectric crystals attached to the tip let the tip move in over short
- distances in any direction with fine precision.
- This is often combined with additional motors, such as a stepper motor,
- can move the entire piezoelectric crystals and tip structure over larger
- distances but sacrifice precision to do so.
- With an isolated environment, engineered to shield the tip from external
- noise, and a sharp tip, a SPM map can provide details down to the atomic
- level.
- There are many different varieties of SPM that measure quantities like
- magnetic field, density of states, and spin; and far too many to discuss
- here, so only a brief overview of the most relevant are below.
- Figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Atomic-force-microscope"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- shows the the typical setup of most SPM microscopes.
-\end_layout
-
-\begin_layout Subsubsection
-Atomic force microscopy
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/SPS cartoon.svg
-	width 5cm
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Atomic force microscope
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Atomic-force-microscope"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-An atomic force microscope tip on a cantilever extends over a 3D surface
- with varied topography.
- The relative deflection of the tip is measured by a laser reflected off
- the back of the cantilever to a photodector capable of measuring the shifts
- in the horizontal and vertical as the cantilever bends and twists.
- 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Atomic force microscopy (AFM) is used to measure detailed topographical
- information from 3D surfaces with small variations in height.
- The tip is fixed to a small, flexible cantilever and the cantilever is
- extended horizontally over the surface so that the tip points perpendicular
- between the cantilever and surface.
- The tip interactions with the surface will cause the cantilever to bend
- and twist.
- To measure the the movement of the cantilever and tip a laser aligned to
- reflect of the top of the cantilever.
- The top of the cantilever, polished for this purpose, reflects the laser
- to a photodetector.
- As the cantilever flexes and tilts the reflected laser moves across the
- photodetector, optically measuring the tip deflection with great precision.
- The AFM computer monitors the tip deflection as it traces the tip across
- the surface, and can modify the movement in a feedback loop to increase
- measurement precision.
- Because the tip deflection is dependent on the materials involved and other
- interaction conditions, an AFM scan is not a true topography map of the
- surface, but for most purposes they are near-indistinguishable and it is
- typically treated as a topography measurement for most purposes.
-\begin_inset CommandInset citation
-LatexCommand cite
-key "celano2019atomic"
-literal "true"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-There are different methodologies of AFM measurement, though all measure
- some form of force interactions between the tip and the surface.
- As the tip is brought close to the surface it is initially repelled by
- the van der Walls forces, but as the distance continues to decrease the
- force becomes attractive, pulling the tip towards the surface.
- The original method, contact AFM, keeps the tip in the attractive region
- of the force interactions as it moved across the material surface, figure
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:AFM-interaction-modes"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-a.
- The cantilever force is kept constant by moving the cantilever holder up
- and down to maintain the deflection, making the holder z-position a measurement
- of the surface topography.
- Keeping the tip in contact during lateral movements can damage soft materials
- and the tip thus distorting the image, but allows for faster measurements
- and high resolution
-\begin_inset CommandInset citation
-LatexCommand cite
-key "celano2019atomic"
-literal "true"
-
-\end_inset
-
-.
- To avoid the surface and tip damage, tapping mode AFM was devised, which
- keeps the tip at longer distances from the surface during lateral moves.
- In tapping mode the cantilever is driven to oscillate at or slightly below
- its resonant frequency and lightly taps the surface to measure height,
- figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:AFM-interaction-modes"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-b.
- Tapping mode monitors the amplitude of the cantilever as it oscillates,
- keeping it constant as the tip is scanned, providing the height measurement
-\begin_inset CommandInset citation
-LatexCommand cite
-key "celano2019atomic"
-literal "true"
-
-\end_inset
-
-.
- Non-contact AFM moves the tip farther from the surface than tapping mode,
- so the tip is operating in the repulsive force range.
- The repulsive forces in this range are weaker, so to increase measurement
- precision the frequency is used in place of the amplitude to monitor tip
- forces.
- In this mode the cantilever is driven at or slightly above its resonate
- frequency.
- As the tip approaches the surface the forces cause cantilever to shift
- in oscillation frequency.
- By adjusting cantilever height to keep the frequency constant during a
- scan we again have a measurement of surface topography.
- This has the lowest resolution of the three modes and is the slowest, but
- has the least chance of interacting with the surface, keeping tip and sample
- damage to a minimum
-\begin_inset CommandInset citation
-LatexCommand cite
-key "celano2019atomic"
-literal "true"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename Figures/AFM mode contact.svg
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Contact
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset space \qquad{}
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename Figures/AFM mode tapping.svg
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Tapping
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename Figures/Peak force time.svg
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Peak force over time
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset space \qquad{}
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename Figures/Peak force position.svg
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Peak force position
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-AFM interaction modes
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:AFM-interaction-modes"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-(a) Contact and (b) tapping mode tip movements of an AFM during a topography
- scan.
- (c) the tip trajectory over time and the forces on the tip while moving
- along that trajectory.
- (d) the forces on the tip relative to the cantilever position, showing
- the hysteresis in tip forces as the tip switches between repulsive and
- attractive regimes.
-\begin_inset CommandInset citation
-LatexCommand cite
-key "xu2018recent"
-literal "true"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-The last tapping mode we will discuss, peak force tapping, measures the
- force-tip-distance curve as the cantilever is brought close to the surface
- and then pulled away.
- The cantilever is driven well below its resonant frequency, avoiding the
- need to tune the cantilever as in the previous modes and reducing some
- complexity in the measurement setup.
- The tip oscillates the surface, similar to the last two modes.
- As it moves the Van der Waals force switches between repulsive, attractive,
- and then back to repulsive, figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:AFM-interaction-modes"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-c.
- The force curve forms a hysteresis loop with respect to distance, figure
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:AFM-interaction-modes"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-d.
- The continuous monitoring of the force curve allows the AFM to keep the
- force below a set threshold thus minimizing the damage to sample and tip.
- The difference between the maximum (peak) force on tip as it is contact
- with the surface and the tip fully withdrawn is kept kept constant as the
- AFM scans the surface, providing the topography map of the surface
-\begin_inset CommandInset citation
-LatexCommand cite
-key "xu2018recent"
-literal "true"
-
-\end_inset
-
-.
- All AFM measurements reported in this text were done using peak force tapping
- on a Bruker Dimension Icon AFM with ScanAsyst tips (Bruker Scanasyst-Air).
- All images generated and height analysis was done in the software Bruker
- NanoScope Analysis (v2.0).
-\end_layout
-
-\begin_layout Subsubsection
-Piezoresponse force microscopy
-\end_layout
-
-\begin_layout Standard
-Piezoresponse force microscopy (PFM) is an extension of AFM that looks at
- at the electronic response of a surface topography.
- While none of the experimental work in this text contains any PFM data,
- it is an important tool in identifying ferroelectricity in thin films and
- 2D flakes, so we discuss it in that context.
- PFM uses a conductive AFM tip and cantilever, often through and added metallic
- surface coating or itself metallic, electrically connected to an external
- voltage source.
- Samples are connected to the same circuit ground, typically by including
- a conductive substrate or material layer underneath.
- The tip is placed in contact with the material to form an electric field
- like two plates of a capacitor.
- As the name suggests, PFM measures the peizo-deformation response of the
- sample as a voltage is applied between the sample and tip.
- This includes movement in the z-direction through vertical tip deflections,
- along with in plane shearing though the twisting of the cantilever as the
- sample moves.
- Combined, this is used to form a vector map of the responses for materials
- with complex responses, such as ferroelectrics with multiple polarization
- axes.
- An alternating voltage bias is used to drive the electric field, usually
- by a lock-in amplifier, and the PFM measures the phase difference and amplitude
- of the tip oscillations.
- The driving frequency and amplitude used by the PFM can play an important
- role in the the sample response and the signal to noise ratio.
-\begin_inset CommandInset citation
-LatexCommand cite
-key "martin2019characterizing,vasudevan2017ferroelectric"
-literal "true"
-
-\end_inset
-
- One common method, band excitation, uses a multiple frequency wave pack
- around the cantilever's resonant frequency and the responses combined through
- a simple harmonic oscillator model into a single measurement.
- Alternatively, dual AC resonance tracking, uses the difference in amplitude
- responses above and below the resonant frequency to measure the sample.
-\begin_inset CommandInset citation
-LatexCommand cite
-key "martin2019characterizing,vasudevan2017ferroelectric,neumayer2020piezoresponse"
-literal "true"
-
-\end_inset
-
- More complex techniques combines both phase and amplitude variance for
- more accurate measurements in an effort to distinguish ferroelectricity
- from other phenomena and measurement biases
-\begin_inset CommandInset citation
-LatexCommand cite
-key "balke2015differentiating"
-literal "false"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-\noindent
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename Figures/PFM cartoon.svg
-	width 5cm
-	groupId PFM1
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Piezoresponse force microscope
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset space \hfill{}
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename Figures/10.1021_acs.nanolett.7b04852_figure3 - Amplitude and Phase.png
-	width 5cm
-	groupId PFM1
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Phase and amplitude measurement
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset space \hfill{}
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename Figures/10.1021_acs.nanolett.7b04852_figure3 - remnant.png
-	width 5cm
-	groupId PFM1
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Remnant polarization measurement
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-PFM and ferroelectric materials
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:PFM-and-ferroelectric-materials"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-a) a piezoresponse force microscope, the configuration is similar to an
- AFM with an lock-in amplifier and variable voltage source connected electronica
-lly to a conductive tip.
- (b) PFM phase and amplitude measurements on a single point of an 6nm thick
-\begin_inset Formula $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$
-\end_inset
-
- flake showing hysteresis typical for a ferroelectric material.
- (c) remnant polarization in the out-of-plane direction written into a similar
- flake using a bias tip with +6V and -7V, then read back using an unbiased
- tip.
- Scale bar is 
-\begin_inset Formula $1\mu m$
-\end_inset
-
-.
- (b-c) Adapted with permission from 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "cui2018intercorrelated"
-literal "true"
-
-\end_inset
-
-.
- Copyright 2018 American Chemical Society.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-There are two common PFM techniques commonly used to identify ferroelectricity,
- namely the observation electromechanical hysteresis loops and remnant states
-\begin_inset CommandInset citation
-LatexCommand cite
-key "martin2019characterizing"
-literal "true"
-
-\end_inset
-
-.
- In the first method, the bias voltage is increased and decreased in a positive
- to negative loop at a single point on the surface.
- Past the positive and negative coercive fields, a domain begins to nucleate
- and spreads out with time and increasing voltage.
- In ferroelectrics this shows a butterfly-like hysteresis in phase and loop-like
- hysteresis in amplitude, as seen in figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:PFM-and-ferroelectric-materials"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-b.
- The second method uses the PFM to manipulate ferroelectric domains in the
- out of plane direction and their subsequent observation as evidence for
- the domains.
- The dipoles of the domain are aligned by scanning regions of the surface
- with different voltage biases, using the electric fields to form a pattern
- of different domains.
- The surface is then scanned again with the PFM at zero bias, which looks
- for evidence of the altered ferroelectric domain pattern, like what is
- shown in figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:PFM-and-ferroelectric-materials"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-c.
- This is often known as domain writing/reading or observation of remnant
- polarization states.
- A square pattern typically chosen is a series of rectangles encompassing
- one anther, but domain manipulation can be used to write complex shapes
- if the sample dimensions support it.
- Both PFM techniques can be used to look for the the crossover from ferroelectri
-c to paraelectric as temperature crosses 
-\begin_inset Formula $T_{c}$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-Caution must be used when using PFM to identify ferroelectric behaviors
- as multiple phenomena cause similar responses.
- A short list of some of the most common follows, and they are discussed
- in depth elsewhere
-\begin_inset CommandInset citation
-LatexCommand cite
-key "balke2015differentiating,vasudevan2017ferroelectric"
-literal "true"
-
-\end_inset
-
-.
- The voltage bias from the tip can inject charged particles into the surface
- of the material, and while they typically dissipate after several hours
- in an insulator, the injected trapped charges will appear very similar
- to writing remnant states and hysteresis loops in a ferroelectric.
- Large currents from the tip to the surface can also cause joule heating,
- distorting the lattice and can be again picked up from a subsequent PFM
- scan.
- Strain gradients from the tip putting pressure on thin crystals can reverse
- polarization, the flexoelectric effect.
- The voltage bias from a PFM tip can move ions in a crystal within a unit
- cell or between cells, the former a characteristic of ferroelectric dipoles
- while the latter is ionic conduction.
- Both cause distortion of the crystal structure and are virtually indistinguisha
-ble from each other by PFM.
- At high enough electric fields, amplified by the sharp point of the PFM
- tip, the surface chemistry can be altered through electrochemical reactions,
- especially with oxides.
- These changes can be either reversible or irreversible, even within the
- same material using different voltages.
-\begin_inset CommandInset citation
-LatexCommand cite
-key "balke2015differentiating,vasudevan2017ferroelectric"
-literal "true"
-
-\end_inset
-
- There are other less common pit-falls not listed here, and ways to mitigate
- some of the problems mentioned, but both are beyond the scope of what should
- be discussed here.
- PFM should almost never be taken as complete proof that a material is ferroelec
-tric, but still can be an excellent tool to used to study properties of
- ferroelectric materials such as domain propagation.
-\end_layout
-
-\begin_layout Subsection
-Optical second harmonic generation
-\end_layout
-
-\begin_layout Standard
-A process frequently used to study crystal structure and material properties
- is optical second harmonic generation (SHG).
- A single frequency laser is used to measure the crystal medium.
- As can be inferred from its name, pairs of photons interact with the medium
- and generate photons at twice the initial frequency.
- Keeping to the electric field contribution, this nonlinear process is described
- mathematically as
-\begin_inset Formula 
-\begin{equation}
-P\left(2\omega\right)=\chi^{\left(2\right)}E\left(\omega\right)E\left(\omega\right)
-\end{equation}
-
-\end_inset
-
-where 
-\begin_inset Formula $P$
-\end_inset
-
- is the induced dipole per unit volume, 
-\begin_inset Formula $E\left(\omega\right)$
-\end_inset
-
- the electric field from a photon with frequency 
-\begin_inset Formula $\omega$
-\end_inset
-
-, and 
-\begin_inset Formula $\chi$
-\end_inset
-
- the three-rank nonlinear susceptibility tensor of the material
-\begin_inset CommandInset citation
-LatexCommand cite
-key "ma2020rich"
-literal "true"
-
-\end_inset
-
-.
- If we approximate 
-\begin_inset Formula $\chi$
-\end_inset
-
- in a multipole expansion
-\begin_inset Formula 
-\[
-\chi^{\left(2\right)}\left(\omega,\vec{q}\right)\ensuremath{\approx}\chi_{ED}^{\left(2\right)}\left(\omega\right)+\chi_{EQ}^{\left(2\right)}\left(\omega\right)+O\left(\vec{q}^{2}\right)
-\]
-
-\end_inset
-
-where 
-\begin_inset Formula $q$
-\end_inset
-
- is the wave vector of the incident photon, 
-\begin_inset Formula $\chi_{ED}$
-\end_inset
-
- is the electric dipole contribution, and 
-\begin_inset Formula $\chi_{EQ}$
-\end_inset
-
- electric quadrupole
-\begin_inset CommandInset citation
-LatexCommand cite
-key "denev2011probing"
-literal "true"
-
-\end_inset
-
-.
- Typically the quadrupole response is much smaller than the dipole, though
- it can still be measured and gives valuable information about some crystal
- structures, but we can neglect it for this discussion.
- The 
-\begin_inset Formula $\chi_{EQ}$
-\end_inset
-
- tensor is constrained by several symmetries giving it just 10 independent
- parameters, but most importantly it goes to 
-\begin_inset Formula $\chi_{EQ,ijk}=0$
-\end_inset
-
- in a centrosymmetric system.
- As ferroelectricity can only exist in non-centrosymmetric systems, SHG
- response is an important test to see if a crystal is a possible ferroelectric
- material.
-\begin_inset CommandInset citation
-LatexCommand cite
-key "denev2011probing"
-literal "true"
-
-\end_inset
-
- While it can not identify ferroelectricity, SHG can quickly screen out
- non-ferroelectric materials, and can measure 2D crystals down to a single
- layer
-\begin_inset CommandInset citation
-LatexCommand cite
-key "leisgang2018optical"
-literal "true"
-
-\end_inset
-
-.
- Figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Optical-second-harmonic-generation"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- shows a simplified setup of how this can be done in practice.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/10.1088_2053-1583_aba564_figure1 - schematic.jpg
-	lyxscale 10
-	width 10cm
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Optical second harmonic generation
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Optical-second-harmonic-generation"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-Schematic of an optical second harmonic measurement setup.
- Laser light (starting from the left left) passes through a dichroic mirror
- and is focused on a crystal medium.
- Generated light is reflected back through the lens and partially reflects
- of the mirror (to the top left) so that the intensity of the generated-reflecte
-d light may be measured.
- Used with permission of IOP Publishing, (ref 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "murray2020second"
-literal "true"
-
-\end_inset
-
-) “Second harmonic generation in two-dimensional transition metal dichalcogenide
-s with growth and post-synthesis defects,” Murray et al., 2D Materials, 7(4),
- 2020; permission conveyed through Copyright Clearance Center, Inc.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-One of the notable advantages of SHG is its ability to measure materials
- down to a single layer thick.
- SHG intensity scans across a material may be used to identify structural
- transitions such as grain boundaries
-\begin_inset CommandInset citation
-LatexCommand cite
-key "murray2020second"
-literal "true"
-
-\end_inset
-
-.
- At a grain boundary or defect, photons can interfere with each other destructiv
-ely resulting in a decrease in output intensity compared to a uniform crystal.
- Another area in which SHG excels is identifying phase transitions, such
- as a paraelectric to ferroelectric temperature transition, though the slope
- of the change in response intensity.
-\begin_inset CommandInset citation
-LatexCommand cite
-key "guan2020recent"
-literal "true"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Using polarized light, the SHG measurement of the electric dipole term can
- help determine the spacial symmetry of a crystal.
-\begin_inset CommandInset citation
-LatexCommand cite
-key "mennel2018optical"
-literal "true"
-
-\end_inset
-
- The intensity of the light response is given by 
-\begin_inset Formula 
-\begin{align}
-I_{\parallel} & =I\cos^{2}\left(3\theta\right)\\
-I_{\perp} & =I\sin^{2}\left(3\theta\right)
-\end{align}
-
-\end_inset
-
-where 
-\begin_inset Formula $\theta$
-\end_inset
-
- is the angle between the laser light and the crystalline armchair direction,
- 
-\begin_inset Formula $I_{\parallel}$
-\end_inset
-
- and 
-\begin_inset Formula $I_{\perp}$
-\end_inset
-
- are the parallel and perpendicular polarization-resolved intensity.
-\begin_inset CommandInset citation
-LatexCommand cite
-key "li2013probing"
-literal "true"
-
-\end_inset
-
- Polarization resolved SHG is often used in place of TEM and other more
- resource intensive tools to identify crystal polymorphs as it can be done
- quickly and cheaply.
- A Ti:Sapphire femtosecond laser (150 fs, 80 MHz) with a wavelength centered
- around 
-\begin_inset Formula $\lambda=800nn$
-\end_inset
-
- was used for the measurements reported here, along with a 
-\begin_inset Formula $\lambda/4$
-\end_inset
-
- wave plate to followed by a linear polarizer that could be freely rotated
- for both the excitation and generated photon beam
-\begin_inset CommandInset citation
-LatexCommand cite
-key "murray2020nonlinear"
-literal "true"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Subsection
-Raman spectroscopy
-\end_layout
-
-\begin_layout Standard
-Another optical process often used for crystal characterization of 2D materials
- is Raman spectroscopy, which uses the inelastic scattering of photons to
- measure vibration modes in the material.
- A laser is first used to excite electrons in into a higher virtual energy
- state.
- Most electrons will drop back down to the initial energy level and emit
- a photon with the same frequency as the initial photons, a process known
- as Rayleigh scattering.
- The remaining small percentage of the electrons will interact with phonons
- or other excited states.
- When those electrons return to a lower energy level they emit a photon
- with lower (higher) energy and frequency in a process known as (Anti-)Stokes
- scattering.
- To quantify this, the frequencies of emitted light light are spatially
- separated using a diffraction grating and the relative intensities of each
- frequency is recorded.
-\begin_inset CommandInset citation
-LatexCommand cite
-key "wu2019structural,zhang2015phonon,liang2018raman"
-literal "true"
-
-\end_inset
-
- Figures 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Raman-Spectroscopy"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-a shows the three aforementioned scattering mechanisms and 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Raman-Spectroscopy"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-b a simplified Raman setup.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename Figures/Raman scattering.svg
-	width 5cm
-	groupId Raman
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Scattering mechanisms
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset space \hfill{}
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename Figures/Raman schematic.svg
-	width 5cm
-	groupId Raman
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Schematic
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset space \hfill{}
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename Figures/Raman WS2 2017_09_28_11_05_41_film_duospot_30um_01.svg
-	width 5cm
-	groupId Raman
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Response from 
-\begin_inset Formula $\mathrm{WS_{2}}$
-\end_inset
-
- film
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Raman Spectroscopy
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Raman-Spectroscopy"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-(a) Three of the scattering mechanisms of monochromatic light seen in Raman
- spectroscopy measurements: Rayleigh, Stokes, and Anti-Stokes.
- Each process starts with the absorption of a photon, propelling a charged
- particle into an excited state in a virtual energy band.
- The particle then drops back down to the vibrational energy band and emits
- a photon with the respective same, less, or more energy than the absorbed
- photon.
- (b) A simplified Raman measurement system.
- Monochromatic light is directed onto a sample then the emitted light is
- separated out using a grating and the intensity of each frequency measured
- using a CCD camera.
- Polarizers used in some measurements are included.
- (c) Data from a 
-\begin_inset Formula $\mathrm{WS_{2}}$
-\end_inset
-
- film taken at room temperature showing two distinctive peaks.
- Acquired using a Horiba LabRam HR Evolution microscope.
- These peaks are typically found around 360 nm (
-\begin_inset Formula $\text{\mathrm{E_{g2}^{1}}}$
-\end_inset
-
-) and 420 nm (
-\begin_inset Formula $\text{\mathrm{A_{1g}}}$
-\end_inset
-
-)
-\begin_inset CommandInset citation
-LatexCommand cite
-key "mccreary2016synthesis"
-literal "true"
-
-\end_inset
-
-.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-The resulting light forms intensity peaks at different frequencies that
- correspond to the vibration modes of the material, similar to what is shown
- in figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Raman-Spectroscopy"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-c.
- By looking for specific peak frequencies for a given material it is possible
- to identify or at least narrow down the possible polymorphs of a 2D crystal
-\begin_inset CommandInset citation
-LatexCommand cite
-key "wu2019structural,liang2018raman"
-literal "true"
-
-\end_inset
-
-.
- This provides a quick, nondestructive method to distinguish thin crystal
- materials and some properties, similar to SHG.
- Raman spectroscopy can also use relative intensity of different peaks to
- distinguish the number of layers of a van der Waals material
-\begin_inset CommandInset citation
-LatexCommand cite
-key "nguyen2014excitation,zhang2015phonon"
-literal "true"
-
-\end_inset
-
- as well as identify defects within the crystal structure when mapping over
- the surface
-\begin_inset CommandInset citation
-LatexCommand cite
-key "kim2012raman,fujisawa2018effect"
-literal "true"
-
-\end_inset
-
-.
- All Raman measurements discussed here were done using a Renishaw inVia
- Raman or Horiba LabRam HR Evolution microscope.
- Software was used to remove the substrate signal from the background.
- The software can fit the peaks to find the wavelength shift in overlapping
- peaks when necessary.
- 
-\end_layout
-
-\begin_layout Standard
-Raman spectroscopy can be used to to look for signs of ferroelectricity
- or transition to a ferroelectric state.
- This is often done by monitoring for Raman modes that appear (disappear)
- corresponding to the structural transition to a ferroelectric (paraelectric)
- state while changing temperature
-\begin_inset CommandInset citation
-LatexCommand cite
-key "jin2019raman,tsukada2018raman"
-literal "true"
-
-\end_inset
-
-, pressure
-\begin_inset CommandInset citation
-LatexCommand cite
-key "swain2020understanding"
-literal "true"
-
-\end_inset
-
-, or other mechanisms.
- Raman spectroscopy can also be enhanced to aquire polarized measurements
- by including rotatable linear polarizers on the excitation and emitted
- photon beams
-\begin_inset CommandInset citation
-LatexCommand cite
-key "kim2020polarized"
-literal "true"
-
-\end_inset
-
-.
- This can give additional information about the orientation of the crystal
-\begin_inset CommandInset citation
-LatexCommand cite
-key "kim2020polarized,gabel2020understanding"
-literal "true"
-
-\end_inset
-
-, separate overlapping frequency signals from different modes
-\begin_inset CommandInset citation
-LatexCommand cite
-key "kim2020polarized,tsukada2020multivariate,tsukada2018raman"
-literal "true"
-
-\end_inset
-
-, and show atomic displacements
-\begin_inset CommandInset citation
-LatexCommand cite
-key "de2021femtometer"
-literal "true"
-
-\end_inset
-
-.
- 
 \end_layout
 
 \begin_layout Section
@@ -3626,18 +2225,7 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
-All instruments were controlled and monitored from a single LabView program,
- Project Unity, see 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "Project-Unity"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
+All instruments were controlled and monitored from a single LabView program.
  While LabView is a terrible language for writing a larger programs in,
  it was chosen as it integrated well with legacy code and current lab equipment.
  Project Unity contains a series of launchers that contained easy-to-change
@@ -3658,12 +2246,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Subsection
-Physical Properties Measurement System cryostat
+Physical Properties Measurement System 
 \end_layout
 
 \begin_layout Standard
-Most of the manufactured devices mentioned in this text were measured in
- a Physical Property Measurement System (PPMS; Quantum Design) as it provides
+Most of the fabricated devices mentioned in this text were measured in a
+ Physical Property Measurement System (PPMS; Quantum Design) as it provides
  an ideal measurement environment platform.
  The PPMS uses a sample wiring puck, figure 
 \begin_inset CommandInset ref
@@ -3737,7 +2325,7 @@ re and magnetic field control into Project Unity.
 \end_layout
 
 \begin_layout Subsection
-Electrical measurements
+Electrical transport measurements
 \end_layout
 
 \begin_layout Standard
@@ -4370,6 +2958,1393 @@ literal "true"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+Thin crystal characterization
+\end_layout
+
+\begin_layout Subsection
+Scanning probe microscopy
+\end_layout
+
+\begin_layout Standard
+Scanning probe microscopy (SPM) is a series of techniques to produce detailed
+ characterization over a 3D surface.
+ A long, sharp needle of material is held perpendicular to the plane of
+ the surface allowing the SPM to measure the interactions of the tip and
+ surface.
+ The tip is traced across the plane forming a map of the tip-surface interaction
+s.
+ Piezoelectric crystals attached to the tip let the tip move in over short
+ distances in any direction with fine precision.
+ This is often combined with additional motors, such as a stepper motor,
+ can move the entire piezoelectric crystals and tip structure over larger
+ distances but sacrifice precision to do so.
+ With an isolated environment, engineered to shield the tip from external
+ noise, and a sharp tip, a SPM map can provide details down to the atomic
+ level.
+ There are many different varieties of SPM that measure quantities like
+ magnetic field, density of states, and spin; and far too many to discuss
+ here, so only a brief overview of the most relevant are below.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Atomic-force-microscope"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ shows the the typical setup of most SPM microscopes.
+\end_layout
+
+\begin_layout Subsubsection
+Atomic force microscopy
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/SPS cartoon.svg
+	width 5cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Atomic force microscope
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Atomic-force-microscope"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+An atomic force microscope tip on a cantilever extends over a 3D surface
+ with varied topography.
+ The relative deflection of the tip is measured by a laser reflected off
+ the back of the cantilever to a photodector capable of measuring the shifts
+ in the horizontal and vertical as the cantilever bends and twists.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Atomic force microscopy (AFM) is used to measure detailed topographical
+ information from 3D surfaces with small variations in height.
+ The tip is fixed to a small, flexible cantilever and the cantilever is
+ extended horizontally over the surface so that the tip points perpendicular
+ between the cantilever and surface.
+ The tip interactions with the surface will cause the cantilever to bend
+ and twist.
+ To measure the the movement of the cantilever and tip a laser aligned to
+ reflect of the top of the cantilever.
+ The top of the cantilever, polished for this purpose, reflects the laser
+ to a photodetector.
+ As the cantilever flexes and tilts the reflected laser moves across the
+ photodetector, optically measuring the tip deflection with great precision.
+ The AFM computer monitors the tip deflection as it traces the tip across
+ the surface, and can modify the movement in a feedback loop to increase
+ measurement precision.
+ Because the tip deflection is dependent on the materials involved and other
+ interaction conditions, an AFM scan is not a true topography map of the
+ surface, but for most purposes they are near-indistinguishable and it is
+ typically treated as a topography measurement for most purposes.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "celano2019atomic"
+literal "true"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+There are different methodologies of AFM measurement, though all measure
+ some form of force interactions between the tip and the surface.
+ As the tip is brought close to the surface it is initially repelled by
+ the van der Walls forces, but as the distance continues to decrease the
+ force becomes attractive, pulling the tip towards the surface.
+ The original method, contact AFM, keeps the tip in the attractive region
+ of the force interactions as it moved across the material surface, figure
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:AFM-interaction-modes"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+a.
+ The cantilever force is kept constant by moving the cantilever holder up
+ and down to maintain the deflection, making the holder z-position a measurement
+ of the surface topography.
+ Keeping the tip in contact during lateral movements can damage soft materials
+ and the tip thus distorting the image, but allows for faster measurements
+ and high resolution
+\begin_inset CommandInset citation
+LatexCommand cite
+key "celano2019atomic"
+literal "true"
+
+\end_inset
+
+.
+ To avoid the surface and tip damage, tapping mode AFM was devised, which
+ keeps the tip at longer distances from the surface during lateral moves.
+ In tapping mode the cantilever is driven to oscillate at or slightly below
+ its resonant frequency and lightly taps the surface to measure height,
+ figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:AFM-interaction-modes"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+b.
+ Tapping mode monitors the amplitude of the cantilever as it oscillates,
+ keeping it constant as the tip is scanned, providing the height measurement
+\begin_inset CommandInset citation
+LatexCommand cite
+key "celano2019atomic"
+literal "true"
+
+\end_inset
+
+.
+ Non-contact AFM moves the tip farther from the surface than tapping mode,
+ so the tip is operating in the repulsive force range.
+ The repulsive forces in this range are weaker, so to increase measurement
+ precision the frequency is used in place of the amplitude to monitor tip
+ forces.
+ In this mode the cantilever is driven at or slightly above its resonate
+ frequency.
+ As the tip approaches the surface the forces cause cantilever to shift
+ in oscillation frequency.
+ By adjusting cantilever height to keep the frequency constant during a
+ scan we again have a measurement of surface topography.
+ This has the lowest resolution of the three modes and is the slowest, but
+ has the least chance of interacting with the surface, keeping tip and sample
+ damage to a minimum
+\begin_inset CommandInset citation
+LatexCommand cite
+key "celano2019atomic"
+literal "true"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/AFM mode contact.svg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Contact
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/AFM mode tapping.svg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tapping
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/Peak force time.svg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Peak force over time
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/Peak force position.svg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Peak force position
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+AFM interaction modes
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:AFM-interaction-modes"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+(a) Contact and (b) tapping mode tip movements of an AFM during a topography
+ scan.
+ (c) the tip trajectory over time and the forces on the tip while moving
+ along that trajectory.
+ (d) the forces on the tip relative to the cantilever position, showing
+ the hysteresis in tip forces as the tip switches between repulsive and
+ attractive regimes.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "xu2018recent"
+literal "true"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The last tapping mode we will discuss, peak force tapping, measures the
+ force-tip-distance curve as the cantilever is brought close to the surface
+ and then pulled away.
+ The cantilever is driven well below its resonant frequency, avoiding the
+ need to tune the cantilever as in the previous modes and reducing some
+ complexity in the measurement setup.
+ The tip oscillates the surface, similar to the last two modes.
+ As it moves the Van der Waals force switches between repulsive, attractive,
+ and then back to repulsive, figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:AFM-interaction-modes"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+c.
+ The force curve forms a hysteresis loop with respect to distance, figure
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:AFM-interaction-modes"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+d.
+ The continuous monitoring of the force curve allows the AFM to keep the
+ force below a set threshold thus minimizing the damage to sample and tip.
+ The difference between the maximum (peak) force on tip as it is contact
+ with the surface and the tip fully withdrawn is kept kept constant as the
+ AFM scans the surface, providing the topography map of the surface
+\begin_inset CommandInset citation
+LatexCommand cite
+key "xu2018recent"
+literal "true"
+
+\end_inset
+
+.
+ All AFM measurements reported in this text were done using peak force tapping
+ on a Bruker Dimension Icon AFM with ScanAsyst tips (Bruker Scanasyst-Air).
+ All images generated and height analysis was done in the software Bruker
+ NanoScope Analysis (v2.0).
+\end_layout
+
+\begin_layout Section
+Other thin crystal characterization methods
+\end_layout
+
+\begin_layout Subsection
+Piezoresponse force microscopy
+\end_layout
+
+\begin_layout Standard
+Piezoresponse force microscopy (PFM) is an extension of AFM that looks at
+ at the electronic response of a surface topography.
+ While none of the experimental work in this text contains any PFM data,
+ it is an important tool in identifying ferroelectricity in thin films and
+ 2D flakes, so we discuss it in that context.
+ PFM uses a conductive AFM tip and cantilever, often through and added metallic
+ surface coating or itself metallic, electrically connected to an external
+ voltage source.
+ Samples are connected to the same circuit ground, typically by including
+ a conductive substrate or material layer underneath.
+ The tip is placed in contact with the material to form an electric field
+ like two plates of a capacitor.
+ As the name suggests, PFM measures the peizo-deformation response of the
+ sample as a voltage is applied between the sample and tip.
+ This includes movement in the z-direction through vertical tip deflections,
+ along with in plane shearing though the twisting of the cantilever as the
+ sample moves.
+ Combined, this is used to form a vector map of the responses for materials
+ with complex responses, such as ferroelectrics with multiple polarization
+ axes.
+ An alternating voltage bias is used to drive the electric field, usually
+ by a lock-in amplifier, and the PFM measures the phase difference and amplitude
+ of the tip oscillations.
+ The driving frequency and amplitude used by the PFM can play an important
+ role in the the sample response and the signal to noise ratio.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "martin2019characterizing,vasudevan2017ferroelectric"
+literal "true"
+
+\end_inset
+
+ One common method, band excitation, uses a multiple frequency wave pack
+ around the cantilever's resonant frequency and the responses combined through
+ a simple harmonic oscillator model into a single measurement.
+ Alternatively, dual AC resonance tracking, uses the difference in amplitude
+ responses above and below the resonant frequency to measure the sample.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "martin2019characterizing,vasudevan2017ferroelectric,neumayer2020piezoresponse"
+literal "true"
+
+\end_inset
+
+ More complex techniques combines both phase and amplitude variance for
+ more accurate measurements in an effort to distinguish ferroelectricity
+ from other phenomena and measurement biases
+\begin_inset CommandInset citation
+LatexCommand cite
+key "balke2015differentiating"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/PFM cartoon.svg
+	width 5cm
+	groupId PFM1
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Piezoresponse force microscope
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/10.1021_acs.nanolett.7b04852_figure3 - Amplitude and Phase.png
+	width 5cm
+	groupId PFM1
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Phase and amplitude measurement
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/10.1021_acs.nanolett.7b04852_figure3 - remnant.png
+	width 5cm
+	groupId PFM1
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Remnant polarization measurement
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+PFM and ferroelectric materials
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:PFM-and-ferroelectric-materials"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+a) a piezoresponse force microscope, the configuration is similar to an
+ AFM with an lock-in amplifier and variable voltage source connected electronica
+lly to a conductive tip.
+ (b) PFM phase and amplitude measurements on a single point of an 6nm thick
+\begin_inset Formula $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$
+\end_inset
+
+ flake showing hysteresis typical for a ferroelectric material.
+ (c) remnant polarization in the out-of-plane direction written into a similar
+ flake using a bias tip with +6V and -7V, then read back using an unbiased
+ tip.
+ Scale bar is 
+\begin_inset Formula $1\mu m$
+\end_inset
+
+.
+ (b-c) Adapted with permission from 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "cui2018intercorrelated"
+literal "true"
+
+\end_inset
+
+.
+ Copyright 2018 American Chemical Society.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+There are two common PFM techniques commonly used to identify ferroelectricity,
+ namely the observation electromechanical hysteresis loops and remnant states
+\begin_inset CommandInset citation
+LatexCommand cite
+key "martin2019characterizing"
+literal "true"
+
+\end_inset
+
+.
+ In the first method, the bias voltage is increased and decreased in a positive
+ to negative loop at a single point on the surface.
+ Past the positive and negative coercive fields, a domain begins to nucleate
+ and spreads out with time and increasing voltage.
+ In ferroelectrics this shows a butterfly-like hysteresis in phase and loop-like
+ hysteresis in amplitude, as seen in figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:PFM-and-ferroelectric-materials"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+b.
+ The second method uses the PFM to manipulate ferroelectric domains in the
+ out of plane direction and their subsequent observation as evidence for
+ the domains.
+ The dipoles of the domain are aligned by scanning regions of the surface
+ with different voltage biases, using the electric fields to form a pattern
+ of different domains.
+ The surface is then scanned again with the PFM at zero bias, which looks
+ for evidence of the altered ferroelectric domain pattern, like what is
+ shown in figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:PFM-and-ferroelectric-materials"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+c.
+ This is often known as domain writing/reading or observation of remnant
+ polarization states.
+ A square pattern typically chosen is a series of rectangles encompassing
+ one anther, but domain manipulation can be used to write complex shapes
+ if the sample dimensions support it.
+ Both PFM techniques can be used to look for the the crossover from ferroelectri
+c to paraelectric as temperature crosses 
+\begin_inset Formula $T_{c}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Caution must be used when using PFM to identify ferroelectric behaviors
+ as multiple phenomena cause similar responses.
+ A short list of some of the most common follows, and they are discussed
+ in depth elsewhere
+\begin_inset CommandInset citation
+LatexCommand cite
+key "balke2015differentiating,vasudevan2017ferroelectric"
+literal "true"
+
+\end_inset
+
+.
+ The voltage bias from the tip can inject charged particles into the surface
+ of the material, and while they typically dissipate after several hours
+ in an insulator, the injected trapped charges will appear very similar
+ to writing remnant states and hysteresis loops in a ferroelectric.
+ Large currents from the tip to the surface can also cause joule heating,
+ distorting the lattice and can be again picked up from a subsequent PFM
+ scan.
+ Strain gradients from the tip putting pressure on thin crystals can reverse
+ polarization, the flexoelectric effect.
+ The voltage bias from a PFM tip can move ions in a crystal within a unit
+ cell or between cells, the former a characteristic of ferroelectric dipoles
+ while the latter is ionic conduction.
+ Both cause distortion of the crystal structure and are virtually indistinguisha
+ble from each other by PFM.
+ At high enough electric fields, amplified by the sharp point of the PFM
+ tip, the surface chemistry can be altered through electrochemical reactions,
+ especially with oxides.
+ These changes can be either reversible or irreversible, even within the
+ same material using different voltages.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "balke2015differentiating,vasudevan2017ferroelectric"
+literal "true"
+
+\end_inset
+
+ There are other less common pit-falls not listed here, and ways to mitigate
+ some of the problems mentioned, but both are beyond the scope of what should
+ be discussed here.
+ PFM should almost never be taken as complete proof that a material is ferroelec
+tric, but still can be an excellent tool to used to study properties of
+ ferroelectric materials such as domain propagation.
+\end_layout
+
+\begin_layout Subsection
+Optical second harmonic generation
+\end_layout
+
+\begin_layout Standard
+A process frequently used to study crystal structure and material properties
+ is optical second harmonic generation (SHG).
+ A single frequency laser is used to measure the crystal medium.
+ As can be inferred from its name, pairs of photons interact with the medium
+ and generate photons at twice the initial frequency.
+ Keeping to the electric field contribution, this nonlinear process is described
+ mathematically as
+\begin_inset Formula 
+\begin{equation}
+P\left(2\omega\right)=\chi^{\left(2\right)}E\left(\omega\right)E\left(\omega\right)
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $P$
+\end_inset
+
+ is the induced dipole per unit volume, 
+\begin_inset Formula $E\left(\omega\right)$
+\end_inset
+
+ the electric field from a photon with frequency 
+\begin_inset Formula $\omega$
+\end_inset
+
+, and 
+\begin_inset Formula $\chi$
+\end_inset
+
+ the three-rank nonlinear susceptibility tensor of the material
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ma2020rich"
+literal "true"
+
+\end_inset
+
+.
+ If we approximate 
+\begin_inset Formula $\chi$
+\end_inset
+
+ in a multipole expansion
+\begin_inset Formula 
+\[
+\chi^{\left(2\right)}\left(\omega,\vec{q}\right)\ensuremath{\approx}\chi_{ED}^{\left(2\right)}\left(\omega\right)+\chi_{EQ}^{\left(2\right)}\left(\omega\right)+O\left(\vec{q}^{2}\right)
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $q$
+\end_inset
+
+ is the wave vector of the incident photon, 
+\begin_inset Formula $\chi_{ED}$
+\end_inset
+
+ is the electric dipole contribution, and 
+\begin_inset Formula $\chi_{EQ}$
+\end_inset
+
+ electric quadrupole
+\begin_inset CommandInset citation
+LatexCommand cite
+key "denev2011probing"
+literal "true"
+
+\end_inset
+
+.
+ Typically the quadrupole response is much smaller than the dipole, though
+ it can still be measured and gives valuable information about some crystal
+ structures, but we can neglect it for this discussion.
+ The 
+\begin_inset Formula $\chi_{EQ}$
+\end_inset
+
+ tensor is constrained by several symmetries giving it just 10 independent
+ parameters, but most importantly it goes to 
+\begin_inset Formula $\chi_{EQ,ijk}=0$
+\end_inset
+
+ in a centrosymmetric system.
+ As ferroelectricity can only exist in non-centrosymmetric systems, SHG
+ response is an important test to see if a crystal is a possible ferroelectric
+ material.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "denev2011probing"
+literal "true"
+
+\end_inset
+
+ While it can not identify ferroelectricity, SHG can quickly screen out
+ non-ferroelectric materials, and can measure 2D crystals down to a single
+ layer
+\begin_inset CommandInset citation
+LatexCommand cite
+key "leisgang2018optical"
+literal "true"
+
+\end_inset
+
+.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Optical-second-harmonic-generation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ shows a simplified setup of how this can be done in practice.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/10.1088_2053-1583_aba564_figure1 - schematic.jpg
+	lyxscale 10
+	width 10cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Optical second harmonic generation
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Optical-second-harmonic-generation"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Schematic of an optical second harmonic measurement setup.
+ Laser light (starting from the left left) passes through a dichroic mirror
+ and is focused on a crystal medium.
+ Generated light is reflected back through the lens and partially reflects
+ of the mirror (to the top left) so that the intensity of the generated-reflecte
+d light may be measured.
+ Used with permission of IOP Publishing, (ref 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "murray2020second"
+literal "true"
+
+\end_inset
+
+) “Second harmonic generation in two-dimensional transition metal dichalcogenide
+s with growth and post-synthesis defects,” Murray et al., 2D Materials, 7(4),
+ 2020; permission conveyed through Copyright Clearance Center, Inc.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+One of the notable advantages of SHG is its ability to measure materials
+ down to a single layer thick.
+ SHG intensity scans across a material may be used to identify structural
+ transitions such as grain boundaries
+\begin_inset CommandInset citation
+LatexCommand cite
+key "murray2020second"
+literal "true"
+
+\end_inset
+
+.
+ At a grain boundary or defect, photons can interfere with each other destructiv
+ely resulting in a decrease in output intensity compared to a uniform crystal.
+ Another area in which SHG excels is identifying phase transitions, such
+ as a paraelectric to ferroelectric temperature transition, though the slope
+ of the change in response intensity.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "guan2020recent"
+literal "true"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Using polarized light, the SHG measurement of the electric dipole term can
+ help determine the spacial symmetry of a crystal.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "mennel2018optical"
+literal "true"
+
+\end_inset
+
+ The intensity of the light response is given by 
+\begin_inset Formula 
+\begin{align}
+I_{\parallel} & =I\cos^{2}\left(3\theta\right)\\
+I_{\perp} & =I\sin^{2}\left(3\theta\right)
+\end{align}
+
+\end_inset
+
+where 
+\begin_inset Formula $\theta$
+\end_inset
+
+ is the angle between the laser light and the crystalline armchair direction,
+ 
+\begin_inset Formula $I_{\parallel}$
+\end_inset
+
+ and 
+\begin_inset Formula $I_{\perp}$
+\end_inset
+
+ are the parallel and perpendicular polarization-resolved intensity.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "li2013probing"
+literal "true"
+
+\end_inset
+
+ Polarization resolved SHG is often used in place of TEM and other more
+ resource intensive tools to identify crystal polymorphs as it can be done
+ quickly and cheaply.
+ A Ti:Sapphire femtosecond laser (150 fs, 80 MHz) with a wavelength centered
+ around 
+\begin_inset Formula $\lambda=800nn$
+\end_inset
+
+ was used for the measurements reported here, along with a 
+\begin_inset Formula $\lambda/4$
+\end_inset
+
+ wave plate to followed by a linear polarizer that could be freely rotated
+ for both the excitation and generated photon beam
+\begin_inset CommandInset citation
+LatexCommand cite
+key "murray2020nonlinear"
+literal "true"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Raman spectroscopy
+\end_layout
+
+\begin_layout Standard
+Another optical process often used for crystal characterization of 2D materials
+ is Raman spectroscopy, which uses the inelastic scattering of photons to
+ measure vibration modes in the material.
+ A laser is first used to excite electrons in into a higher virtual energy
+ state.
+ Most electrons will drop back down to the initial energy level and emit
+ a photon with the same frequency as the initial photons, a process known
+ as Rayleigh scattering.
+ The remaining small percentage of the electrons will interact with phonons
+ or other excited states.
+ When those electrons return to a lower energy level they emit a photon
+ with lower (higher) energy and frequency in a process known as (Anti-)Stokes
+ scattering.
+ To quantify this, the frequencies of emitted light light are spatially
+ separated using a diffraction grating and the relative intensities of each
+ frequency is recorded.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "wu2019structural,zhang2015phonon,liang2018raman"
+literal "true"
+
+\end_inset
+
+ Figures 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Raman-Spectroscopy"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+a shows the three aforementioned scattering mechanisms and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Raman-Spectroscopy"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+b a simplified Raman setup.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/Raman scattering.svg
+	width 5cm
+	groupId Raman
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Scattering mechanisms
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/Raman schematic.svg
+	width 5cm
+	groupId Raman
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Schematic
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/Raman WS2 2017_09_28_11_05_41_film_duospot_30um_01.svg
+	width 5cm
+	groupId Raman
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Response from 
+\begin_inset Formula $\mathrm{WS_{2}}$
+\end_inset
+
+ film
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Raman Spectroscopy
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Raman-Spectroscopy"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+(a) Three of the scattering mechanisms of monochromatic light seen in Raman
+ spectroscopy measurements: Rayleigh, Stokes, and Anti-Stokes.
+ Each process starts with the absorption of a photon, propelling a charged
+ particle into an excited state in a virtual energy band.
+ The particle then drops back down to the vibrational energy band and emits
+ a photon with the respective same, less, or more energy than the absorbed
+ photon.
+ (b) A simplified Raman measurement system.
+ Monochromatic light is directed onto a sample then the emitted light is
+ separated out using a grating and the intensity of each frequency measured
+ using a CCD camera.
+ Polarizers used in some measurements are included.
+ (c) Data from a 
+\begin_inset Formula $\mathrm{WS_{2}}$
+\end_inset
+
+ film taken at room temperature showing two distinctive peaks.
+ Acquired using a Horiba LabRam HR Evolution microscope.
+ These peaks are typically found around 360 nm (
+\begin_inset Formula $\text{\mathrm{E_{g2}^{1}}}$
+\end_inset
+
+) and 420 nm (
+\begin_inset Formula $\text{\mathrm{A_{1g}}}$
+\end_inset
+
+)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "mccreary2016synthesis"
+literal "true"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The resulting light forms intensity peaks at different frequencies that
+ correspond to the vibration modes of the material, similar to what is shown
+ in figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Raman-Spectroscopy"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+c.
+ By looking for specific peak frequencies for a given material it is possible
+ to identify or at least narrow down the possible polymorphs of a 2D crystal
+\begin_inset CommandInset citation
+LatexCommand cite
+key "wu2019structural,liang2018raman"
+literal "true"
+
+\end_inset
+
+.
+ This provides a quick, nondestructive method to distinguish thin crystal
+ materials and some properties, similar to SHG.
+ Raman spectroscopy can also use relative intensity of different peaks to
+ distinguish the number of layers of a van der Waals material
+\begin_inset CommandInset citation
+LatexCommand cite
+key "nguyen2014excitation,zhang2015phonon"
+literal "true"
+
+\end_inset
+
+ as well as identify defects within the crystal structure when mapping over
+ the surface
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kim2012raman,fujisawa2018effect"
+literal "true"
+
+\end_inset
+
+.
+ All Raman measurements discussed here were done using a Renishaw inVia
+ Raman or Horiba LabRam HR Evolution microscope.
+ Software was used to remove the substrate signal from the background.
+ The software can fit the peaks to find the wavelength shift in overlapping
+ peaks when necessary.
+ 
+\end_layout
+
+\begin_layout Standard
+Raman spectroscopy can be used to to look for signs of ferroelectricity
+ or transition to a ferroelectric state.
+ This is often done by monitoring for Raman modes that appear (disappear)
+ corresponding to the structural transition to a ferroelectric (paraelectric)
+ state while changing temperature
+\begin_inset CommandInset citation
+LatexCommand cite
+key "jin2019raman,tsukada2018raman"
+literal "true"
+
+\end_inset
+
+, pressure
+\begin_inset CommandInset citation
+LatexCommand cite
+key "swain2020understanding"
+literal "true"
+
+\end_inset
+
+, or other mechanisms.
+ Raman spectroscopy can also be enhanced to aquire polarized measurements
+ by including rotatable linear polarizers on the excitation and emitted
+ photon beams
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kim2020polarized"
+literal "true"
+
+\end_inset
+
+.
+ This can give additional information about the orientation of the crystal
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kim2020polarized,gabel2020understanding"
+literal "true"
+
+\end_inset
+
+, separate overlapping frequency signals from different modes
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kim2020polarized,tsukada2020multivariate,tsukada2018raman"
+literal "true"
+
+\end_inset
+
+, and show atomic displacements
+\begin_inset CommandInset citation
+LatexCommand cite
+key "de2021femtometer"
+literal "true"
+
+\end_inset
+
+.
+ 
 \end_layout
 
 \end_body

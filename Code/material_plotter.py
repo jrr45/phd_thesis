@@ -340,7 +340,7 @@ def m_order(data):
         label = 'm'
     elif maxV > 10**-6:
         scale = 10**6
-        label = '$\mu$'
+        label = 'μ'
     elif maxV > 10**-9:
         scale = 10**9
         label = 'n'
@@ -374,6 +374,7 @@ def get_cross_section(device, filenames, increments, V_index):
     
     return (np.array(Currents), np.array(Voltages), np.array(Gate_Voltages), Temperatures)
 
+# Plots the current cross sections of gating loops
 def plot_loopI_cross_section(device, filenames, savename, increments=[0,25,50,75], \
                              figsize=def_size, xlim=(None, 330), ylim=(None,None), log=True, \
                              fontsize=def_fontsize, labelsize=def_labelsize, colororder=[0,3,2,1,4,5]):
@@ -400,6 +401,7 @@ def plot_loopI_cross_section(device, filenames, savename, increments=[0,25,50,75
     plt.show()
     plt.clf()
 
+# Plots the resistance cross sections of gating loops
 def plot_loopR_cross_section(device, filenames, savename, increments=[0,25,50,75], \
                              figsize=def_size, xlim=(None, 330), xinc=100, ylim=(None,None), log=True, \
                              fontsize=def_fontsize, labelsize=def_labelsize, colororder=[0,3,2,1,4,5]):
@@ -434,54 +436,60 @@ def plot_loopR_cross_section(device, filenames, savename, increments=[0,25,50,75
     save_generic_svg(fig, device, savename + "_loop_R-cross" + scalename)
     plt.show()
     plt.clf()
-    
-    
-def plot_mobility_μ_cross_section(device, filenames, savename, increments=[0,25,50,75], \
-                             figsize=3, xlim=(None, 330), ylim=(None,None), log=True, fontsize=def_fontsize, labelsize=def_labelsize, colororder=[0,3,2,1,4,5]):
-    colors = colors_set1[colororder]
-    
-    (Currents, Voltages, GateVoltages, Temperatures) = \
-        get_cross_section(device, filenames, increments, 1)
-    
-    mobilities = []
-    for (Vs, Is, V_G) in zip(Voltages, Currents, increments):    
-        Rs = np.array([v/i for (v,i) in zip(Vs,Is)])
-        n = wafer_carrier_density_n(V_G)
-        σs = sheet_conductivity(Rs, device.length, device.width)
-        μs = carrier_mobility_μ(σs, n)
-        mobilities.append(μs)
-        
-    unit_scale = (100.*100.) #m^2 in cm^2
-    mobilities = np.array(mobilities) * unit_scale
-    
-    ymax = [10.] if log else np.nanmax([np.nanmax(y) for y in mobilities]) 
-    (scale_pow, scale_label) = m_order(ymax)
-    
-    fig = plt.figure(figsize=(figsize, figsize), dpi=300)
-    ax = pretty_plot_single(fig, labels=["$\it{T}$ (K)", '$\it{μ}$ (%s $cm^2/V\\cdot s$)' % scale_label],
-                             yscale=('log' if log else 'linear'), fontsize=fontsize, labelsize=labelsize)
-
-    for (color, μs, VG) in zip (colors, mobilities, increments):
-        #real filter
-        ind = np.where(np.logical_and(np.isfinite(μs), μs > 0))
-        μs = μs[ind]
-        T = Temperatures[ind]
-        print("VG: %s V, μ:%s" %(VG, μs))
-        ax.plot(T, np.multiply(μs, scale_pow), '.-', ms=3, linewidth=1.5, color=color)
-
-    ax.set_xlim(xlim)
-    ax.xaxis.set_major_locator(MultipleLocator(100))
-    ax.set_ylim(ylim)
-
-    scalename = "_log" if log else "_linear"
-    print(savename+  "_loop_μ-cross" +scalename)
-    save_generic_svg(fig, device, savename + "_loop_μ-cross" + scalename)
-    plt.show()
-    plt.clf()
 
 #%% Generic 2D plots
 
-# generic functions
+# plots the current vs gate voltage of each file
+def plot_IDvsVg_generic(device, files, savename, colors, log=False, size=def_size, majorx=25, 
+                        xlim=(None,None), ylim=(None,None), fontsize=def_fontsize, labelsize=def_labelsize):
+    return plot_YvsX_generic('Gate_Voltage_V', '$\it{V_{G}}$ (V)', 'Current_A', '$\it{I_{D}}$ (%sA)', '_IDvsVG',
+                      device=device, files=files, savename=savename, colors=colors, log=log, size=size, majorx=majorx,
+                      xlim=xlim, ylim=ylim, fontsize=fontsize, labelsize=labelsize)
+
+# Plots the leakage current vs gate voltage of each file
+def plot_IDvsVg_subleak_generic(device, files, savename, colors, log=False, size=def_size, majorx=25):    
+    for file in files:
+        file['Current_A'] = file['Current_A']-file['Gate_Leak_Current_A']
+        
+    return plot_IDvsVg_generic(device, files, savename, colors, log=log, size=size, majorx=majorx)
+
+# Plots the current vs source-drain voltage of each file
+def plot_IDvsVDS_generic(device, files, savename, colors, log=False, invertaxes=False, size=def_size, majorx=None, \
+                         xadj=0, x_mult=5, fontsize=def_fontsize, labelsize=def_labelsize, xlim=None, ylim=None):    
+    return plot_YvsX_generic('Voltage_1_V', '$\it{V_{DS}}$ (V)', 'Current_A', '$\it{I_{D}}$ (%sA)', '_IDvsVDS',
+                      device=device, files=files, savename=savename, colors=colors, log=log, size=size, majorx=majorx,
+                      xlim=xlim, ylim=ylim, fontsize=fontsize, labelsize=labelsize, invertaxes=invertaxes)
+
+# Plots the current vs magnetic field of each file
+def plot_IDvsB_generic(device, files, savename, colors, log=False, symm=False, size=def_size, \
+                       xlim=None, ylim=None, majorx=None, fontsize=def_fontsize, labelsize=def_labelsize):
+    return plot_YvsX_generic('Magnetic_Field_T', '$\it{B}$ (T)', 'Current_A', '$\it{I_{D}}$ (%sA)', '_IDvsB',
+                      device=device, files=files, savename=savename, colors=colors, log=log, size=size, majorx=majorx,
+                      xlim=xlim, ylim=ylim, fontsize=fontsize, labelsize=labelsize)
+
+# Plots the current vs the time of each file    
+def plot_IDSvsTime_generic(device, files, savename, colors=colors_set1, log=False, size=def_size,\
+                           majorx=1800, xlim=(None,None), ylim=(None,None), fontsize=def_fontsize, labelsize=def_labelsize):    
+    return plot_YvsX_generic('Time_s', '$\it{t_{s}}$ (V)', 'Current_A', '$\it{I_{D}}$ (%sA)', '_IDvst',
+                      device=device, files=files, savename=savename, colors=colors, log=log, size=size, majorx=majorx,
+                      xlim=xlim, ylim=ylim, fontsize=fontsize, labelsize=labelsize)
+
+# Plots the current vs temperature of each file
+def plot_IDvsT_generic(device, files, savename, colors, log=False, size=def_size, majorx=None, 
+                        xlim=(None,None), ylim=(None,None), fontsize=def_fontsize, labelsize=def_labelsize):
+    return plot_YvsX_generic('Temperature_K', '$\it{T$ (K)', 'Current_A', '$\it{I_{D}}$ (%sA)', '_IDvsT',
+                      device=device, files=files, savename=savename, colors=colors, log=log, size=size, majorx=majorx,
+                      xlim=xlim, ylim=ylim, fontsize=fontsize, labelsize=labelsize)
+
+# Plots the resistance vs temperature of each file    
+def plot_RSDvsT_generic(device, files, savename, colors, log=False, size=def_size, majorx=None, 
+                        xlim=(None,None), ylim=(None,None), fontsize=def_fontsize, labelsize=def_labelsize):
+    return plot_YvsX_generic('Temperature_K', '$\it{T}$ (K)', 'Resistance_1_Ohms', '$\it{R_{DS}}$ (%sΩ)', '_RSDvsT',
+                      device=device, files=files, savename=savename, colors=colors, log=log, size=size, majorx=majorx,
+                      xlim=xlim, ylim=ylim, fontsize=fontsize, labelsize=labelsize)
+
+
+# processes then plots the current vs gate voltage of each filename
 def plot_IDvsVg_each(device, filenames, savename, log=False, size=def_size, majorx=25,\
                      ylim=(None,None), fontsize=def_fontsize, labelsize=def_labelsize):
    
@@ -497,20 +505,7 @@ def plot_IDvsVg_each(device, filenames, savename, log=False, size=def_size, majo
         plot_IDvsVg_generic(device, [file0], savename + Iname, [colors_set1[1]], log=log, \
                               size=size, majorx=majorx, ylim=ylim, fontsize=fontsize, labelsize=labelsize)
 
-      
-def plot_IDvsVg_generic(device, files, savename, colors, log=False, size=def_size, majorx=25, 
-                        xlim=(None,None), ylim=(None,None), fontsize=def_fontsize, labelsize=def_labelsize):
-    return plot_YvsX_generic('Gate_Voltage_V', '$\it{V_{G}}$ (V)', 'Current_A', '$\it{I_{D}}$ (%sA)', '_IDvsVG',
-                      device=device, files=files, savename=savename, colors=colors, log=log, size=size, majorx=majorx,
-                      xlim=xlim, ylim=ylim, fontsize=fontsize, labelsize=labelsize)
-
-
-def plot_IDvsVg_subleak_generic(device, files, savename, colors, log=False, size=def_size, majorx=25):    
-    for file in files:
-        file['Current_A'] = file['Current_A']-file['Gate_Leak_Current_A']
-        
-    return plot_IDvsVg_generic(device, files, savename, colors, log=log, size=size, majorx=majorx)
-    
+# processes then plots the leackage current vs gate voltage of each filename  
 def plot_IleakvsVg_generic(device, files, savename, colors, log=False, adjust=True):    
     fig = plt.figure(figsize=(1.5, 1.5), dpi=300)
     scale_pow = 1
@@ -569,35 +564,6 @@ def plot_RDSvsVg_generic(device, files, savename, colors=colors_set1, R_ind=1, l
     plt.clf()
     
     
-def plot_IDvsVDS_generic(device, files, savename, colors, log=False, invertaxes=False, size=def_size, majorx=None, \
-                         xadj=0, x_mult=5, fontsize=def_fontsize, labelsize=def_labelsize, xlim=None, ylim=None):    
-    return plot_YvsX_generic('Voltage_1_V', '$\it{V_{DS}}$ (V)', 'Current_A', '$\it{I_{D}}$ (%sA)', '_IDvsVDS',
-                      device=device, files=files, savename=savename, colors=colors, log=log, size=size, majorx=majorx,
-                      xlim=xlim, ylim=ylim, fontsize=fontsize, labelsize=labelsize, invertaxes=invertaxes)
-    
-def plot_IDvsB_generic(device, files, savename, colors, log=False, symm=False, size=def_size, \
-                       xlim=None, ylim=None, majorx=None, fontsize=def_fontsize, labelsize=def_labelsize):
-    return plot_YvsX_generic('Magnetic_Field_T', '$\it{B}$ (T)', 'Current_A', '$\it{I_{D}}$ (%sA)', '_IDvsB',
-                      device=device, files=files, savename=savename, colors=colors, log=log, size=size, majorx=majorx,
-                      xlim=xlim, ylim=ylim, fontsize=fontsize, labelsize=labelsize)
-    
-def plot_IDSvsTime_generic(device, files, savename, colors=colors_set1, log=False, size=def_size,\
-                           majorx=1800, xlim=(None,None), ylim=(None,None), fontsize=def_fontsize, labelsize=def_labelsize):    
-    return plot_YvsX_generic('Time_s', '$\it{t_{s}}$ (V)', 'Current_A', '$\it{I_{D}}$ (%sA)', '_IDvst',
-                      device=device, files=files, savename=savename, colors=colors, log=log, size=size, majorx=majorx,
-                      xlim=xlim, ylim=ylim, fontsize=fontsize, labelsize=labelsize)
-
-def plot_IDvsT_generic(device, files, savename, colors, log=False, size=def_size, majorx=None, 
-                        xlim=(None,None), ylim=(None,None), fontsize=def_fontsize, labelsize=def_labelsize):
-    return plot_YvsX_generic('Temperature_K', '$\it{T$ (K)', 'Current_A', '$\it{I_{D}}$ (%sA)', '_IDvsT',
-                      device=device, files=files, savename=savename, colors=colors, log=log, size=size, majorx=majorx,
-                      xlim=xlim, ylim=ylim, fontsize=fontsize, labelsize=labelsize)
-    
-def plot_RSDvsT_generic(device, files, savename, colors, log=False, size=def_size, majorx=None, 
-                        xlim=(None,None), ylim=(None,None), fontsize=def_fontsize, labelsize=def_labelsize):
-    return plot_YvsX_generic('Temperature_K', '$\it{T}$ (K)', 'Resistance_1_Ohms', '$\it{R_{DS}}$ (%sΩ)', '_RSDvsT',
-                      device=device, files=files, savename=savename, colors=colors, log=log, size=size, majorx=majorx,
-                      xlim=xlim, ylim=ylim, fontsize=fontsize, labelsize=labelsize)
     
 def plot_LnRSDvsPowT_generic(device, files, savename, colors, power, power_label, \
                         size=def_size, majorx=None, xlim=(None,None), ylim=(None,None), \
@@ -644,9 +610,9 @@ def sheet_conductivity_4pt(resistance_2T, length, width):
     # σs = L/(R*W) FIXME
     return 0*length/np.multiply(resistance_2T, width)
 
-def sheet_resistance(resistance_2T, length, width):
+def sheet_resistance(device, resistance_2T):
     # R□ = Rxx*W/(L)
-    return np.multiply(resistance_2T, width)/length
+    return np.multiply(resistance_2T, device.width)/device.length
 
 def carrier_mobility_μ(sheet_conductivity_σs, carrier_density_n):
     # σs =  μen
@@ -721,11 +687,14 @@ def process_hall_data(device, Hall_file, T_Rxx_4pt=None,
     
         # pick a point on the line
         B_point = 1.0 # Tesla
-        V_hall0T = pfit.c[1]
-        V_hall_T = V_hall0T + B_point*pfit.c[0]
+        V_hall_T0 = pfit.c[1]
+        V_hall_T = V_hall_T0 + B_point*pfit.c[0]
+        
+        # RH = Vy(Bz)/(Ix*Bz)
+        RH = (V_hall_T-V_hall_T0)/(B_point*current)
         
         # n2D = B/(Rxy*e) = 1/RH2D*e 
-        n2D = B_point*current/((V_hall_T-V_hall0T)*abs(fundamental_charge_e))
+        n2D = 1/(RH*abs(fundamental_charge_e))
         n3D = n2D/device.thickness
         print("%s K: n2D: %s cm^-2, n3D: %s cm^-3" % (round(T,1),
                     np.format_float_scientific(n2D/(100*100), unique=False, precision=5),
@@ -789,7 +758,6 @@ def process_MR_data(device, data_file, volt_fields, Bfitlimits=(None,None), plot
             ivfitvals[:] = np.nan
             ivfitvals[occ0:occ1] = V_offset + Resistance*Bfield_data
             ivfitdata.append(ivfitvals)
-            
         
             # error in fit
             residuals = V_data - (V_offset + Resistance*Bfield_data)
@@ -1758,6 +1726,110 @@ def plot_rhovsT_fit_generic(device, file, savename, colors,
         plt.clf()
         return (fitcoefs, rhonames)
         
+def plot_rhovsT_fit_custom(device, file, savename, colors, 
+                         funtemperature, revtemperature, 
+                         labeltemperature, labelplot,
+                         size=2, majorx=None, fit=True, R1=True, R2=True, RDS=False,
+                         fitR2=.996, Tmin=299, Tmax=401, fitpower=1):
+    
+    Temperature = file['Temperature_K']
+    ind = np.logical_and(Temperature > Tmin, Temperature < Tmax)
+    
+    #file = append_fields(file, 'rho1_Ohmscm', rho1, np.double, usemask=False)
+    #file = append_fields(file, 'rho2_Ohmscm', rho2, np.double, usemask=False)
+    #file = append_fields(file, 'rhosd_Ohmscm', rhosd, np.double, usemask=False)
+    
+    rhos = []
+    rhonames = []
+    rhocolors = []
+    fitcoefs = []
+    if R1:
+        R1 = file['Resistance_1_Ohms']
+        rho1 = R1 * device.width * device.thickness / device.volt_length
+        rhos.append(rho1)
+        rhonames.append('rho1')
+        rhocolors.append(colors[0])
+        
+    if R2:
+        R2 = file['Resistance_2_Ohms']
+        rho2 = R2 * device.width * device.thickness / device.volt_length
+        rhos.append(rho2)
+        rhonames.append('rho2')
+        rhocolors.append(colors[1])
+
+    if RDS:
+        Rsd = file['Resistance_3_Ohms']
+        rhoDS = Rsd * device.width * device.thickness / device.volt_length
+        rhos.append(rhoDS)
+        rhonames.append('rhoDS')
+        rhocolors.append(colors[2])
+        
+    fig = plt.figure(figsize=(size, size), dpi=300)
+    ax = pretty_plot_single(fig, labels=[labeltemperature, 'ρ'],
+                            yscale='log', fontsize=10, labelsize=10)
+    
+    for (rho, rho_name, color) in zip(rhos, rhonames, rhocolors):
+        
+        xdata = funtemperature(Temperature)
+        ydata = rho
+        
+        ax.plot(xdata, ydata, '.-', ms=3, linewidth=1.5, color=color)
+        
+        xdata = funtemperature(Temperature[ind])
+        ydata = np.log10(rho[ind])
+        ind2 = np.isfinite(ydata)
+        xdata = xdata[ind2]
+        ydata = ydata[ind2]
+        
+        try:
+            (pcoefs, residuals, rank, singular_values, rcond) = \
+                np.polyfit(xdata, ydata,
+                           1, full = True)
+        except np.linalg.LinAlgError:
+            continue
+        
+        fitcoefs.append(pcoefs)
+        
+        # error in fit
+        pfit = np.poly1d(pcoefs)
+        residuals = ydata - pfit(xdata)
+        ss_res = np.sum(residuals**2)
+        ss_tot = np.sum((ydata-np.mean(ydata))**2)
+        r_squared_calc = 1 - (ss_res / ss_tot)
+        
+        
+        fit_string = "%s %s slope = %3.3f, R^2 = %f" % \
+            (savename, rho_name, pcoefs[0], r_squared_calc)
+        print(fit_string)
+        fitplotrange = funtemperature(np.array([100., 500.]))
+        yfitdata = np.power(10, pfit(fitplotrange))
+        
+        ax.plot(fitplotrange, yfitdata, '.-', ms=0, linewidth=1., color='black')
+        
+    if savename is None:
+        return (fig, ax, fitcoefs, rhonames)
+    else:
+        save_generic_svg(fig, device, savename)
+        plt.show() 
+        plt.clf()
+        return (fitcoefs, rhonames)
+    
+def plot_rho_vs_T_hopping_custom(device, file, power=1, power_label='1',
+                                  size=2, R1=True, R2=False, Tmin=0, Tmax=500):
+    colors=colors_set1
+    
+    funtemperature = lambda T : np.power(T, power)
+    revtemperature = lambda fT : np.power(fT, 1/power)
+    labeltemperature = "T^" + power_label
+    labelplot = ''
+    
+    clean_label = power_label.replace(r"/", "_") 
+    return plot_rhovsT_fit_custom(device, file, '_hopping_'+clean_label+'_', colors, 
+                            funtemperature, revtemperature, 
+                            labeltemperature, labelplot,
+                            size=size, fitpower=1, R1=R1, R2=R2,
+                            Tmin=Tmin, Tmax=Tmax)
+        
             
 def plot_rho_vs_T_power_generic(device, file, size=2,
                                 R1=True, R2=True, Tmin=0, Tmax=500):
@@ -1958,8 +2030,14 @@ def process_IV_data(device, data_file, volt_fields, Ilimits=(None,None), plot_da
         print("R: %s Ohms" % (np.format_float_scientific(Resistance, unique=False, precision=5)))
         print("Fit R^2: %s" % r_squared)
         
-    Ravg = np.average(np.array(Resistance))
-
+        
+    Ravg = np.average(np.array(Resistances))
+    Rstd = np.std(np.array(Resistances))
+    
+    print('R_avg: %s Ohms, R_std: %s' % (
+        np.format_float_scientific(Ravg, unique=False, precision=5),
+        np.format_float_scientific(Rstd, unique=False, precision=5)))
+    
     if plot_data:
         numfields = len(volt_fields)
         plot_colors = colors_set1[0:numfields,:]

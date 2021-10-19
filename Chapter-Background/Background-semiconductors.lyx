@@ -93,57 +93,6 @@ name "chap:Semiconductor-transport"
 \end_layout
 
 \begin_layout Standard
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Semiconductor-Figures/Material conduction bands.svg
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Energy bands in metals, semiconductors, and insulators
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-The location of the Fermi energy 
-\begin_inset Formula $E_{F}$
-\end_inset
-
-
-\begin_inset CommandInset label
-LatexCommand label
-name "Fermi energy"
-
-\end_inset
-
- relative to the conduction and valance bands usually determines if the
- material behaves as a metal, semiconductor, or an insulator.
- The energy bands vary along the crystal lattice and in momentum-space.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 Semiconductors, as their name implies, are characterized by their conduction
  falling between that of a metal and an insulating material.
  The quantized energies of electron orbitals in a crystal and the interactions
@@ -167,18 +116,13 @@ Semiconductors, as their name implies, are characterized by their conduction
 \end_layout
 
 \begin_layout Section
-Charge transport: band and hopping conduction
+Electrical transport in semiconductors
 \end_layout
 
 \begin_layout Standard
-In an in ideal semiconductor, the material is perfectly crystalline, forming
- periodic bands that run along the entire structure without disorder.
- All real semiconductors break this assumption with doped impurities, broken
- bonds, grain boundaries, edge states, missing or extra atoms, and other
- forms of disorder.
- For practical devices we define them in terms of macroscopic parameters
- and behaviors.
- The mobility 
+All real semiconductors break possess doped impurities, broken bonds, grain
+ boundaries, edge states, and other forms of disorder.
+ For practical devices we define the mobility 
 \begin_inset Formula $\mu$
 \end_inset
 
@@ -189,17 +133,10 @@ name "mobility"
 
 \end_inset
 
-, one such parameter, is the average velocity at with an electron 
-\begin_inset Formula $\mu_{e}$
-\end_inset
-
- or hole 
-\begin_inset Formula $\mu_{h}$
-\end_inset
-
- can move through the crystal lattice from an electric field.
- With this we can define a second parameter, the conductivity of a charge
- carrier concentration 
+ which is the average velocity at with an electron or hole can move through
+ the crystal lattice from an electric field.
+ The electrical conductivity of semiconductor, with a carrier concentration
+ 
 \begin_inset Formula $n$
 \end_inset
 
@@ -212,16 +149,12 @@ name "mobility"
 \end_layout
 
 \begin_layout Standard
-In an ordered crystal the electrons reside in the valance band, the holes
- in the conduction band.
- Energy excitations can push electrons to the conduction band, creating
- a hole in the valance band by doing so.
- The gap between the valance and conduction band can be direct, where the
- respective max and minimum energy have the same momentum, or an indirect
+The gap between the valance and conduction band can be either direct, where
+ the respective max and minimum energy have the same momentum, or an indirect
  gap which requires the carrier to change momentum for the smallest energy
  jump between bands.
- Changing bands is often the result of thermal excitations, so most semiconducto
-rs have an increased resistance at low temperatures.
+ Charge carriers can be the result of thermal excitations, so most semiconductor
+s have an increased resistance at low temperatures.
  Photons can also excite electrons, or excited electrons can drop down the
  valance band and emit photons, giving rise to countless applications such
  as sensors and LEDs.
@@ -256,13 +189,8 @@ In an intrinsic semiconductor the Fermi energy falls near the center of
  fields, and is used extensively in modern electronic devices.
 \end_layout
 
-\begin_layout Standard
-As all crystals have some form of disorder, so hopping models of conduction
- are often used describe carrier movement rather than simple band models.
-\end_layout
-
 \begin_layout Subsection
-Multiple trap and release
+Multiple traps and release
 \end_layout
 
 \begin_layout Standard
@@ -510,7 +438,7 @@ literal "false"
 \end_layout
 
 \begin_layout Subsection
-Percolation hopping
+Percolation 
 \end_layout
 
 \begin_layout Standard
@@ -587,7 +515,7 @@ literal "false"
 \end_layout
 
 \begin_layout Section
-Localization and metal-insulator transitions
+Metal-insulator transitions
 \begin_inset CommandInset label
 LatexCommand label
 name "subsec:Localization"
@@ -1266,7 +1194,7 @@ literal "false"
 \end_layout
 
 \begin_layout Subsection
-Percolation 
+Percolation metal-insulator transition
 \end_layout
 
 \begin_layout Standard
@@ -1334,7 +1262,7 @@ status open
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -1351,7 +1279,7 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Electron scattering off impurities
+Carrier scattering off impurities
 \end_layout
 
 \end_inset
@@ -1420,7 +1348,7 @@ name "fig:Weak-localization"
  The destructive interference of different paths lead to weak localization
  of the electron.
  (b) the magnetic field dependence of conductivity in a weakly localized
- crystal.
+ disordered metal.
  As the temperature increases the effects of weak localization decrease.
 \end_layout
 
@@ -2227,28 +2155,6 @@ noprefix "false"
  Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:IV Ohmic,-linear-scale"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- shows a typical linear Ohmic behavior for a large and small resistance
- material.
- Figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:IV Schottky-Diode,-linear"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- and 
-\begin_inset CommandInset ref
-LatexCommand ref
 reference "fig:IV Schottky-Diode,-log"
 plural "false"
 caps "false"
@@ -2262,16 +2168,6 @@ ctors.
  the saturation current while the barrier height limits the reverse bias
  current.
  Figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:IV Metal-S.C.-metal,-linear-scale"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- and 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:IV Metal-S.C.-metal,-log-scale"
@@ -2359,90 +2255,6 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Semiconductor-Figures/Ohmic.svg
-	width 5cm
-	groupId IV curves
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Ohmic, linear scale
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:IV Ohmic,-linear-scale"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset space \hfill{}
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename Semiconductor-Figures/SchottkyDiode_linear.svg
-	width 5cm
-	groupId IV curves
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Schottky Diode, linear scale
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:IV Schottky-Diode,-linear"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset space \hfill{}
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
 	filename Semiconductor-Figures/SchottkyDiode_log.svg
 	width 5cm
 	groupId IV curves
@@ -2474,84 +2286,11 @@ name "fig:IV Schottky-Diode,-log"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename Semiconductor-Figures/MScM_diagram.svg
-	width 5cm
-	groupId IV curves
-
+\begin_inset space ~
 \end_inset
 
 
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Metal-semiconductor-metal
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset space \hfill{}
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename Semiconductor-Figures/MetalSCMetal_linear.svg
-	width 5cm
-	groupId IV curves
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Metal-S.C.-metal, linear scale
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:IV Metal-S.C.-metal,-linear-scale"
-
-\end_inset
-
- 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset space \hfill{}
+\begin_inset space ~
 \end_inset
 
 
@@ -2627,13 +2366,10 @@ noprefix "false"
 \end_inset
 
 .
- (a) ohmic behavior, with no Schottky barriers, with large and small resistances.
- A single Schottky barrier with small and large resistances and barrier
- heights, in linear (b) and logarithmic (c) scale.
- (d) simplified band diagram for a double Schottky barrier in a metal-semiconduc
-tor-metal device.
- A double-Schottky barrier with large and small resistances, barrier heights,
- and ideality factors on a linear (e) and log (f) scale.
+ (a) a single Schottky barrier with small and large resistances and barrier
+ heights, in logarithmic scale.
+ (b) a double-Schottky barrier with large and small resistances, barrier
+ heights, and ideality factors on a log scale.
  The dashed line shows the asymmetrical behavior of a pair of junctions
  with different ideality factors.
 \end_layout

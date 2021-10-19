@@ -16,7 +16,7 @@ import numpy.polynomial.polynomial as poly
 
 large_trapazoid_5 = mp.flake_device
 large_trapazoid_5.name = 'large_trapazoid_5'
-large_trapazoid_5.fileroot = os.path.join('In-plane', 'large_trapazoid')
+large_trapazoid_5.fileroot = os.path.join('In-plane', 'large_trapazoid_5')
 large_trapazoid_5.thickness = 45.e-9
 large_trapazoid_5.width = 20.e-6
 large_trapazoid_5.volt_length = 38.e-6
@@ -29,24 +29,24 @@ def plot_rho_vs_T_fits(size=2):
     files = mp.process_device_files(device, filename)
     Tmin = 0
     R1 = True
-    R2 = True
+    R2 = False
     
-    mp.plot_rho_vs_T_hopping_generic(device, files[0], power=(-1/4), power_label='-1/4',
+    mp.plot_rho_vs_T_hopping_custom(device, files[0], power=(-1), power_label='-1',
                             size=size, Tmin=Tmin, R1=R1, R2=R2)
     
-    mp.plot_rho_vs_T_hopping_generic(device, files[0], power=(-1/3), power_label='-1/3',
+    mp.plot_rho_vs_T_hopping_custom(device, files[0], power=(-1/2), power_label='-1/2',
                             size=size, Tmin=Tmin, R1=R1, R2=R2)
     
-    mp.plot_rho_vs_T_hopping_generic(device, files[0], power=(-1/2), power_label='-1/2',
+    mp.plot_rho_vs_T_hopping_custom(device, files[0], power=(-1/3), power_label='-1/3',
                             size=size, Tmin=Tmin, R1=R1, R2=R2)
     
-    mp.plot_rho_vs_T_intrinsic_generic(device, files[0],
-                            size=size, Tmin=Tmin, R1=R1, R2=R2)
+    #mp.plot_rho_vs_T_hopping_custom(device, files[0],
+    #                        size=size, Tmin=Tmin, R1=R1, R2=R2)
     
-    mp.plot_rho_vs_T_hopping_generic(device, files[0], power=(1.), power_label='1',
-                            size=size, Tmin=Tmin, R1=R1, R2=R2)
+   # mp.plot_rho_vs_T_hopping_custom(device, files[0], power=(1.), power_label='1',
+   #                         size=size, Tmin=Tmin, R1=R1, R2=R2)
     
-    mp.plot_rho_vs_T_power_generic(device, files[0], Tmin=Tmin, R1=R1, R2=R2)
+    #mp.plot_rho_vs_T_power_generic(device, files[0], Tmin=Tmin, R1=R1, R2=R2)
         
 
 def plot_rho_vs_T(size=2, log=True, power=(1), power_label='1'):
@@ -111,11 +111,11 @@ def plot_VH_vs_H_400K(size=2, rawdata=False):
 def main(): 
     show_all = False
     
-    plot_rho_vs_T(size=2, log=True)
-    plot_rho_vs_T(size=2, log=False)
-    plot_VH_vs_H_400K(size=2)
+    #plot_rho_vs_T(size=2, log=True)
+    #plot_rho_vs_T(size=2, log=False)
+    #plot_VH_vs_H_400K(size=2)
     
-    #plot_rho_vs_T_fits(size=2)
+    plot_rho_vs_T_fits(size=2)
     
 if __name__== "__main__":
   main()
