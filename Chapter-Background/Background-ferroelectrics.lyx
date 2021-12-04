@@ -116,106 +116,11 @@ Ferroelectric crystals will spontaneously polarize below a critical temperature,
 \end_layout
 
 \begin_layout Section
-Piezoelectricity and pyroelectricity
+Polarization and ferroelectric domains
 \end_layout
 
 \begin_layout Standard
-Piezoelectricity and pyroelectricity arise from non-linear behaviors in
- crystal structures
-\begin_inset CommandInset citation
-LatexCommand cite
-key "bain2017ferroelectrics"
-literal "true"
-
-\end_inset
-
-.
- There are 32 crystal classes that make up 3D crystals.
- Of those 21 are non-centrosymmetric, and 20 of the non-centrosymmetric
- groups form piezoelectric materials.
- Furthermore, 10 of those groups are polar, forming dipoles with the material.
- Crystals from these 10 groups are pyroelectric and possibly ferroelectric.
- All ferroelectrics possess pyroelectricity and all pyroelectrics are piezoelect
-ric, but not all pyroelectrics are ferroelectric and not all piezoelectrics
- are pyroelectric.
- This encircling Venn diagram provides a way for easily screening possible
- ferroelectrics but also means ferroelectrics materials have other attributes.
- Appendix 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "3D-crystal-symmetry"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- shows a list of classes of each type and the corresponding space groups.
-\end_layout
-
-\begin_layout Standard
-In piezoelectric crystals, mechanical motion and polarization are bound
- together.
- Applying mechanical strain or stress that shifts the atom locations in
- the material shifting the dipole orientation or displacement.
- This generates an electric field and the aggregate can be measured as a
- voltage across the material.
- Applied in reverse, an electric field will cause the dipoles within the
- materials to displace, and provided they are aligned, alter the the crystal
- size and shape.
- This has wide applications, giving rise to rapid, precise electric motors
- and sensors used throughout modern society
-\begin_inset CommandInset citation
-LatexCommand cite
-key "bain2017ferroelectrics"
-literal "true"
-
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-In pyroelectricity crystal polarization is conjoined with changes in temperature
-\begin_inset CommandInset citation
-LatexCommand cite
-key "liu2018mechanisms,bain2017ferroelectrics"
-literal "true"
-
-\end_inset
-
-.
- If we heat or cool a pyroelectric crystal, the crystal structure is altered
- slightly allowing it to spontaneous polarize, or if already polarized,
- change to a new polarization fitting the new atom placement.
- This polarization produces a voltage across the bulk of the crystal, providing
- a method to measure this change and thus the changing temperature that
- drove the re-polarization.
- After the temperature is fixed the voltage will generally dissipate though
- leakage currents.
- This makes pyroelectrics suitable for changing measurements like thermal
- imaging cameras and energy generation, but poor for managing persistent
- states in modern digital electronics
-\begin_inset CommandInset citation
-LatexCommand cite
-key "bain2017ferroelectrics"
-literal "true"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Section
-Domains and polarization
-\end_layout
-
-\begin_layout Standard
-A ferroelectric material is differentiated from a pyroelectric by the ability
- to switch dipole orientation under an electric field, making ferroelectrics
- a subset of pyroelectrics.
- 
+Polarization 
 \begin_inset Formula $\vec{P}$
 \end_inset
 
@@ -387,6 +292,7 @@ status open
 
 \begin_layout Plain Layout
 \noindent
+\align center
 \begin_inset Float figure
 wide false
 sideways false
@@ -423,7 +329,7 @@ name "fig:Ferroelectric domains"
 
 \end_inset
 
- 
+
 \begin_inset space ~
 \end_inset
 
@@ -584,981 +490,6 @@ literal "true"
 \end_layout
 
 \begin_layout Section
-Landau theory of ferroelectric phase transitions
-\begin_inset CommandInset label
-LatexCommand label
-name "subsec:Landau-phase-transitions"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Phase transitions in ferroelectrics is usually modeled with the Landau phenomeno
-logical approach, or Landau–Ginsburg–Devonshire theory.
-\begin_inset CommandInset citation
-LatexCommand cite
-key "dai2020ferroic,bain2017ferroelectrics"
-literal "true"
-
-\end_inset
-
- We can write the free energy 
-\begin_inset Formula $F$
-\end_inset
-
- of a ferroelectric in the mean-field approach as
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-F=F_{0}+\frac{\alpha}{2}P+\frac{\beta}{4}P^{2}+\frac{\gamma}{6}P^{6}\cdots-\mathcal{E}P\label{eq:Landau-Free-Energy}
-\end{equation}
-
-\end_inset
-
-where 
-\begin_inset Formula $\alpha$
-\end_inset
-
-, 
-\begin_inset Formula $\beta$
-\end_inset
-
-, 
-\begin_inset Formula $\gamma$
-\end_inset
-
-, etc are the Landau parameters, 
-\begin_inset Formula $F_{0}$
-\end_inset
-
-is the free energy density of the disordered (high temperature) phase near
- the transition, and 
-\begin_inset Formula $\mathcal{E}$
-\end_inset
-
- the external field.
- The strain 
-\begin_inset Formula $\sigma_{i}$
-\end_inset
-
- is neglected in this discussion, but would add two additional terms to
- the free energy (
-\begin_inset Formula $-\frac{1}{2}s_{ik}\sigma_{i}\sigma_{k}+P^{2}Q_{k}\sigma_{k}$
-\end_inset
-
- where 
-\begin_inset Formula $s_{ik}is$
-\end_inset
-
-the compliance matrix and 
-\begin_inset Formula $Q_{k}$
-\end_inset
-
- the electrostriction coefficient) which modify the parameters below.
- In the paraelectric phase the Hamiltonian must be invariant under a transformat
-ion from 
-\begin_inset Formula $P$
-\end_inset
-
- to 
-\begin_inset Formula $-P$
-\end_inset
-
-, forcing equation 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:Landau-Free-Energy"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- to only contain even powers of 
-\begin_inset Formula $P$
-\end_inset
-
-.
- The Landau parameters are pressure and temperature dependent, though usually
- only the temperature dependence in 
-\begin_inset Formula $\alpha$
-\end_inset
-
- is considered.
- As 
-\begin_inset Formula $\alpha$
-\end_inset
-
- should switch sign at the transition, 
-\begin_inset Formula $\alpha$
-\end_inset
-
- is generally taken as linear in 
-\begin_inset Formula $T$
-\end_inset
-
- near the transition temperature, taking on the form 
-\begin_inset Formula $\alpha=\alpha_{0}\left(T-T_{0}\right)$
-\end_inset
-
-
-\begin_inset CommandInset label
-LatexCommand label
-name "FE-Landau-alpha"
-
-\end_inset
-
-, where 
-\begin_inset Formula $T_{0}$
-\end_inset
-
- is the Curie–Weiss transition temperature (
-\begin_inset Formula $T_{0}\leq T_{C}$
-\end_inset
-
-).
- Equation 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:Landau-Free-Energy"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- can be modified to fit thin film ferroelectrics by including the boundary
- conditions
-\begin_inset CommandInset citation
-LatexCommand cite
-key "wong2007simplified"
-literal "true"
-
-\end_inset
-
-, but we will keep to the simpler, bulk description and to only three terms
- in the expansion.
- To find the local minimums in the free energy we take the derivative
-\begin_inset Formula 
-\begin{equation}
-\frac{\partial F}{\partial P}=\alpha P+\beta P^{3}+\gamma P^{5}-\mathcal{E}=0\label{eq:Landau-FE-derivative}
-\end{equation}
-
-\end_inset
-
-We set 
-\begin_inset Formula $\mathcal{E}=0$
-\end_inset
-
- to look at the system in the simplest scenario, without external fields,
- giving 
-\begin_inset Formula 
-\begin{equation}
-P^{2}=\begin{cases}
-0 & Paraelectric\\
-\frac{-\beta\pm\sqrt{\beta^{2}-4\alpha\gamma}}{2\gamma} & Ferroelectric
-\end{cases}\label{eq:Landau-P^2}
-\end{equation}
-
-\end_inset
-
- We can then look at two separate cases based on the sign of the second
- term 
-\begin_inset Formula $\beta$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Subsection
-First-order, 
-\begin_inset Formula $\beta<0$
-\end_inset
-
- and 
-\begin_inset Formula $\gamma>0$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename Ferroelectrics-Figures/Landau 1st Energy vs Polarization.svg
-	groupId polarization
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Free energy
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Landau-First-FvP"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
- 
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename Ferroelectrics-Figures/Landau 1st Ps vs Temperature.svg
-	groupId polarization
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Order parameter 
-\begin_inset Formula $P_{S}$
-\end_inset
-
-
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Landau-First-PvT"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Landau first order transition
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Landau-first-order"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-(a) The free energy as a function of polarization at constant temperature
- and zero electric field for a first order transition.
- As 
-\begin_inset Formula $T$
-\end_inset
-
- increases the minimums at finite polarization increase and disappears above
- 
-\begin_inset Formula $T_{1}$
-\end_inset
-
-.
- (b) The value of the parameter 
-\begin_inset Formula $P_{s}$
-\end_inset
-
- as a function of increasing temperature and constant electric fields.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-For 
-\begin_inset Formula $F$
-\end_inset
-
- to remain positive while 
-\begin_inset Formula $\beta<0$
-\end_inset
-
- we need the next term 
-\begin_inset Formula $\gamma>0$
-\end_inset
-
-; we will continue to neglect higher order terms as they are increasingly
- small.
- As 
-\begin_inset Formula $\beta$
-\end_inset
-
- is negative, we can drop the 
-\begin_inset Quotes eld
-\end_inset
-
-−
-\begin_inset Quotes erd
-\end_inset
-
- term in equation 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:Landau-P^2"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
- Above 
-\begin_inset Formula $T_{1}$
-\end_inset
-
- the free energy will have no minimums outside 
-\begin_inset Formula $P_{s}=0$
-\end_inset
-
- as the term inside the square root becomes negative.
- Then
-\begin_inset Formula 
-\begin{equation}
-P_{s}=\begin{cases}
-\pm\sqrt{\frac{-\beta+\sqrt{\beta^{2}-4\alpha_{0}\gamma\left(T-T_{0}\right)}}{2\gamma}} & T<T_{0}\\
-0,\,\pm\sqrt{\frac{-\beta+\sqrt{\beta^{2}-4\alpha_{0}\gamma\left(T-T_{0}\right)}}{2\gamma}} & T_{0}<T<T_{1}\\
-0 & T>T_{1}
-\end{cases}
-\end{equation}
-
-\end_inset
-
-where 
-\begin_inset Formula $T_{1}$
-\end_inset
-
-is the ferroelectric temperature limit.
- For 
-\begin_inset Formula $T_{0}<T<T_{C}$
-\end_inset
-
- the two non-zero terms have lower free energy than 
-\begin_inset Formula $P_{s}=0$
-\end_inset
-
-, while for 
-\begin_inset Formula $T>T_{C}$
-\end_inset
-
- the absolute minima occurs at 
-\begin_inset Formula $P_{s}=0$
-\end_inset
-
-.
- We can find the Curie temperature 
-\begin_inset Formula $T_{c}$
-\end_inset
-
- by setting 
-\begin_inset Formula $F\left(P_{s}=0\right)=F\left(P_{s}=\pm\sqrt{}\right)=0$
-\end_inset
-
- and solving
-\begin_inset Formula 
-\begin{equation}
-T_{C}\approx T_{0}+\frac{3\beta^{2}}{16\alpha_{0}\gamma}
-\end{equation}
-
-\end_inset
-
-We can do the same for 
-\begin_inset Formula $T_{1}$
-\end_inset
-
- as 
-\begin_inset Formula $F\left(P_{s}\right)=0$
-\end_inset
-
-
-\begin_inset Formula 
-\begin{equation}
-T_{1}=T_{0}+\frac{\beta^{2}}{4\alpha_{0}\gamma}
-\end{equation}
-
-\end_inset
-
-Allowing us to confirm 
-\begin_inset Formula $T_{0}<T_{C}<T_{1}$
-\end_inset
-
-.
-\begin_inset CommandInset citation
-LatexCommand cite
-key "dai2020ferroic,bain2017ferroelectrics"
-literal "true"
-
-\end_inset
-
- Figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Landau-First-FvP"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- shows the free energy as a function of electric fields; as well as 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Landau-Second-PvT"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- the progression of the order parameter 
-\begin_inset Formula $P_{s}$
-\end_inset
-
- as 
-\begin_inset Formula $T$
-\end_inset
-
- is increased from 
-\begin_inset Formula $T_{0}$
-\end_inset
-
-, 
-\begin_inset Formula $T_{C}$
-\end_inset
-
-, to above 
-\begin_inset Formula $T_{1}$
-\end_inset
-
-.
- Adding the electric field back in will create an asymmetry in the free
- energy and increase 
-\begin_inset Formula $P_{s}$
-\end_inset
-
-.
- The discontinuity at 
-\begin_inset Formula $T_{1}$
-\end_inset
-
- is given by
-\begin_inset Formula 
-\begin{equation}
-P_{0}=P_{s}\left(T_{1}\right)=\pm\sqrt{-\frac{3\beta}{4\gamma}}\,.
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Second-order, 
-\begin_inset Formula $\beta>0$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\noindent
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename Ferroelectrics-Figures/Landau 2nd Energy vs Polarization.svg
-	groupId polarization
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Free energy
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Landau-Second-FvP"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
- 
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename Ferroelectrics-Figures/Landau 2nd Ps vs Temperature.svg
-	groupId polarization
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Order parameter 
-\begin_inset Formula $P_{S}$
-\end_inset
-
-
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Landau-Second-PvT"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Landau second order transition
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Landau-second-order"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-(a) The free energy as a function of polarization at constant temperature
- for a second order transition.
- All electric fields are zero except for the line indicated.
- (b) 
-\begin_inset Formula $P_{s}$
-\end_inset
-
- as a function of increasing temperature and constant electric fields.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-For the second case we assume 
-\begin_inset Formula $\beta>0$
-\end_inset
-
-.
- When 
-\begin_inset Formula $T>T_{0}$
-\end_inset
-
- we neglect the 
-\begin_inset Formula $\beta$
-\end_inset
-
- and higher terms as 
-\begin_inset Formula $P$
-\end_inset
-
- is small, there can be only one minimum in equation
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:Landau-FE-derivative"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- and the shape of 
-\begin_inset Formula $F$
-\end_inset
-
- is parabolic.
- For 
-\begin_inset Formula $T<T_{0}$
-\end_inset
-
- we start with equation 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:Landau-P^2"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- and Taylor expand the term under the square root, noting 
-\begin_inset Formula $P_{s}^{2}>0$
-\end_inset
-
- this gives 
-\begin_inset Formula 
-\begin{equation}
-P_{s}=\begin{cases}
-0 & T<T_{0}\\
-\sqrt{\frac{\alpha_{0}\left(T_{0}-T\right)}{\beta}} & T>T_{0}
-\end{cases}
-\end{equation}
-
-\end_inset
-
-we can also find this result dropping the 
-\begin_inset Formula $\gamma$
-\end_inset
-
- and higher terms in equation 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:Landau-Free-Energy"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
-\begin_inset CommandInset citation
-LatexCommand cite
-key "dai2020ferroic,bain2017ferroelectrics"
-literal "true"
-
-\end_inset
-
- Below 
-\begin_inset Formula $T_{0}$
-\end_inset
-
- then 
-\begin_inset Formula $F$
-\end_inset
-
- becomes quartic in shape with a double well.
- Figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Landau-second-order"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- shows the free energy above and below 
-\begin_inset Formula $T_{0}$
-\end_inset
-
-, and the behavior of the minimum(s) in 
-\begin_inset Formula $F$
-\end_inset
-
- with increasing temperature.
- Above the critical field 
-\begin_inset Formula $E_{c}$
-\end_inset
-
- the minimum polarization transitions from discontinuous to continuous.
- 
-\end_layout
-
-\begin_layout Subsection
-Ferroelectric semiconductor phase transitions
-\end_layout
-
-\begin_layout Standard
-The semiconductor properties of a crystal will alter slightly the ferroelectric
- insulator properties discussed above.
- The results below are drawn from the Ferrelectric Semiconductors book and
- work of Fridkin and Fridkine
-\begin_inset CommandInset citation
-LatexCommand cite
-key "fridkin1980ferroelectric"
-literal "true"
-
-\end_inset
-
-.
- As the derivations follow the same methods used in the previous sections
- and are harder to follow, just the results are shown.
- The Landau phenomenological approach free energy becomes
-\begin_inset Formula 
-\begin{equation}
-F=F_{0}+\frac{\alpha}{2}P+\frac{\beta}{4}P^{2}+\frac{\gamma}{6}P^{6}\cdots+\sum_{i}N_{i}E_{i}\left(T,P,\sigma_{k}\right)
-\end{equation}
-
-\end_inset
-
-where 
-\begin_inset Formula $N_{i}$
-\end_inset
-
- is the number or free charge carriers and 
-\begin_inset Formula $E_{i}$
-\end_inset
-
- the energy of those carriers.
- As before, the strain 
-\begin_inset Formula $\sigma_{i}$
-\end_inset
-
- is neglected for this discussion and electric field 
-\begin_inset Formula $\mathcal{E}$
-\end_inset
-
- is taken to be zero to address the simplest case.
- For an n-type semiconductor with doping concentration 
-\begin_inset Formula $N_{D}$
-\end_inset
-
- the sum becomes
-\begin_inset Formula 
-\begin{equation}
-\sum_{i}N_{i}E_{i}\left(T,P,\sigma_{k}\right)=nE_{G}+N_{D}^{+}\left(E_{c}-E_{D}\right)-p\left(E_{A}-E_{v}\right)\approx N_{D}^{+}\tilde{E}_{G}
-\end{equation}
-
-\end_inset
-
-where 
-\begin_inset Formula $E_{D}$
-\end_inset
-
- the energy of the donor sites, 
-\begin_inset Formula $E_{A}$
-\end_inset
-
- the energy of the acceptor sites, 
-\begin_inset Formula $n$
-\end_inset
-
- the electron density, 
-\begin_inset Formula $p$
-\end_inset
-
- the hole density.
- The reduced bandwidth gap is given by 
-\begin_inset Formula $\tilde{E}_{G}=E_{D}-E_{A}$
-\end_inset
-
-.
- From this, the spontaneous polarization can be found, 
-\begin_inset Formula 
-\begin{equation}
-P_{s,N_{D}}=\pm P_{s}\left(T\right)\sqrt{1+\left(\frac{\partial^{4}\tilde{E}_{G}}{\partial P^{4}}\right)\frac{P^{2}\left(T\right)N_{D}^{+}}{\beta P^{2}\left(T\right)+2\alpha}+\left(\frac{\partial^{6}\tilde{E}_{G}}{\partial P^{6}}\right)\frac{\alpha P^{4}\left(T\right)N_{D}^{+}}{\beta P^{2}\left(T\right)+2\alpha}-\left(\frac{\partial^{6}\tilde{E}_{G}}{\partial P^{6}}\right)\frac{N_{D}^{+}}{\gamma}}
-\end{equation}
-
-\end_inset
-
-though it now takes on a much more complicated form.
- As does the discontinuity for the first order transition
-\begin_inset Formula 
-\begin{equation}
-P_{0,N_{D}}=\pm P_{0}\sqrt{1+\left(\frac{\partial^{4}\tilde{E}_{G}}{\partial P^{4}}\right)\frac{N_{D}^{+}}{\beta}-\left(\frac{\partial^{6}\tilde{E}_{G}}{\partial P^{6}}\right)\frac{N_{D}^{+}}{\gamma}}\,.
-\end{equation}
-
-\end_inset
-
-The Curie point is shifted, with the change is given by
-\begin_inset Formula 
-\begin{equation}
-T_{0,N_{D}}=T_{0}-C_{c}\left(\frac{\partial^{2}\tilde{E}_{G}}{\partial P^{2}}\right)N_{D}^{+}
-\end{equation}
-
-\end_inset
-
- where 
-\begin_inset Formula $C_{c}=\frac{1}{\alpha_{0}}$
-\end_inset
-
- is the Curie constant.
- The minimization of the free energy means 
-\begin_inset Formula $\left(\partial^{2}F/\partial P^{2}\right)=N_{D}^{+}\left(\partial^{2}\tilde{E}_{G}/\partial P^{2}\right)>0$
-\end_inset
-
- is positive along with 
-\begin_inset Formula $N_{_{D}^{+}}$
-\end_inset
-
-, so the free electrons will cause the Curie temperature to decrease.
- The first order transition also acquires a hysteresis in the discontinuity
- temperature between increasing and decreasing temperature 
-\begin_inset Formula 
-\begin{equation}
-\Delta T_{h,N_{D}}\approx\frac{3C\beta^{2}}{16\gamma}\left[1+\left(\frac{\partial^{4}\tilde{E}_{G}}{\partial P^{4}}\right)\frac{2N_{D}^{+}}{\beta}-\left(\frac{\partial^{6}\tilde{E}_{G}}{\partial P^{6}}\right)\frac{N_{D}^{+}}{\gamma}\right]\,.
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
 Ferroelectric field-effect transistors
 \begin_inset CommandInset label
 LatexCommand label
@@ -1581,7 +512,7 @@ status open
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -1622,7 +553,7 @@ name "fig:Typical-FeFET-device"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -2185,263 +1116,7 @@ literal "true"
 \end_layout
 
 \begin_layout Section
-Polar and ferroelectric metals
-\begin_inset CommandInset label
-LatexCommand label
-name "subsec:Polar-metals"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Polar metals, metals that contain dipoles, were first proposed in 1965
-\begin_inset CommandInset citation
-LatexCommand cite
-key "anderson1965symmetry"
-literal "true"
-
-\end_inset
-
- to explain the structural transition in 
-\begin_inset Formula $V_{3}Si$
-\end_inset
-
-.
- They were recently verified experimentally, first in 
-\begin_inset Formula $LiOsO_{3}$
-\end_inset
-
-
-\begin_inset CommandInset citation
-LatexCommand cite
-key "shi2013ferroelectriclike"
-literal "true"
-
-\end_inset
-
-.
- Polar metals show a continuous phase transition from non-polar to polar
- at their Curie temperature
-\begin_inset CommandInset citation
-LatexCommand cite
-key "benedek2016ferroelectric"
-literal "false"
-
-\end_inset
-
-, breaking inversion symmetry.
- 
-\begin_inset Formula $LiOsO_{3}$
-\end_inset
-
-was shown to transition from the space group 
-\begin_inset Formula $R\bar{3}c$
-\end_inset
-
- to 
-\begin_inset Formula $R3c$
-\end_inset
-
- at 
-\begin_inset Formula $T=140\,K$
-\end_inset
-
- by the shifting of the Li ion
-\begin_inset CommandInset citation
-LatexCommand cite
-key "shi2013ferroelectriclike"
-literal "false"
-
-\end_inset
-
-, forming a similar structure to several insulating ferroelectrics, and
- accompanied by several changes in the optical and electronic properties
- attributed to the dipole formation
-\begin_inset CommandInset citation
-LatexCommand cite
-key "laurita2019evidence,padmanabhan2018linear,jin2019raman,shi2013ferroelectriclike"
-literal "false"
-
-\end_inset
-
-.
- Similar dipole formation has been seen in 
-\begin_inset Formula $Ca_{3}Ru_{2}O_{7}$
-\end_inset
-
-
-\begin_inset CommandInset citation
-LatexCommand cite
-key "lei2018observation"
-literal "false"
-
-\end_inset
-
-, 
-\begin_inset Formula $BaTiO_{3}$
-\end_inset
-
-
-\begin_inset CommandInset citation
-LatexCommand cite
-key "takahashi2017polar"
-literal "false"
-
-\end_inset
-
-, 
-\begin_inset Formula $LaAuGe$
-\end_inset
-
-, 
-\begin_inset Formula $LaPtSb$
-\end_inset
-
-
-\begin_inset CommandInset citation
-LatexCommand cite
-key "du2019high"
-literal "false"
-
-\end_inset
-
- and other materials.
- As polar metals have an abundance of free charge carriers, any static electric
- fields within the material is screened, suggesting at first glance that
- metallicity is the antithesis to both prerequisites in the traditional
- definition of ferroelectricity.
- The carrier screening suppresses long-range coulomb interactions necessary
- for dipole formation and the fields to (re)orient the dipoles.
- Recently, Laurita et al.
- demonstrated evidence showing a partial decoupling of the itinerant electrons
- from the displacive transverse optical polar phonons responsible for the
- polar transitions in 
-\begin_inset Formula $LiOsO_{3}$
-\end_inset
-
-
-\begin_inset CommandInset citation
-LatexCommand cite
-key "laurita2019evidence"
-literal "false"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-Ferroelectricity in a metal was first reported in 2-3 layer 
-\begin_inset Formula $WTe_{2}$
-\end_inset
-
-
-\begin_inset CommandInset citation
-LatexCommand cite
-key "fei2018ferroelectric"
-literal "false"
-
-\end_inset
-
-, a 2D Van der Waals chalcogenide metal.
- The 2D material was stacked between two insulating layers of hexagonal
- Boron Nitrite (
-\begin_inset Formula $hBN$
-\end_inset
-
-) in a double-gated FeFET.
- The current response showed a clear transition behavior in 
-\begin_inset Formula $WTe_{2}$
-\end_inset
-
- conductivity from the gate electric fields.
- Additionally, the thin graphene layers used to gate the channel showed
- a hysteresis in their conductivity.
- Later measurements demonstrated the existence of ferroelectric domains
- with bulk crystals and thin films
-\begin_inset CommandInset citation
-LatexCommand cite
-key "sharma2019roomtemperature"
-literal "false"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-The free carriers in a polar metal may move to the edges of the material,
- to the excess electrical charge normally found on the surface of insulating
- ferroelectrics, instead producing a neutral charge distribution.
- This freedom can remove the depolarization field found in a typical ferroelectr
-ic
-\begin_inset CommandInset citation
-LatexCommand cite
-key "lei2018observation"
-literal "false"
-
-\end_inset
-
- extending the longevity of the polarized state of the crystal.
- The charge screening also lowers the system energy from domain walls of
- different dipole orientations in close proximity, allowing for opposing
- polarization domains to form 
-\begin_inset Formula $1nm$
-\end_inset
-
- apart with only 10s of 
-\begin_inset Formula $meV$
-\end_inset
-
- potential difference
-\begin_inset CommandInset citation
-LatexCommand cite
-key "stone2019atomic"
-literal "false"
-
-\end_inset
-
-.
- Potential polar and ferroelectric metal applications include reducing the
- size of ferroelectric capacitors
-\begin_inset CommandInset citation
-LatexCommand cite
-key "puggioni2018polar"
-literal "false"
-
-\end_inset
-
-, FeFETs
-\begin_inset CommandInset citation
-LatexCommand cite
-key "fei2018ferroelectric"
-literal "false"
-
-\end_inset
-
-, tunnel barriers
-\begin_inset CommandInset citation
-LatexCommand cite
-key "fang2020design"
-literal "false"
-
-\end_inset
-
-, and nonreciprocal charge transport
-\begin_inset CommandInset citation
-LatexCommand cite
-key "tokura2018nonreciprocal"
-literal "false"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Section
-Band bending at ferroelectric-semiconductor-vacuum and -metal interfaces
+Band bending at ferroelectric-semiconductor interfaces
 \end_layout
 
 \begin_layout Standard
@@ -2787,7 +1462,7 @@ Ferroelectric semiconductors can be used to construct devices similar to
  ferroelectric tunnel junctions, planer channels, or other more complex
  devices, where the channel polarization alters the bands.
  This appears in a hysteresis-current behavior, and has been seen in many
- different ferroelectric semiconductors such as , 
+ different ferroelectric semiconductors such as 
 \begin_inset Formula $\mathrm{In_{2}Se_{3}}$
 \end_inset
 
@@ -2806,7 +1481,7 @@ literal "false"
 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "lee2011polarity,fan2015enhanced,yang2009photovoltaic,zhou2014photovoltaic,chen2013theconduction,yi2011mechanism"
+key "lee2011polarity,fan2015enhanced,yang2009photovoltaic,zhou2014photovoltaic,yi2011mechanism,chen2013conduction"
 literal "false"
 
 \end_inset
@@ -2814,7 +1489,7 @@ literal "false"
 , SbSI
 \begin_inset CommandInset citation
 LatexCommand cite
-key "mistewicz2019aferroelectricphotovoltaic"
+key "mistewicz2019ferroelectricphotovoltaic"
 literal "false"
 
 \end_inset
@@ -2830,7 +1505,7 @@ literal "false"
 , SnS
 \begin_inset CommandInset citation
 LatexCommand cite
-key "higashitarumizu2020purelyinplane,kwon2020inplane"
+key "kwon2020inplane,higashitarumizu2020purely"
 literal "false"
 
 \end_inset
@@ -3215,6 +1890,262 @@ noprefix "false"
 \begin_inset CommandInset citation
 LatexCommand cite
 key "chen2020couplings"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Polar and ferroelectric metals
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Polar-metals"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Polar metals, metals that contain dipoles, were first proposed in 1965
+\begin_inset CommandInset citation
+LatexCommand cite
+key "anderson1965symmetry"
+literal "true"
+
+\end_inset
+
+ to explain the structural transition in 
+\begin_inset Formula $V_{3}Si$
+\end_inset
+
+.
+ They were recently verified experimentally, first in 
+\begin_inset Formula $LiOsO_{3}$
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "shi2013ferroelectriclike"
+literal "true"
+
+\end_inset
+
+.
+ Polar metals show a continuous phase transition from non-polar to polar
+ at their Curie temperature
+\begin_inset CommandInset citation
+LatexCommand cite
+key "benedek2016ferroelectric"
+literal "false"
+
+\end_inset
+
+, breaking inversion symmetry.
+ 
+\begin_inset Formula $LiOsO_{3}$
+\end_inset
+
+was shown to transition from the space group 
+\begin_inset Formula $R\bar{3}c$
+\end_inset
+
+ to 
+\begin_inset Formula $R3c$
+\end_inset
+
+ at 
+\begin_inset Formula $T=140\,K$
+\end_inset
+
+ by the shifting of the Li ion
+\begin_inset CommandInset citation
+LatexCommand cite
+key "shi2013ferroelectriclike"
+literal "false"
+
+\end_inset
+
+, forming a similar structure to several insulating ferroelectrics, and
+ accompanied by several changes in the optical and electronic properties
+ attributed to the dipole formation
+\begin_inset CommandInset citation
+LatexCommand cite
+key "laurita2019evidence,padmanabhan2018linear,jin2019raman,shi2013ferroelectriclike"
+literal "false"
+
+\end_inset
+
+.
+ Similar dipole formation has been seen in 
+\begin_inset Formula $Ca_{3}Ru_{2}O_{7}$
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "lei2018observation"
+literal "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $BaTiO_{3}$
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "takahashi2017polar"
+literal "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $LaAuGe$
+\end_inset
+
+, 
+\begin_inset Formula $LaPtSb$
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "du2019high"
+literal "false"
+
+\end_inset
+
+ and other materials.
+ As polar metals have an abundance of free charge carriers, any static electric
+ fields within the material is screened, suggesting at first glance that
+ metallicity is the antithesis to both prerequisites in the traditional
+ definition of ferroelectricity.
+ The carrier screening suppresses long-range coulomb interactions necessary
+ for dipole formation and the fields to (re)orient the dipoles.
+ Recently, Laurita et al.
+ demonstrated evidence showing a partial decoupling of the itinerant electrons
+ from the displacive transverse optical polar phonons responsible for the
+ polar transitions in 
+\begin_inset Formula $LiOsO_{3}$
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "laurita2019evidence"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Ferroelectricity in a metal was first reported in 2-3 layer 
+\begin_inset Formula $WTe_{2}$
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "fei2018ferroelectric"
+literal "false"
+
+\end_inset
+
+, a 2D Van der Waals chalcogenide metal.
+ The 2D material was stacked between two insulating layers of hexagonal
+ Boron Nitrite (
+\begin_inset Formula $hBN$
+\end_inset
+
+) in a double-gated FeFET.
+ The current response showed a clear transition behavior in 
+\begin_inset Formula $WTe_{2}$
+\end_inset
+
+ conductivity from the gate electric fields.
+ Additionally, the thin graphene layers used to gate the channel showed
+ a hysteresis in their conductivity.
+ Later measurements demonstrated the existence of ferroelectric domains
+ with bulk crystals and thin films
+\begin_inset CommandInset citation
+LatexCommand cite
+key "sharma2019roomtemperature"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The free carriers in a polar metal may move to the edges of the material,
+ to the excess electrical charge normally found on the surface of insulating
+ ferroelectrics, instead producing a neutral charge distribution.
+ This freedom can remove the depolarization field found in a typical ferroelectr
+ic
+\begin_inset CommandInset citation
+LatexCommand cite
+key "lei2018observation"
+literal "false"
+
+\end_inset
+
+ extending the longevity of the polarized state of the crystal.
+ The charge screening also lowers the system energy from domain walls of
+ different dipole orientations in close proximity, allowing for opposing
+ polarization domains to form 
+\begin_inset Formula $1nm$
+\end_inset
+
+ apart with only 10s of 
+\begin_inset Formula $meV$
+\end_inset
+
+ potential difference
+\begin_inset CommandInset citation
+LatexCommand cite
+key "stone2019atomic"
+literal "false"
+
+\end_inset
+
+.
+ Potential polar and ferroelectric metal applications include reducing the
+ size of ferroelectric capacitors
+\begin_inset CommandInset citation
+LatexCommand cite
+key "puggioni2018polar"
+literal "false"
+
+\end_inset
+
+, FeFETs
+\begin_inset CommandInset citation
+LatexCommand cite
+key "fei2018ferroelectric"
+literal "false"
+
+\end_inset
+
+, tunnel barriers
+\begin_inset CommandInset citation
+LatexCommand cite
+key "fang2020design"
+literal "false"
+
+\end_inset
+
+, and nonreciprocal charge transport
+\begin_inset CommandInset citation
+LatexCommand cite
+key "tokura2018nonreciprocal"
 literal "false"
 
 \end_inset

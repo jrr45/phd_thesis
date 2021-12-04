@@ -62,7 +62,26 @@ Parallelagram_1.width = 20.e-6
 Parallelagram_1.volt_length = 38.e-6
 Parallelagram_1.length = 52.e-6
 
-combined_samples = [large_trapazoid_5, small_trapazoid_1, large_trapazoid_8, large_trapazoid_7, Parallelagram_1]
+# substrate1
+substrate1 = mp.flake_device()
+substrate1.name = 'GaAs_substrate_1'
+substrate1.fileroot = os.path.join('In-plane', 'GaAs_substrate')
+substrate1.thickness = 0
+substrate1.width = 0.e-6
+substrate1.volt_length = 0.e-6
+substrate1.length = 0.e-6
+
+# substrate2
+substrate2 = mp.flake_device()
+substrate2.name = 'GaAs_substrate_2'
+substrate2.fileroot = os.path.join('In-plane', 'GaAs_substrate')
+substrate2.thickness = 0
+substrate2.width = 0.e-6
+substrate2.volt_length = 0.e-6
+substrate2.length = 0.e-6
+
+combined_samples = [large_trapazoid_5, small_trapazoid_1, large_trapazoid_8,
+                    large_trapazoid_7, Parallelagram_1, substrate1, substrate2]
 
 def plot_resistance_vs_T_combined(size=2, colors=mp.colors_set1, log=True, ylim=(None,None)):
     devices = combined_samples
@@ -80,6 +99,10 @@ def plot_resistance_vs_T_combined(size=2, colors=mp.colors_set1, log=True, ylim=
         
         files = mp.process_device_files(device, filename)
         temperatures.append(files[0]['Temperature_K'])
+        
+        if device == substrate1 or device == substrate2:
+            Resistances.append(files[0]['Resistance_1_Ohms'])
+            continue
         
         if device == large_trapazoid_8:
             Resistances.append(files[0]['Resistance_3_Ohms'])
@@ -101,7 +124,7 @@ def plot_resistance_vs_T_combined(size=2, colors=mp.colors_set1, log=True, ylim=
     for (Xdata, Ydata, color) in zip(temperatures, Resistances, colors):
         ind = mp.first_occurance_1D(Xdata, 300)
         if ind is not None:
-            print(device.name + " resitvity at 300K: " + str(Ydata[ind]))
+            print(device.name + " resistance at 300K: " + str(Ydata[ind]))
         ax.plot(Xdata, (Ydata if log else Ydata*scale_pow),
             ',-', ms=3, linewidth=1.5, color=color)
     
@@ -217,6 +240,8 @@ files_RvsT = [
     'large_trapazoid_8_011_RvsT_4pt.txt',
     'large_trapazoid_7_005_RvsT.txt',
     'Parallelagram_1_010_RvsT_4pt.txt',
+    'pair1_002_RvsT.txt',
+    'pair4_001_RvsT_Top-bottom.txt',
     ]
 Hall_files_400K = [
     'large_trapazoid_5_003_RvsB_400.0K.txt',
@@ -249,9 +274,11 @@ IV_files_300K = [
 RvsT_plot = [
     True, # good
     True, # good
-    True, # 2pt only
+    False, # 2pt only
     False, # jagged
     False, # small spike
+    False, #substrate
+    False, #substrate
     ]
 Hall_plot_300K = [
     (False, False), # no data
@@ -361,14 +388,14 @@ def plot_VH_vs_H_combined(size=2, colors=mp.colors_set1, rawdata=False, log=Fals
 def main(): 
     colors=mp.colors_set1
     
-    #plot_resistance_vs_T_combined(size=2, log=True, colors=colors)
+    plot_resistance_vs_T_combined(size=2, log=True, colors=colors)
     #plot_rho_vs_T_combined(size=2, log=True, colors=colors)
-    Bmax = 4
+    Bmax = 2
     #plot_VH_vs_H_combined(size=2, colors=[colors[1], colors[2]], temperature=300, 
     #                      Brange=(-Bmax, Bmax), Bfitlimits=(-2, 2))
-    plot_VH_vs_H_combined(size=2, colors=[colors[0], colors[2]], 
-                          temperature=400, 
-                          Brange=(-Bmax, Bmax), Bfitlimits=(-2, 2))
+    #plot_VH_vs_H_combined(size=2, colors=[colors[0], colors[2]], 
+    #                      temperature=400, 
+    #                      Brange=(-Bmax, Bmax), Bfitlimits=(-2, 2))
     #get_R4pt(combined_samples[0], temperature=300, rawdata=True)
 if __name__== "__main__":
   main()

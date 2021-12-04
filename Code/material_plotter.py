@@ -13,9 +13,11 @@ from io import StringIO
 
 #%% physics constants
 fundamental_charge_e = -1.602176634 * (10**-19) # SI: C
+Planck = 6.62607004 * 10**-34 #SI m^2 kg / s
 ħ = 1.0545718 * 10**-34 #SI m^2 kg / s
 kB = 1.38064852 * (10**-23) # m^2 * kg / (s^2 * K)  Boltzmann constant
 kBeV = 8.617333262145 * (10**-5) # eV / K  Boltzmann constant
+speed_of_light = 299792458 # m / s
 
 #%% default properties for figures
 def_fontsize=10
@@ -564,7 +566,6 @@ def plot_RDSvsVg_generic(device, files, savename, colors=colors_set1, R_ind=1, l
     plt.clf()
     
     
-    
 def plot_LnRSDvsPowT_generic(device, files, savename, colors, power, power_label, \
                         size=def_size, majorx=None, xlim=(None,None), ylim=(None,None), \
                         fontsize=def_fontsize, labelsize=def_labelsize):
@@ -653,7 +654,7 @@ def process_hall_data(device, Hall_file, T_Rxx_4pt=None,
         R_2pt = VDS_data[ind]/current ##
         σs = device.length / (R_2pt * device.width)
     
-    B_data = B_data[occ0:occ1]
+    B_data = B_data[occ0:occ1+1]
     VH_datas = []
     fitdata = []
     
@@ -665,7 +666,7 @@ def process_hall_data(device, Hall_file, T_Rxx_4pt=None,
             V_Hdata = (V_Hdata - np.flip(V_Hdata))/2
         VH_datas.append(V_Hdata)
         
-        V_Hdata = V_Hdata[occ0:occ1]
+        V_Hdata = V_Hdata[occ0:occ1+1]
         
         # fit V_Hall to a line
         (pcoefs, residuals, rank, singular_values, rcond) = \
@@ -675,7 +676,7 @@ def process_hall_data(device, Hall_file, T_Rxx_4pt=None,
         fits.append(pfit)
         fitvals = np.empty(np.size(Hall_file['Current_A']))
         fitvals[:] = np.nan
-        fitvals[occ0:occ1] = pfit(0) + pfit(1)*B_data
+        fitvals[occ0:occ1+1] = pfit(0) + pfit(1)*B_data
         fitdata.append(fitvals)
     
         # error in fit

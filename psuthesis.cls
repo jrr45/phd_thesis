@@ -311,14 +311,6 @@
 \renewcommand{\psu@readersixtitle}{#3}}
 
 
-\newsavebox{\tempbox}
-\renewcommand{\@makecaption}[2]{%
-\vspace{7pt}\sbox{\tempbox}{\small\textbf{#1.} #2}%
-\ifthenelse{\lengthtest{\wd\tempbox > \linewidth}}%
-{\small\textbf{#1.} #2\par}%
-{\centering \small\textbf{#1.} #2}%
-}
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                                %
