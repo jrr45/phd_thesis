@@ -13,10 +13,18 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib import colors
 from matplotlib import cm
+from matplotlib.ticker import (MultipleLocator)
 
+
+eds1_film = mp.device()
+eds1_film.fileroot = 'TEM_data'
+eds1_film.name = 'eds1'
 eds2_film = mp.device()
 eds2_film.fileroot = 'TEM_data'
 eds2_film.name = 'eds2'
+eds3_film = mp.device()
+eds3_film.fileroot = 'TEM_data'
+eds3_film.name = 'eds3'
 eds4_film = mp.device()
 eds4_film.fileroot = 'TEM_data'
 eds4_film.name = 'eds4'
@@ -55,7 +63,7 @@ def plot_eds_maps(film, size=2):
         mp.save_generic_svg(fig, film, '%s_%s' % (film.name, element))
 
 def plot_HAADF_maps(film, size=2):
-    element_file = os.path.join('TEM_data', '_%s_HAADF.txt' % (film.name))
+    element_file = os.path.join('TEM_data', '%s_HAADF.txt' % (film.name))
 
     eds_data = np.genfromtxt(element_file, delimiter=",")
     
@@ -69,13 +77,41 @@ def plot_HAADF_maps(film, size=2):
     #plt.colorbar()
     plt.show()
     mp.save_generic_svg(fig, film, '_%s_HAADF' % (film.name))
+
+def plot_element_line(film):
+    element_file = os.path.join('TEM_data', 'justin linescan raw data excel.csv')
+    
+    eds_data = np.genfromtxt(element_file, names=True, 
+                             delimiter=",")
+    
+    fig = plt.figure(figsize=(2, 2), dpi=600)
+    ax = mp.pretty_plot_single(fig, labels=["x (nm)", 'Element (%)'])
+    
+    elements = ['C','O','Ga','As','In','Se']
+    colors = mp.colors_set1[[2,3,5,4,0,1]]
+    
+    position = eds_data['Position_microns']
+    
+    for (color, element) in zip (colors, elements):
+        ax.plot(position*1000, eds_data[element], '.-', ms=1.1, linewidth=0.8, color=color)
+        
+    ax.set_ylim((0,104))
+    ax.yaxis.set_major_locator(MultipleLocator(25))
+    ax.set_xlim((1,110))
+    ax.xaxis.set_major_locator(MultipleLocator(25))
+    
+    mp.save_generic_svg(fig, film, "lineplot")
+    plt.show()
+    plt.clf()
     
 def main():
     size = 2
-    plot_eds_maps(eds2_film, size=size)
-    plot_HAADF_maps(eds2_film, size=size)
-    plot_eds_maps(eds4_film, size=size)
-    plot_HAADF_maps(eds4_film, size=size)
+    #plot_eds_maps(eds2_film, size=size)
+    #plot_HAADF_maps(eds2_film, size=size)
+    #plot_eds_maps(eds4_film, size=size)
+    #plot_HAADF_maps(eds4_film, size=size)
+    #plot_HAADF_maps(eds3_film, size=size)
+    plot_element_line(eds4_film)
 
 if __name__== "__main__":
   main()

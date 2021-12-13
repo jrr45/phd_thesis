@@ -99,8 +99,18 @@ Semiconductors, as their name implies, are characterized by their conduction
  with nearby atoms dictate most of the properties of a semiconductor.
  The allowed energy levels form bands across the lattice and in momentum
  space that dictate the path of an moving electron.
- The relative location of the Fermi energy to various bands determines much
- of conductivity and device behavior.
+ The relative location of the Fermi energy 
+\begin_inset Formula $E_{F}$
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "Fermi-energy"
+
+\end_inset
+
+ to various bands determines much of conductivity and device behavior.
  In metals the Fermi energy falls within energy-momentum band(s) allowing
  electrons to conduct with little resistance.
  Insulators have a large gap between bands, conventionally at least 3 electron
@@ -535,6 +545,13 @@ name "Percolation-removed"
 \begin_inset Formula $p_{c}$
 \end_inset
 
+
+\begin_inset CommandInset label
+LatexCommand label
+name "Percolation-removed-critical"
+
+\end_inset
+
 , the carriers will be free to conduct through metallic regions of the lattice,
  abet with reduced paths to traverse across the lattice.
  The fraction is depenant on the lattice structure and number of neighbors
@@ -625,8 +642,19 @@ In semiconductors and semiconductor devices the carriers can become localized
 ity and mobility.
  The localization of carriers from disorder can even induce a crystal to
  undergo a metal-insulator transition (MIT).
- MITs display a shift in the resistivity-temperature dependence, particularly
- at 0 K where the resistivity of the crystal changes from finite to infinite.
+ MITs display a shift in the resistivity-temperature 
+\begin_inset Formula $\rho\left(T\right)$
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "resistivity"
+
+\end_inset
+
+ dependence, particularly at 0 K where the resistivity of the crystal changes
+ from finite to infinite.
 \begin_inset CommandInset citation
 LatexCommand cite
 key "mahan2010condensed"
@@ -773,7 +801,7 @@ separation "3pt"
 shadowsize "4pt"
 framecolor "black"
 backgroundcolor "none"
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \noindent
@@ -821,7 +849,7 @@ status collapsed
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \noindent
@@ -886,6 +914,13 @@ The wave function for a carrier in a periodic lattice in (a) an extended
  The mobility edge divides the localized from extended states at the critical
  energy 
 \begin_inset Formula $E_{c}$
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "Anderson-critical-energy"
+
 \end_inset
 
 .
@@ -1118,19 +1153,19 @@ If additional donors are added to the crystal, the additional electron-electron
  in behavior.
  In the Mott model this critical transition is typically abrupt, occurring
  once the concentration of donors crosses the critical donor density 
-\begin_inset Formula $n_{c}$
+\begin_inset Formula $n_{dc}$
 \end_inset
 
 .
  If the donor concentration is above is above this threshold the semiconductor
  is metallic in nature and has a finite conductivity at 0 K, conversely,
  if the density of donors is below 
-\begin_inset Formula $n_{c}$
+\begin_inset Formula $n_{dc}$
 \end_inset
 
  then a Mott insulator forms and has infinite resistivity at 0 K.
  Mott found this critical density to be 
-\begin_inset Formula $n_{c}\simeq.24/a_{_{0}}$
+\begin_inset Formula $n_{dc}\simeq.24/a_{_{0}}$
 \end_inset
 
 , where 
@@ -1560,6 +1595,17 @@ spin-orbit interactions
 \begin_inset Formula $l_{SO}$
 \end_inset
 
+
+\series default
+
+\begin_inset CommandInset label
+LatexCommand label
+name "HLN-mean-distance"
+
+\end_inset
+
+
+\series bold
 .
 \series default
 
@@ -1601,8 +1647,22 @@ When constructing electronic devices with multiple materials we must consider
 \begin_inset Formula $V$
 \end_inset
 
+
+\begin_inset CommandInset label
+LatexCommand label
+name "Voltage"
+
+\end_inset
+
  and current 
 \begin_inset Formula $I$
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "Current"
+
 \end_inset
 
  given by the usual equation 
@@ -1611,6 +1671,13 @@ When constructing electronic devices with multiple materials we must consider
 
 , where the resistance 
 \begin_inset Formula $R$
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "Resistance"
+
 \end_inset
 
  can depend on many factors like frequency and temperature.
@@ -1719,6 +1786,13 @@ name "semiconductor electron affinity"
 \begin_inset Formula $E_{vac}$
 \end_inset
 
+
+\begin_inset CommandInset label
+LatexCommand label
+name "vacuum energy"
+
+\end_inset
+
  must be continuous across the junction
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -1749,7 +1823,7 @@ name "energy barrier"
 \begin{equation}
 \begin{cases}
 q\phi_{Bn}=q\phi_{M}-q\chi_{S} & n-type\\
-q\phi_{Bp}=E_{g}-\left(q\phi_{M}-q\chi_{S}\right) & p-type
+q\phi_{Bp}=E_{G}-\left(q\phi_{M}-q\chi_{S}\right) & p-type
 \end{cases}
 \end{equation}
 
@@ -1775,6 +1849,13 @@ literal "true"
 \begin_inset Formula $V_{bi}$
 \end_inset
 
+
+\begin_inset CommandInset label
+LatexCommand label
+name "built-in-potential"
+
+\end_inset
+
  when moving from the conduction band to the metal
 \begin_inset Formula 
 \begin{equation}
@@ -1787,9 +1868,23 @@ where
 \begin_inset Formula $V_{n}$
 \end_inset
 
- is the distance between the Fermi energy in the semiconductor bulk and
+
+\begin_inset CommandInset label
+LatexCommand label
+name "difference-EF-EC"
+
+\end_inset
+
+ is the difference between the Fermi energy in the semiconductor bulk and
  the conduction band energy, 
 \begin_inset Formula $N_{C}$
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "DoS-conduction"
+
 \end_inset
 
  the effective density of states in the conduction band, 
@@ -1797,6 +1892,13 @@ where
 \end_inset
 
  the donor-impurity density
+\begin_inset CommandInset label
+LatexCommand label
+name "donor-impurity-density"
+
+\end_inset
+
+
 \begin_inset CommandInset citation
 LatexCommand cite
 key "sze2012semiconductor"
@@ -2008,10 +2110,6 @@ literal "true"
 
 .
  
-\begin_inset Formula $\phi_{B}$
-\end_inset
-
- is the Schottky barrier height, 
 \begin_inset Formula $E_{C}$
 \end_inset
 
@@ -2019,7 +2117,14 @@ literal "true"
 \begin_inset Formula $E_{V}$
 \end_inset
 
- the conducting and valance bands.
+
+\begin_inset CommandInset label
+LatexCommand label
+name "conduction-valance-band"
+
+\end_inset
+
+ represent the conducting and valance bands.
  A simplified interface region is shown that does not encapsulate all of
  the complex chemical and physics dynamics that may be found in a real system
  interface.
@@ -2096,7 +2201,7 @@ name "current density"
  is given by
 \begin_inset Formula 
 \begin{align}
-J & =A^{**}T^{2}\exp\left(-\frac{q\Phi_{B}}{k_{B}T}-\frac{q}{k_{B}T}\sqrt{\frac{q\mathcal{E}_{m}}{4\pi\epsilon_{0}\epsilon_{r}}}\right)\label{eq:Schottky-barrier}\\
+J & =A^{**}T^{2}\exp\left(-\frac{q\phi_{B}}{k_{B}T}-\frac{q}{k_{B}T}\sqrt{\frac{q\mathcal{E}_{m}}{4\pi\epsilon_{0}\epsilon_{r}}}\right)\label{eq:Schottky-barrier}\\
  & =J_{0}\left[\exp\left(\frac{qV}{k_{B}T}\right)-1\right]\\
 J_{0} & =A^{**}T^{2}\exp\left(-\frac{q\phi_{Bn}}{k_{B}T}\right)\\
 A^{**} & =\frac{4\pi qk^{2}m^{*}}{h^{3}}=\frac{120m^{*}}{m_{0}}
@@ -2116,6 +2221,13 @@ A^{**} & =\frac{4\pi qk^{2}m^{*}}{h^{3}}=\frac{120m^{*}}{m_{0}}
 \begin_inset Formula $\mathcal{E}_{m}$
 \end_inset
 
+
+\begin_inset CommandInset label
+LatexCommand label
+name "MS-interface-energy"
+
+\end_inset
+
  the maximum electric field at the interface, 
 \begin_inset Formula $A^{**}$
 \end_inset
@@ -2131,15 +2243,36 @@ name "Richardson"
 \begin_inset Formula $m^{*}$
 \end_inset
 
+
+\begin_inset CommandInset label
+LatexCommand label
+name "effective-electron-mass"
+
+\end_inset
+
  the effective electron mass, 
 \begin_inset Formula $m_{0}$
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "free-electron-mass"
+
 \end_inset
 
  the free electron mass, and 
 \begin_inset Formula $h$
 \end_inset
 
- 
+
+\begin_inset CommandInset label
+LatexCommand label
+name "Plancks-constant"
+
+\end_inset
+
+ is Planck's constant 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "elhadidy2011symmetrical,osvald2015backtoback,nouchi2014extraction,sze2012semiconductor"
@@ -2311,8 +2444,8 @@ literal "true"
  The Schottky-Richardson-Simmons equation is
 \begin_inset Formula 
 \begin{align}
-J & =2q\left(\frac{2\pi m_{0}k_{B}}{h^{2}}\right)^{3/2}T^{3/2}\mathcal{E}_{m}\mu\left(\frac{m^{*}}{m_{0}}\right)\exp\left(-\frac{q\Phi_{B}}{k_{B}T}-\frac{q}{k_{B}T}\sqrt{\frac{q\mathcal{E}_{m}}{4\pi\epsilon_{0}\epsilon_{r}}}\right)\label{eq:Schotty-Simmons}\\
- & =\alpha^{*}T^{3/2}\mathcal{E}_{m}\mu\left(\frac{m^{*}}{m_{0}}\right)\exp\left(-\frac{q\Phi_{B}}{k_{B}T}-\frac{q}{k_{B}T}\sqrt{\frac{q\mathcal{E}_{m}}{4\pi\epsilon_{0}\epsilon_{r}}}\right)\\
+J & =2q\left(\frac{2\pi m_{0}k_{B}}{h^{2}}\right)^{3/2}T^{3/2}\mathcal{E}_{m}\mu\left(\frac{m^{*}}{m_{0}}\right)\exp\left(-\frac{q\phi_{B}}{k_{B}T}-\frac{q}{k_{B}T}\sqrt{\frac{q\mathcal{E}_{m}}{4\pi\epsilon_{0}\epsilon_{r}}}\right)\label{eq:Schotty-Simmons}\\
+ & =\alpha^{*}T^{3/2}\mathcal{E}_{m}\mu\left(\frac{m^{*}}{m_{0}}\right)\exp\left(-\frac{q\phi_{B}}{k_{B}T}-\frac{q}{k_{B}T}\sqrt{\frac{q\mathcal{E}_{m}}{4\pi\epsilon_{0}\epsilon_{r}}}\right)\\
 \alpha^{*} & =2q\left(\frac{2\pi m_{0}k_{B}}{h^{2}}\right)^{3/2}
 \end{align}
 
@@ -2834,8 +2967,29 @@ noprefix "false"
 
 \end_inset
 
- shows the typical behavior between drain-source voltage and current at
- different gate voltage intervals.
+ shows the typical behavior between drain-source voltage 
+\begin_inset Formula $V_{DS}$
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "Voltage-drain-source"
+
+\end_inset
+
+ and current 
+\begin_inset Formula $I_{D}$
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "Current-drain"
+
+\end_inset
+
+ at different gate voltage intervals.
  In the cutoff region the channel conduction is small and the transistor
  can be seen as off.
  For current to flow in the channel a minimum voltage is needed between
@@ -2854,6 +3008,13 @@ name "threshold voltage"
  in the channel and semiconductor body.
  As the channel carrier concentration is raised by the gate voltage 
 \begin_inset Formula $V_{G}$
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "Gate-voltage"
+
 \end_inset
 
  the semiconductor has enough free charges for current flow through the
@@ -3168,6 +3329,13 @@ where
 
  and 
 \begin_inset Formula $\epsilon_{r}=1+\chi$
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "dielectric-permittivity-relative"
+
 \end_inset
 
  the relative dielectric permittivity.

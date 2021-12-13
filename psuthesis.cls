@@ -610,7 +610,7 @@ Department Head \\
         \setlength{\psu@intersigspace}{1.5\baselineskip}
     }
     \vspace*{-0.2in}
-    \noindent {\normalsize The \MakeTextLowercase{\psu@documenttype} of \psu@author\ was reviewed and approved$^{*}$ by the following:}\\[3\baselineskip]
+    \noindent {\normalsize The \MakeTextLowercase{\psu@documenttype} of \psu@author\ was reviewed and approved by the following:}\\[3\baselineskip]
 \mbox{}\hfill
 \parbox{\textwidth - 0.5in}{
          \psu@advisor\\[\psu@sigoptionskip]

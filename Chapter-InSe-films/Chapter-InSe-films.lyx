@@ -93,7 +93,7 @@ name "chapter:InSe-films"
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Introduction
 \end_layout
 
@@ -106,11 +106,28 @@ literal "false"
 
 \end_inset
 
- has been one of the most significant advances in material research, for
- its fundamental importance demonstrating an actualized 2D material, and
- launching a large amount of interest in 2D material devices.
- The intrinsic properties of these 2D materials, such as the high mobility
- of black phosphorus (BP)
+ has brought the dramatic advances in the fundamental studies of two-dimensional
+ (2D) materials as well as novel devices of 2D materials.
+ Monolayer graphene obtained by mechanical exfoliation of a single bulk
+ crystal has been shown to possess an electronic mobility in excess of 
+\begin_inset Formula $\ensuremath{10^{4}}\ensuremath{\mathrm{cm^{2}V\cdot s}}$
+\end_inset
+
+ in room temperature.
+ Wafer-size, epitaxial graphene grown chemical vapor deposition (CVD), on
+ the other hand, showed lower mobilities because of impurities from the
+ substrate or device fabrication
+\begin_inset CommandInset citation
+LatexCommand cite
+key "gosling2021universal"
+literal "false"
+
+\end_inset
+
+.
+ Other 2D materials showing high mobilities with added advantage of finite
+ energy gap that is important for achieving a high on-off ratio, such as
+ black phosphorus (BP)
 \begin_inset CommandInset citation
 LatexCommand cite
 key "li2014black"
@@ -118,8 +135,7 @@ literal "false"
 
 \end_inset
 
- and semiconducting band structures of transition metal dichalcogenides
- (TMDs)
+and transition metal chalcogenides (TMCs)
 \begin_inset CommandInset citation
 LatexCommand cite
 key "zhu2019nanoscale,kang20202d"
@@ -127,18 +143,14 @@ literal "false"
 
 \end_inset
 
-, may one day let us bypass the miniaturization limitations in traditional
- MOSFETs.
- Typically, these materials form layered sheets of atoms with Van der Waals
- bonds.
- This allows mechanical exfoliation of bulk crystals to produce single-crystal
- flakes of a material with few defects and dangling bonds.
- 2D materials are often stacked to form heterostructures that utilize the
- properties of each individual layer and the interfaces between layers of
- different crystals.
- Mechanically exfoliation is inherently unreliable, so films that can be
- grown and retain the unique properties of the layered structure are needed
- for commercial-scale applications
+, have also been found.
+ These 2D materials feature a layered Van der Waals crystalline structure.
+ The high mobilities seen in these material of a few atomic layer thickness
+ are in part due to the relative ease in reducing the concentration of defects
+ and dangling bonds, in particular, in mechanically exfoliated 2D crystals.
+ On the other hand, mechanically exfoliation is inherently unreliable, so
+ films that can be grown and retain properties of the layered structure
+ are needed for technological applications of these high-mobility 2D materials
 \begin_inset CommandInset citation
 LatexCommand cite
 key "kang2015highmobility"
@@ -202,7 +214,7 @@ status open
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -240,7 +252,7 @@ status collapsed
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -281,7 +293,7 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Crystal structures
+InSe polymorph crystal structures
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:InSe-Crystal-structures2"
@@ -344,16 +356,17 @@ noprefix "false"
 \end_inset
 
 .
- Each polymorph unit cell is made up of 2-3 layers with the respective stacking
- and space groups: 2H-
+ Each polymorph of InSe features an unit cell composed of two or three identical
+ layers with different stackings, which belong to the respective three space
+ groups: 
 \begin_inset Formula $P6_{3}/mmc$
 \end_inset
 
-, 3R-
+, 
 \begin_inset Formula $R3m$
 \end_inset
 
-, and 2H-
+, and 
 \begin_inset Formula $P\bar{6}m2$
 \end_inset
 
@@ -418,9 +431,10 @@ literal "false"
 \end_inset
 
 .
- All three phases have reported direct bulk band gaps of approximately 1.26
- eV, and as the crystals thickness decreases the band gap increases up to
- 2.11 eV due to quantum confinement and changes from direct to indirect
+ All three polymorphs of InSe were reported possess a direct energy band
+ gap of approximately 1.26 eV in the bulk.
+ As the thickness of the crystals decreases, the band gap increases up to
+ 2.11 eV in the few layer limit, and the gap changes from direct to indirect
 \begin_inset CommandInset citation
 LatexCommand cite
 key "yang2017waferscale,mudd2016directtoindirect,bandurin2017high"
@@ -429,12 +443,11 @@ literal "false"
 \end_inset
 
 .
- There have been many reports of high carrier mobility in InSe, well in
- excess of 
+ High carrier mobilities in InSe well in excess of 
 \begin_inset Formula $\mathrm{1000\,cm^{2}V^{-1}s^{-1}}$
 \end_inset
 
-
+ have been reported
 \begin_inset CommandInset citation
 LatexCommand cite
 key "wang2021magnetotransport,zheng2018pulsedlaser,jiang2019stable,yuan2019realization,li2018high"
@@ -442,8 +455,7 @@ literal "false"
 
 \end_inset
 
-.
- The carrier mobility can be further enhanced by choice of substrate
+, which was found to depend on the substrate
 \begin_inset CommandInset citation
 LatexCommand cite
 key "zheng2018pulsedlaser,zeng2018gatetunable,feng2014back"
@@ -451,7 +463,7 @@ literal "false"
 
 \end_inset
 
- or encapsulating with other materials
+ or encapsulation with other materials
 \begin_inset CommandInset citation
 LatexCommand cite
 key "chang2018synthesis,liang2018improved,siangchng2020nitrogenmediated"
@@ -460,38 +472,35 @@ literal "false"
 \end_inset
 
 .
- The mobility reported in grown thin films tends to be lower than similar
- devices manufactured from exfoliated crystals, which must be understood
- and addressed for commercial use.
+ The mobility reported in thin films grown on various substrates tend to
+ be lower than mechanically exfoliated crystals
+\begin_inset CommandInset citation
+LatexCommand cite
+key "bandurin2017high,yuan2019realization,li2018high"
+literal "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-In this work we report the thin film growth of of InSe on GaAs by molecular
- beam epitaxy and characterization of the films.
- Optically measurements of Raman and X-ray Diffraction (XRD) determine the
- single phase structure of the InSe films.
- EDS revealed the presence of relatively few impurities in the film, showing
- a nearly 1:1 ratio of In-Se within the film.<TODO show below> Transmission
- electron microscopy (TEM) was used to further characterize the film and
- showed presence of stacking defects in the film growth.
- Finally, Hall devices manufactured from the InSe we used for transport
- measurements.
- The resistance-temperature dependence showed an insulating behavior, though
- all measurements showed partial conduction through the underlying GaAs
- substrate.
- From hall measurements, the carrier density of the films were found to
- range between 
-\begin_inset Formula $8.83\textrm{-}10.81\times10^{12}\,\mathrm{cm^{-3}}$
+Here we report our low-temperature growth of thin films of InSe on a high-resist
+ivity GaAs substrate by molecular beam epitaxy (MBE).
+ By analyzing the Raman spectroscopy and X-ray Diffraction (XRD) data we
+ conclude that the InSe film stacking matches previous reports for the 
+\begin_inset Formula $\gamma$
 \end_inset
 
- at 300 K and 
-\begin_inset Formula $2.94\textrm{-}3.96\times10^{15}\,\mathrm{cm^{-3}}$
-\end_inset
-
- at 400 K.
+ polymorph.
+ We also fabricated Hall bar devices for transport measurements to determine
+ the carrier density and mobility.
+ Transmission electron microscopy (TEM) was used to confirm the phase of
+ our films, and also revealed the presence of stacking defects in the film
+ growth.
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Film characterization
 \end_layout
 
@@ -507,7 +516,7 @@ status open
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -610,7 +619,7 @@ Raman
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -659,7 +668,8 @@ name "fig:Optical-InSe"
 \end_layout
 
 \begin_layout Plain Layout
-(a) XRD diffraction data showing peaks of InSe, GaAs(111), and indium impurities.
+(a) X-ray diffraction data showing peaks of InSe, GaAs(111), and indium
+ impurities.
  (b) atomic force microscopy surface scan of the film, in-plane scale bar
  is 500 nm.
  The film shows small variations in growth height, up to 6 nm across the
@@ -786,7 +796,7 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-The Raman sprectrum of the film and substrate is shown in figure 
+A Raman sprectrum of the film and substrate is shown in figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Optical-InSe"
@@ -913,174 +923,13 @@ literal "true"
  
 \end_layout
 
-\begin_layout Standard
-\noindent
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename Figures/TEM/linescan.jpg
-	lyxscale 20
-	width 5cm
-	groupId TEMandEDS
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-HAADF and Elemental composition
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename Figures/TEM/09.50.01 CCD Acquire_0006.svg
-	width 5cm
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-HRTEM
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename Figures/TEM/Diffraction pattern.png
-	lyxscale 20
-	width 5cm
-	groupId TEMandEDS
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Diffraction pattern 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-TEM, HAADF, and EDS of film and metal lead
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-(a) HAADF sideview of InSe film and the EDS elemental composition.
- (c) corresponding EDS scan matching the HAADF sideview.
- (b) TEM sideview of GaSe substrate and InSe film, scale bar is X 
-\begin_inset Formula $\mu m$
-\end_inset
-
-.
- Film growth shows evidence for stacking faults.
- Diffraction pattern of the InSe film with predicted peaks for the 
-\begin_inset Formula $\gamma$
-\end_inset
-
--phase of the crystal, the scale bar is 5 
-\begin_inset Formula $\mathrm{nm}^{-1}$
-\end_inset
-
-.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
+\begin_layout Section
 Device fabrication and measurements
 \end_layout
 
 \begin_layout Standard
-Hall bar devices were used to measure resistance along the plane of the
- InSe film and transport behavior.
- The films were patterned using photolithography with a PMMA, PMGI, and
- SPR stack.
- This was used to avoid exposing the film to any alkali developers, which
- can react with transition metal chalcogenide crystals
-\begin_inset CommandInset citation
-LatexCommand cite
-key "choi2011su8,choi2008protective"
-literal "true"
-
-\end_inset
-
-.
- The films were etched with a plasma and the protective resist was removed.
- The same photolithography process was then used to evaporate 5 nm of Ti
- and 45 nm of Au and form contacts on the film.
- Figures 
+We fabricated Hall bar devices to measure in-plane electrical transport
+ of the InSe film (see 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:In-plane-transport"
@@ -1090,11 +939,25 @@ noprefix "false"
 
 \end_inset
 
-a-c shows a schematic of the film device and optical images of samples A
- and B.
- All measurements of the InSe in-plane devices were done in low vacuum in
- a Physical Properties Measurement System cyrostat (PPMS, Quantum design),
- with a 9 T superconducting magnet.
+a for a schematic of the device).
+ The films were patterned by photolithography using a trilayer resist stack
+ of PMMA, PMGI, and SPR.
+ This was chosen to avoid exposing the film to any alkali developers, which
+ can react with a transition metal chalcogenide
+\begin_inset CommandInset citation
+LatexCommand cite
+key "choi2011su8,choi2008protective"
+literal "true"
+
+\end_inset
+
+.
+ The film was etched with a plasma before the protective resist stack was
+ removed.
+ The same photolithography process was then used to prepare electrodes of
+ 5 nm of Ti followed by a 45 nm of Au.
+ These devices were measured in a Physical Properties Measurement System
+ (PPMS) equipped with a 9 T superconducting magnet.
  DC source bias was provided by a Keithley 6340 Sub-Femtoamp Remote SourceMeter,
  four-point and Hall voltages were measured using two Keithley 2182A nanovoltmet
 ers.
@@ -1149,18 +1012,20 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Figures/in-plane transport/combined_rhovsT_log - optical image insets.svg
+	filename Figures/in-plane transport/combined_RvsT_log - optical image insets.svg
 	width 5cm
-	groupId resistivity-temperature
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Samples A, B, and C: 
-\begin_inset Formula $\rho\left(T\right)$
+Samples A and B: 
+\begin_inset Formula $R\left(T\right)$
 \end_inset
 
 
@@ -1288,12 +1153,9 @@ name "fig:In-plane-transport"
 
 \begin_layout Plain Layout
 (a) schematic of the in-plane Hall bar device on GaAs and source bias used.
- (b) resistivity temperature data for samples A, B, and C from 300 to 400
- K.
+ (b) resistance temperature data for samples A and from 300 to 400 K.
  Samples A and B were taken using a current source and measuring along the
  voltage contacts.
- Sample C was measured with only the current leads and includes contact
- resistance from InSe-Ti/Au interface.
  (b-inset) optical image of samples A and B, scale bar is 
 \begin_inset Formula $20\,\mathrm{\mu m}$
 \end_inset
@@ -1301,7 +1163,8 @@ name "fig:In-plane-transport"
 .
  Hall resistance, symmerterized, taken at 300 (c) and 400 K (d) for samples
  A, B, and C.
- Lines indicate linear regions that were fit for mobility calculations.
+ Lines indicate linear regions that were fit for carrier density and mobility
+ calculations.
  
 \end_layout
 
@@ -1311,9 +1174,9 @@ name "fig:In-plane-transport"
 \end_layout
 
 \begin_layout Standard
-The temperature dependence of the DC resistivity were measured for InSe
- films.
- The IP temperature dependence of the films is seen in figures 
+The in-plane resistance of the InSe devices was only measurable above room
+ temperature.
+ The temperature dependence shown in figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:In-plane-transport"
@@ -1323,22 +1186,19 @@ noprefix "false"
 
 \end_inset
 
-b for samples A, B, and C.
- The four-point, and two-point, temperature dependence of each sample displays
- an insulating behavior typical of a semiconductor.
- The four-point setup of the IP samples make it unlikely that behavior is
- dominated by the contact resistance.
- The narrow temperature range makes determining the conduction behavior
- of the film unfeasible from these measurements, as both intrinsic semiconductor
- conduction, variable range hopping, etcetera, are all relatively linear
- within this window.
- 
+b for samples A and B for a film thickness of 40 nm.
+ The temperature dependence of each sample displays an insulating-like behavior
+ up to 400 K.
+ The four-point setup of the devices make it unlikely that behavior is dominated
+ by the contact resistance.
+ The narrow temperature range over which the resistance was measured makes
+ determining the conduction mechanism of the film unfeasible, as most mechanisms
+ are relatively linear within this window.
 \end_layout
 
 \begin_layout Standard
-The Hall voltage with varying magnetic field was measured for samples A,
- B, and C.
- Figure 
+We also measured the Hall voltage with varying magnetic field.
+ Figures 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:In-plane-transport"
@@ -1348,51 +1208,67 @@ noprefix "false"
 
 \end_inset
 
-b and c show the behavior at 300 and 400 K.
- The data was `symmetrized', to remove the effects of magnetoconductance
- and other even terms of magnetic field dependence, as the Hall voltage
- should vary directly with magnetic field.
- From the linear regions of the Hall voltage, the 
-\begin_inset Formula $dV_{H}/dB$
+c and d show the behavior at 300 and 400 K.
+ The charge carriers were found to be electrons, consistent with what reported
+ in literature<TODO ref>.
+ The charge carrier density of the film were 
+\begin_inset Formula $10.8\times10^{12}$
 \end_inset
 
- slope was used to calculate the mobility and carrier concentration of the
- IP film devices.
- The respective values are displayed in table 
+ and 
+\begin_inset Formula $8.8\times10^{12}$
+\end_inset
+
+ 
+\begin_inset Formula $\mathrm{cm^{-3}}$
+\end_inset
+
+ for samples B and C at 300 K, and 
+\begin_inset Formula $2.9\times10^{15}$
+\end_inset
+
+ and 
+\begin_inset Formula $4.0\times10^{15}$
+\end_inset
+
+ 
+\begin_inset Formula $\mathrm{cm^{-3}}$
+\end_inset
+
+ for samples A and C at 400 K, respectively.
+ Using the values of in-plane resistivity shown in figure 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "tab:Hall-mobilities"
+reference "fig:In-plane-transport"
 plural "false"
 caps "false"
 noprefix "false"
 
 \end_inset
 
-.
- The samples all display high mobilities, 723 and 1083 for samples B and
- C at 300 K, 1404 and 3010 
+c we obtain a mobility of 723 and 1083 for samples B and C at 300 K, 1404
+ and 3010 
 \begin_inset Formula $\mathrm{cm^{2}V^{-1}s^{-1}}$
 \end_inset
 
  for samples A and C at 400 K.
- InSe has had many reports of high mobility flakes, but reported film values
- are often much lower.
- Some of the previous values reported in the literature are given in table
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "tab:Reported-InSe-mobilities"
-plural "false"
-caps "false"
-noprefix "false"
-
+ High mobility was previously reported in 2D crystals of 
+\begin_inset Formula $\gamma$
 \end_inset
 
-.
- Our Hall mobilities are higher than many of the previous reported film
- values, though not the largest reported.
- We can conclude that the InSe films grown on GaAs via molecular beam epitaxy
- as a practical path for commercial InSe applications.
+-InSe prepared by mechanical exfoliation as discussed above.
+ However, corresponding values reported for large-area films were typically
+ much lower than those listed above, but not the largest reported.
+ On the other hand, additional measurements on the GaAs substrate on the
+ same order of magnitude as the films, which raised concern that that the
+ substrate may form a parallel conduction channel which likely effected
+ the estimate of the mobility and carrier density.
+ Additionally, the top surface layer on which the 
+\begin_inset Formula $\gamma$
+\end_inset
+
+-InSe film was deposited may be doped from the interdiffusion of In and/or
+ Se during growth, which may further alter the calculated values.
 \end_layout
 
 \begin_layout Standard
@@ -1706,6 +1582,10 @@ name "tab:Hall-mobilities"
 \begin_layout Plain Layout
 Hall mobilities of samples A, B, and C at 300 and 400 K.
  Calculated using the linear region of the Hall voltages for each measurement.
+ These values are calculated with the assumption that a parallel conduction
+ channel through the substrate is not present, so they are likely much higher
+ than the actual values.
+ 
 \end_layout
 
 \end_inset
@@ -1713,18 +1593,208 @@ Hall mobilities of samples A, B, and C at 300 and 400 K.
 
 \end_layout
 
-\begin_layout Subsection
-Conclusion
+\begin_layout Section
+Characterization of the interface by transmission electron microscopy
 \end_layout
 
 \begin_layout Standard
-In summary, we have fabricated devices from thin films of InSe grown on
- GaAs and measured their transport properties near room temperature and
- above.
- The devices show typical insulator-like resistance temperature dependence.
- They also display high carrier mobility, typically demonstrated in (encapsulate
-d) flake devices but not often seen in film-based devices.
- 
+\noindent
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/TEM/Diffraction pattern.svg
+	width 5cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diffraction pattern
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/EDS lineplot.svg
+	width 5cm
+	groupId TEMandEDS
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+HAADF and Elemental composition
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/TEM/09.50.01 CCD Acquire_0006.svg
+	width 5cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+HRTEM
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+TEM, HAADF, and EDS of film and metal lead
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+(a) Diffraction pattern of the InSe film with predicted peaks for the 
+\begin_inset Formula $\gamma$
+\end_inset
+
+-phase of the crystal (red), the scale bar is 5 
+\begin_inset Formula $\mathrm{nm}^{-1}$
+\end_inset
+
+.
+ (b) EDX elemental composition of the film along the c-axis and the correspondin
+g HAADF sideview.
+ The elemental data is averaged over several points in the in-plane and
+ c-axis directions to remove noise.
+ (c) TEM sideview of GaSe substrate and InSe film, scale bar is 10 
+\begin_inset Formula $nm$
+\end_inset
+
+.
+ Film growth shows evidence for stacking faults.
+ <TODO replace diffraction pattern>
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To check whether a conducting surface layer of GaAs substrate indeed exists,
+ we carried out cross-sectional TEM studies of the film and the substrate
+ near the interface.
+\end_layout
+
+\begin_layout Section
+Discussion and conclusion
+\end_layout
+
+\begin_layout Standard
+<TODO: Begin needs rewrite
+\end_layout
+
+\begin_layout Standard
+While GaAs as a substrate may be favorable for the integration with the
+ existing semiconductor industry, the electrical insulation between the
+ film and the substrate may be difficult to achieve.
+ It is interesting to note that the carrier density measured for the InSe
+ film is low even though the interdiffusion cannot be excluded.
+ In any case, the holes left on the GaAs side of the interface and electrons
+ transferred will likely feature high mobility values with or without the
+ interdiffusion.
+ As a result, the true mobility of the charge carriers in our films may
+ be different from those given above.
+\end_layout
+
+\begin_layout Standard
+end rewrite>
+\end_layout
+
+\begin_layout Standard
+In conclusion, we have grown thin films of 
+\begin_inset Formula $\gamma$
+\end_inset
+
+-InSe grown on GaAs by MBE and characterized the film using Raman, XRD,
+ AFM, and TEM.
+ The films showed a single crystal phase (
+\begin_inset Formula $\gamma$
+\end_inset
+
+) with potentially a high mobility and stacking faults that formed during
+ the growth.
+ These films are likely not electrically isolated with the GaAs substrate
+ due to a low potential barrier between them as well as potential interdiffusion
+ of indium and selenium into the substrate.
+ More work is needed to understand if InSe on GaAs can have useful commercial
+ applications and to optimize the growth of the InSe film.
 \end_layout
 
 \end_body

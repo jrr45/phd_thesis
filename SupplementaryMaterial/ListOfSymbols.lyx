@@ -121,29 +121,17 @@ noprefix "false"
 
 \begin_layout Labeling
 \labelwidthstring 100
-\begin_inset Formula $E$
+\begin_inset Formula $l_{e}$
 \end_inset
 
- Electric field, p.
-\begin_inset space ~
-\end_inset
-
-
-\end_layout
-
-\begin_layout Labeling
-\labelwidthstring 100
-\begin_inset Formula $E_{a}$
-\end_inset
-
- Average activation energy to hop from a trap into the band p.
+ Hikami-Larkin-Nagaoka mean distance before elastic scattering, p.
 \begin_inset space ~
 \end_inset
 
 
 \begin_inset CommandInset ref
 LatexCommand pageref
-reference "activation-energy"
+reference "HLN-mean-distance"
 plural "false"
 caps "false"
 noprefix "false"
@@ -155,7 +143,90 @@ noprefix "false"
 
 \begin_layout Labeling
 \labelwidthstring 100
-\begin_inset Formula $E_{c}$
+\begin_inset Formula $l_{SO}$
+\end_inset
+
+ Hikami-Larkin-Nagaoka mean distance before
+\series bold
+ 
+\series default
+spin-orbit interactions, p.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand pageref
+reference "HLN-mean-distance"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 100
+\begin_inset Formula $l_{\phi}$
+\end_inset
+
+ Hikami-Larkin-Nagaoka mean distance before an electron loses phase coherence,
+ p.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand pageref
+reference "HLN-mean-distance"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 100
+\begin_inset Formula $\mathscr{\mathcal{E}}$
+\end_inset
+
+ Electric field, p.
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 100
+\begin_inset Formula $E_{vac}$
+\end_inset
+
+ Vacuum energy, p.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand pageref
+reference "vacuum energy"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 100
+\begin_inset Formula $\mathcal{E}_{c}$
 \end_inset
 
  Coercive electric field, p.
@@ -177,6 +248,73 @@ noprefix "false"
 
 \begin_layout Labeling
 \labelwidthstring 100
+\begin_inset Formula $E_{c}$
+\end_inset
+
+ Conduction energy band, p.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand pageref
+reference "conduction-valance-band"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 100
+\begin_inset Formula $\mathcal{E}_{m}$
+\end_inset
+
+ Maximum electric field at the interface between a metal and semicondutor,
+ p.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand pageref
+reference "MS-interface-energy"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 100
+\begin_inset Formula $E_{V}$
+\end_inset
+
+ Valance energy band, p.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand pageref
+reference "conduction-valance-band"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 100
 \begin_inset Formula $E_{F}$
 \end_inset
 
@@ -187,7 +325,7 @@ noprefix "false"
 
 \begin_inset CommandInset ref
 LatexCommand pageref
-reference "Fermi energy"
+reference "Fermi-energy"
 plural "false"
 caps "false"
 noprefix "false"
@@ -221,17 +359,62 @@ noprefix "false"
 
 \begin_layout Labeling
 \labelwidthstring 100
-\begin_inset Formula $E_{t}$
+\begin_inset Formula $h$
 \end_inset
 
- Highest energy of transport sites in Percolation model, p.
+ Planck's constant p.
 \begin_inset space ~
 \end_inset
 
 
 \begin_inset CommandInset ref
 LatexCommand pageref
-reference "Percolation-transport-site-energy"
+reference "Plancks-constant"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 100
+\begin_inset Formula $I$
+\end_inset
+
+ Current, p.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand pageref
+reference "Current"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 100
+\begin_inset Formula $I_{D}$
+\end_inset
+
+ Current between source and drain contacts in a field effect transistor,
+ p.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand pageref
+reference "Current-drain"
 plural "false"
 caps "false"
 noprefix "false"
@@ -268,7 +451,7 @@ noprefix "false"
 \begin_inset Formula $k_{B}$
 \end_inset
 
- the Boltzmann constant, p.
+ The Boltzmann constant, p.
 \begin_inset space ~
 \end_inset
 
@@ -276,6 +459,50 @@ noprefix "false"
 \begin_inset CommandInset ref
 LatexCommand pageref
 reference "Boltzman"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 100
+\begin_inset Formula $m^{*}$
+\end_inset
+
+ The effective electron mass of a crystal, p.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand pageref
+reference "effective-electron-mass"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 100
+\begin_inset Formula $m_{0}$
+\end_inset
+
+ The free electron mass, p.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand pageref
+reference "free-electron-mass"
 plural "false"
 caps "false"
 noprefix "false"
@@ -309,17 +536,17 @@ noprefix "false"
 
 \begin_layout Labeling
 \labelwidthstring 100
-\begin_inset Formula $P$
+\begin_inset Formula $N_{C}$
 \end_inset
 
- Material polarization, p.
+ Effective density of states in the conduction band, p.
 \begin_inset space ~
 \end_inset
 
 
 \begin_inset CommandInset ref
 LatexCommand pageref
-reference "chap:Ferroelectricity"
+reference "DoS-conduction"
 plural "false"
 caps "false"
 noprefix "false"
@@ -331,17 +558,106 @@ noprefix "false"
 
 \begin_layout Labeling
 \labelwidthstring 100
-\begin_inset Formula $p$
+\begin_inset Formula $N_{D}$
 \end_inset
 
- Amount of bonds removed in percolation model, p.
+ Donor-impurity density, p.
 \begin_inset space ~
 \end_inset
 
 
 \begin_inset CommandInset ref
 LatexCommand pageref
-reference "Percolation-removed"
+reference "donor-impurity-density"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 100
+\begin_inset Formula $N_{eff}$
+\end_inset
+
+ The effective charge density in the space-charge region of a Schottky barrier,
+ p.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand pageref
+reference "effective-charge-density"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 100
+\begin_inset Formula $P$
+\end_inset
+
+ Material polarization, p.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand pageref
+reference "polarization"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 100
+\begin_inset Formula $P_{r}$
+\end_inset
+
+ Remnant polarization of a ferroelectric, p.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand pageref
+reference "remnant-polarization"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 100
+\begin_inset Formula $P_{s}$
+\end_inset
+
+ Spontaneous polarization of a ferroelectric, p.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand pageref
+reference "spontaneous-polarization"
 plural "false"
 caps "false"
 noprefix "false"
@@ -364,6 +680,50 @@ noprefix "false"
 \begin_inset CommandInset ref
 LatexCommand pageref
 reference "charge"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 100
+\begin_inset Formula $R$
+\end_inset
+
+ Electrical resistance, p.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand pageref
+reference "Resistance"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 100
+\begin_inset Formula $SS$
+\end_inset
+
+ Sub-threshold swing of a MOSFET, p.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand pageref
+reference "subthreshold-swing"
 plural "false"
 caps "false"
 noprefix "false"
@@ -407,7 +767,142 @@ noprefix "false"
 
 \begin_inset CommandInset ref
 LatexCommand pageref
-reference "chap:Ferroelectricity"
+reference "Curie-temperature"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 100
+\begin_inset Formula $t_{FE}$
+\end_inset
+
+ The thickness of the ferroelectric device channel, p.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand pageref
+reference "FE-channel-thickness"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 100
+\begin_inset Formula $V$
+\end_inset
+
+ Voltage, p.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand pageref
+reference "threshold voltage"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 100
+\begin_inset Formula $V_{bi}$
+\end_inset
+
+ Built in potential seen by an electron moving between a metal and semiconductor
+, p.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand pageref
+reference "built-in-potential"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 100
+\begin_inset Formula $V_{DS}$
+\end_inset
+
+ Voltage between source and drain contacts of a field effect transistor,
+ p.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand pageref
+reference "Voltage-drain-source"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 100
+\begin_inset Formula $V_{G}$
+\end_inset
+
+ Field effect transistor gate voltage, p.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand pageref
+reference "Gate-voltage"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 100
+\begin_inset Formula $V_{n}$
+\end_inset
+
+ Difference between the Fermi energy in the semiconductor bulk and the conductio
+n band energy, p.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand pageref
+reference "difference-EF-EC"
 plural "false"
 caps "false"
 noprefix "false"
@@ -463,7 +958,51 @@ noprefix "false"
 
 \begin_layout Labeling
 \labelwidthstring 100
-\begin_inset Formula $\Phi_{B}$
+\begin_inset Formula $\epsilon_{r}$
+\end_inset
+
+ The relative dielectric permittivity of a crystal, p.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand pageref
+reference "dielectric-permittivity-relative"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 100
+\begin_inset Formula $\mu$
+\end_inset
+
+ The mobility of a charge carrier, p.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand pageref
+reference "mobility"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 100
+\begin_inset Formula $\phi_{B}$
 \end_inset
 
  The energy barrier between two materials, p.
@@ -507,17 +1046,17 @@ noprefix "false"
 
 \begin_layout Labeling
 \labelwidthstring 100
-\begin_inset Formula $\mu$
+\begin_inset Formula $\rho$
 \end_inset
 
- The mobility of a charge carrier, p.
+ The resistivity of a material, p.
 \begin_inset space ~
 \end_inset
 
 
 \begin_inset CommandInset ref
 LatexCommand pageref
-reference "mobility"
+reference "resistivity"
 plural "false"
 caps "false"
 noprefix "false"
@@ -551,7 +1090,7 @@ noprefix "false"
 
 \begin_layout Labeling
 \labelwidthstring 100
-\begin_inset Formula $\chi_{SC}$
+\begin_inset Formula $\chi_{S}$
 \end_inset
 
  Semiconductor electron affinity, p.

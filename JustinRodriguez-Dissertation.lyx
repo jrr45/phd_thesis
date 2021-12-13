@@ -374,7 +374,7 @@ newcommand{
 \backslash
 hsp}{
 \backslash
-hspace{15pt}} 
+hspace{15pt}}
 \end_layout
 
 \begin_layout Plain Layout
@@ -383,7 +383,12 @@ hspace{15pt}}
 \backslash
 titleformat{
 \backslash
-chapter}[display]{
+chapter}[display]
+\end_layout
+
+\begin_layout Plain Layout
+
+	{
 \backslash
 fontsize{30}{30}
 \backslash
@@ -391,15 +396,30 @@ selectfont
 \backslash
 bfseries
 \backslash
-sffamily}{Chapter 
+sffamily}
+\end_layout
+
+\begin_layout Plain Layout
+
+{Chapter 
 \backslash
 thechapter
 \backslash
 hsp
 \backslash
-textcolor{gray75}{
+textcolor{gray75}
+\end_layout
+
+\begin_layout Plain Layout
+
+	{
 \backslash
-raisebox{3pt}{|}}}{0pt}{}{}
+raisebox{3pt}{|}}}
+\end_layout
+
+\begin_layout Plain Layout
+
+	{0pt}{}{}
 \end_layout
 
 \begin_layout Plain Layout
@@ -408,25 +428,50 @@ raisebox{3pt}{|}}}{0pt}{}{}
 \backslash
 titleformat{
 \backslash
-section}[block]{
+section}[block]
+\end_layout
+
+\begin_layout Plain Layout
+
+	{
 \backslash
 Large
 \backslash
 bfseries
 \backslash
-sffamily}{
+sffamily}
+\end_layout
+
+\begin_layout Plain Layout
+
+	{
 \backslash
-thesection}{12pt}{}{} 
+thesection}{12pt}{}{}
+\end_layout
+
+\begin_layout Plain Layout
+
+
 \backslash
 titleformat{
 \backslash
-subsection}[block]{
+subsection}[block]
+\end_layout
+
+\begin_layout Plain Layout
+
+	{
 \backslash
 large
 \backslash
 bfseries
 \backslash
-sffamily}{
+sffamily}
+\end_layout
+
+\begin_layout Plain Layout
+
+	{
 \backslash
 thesubsection}{12pt}{}{} 
 \end_layout
@@ -628,10 +673,6 @@ psucommitteepage
 
 % Generates the abstract, table of contents, list of figures, list of tables,
  List of Symbols, Acknowledgments, Dedication
-\end_layout
-
-\begin_layout Plain Layout
-
 \end_layout
 
 \end_inset
@@ -1045,60 +1086,6 @@ raisebox{3pt}{|}}}
 	{0pt}{}{}
 \end_layout
 
-\begin_layout Plain Layout
-
-
-\backslash
-titleformat{
-\backslash
-section}[block]
-\end_layout
-
-\begin_layout Plain Layout
-
-	{
-\backslash
-Large
-\backslash
-bfseries
-\backslash
-sffamily}
-\end_layout
-
-\begin_layout Plain Layout
-
-	{
-\backslash
-thesection}{12pt}{}{} 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-titleformat{
-\backslash
-subsection}[block]
-\end_layout
-
-\begin_layout Plain Layout
-
-	{
-\backslash
-large
-\backslash
-bfseries
-\backslash
-sffamily}
-\end_layout
-
-\begin_layout Plain Layout
-
-	{
-\backslash
-thesubsection}{12pt}{}{} 
-\end_layout
-
 \end_inset
 
 
@@ -1153,6 +1140,24 @@ options "bibtotoc,GLG-bibstyle"
 \begin_inset CommandInset include
 LatexCommand input
 filename "SupplementaryMaterial/Vita.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%
+\backslash
+newpage
+\backslash
+hbox{} 
+\end_layout
 
 \end_inset
 

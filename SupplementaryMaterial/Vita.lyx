@@ -92,9 +92,19 @@ status open
 \backslash
 titleformat{
 \backslash
-chapter}[display]{
+chapter}[display]
+\end_layout
+
+\begin_layout Plain Layout
+
+	{
 \backslash
 fontsize{30}{30}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
 \backslash
 selectfont
 \backslash
@@ -102,13 +112,23 @@ bfseries
 \backslash
 sffamily
 \backslash
-centering}{Chapter 
+centering}
+\end_layout
+
+\begin_layout Plain Layout
+
+	{Chapter 
 \backslash
 thechapter
 \backslash
 hsp
 \backslash
-textcolor{gray75}{
+textcolor{gray75}
+\end_layout
+
+\begin_layout Plain Layout
+
+		{
 \backslash
 raisebox{3pt}{|}}}{0pt}{}{}
 \end_layout
@@ -117,43 +137,21 @@ raisebox{3pt}{|}}}{0pt}{}{}
 
 
 \backslash
-titleformat{
-\backslash
-section}[block]{
-\backslash
-Large
-\backslash
-bfseries
-\backslash
-sffamily}{
-\backslash
-thesection}{12pt}{}{} 
-\backslash
-titleformat{
-\backslash
-subsection}[block]{
-\backslash
-large
-\backslash
-bfseries
-\backslash
-sffamily}{
-\backslash
-thesubsection}{12pt}{}{} 
+phantomsection
 \end_layout
 
 \begin_layout Plain Layout
 
 
 \backslash
-begin{singlespace}
+thispagestyle{empty}
 \end_layout
 
 \begin_layout Plain Layout
 
 
 \backslash
-thispagestyle{empty} 
+pagenumbering{gobble}
 \end_layout
 
 \end_inset
@@ -163,6 +161,22 @@ thispagestyle{empty}
 
 \begin_layout Chapter*
 Vita
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{singlespace}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -183,7 +197,7 @@ Education:
 \begin_layout Standard
 \noindent
 Ph.D.
- in Physics, TODO
+ in Physics, May 2022
 \end_layout
 
 \begin_layout Standard

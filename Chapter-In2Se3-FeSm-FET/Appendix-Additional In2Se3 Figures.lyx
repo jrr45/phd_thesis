@@ -78,35 +78,9 @@
 
 \begin_body
 
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-% remove the blank page that would pop up otherwise from no text after chapter
- heading
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-let
-\backslash
-clearpage
-\backslash
-relax 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Chapter
 Additional 
-\begin_inset Formula $\ensuremath{\alpha}\textrm{-In}_{2}\textrm{Se}_{3}$
+\begin_inset Formula $\textrm{In}_{2}\textrm{Se}_{3}$
 \end_inset
 
  FeSmFET samples and analysis
@@ -423,7 +397,7 @@ noprefix "false"
 
 \end_inset
 
-.
+ and follow the same respective cycling.
  (a & d) Show positive-increasing 
 \begin_inset Formula $V_{DS}$
 \end_inset
@@ -441,18 +415,16 @@ noprefix "false"
 \begin_inset Formula $V_{DS}$
 \end_inset
 
- is cycled from 0 V, 10 V, -10 V, to 0 V.
- Measurements (a - c) are taken while 
+ is cycled from 
+\begin_inset Formula $\mathrm{0\,V\rightarrow10\,V\rightarrow-10\,V\rightarrow0\,V}$
+\end_inset
+
+.
+ All measurements were done at 300 K and 
 \begin_inset Formula $V_{G}$
 \end_inset
 
- is held at 25 V intervals that increase sequentially for each curve, and
- (d - f) decreasing for 
-\begin_inset Formula $V_{G}$
-\end_inset
-
- intervals.
- All measurements were done at 300 K.
+ held in 25 V intervals.
 \end_layout
 
 \end_inset
@@ -780,7 +752,7 @@ name "fig:Sample-B-IDvsVDS-log"
 \end_inset
 
  intervals.
- All measurements were done at 300 K.
+ All measurements were done at 300 K .
 \end_layout
 
 \end_inset

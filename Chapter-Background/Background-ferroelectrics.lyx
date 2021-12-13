@@ -95,6 +95,13 @@ Ferroelectric crystals will spontaneously polarize below a critical temperature,
 \begin_inset Formula $T_{C}$
 \end_inset
 
+
+\begin_inset CommandInset label
+LatexCommand label
+name "Curie-temperature"
+
+\end_inset
+
 .
  Below 
 \begin_inset Formula $T_{C}$
@@ -122,6 +129,13 @@ Polarization and ferroelectric domains
 \begin_layout Standard
 Polarization 
 \begin_inset Formula $\vec{P}$
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "polarization"
+
 \end_inset
 
  is the dipole moment per unit volume, in SI-units as Coulombs per square-meter
@@ -204,8 +218,11 @@ noprefix "false"
 \begin_inset Formula $P_{s}$
 \end_inset
 
-, and occurs at 
-\begin_inset Formula $\mathcal{E}_{s}$
+
+\begin_inset CommandInset label
+LatexCommand label
+name "spontaneous-polarization"
+
 \end_inset
 
 .
@@ -216,14 +233,17 @@ noprefix "false"
  field.
  The depolarization field will cause the dipoles to reorient as thermal
  fluctuations let the dipoles to find new local energy minimums.
- As the electric field is reduced to 0 from 
-\begin_inset Formula $\pm\vec{\mathcal{E}}_{s}$
+ As the electric field is reduced to 0 the depolarization field will force
+ some domains to flip directions, but a finite amount will still remain
+ polarized in the original direction as the remnant polarization 
+\begin_inset Formula $\vec{P}_{r}$
 \end_inset
 
- the depolarization field will force some domains to flip directions, but
- a finite amount will still remain polarized in the original direction as
- the remnant polarization 
-\begin_inset Formula $\vec{P}_{r}$
+
+\begin_inset CommandInset label
+LatexCommand label
+name "remnant-polarization"
+
 \end_inset
 
 .
@@ -247,7 +267,7 @@ One important characteristic in determining whether a crystal is ferroelectric
  Switching the polarization direction requires the electric field must be
  large enough to overcome this energy barrier, known as the coercive field
  strength 
-\begin_inset Formula $\vec{E}_{c}$
+\begin_inset Formula $\vec{\mathcal{E}}_{c}$
 \end_inset
 
 
@@ -383,7 +403,7 @@ name "fig:Polarization-Paraelectric-electric field-vs"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -436,10 +456,6 @@ Polarization
 \end_inset
 
 , 
-\begin_inset Formula $\vec{\mathcal{E}}_{s}$
-\end_inset
-
-, 
 \begin_inset Formula $\vec{P}_{s}$
 \end_inset
 
@@ -447,8 +463,8 @@ Polarization
 \begin_inset Formula $\vec{P}_{r}$
 \end_inset
 
- are the coercive electric field, spontaneous electric field, spontaneous
- polarization, and remnant polarization.
+ are the coercive electric field, spontaneous polarization, and remnant
+ polarization.
 \end_layout
 
 \end_inset
@@ -1583,9 +1599,23 @@ where
 \begin_inset Formula $N_{eff}$
 \end_inset
 
+
+\begin_inset CommandInset label
+LatexCommand label
+name "effective-charge-density"
+
+\end_inset
+
  is the effective charge density in the space-charge region of the barrier
  and 
 \begin_inset Formula $t_{FE}$
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "FE-channel-thickness"
+
 \end_inset
 
  is the thickness of the ferroelectric channel.
@@ -1923,7 +1953,7 @@ literal "true"
 
 .
  They were recently verified experimentally, first in 
-\begin_inset Formula $LiOsO_{3}$
+\begin_inset Formula $\mathrm{LiOsO_{3}}$
 \end_inset
 
 
@@ -1946,7 +1976,7 @@ literal "false"
 
 , breaking inversion symmetry.
  
-\begin_inset Formula $LiOsO_{3}$
+\begin_inset Formula $\mathrm{LiOsO_{3}}$
 \end_inset
 
 was shown to transition from the space group 
@@ -2031,7 +2061,7 @@ literal "false"
  demonstrated evidence showing a partial decoupling of the itinerant electrons
  from the displacive transverse optical polar phonons responsible for the
  polar transitions in 
-\begin_inset Formula $LiOsO_{3}$
+\begin_inset Formula $\mathrm{LiOsO_{3}}$
 \end_inset
 
 
@@ -2047,7 +2077,7 @@ literal "false"
 
 \begin_layout Standard
 Ferroelectricity in a metal was first reported in 2-3 layer 
-\begin_inset Formula $WTe_{2}$
+\begin_inset Formula $\mathrm{WTe_{2}}$
 \end_inset
 
 
@@ -2061,12 +2091,12 @@ literal "false"
 , a 2D Van der Waals chalcogenide metal.
  The 2D material was stacked between two insulating layers of hexagonal
  Boron Nitrite (
-\begin_inset Formula $hBN$
+\begin_inset Formula $\textrm{h-BN}$
 \end_inset
 
 ) in a double-gated FeFET.
  The current response showed a clear transition behavior in 
-\begin_inset Formula $WTe_{2}$
+\begin_inset Formula $\mathrm{WTe_{2}}$
 \end_inset
 
  conductivity from the gate electric fields.
