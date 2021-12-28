@@ -339,16 +339,6 @@ status open
 
 \begin_layout Plain Layout
 
-%%% https://www.paulkiddie.com/2010/02/adding-custom-class-files-cls-to-lyx-in-win
-dows-vista-windows-7-environment/
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
 % Format the Chapter headings using the titlesec package.
  
 \end_layout
@@ -943,6 +933,10 @@ filename "Chapter-Introduction/Chapter-Introduction.lyx"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\noindent
 \begin_inset CommandInset include
 LatexCommand input
 filename "Chapter-Background/Background-semiconductors.lyx"
@@ -1140,24 +1134,6 @@ options "bibtotoc,GLG-bibstyle"
 \begin_inset CommandInset include
 LatexCommand input
 filename "SupplementaryMaterial/Vita.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-%
-\backslash
-newpage
-\backslash
-hbox{} 
-\end_layout
 
 \end_inset
 
