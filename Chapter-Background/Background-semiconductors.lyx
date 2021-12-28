@@ -151,7 +151,18 @@ name "mobility"
 \end_inset
 
  which is the average velocity at with an electron or hole can move through
- the crystal lattice from an electric field.
+ the crystal lattice from an electric field 
+\begin_inset Formula $\mathcal{E}$
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "Electric-field"
+
+\end_inset
+
+.
  The electrical conductivity of semiconductor, with a carrier concentration
  
 \begin_inset Formula $n$
@@ -527,7 +538,7 @@ Percolation is used to model hopping in amorphous semiconductors using two
  conduct as they would in a metal.
  In the bond variant, various bonds are blocked in the lattice preventing
  the carriers to move along those particular paths.
- Conversely, In the atom-site approach to percolation, atoms or sites that
+ Conversely, in the atom-site approach to percolation, atoms or sites that
  carriers can occupy are removed from the lattice preventing hopping along
  those paths.
  As long as the amount of bonds or sites removed 
@@ -553,8 +564,8 @@ name "Percolation-removed-critical"
 \end_inset
 
 , the carriers will be free to conduct through metallic regions of the lattice,
- abet with reduced paths to traverse across the lattice.
- The fraction is depenant on the lattice structure and number of neighbors
+ albeit with reduced paths to traverse across the lattice.
+ The fraction is dependent on the lattice structure and number of neighbors
  a carrier can hop to.
  When the fraction of removed bonds or states is low, the lattice will form
  small clusters of blocked regions, while larger 
@@ -1274,7 +1285,11 @@ literal "false"
 \end_inset
 
 .
- Figure 
+ 
+\end_layout
+
+\begin_layout Standard
+Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Mott-MIT"
@@ -1299,7 +1314,7 @@ literal "false"
 .
  Wigner-crystal electrons break translational symmetry and form a periodic
  lattice.
- When the carrier density increases enough to overcome the coulomb repulsion
+ When the carrier density increases enough to overcome the Coulomb repulsion
  between carriers, the crystal forms a strongly correlated electron liquid,
  showing metallic behavior
 \begin_inset CommandInset citation
@@ -1486,7 +1501,7 @@ name "fig:Weak-localization"
 \end_layout
 
 \begin_layout Standard
-Anther form of carrier localization in disordered semiconductors is weak
+Another form of carrier localization in disordered semiconductors is weak
  localization.
  As an electron travels through the semiconductor it will scatter off various
  defects, moving in a random walk.
@@ -3192,7 +3207,7 @@ As FET gate and channel contacts are within close proximity of each other,
  ideality factor, or other properties.
  Dealing with this often leads to many real world engineering complications
  and must be accounted for in device design.
- We must also be wary of assuming all FET device gating response is due
+ One must also be wary of assuming all FET device gating response is due
  to the bulk of the semiconductor alone, but instead recognize it is often
  a mix of bulk and contact characteristics.
  
@@ -3565,8 +3580,8 @@ The metal-oxide-semiconductor energy band diagrams for an n-type semiconductor.
 By applying an additional voltage across the gate the Fermi energy of the
  metal can be raised or lowered, changing the band structure across the
  capacitor.
- In a non-ideal semiconductor, a state similar to the flat bands of ideal
- semiconductor is reached by applying the flat-band voltage 
+ In a non-ideal semiconductor a flat band state, similar to an ideal semiconduct
+or, is reached by applying the voltage 
 \begin_inset Formula $V_{FB}=\phi_{MS}$
 \end_inset
 
@@ -4105,8 +4120,8 @@ literal "false"
 .
  At low temperatures there is less ionization of dopant ions within the
  material.
- The bias stress effect from trapping and can increase and subthreshold
- swing decrease with decreasing temperature
+ The bias stress effect from trapping can increase, and subthreshold swing
+ decrease, with decreasing temperature
 \begin_inset CommandInset citation
 LatexCommand cite
 key "kim2018analysis,beckers2020physical,wang2020temperaturedriven"

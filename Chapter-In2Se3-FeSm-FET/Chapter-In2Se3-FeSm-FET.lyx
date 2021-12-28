@@ -148,8 +148,7 @@ literal "true"
  With the use of conductive ferroelectric compounds, we can construct a
  new variation of the FeFET, where the ferroelectric acts the role of the
  semiconductor device channel.
- Si.
- et al.
+ Si et al.
 \begin_inset CommandInset citation
 LatexCommand cite
 key "si2018ferroelectric"
@@ -220,7 +219,11 @@ tric to measure polarization switching.
  Due to the nature of ferroelectric semiconductors, current conducts through
  the material before, during, and after the polarization switching in such
  a measurement.
- In lieu of the capacitor measurements on 
+ 
+\end_layout
+
+\begin_layout Standard
+In lieu of the capacitor measurements on 
 \begin_inset Formula $\textrm{\ensuremath{\alpha}-In}_{2}\textrm{Se}_{3}$
 \end_inset
 
@@ -415,7 +418,7 @@ Thin crystals of
 liated crystals.
  For bulk resistivity measurements, silver paint was used to form conductive
  terminals.
- In-plane resistivity measurements were carried out using a hall bar pattern
+ In-plane resistivity measurements were carried out using a Hall bar pattern
  along the longest axis of the bulk crystal.
  For out-of-plane measurements, to ensure a fresh surface, the previous
  leads were removed with a razor before new leads were added on.
@@ -678,7 +681,7 @@ name "fig:In2Se3-Device-images"
 \begin_layout Plain Layout
 (a) Schematic of the Hall bar device with used in flake measurements, samples
  A and B had connected voltage leads for four-point measurements while C
- and D had separated leads for hall measurements.
+ and D had separated leads for Hall measurements.
  (b-e) Optical images of sample devices following this design with 10 
 \begin_inset Formula $\mu m$
 \end_inset
@@ -1124,7 +1127,7 @@ noprefix "false"
  a Model 6000 Physical Properties Measurement System (PPMS, Quantum Design).
  A Keithley 6340 was used as the current and voltage bias source as well
  as the corresponding two-point voltage and current measurements, two Keithley
- 2182A were used for four-point and hall measurements across the voltage
+ 2182A were used for four-point and Hall measurements across the voltage
  leads, and a Keithley 2400 was used to provide the gate voltage bias.
 \end_layout
 
@@ -2421,7 +2424,7 @@ name "fig:Temperature-dependence"
 
 \begin_layout Plain Layout
 (a) Bulk crystal resistivity along the c-axis and in-plane.
- (a inset) fitting to 3D Mott variable range hopping, 
+ (a-inset) fitting to 3D Mott variable range hopping, 
 \begin_inset Formula $T_{0,IP}=\mathrm{588.5\,K}$
 \end_inset
 
@@ -2787,7 +2790,7 @@ noprefix "false"
 
 \end_inset
 
- and may indicate a relationship 
+<TODO> and may indicate a relationship 
 \begin_inset Formula $I_{D}\propto V_{DS}^{m}$
 \end_inset
 
@@ -3156,7 +3159,7 @@ noprefix "false"
 
 , showing a better fit at lower temperatures.
  (b) Sample D carrier density at various temperatures, the inset shows the
- hall data used the the carrier density calculations.
+ Hall data used the the carrier density calculations.
 \end_layout
 
 \end_inset
@@ -3555,7 +3558,7 @@ Hysteresis width
 \begin_inset Formula $\Delta V_{G}$
 \end_inset
 
- of the threshold voltage versus temperature for samples A, B, C, and D
+ of the threshold voltage versus temperature
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:dVG-vs-T-threshold-V"
@@ -3669,7 +3672,11 @@ noprefix "false"
 
  models for disorder in a semiconductor: multiple trap and release, variable
  range hopping, and percolation.
- The shrinking hysteresis window with decreasing temperature was also seen
+ 
+\end_layout
+
+\begin_layout Standard
+The shrinking hysteresis window with decreasing temperature was also seen
  in a previous work from Li et al.
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -4040,7 +4047,7 @@ literal "false"
 \end_inset
 
 , but this also fits poorly.
- The SCLC with with shallow traps should follow 
+ The SCLC with shallow traps should follow 
 \begin_inset Formula $\ln\left(J/T^{2/3}\right)\propto1/T$
 \end_inset
 
@@ -4108,7 +4115,7 @@ Sample D
 
 .
  Both measurements were taken simultaneously, with the contact voltage taken
- between the current lead a hall voltage lead so that a small portion of
+ between the current lead a Hall voltage lead so that a small portion of
  the crystal was included in the measurement.
 \end_layout
 
@@ -4124,8 +4131,7 @@ Recent developments and future work
 \begin_layout Standard
 There have been some additional studies since the initial publication of
  this data that gives further context to the discussion.
- Li.
- et al.
+ Li et al.
  used the OOP polarization of 
 \begin_inset Formula $\textrm{\ensuremath{\alpha}[3R]-In}_{2}\textrm{Se}_{3}$
 \end_inset
@@ -4144,8 +4150,7 @@ literal "false"
 \end_inset
 
 .
- Si.
- et al.
+ Si et al.
 \begin_inset CommandInset citation
 LatexCommand cite
 key "si2021asymmetric"
@@ -4354,7 +4359,7 @@ To further understand the how disorder and ferroelectricity interact in
  the ferroelectric channel, but this could be attributed to both charge
  trapping and to the OOP polarization of the channel.
  Additionally, the dielectric material has been shown to alter the direction
- of the hysteresis but this effect has not been thoroughly investigated.
+ of the hysteresis, but this effect has not been thoroughly investigated.
  Furthermore, the effect of contamination of water and air on the metallic
  state should be excluded.
  PFM and optical illumination may serve to help us understand the intersection
@@ -4387,8 +4392,8 @@ In conclusion, we observed the emergence of a metallic state induced by
  behavior that is consistent with polarization controlled double-Schottky
  barriers seen in ferroelectric channel devices.
  The hysteresis in the transfer characteristics appears to be dominated
- by trapped charge and disorder at higher temperatures but still shows signs
- of polarization at liquid helium temperatures.
+ by trapped charge and disorder at higher temperatures, but still shows
+ signs of polarization at liquid helium temperatures.
  However, none of the common bulk carrier limited or barrier limited transport
  mechanisms matched well with the temperature dependence of the metallic
  behavior.

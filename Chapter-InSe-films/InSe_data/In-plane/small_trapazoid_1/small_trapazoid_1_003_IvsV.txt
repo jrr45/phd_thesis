@@ -1,0 +1,47 @@
+[Main]
+Experiment = "IvsV"
+Header length = 46    
+Date = "20201124 16:09:54"
+Comments = "SD: 1Va to 2V-; Volt1: 1I+ to 2I-; Volt2 1I- to 2I+"
+
+[System]
+System = "PPMS"
+Magnet stability range (G) = 5.000000E+1
+Magnet check interval (s) = 1.000000E+0
+Magnet approach mode = "Linear Approach"
+Magnet mode = "Persistent"
+Temperature stability time (s) = 1.000000E+0
+Temperature approach mode = "Fast Settle"
+
+[Measure Voltage Configuration1]
+Voltage meter = "Keithley 2182A"
+Auto-range = "Manual"
+GPIB = "GPIB0::7::INSTR"
+Range (V) = 1.000000E+1
+Speed = 1.000000
+
+[Measure Voltage Configuration2]
+Voltage meter = "Keithley 2182A"
+Auto-range = "Manual"
+GPIB = "GPIB0::8::INSTR"
+Range (V) = 1.000000E+1
+Speed = 1.000000
+
+[Dynamic Voltage]
+Voltage source = "Keithley 6430"
+GPIB = "GPIB0::9::INSTR"
+Initial Voltage (V) = 10.000000E+0
+Final Voltage (V) = 10.000000E+0
+Voltage step (V) = 100.000000E-3
+Number of measurement sequences = 1.000000E+0
+Samples/sequence = 30.000000E+0
+Pre-measuement delay (s) = 1.000000E+0
+Current limit (A) = 10.000000E-6
+Auto-range = 1
+Manual range (V) = 10.000000E+0
+Measurement Type = "Static"
+Pattern = "Linear"
+Check compliance = 0
+Measurement Speed = 1.000000
+Time (s)	Voltage 1 (V)	Current (A)	STD_Current (A)	Resistance 1 (Ohms)	STD_Resistance 1 (Ohms)	Voltage 2 (V)	Voltage 3 (V)	STD_Voltage 2 (V)	STD_Voltage 3 (V)	Resistance 2 (Ohms)	Resistance 3 (Ohms)	STD_Resistance 2 (Ohms)	STD_Resistance 3 (Ohms)
+0.000000000E+0	10.000000000E+0	3.399293500E-9	63.233332523E-12	2.941787757E+9	54.722854451E+6	-1.576967418E+0	-424.795491367E-9	397.853103774E-3	804.827467866E-9	-463.910344360E+6	-124.965817564E+0	117.039938968E+6	236.763159129E+0

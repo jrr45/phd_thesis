@@ -78,7 +78,7 @@ def plot_HAADF_maps(film, size=2):
     plt.show()
     mp.save_generic_svg(fig, film, '_%s_HAADF' % (film.name))
 
-def plot_element_line(film):
+def plot_element_line(film, xlim=(None, None), ylim=(0,104), xlocator=25):
     element_file = os.path.join('TEM_data', 'justin linescan raw data excel.csv')
     
     eds_data = np.genfromtxt(element_file, names=True, 
@@ -95,10 +95,10 @@ def plot_element_line(film):
     for (color, element) in zip (colors, elements):
         ax.plot(position*1000, eds_data[element], '.-', ms=1.1, linewidth=0.8, color=color)
         
-    ax.set_ylim((0,104))
+    ax.set_ylim(ylim)
     ax.yaxis.set_major_locator(MultipleLocator(25))
-    ax.set_xlim((1,110))
-    ax.xaxis.set_major_locator(MultipleLocator(25))
+    ax.set_xlim(xlim)
+    ax.xaxis.set_major_locator(MultipleLocator(xlocator))
     
     mp.save_generic_svg(fig, film, "lineplot")
     plt.show()
@@ -111,7 +111,8 @@ def main():
     #plot_eds_maps(eds4_film, size=size)
     #plot_HAADF_maps(eds4_film, size=size)
     #plot_HAADF_maps(eds3_film, size=size)
-    plot_element_line(eds4_film)
+    #plot_element_line(eds4_film, xlim=(1,110), ylim=(0,104))
+    plot_element_line(eds4_film, xlim=(60,90), ylim=(0,60), xlocator=5)
 
 if __name__== "__main__":
   main()

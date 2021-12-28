@@ -1,0 +1,54 @@
+[Main]
+Experiment = "IvsV"
+Header length = 46    
+Date = "20201102 16:50:51"
+Comments = ""
+
+[System]
+System = "PPMS"
+Magnet stability range (G) = 5.000000E+1
+Magnet check interval (s) = 1.000000E+0
+Magnet approach mode = "Linear Approach"
+Magnet mode = "Persistent"
+Temperature stability time (s) = 1.000000E+0
+Temperature approach mode = "Fast Settle"
+
+[Measure Voltage Configuration1]
+Voltage meter = "Keithley 2182A"
+Auto-range = "Manual"
+GPIB = "GPIB0::7::INSTR"
+Range (V) = 1.000000E+0
+Speed = 1.000000
+
+[Measure Voltage Configuration2]
+Voltage meter = "Keithley 2182A"
+Auto-range = "Manual"
+GPIB = "GPIB0::8::INSTR"
+Range (V) = 1.000000E+0
+Speed = 1.000000
+
+[Dynamic Voltage]
+Voltage source = "Keithley 6430"
+GPIB = "GPIB0::9::INSTR"
+Initial Voltage (V) = -10.000000E+0
+Final Voltage (V) = 10.000000E+0
+Voltage step (V) = 100.000000E-3
+Number of measurement sequences = 1.000000E+0
+Samples/sequence = 30.000000E+0
+Pre-measuement delay (s) = 1.000000E+0
+Current limit (A) = 100.000000E-9
+Auto-range = 1
+Manual range (V) = 10.000000E+0
+Measurement Type = "Static"
+Pattern = "Linear"
+Check compliance = 0
+Measurement Speed = 1.000000
+Time (s)	Voltage 1 (V)	Current (A)	STD_Current (A)	Resistance 1 (Ohms)	STD_Resistance 1 (Ohms)	Voltage 2 (V)	Voltage 3 (V)	STD_Voltage 2 (V)	STD_Voltage 3 (V)	Resistance 2 (Ohms)	Resistance 3 (Ohms)	STD_Resistance 2 (Ohms)	STD_Resistance 3 (Ohms)
+0.000000000E+0	-10.000000000E+0	-1.914022233E-9	16.473033185E-12	5.224599707E+9	44.965519657E+6	NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaN
+5.518683434E+0	-9.899999619E+0	-1.803214433E-9	13.031376836E-12	5.490195417E+9	39.676260387E+6	NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaN
+9.505177975E+0	-9.800000191E+0	-1.703349833E-9	18.335441832E-12	5.753369037E+9	61.931237645E+6	NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaN
+13.517888069E+0	-9.699999809E+0	-1.628137233E-9	15.592890612E-12	5.957728630E+9	57.057973325E+6	NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaN
+17.498394489E+0	-9.600000381E+0	-1.561817200E-9	15.518829634E-12	6.146686297E+9	61.075891246E+6	NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaN
+21.487501621E+0	-9.500000000E+0	-1.514609767E-9	20.665506284E-12	6.272242665E+9	85.579185524E+6	NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaN
+25.469275475E+0	-9.399999619E+0	-1.471311967E-9	21.761331933E-12	6.388855546E+9	94.493900248E+6	NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaN
+29.466572285E+0	-9.300000191E+0	-1.391235733E-9	93.251166590E-12	6.684704804E+9	448.059596510E+6	NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaN

@@ -79,11 +79,7 @@
 \begin_body
 
 \begin_layout Chapter
-Characterization of 
-\begin_inset Formula $\gamma$
-\end_inset
-
--InSe thin films on GaAs grown by molecular beam epitaxy
+Characterization of InSe thin films on GaAs grown by molecular beam epitaxy
 \begin_inset CommandInset label
 LatexCommand label
 name "chapter:InSe-films"
@@ -107,7 +103,7 @@ literal "false"
 \end_inset
 
  has brought the dramatic advances in the fundamental studies of two-dimensional
- (2D) materials as well as novel devices of 2D materials.
+ (2D) materials as well as novel devices.
  Monolayer graphene obtained by mechanical exfoliation of a single bulk
  crystal has been shown to possess an electronic mobility in excess of 
 \begin_inset Formula $\ensuremath{10^{4}}\ensuremath{\mathrm{cm^{2}V\cdot s}}$
@@ -176,7 +172,7 @@ status open
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -214,7 +210,7 @@ status open
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -252,7 +248,7 @@ status open
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -331,7 +327,7 @@ The crystal structure of
 \end_layout
 
 \begin_layout Standard
-InSe has become an area of active study due to the high reported carrier
+InSe has become a material of interest due to its high reported carrier
  mobility and optoelectronic properties.
  InSe has three common polymorphs or phases, typically named 
 \begin_inset Formula $\beta$
@@ -356,7 +352,7 @@ noprefix "false"
 \end_inset
 
 .
- Each polymorph of InSe features an unit cell composed of two or three identical
+ Each polymorph of InSe features a unit cell composed of two or three identical
  layers with different stackings, which belong to the respective three space
  groups: 
 \begin_inset Formula $P6_{3}/mmc$
@@ -387,8 +383,8 @@ literal "false"
 \begin_inset Formula $c$
 \end_inset
 
--axis parameter is roughly just a multiple of the number of layers in the
- unit cell, 
+-axis parameter is roughly a multiple of the number of four-atom layers
+ in the unit cell, 
 \begin_inset Formula $c\approx24.96$
 \end_inset
 
@@ -487,12 +483,16 @@ literal "false"
 \begin_layout Standard
 Here we report our low-temperature growth of thin films of InSe on a high-resist
 ivity GaAs substrate by molecular beam epitaxy (MBE).
- By analyzing the Raman spectroscopy and X-ray Diffraction (XRD) data we
- conclude that the InSe film stacking matches previous reports for the 
+ By analyzing the Raman spectroscopy data we conclude that the InSe film
+ stacking matches previous reports for the 
 \begin_inset Formula $\gamma$
 \end_inset
 
- polymorph.
+ or 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ polymorphs.
  We also fabricated Hall bar devices for transport measurements to determine
  the carrier density and mobility.
  Transmission electron microscopy (TEM) was used to confirm the phase of
@@ -680,8 +680,8 @@ name "fig:Optical-InSe"
 
  scan.
  Optical measurements of InSe film on a GaAs substrate.
- (c) Raman displaying peaks at approximately 115, 177, 201, 210, 226, 267
- and 291 
+ (c) Raman spectrum, displaying peaks at approximately 115, 177, 201, 210,
+ 226, 267 and 291 
 \begin_inset Formula $cm^{-1}$
 \end_inset
 
@@ -718,12 +718,12 @@ literal "true"
 \end_layout
 
 \begin_layout Standard
-<TODO: Find references to back up Maria's XRD analysis of the disappearance
- of peak 5, Review>
-\end_layout
+The films where characterized by X-ray Diffraction (XRD), using a 
+\begin_inset Formula $\mathrm{X'Pert}^{3}$
+\end_inset
 
-\begin_layout Standard
-The X-ray Diffraction (XRD) data, figure
+ (Malvern Panalytical) diffraction system with with Cu-Kα radiation.
+ The XRD data, figure
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Optical-InSe"
@@ -737,7 +737,7 @@ noprefix "false"
 \begin_inset Formula $(0,0,2n)$
 \end_inset
 
- planes of 
+ planes of the 
 \begin_inset Formula $\epsilon$
 \end_inset
 
@@ -745,7 +745,7 @@ noprefix "false"
 \begin_inset Formula $\beta$
 \end_inset
 
- phases or 
+ phases or the 
 \begin_inset Formula $\left(0,0,3n\right)$
 \end_inset
 
@@ -762,6 +762,8 @@ literal "false"
 \end_inset
 
 .
+ The occurrence of the main peaks in all three phases makes distinguishing
+ the phase difficult from the XRD spectrum.
  Peaks of the GaAs(111)B
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -779,14 +781,11 @@ literal "false"
 \end_inset
 
  were also seen.
- No peaks of 
-\begin_inset Formula $\mathrm{In_{x}Se_{y\neq x}}$
-\end_inset
-
- appeared, indicating a high-quality, single-phase crystal
+ No peaks of other indium-selenium compounds appeared, indicating a high-quality
+, single-stoichiometry crystal
 \begin_inset CommandInset citation
 LatexCommand cite
-key "popovic1979revised,han2014indium"
+key "wu2019crystal"
 literal "false"
 
 \end_inset
@@ -806,9 +805,8 @@ noprefix "false"
 
 \end_inset
 
-c.
- The unpolarized (Maria is this right?) spectra was observed with a 488
- nm excitation laser at room temperature.
+c, taken using a LabRAM HR Evolution Raman microscope (HORIBA).
+ The spectra was observed with a 488 nm excitation laser at room temperature.
  Peaks can be seen at approximately 115, 177, 201, 210, and 226 
 \begin_inset Formula $cm^{-1}$
 \end_inset
@@ -929,7 +927,7 @@ Device fabrication and measurements
 
 \begin_layout Standard
 We fabricated Hall bar devices to measure in-plane electrical transport
- of the InSe film (see 
+ of the InSe film, figures 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:In-plane-transport"
@@ -939,7 +937,7 @@ noprefix "false"
 
 \end_inset
 
-a for a schematic of the device).
+a and b show a schematic and optical image of the device.
  The films were patterned by photolithography using a trilayer resist stack
  of PMMA, PMGI, and SPR.
  This was chosen to avoid exposing the film to any alkali developers, which
@@ -972,14 +970,23 @@ status open
 
 \begin_layout Plain Layout
 \align center
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Figures/Hall bar GaSe.svg
+	width 4.6cm
 
 \end_inset
 
@@ -1001,19 +1008,35 @@ Device
 \end_inset
 
 
-\end_layout
+\begin_inset space \hfill{}
+\end_inset
 
-\begin_layout Plain Layout
-\align center
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Figures/in-plane transport/combined_RvsT_log - optical image insets.svg
-	width 5cm
+	filename Figures/Sample A/Sample A.svg
+	width 4cm
 
 \end_inset
 
@@ -1024,7 +1047,80 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Samples A and B: 
+Sample A
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/GaSe substrate measurement.svg
+	width 4.6cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Substrate measurement
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/in-plane transport/combined_substrate_RvsT_log.svg
+	height 4.5cm
+	groupId Transport
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Samples and substrate 
 \begin_inset Formula $R\left(T\right)$
 \end_inset
 
@@ -1039,23 +1135,20 @@ Samples A and B:
 \end_inset
 
 
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
+\begin_inset space \hfill{}
 \end_inset
 
 
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Figures/in-plane transport/combined_RHvsB_300K_linear.svg
-	width 5cm
+	height 4.5cm
+	groupId Transport
 
 \end_inset
 
@@ -1063,7 +1156,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Samples A and B: 300K 
+300K 
 \begin_inset Formula $R_{Hall}\left(B\right)$
 \end_inset
 
@@ -1086,15 +1179,20 @@ Samples A and B: 300K
 \end_inset
 
 
+\begin_inset space \hfill{}
+\end_inset
+
+
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Figures/in-plane transport/combined_RHvsB_400K_linear.svg
-	width 5.1cm
+	height 4.5cm
+	groupId Transport
 
 \end_inset
 
@@ -1102,7 +1200,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Samples A and B: 400K 
+400K 
 \family roman
 \series medium
 \shape up
@@ -1152,20 +1250,22 @@ name "fig:In-plane-transport"
 \end_layout
 
 \begin_layout Plain Layout
-(a) schematic of the in-plane Hall bar device on GaAs and source bias used.
- (b) resistance temperature data for samples A and from 300 to 400 K.
- Samples A and B were taken using a current source and measuring along the
- voltage contacts.
- (b-inset) optical image of samples A and B, scale bar is 
+(a) schematic of the in-plane Hall bar device on GaAs and source bias used,
+ with matching optical image of sample A (b) scale bar is 
 \begin_inset Formula $20\,\mathrm{\mu m}$
 \end_inset
 
 .
+ (c) schematic of substrate measurement, voltage leads were placed both
+ below the substrate and on top using two adjacent sample devices.
+ (d) resistance temperature data for samples A and B from 300 to 400 K,
+ as well as the substrate resistance using top and bottom voltage leads.
+ Each was taken using a current-source bias and measuring the resistance
+ between the voltage contacts.
  Hall resistance, symmerterized, taken at 300 (c) and 400 K (d) for samples
  A, B, and C.
- Lines indicate linear regions that were fit for carrier density and mobility
- calculations.
- 
+ Black lines indicate linear regions that were fit for carrier density and
+ mobility calculations.
 \end_layout
 
 \end_inset
@@ -1186,18 +1286,23 @@ noprefix "false"
 
 \end_inset
 
-b for samples A and B for a film thickness of 40 nm.
+d for samples A and B for a film thickness of 40 nm.
  The temperature dependence of each sample displays an insulating-like behavior
  up to 400 K.
  The four-point setup of the devices make it unlikely that behavior is dominated
  by the contact resistance.
  The narrow temperature range over which the resistance was measured makes
- determining the conduction mechanism of the film unfeasible, as most mechanisms
- are relatively linear within this window.
+ determining the conduction mechanism of the film unfeasible, as most theories
+ appear relatively linear within this window.
+ The substrate resistance was also measured, both along the bottom and top
+ of the substrate between devices.
+ The resistance of the substrate was similar in magnitude to the sample
+ resistance at all temperatures, making a parallel path of conduction through
+ the substrate likely.
 \end_layout
 
 \begin_layout Standard
-We also measured the Hall voltage with varying magnetic field.
+We also measured the Hall voltage with a varying magnetic field.
  Figures 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1208,35 +1313,43 @@ noprefix "false"
 
 \end_inset
 
-c and d show the behavior at 300 and 400 K.
+e and f show the behavior at 300 and 400 K.
  The charge carriers were found to be electrons, consistent with what reported
- in literature<TODO ref>.
+ in literature
+\begin_inset CommandInset citation
+LatexCommand cite
+key "sucharitakul2015intrinsic"
+literal "true"
+
+\end_inset
+
+.
  The charge carrier density of the film were 
-\begin_inset Formula $10.8\times10^{12}$
+\begin_inset Formula $49\times10^{6}$
 \end_inset
 
  and 
-\begin_inset Formula $8.8\times10^{12}$
+\begin_inset Formula $40\times10^{6}$
 \end_inset
 
  
-\begin_inset Formula $\mathrm{cm^{-3}}$
+\begin_inset Formula $\mathrm{cm^{-2}}$
 \end_inset
 
  for samples B and C at 300 K, and 
-\begin_inset Formula $2.9\times10^{15}$
+\begin_inset Formula $13\times10^{9}$
 \end_inset
 
  and 
-\begin_inset Formula $4.0\times10^{15}$
+\begin_inset Formula $18\times10^{9}$
 \end_inset
 
  
-\begin_inset Formula $\mathrm{cm^{-3}}$
+\begin_inset Formula $\mathrm{cm^{-2}}$
 \end_inset
 
  for samples A and C at 400 K, respectively.
- Using the values of in-plane resistivity shown in figure 
+ Using the values of in-plane resistance shown in figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:In-plane-transport"
@@ -1246,7 +1359,7 @@ noprefix "false"
 
 \end_inset
 
-c we obtain a mobility of 723 and 1083 for samples B and C at 300 K, 1404
+d we obtained a mobility of 720 and 1080 for samples B and C at 300 K, 1400
  and 3010 
 \begin_inset Formula $\mathrm{cm^{2}V^{-1}s^{-1}}$
 \end_inset
@@ -1256,19 +1369,15 @@ c we obtain a mobility of 723 and 1083 for samples B and C at 300 K, 1404
 \begin_inset Formula $\gamma$
 \end_inset
 
--InSe prepared by mechanical exfoliation as discussed above.
- However, corresponding values reported for large-area films were typically
- much lower than those listed above, but not the largest reported.
- On the other hand, additional measurements on the GaAs substrate on the
- same order of magnitude as the films, which raised concern that that the
- substrate may form a parallel conduction channel which likely effected
- the estimate of the mobility and carrier density.
- Additionally, the top surface layer on which the 
-\begin_inset Formula $\gamma$
-\end_inset
-
--InSe film was deposited may be doped from the interdiffusion of In and/or
- Se during growth, which may further alter the calculated values.
+-InSe prepared by mechanical exfoliation as discussed previously.
+ Previously reported values for large-area films are typically much lower
+ than what we observed, though a few larger mobilites for films have also
+ been reported.
+ The parallel conduction channel likely effected the estimate of the mobility
+ and carrier density.
+ Additionally, the top surface layer of the substrate may have been doped
+ from by indium and/or selenium during growth, which may further alter the
+ calculated values.
 \end_layout
 
 \begin_layout Standard
@@ -1281,8 +1390,10 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Tabular
-<lyxtabular version="3" rows="5" columns="5">
+<lyxtabular version="3" rows="6" columns="7">
 <features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -1319,6 +1430,15 @@ Sample
 
 \end_inset
 </cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
 <cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
@@ -1326,6 +1446,15 @@ Sample
 \begin_inset Formula $T=\mathrm{400\,K}$
 \end_inset
 
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -1351,11 +1480,11 @@ Sample
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\mu\left(\mathrm{cm^{2}V^{-1}s^{-1}}\right)$
+\begin_inset Formula $\mu_{nominal}$
 \end_inset
 
 
@@ -1363,11 +1492,11 @@ Sample
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $n\,\left(\mathrm{cm^{-3}}\right)$
+\begin_inset Formula $n_{2D}$
 \end_inset
 
 
@@ -1375,11 +1504,11 @@ Sample
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\mu\left(\mathrm{cm^{2}V^{-1}s^{-1}}\right)$
+\begin_inset Formula $n$
 \end_inset
 
 
@@ -1387,14 +1516,121 @@ Sample
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $n\,\left(\mathrm{cm^{-3}}\right)$
+\begin_inset Formula $\mu_{nominal}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $n_{2D}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $n$
 \end_inset
 
  
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(\mathrm{cm^{2}V^{-1}s^{-1}}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(\mathrm{cm^{-2}}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(\mathrm{cm^{-3}}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(\mathrm{cm^{2}V^{-1}s^{-1}}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(\mathrm{cm^{-2}}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(\mathrm{cm^{-3}}\right)$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1432,7 +1668,28 @@ A
 \begin_inset Text
 
 \begin_layout Plain Layout
-1404
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1400
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $13\times10^{9}$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1441,7 +1698,7 @@ A
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $2.94\times10^{15}$
+\begin_inset Formula $2.9\times10^{15}$
 \end_inset
 
 
@@ -1464,7 +1721,7 @@ B
 \begin_inset Text
 
 \begin_layout Plain Layout
-723
+720
 \end_layout
 
 \end_inset
@@ -1473,9 +1730,30 @@ B
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $10.81\times10^{12}$
+\begin_inset Formula $49\times10^{6}$
 \end_inset
 
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $10.8\times10^{12}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -1514,7 +1792,7 @@ C
 \begin_inset Text
 
 \begin_layout Plain Layout
-1083
+1080
 \end_layout
 
 \end_inset
@@ -1523,7 +1801,19 @@ C
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $8.83\times10^{12}$
+\begin_inset Formula $40\times10^{6}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $8.8\times10^{12}$
 \end_inset
 
 
@@ -1540,11 +1830,23 @@ C
 
 \end_inset
 </cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $18\times10^{9}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $3.96\times10^{15}$
+\begin_inset Formula $4.0\times10^{15}$
 \end_inset
 
 
@@ -1583,8 +1885,7 @@ name "tab:Hall-mobilities"
 Hall mobilities of samples A, B, and C at 300 and 400 K.
  Calculated using the linear region of the Hall voltages for each measurement.
  These values are calculated with the assumption that a parallel conduction
- channel through the substrate is not present, so they are likely much higher
- than the actual values.
+ channel through the substrate is not present.
  
 \end_layout
 
@@ -1606,14 +1907,18 @@ status open
 
 \begin_layout Plain Layout
 \align center
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Figures/TEM/Diffraction pattern.svg
+	filename Figures/TEM/Diffraction pattern cropped.svg
 	width 5cm
 
 \end_inset
@@ -1644,12 +1949,50 @@ Diffraction pattern
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/TEM/Diffraction pattern fit.svg
+	width 5cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\gamma$
+\end_inset
+
+-phase diffraction pattern
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Figures/EDS lineplot.svg
-	width 5cm
+	height 5cm
 	groupId TEMandEDS
 
 \end_inset
@@ -1658,7 +2001,39 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-HAADF and Elemental composition
+HAADF-STEM and Elemental composition
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/EDS lineplot zoomed.svg
+	height 5cm
+	groupId TEMandEDS
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Interface elemental composition
 \end_layout
 
 \end_inset
@@ -1684,7 +2059,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Figures/TEM/09.50.01 CCD Acquire_0006.svg
+	filename Figures/TEM/HR TEM 31.svg
 	width 5cm
 
 \end_inset
@@ -1693,7 +2068,42 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-HRTEM
+HRSTEM film
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/TEM/HR TEM 34.svg
+	width 5cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+HRSTEM higher magnification
 \end_layout
 
 \end_inset
@@ -1710,7 +2120,14 @@ HRTEM
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-TEM, HAADF, and EDS of film and metal lead
+STEM, HAADF, and EDS of film and metal lead
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:InSe-TEM"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1719,26 +2136,27 @@ TEM, HAADF, and EDS of film and metal lead
 \end_layout
 
 \begin_layout Plain Layout
-(a) Diffraction pattern of the InSe film with predicted peaks for the 
+(a) diffraction pattern of the InSe film with (b) showing the predicted
+ peaks for the 
 \begin_inset Formula $\gamma$
 \end_inset
 
--phase of the crystal (red), the scale bar is 5 
+-phase of the crystal (red), the scale bar for each is 5 
 \begin_inset Formula $\mathrm{nm}^{-1}$
 \end_inset
 
 .
- (b) EDX elemental composition of the film along the c-axis and the correspondin
-g HAADF sideview.
+ (c) EDX elemental composition of the film along the c-axis and the correspondin
+g HAADF-STEM sideview.
+ (d) EDX elemental composition near the interface of the film and substrate.
  The elemental data is averaged over several points in the in-plane and
  c-axis directions to remove noise.
- (c) TEM sideview of GaSe substrate and InSe film, scale bar is 10 
-\begin_inset Formula $nm$
-\end_inset
-
-.
- Film growth shows evidence for stacking faults.
- <TODO replace diffraction pattern>
+ (e) STEM sideview of GaSe substrate and InSe film, scale bar is 10 nm;
+ (f) higher magnification of the STEM sideview shown in (e), scale bar is
+ 2 nm.
+ The film growth shows evidence for stacking faults, with some defects originati
+ng in the first few layers and causing subsequent defects in the growth
+ of higher film layers.
 \end_layout
 
 \end_inset
@@ -1747,9 +2165,89 @@ g HAADF sideview.
 \end_layout
 
 \begin_layout Standard
-To check whether a conducting surface layer of GaAs substrate indeed exists,
- we carried out cross-sectional TEM studies of the film and the substrate
- near the interface.
+To further understand the crystal growth, we carried out cross-sectional
+ scanning transmission electron microscopy (STEM) studies of the film and
+ the region near the film-substrate interface.
+ Nano-diffraction at a single point showed a pattern that matched well with
+ the 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ polymorph of the crystal, shown in figures 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:InSe-TEM"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+a and b.
+ EDX elemental composition did not show any mixing of the substrate and
+ first few film layers during growth, within the limits of the scan.
+ A High-angle annular dark-field scanning transmission electron microscopy
+ (HAADF-STEM) scan of the film and the corresponding elemental compositions
+ are shown in figures 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:InSe-TEM"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+c and d.
+ The percentages are averaged over several points both along the in-plane
+ and out-of-plane directions to remove noise, which accounts for the slopes
+ in the interface region.
+ While the elemental composition does put limits on the amount of dopents
+ seen by either material, both GaAs and InSe could show significant changes
+ in conductivity with dopants levels below what can be reasonably detected
+ using EDX.
+ High resolution STEM (HRSTEM) showed the presence of stacking faults and
+ other growth defects within the film.
+ The larger faults can be seen in figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:InSe-TEM"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+e, as well as smaller defects scattered throughout the film.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:InSe-TEM"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+f shows a magnified image of the area marked in figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:InSe-TEM"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+e, where the origin of the layer mismatch near the substrate can be seen.
+ These defects likely limit the conductivity and overall mobility of carriers
+ within the film.
+ Scans were done using a Talos F200X (ThermoFisher Scientific) operating
+ at 200 kV and a 
+\begin_inset Formula $\mathrm{Titan}^{3}$
+\end_inset
+
+ G2 (ThermoFisher Scientific) at 300kV.
 \end_layout
 
 \begin_layout Section
@@ -1757,24 +2255,26 @@ Discussion and conclusion
 \end_layout
 
 \begin_layout Standard
-<TODO: Begin needs rewrite
-\end_layout
-
-\begin_layout Standard
-While GaAs as a substrate may be favorable for the integration with the
- existing semiconductor industry, the electrical insulation between the
- film and the substrate may be difficult to achieve.
- It is interesting to note that the carrier density measured for the InSe
- film is low even though the interdiffusion cannot be excluded.
- In any case, the holes left on the GaAs side of the interface and electrons
- transferred will likely feature high mobility values with or without the
- interdiffusion.
- As a result, the true mobility of the charge carriers in our films may
+While GaAs and InSe may be favorable for integration with the existing semicondu
+ctor industry, the growth of InSe on GaAs will need to be optimized for
+ any potential applications.
+ The similar properties of the three InSe phases may make growth and characteriz
+ation of uniform films difficult.
+ A source of the stacking faults seen during the film growth may have been
+ caused by the similar structure of each polymorph, as individual islands
+ of a new film layer can grow in several orientations until the islands
+ coalesce into a single layer.
+ Additionally, the similar resistances between the films and substrate makes
+ determining the carrier concentration and mobility of the film difficult
+ due to the parallel conduction channels though the InSe film and GaAs substrate.
+ As a result, the true mobility and carrier concentration in our films may
  be different from those given above.
-\end_layout
-
-\begin_layout Standard
-end rewrite>
+ GaAs and InSe likely form a p-n junction, doping and depleting the regions
+ adjacent to the interface.
+ This may account partly for the low carrier density observed, though even
+ a depleted semiconductor will likely have a higher carrier concentration.
+ A more reasonable explanation is the conduction through the substrate altering
+ our calculation of the carrier density.
 \end_layout
 
 \begin_layout Standard
@@ -1783,7 +2283,7 @@ In conclusion, we have grown thin films of
 \end_inset
 
 -InSe grown on GaAs by MBE and characterized the film using Raman, XRD,
- AFM, and TEM.
+ AFM, and STEM.
  The films showed a single crystal phase (
 \begin_inset Formula $\gamma$
 \end_inset
@@ -1791,9 +2291,9 @@ In conclusion, we have grown thin films of
 ) with potentially a high mobility and stacking faults that formed during
  the growth.
  These films are likely not electrically isolated with the GaAs substrate
- due to a low potential barrier between them as well as potential interdiffusion
- of indium and selenium into the substrate.
- More work is needed to understand if InSe on GaAs can have useful commercial
+ due to a low potential barrier between the film-substrate interface, as
+ well as potential interdiffusion of indium and selenium into the substrate.
+ More work is needed to understand if InSe on GaAs has useful commercial
  applications and to optimize the growth of the InSe film.
 \end_layout
 

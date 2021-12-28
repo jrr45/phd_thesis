@@ -416,7 +416,10 @@ Flakes of van der Waals materials were mechanically exfoliated using Scotch
  The thickness of some materials, such as graphene, can be estimated by
  their reflectivity on the tape, giving a rough guess of how many times
  the folding process should be repeated.
- The tape and crystals are then placed on a cleaned aliment marker chip,
+\end_layout
+
+\begin_layout Standard
+The tape and crystals are then placed on a cleaned aliment marker chip,
  ideally maximizing the amount of crystals within the center of the chip,
  as flakes near the edges can be hard to work with during the lithography
  and wiring steps.
@@ -878,7 +881,7 @@ literal "false"
 
 \end_inset
 
- Finally we bake it at 
+ Finally, we bake it at 
 \begin_inset Formula $180C$
 \end_inset
 
@@ -1336,7 +1339,7 @@ noprefix "false"
 \end_inset
 
  then rinsed in water.
- Finally the PMMA is developed for 10 minutes in methyl isobutyl ketone
+ Finally, the PMMA is developed for 10 minutes in methyl isobutyl ketone
  (MIBK) and a trace amount of water.
  The substrate is moved though the water for 
 \begin_inset Formula $5-10s$
@@ -1749,7 +1752,7 @@ The Lab-18 Thin Film Deposition System also had an in situ ion source that
 
 \begin_layout Standard
 To remove excess metals from the substrate the lithography resist was then
- removed though a 'liftoff' process.
+ removed though a `liftoff' process.
  The resist stacks were designed to have a small undercut between the top
  and bottom layer to allow solvents to dissolve the resists from the edges
  even if metal had deposited on the sides of the upper layers.
@@ -1802,13 +1805,17 @@ Sample flake and film crystals were typically a few tens of microns across
 
 , per side, square pads that connected by metal leads running along the
  substrate to the sample material.
- To connect the pads to a preexisting wiring system we used a series of
+ To connect the pads to a pre-existing wiring system we used a series of
  indium dots and thin gold wires (99.95% Au, 
 \begin_inset Formula $25\mu m$
 \end_inset
 
 ; Alfa Aesar).
- We first adhered the gold wire to the wiring structure with lead-free solder,
+ 
+\end_layout
+
+\begin_layout Standard
+We first adhered the gold wire to the wiring structure with lead-free solder,
  this avoided any currents from the soldering iron from damaging the sample.
  Next we placed an indium dot (99.99% In, 0.20mm diameter,; Indium Corporation)
  on each of the sample wiring pads using modified tweezers.
@@ -1846,8 +1853,8 @@ To prevent static discharge from damaging the material devices several measures
  A ionizing fan (Chapman VSE3000 static eliminator) was constantly blown
  across the sample and wiring station at all times to discharge any static
  build up.
- The person wiring was grounded with a static wrist strap to the building
- ground at all times when touching the device.
+ The person doing the wiring was grounded with a static wrist strap to the
+ building ground at all times when touching the device.
  The modified tweezers were held without gloves to connect it to the building
  ground though the body.
  The wiring station used a rubber floor mat with metal stool to isolate
@@ -2052,7 +2059,7 @@ Layer Transfer is a method to create complex heterostructures of 2D materials,
  typically flakes, by vertically stacking multiple crystals.
  Stacked heterostructures can take advantage of the distinct properties
  of each material without the lower layers altering the growth of subsequent
- compounds as in other methods.
+ compounds, as in other methods.
  We began by fabricating thin stamps of PDMS (polydimethylsiloxane), a clear
  resin that is commonly used for layer transfers.
  The PDMS stamps are formed using a mix of Sylgard 184 Silicone Elastomer
@@ -2168,7 +2175,7 @@ PPMS measurement systems attached electronics used in material measurements.
  (middle) PPMS cryostat with High-Vacuum Option.
  (right) Electronics measurement system connected to PPMS.
  The breakout box and electronics are set up for a typical four-point resistance
- or hall measurement with gating.
+ or Hall measurement with gating.
 \end_layout
 
 \end_inset
@@ -2209,7 +2216,7 @@ For semiconductor measurements a Keithley 6430 was typically used to provide
  to the 6430 but with less range and unshielded cabling.
  A Keithley 2182 current source was used for sourcing small current with
  any metallic samples.
- Finally two Keithley 2182A nano-voltmeters were used in conjunction with
+ Finally, two Keithley 2182A nano-voltmeters were used in conjunction with
  the other instruments for measuring additional voltages between leads.
  Figure 
 \begin_inset CommandInset ref
@@ -3119,7 +3126,11 @@ literal "true"
 .
  To avoid the surface and tip damage, tapping mode AFM was devised, which
  keeps the tip at longer distances from the surface during lateral moves.
- In tapping mode the cantilever is driven to oscillate at or slightly below
+ 
+\end_layout
+
+\begin_layout Standard
+In tapping mode the cantilever is driven to oscillate at or slightly below
  its resonant frequency and lightly taps the surface to measure height,
  figure 
 \begin_inset CommandInset ref
@@ -3351,7 +3362,7 @@ The last tapping mode we will discuss, peak force tapping, measures the
  need to tune the cantilever as in the previous modes and reducing some
  complexity in the measurement setup.
  The tip oscillates the surface, similar to the last two modes.
- As it moves the Van der Waals force switches between repulsive, attractive,
+ As it moves the van der Waals force switches between repulsive, attractive,
  and then back to repulsive, figure 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -3408,7 +3419,7 @@ Piezoresponse force microscopy (PFM) is an extension of AFM that looks at
  While none of the experimental work in this text contains any PFM data,
  it is an important tool in identifying ferroelectricity in thin films and
  2D flakes, so we discuss it in that context.
- PFM uses a conductive AFM tip and cantilever, often through and added metallic
+ PFM uses a conductive AFM tip and cantilever, often through an added metallic
  surface coating or itself metallic, electrically connected to an external
  voltage source.
  Samples are connected to the same circuit ground, typically by including
@@ -3592,7 +3603,7 @@ name "fig:PFM-and-ferroelectric-materials"
 \end_layout
 
 \begin_layout Plain Layout
-a) a piezoresponse force microscope, the configuration is similar to an
+(a) a piezoresponse force microscope, the configuration is similar to an
  AFM with an lock-in amplifier and variable voltage source connected electronica
 lly to a conductive tip.
  (b) PFM phase and amplitude measurements on a single point of an 6nm thick
@@ -3626,8 +3637,8 @@ literal "true"
 \end_layout
 
 \begin_layout Standard
-There are two common PFM techniques commonly used to identify ferroelectricity,
- namely the observation electromechanical hysteresis loops and remnant states
+There are two common PFM techniques used to identify ferroelectricity, namely
+ the observation electromechanical hysteresis loops and remnant states
 \begin_inset CommandInset citation
 LatexCommand cite
 key "martin2019characterizing"

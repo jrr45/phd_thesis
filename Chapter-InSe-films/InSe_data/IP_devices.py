@@ -100,9 +100,9 @@ def plot_resistance_vs_T_combined(size=2, colors=mp.colors_set1, log=True, ylim=
         files = mp.process_device_files(device, filename)
         temperatures.append(files[0]['Temperature_K'])
         
-        if device == substrate1 or device == substrate2:
-            Resistances.append(files[0]['Resistance_1_Ohms'])
-            continue
+        #if device == substrate1 or device == substrate2:
+        #    Resistances.append(files[0]['Resistance_1_Ohms'])
+        #    continue
         
         if device == large_trapazoid_8:
             Resistances.append(files[0]['Resistance_3_Ohms'])
@@ -130,6 +130,7 @@ def plot_resistance_vs_T_combined(size=2, colors=mp.colors_set1, log=True, ylim=
     
     ax.set_xlim((294, 406))
     ax.xaxis.set_major_locator(MultipleLocator(50))
+    #ax.set_ylim((4*10**6, 1.5*10**9))
     
     # save
     device = mp.device()
@@ -189,6 +190,7 @@ def plot_rho_vs_T_combined(size=2, colors=mp.colors_set1, log=True, ylim=(None,N
     ax.set_xlim((294, 406))
     ax.xaxis.set_major_locator(MultipleLocator(50))
     
+    
     # save
     device = mp.device()
     device.name = 'combined'
@@ -240,8 +242,8 @@ files_RvsT = [
     'large_trapazoid_8_011_RvsT_4pt.txt',
     'large_trapazoid_7_005_RvsT.txt',
     'Parallelagram_1_010_RvsT_4pt.txt',
-    'pair1_002_RvsT.txt',
-    'pair4_001_RvsT_Top-bottom.txt',
+    'pair7-4pt_006_RvsT_bottom-top.txt',
+    'pair7-4pt_005_RvsT_bottom_outliers_removed.txt',
     ]
 Hall_files_400K = [
     'large_trapazoid_5_003_RvsB_400.0K.txt',
@@ -277,8 +279,8 @@ RvsT_plot = [
     False, # 2pt only
     False, # jagged
     False, # small spike
-    False, #substrate
-    False, #substrate
+    True, #substrate
+    True, #substrate
     ]
 Hall_plot_300K = [
     (False, False), # no data

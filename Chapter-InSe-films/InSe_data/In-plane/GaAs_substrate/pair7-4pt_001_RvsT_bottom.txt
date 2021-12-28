@@ -1,0 +1,59 @@
+[Main]
+Experiment = "RvsT"
+Header length = 56    
+Date = "20211119 19:15:46"
+Comments = "SD: 2Va to 1I-; Volt1: 2V- to 1I-"
+
+[System]
+System = "PPMS"
+Magnet stability range (G) = 5.000000E+1
+Magnet check interval (s) = 1.000000E+0
+Magnet approach mode = "Linear Approach"
+Magnet mode = "Persistent"
+Temperature stability time (s) = 1.000000E+0
+Temperature approach mode = "Fast Settle"
+
+[Dynamic Temperature]
+Initial temperature (K) = 3.000000E+2
+Final temperature (K) = 4.000000E+2
+Ramp rate (K/min) = 1.000000E+1
+Step control = "Step Control"
+Temperature interval (K) = 1.000000
+Stability Temperature (K) = 0.200000
+Stability time (s) = 1.000000
+Go to other temperature at finish = TRUE
+
+[Measure Voltage Configuration1]
+Voltage meter = "Keithley 2182A"
+Auto-range = "Manual"
+GPIB = "GPIB1::8::INSTR"
+Range (V) = 5.000000E+0
+Speed = 1.000000
+
+[Measure Voltage Configuration2]
+Voltage meter = "Keithley 6430"
+Auto-range = "Manual"
+GPIB = "GPIB1::9::INSTR"
+Range (V) = 2.000000E+1
+Speed = 1.000000
+
+[Dynamic Current]
+Operating mode = "Linear"
+Current source = "Keithley 6430"
+GPIB = "GPIB1::9::INSTR"
+Initial current (A) = 1.000000E-8
+Final current (A) = 1.000000E-8
+Current step (A) = 1.000000E-12
+Number of measurement sequences = 1.000000E+0
+Samples/sequence = 3.000000E+1
+Pre-measuement delay (s) = 1.000000E+0
+Output limit (V) = 20.000000
+Auto-range = "Manual"
+Manual range (A) = 0.000001
+Check output compliance = "Skip data"
+Speed = 1.000000
+Inital delay (s) = 0.000000
+Time (s)	Temperature (K)	Current (A)	Voltage 1 (V)	Voltage 2 (V)	STD_Voltage 1 (V)	STD_Voltage 2 (V)	Resistance 1 (Ohms)	Resistance 2 (Ohms)	STD_Resistance 1 (Ohms)	STD_Resistance 2 (Ohms)
+2.266972065E+0	300.024700000E+0	10.000000041E-9	6.527664547E+0	12.099558167E+0	986.971108547E-3	4.394051885E+0	652.766452029E+6	1.209955812E+9	98.697110453E+6	439.405186678E+6
+44.034770489E+0	300.948000000E+0	10.000000041E-9	6.673866414E+0	13.210618917E+0	989.862189169E-3	4.217442089E+0	667.386638703E+6	1.321061886E+9	98.986218514E+6	421.744207158E+6
+78.765327930E+0	301.914500000E+0	10.000000041E-9	6.649198272E+0	13.407830717E+0	982.522558933E-3	4.054947980E+0	664.919824513E+6	1.340783066E+9	98.252255494E+6	405.494796376E+6

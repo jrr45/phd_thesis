@@ -1,0 +1,34 @@
+[Main]
+Experiment = "IvsV"
+Header length = 32    
+Date = "20201030 15:42:15"
+Comments = ""
+
+[System]
+System = "PPMS"
+Magnet stability range (G) = 5.000000E+1
+Magnet check interval (s) = 1.000000E+0
+Magnet approach mode = "Linear Approach"
+Magnet mode = "Persistent"
+Temperature stability time (s) = 1.000000E+0
+Temperature approach mode = "Fast Settle"
+
+[Dynamic Voltage]
+Voltage source = "Keithley 6430"
+GPIB = "GPIB0::9::INSTR"
+Initial Voltage (V) = -1.000000E+0
+Final Voltage (V) = 1.000000E+0
+Voltage step (V) = 100.000000E-3
+Number of measurement sequences = 1.000000E+0
+Samples/sequence = 30.000000E+0
+Pre-measuement delay (s) = 1.000000E+0
+Current limit (A) = 100.000000E-6
+Auto-range = 0
+Manual range (V) = 10.000000E+0
+Measurement Type = "Static"
+Pattern = "Linear"
+Check compliance = 0
+Measurement Speed = 1.000000
+Time (s)	Voltage 1 (V)	Current (A)	STD_Current (A)	Resistance 1 (Ohms)	STD_Resistance 1 (Ohms)
+0.000000000E+0	-1.000000000E+0	-127.467093333E-12	1.833254812E-9	7.845162025E+9	112.830540467E+9
+17.749044418E+0	-899.999976158E-3	1.062125960E-9	1.840664958E-9	-847.357102691E+6	1.468470393E+9

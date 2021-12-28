@@ -1,0 +1,81 @@
+[Main]
+Experiment = "RvsB_300.0K"
+Header length = 74    
+Date = "20201213 23:28:14"
+Comments = "DS: 2I- to 2I+; Volt1: 2Vb to 2Va; Volt2: 1I+ to 1I-"
+
+[System]
+System = "PPMS"
+Magnet stability range (G) = 5.000000E+1
+Magnet check interval (s) = 1.000000E+0
+Magnet approach mode = "Linear Approach"
+Magnet mode = "Persistent"
+Temperature stability time (s) = 1.000000E+0
+Temperature approach mode = "Fast Settle"
+
+[Static Temperature]
+Set initial temperature = TRUE
+Initial temperature (K) = 3.000000E+2
+Delay after setting initial temperature (s) = 1.000000E+1
+Initial temperature stabilization (K) = 2.000000E-1
+Initial temperature ramp rate (K/min) = 1.000000E+1
+Wait for initial temperature to stabilize = TRUE
+Set final temperature = FALSE
+
+[Dynamic magnetic field]
+Initial field (T) = -9.000000E+0
+Final field (T) = 9.000000E+0
+Measurement interval (T) = 5.000000E-1
+Ramp rate (G/s) = 1.000000E+2
+Delay after field step (s) = 1.000000E+0
+Measurement Pattern = "Linear"
+Go to other field at finish = TRUE
+Finish field (T) = 0.000000
+Finish ramp rate (G/s) = 100.000000
+Delay before setting finish field (s) = 0.000000
+Stabilize finish field = TRUE
+
+[Measure Voltage Configuration1]
+Voltage meter = "Keithley 2182A"
+Auto-range = "Manual"
+GPIB = "GPIB0::7::INSTR"
+Range (V) = 1.000000E+0
+Speed = 1.000000
+
+[Measure Voltage Configuration2]
+Voltage meter = "Keithley 2182A"
+Auto-range = "Manual"
+GPIB = "GPIB0::8::INSTR"
+Range (V) = 1.000000E+0
+Speed = 1.000000
+
+[Measure Voltage Configuration3]
+Voltage meter = "Keithley 6430"
+Auto-range = "Automatic"
+GPIB = "GPIB0::9::INSTR"
+Range (V) = 1.000000E+1
+Speed = 1.000000
+
+[Dynamic Current]
+Operating mode = "Linear"
+Current source = "Keithley 6430"
+GPIB = "GPIB0::9::INSTR"
+Initial current (A) = 1.000000E-7
+Final current (A) = 1.000000E-7
+Current step (A) = 1.000000E-12
+Number of measurement sequences = 1.000000E+0
+Samples/sequence = 3.000000E+1
+Pre-measuement delay (s) = 6.000000E+1
+Output limit (V) = 10.000000
+Auto-range = 0
+Manual range (A) = 0.000001
+Check output compliance = "Skip data"
+Inital delay (s) = 0.000000
+Time (s)	Magnetic Field (T)	Current (A)	Voltage 1 (V)	Voltage 2 (V)	Voltage 3 (V)	STD_Voltage 1 (V)	STD_Voltage 2 (V)	STD_Voltage 3 (V)	Resistance 1 (Ohms)	Resistance 2 (Ohms)	Resistance 3 (Ohms)	STD_Resistance 1 (Ohms)	STD_Resistance 2 (Ohms)	STD_Resistance 3 (Ohms)	Temperature (K)
+121.335756302E+0	-8.999979687E+0	99.999999921E-9	NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaN	300.006800000E+0
+379.207542419E+0	-8.499966406E+0	99.999999921E-9	NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaN	300.002000000E+0
+633.892864227E+0	-7.999947656E+0	99.999999921E-9	NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaN	299.992700000E+0
+888.705419064E+0	-7.499985937E+0	99.999999921E-9	NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaN	299.989900000E+0
+1.140446114E+3	-6.999977344E+0	99.999999921E-9	NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaN	299.995100000E+0
+1.389137384E+3	-6.499981641E+0	99.999999921E-9	NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaN	300.005100000E+0
+1.637830599E+3	-5.999982422E+0	99.999999921E-9	NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaN	300.002700000E+0
