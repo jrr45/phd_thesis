@@ -19,25 +19,7 @@
 %                  Penn State University,
 %                  University Park, PA 16802,
 %                  USA",
-%     telephone = "3153788064",
 %     email     = "jrr330@psu.edu",
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Change History:
-% The change history can be found in the accompanying document
-% entitled "JustinRodriguez-Dissertation Template Change History.md".
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-% This is a template file to help get you started using the
-% psuthesis.cls for theses and dissertations at Penn State
-% University. You will, of course, need to put the
-% psuthesis.cls file someplace that LaTeX will find it.
-%
-% I have set up a directory structure that I find to be clean
-% and convenient. You can readjust it to suit your tastes. In
-% fact, the structure used by our students is even a little
-% more involved and commands are defined to point to the
-% various directories.
 %
 % This document has been set up to be typeset using pdflatex.
 % About the only thing you will need to change if typesetting
@@ -50,31 +32,12 @@
 % The first additional option specifies the degree type. You
 % can choose from:
 %	Ph.D. using class option <phd>
-%	M.S. using class option <ms>
-%	M.Eng. using class option <meng>
-%	M.A. using class option <ma>
-%	B.S. using class option <bs>
-%	B.A. using class option <ba>
-%	Honors from the Schreyer Honors College <schreyer>
 %
 % The second additional option inlinechaptertoc determines
 % the formatting of the Chapter entries in the Table of
 % Contents. The default sets them as two-line entries (try it).
 % If you want them as one-line entries, issue the
 % inlinechaptertoc option.
-%
-% The class option schreyer should be used for theses
-% submitted to the Schreyer Honors College.
-%
-% The class option esc should be used by all Engineering Science
-% students.
-%
-% The option option twoha should be used if you are earning
-% interdisciplanary honors and thus have two honors advisors.
-%
-% The class option ``secondthesissupervisor'' should be used
-% for baccalaureate honors degrees if you have a second
-% Thesis Supervisor.
 %
 % The vita is only included with the phd option and it is
 % placed at the end of the thesis. The permissions page is only
@@ -83,19 +46,12 @@
 % Only one of the following lines should be used at a time.
 % Doctoral students.
 %\documentclass[phd,12pt]{psuthesis}
-% Masters students
-%\documentclass[ms,12pt]{psuthesis}
-% Bachelors students in the Schreyer Honors College.
-% Bachelors students in the Schreyer Honors College & Engineering Science.
-%\documentclass[bs,schreyer,esc,twoha,12pt]{psuthesis}
-% Bachelors students in Engineering Science.
-%\documentclass[bs,esc,12pt]{psuthesis}
 
 \usepackage{textcomp}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Packages I like to use. %
+% Additional packages. %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\usepackage{amsthm}
 %\usepackage{exscale}
@@ -108,14 +64,11 @@
 %\usepackage[dvipsnames]{color} - reenable if you need more colors
 \DeclareGraphicsExtensions{.pdf, .jpg}
 \usepackage{url}
-
-
-% http://www.tex.ac.uk/cgi-bin/texfaq2html?label=citesort
 \usepackage{cite}
-
-
 \usepackage{titlesec}
-
+\usepackage{listings}
+%\usepackage[redefcite]{xcpdftips}
+\usepackage{pdflscape}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Use of the hyperref package %
@@ -146,7 +99,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % SPECIAL SYMBOLS AND NEW COMMANDS %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\input{SupplementaryMaterial/UserDefinedCommands}
+%\input{SupplementaryMaterial/UserDefinedCommands}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -164,40 +117,22 @@
 % FRONT-MATTER %
 %%%%%%%%%%%%%%%%
 % Title
-\title{Material properties and device applications of ferroelectric $\mathrm{In_{2}Se_{3}}$ and high-mobility InSe}
+\title{Material properties and device applications of ferroelectric $\mathrm{In_{2}Se_{3}}$ and high-mobility $\mathrm{InSe}$}
 
 % Author and Department
 \author{Justin Rodriguez}
 \dept{Physics}
 % the degree will be conferred on this date
-\degreedate{December 2021}
+\degreedate{May 2022}
 % year of your copyright
 \copyrightyear{2021}
 
-% This command is used for students submitting a thesis to the
-% Schreyer Honors College and for students in Engineering Science.
-% The argument of this command should contain every after the word
-% ``requirements'' that appears on the title page. This provides the
-% needed flexibility for all the degree types.
-\bachelorsdegreeinfo{for a baccalaureate degree \\ in Engineering Science \\ with honors in Engineering Science}
-
-% This is the document type. For example, this could also be:
-%	Comprehensive Document
-%	Thesis Proposal
-%\documenttype{Thesis}
+% This is the document type.
 \documenttype{Dissertation}
-%\documenttype{Comprehensive Document}
-
 
 % This will generally be The Graduate School, though you can
 % put anything in here to suit your needs.
 \submittedto{The Graduate School}
-
-% no longer used
-% This is the college to which you are submitting the
-% thesis/dissertation.
-%\collegesubmittedto{Eberly College of Science}
-
 
 %%%%%%%%%%%%%%%%%%
 % Signatory Page %
@@ -231,21 +166,12 @@
 			{Nitin Samarth}
 			{Professor of Physics}
 
-% Makes use of LaTeX's include facility. Add as many chapters
-% and appendices as you like.
-
-
-\usepackage{listings}
-%\usepackage[redefcite]{xcpdftips}
-\usepackage{pdflscape}
-
 %%%%%%%%%%%%%%%%%
 % THE BEGINNING %
 %%%%%%%%%%%%%%%%%
-
 \makeatletter
 \end_preamble
-\options phd 
+\options phd,12pt
 \use_default_options false
 \begin_modules
 pdfcomment
@@ -336,6 +262,37 @@ todonotes
 \noindent
 \begin_inset ERT
 status open
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+% Preliminary Material %
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+% This command is needed to properly set up the frontmatter.
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+frontmatter
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
 
 \begin_layout Plain Layout
 
@@ -516,47 +473,6 @@ headrulewidth}{0pt}
 renewcommand{
 \backslash
 footrulewidth}{0pt}
-\end_layout
-
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-\noindent
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-%%%%%%%%%%%%%%%%%%%%%%%%
-\end_layout
-
-\begin_layout Plain Layout
-
-% Preliminary Material %
-\end_layout
-
-\begin_layout Plain Layout
-
-%%%%%%%%%%%%%%%%%%%%%%%%
-\end_layout
-
-\begin_layout Plain Layout
-
-% This command is needed to properly set up the frontmatter.
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-frontmatter
 \end_layout
 
 \begin_layout Plain Layout
@@ -909,7 +825,7 @@ allowdisplaybreaks{
 
 %
 \backslash
-pagestyle{fancy}
+pagestyle{fancy}r
 \end_layout
 
 \begin_layout Plain Layout

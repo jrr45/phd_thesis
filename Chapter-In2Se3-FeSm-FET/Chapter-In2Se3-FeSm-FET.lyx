@@ -702,7 +702,57 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Device parameters
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:In2Se3-Device-parameters"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+Physical dimensions of the 
+\begin_inset Formula $\ensuremath{\alpha}\textrm{-In}_{2}\textrm{Se}_{3}$
+\end_inset
+
+ crystals used in the sample devices and the lead configuration.
+ 
+\begin_inset Formula $L_{volt}$
+\end_inset
+
+ and 
+\begin_inset Formula $L_{current}$
+\end_inset
+
+ are the distance between the respective voltage and current leads, 
+\begin_inset Formula $w$
+\end_inset
+
+ the channel width of the crystal, and 
+\begin_inset Formula $t$
+\end_inset
+
+ the thickness of the crystal.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\begin_inset space \hfill{}
+\end_inset
+
+
 \begin_inset Tabular
 <lyxtabular version="3" rows="5" columns="6">
 <features tabularvalignment="middle">
@@ -1009,51 +1059,10 @@ Hall bar
 \end_inset
 
 
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Device parameters
-\begin_inset CommandInset label
-LatexCommand label
-name "tab:In2Se3-Device-parameters"
-
+\begin_inset space \hfill{}
 \end_inset
 
 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-Physical dimensions of the 
-\begin_inset Formula $\ensuremath{\alpha}\textrm{-In}_{2}\textrm{Se}_{3}$
-\end_inset
-
- crystals used in the sample devices and the lead configuration.
- 
-\begin_inset Formula $L_{volt}$
-\end_inset
-
- and 
-\begin_inset Formula $L_{current}$
-\end_inset
-
- are the distance between the respective voltage and current leads, 
-\begin_inset Formula $w$
-\end_inset
-
- the channel width of the crystal, and 
-\begin_inset Formula $t$
-\end_inset
-
- the thickness of the crystal.
- 
 \end_layout
 
 \end_inset
@@ -1155,7 +1164,8 @@ noprefix "false"
 .
  Because of this, several optical measurements were used to confirm the
  stoichiometry and lattice stacking of the material used in our devices.
- X-Ray diffraction measurements displayed peaks corresponding to the 
+ X-Ray diffraction measurements (XRD) displayed peaks corresponding to the
+ 
 \begin_inset Formula $R3m$
 \end_inset
 
@@ -1248,6 +1258,10 @@ d flakes of crystal on
  wafer chips.
  Raman and photoluminescence measurements were taken using a Renishaw inVia
  Raman microscope (488 nm laser).
+ Crystal growth and XRD were done by Dr.
+ Seng Huat Lee, Raman and photoluminescence measurements by Dr.
+ Kazunori Fujisawa, and SHG by Dr.
+ William Murray.
 \end_layout
 
 \begin_layout Standard
@@ -1333,7 +1347,7 @@ Photoluminescence
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -1411,6 +1425,7 @@ substrates.
 \end_inset
 
  [3R] polytype.
+ 
 \end_layout
 
 \end_inset
@@ -3175,7 +3190,29 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sample A magnetoconductance fit parameters
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Sample-A:-magnetoconductance"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset space \hfill{}
+\end_inset
+
+
 \begin_inset Tabular
 <lyxtabular version="3" rows="4" columns="5">
 <features tabularvalignment="middle">
@@ -3389,22 +3426,7 @@ status open
 \end_inset
 
 
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Sample A: magnetoconductance fit parameters
-\begin_inset CommandInset label
-LatexCommand label
-name "tab:Sample-A:-magnetoconductance"
-
-\end_inset
-
-
-\end_layout
-
+\begin_inset space \hfill{}
 \end_inset
 
 

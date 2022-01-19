@@ -165,10 +165,6 @@
 \newcommand{\psu@submittedto}{The Graduate School}
 \providecommand{\submittedto}[1]{\renewcommand{\psu@submittedto}{#1}}
 
-% Store the College to which the document has been submitted.
-\newcommand{\psu@collegesubmittedto}{College of Engineering}
-\providecommand{\collegesubmittedto}[1]{\renewcommand{\psu@collegesubmittedto}{#1}}
-
 % Store the the info for the honors degree(s) type(s).
 \newcommand{\psu@bachelorsdegreeinfo}{for a baccalaureate degree(s) \\ in Biology and Physics \\ with honors in Computer Engineering}
 \providecommand{\bachelorsdegreeinfo}[1]{\renewcommand{\psu@bachelorsdegreeinfo}{#1}}
@@ -552,8 +548,7 @@ Department Head \\
 \vspace*{-0.25in}
 \begin{center}
 	The Pennsylvania State University\\
-	\psu@submittedto \\
-	\psu@collegesubmittedto
+	\psu@submittedto
 \end{center}
 \vfill
 \begin{center}

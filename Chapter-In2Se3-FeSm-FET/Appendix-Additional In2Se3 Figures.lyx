@@ -5002,6 +5002,33 @@ sideways true
 status open
 
 \begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Slope (voltage range) for linear fits of 
+\begin_inset Formula $\ln\left(J\right)$
+\end_inset
+
+ versus 
+\begin_inset Formula $\ln\left(V\right)$
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Slope-lnJ-lnV"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Tabular
 <lyxtabular version="3" rows="5" columns="8">
 <features tabularvalignment="middle">
@@ -6684,33 +6711,6 @@ Sample D
 </cell>
 </row>
 </lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Slope (voltage range) for linear fits of 
-\begin_inset Formula $\ln\left(J\right)$
-\end_inset
-
- versus 
-\begin_inset Formula $\ln\left(V\right)$
-\end_inset
-
-
-\begin_inset CommandInset label
-LatexCommand label
-name "tab:Slope-lnJ-lnV"
-
-\end_inset
-
-
-\end_layout
 
 \end_inset
 

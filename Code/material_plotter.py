@@ -647,12 +647,14 @@ def process_hall_data(device, Hall_file, T_Rxx_4pt=None,
     if T_Rxx_4pt is not None:
         #σs = l/(Rxx*w)
         σs = device.volt_length / (T_Rxx_4pt * device.width)
+        σ = device.volt_length / (T_Rxx_4pt * device.width * device.thickness)
     # R from 2pt resistance in actual measurement
     else:
         VDS_data = Hall_file['Voltage_3_V']
         ind = first_occurance_1D(B_data, 0, tol=0.01, starting_index=0)
         R_2pt = VDS_data[ind]/current ##
         σs = device.length / (R_2pt * device.width)
+        σ = device.length / (R_2pt * device.width * device.thickness)
     
     B_data = B_data[occ0:occ1+1]
     VH_datas = []
@@ -692,10 +694,11 @@ def process_hall_data(device, Hall_file, T_Rxx_4pt=None,
         V_hall_T = V_hall_T0 + B_point*pfit.c[0]
         
         # RH = Vy(Bz)/(Ix*Bz)
-        RH = (V_hall_T-V_hall_T0)/(B_point*current)
+        RH2D = (V_hall_T-V_hall_T0)/(B_point*current)
+        RH3D = (V_hall_T-V_hall_T0)*device.thickness/(B_point*current)
         
         # n2D = B/(Rxy*e) = 1/RH2D*e 
-        n2D = 1/(RH*abs(fundamental_charge_e))
+        n2D = 1/(RH2D*abs(fundamental_charge_e))
         n3D = n2D/device.thickness
         print("%s K: n2D: %s cm^-2, n3D: %s cm^-3" % (round(T,1),
                     np.format_float_scientific(n2D/(100*100), unique=False, precision=5),
@@ -704,7 +707,7 @@ def process_hall_data(device, Hall_file, T_Rxx_4pt=None,
         n2Ds.append(n2D)
         
         # μ = σs/(e*n2D)
-        μ = σs/(abs(fundamental_charge_e)*n2D)
+        μ = σ/(abs(fundamental_charge_e)*n3D)
         μH.append(μ)
     
         #plot_hall_V_generic(xdata, ydata, '_RvsH_' + str(temp) + 'K_R2_' + str(r_squared), polyfit=pfit)

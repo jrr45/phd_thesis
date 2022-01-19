@@ -446,7 +446,7 @@ status open
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -464,10 +464,14 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-\begin_inset Formula $\beta\mathrm{\left[2H\right]\left(P6_{3}/mmc\right)}$
+\begin_inset Formula $\beta\mathrm{\left[2H\right]}$
 \end_inset
 
- hexagonal
+, 
+\begin_inset Formula $P6_{3}/mmc\left\{ 194\right\} $
+\end_inset
+
+ 
 \end_layout
 
 \end_inset
@@ -507,10 +511,14 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-\begin_inset Formula $\gamma\left[3R\right]\left(R3m\right)$
+\begin_inset Formula $\gamma\left[3R\right]$
 \end_inset
 
- rhombohedral
+, 
+\begin_inset Formula $R3m\left\{ 160\right\} $
+\end_inset
+
+ 
 \end_layout
 
 \end_inset
@@ -550,10 +558,14 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-\begin_inset Formula $\epsilon\left[2H\right]\left(P\bar{6}m2\right)$
+\begin_inset Formula $\epsilon\left[2H\right]$
 \end_inset
 
- hexagonal
+, 
+\begin_inset Formula $P\bar{6}m2\left\{ 187\right\} $
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -602,7 +614,7 @@ The common
 \end_inset
 
  polymorph crystal structures.
- 
+ The space groups and space group numbers are given for each structure shown.
 \end_layout
 
 \end_inset
@@ -628,6 +640,70 @@ status open
 clearpage
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{InSe}$
+\end_inset
+
+ stable polymorphs
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:InSe-stable-polymorphs"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+The common 
+\begin_inset Formula $\beta$
+\end_inset
+
+, 
+\begin_inset Formula $\gamma$
+\end_inset
+
+, and 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ polymorph crystal structures of InSe.
+ PM: polymorph, PT: polytype, Band gap I/D: indirect/direct.
+ The structure is also denoted by the Ramsdell notation 
+\begin_inset Formula $nZ$
+\end_inset
+
+, where 
+\begin_inset Formula $n$
+\end_inset
+
+ is the number of layers in a unit cell and 
+\begin_inset Formula $Z$
+\end_inset
+
+ the crystal system of the lattice.
+ The ones used above are: 
+\begin_inset Formula $H$
+\end_inset
+
+ a hexagonal crystal with a hexagonal Bravais system and 
+\begin_inset Formula $R$
+\end_inset
+
+ a trigonal crystal system with a rhombohedral Bravais lattice.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset space \hfill{}
 \end_inset
 
 
@@ -1295,63 +1371,10 @@ literal "false"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset Formula $\mathrm{InSe}$
-\end_inset
-
- stable polymorphs
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:InSe-stable-polymorphs"
-
+\begin_inset space \hfill{}
 \end_inset
 
 
-\end_layout
-
-\end_inset
-
-The common 
-\begin_inset Formula $\beta$
-\end_inset
-
-, 
-\begin_inset Formula $\gamma$
-\end_inset
-
-, and 
-\begin_inset Formula $\varepsilon$
-\end_inset
-
- polymorph crystal structures of InSe.
- PM: polymorph, PT: polytype, Band gap I/D: indirect/direct.
- The structure is also denoted by the Ramsdell notation 
-\begin_inset Formula $nZ$
-\end_inset
-
-, where 
-\begin_inset Formula $n$
-\end_inset
-
- is the number of layers in a unit cell and 
-\begin_inset Formula $Z$
-\end_inset
-
- the crystal system of the lattice.
- The ones used above are: 
-\begin_inset Formula $H$
-\end_inset
-
- a hexagonal crystal with a hexagonal Bravais system and 
-\begin_inset Formula $R$
-\end_inset
-
- a trigonal crystal system with a rhombohedral Bravais lattice.
 \end_layout
 
 \end_inset
@@ -1554,10 +1577,14 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-\begin_inset Formula $\alpha\mathrm{\left[2H\right]\left(P6_{3}mc\right)}$
+\begin_inset Formula $\alpha\mathrm{\left[2H\right]}$
 \end_inset
 
- hexagonal
+, 
+\begin_inset Formula $P6_{3}mc\left\{ 186\right\} $
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1597,10 +1624,14 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-\begin_inset Formula $\alpha\left[3R\right]\left(R3m\right)$
+\begin_inset Formula $\alpha\left[3R\right]$
 \end_inset
 
- rhombohedral
+, 
+\begin_inset Formula $R3m\left\{ 160\right\} $
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1640,10 +1671,14 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-\begin_inset Formula $\beta\left[1T\right]\left(P\bar{3}m1\right)$
+\begin_inset Formula $\beta\left[1T\right]$
 \end_inset
 
- trigonal
+, 
+\begin_inset Formula $P\bar{3}m1\left\{ 164\right\} $
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1679,10 +1714,14 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-\begin_inset Formula $\beta\mathrm{\left[2H\right]\left(P6_{3}mc\right)}$
+\begin_inset Formula $\beta\mathrm{\left[2H\right]}$
 \end_inset
 
- hexagonal
+, 
+\begin_inset Formula $P6_{3}mc\left\{ 186\right\} $
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1722,10 +1761,14 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-\begin_inset Formula $\beta\left[3R\right]\left(R\bar{3}m\right)$
+\begin_inset Formula $\beta\left[3R\right]$
 \end_inset
 
- rhombohedral
+, 
+\begin_inset Formula $R\bar{3}m\left\{ 166\right\} $
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1768,7 +1811,11 @@ status collapsed
 \begin_inset Formula $\gamma$
 \end_inset
 
- Hexagonal
+, 
+\begin_inset Formula $P6_{1}\left\{ 169\right\} $
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1825,7 +1872,8 @@ literal "true"
 
 \end_inset
 
-.
+, The space groups and space group numbers are given for each structure
+ shown.
 \end_layout
 
 \end_inset
@@ -1850,8 +1898,90 @@ clearpage
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{In_{2}Se_{3}}$
+\end_inset
+
+ stable polymorphs
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:In2Se3-polymorphs"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+The common polymorphs and polytypes of 
+\begin_inset Formula $\mathrm{In_{2}Se_{3}}$
+\end_inset
+
+.
+ PM: polymorph, PT: polytype, Band gap I/D: indirect/direct.
+ The Ramsdell notation 
+\begin_inset Formula $T$
+\end_inset
+
+ is a trigonal crystal system with a hexagonal Bravais lattice.
+ 
+\begin_inset Formula $^{\star}$
+\end_inset
+
+The structure in 
+\begin_inset Formula $1T$
+\end_inset
+
+ 
+\begin_inset Formula $\beta$
+\end_inset
+
+-phase reported by Liu et al.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "liu2019atomically"
+literal "true"
+
+\end_inset
+
+ is similar to the 
+\begin_inset Formula $\delta$
+\end_inset
+
+-phase calculated by Li et al.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "li2018largea"
+literal "false"
+
+\end_inset
+
+, as well as the few earlier reported measurements of the 
+\begin_inset Formula $\delta$
+\end_inset
+
+-phase.
+ As these phase have only a few spare reports, more work is needed to clarify
+ their structure and relationship.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset space \hfill{}
+\end_inset
+
+
 \begin_inset Tabular
-<lyxtabular version="3" rows="6" columns="8">
+<lyxtabular version="3" rows="4" columns="8">
 <features islongtable="true" longtabularalignment="center">
 <column alignment="left" valignment="top" width="0pt">
 <column alignment="left" valignment="top" width="2.4cm">
@@ -2022,7 +2152,7 @@ c
 </cell>
 </row>
 <row>
-<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
+<cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2527,7 +2657,7 @@ literal "false"
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2540,7 +2670,7 @@ Hexagonal
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2584,7 +2714,7 @@ literal "false"
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2613,7 +2743,7 @@ literal "false"
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2690,7 +2820,7 @@ literal "false"
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2699,7 +2829,7 @@ AB
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2728,7 +2858,7 @@ literal "false"
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2818,265 +2948,12 @@ literal "false"
 \end_inset
 </cell>
 </row>
-<row>
-<cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $\beta$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Trigonal
-\end_layout
-
-\begin_layout Plain Layout
-[1T]
-\begin_inset Formula $^{\star}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $P\bar{3}m1\left\{ 164\right\} $
-\end_inset
-
-
-\begin_inset CommandInset citation
-LatexCommand cite
-key "liu2019atomically"
-literal "true"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-4.04
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-9.76 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "liu2019atomically"
-literal "false"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-AA
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-(I)1.55
-\begin_inset CommandInset citation
-LatexCommand cite
-key "almeida2017colloidal"
-literal "false"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-110, 176, 205
-\begin_inset CommandInset citation
-LatexCommand cite
-key "liu2019atomically"
-literal "false"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Hexagonal
-\end_layout
-
-\begin_layout Plain Layout
-[2H]
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $P6_{3}mc\left\{ 186\right\} $
-\end_inset
-
-
-\begin_inset CommandInset citation
-LatexCommand cite
-key "liu2019atomically"
-literal "true"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-(or 
-\begin_inset Formula $P6_{3}/mmc\left\{ 194\right\} $
-\end_inset
-
-
-\begin_inset CommandInset citation
-LatexCommand cite
-key "lutz1988zur"
-literal "false"
-
-\end_inset
-
-)
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-4.06
-\end_layout
-
-\begin_layout Plain Layout
-4.016
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-19.48
-\begin_inset CommandInset citation
-LatexCommand cite
-key "liu2019atomically"
-literal "false"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-1.919
-\begin_inset CommandInset citation
-LatexCommand cite
-key "lutz1988zur"
-literal "false"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-AB
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-110, 176, 205
-\begin_inset CommandInset citation
-LatexCommand cite
-key "liu2019atomically"
-literal "false"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
 </lyxtabular>
 
+\end_inset
+
+
+\begin_inset space \hfill{}
 \end_inset
 
 
@@ -3111,8 +2988,12 @@ ContinuedFloat
 \end_layout
 
 \begin_layout Plain Layout
+\begin_inset space \hfill{}
+\end_inset
+
+
 \begin_inset Tabular
-<lyxtabular version="3" rows="11" columns="8">
+<lyxtabular version="3" rows="13" columns="8">
 <features islongtable="true" longtabularalignment="center">
 <column alignment="left" valignment="top" width="0pt">
 <column alignment="left" valignment="top" width="2.4cm">
@@ -3283,7 +3164,7 @@ c
 </cell>
 </row>
 <row newpage="true">
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3299,6 +3180,260 @@ c
 \begin_inset Text
 
 \begin_layout Plain Layout
+Trigonal
+\end_layout
+
+\begin_layout Plain Layout
+[1T]
+\begin_inset Formula $^{\star}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $P\bar{3}m1\left\{ 164\right\} $
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "liu2019atomically"
+literal "true"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.04
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9.76 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "liu2019atomically"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+AA
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(I)1.55
+\begin_inset CommandInset citation
+LatexCommand cite
+key "almeida2017colloidal"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+110, 176, 205
+\begin_inset CommandInset citation
+LatexCommand cite
+key "liu2019atomically"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row newpage="true">
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Hexagonal
+\end_layout
+
+\begin_layout Plain Layout
+[2H]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $P6_{3}mc\left\{ 186\right\} $
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "liu2019atomically"
+literal "true"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+(or 
+\begin_inset Formula $P6_{3}/mmc\left\{ 194\right\} $
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "lutz1988zur"
+literal "false"
+
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.06
+\end_layout
+
+\begin_layout Plain Layout
+4.016
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+19.48
+\begin_inset CommandInset citation
+LatexCommand cite
+key "liu2019atomically"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+1.919
+\begin_inset CommandInset citation
+LatexCommand cite
+key "lutz1988zur"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+AB
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+110, 176, 205
+\begin_inset CommandInset citation
+LatexCommand cite
+key "liu2019atomically"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row newpage="true">
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 Rhombohedral
 \end_layout
 
@@ -3308,7 +3443,7 @@ Rhombohedral
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3328,7 +3463,7 @@ literal "true"
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3365,7 +3500,7 @@ literal "true"
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3466,7 +3601,7 @@ literal "false"
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3475,7 +3610,7 @@ ABC
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3516,7 +3651,7 @@ literal "true"
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4500,78 +4635,10 @@ Hexagonal
 \end_inset
 
 
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset Formula $\mathrm{In_{2}Se_{3}}$
-\end_inset
-
- stable polymorphs
-\begin_inset CommandInset label
-LatexCommand label
-name "tab:In2Se3-polymorphs"
-
+\begin_inset space \hfill{}
 \end_inset
 
 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-The common polymorphs and polytypes of 
-\begin_inset Formula $\mathrm{In_{2}Se_{3}}$
-\end_inset
-
-.
- PM: polymorph, PT: polytype, Band gap I/D: indirect/direct.
- The Ramsdell notation 
-\begin_inset Formula $T$
-\end_inset
-
- is a trigonal crystal system with a hexagonal Bravais lattice.
- 
-\begin_inset Formula $^{\star}$
-\end_inset
-
-The structure in 
-\begin_inset Formula $1T$
-\end_inset
-
- 
-\begin_inset Formula $\beta$
-\end_inset
-
--phase reported by Liu et al.
-\begin_inset CommandInset citation
-LatexCommand cite
-key "liu2019atomically"
-literal "true"
-
-\end_inset
-
- is similar to the 
-\begin_inset Formula $\delta$
-\end_inset
-
--phase calculated by Li et al.
-\begin_inset CommandInset citation
-LatexCommand cite
-key "li2018largea"
-literal "false"
-
-\end_inset
-
-, as well as the few earlier reported measurements of the 
-\begin_inset Formula $\delta$
-\end_inset
-
--phase.
- As these phase have only a few spare reports, more work is needed to clarify
- their structure and relationship.
 \end_layout
 
 \end_inset

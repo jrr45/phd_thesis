@@ -171,149 +171,29 @@ pink: f781bfff
 \end_layout
 
 \begin_layout Standard
-field effect
-\begin_inset CommandInset citation
-LatexCommand cite
-key "osman2016modulation"
-literal "false"
-
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Itemize
-AFM: Bruker Icon
-\end_layout
-
-\begin_layout Itemize
-AFM: Bruker Icon II 
-\end_layout
-
-\begin_layout Itemize
-Dicing Saw, ADT 7100 ProVectus 
-\end_layout
-
-\begin_layout Itemize
-Etch: Alcatel Silicon DRIE 
-\end_layout
-
-\begin_layout Itemize
-Etch: M4L Etch: PT Dual 
-\end_layout
-
-\begin_layout Itemize
-Etch Versalock 
-\end_layout
-
-\begin_layout Itemize
-Evaporator: Lab 18 
-\end_layout
-
-\begin_layout Itemize
-Litho: Deep UV Flood Exposure 
-\end_layout
-
-\begin_layout Itemize
-Litho: Ebeam Fracture Computer 
-\end_layout
-
-\begin_layout Itemize
-Litho: Fusion System (MSC) 
-\end_layout
-
-\begin_layout Itemize
-Litho: MA/BA6 
-\end_layout
-
-\begin_layout Itemize
-Litho: MABA6 Gen 4 
-\end_layout
-
-\begin_layout Itemize
-Litho: Resist Develop Bench 1 (MSC) 
-\end_layout
-
-\begin_layout Itemize
-Litho: Resist Develop Bench 2 (MSC) 
-\end_layout
-
-\begin_layout Itemize
-Litho: Resist Develop Bench 3 (MSC) 
-\end_layout
-
-\begin_layout Itemize
-Litho: Resist Spin Bench 1 (MSC) 
-\end_layout
-
-\begin_layout Itemize
-Litho: Resist Spin Bench 2 (MSC) 
-\end_layout
-
-\begin_layout Itemize
-Litho: Resist Spin Bench 3 (MSC) 
-\end_layout
-
-\begin_layout Itemize
-Litho: Specialty Spin Bench (MSC) 
-\end_layout
-
-\begin_layout Itemize
-Microscope: Nikon L200 
-\end_layout
-
-\begin_layout Itemize
-Microscope: Nikon L200ND 
-\end_layout
-
-\begin_layout Itemize
-Profilometer: KLA Tencor P16+ 
-\end_layout
-
-\begin_layout Itemize
-Wet Chem: Acid/Base Bench 1 (MSC) 
-\end_layout
-
-\begin_layout Itemize
-Wet Chem: Acid/Base Bench 2 (MSC) 
-\end_layout
-
-\begin_layout Itemize
-Wet Chem: Acid/Base Bench 3 (MSC) 
-\end_layout
-
-\begin_layout Itemize
-Wet Chem: Acid/Base Bench 4 (MSC) 
-\end_layout
-
-\begin_layout Itemize
-Wet Chem: SC1/SC2 Bench (MSC) 
-\end_layout
-
-\begin_layout Itemize
-Wet Chem: Solvent SS Bench 1 (MSC) 
-\end_layout
-
-\begin_layout Itemize
-Wet Chem: Solvent SS Bench 2 (MSC) 
-\end_layout
-
-\begin_layout Itemize
-Wet Chem: Solvent SS Bench 3 (MSC)
+hall
 \end_layout
 
 \begin_layout Standard
-\align block
-\begin_inset CommandInset include
-LatexCommand input
-filename "Chapter-Introduction/Chapter-Introduction.lyx"
+\begin_inset Formula $n_{2D}=t\times n$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+R_{H} & =\frac{t}{B}\frac{V_{H}}{I}\\
+ & =-\frac{1}{ne}\\
+R_{H2D} & =\frac{1}{B}\frac{V_{H}}{I}\\
+ & =-\frac{1}{n_{2D}e}=-\frac{1}{tne}=\frac{R_{H}}{t}
+\end{align*}
 
 \end_inset
 
 
-\begin_inset CommandInset include
-LatexCommand input
-filename "Chapter-Background/Background-semiconductors.lyx"
+\begin_inset Formula 
+\[
+n=\frac{1}{t}\frac{eBI}{V_{H}}
+\]
 
 \end_inset
 
@@ -321,10 +201,14 @@ filename "Chapter-Background/Background-semiconductors.lyx"
 \end_layout
 
 \begin_layout Standard
-\align block
-\begin_inset CommandInset include
-LatexCommand input
-filename "Chapter-Background/Background-ferroelectrics.lyx"
+blah
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R_{xx}=\frac{\rho l}{wt}\rightarrow\rho=\frac{wtR_{xx}}{l}\rightarrow\sigma=\frac{l}{wtR_{xx}}
+\]
 
 \end_inset
 
@@ -332,10 +216,36 @@ filename "Chapter-Background/Background-ferroelectrics.lyx"
 \end_layout
 
 \begin_layout Standard
-\align block
-\begin_inset CommandInset include
-LatexCommand input
-filename "Chapter-Background/Background-materials.lyx"
+\begin_inset Formula $\sigma_{s}=t\sigma=\frac{l}{R_{xx}w}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mu=\frac{\sigma_{s}}{qn_{2D}}=\frac{\sigma_{s}}{qn_{2D}}=\frac{\cancel{t}\sigma}{q\cancel{t}n}=\frac{\sigma}{qn}
+\]
+
+\end_inset
+
+baha
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mu=\frac{\sigma}{qn}
+\]
+
+\end_inset
+
+wheee
+\begin_inset Formula 
+\begin{align*}
+\sigma & =\frac{I}{2\pi V}\left(\frac{1}{s_{1}}-\frac{1}{s_{2}}-\frac{1}{s_{3}}+\frac{1}{s_{4}}\right)\\
+ & =\frac{l}{R_{xx}tw}\\
+\frac{l}{tw} & =\frac{1}{2\pi}\left(\frac{1}{s_{1}}-\frac{1}{s_{2}}-\frac{1}{s_{3}}+\frac{1}{s_{4}}\right)\\
+l & =tw\frac{1}{2\pi}\left(\frac{1}{s_{1}}-\frac{1}{s_{2}}-\frac{1}{s_{3}}+\frac{1}{s_{4}}\right)
+\end{align*}
 
 \end_inset
 
@@ -343,43 +253,29 @@ filename "Chapter-Background/Background-materials.lyx"
 \end_layout
 
 \begin_layout Standard
-\align block
-\begin_inset CommandInset include
-LatexCommand input
-filename "Chapter-Methods/Chapter-Methods.lyx"
+\begin_inset Formula $n\propto\frac{1}{t}$
+\end_inset
 
+, 
+\begin_inset Formula $\sigma\propto\frac{1}{t}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mu$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\align block
-\begin_inset CommandInset include
-LatexCommand input
-filename "Chapter-In2Se3-FeSm-FET/Chapter-In2Se3-FeSm-FET.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align block
-\begin_inset CommandInset include
-LatexCommand input
-filename "Chapter-InSe-films/Chapter-InSe-films.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align block
-\begin_inset CommandInset include
-LatexCommand input
-filename "Chapter-Conclusion/Chapter-Conclusion.lyx"
+\begin_inset Formula 
+\begin{align*}
+R_{H} & =\frac{t}{B}\frac{V_{H}}{I}\\
+ & =-\frac{1}{ne}\\
+ & \rightarrow\\
+n & =\frac{1}{t}\frac{eBI}{V_{H}}\\
+ & \propto\frac{1}{t}
+\end{align*}
 
 \end_inset
 

@@ -103,7 +103,7 @@ literal "false"
 \end_inset
 
  has brought the dramatic advances in the fundamental studies of two-dimensional
- (2D) materials as well as novel devices.
+ (2D) materials, as well as novel devices.
  Monolayer graphene obtained by mechanical exfoliation of a single bulk
  crystal has been shown to possess an electronic mobility in excess of 
 \begin_inset Formula $\ensuremath{10^{4}}\ensuremath{\mathrm{cm^{2}V\cdot s}}$
@@ -121,9 +121,8 @@ literal "false"
 \end_inset
 
 .
- Other 2D materials showing high mobilities with added advantage of finite
- energy gap that is important for achieving a high on-off ratio, such as
- black phosphorus (BP)
+ Other 2D materials have been found with similar high mobilities but posess
+ a finite energy gap, such as black phosphorus (BP)
 \begin_inset CommandInset citation
 LatexCommand cite
 key "li2014black"
@@ -139,14 +138,14 @@ literal "false"
 
 \end_inset
 
-, have also been found.
+.
  These 2D materials feature a layered Van der Waals crystalline structure.
- The high mobilities seen in these material of a few atomic layer thickness
- are in part due to the relative ease in reducing the concentration of defects
- and dangling bonds, in particular, in mechanically exfoliated 2D crystals.
- On the other hand, mechanically exfoliation is inherently unreliable, so
- films that can be grown and retain properties of the layered structure
- are needed for technological applications of these high-mobility 2D materials
+ The high mobilities seen in exfolated few-layer thick materials are, in-part,
+ due to the relative ease in reducing the concentration of defects and dangling
+ bonds.
+ Unfortunately, mechanically exfoliation is inherently unreliable, so film
+ growth processes must be engineered to retain properties of the layered
+ structure for technological applications of 2D materials
 \begin_inset CommandInset citation
 LatexCommand cite
 key "kang2015highmobility"
@@ -172,7 +171,7 @@ status open
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -192,7 +191,11 @@ status collapsed
 \begin_inset Formula $\beta$
 \end_inset
 
--phase
+-phase, 
+\begin_inset Formula $P6_{3}/mmc\left\{ 194\right\} $
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -210,7 +213,7 @@ status collapsed
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -230,7 +233,11 @@ status collapsed
 \begin_inset Formula $\gamma$
 \end_inset
 
--phase
+-phase, 
+\begin_inset Formula $R3m\left\{ 160\right\} $
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -248,7 +255,7 @@ status collapsed
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -268,7 +275,11 @@ status collapsed
 \begin_inset Formula $\varepsilon$
 \end_inset
 
--phase
+-phase, 
+\begin_inset Formula $P\bar{6}m2\left\{ 187\right\} $
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -317,7 +328,8 @@ The crystal structure of
 \begin_inset Formula $\varepsilon$
 \end_inset
 
--phases of InSe, (a), (b), and (c) respectively.
+-phases of InSe; along with their respective space groups and space group
+ number.
  
 \end_layout
 
@@ -354,16 +366,16 @@ noprefix "false"
 .
  Each polymorph of InSe features a unit cell composed of two or three identical
  layers with different stackings, which belong to the respective three space
- groups: 
-\begin_inset Formula $P6_{3}/mmc$
+ groups {number}: 
+\begin_inset Formula $P6_{3}/mmc\left\{ 194\right\} $
 \end_inset
 
 , 
-\begin_inset Formula $R3m$
+\begin_inset Formula $R3m\left\{ 160\right\} $
 \end_inset
 
 , and 
-\begin_inset Formula $P\bar{6}m2$
+\begin_inset Formula $P\bar{6}m2\left\{ 187\right\} $
 \end_inset
 
 
@@ -722,7 +734,7 @@ The films where characterized by X-ray Diffraction (XRD), using a
 \begin_inset Formula $\mathrm{X'Pert}^{3}$
 \end_inset
 
- (Malvern Panalytical) diffraction system with with Cu-Kα radiation.
+ (Malvern Panalytical) diffraction system with Cu-Kα radiation.
  The XRD data, figure
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -795,7 +807,7 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-A Raman sprectrum of the film and substrate is shown in figure 
+A Raman spectrum of the film and substrate is shown in figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Optical-InSe"
@@ -918,6 +930,9 @@ literal "true"
 \end_inset
 
 .
+ The film growth, AFM analysis, XRD, and Raman spectroscopy were done by
+ Dr.
+ Marie Hilse.
  
 \end_layout
 
@@ -938,7 +953,24 @@ noprefix "false"
 \end_inset
 
 a and b show a schematic and optical image of the device.
- The films were patterned by photolithography using a trilayer resist stack
+ The films are 
+\begin_inset Formula $55\times20$
+\end_inset
+
+ 
+\begin_inset Formula $\mathrm{\mu m}$
+\end_inset
+
+ in size, with 40 
+\begin_inset Formula $\mathrm{\mu m}$
+\end_inset
+
+ between the centers of the 5 
+\begin_inset Formula $\mathrm{\mu m}$
+\end_inset
+
+-wide voltage contacts.
+ The films were patterned by photolithography using a tri-layer resist stack
  of PMMA, PMGI, and SPR.
  This was chosen to avoid exposing the film to any alkali developers, which
  can react with a transition metal chalcogenide
@@ -1262,7 +1294,7 @@ name "fig:In-plane-transport"
  as well as the substrate resistance using top and bottom voltage leads.
  Each was taken using a current-source bias and measuring the resistance
  between the voltage contacts.
- Hall resistance, symmerterized, taken at 300 (c) and 400 K (d) for samples
+ Hall resistance, symmetrized, taken at 300 (c) and 400 K (d) for samples
  A, B, and C.
  Black lines indicate linear regions that were fit for carrier density and
  mobility calculations.
@@ -1314,7 +1346,8 @@ noprefix "false"
 \end_inset
 
 e and f show the behavior at 300 and 400 K.
- The charge carriers were found to be electrons, consistent with what reported
+ From the direction of the magnetic field and sign of the hall voltage the
+ charge carriers were found to be electrons, consistent with what reported
  in literature
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -1369,10 +1402,9 @@ d we obtained a mobility of 720 and 1080 for samples B and C at 300 K, 1400
 \begin_inset Formula $\gamma$
 \end_inset
 
--InSe prepared by mechanical exfoliation as discussed previously.
- Previously reported values for large-area films are typically much lower
- than what we observed, though a few larger mobilites for films have also
- been reported.
+-InSe prepared by mechanical exfoliation as discussed above.
+ Reported values for large-area films are typically much lower than what
+ we observed, though a few larger mobilities for films have also been seen.
  The parallel conduction channel likely effected the estimate of the mobility
  and carrier density.
  Additionally, the top surface layer of the substrate may have been doped
@@ -1388,7 +1420,37 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Hall mobility and carrier density
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Hall-mobilities"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Hall mobilities of samples A, B, and C at 300 and 400 K.
+ Calculated using the linear region of the Hall voltages for each measurement.
+ These values are calculated with the assumption that a parallel conduction
+ channel through the substrate is not present.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset space \hfill{}
+\end_inset
+
+
 \begin_inset Tabular
 <lyxtabular version="3" rows="6" columns="7">
 <features tabularvalignment="middle">
@@ -1547,7 +1609,7 @@ Sample
 \begin_inset Formula $n$
 \end_inset
 
- 
+
 \end_layout
 
 \end_inset
@@ -1860,33 +1922,10 @@ C
 \end_inset
 
 
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Hall mobility and carrier density
-\begin_inset CommandInset label
-LatexCommand label
-name "tab:Hall-mobilities"
-
+\begin_inset space \hfill{}
 \end_inset
 
 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-Hall mobilities of samples A, B, and C at 300 and 400 K.
- Calculated using the linear region of the Hall voltages for each measurement.
- These values are calculated with the assumption that a parallel conduction
- channel through the substrate is not present.
- 
 \end_layout
 
 \end_inset
@@ -2202,7 +2241,7 @@ c and d.
  The percentages are averaged over several points both along the in-plane
  and out-of-plane directions to remove noise, which accounts for the slopes
  in the interface region.
- While the elemental composition does put limits on the amount of dopents
+ While the elemental composition does put limits on the amount of dopants
  seen by either material, both GaAs and InSe could show significant changes
  in conductivity with dopants levels below what can be reasonably detected
  using EDX.
@@ -2248,6 +2287,8 @@ e, where the origin of the layer mismatch near the substrate can be seen.
 \end_inset
 
  G2 (ThermoFisher Scientific) at 300kV.
+ The STEM studies and analysis work was done by Dr.
+ Jenn Gray.
 \end_layout
 
 \begin_layout Section
@@ -2273,8 +2314,8 @@ ation of uniform films difficult.
  adjacent to the interface.
  This may account partly for the low carrier density observed, though even
  a depleted semiconductor will likely have a higher carrier concentration.
- A more reasonable explanation is the conduction through the substrate altering
- our calculation of the carrier density.
+ A more reasonable explanation is the conduction channel is in a smaller
+ region, altering our calculation of the carrier density.
 \end_layout
 
 \begin_layout Standard
